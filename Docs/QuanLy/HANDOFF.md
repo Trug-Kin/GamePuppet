@@ -55,3 +55,9 @@ Ba nhánh/task/prompt trong DANG_LAM_NGUOI_1/2/3, trạng thái CHUA_NHAN; nhán
 4. Nhóm duyệt tài khoản/remote/quota LFS rồi mới authorize publish. Đợt này không remote/push hoặc đăng nhập người khác.
 
 Không tiếp tục polish map/art/gameplay để lấp phần bị chặn. Đã làm các bước có căn cứ và bảo toàn; giữ phần còn lại nguyên trạng để tiếp tục sau khi có dung lượng/kiểm checkout.
+
+## Đính chính phạm vi profile và checkpoint task
+
+Manifest thực tế có **1 profile PT001r106 đã chuyển** trong lô593file, không phải mọi profile vẫn ở đường cũ. Profile đó được copy/hash rồi move nguyên byte sang archive, có staging cùng SHA256 và không migration/ghi lại; tra `profiles-final.json` cùng manifest để hoàn nguyên khi cần. Profile mới GitPreparation chỉ phục vụ kiểm kỹ thuật, không dùng cho người mới. Báo cáo profile đầu kiểm path cũ thấy absent là do move có chủ ý, không phải mất save; audit đã được sửa để resolve mapping, baseline không đổi.
+
+Commit bàn giao ownership/index: `a209c0e3b41a8b55e438aeabf1025b5ef6e7d940`. Ba nhánh task đã tạo local từ đúng commit này, chưa checkout/worktree hoặc push. Commit sau chỉ bổ sung đính chính/audit, không đổi sản phẩm. Các username cộng tác viên vẫn chưa được cung cấp.

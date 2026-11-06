@@ -1,0 +1,16 @@
+{
+  "branch": "chore/prepare-r107",
+  "handoff_commit": "a209c0e3b41a8b55e438aeabf1025b5ef6e7d940",
+  "source_commit": "40bcb67035b73776c760b0d84d37dda12ab1fe67",
+  "task_branches": {
+    "work/map-asset-baseline": "a209c0e3b41a8b55e438aeabf1025b5ef6e7d940",
+    "work/runtime-contracts-baseline": "a209c0e3b41a8b55e438aeabf1025b5ef6e7d940",
+    "work/ui-onboarding-review": "a209c0e3b41a8b55e438aeabf1025b5ef6e7d940"
+  },
+  "remote_names": [],
+  "tracked_ignored": [],
+  "lfs_objects_status": "fsck OK from git-audit.json; only documentation/tools changed afterward",
+  "clean_checkout": "BLOCKED_CAPACITY_NOT_OPENED",
+  "profile_archive_files": 1,
+  "push": false
+}

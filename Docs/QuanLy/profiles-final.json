@@ -3,8 +3,11 @@
   "rows": [
     {
       "path": "Test/PlaytestProfiles/PT001_r106/InvestigationV36/r106/prototype.json",
-      "size_mtime_unchanged": false,
-      "sha256_now": null
+      "status": "ARCHIVED_VERIFIED",
+      "new": "D:\\Game\\ConRoi_LuuTru\\git-team-20261106-153912-ee41c6\\DuLieu\\Test\\PlaytestProfiles\\PT001_r106\\InvestigationV36\\r106\\prototype.json",
+      "sha256": "d53465c765207efc84979b30b8699d6bc5fa15bdb72c9b943955653fc924ed6f",
+      "original_hash_at_verified_move": "D53465C765207EFC84979B30B8699D6BC5FA15BDB72C9B943955653FC924ED6F",
+      "no_migration": true
     }
   ]
 }
