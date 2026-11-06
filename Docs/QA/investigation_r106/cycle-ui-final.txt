@@ -1,0 +1,38 @@
+Synthetic GameView UI mouse. API initial clean profile/page only. Six cases and removal buttons run in real time; no API seek, acceleration or result assignment. Animation illustration, silent.
+release t=0.0768242 state={"angle":0.6856861710548401,"velocity":15.391215324401855,"rope":true,"hook":false,"bodyForce":true,"wedge":false,"latched":false}
+release t=2.587469 state={"angle":74.86558532714844,"velocity":-4.581265926361084,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":false}
+release t=8.520436 state={"angle":1.0114707946777344,"velocity":2.002378225326538,"rope":false,"hook":false,"bodyForce":true,"wedge":false,"latched":false}
+FINAL release clear=False t=11.74157 state={"angle":82.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":true,"wedge":false,"latched":false}
+release t=12.51066 state={"angle":79.71971130371094,"velocity":-24.33283805847168,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":false}
+release t=19.79978 state={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true}
+FINAL release clear=True t=19.79978 state={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true}
+help t=0.0934878 state={"angle":0.9766115546226501,"velocity":18.1201114654541,"rope":true,"hook":false,"bodyForce":true,"wedge":false,"latched":false}
+help t=2.544479 state={"angle":75.18363952636719,"velocity":12.994596481323242,"rope":false,"hook":false,"bodyForce":true,"wedge":false,"latched":false}
+help t=5.040525 state={"angle":82.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":false}
+help t=5.130533 state={"angle":81.88345336914063,"velocity":-5.976975440979004,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":false}
+help t=12.52252 state={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true}
+FINAL help clear=False t=12.54989 state={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true}
+hold t=0.0794479 state={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":true,"wedge":false,"latched":true}
+hold t=2.077839 state={"angle":0.5720211863517761,"velocity":14.128057479858398,"rope":true,"hook":false,"bodyForce":true,"wedge":false,"latched":false}
+hold t=4.548846 state={"angle":74.82880401611328,"velocity":2.6886093616485596,"rope":true,"hook":false,"bodyForce":false,"wedge":false,"latched":false}
+hold t=4.644095 state={"angle":74.21434783935547,"velocity":-13.161863327026367,"rope":true,"hook":false,"bodyForce":false,"wedge":false,"latched":false}
+hold t=5.040523 state={"angle":62.69083023071289,"velocity":-36.52708435058594,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":false}
+hold t=11.89157 state={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true}
+FINAL hold clear=False t=11.89157 state={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true}
+hook t=0.1128953 state={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true}
+hook t=1.014965 state={"angle":0.0,"velocity":0.0,"rope":false,"hook":true,"bodyForce":false,"wedge":false,"latched":false}
+hook t=2.083033 state={"angle":0.6526753306388855,"velocity":15.0325927734375,"rope":false,"hook":true,"bodyForce":true,"wedge":false,"latched":false}
+hook t=5.064221 state={"angle":80.16542053222656,"velocity":-4.420980930328369,"rope":false,"hook":true,"bodyForce":false,"wedge":false,"latched":false}
+FINAL hook clear=False t=14.64986 state={"angle":0.06316845118999481,"velocity":-0.04887283220887184,"rope":false,"hook":true,"bodyForce":false,"wedge":false,"latched":false}
+hook t=14.73319 state={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true}
+FINAL hook clear=True t=14.73319 state={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true}
+wedge t=0.086688 state={"angle":0.8521087169647217,"velocity":17.028562545776367,"rope":true,"hook":false,"bodyForce":true,"wedge":false,"latched":false}
+wedge t=2.021581 state={"angle":66.85697937011719,"velocity":19.362377166748047,"rope":true,"hook":false,"bodyForce":true,"wedge":true,"latched":false}
+wedge t=2.589157 state={"angle":74.85616302490234,"velocity":-4.871135234832764,"rope":false,"hook":false,"bodyForce":false,"wedge":true,"latched":false}
+FINAL wedge clear=False t=3.908357 state={"angle":35.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":true,"latched":false}
+wedge t=4.703 state={"angle":23.906902313232422,"velocity":-16.524921417236328,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":false}
+wedge t=10.24993 state={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true}
+FINAL wedge clear=True t=10.24993 state={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true}
+after t=0.0947235 state={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true}
+FINAL after clear=False t=9.083281 state={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true}
+PASS six UI cases, three explicit removals; no clip observation unlocked=True

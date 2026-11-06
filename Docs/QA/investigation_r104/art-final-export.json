@@ -1,0 +1,736 @@
+[
+  {
+    "name": "Khai",
+    "source": "D:\\ConRoi\\Source\\Blender\\JourneyV48\\R104\\Khai_R104_Editable.blend",
+    "reopened": true,
+    "export": {
+      "path": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R104\\Khai.fbx",
+      "preset": "unity_skeletal",
+      "bytes": 504572,
+      "objects": [
+        "Khai_Rig",
+        "Body",
+        "Khai_torn_right_cuff",
+        "Cuff_frayed_thread_0",
+        "Cuff_frayed_thread_1",
+        "Cuff_frayed_thread_2",
+        "Cuff_frayed_thread_3",
+        "Cuff_frayed_thread_4",
+        "Cuff_frayed_thread_5"
+      ],
+      "packed_unsaved_images": [],
+      "settings": {
+        "use_selection": true,
+        "apply_unit_scale": true,
+        "use_mesh_modifiers": true,
+        "mesh_smooth_type": "FACE",
+        "add_leaf_bones": false,
+        "path_mode": "COPY",
+        "embed_textures": true,
+        "axis_forward": "-Z",
+        "axis_up": "Y",
+        "object_types": [
+          "ARMATURE",
+          "MESH"
+        ],
+        "use_armature_deform_only": true,
+        "bake_anim": true,
+        "bake_anim_use_all_actions": false,
+        "bake_anim_use_nla_strips": false,
+        "apply_scale_options": "FBX_SCALE_ALL"
+      }
+    },
+    "roundtrip": {
+      "pass": true,
+      "diffs": [],
+      "before": {
+        "objects": {
+          "Khai_Rig": {
+            "type": "ARMATURE",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "bones": 23,
+            "deform_bones": 23,
+            "roots": [
+              "Bone"
+            ]
+          },
+          "Body": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.657,
+              0.7011,
+              1.76
+            ],
+            "tris": 6492,
+            "shape_keys": []
+          },
+          "Khai_torn_right_cuff": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.1255,
+              0.0225,
+              0.1267
+            ],
+            "tris": 28,
+            "shape_keys": []
+          },
+          "Cuff_frayed_thread_0": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.015,
+              0.0014,
+              0.0022
+            ],
+            "tris": 12,
+            "shape_keys": []
+          },
+          "Cuff_frayed_thread_1": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.015,
+              0.0014,
+              0.0022
+            ],
+            "tris": 12,
+            "shape_keys": []
+          },
+          "Cuff_frayed_thread_2": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.015,
+              0.0014,
+              0.0022
+            ],
+            "tris": 12,
+            "shape_keys": []
+          },
+          "Cuff_frayed_thread_3": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.015,
+              0.0014,
+              0.0022
+            ],
+            "tris": 12,
+            "shape_keys": []
+          },
+          "Cuff_frayed_thread_4": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.015,
+              0.0014,
+              0.0022
+            ],
+            "tris": 12,
+            "shape_keys": []
+          },
+          "Cuff_frayed_thread_5": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.015,
+              0.0014,
+              0.0022
+            ],
+            "tris": 12,
+            "shape_keys": []
+          }
+        },
+        "actions": [
+          "Khai_Idle_R104"
+        ]
+      },
+      "after": {
+        "objects": {
+          "Khai_Rig": {
+            "type": "ARMATURE",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "bones": 23,
+            "deform_bones": 23,
+            "roots": [
+              "Bone"
+            ]
+          },
+          "Cuff_frayed_thread_1": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.015,
+              0.0014,
+              0.0022
+            ],
+            "tris": 12,
+            "shape_keys": []
+          },
+          "Body": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.657,
+              0.7011,
+              1.76
+            ],
+            "tris": 6492,
+            "shape_keys": []
+          },
+          "Cuff_frayed_thread_3": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.015,
+              0.0014,
+              0.0022
+            ],
+            "tris": 12,
+            "shape_keys": []
+          },
+          "Cuff_frayed_thread_5": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.015,
+              0.0014,
+              0.0022
+            ],
+            "tris": 12,
+            "shape_keys": []
+          },
+          "Khai_torn_right_cuff": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.1255,
+              0.0225,
+              0.1267
+            ],
+            "tris": 28,
+            "shape_keys": []
+          },
+          "Cuff_frayed_thread_0": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.015,
+              0.0014,
+              0.0022
+            ],
+            "tris": 12,
+            "shape_keys": []
+          },
+          "Cuff_frayed_thread_2": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.015,
+              0.0014,
+              0.0022
+            ],
+            "tris": 12,
+            "shape_keys": []
+          },
+          "Cuff_frayed_thread_4": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.015,
+              0.0014,
+              0.0022
+            ],
+            "tris": 12,
+            "shape_keys": []
+          }
+        },
+        "actions": [
+          "Khai_Rig|Scene"
+        ],
+        "file": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R104\\Khai.fbx",
+        "bytes": 504572
+      }
+    },
+    "gate": [
+      {
+        "object": "Body",
+        "report": {
+          "profile": "game",
+          "eps": 0.000201,
+          "tol": 0.00401,
+          "gap": 0.020052,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "Body: no UV map (fine for flat colors; textures and lightmaps need one)"
+          ],
+          "per_object": {
+            "Body": {
+              "tris": 6492,
+              "parts": 26,
+              "errors": [],
+              "warnings": [
+                "Body: no UV map (fine for flat colors; textures and lightmaps need one)"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      },
+      {
+        "object": "Khai_torn_right_cuff",
+        "report": {
+          "profile": "game",
+          "eps": 1.8e-05,
+          "tol": 0.000359,
+          "gap": 0.001797,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "Khai_torn_right_cuff: 2 n-gons",
+            "Khai_torn_right_cuff: no UV map (fine for flat colors; textures and lightmaps need one)",
+            "Khai_torn_right_cuff: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "Khai_torn_right_cuff": {
+              "tris": 28,
+              "parts": 1,
+              "errors": [],
+              "warnings": [
+                "Khai_torn_right_cuff: 2 n-gons",
+                "Khai_torn_right_cuff: no UV map (fine for flat colors; textures and lightmaps need one)",
+                "Khai_torn_right_cuff: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      },
+      {
+        "object": "Cuff_frayed_thread_0",
+        "report": {
+          "profile": "game",
+          "eps": 2e-06,
+          "tol": 3.1e-05,
+          "gap": 0.000153,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "Cuff_frayed_thread_0: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "Cuff_frayed_thread_0": {
+              "tris": 12,
+              "parts": 1,
+              "errors": [],
+              "warnings": [
+                "Cuff_frayed_thread_0: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      },
+      {
+        "object": "Cuff_frayed_thread_1",
+        "report": {
+          "profile": "game",
+          "eps": 2e-06,
+          "tol": 3.1e-05,
+          "gap": 0.000153,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "Cuff_frayed_thread_1: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "Cuff_frayed_thread_1": {
+              "tris": 12,
+              "parts": 1,
+              "errors": [],
+              "warnings": [
+                "Cuff_frayed_thread_1: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      },
+      {
+        "object": "Cuff_frayed_thread_2",
+        "report": {
+          "profile": "game",
+          "eps": 2e-06,
+          "tol": 3.1e-05,
+          "gap": 0.000153,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "Cuff_frayed_thread_2: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "Cuff_frayed_thread_2": {
+              "tris": 12,
+              "parts": 1,
+              "errors": [],
+              "warnings": [
+                "Cuff_frayed_thread_2: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      },
+      {
+        "object": "Cuff_frayed_thread_3",
+        "report": {
+          "profile": "game",
+          "eps": 2e-06,
+          "tol": 3.1e-05,
+          "gap": 0.000153,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "Cuff_frayed_thread_3: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "Cuff_frayed_thread_3": {
+              "tris": 12,
+              "parts": 1,
+              "errors": [],
+              "warnings": [
+                "Cuff_frayed_thread_3: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      },
+      {
+        "object": "Cuff_frayed_thread_4",
+        "report": {
+          "profile": "game",
+          "eps": 2e-06,
+          "tol": 3.1e-05,
+          "gap": 0.000153,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "Cuff_frayed_thread_4: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "Cuff_frayed_thread_4": {
+              "tris": 12,
+              "parts": 1,
+              "errors": [],
+              "warnings": [
+                "Cuff_frayed_thread_4: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      },
+      {
+        "object": "Cuff_frayed_thread_5",
+        "report": {
+          "profile": "game",
+          "eps": 2e-06,
+          "tol": 3.1e-05,
+          "gap": 0.000153,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "Cuff_frayed_thread_5: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "Cuff_frayed_thread_5": {
+              "tris": 12,
+              "parts": 1,
+              "errors": [],
+              "warnings": [
+                "Cuff_frayed_thread_5: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      }
+    ],
+    "triangles": 6592,
+    "unweighted": 0
+  },
+  {
+    "name": "Ha",
+    "source": "D:\\ConRoi\\Source\\Blender\\JourneyV48\\R104\\Ha_R104_Editable.blend",
+    "reopened": true,
+    "export": {
+      "path": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R104\\Ha.fbx",
+      "preset": "unity_skeletal",
+      "bytes": 352492,
+      "objects": [
+        "Ha_Rig",
+        "Body",
+        "Ha_work_apron"
+      ],
+      "packed_unsaved_images": [],
+      "settings": {
+        "use_selection": true,
+        "apply_unit_scale": true,
+        "use_mesh_modifiers": true,
+        "mesh_smooth_type": "FACE",
+        "add_leaf_bones": false,
+        "path_mode": "COPY",
+        "embed_textures": true,
+        "axis_forward": "-Z",
+        "axis_up": "Y",
+        "object_types": [
+          "ARMATURE",
+          "MESH"
+        ],
+        "use_armature_deform_only": true,
+        "bake_anim": true,
+        "bake_anim_use_all_actions": false,
+        "bake_anim_use_nla_strips": false,
+        "apply_scale_options": "FBX_SCALE_ALL"
+      }
+    },
+    "roundtrip": {
+      "pass": true,
+      "diffs": [],
+      "before": {
+        "objects": {
+          "Ha_Rig": {
+            "type": "ARMATURE",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "bones": 23,
+            "deform_bones": 23,
+            "roots": [
+              "Bone"
+            ]
+          },
+          "Body": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.6352,
+              0.7825,
+              1.64
+            ],
+            "tris": 6624,
+            "shape_keys": []
+          },
+          "Ha_work_apron": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.42,
+              0.017,
+              0.5701
+            ],
+            "tris": 12,
+            "shape_keys": []
+          }
+        },
+        "actions": [
+          "Ha_Idle_R104"
+        ]
+      },
+      "after": {
+        "objects": {
+          "Ha_Rig": {
+            "type": "ARMATURE",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "bones": 23,
+            "deform_bones": 23,
+            "roots": [
+              "Bone"
+            ]
+          },
+          "Ha_work_apron": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.42,
+              0.017,
+              0.5701
+            ],
+            "tris": 12,
+            "shape_keys": []
+          },
+          "Body": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.6352,
+              0.7825,
+              1.64
+            ],
+            "tris": 6624,
+            "shape_keys": []
+          }
+        },
+        "actions": [
+          "Ha_Rig|Scene"
+        ],
+        "file": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R104\\Ha.fbx",
+        "bytes": 352492
+      }
+    },
+    "gate": [
+      {
+        "object": "Body",
+        "report": {
+          "profile": "game",
+          "eps": 0.000192,
+          "tol": 0.00385,
+          "gap": 0.01925,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "Body: no UV map (fine for flat colors; textures and lightmaps need one)"
+          ],
+          "per_object": {
+            "Body": {
+              "tris": 6624,
+              "parts": 23,
+              "errors": [],
+              "warnings": [
+                "Body: no UV map (fine for flat colors; textures and lightmaps need one)"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      },
+      {
+        "object": "Ha_work_apron",
+        "report": {
+          "profile": "game",
+          "eps": 7.1e-05,
+          "tol": 0.001417,
+          "gap": 0.007083,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "Ha_work_apron: no UV map (fine for flat colors; textures and lightmaps need one)",
+            "Ha_work_apron: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "Ha_work_apron": {
+              "tris": 12,
+              "parts": 1,
+              "errors": [],
+              "warnings": [
+                "Ha_work_apron: no UV map (fine for flat colors; textures and lightmaps need one)",
+                "Ha_work_apron: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      }
+    ],
+    "triangles": 6636,
+    "unweighted": 0
+  }
+]

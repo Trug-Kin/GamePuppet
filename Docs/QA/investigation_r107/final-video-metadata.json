@@ -1,0 +1,32 @@
+[
+  {
+    "file": "map-controller.mp4",
+    "duration_seconds": 110.47,
+    "size": [
+      1280,
+      780
+    ],
+    "audio": false,
+    "input": "synthetic keyboard/mouse through controller and GUI"
+  },
+  {
+    "file": "onboarding-start.mp4",
+    "duration_seconds": 172.82999999999998,
+    "size": [
+      1280,
+      780
+    ],
+    "audio": false,
+    "input": "synthetic keyboard/mouse through controller and GUI"
+  },
+  {
+    "file": "onboarding-short.mp4",
+    "duration_seconds": 58.8,
+    "size": [
+      1280,
+      780
+    ],
+    "audio": false,
+    "input": "synthetic keyboard/mouse through controller and GUI"
+  }
+]

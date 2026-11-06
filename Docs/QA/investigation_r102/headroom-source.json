@@ -1,0 +1,80 @@
+{
+  "changed_vertex_count": 48,
+  "delta_y": 0.5,
+  "source": "D:\\ConRoi\\Source\\Blender\\JourneyV48\\R102\\Workshop_Investigation_R102_Editable.blend",
+  "backup": "D:\\ConRoi\\Source\\Blender\\JourneyV48\\R102\\Workshop_R102_Before_Headroom.blend",
+  "reopened": true,
+  "roundtrip": {
+    "pass": true,
+    "diffs": [],
+    "before": {
+      "objects": {
+        "WorkshopShell": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            10.18,
+            12.18,
+            5.51
+          ],
+          "tris": 1524,
+          "shape_keys": []
+        }
+      },
+      "actions": []
+    },
+    "after": {
+      "objects": {
+        "WorkshopShell": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            10.18,
+            12.18,
+            5.51
+          ],
+          "tris": 1524,
+          "shape_keys": []
+        }
+      },
+      "actions": [],
+      "file": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R102\\WORKSHOP.fbx",
+      "bytes": 34716
+    }
+  },
+  "export": {
+    "path": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R102\\WORKSHOP.fbx",
+    "preset": "unity",
+    "bytes": 34716,
+    "objects": [
+      "WorkshopShell"
+    ],
+    "packed_unsaved_images": [],
+    "settings": {
+      "use_selection": true,
+      "apply_unit_scale": true,
+      "use_mesh_modifiers": true,
+      "mesh_smooth_type": "FACE",
+      "add_leaf_bones": false,
+      "path_mode": "COPY",
+      "embed_textures": true,
+      "axis_forward": "-Z",
+      "axis_up": "Y",
+      "apply_scale_options": "FBX_SCALE_ALL",
+      "bake_space_transform": true,
+      "object_types": [
+        "EMPTY",
+        "MESH"
+      ],
+      "bake_anim": false
+    }
+  }
+}

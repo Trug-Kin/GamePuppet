@@ -1,0 +1,8 @@
+Synthetic GameView UI mouse. API initial clean profile/page only. Six cases and removal buttons run in real time; no API seek, acceleration or result assignment. Animation illustration, silent.
+release t=0.1015794 state={"angle":1.1336978673934937,"velocity":19.375961303710938,"rope":true,"hook":false,"bodyForce":true,"wedge":false,"latched":false}
+release t=2.505473 state={"angle":74.66390228271484,"velocity":12.131513595581055,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":false}
+release t=2.598735 state={"angle":74.79458618164063,"velocity":-6.47467041015625,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":false}
+release t=8.578782 state={"angle":1.5282487869262695,"velocity":13.571494102478027,"rope":false,"hook":false,"bodyForce":true,"wedge":false,"latched":false}
+FINAL release clear=False t=11.74157 state={"angle":82.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":true,"wedge":false,"latched":false}
+FAIL System.Exception: Removal UI did not act
+  at Unity.AI.Assistant.Agent.Dynamic.Extension.Editor.CommandScript+<>c__DisplayClass0_0.<Execute>b__1 () [0x0040e] in <13467618e5b7425b9f52c16aa4965882>:0 

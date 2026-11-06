@@ -1,0 +1,10 @@
+Scene=Assets/Scenes/JourneyPresentation_v48_r102.unity dirty=False missing=0 oldHeads=0
+Removed scene-only roots:
+Desk_Puppet_Broken_Strings
+ConRoi_Minh_0_0
+ConRoi_Minh_1_0
+ConRoi_Minh_1_1
+ConRoi_Minh_1_2
+ConRoi_Minh_1_3
+ConRoi_Minh_GD3
+ConRoi_Minh_GD4_FinalOnly

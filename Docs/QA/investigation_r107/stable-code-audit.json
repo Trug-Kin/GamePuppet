@@ -1,0 +1,26 @@
+[
+  {
+    "file": "ReturnGateMechanism.cs",
+    "equal_except_revision": true
+  },
+  {
+    "file": "MechanismPresentation.cs",
+    "equal_except_revision": true
+  },
+  {
+    "file": "TrialTimeline.cs",
+    "equal_except_revision": true
+  },
+  {
+    "file": "RepairHandBinding.cs",
+    "equal_except_revision": true
+  },
+  {
+    "file": "PresentationHands.cs",
+    "equal_except_revision": true
+  },
+  {
+    "file": "InvestigationActor.cs",
+    "equal_except_revision": true
+  }
+]

@@ -1,0 +1,1 @@
+r102 headroom FBX mesh=WorkshopShell bounds=Center: (0.00, 2.76, 0.00), Extents: (5.09, 2.76, 6.09) Missing=0 Interactables=17

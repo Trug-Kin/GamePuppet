@@ -1,0 +1,9 @@
+{
+  "commit": "2c22a007a5055e49cdba3d32e5968a89fc81cc5a",
+  "files": [
+    "Tools/QuanLy/commit_local.py",
+    "Tools/QuanLy/final_audit.py",
+    "Tools/QuanLy/git_audit.py",
+    "Tools/QuanLy/supplement_source.py"
+  ]
+}

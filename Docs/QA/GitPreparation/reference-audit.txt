@@ -1,0 +1,16 @@
+Read-only live audit; no input or scene/profile mutation.
+Unity=6000.6.2f1 scene=Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity dirty=False play=True compiling=False
+session=True actual profile=D:\ConRoi\Test\PlaytestProfiles\GitPreparation_20261106\InvestigationV36\r107\prototype.json
+components=32962 MissingScript=0 brokenSerializedReferences=0
+DOWN tri=129420 at=(706.995300, 0.827484, 444.311200) normal=(-0.785521, -0.499719, 0.365018)
+DOWN tri=131871 at=(629.072000, 2.019643, 387.578000) normal=(-0.403709, -0.704389, 0.583829)
+R20_Whole_Source_Export/Surface_176 verticesEqual=True UVEqual=True reversed=914 otherTopologyChanges=0 remainingDownTop=2 bound=True colliderSame=False
+R20_Whole_Source_Export/Surface_104 verticesEqual=True UVEqual=True reversed=2137 otherTopologyChanges=0 remainingDownTop=0 bound=True colliderSame=False
+DOWN tri=102238 at=(706.995300, 0.827484, 444.311200) normal=(-0.785521, -0.499719, 0.365018)
+DOWN tri=104684 at=(629.072000, 2.019643, 387.578000) normal=(-0.403709, -0.704389, 0.583829)
+LakeGateMarketV32/Context_124 verticesEqual=True UVEqual=True reversed=894 otherTopologyChanges=0 remainingDownTop=2 bound=True colliderSame=True
+DOWN tri=194039 at=(654.884800, 0.101644, 430.759400) normal=(0.557508, -0.536860, -0.633219)
+DOWN tri=194562 at=(655.017600, 0.011454, 430.959900) normal=(0.662266, -0.529813, -0.529813)
+DOWN tri=194564 at=(655.030000, 0.008209, 430.978700) normal=(0.664313, -0.528530, -0.528530)
+DOWN tri=198946 at=(659.642000, 0.041534, 437.943600) normal=(0.970781, -0.214633, -0.107317)
+R20_Whole_Source_Export/Surface_142 verticesEqual=True UVEqual=True reversed=2522 otherTopologyChanges=0 remainingDownTop=4 bound=True colliderSame=True

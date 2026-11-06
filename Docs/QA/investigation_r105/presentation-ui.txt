@@ -1,0 +1,15 @@
+Synthetic GameView mouse; API opens initial clip. Clip is silent illustrative animation, not controller footage. Six buttons use same mechanism law.
+clip play time=1.212187 latch=True
+clip event time=5.024619 latch=False angle=34.08252
+UI release at=3.399617 state={"angle":49.68952560424805,"velocity":-34.77875518798828,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":false}
+ENDCASE release time=10.00314 state={"angle":54.71910095214844,"velocity":28.3289794921875,"rope":false,"hook":false,"bodyForce":true,"wedge":false,"latched":false}
+UI help at=3.400826 state={"angle":82.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":true,"wedge":false,"latched":false}
+ENDCASE help time=10.00671 state={"angle":2.42500901222229,"velocity":-1.8762128353118896,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":false}
+UI hold at=3.401734 state={"angle":51.40770721435547,"velocity":30.686199188232422,"rope":true,"hook":false,"bodyForce":true,"wedge":false,"latched":false}
+ENDCASE hold time=10.00583 state={"angle":1.463149070739746,"velocity":-1.1320335865020752,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":false}
+UI hook at=3.413178 state={"angle":51.75651550292969,"velocity":30.443052291870117,"rope":false,"hook":true,"bodyForce":true,"wedge":false,"latched":false}
+ENDCASE hook time=10.00277 state={"angle":2.2749757766723633,"velocity":-1.7601385116577148,"rope":false,"hook":true,"bodyForce":false,"wedge":false,"latched":false}
+UI wedge at=3.404639 state={"angle":49.5152702331543,"velocity":-34.70401382446289,"rope":false,"hook":false,"bodyForce":false,"wedge":true,"latched":false}
+ENDCASE wedge time=10.01006 state={"angle":35.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":true,"latched":false}
+UI after at=3.4076 state={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true}
+ENDCASE after time=10.00997 state={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true}

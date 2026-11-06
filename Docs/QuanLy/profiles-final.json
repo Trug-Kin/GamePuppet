@@ -1,0 +1,10 @@
+{
+  "scope": "Profiles inventoried before move; no pretask hash for these, compare size+mtime only. Newly created technical GitPreparation profile excluded. Original LocalLow saves not loaded/migrated or written by this task.",
+  "rows": [
+    {
+      "path": "Test/PlaytestProfiles/PT001_r106/InvestigationV36/r106/prototype.json",
+      "size_mtime_unchanged": false,
+      "sha256_now": null
+    }
+  ]
+}

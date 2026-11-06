@@ -1,0 +1,1 @@
+FAIL capture helper stalled on screenshot transition; superseded by corrected final capture.

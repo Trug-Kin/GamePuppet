@@ -1,0 +1,31 @@
+{
+  "exit": 0,
+  "audio": false,
+  "input": "API selects illustration cases; synthetic GameView click plays clip; not controller evidence",
+  "command": [
+    "D:\\ConRoi\\Tools\\python-deps\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+    "-hide_banner",
+    "-y",
+    "-f",
+    "gdigrab",
+    "-framerate",
+    "24",
+    "-draw_mouse",
+    "0",
+    "-i",
+    "title=Game",
+    "-t",
+    "83",
+    "-vf",
+    "pad=ceil(iw/2)*2:ceil(ih/2)*2",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "fast",
+    "-crf",
+    "24",
+    "-pix_fmt",
+    "yuv420p",
+    "Test/BangChung/investigation_r102/clip-and-six-model-cases-final.mp4"
+  ]
+}

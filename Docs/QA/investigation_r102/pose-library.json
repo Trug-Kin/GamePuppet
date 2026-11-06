@@ -1,0 +1,217 @@
+{
+  "poses": [
+    {
+      "id": "A",
+      "index": 0,
+      "action": "Pose_A"
+    },
+    {
+      "id": "B",
+      "index": 1,
+      "action": "Pose_B"
+    },
+    {
+      "id": "C",
+      "index": 2,
+      "action": "Pose_C"
+    },
+    {
+      "id": "D",
+      "index": 3,
+      "action": "Pose_D"
+    },
+    {
+      "id": "E",
+      "index": 4,
+      "action": "Pose_E"
+    },
+    {
+      "id": "G",
+      "index": 5,
+      "action": "Pose_G"
+    },
+    {
+      "id": "H",
+      "index": 6,
+      "action": "Pose_H"
+    },
+    {
+      "id": "I",
+      "index": 7,
+      "action": "Pose_I"
+    },
+    {
+      "id": "N",
+      "index": 8,
+      "action": "Pose_N"
+    },
+    {
+      "id": "O",
+      "index": 9,
+      "action": "Pose_O"
+    },
+    {
+      "id": "R",
+      "index": 10,
+      "action": "Pose_R"
+    },
+    {
+      "id": "S",
+      "index": 11,
+      "action": "Pose_S"
+    },
+    {
+      "id": "T",
+      "index": 12,
+      "action": "Pose_T"
+    },
+    {
+      "id": "W",
+      "index": 13,
+      "action": "Pose_W"
+    },
+    {
+      "id": "Y",
+      "index": 14,
+      "action": "Pose_Y"
+    }
+  ],
+  "result": {
+    "path": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R102\\PuppetPoseLibrary.fbx",
+    "preset": "unity_skeletal",
+    "bytes": 1200588,
+    "objects": [
+      "R03_Rig",
+      "R03_Body"
+    ],
+    "packed_unsaved_images": [],
+    "settings": {
+      "use_selection": true,
+      "apply_unit_scale": true,
+      "use_mesh_modifiers": true,
+      "mesh_smooth_type": "FACE",
+      "add_leaf_bones": false,
+      "path_mode": "COPY",
+      "embed_textures": true,
+      "axis_forward": "-Z",
+      "axis_up": "Y",
+      "object_types": [
+        "ARMATURE",
+        "MESH"
+      ],
+      "use_armature_deform_only": true,
+      "bake_anim": true,
+      "bake_anim_use_all_actions": true,
+      "bake_anim_use_nla_strips": false,
+      "apply_scale_options": "FBX_SCALE_ALL"
+    },
+    "roundtrip": {
+      "pass": false,
+      "diffs": [
+        "R03_Body: size [0.8334, 0.7024, 1.78] became [0.7672, 0.335, 1.982]"
+      ],
+      "before": {
+        "objects": {
+          "R03_Rig": {
+            "type": "ARMATURE",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "bones": 13,
+            "deform_bones": 13,
+            "roots": [
+              "root"
+            ]
+          },
+          "R03_Body": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.8334,
+              0.7024,
+              1.78
+            ],
+            "tris": 3780,
+            "shape_keys": []
+          }
+        },
+        "actions": [
+          "Pose_A",
+          "Pose_B",
+          "Pose_C",
+          "Pose_D",
+          "Pose_E",
+          "Pose_G",
+          "Pose_H",
+          "Pose_I",
+          "Pose_N",
+          "Pose_O",
+          "Pose_R",
+          "Pose_S",
+          "Pose_T",
+          "Pose_W",
+          "Pose_Y",
+          "RepairBothHands"
+        ]
+      },
+      "after": {
+        "objects": {
+          "R03_Rig": {
+            "type": "ARMATURE",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "bones": 13,
+            "deform_bones": 13,
+            "roots": [
+              "root"
+            ]
+          },
+          "R03_Body": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.7672,
+              0.335,
+              1.982
+            ],
+            "tris": 3780,
+            "shape_keys": []
+          }
+        },
+        "actions": [
+          "R03_Rig|R03_Rig|Pose_A",
+          "R03_Rig|R03_Rig|Pose_B",
+          "R03_Rig|R03_Rig|Pose_C",
+          "R03_Rig|R03_Rig|Pose_D",
+          "R03_Rig|R03_Rig|Pose_E",
+          "R03_Rig|R03_Rig|Pose_G",
+          "R03_Rig|R03_Rig|Pose_H",
+          "R03_Rig|R03_Rig|Pose_I",
+          "R03_Rig|R03_Rig|Pose_N",
+          "R03_Rig|R03_Rig|Pose_O",
+          "R03_Rig|R03_Rig|Pose_R",
+          "R03_Rig|R03_Rig|Pose_S",
+          "R03_Rig|R03_Rig|Pose_T",
+          "R03_Rig|R03_Rig|Pose_W",
+          "R03_Rig|R03_Rig|Pose_Y",
+          "R03_Rig|R03_Rig|RepairBothHands"
+        ],
+        "file": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R102\\PuppetPoseLibrary.fbx",
+        "bytes": 1200588
+      }
+    }
+  }
+}

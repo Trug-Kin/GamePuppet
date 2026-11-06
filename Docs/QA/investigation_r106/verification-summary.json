@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-06",
+  "scene": "Assets/Scenes/JourneyPresentation_v48_r106.unity",
+  "unity": "6000.6.2f1",
+  "checks": {
+    "cycle-api.txt": {
+      "pass_lines": 46,
+      "no_fail": true
+    },
+    "cycle-ui-final.txt": {
+      "pass_lines": 1,
+      "no_fail": true
+    },
+    "regression-ui.txt": {
+      "pass_lines": 31,
+      "no_fail": true
+    },
+    "profile-launch-proof.txt": {
+      "pass_lines": 9,
+      "no_fail": true
+    },
+    "final-scene-audit.txt": {
+      "pass_lines": 0,
+      "no_fail": true
+    },
+    "event-binding-audit.txt": {
+      "pass_lines": 14,
+      "no_fail": true
+    },
+    "law-unchanged.txt": {
+      "pass_lines": 1,
+      "no_fail": true
+    }
+  },
+  "protected_files": 1707,
+  "tracked_original_saves": 17,
+  "human_playtest": "NOT_RUN",
+  "scope": "six deterministic trials, explicit hold removal, affected UI/lifecycle, actual Editor CLI profile; no route or whole-map claim"
+}

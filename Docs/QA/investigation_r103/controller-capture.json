@@ -1,0 +1,31 @@
+{
+  "exit": 0,
+  "input": "synthetic InputSystem keyboard and mouse; unchanged controller; authored clean spawn; no teleport",
+  "audio": false,
+  "command": [
+    "D:\\ConRoi\\Tools\\python-deps\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+    "-hide_banner",
+    "-y",
+    "-f",
+    "gdigrab",
+    "-framerate",
+    "24",
+    "-draw_mouse",
+    "0",
+    "-i",
+    "title=Game",
+    "-t",
+    "215",
+    "-vf",
+    "pad=ceil(iw/2)*2:ceil(ih/2)*2",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "fast",
+    "-crf",
+    "24",
+    "-pix_fmt",
+    "yuv420p",
+    "Test/BangChung/investigation_r103/controller-route.mp4"
+  ]
+}

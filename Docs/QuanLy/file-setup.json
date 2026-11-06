@@ -1,0 +1,26 @@
+{
+  "qa_copies": 365,
+  "large_asset_lfs": [
+    "Assets/Art/Environment/JourneyV42/SlopeFoliage_1.asset",
+    "Assets/Art/Environment/JourneyV42/SlopeFoliage_2.asset",
+    "Assets/Art/Environment/JourneyV48/BankR97/M97_Context125_BoundR97.asset",
+    "Assets/Art/Environment/JourneyV48/DamR100/D99_FLOWERS_Red_2_BoundR100.asset",
+    "Assets/Art/Environment/JourneyV48/DamR98/L98_35_BoundR98.asset",
+    "Assets/Art/Environment/JourneyV48/DamR99/C95_0653_FootwayOverShoulder_Garden_Bank_Return_Walk_Surface_125_BoundR99.asset",
+    "Assets/Art/Environment/JourneyV48/DamR99/C95_0654_FootwayOverShoulder_Garden_Bank_Return_Walk_Surface_153_BoundR99.asset",
+    "Assets/Art/Environment/JourneyV48/DamR99/D99_FLOWERS_Red_2_BoundR99.asset",
+    "Assets/Art/Environment/JourneyV48/FinitePineNormals/SlopeFoliage_1.asset",
+    "Assets/Art/Environment/JourneyV48/FinitePineNormals/SlopeFoliage_2.asset",
+    "Assets/Art/Environment/JourneyV48/I2GroundR94/I2_Surface_142_BoundR94.asset",
+    "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0083_BoundR95.asset",
+    "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0088_BoundR95.asset",
+    "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0089_BoundR95.asset",
+    "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0090_BoundR95.asset",
+    "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0091_BoundR95.asset",
+    "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0888_BoundR95.asset",
+    "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0921_BoundR95.asset",
+    "Assets/Art/Environment/JourneyV48/RecoveryFixR21/FootwayOverShoulder_Garden_Bank_Return_Walk_Surface_125.asset",
+    "Assets/Art/Environment/JourneyV48/ShoreRepairR50/FootwayOverShoulder_Garden_Bank_Return_Walk_Surface_125_R50.asset"
+  ],
+  "product_refactor": false
+}

@@ -1,0 +1,1 @@
+No 2m capsule-safe graph path. Sampled=4331 walkable=4217 visited=1

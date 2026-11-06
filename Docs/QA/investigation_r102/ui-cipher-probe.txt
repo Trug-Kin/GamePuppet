@@ -1,0 +1,1 @@
+EditorWindow synthetic mouse page=cipher Screen=1920x932 window=(x:0.00, y:23.20, width:1536.00, height:766.80)

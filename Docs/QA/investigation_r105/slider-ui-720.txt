@@ -1,0 +1,16 @@
+Synthetic GameView mouse down/drag/up. API opens initial clip only; no API seeking or assigning observations.
+PASS slider pointer held pauses playback time=1.894094 seeking=True
+PASS drag forward changes observed time time=9.226069 seeking=True
+PASS drag backwards changes time time=4.826884 seeking=True
+PASS release ends drag and remains stopped time=4.826884 seeking=False
+PASS seeking alone unlocks no unseen observation time=4.826884 seeking=False
+PASS UI resumes after release time=5.439562 seeking=False
+PASS UI pauses time=5.439562 seeking=False
+PASS UI drag does not turn player camera time=5.439562 seeking=False
+PASS visible Back closes clip time=5.439562 seeking=False
+PASS actual first case button starts shared mechanism time=5.439562 seeking=False
+PASS actual model pause button time=5.439562 seeking=False
+PASS camera change preserves time and gate state time=5.439562 seeking=False
+PASS model seek holds pointer time=5.439562 seeking=False
+PASS model reverse seek time=5.439562 seeking=False
+PASS model release remains paused time=5.439562 seeking=False

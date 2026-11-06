@@ -1,0 +1,14 @@
+POINT (681.00, 430.00)
+R20_Whole_Source_Export/Surface_176 Assets/Art/Environment/JourneyV48/TerrainR107/M95_023_BoundR97_WindingR107.asset tri=130671 y=1.31771 normalY=0.9997646
+R20_Whole_Source_Export/Surface_104 Assets/Art/Environment/JourneyV48/TerrainR107/M95_002_BoundR97_WindingR107.asset tri=6790 y=1.427703 normalY=-0.9997646
+R20_Whole_Source_Export/Surface_142 Assets/Art/Environment/JourneyV48/TerrainR101/BankR91_Grade_017_IntegratedR101.asset tri=214772 y=1.297148 normalY=0.9999776;tri=215262 y=1.297148 normalY=0.9999816
+POINT (665.00, 430.00)
+R97_Bridgehead_GateSide_Bank/R97_STAIR_429_UPPER Assets/Art/Environment/JourneyV48/BankR97/R97_STAIR_429_UPPER_BoundR97.asset tri=23 y=0.6903165 normalY=-0.9994561;tri=35 y=1.193861 normalY=0.997674
+POINT (650.00, 440.00)
+R20_Whole_Source_Export/Surface_142 Assets/Art/Environment/JourneyV48/TerrainR101/BankR91_Grade_017_IntegratedR101.asset tri=188503 y=-0.9999084 normalY=1;tri=189077 y=-0.9999084 normalY=1
+R20_Whole_Source_Export/Surface_051 Assets/Art/Environment/JourneyV48/DamR99/C95_0103_Surface_051_BoundR99.asset tri=1168 y=6.103516E-05 normalY=1
+POINT (660.00, 455.00)
+R20_Whole_Source_Export/Surface_142 Assets/Art/Environment/JourneyV48/TerrainR101/BankR91_Grade_017_IntegratedR101.asset tri=198967 y=-0.9999084 normalY=1;tri=199398 y=-0.9999084 normalY=1
+R20_Whole_Source_Export/Surface_051 Assets/Art/Environment/JourneyV48/DamR99/C95_0103_Surface_051_BoundR99.asset tri=1226 y=6.103516E-05 normalY=1
+POINT (700.00, 440.00)
+R20_Whole_Source_Export/Surface_176 Assets/Art/Environment/JourneyV48/TerrainR107/M95_023_BoundR97_WindingR107.asset tri=130504 y=0.8243154 normalY=0.978229

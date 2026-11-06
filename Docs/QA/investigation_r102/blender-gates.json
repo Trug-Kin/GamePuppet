@@ -1,0 +1,262 @@
+{
+  "GateLeaf_L": {
+    "profile": "game",
+    "eps": 0.000184,
+    "tol": 0.003688,
+    "gap": 0.018438,
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "GateLeaf_L: 16 n-gons",
+      "GateLeaf_L: origin outside the mesh bounds"
+    ],
+    "per_object": {
+      "GateLeaf_L": {
+        "tris": 352,
+        "parts": 8,
+        "errors": [],
+        "warnings": [
+          "GateLeaf_L: 16 n-gons",
+          "GateLeaf_L: origin outside the mesh bounds"
+        ]
+      }
+    },
+    "skipped": []
+  },
+  "Latch_C": {
+    "profile": "game",
+    "eps": 2.2e-05,
+    "tol": 0.000435,
+    "gap": 0.002175,
+    "pass": true,
+    "errors": [],
+    "warnings": [],
+    "per_object": {
+      "Latch_C": {
+        "tris": 12,
+        "parts": 1,
+        "errors": [],
+        "warnings": []
+      }
+    },
+    "skipped": []
+  },
+  "Handle_DK": {
+    "profile": "game",
+    "eps": 2.4e-05,
+    "tol": 0.000483,
+    "gap": 0.002417,
+    "pass": true,
+    "errors": [],
+    "warnings": [],
+    "per_object": {
+      "Handle_DK": {
+        "tris": 12,
+        "parts": 1,
+        "errors": [],
+        "warnings": []
+      }
+    },
+    "skipped": []
+  },
+  "RepairPhone": {
+    "profile": "game",
+    "eps": 1.7e-05,
+    "tol": 0.000346,
+    "gap": 0.00173,
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "RepairPhone, between its own parts: 4 back-to-back touching faces"
+    ],
+    "per_object": {
+      "RepairPhone": {
+        "tris": 24,
+        "parts": 2,
+        "errors": [],
+        "warnings": [
+          "RepairPhone, between its own parts: 4 back-to-back touching faces"
+        ]
+      }
+    },
+    "skipped": []
+  },
+  "EvidencePaper": {
+    "profile": "game",
+    "eps": 4.2e-05,
+    "tol": 0.000832,
+    "gap": 0.004162,
+    "pass": true,
+    "errors": [],
+    "warnings": [],
+    "per_object": {
+      "EvidencePaper": {
+        "tris": 12,
+        "parts": 1,
+        "errors": [],
+        "warnings": []
+      }
+    },
+    "skipped": []
+  },
+  "TornFabric": {
+    "profile": "game",
+    "eps": 1.6e-05,
+    "tol": 0.000318,
+    "gap": 0.001588,
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "TornFabric: 2 n-gons",
+      "TornFabric: no UV map (fine for flat colors; textures and lightmaps need one)"
+    ],
+    "per_object": {
+      "TornFabric": {
+        "tris": 28,
+        "parts": 1,
+        "errors": [],
+        "warnings": [
+          "TornFabric: 2 n-gons",
+          "TornFabric: no UV map (fine for flat colors; textures and lightmaps need one)"
+        ]
+      }
+    },
+    "skipped": []
+  },
+  "ShoeSample": {
+    "profile": "game",
+    "eps": 3e-05,
+    "tol": 0.000606,
+    "gap": 0.003031,
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "ShoeSample: 2 n-gons"
+    ],
+    "per_object": {
+      "ShoeSample": {
+        "tris": 208,
+        "parts": 16,
+        "errors": [],
+        "warnings": [
+          "ShoeSample: 2 n-gons"
+        ]
+      }
+    },
+    "skipped": []
+  },
+  "CoatSample": {
+    "profile": "game",
+    "eps": 0.000112,
+    "tol": 0.002245,
+    "gap": 0.011223,
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "CoatSample: 8 n-gons",
+      "CoatSample: no UV map (fine for flat colors; textures and lightmaps need one)"
+    ],
+    "per_object": {
+      "CoatSample": {
+        "tris": 608,
+        "parts": 6,
+        "errors": [],
+        "warnings": [
+          "CoatSample: 8 n-gons",
+          "CoatSample: no UV map (fine for flat colors; textures and lightmaps need one)"
+        ]
+      }
+    },
+    "skipped": []
+  },
+  "Khai_Body": {
+    "profile": "game",
+    "eps": 0.000202,
+    "tol": 0.004034,
+    "gap": 0.020168,
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Khai_Body: 18 n-gons",
+      "Khai_Body: 2 detached fragments (8.7% of its faces), nearest 0.00847 from the rest"
+    ],
+    "per_object": {
+      "Khai_Body": {
+        "tris": 5332,
+        "parts": 33,
+        "errors": [],
+        "warnings": [
+          "Khai_Body: 18 n-gons",
+          "Khai_Body: 2 detached fragments (8.7% of its faces), nearest 0.00847 from the rest"
+        ]
+      }
+    },
+    "skipped": []
+  },
+  "Ha_Body": {
+    "profile": "game",
+    "eps": 0.000202,
+    "tol": 0.004049,
+    "gap": 0.020244,
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Ha_Body: 18 n-gons"
+    ],
+    "per_object": {
+      "Ha_Body": {
+        "tris": 4912,
+        "parts": 32,
+        "errors": [],
+        "warnings": [
+          "Ha_Body: 18 n-gons"
+        ]
+      }
+    },
+    "skipped": []
+  },
+  "R03_Body": {
+    "profile": "game",
+    "eps": 0.000201,
+    "tol": 0.004022,
+    "gap": 0.020111,
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "R03_Body: 18 n-gons"
+    ],
+    "per_object": {
+      "R03_Body": {
+        "tris": 3780,
+        "parts": 26,
+        "errors": [],
+        "warnings": [
+          "R03_Body: 18 n-gons"
+        ]
+      }
+    },
+    "skipped": []
+  },
+  "R12_Body": {
+    "profile": "game",
+    "eps": 0.000201,
+    "tol": 0.004022,
+    "gap": 0.020111,
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "R12_Body: 18 n-gons"
+    ],
+    "per_object": {
+      "R12_Body": {
+        "tris": 3780,
+        "parts": 26,
+        "errors": [],
+        "warnings": [
+          "R12_Body: 18 n-gons"
+        ]
+      }
+    },
+    "skipped": []
+  }
+}

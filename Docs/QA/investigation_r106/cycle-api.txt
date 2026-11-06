@@ -1,0 +1,56 @@
+API deterministic whole-cycle test; not UI/player evidence. Time resolution 1/120 second.
+PASS bounded finish release duration=11.74157
+PASS settled actual session release
+FINAL release initial duration=11.74157 clearAt=Infinity state={"angle":82.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":true,"wedge":false,"latched":false}
+PASS original law/inputs exact at release t=0
+PASS original law/inputs exact at release t=2.5
+PASS original law/inputs exact at release t=6
+PASS original law/inputs exact at release t=10
+PASS returning person intentionally holds open
+FINAL release user-clear duration=19.79978 clearAt=11.74157 state={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true}
+PASS explicit clear then closes and relatches release
+PASS bounded finish help duration=12.54989
+PASS settled actual session help
+FINAL help initial duration=12.54989 clearAt=Infinity state={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true}
+PASS original law/inputs exact at help t=0
+PASS original law/inputs exact at help t=2.5
+PASS original law/inputs exact at help t=6
+PASS original law/inputs exact at help t=10
+PASS free case relatched help
+PASS bounded finish hold duration=11.89157
+PASS settled actual session hold
+FINAL hold initial duration=11.89157 clearAt=Infinity state={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true}
+PASS original law/inputs exact at hold t=0
+PASS original law/inputs exact at hold t=2.5
+PASS original law/inputs exact at hold t=6
+PASS original law/inputs exact at hold t=10
+PASS free case relatched hold
+PASS bounded finish hook duration=14.64986
+PASS settled actual session hook
+FINAL hook initial duration=14.64986 clearAt=Infinity state={"angle":0.06316845118999481,"velocity":-0.04887283220887184,"rope":false,"hook":true,"bodyForce":false,"wedge":false,"latched":false}
+PASS original law/inputs exact at hook t=0
+PASS original law/inputs exact at hook t=2.5
+PASS original law/inputs exact at hook t=6
+PASS original law/inputs exact at hook t=10
+PASS hook remains released at closed window
+FINAL hook user-clear duration=14.73319 clearAt=14.64986 state={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true}
+PASS explicit clear then closes and relatches hook
+PASS bounded finish wedge duration=3.908357
+PASS settled actual session wedge
+FINAL wedge initial duration=3.908357 clearAt=Infinity state={"angle":35.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":true,"latched":false}
+PASS original law/inputs exact at wedge t=0
+PASS original law/inputs exact at wedge t=2.5
+PASS original law/inputs exact at wedge t=6
+PASS original law/inputs exact at wedge t=10
+PASS wedge intentionally held
+FINAL wedge user-clear duration=10.24993 clearAt=3.908357 state={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true}
+PASS explicit clear then closes and relatches wedge
+PASS bounded finish after duration=9.083281
+PASS settled actual session after
+FINAL after initial duration=9.083281 clearAt=Infinity state={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true}
+PASS original law/inputs exact at after t=0
+PASS original law/inputs exact at after t=2.5
+PASS original law/inputs exact at after t=6
+PASS original law/inputs exact at after t=10
+PASS free case relatched after
+PASS API model cycles do not unlock clip observations

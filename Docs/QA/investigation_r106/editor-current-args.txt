@@ -1,0 +1,14 @@
+D:\data_unity\6000.6.2f1\Editor\Unity.exe
+-projectpath
+D:\ConRoi
+-acceptSoftwareTermsForThisRunOnly
+-useHub
+-hubIPC
+-cloudEnvironment
+production
+-licensingIpc
+LicenseClient-kaito
+-hubSessionId
+[REDACTED]
+-accessToken
+[REDACTED]

@@ -1,0 +1,9 @@
+Deterministic state checks, not independent physical validation or player evidence. Units: degrees, seconds.
+Latched + force: closed.
+D alone releases latch, does not open leaf.
+Opened 80.16209°; no-force return/latch=7.4333s.
+D released, body still holds: angle=82, latch=False
+Contact holds against return; no closing through controller contact.
+Hook retains D; no force → closed but unlatched; remove hook → latched.
+Wedge leaves 35° opening; remove and return tested next.
+Open-before, release, move away/return after6s: angle before=0.9942312, latched=False, after renewed lean=55.09725. This window must not be ruled out by spring alone; compare event clip independently.

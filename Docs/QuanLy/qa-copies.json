@@ -1,0 +1,1827 @@
+[
+  {
+    "old": "Test/KetQua/investigation_r102/ASSET_SOURCES.md",
+    "new": "Docs/QA/investigation_r102/ASSET_SOURCES.md",
+    "sha256": "677f38a4d543550b5b444a2154a012954e22d691112d06b4c06c7505727804fd"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/blender-gates.json",
+    "new": "Docs/QA/investigation_r102/blender-gates.json",
+    "sha256": "39a6f9571c7b069f5dc2464ccbb54ff318f3b34d43be31181d9aecbebc82c8f7"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/blockers-response.json",
+    "new": "Docs/QA/investigation_r102/blockers-response.json",
+    "sha256": "e103a253ffb1c4e485ae51d107554b7c8a40fb8bcc173dfba7023559c0563369"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/camera-review-response.json",
+    "new": "Docs/QA/investigation_r102/camera-review-response.json",
+    "sha256": "1bb6c53aacc7f0299b1fd61d607d34d88a11680801c78f49e5d6c442cef70866"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/capture-fixed-live.txt",
+    "new": "Docs/QA/investigation_r102/capture-fixed-live.txt",
+    "sha256": "4dc9c50a59b07c80c11022a29360a79ec98857d6f775cc4431bd7f60290a6d4a"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/capture-fixed.json",
+    "new": "Docs/QA/investigation_r102/capture-fixed.json",
+    "sha256": "b280ad3f8cdca3fea524f3affeeb4d6397a545bf9b435d271eb3f2c3f0ff6fa2"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/cipher-ui-response.json",
+    "new": "Docs/QA/investigation_r102/cipher-ui-response.json",
+    "sha256": "848eeed7a30c69ad942c5d7313425a56b3cd5ce8597d09e01323937ccc28246d"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/cipher-ui-solved.txt",
+    "new": "Docs/QA/investigation_r102/cipher-ui-solved.txt",
+    "sha256": "053a8e04e3f19947bc5f44fd18c879a3c563e83c9a6a2ec5537660342caf3799"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/close-art-response.json",
+    "new": "Docs/QA/investigation_r102/close-art-response.json",
+    "sha256": "ab520872039cd2d1a524e0cebf4e5316c3bd2a768bba9cb69ba31834d443e572"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/collider-fix-response.json",
+    "new": "Docs/QA/investigation_r102/collider-fix-response.json",
+    "sha256": "9cf9d75995f6667bb5d0db5c86a1630e6d7a9917af81957b89d77418950d6a0a"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/collider-local-fix.txt",
+    "new": "Docs/QA/investigation_r102/collider-local-fix.txt",
+    "sha256": "04ff555d6678aeafed1b1377dc82d3003e632f690790a1a630cea45735a0af0d"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/conclusion-ui-confirm-response.json",
+    "new": "Docs/QA/investigation_r102/conclusion-ui-confirm-response.json",
+    "sha256": "94f54810dce21cb8f19489cbc3c3ecb4066a120bde50315bbbd03a7bd80ec43a"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/conclusion-ui-final.txt",
+    "new": "Docs/QA/investigation_r102/conclusion-ui-final.txt",
+    "sha256": "0ef7620daa88e3d1f93a264330154dd297d3a32cd7f6201d291c43f9b4cc6168"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/conclusion-ui-open-response.json",
+    "new": "Docs/QA/investigation_r102/conclusion-ui-open-response.json",
+    "sha256": "5b38d651771f05b0f4d727a36e2ed9110d42ac48826a1775dd892f8dc11c2199"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/conclusion-ui-save-response.json",
+    "new": "Docs/QA/investigation_r102/conclusion-ui-save-response.json",
+    "sha256": "fc3b0ad36b34fede1f6398de3c96dc26a6c3ca2aa84f2b44318b46a6707207e7"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/conclusion-ui-scroll-response.json",
+    "new": "Docs/QA/investigation_r102/conclusion-ui-scroll-response.json",
+    "sha256": "3b87150a0f7483377d1aad4e7ebad11450d83472fde9e83baacf29377943287b"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/delivery-manifest.json",
+    "new": "Docs/QA/investigation_r102/delivery-manifest.json",
+    "sha256": "737e5d13572b7b3a1ffee1f0bc36f8aec5718a67d030635c20bb8cb3a0b42f30"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/editor-preflight.txt",
+    "new": "Docs/QA/investigation_r102/editor-preflight.txt",
+    "sha256": "922394892409feb92bc589e5967feccfbce16b72611673549e478c73125948c5"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/evidence-manifest.json",
+    "new": "Docs/QA/investigation_r102/evidence-manifest.json",
+    "sha256": "0335a3bc2a8a8af288ceea110ede200f3ea2142a8513cdb014c82da9298bbae6"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/external-candidate.json",
+    "new": "Docs/QA/investigation_r102/external-candidate.json",
+    "sha256": "6d4189f60cf55215878b46c00af666e6058489f1feeddf9a8a82a013e633a53d"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/fbx-roundtrip.json",
+    "new": "Docs/QA/investigation_r102/fbx-roundtrip.json",
+    "sha256": "a9899c279fcf7a7b662e0d1a0074ec0679ecdf5f21adad7a3351add3309112a2"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/final-audit-response.json",
+    "new": "Docs/QA/investigation_r102/final-audit-response.json",
+    "sha256": "41b45c86e680ece0a5a4fec33dff7f6779ffcdd0c278ebbe141ad5ea0b34f22b"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/final-edit-check.txt",
+    "new": "Docs/QA/investigation_r102/final-edit-check.txt",
+    "sha256": "11038ffc32e18a312455a85d0567896320cb318065986daeb9821735a7f78025"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/final-edit-response.json",
+    "new": "Docs/QA/investigation_r102/final-edit-response.json",
+    "sha256": "93617e4ef4c97f66707a2e95914cbbca142c23f8af919498f28b75997740efdb"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/final-play-response.json",
+    "new": "Docs/QA/investigation_r102/final-play-response.json",
+    "sha256": "f9e8c311412ffe4c73a9aa5a55ff354203844497bca1815a6711ab0b552d38d5"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/final-reopen-before-play.txt",
+    "new": "Docs/QA/investigation_r102/final-reopen-before-play.txt",
+    "sha256": "48544e15364f9172b87e8c44ea100649100ebe7d8d03a135349cd1bee0d06f54"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/final-scene-audit.txt",
+    "new": "Docs/QA/investigation_r102/final-scene-audit.txt",
+    "sha256": "f10f771ab3de7c4e8f0bffd5bf849cc4abf30fa225aae6ce83eb6bf016d8cb4b"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/final-stop-response.json",
+    "new": "Docs/QA/investigation_r102/final-stop-response.json",
+    "sha256": "8348342782daa8572e7705c41b5490b9f57d46308d1068fb4607abe50b90511b"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/final-ui-open-response.json",
+    "new": "Docs/QA/investigation_r102/final-ui-open-response.json",
+    "sha256": "a8cb6d7a4505170e604f21823d2328e485b2f9c9855ac47c63fd9709ec0ffe76"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/final-window-response.json",
+    "new": "Docs/QA/investigation_r102/final-window-response.json",
+    "sha256": "af0728cea40794dd9c24e12c00531937d0e582e4a1646dc29990798dbed9069d"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/first-look-stop.json",
+    "new": "Docs/QA/investigation_r102/first-look-stop.json",
+    "sha256": "199cb43e0617fda8672edc57c95c7ff65d69bc05fdafc898777e90e1abdcd61d"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/headroom-integration-response.json",
+    "new": "Docs/QA/investigation_r102/headroom-integration-response.json",
+    "sha256": "4353beca7dfdc0c0ecd758cf45c643195c272b35b4aec9a69d5797db9e27439c"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/headroom-integration.txt",
+    "new": "Docs/QA/investigation_r102/headroom-integration.txt",
+    "sha256": "8d916bbdedf9024d9ba2171ef423e6f84df6a06560545386f531980a86f7e763"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/headroom-source.json",
+    "new": "Docs/QA/investigation_r102/headroom-source.json",
+    "sha256": "eafbf83551edbacfd253119a971eea8b475f8beee0a7441938516c0d15bdb770"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/illustration-final-response.json",
+    "new": "Docs/QA/investigation_r102/illustration-final-response.json",
+    "sha256": "022671954dacd9cb26e50681fe00e4daf8b65f5412f808114f4e4369a09d67bc"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/illustration-integration.txt",
+    "new": "Docs/QA/investigation_r102/illustration-integration.txt",
+    "sha256": "f80f1ce21492393005b97db6904f36fc371117c913b22853dfb25dd0168665f4"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/import-hierarchy.txt",
+    "new": "Docs/QA/investigation_r102/import-hierarchy.txt",
+    "sha256": "dd365e969b6a763c27f4fcabb9142a8738438d30d683312e765d4aa11c24e8f6"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/import-read-response.json",
+    "new": "Docs/QA/investigation_r102/import-read-response.json",
+    "sha256": "f18ae711a858c19f72f4dbcff6f53308c604d26b484d1d5bdab3c3c874e380d0"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/integration-response.json",
+    "new": "Docs/QA/investigation_r102/integration-response.json",
+    "sha256": "635c5629dea36a966e4ff7dffffdc79f203884e5d1c3e7837887afd6ec76a840"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/integration.txt",
+    "new": "Docs/QA/investigation_r102/integration.txt",
+    "sha256": "b34023ce8893b3bcefa907415c4f6ed9ab8079bcfeb3dcc4a8efd371c164196e"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/interaction-persistence-fix.txt",
+    "new": "Docs/QA/investigation_r102/interaction-persistence-fix.txt",
+    "sha256": "bfdaebdcb33a35cc921da95cc8bbc078ac2511fca9ed4df63117feebace4f7e1"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/interaction-read-response.json",
+    "new": "Docs/QA/investigation_r102/interaction-read-response.json",
+    "sha256": "250480bec343c5236cdbf421dc5a1430955df5c0d2204f798bd9bfaf63c712c7"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/legacy-heads-before-removal.txt",
+    "new": "Docs/QA/investigation_r102/legacy-heads-before-removal.txt",
+    "sha256": "85fdb6fffda05c48d6a421dc4386a62f0b8de65cda1ea0a7abe837f0552e79b3"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/legacy-puppet-path.txt",
+    "new": "Docs/QA/investigation_r102/legacy-puppet-path.txt",
+    "sha256": "639818a9309a46396977d60ceac2983bdf4557dd3ab2014965164dfcf33e817a"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/lifecycle-api-response.json",
+    "new": "Docs/QA/investigation_r102/lifecycle-api-response.json",
+    "sha256": "e38c718c99514a50b2589fe7b56bad5d6e2032e45fff505d96c496f2401159ef"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/lifecycle-api.txt",
+    "new": "Docs/QA/investigation_r102/lifecycle-api.txt",
+    "sha256": "cb4e055481cc667c155cc4b0e6b596afbe5852dfe26dfe0df2a34d9d29a955a9"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/lifecycle-final-response.json",
+    "new": "Docs/QA/investigation_r102/lifecycle-final-response.json",
+    "sha256": "008da88b47c18ec99c51c951f6935acc80b2698c69988cb022461656ae1db200"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/location-response.json",
+    "new": "Docs/QA/investigation_r102/location-response.json",
+    "sha256": "8f4fdb5281d6a1d0c6ef0a1bc45ffc7076f5b7eaaa311b1f66222b1660a15db6"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/location.txt",
+    "new": "Docs/QA/investigation_r102/location.txt",
+    "sha256": "430b1acfc51b8e103c0206971c132eec6e6a940325d25461d7fe33eebe1f2c23"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/loft-blockers-response.json",
+    "new": "Docs/QA/investigation_r102/loft-blockers-response.json",
+    "sha256": "fe75958eb0e05208ff0e42d6275044156b85cc96be5b191d6df0b30385b9e5df"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/mechanism-check-response.json",
+    "new": "Docs/QA/investigation_r102/mechanism-check-response.json",
+    "sha256": "0837d6c4d7052dd74afc1496744d45d0e7f02ebd86c6641cee98112313456722"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/mechanism-check.txt",
+    "new": "Docs/QA/investigation_r102/mechanism-check.txt",
+    "sha256": "bab802e5bb8ce16a0a3aafcbc3eb428546aa47a04b91f4697ec59e88ab9aa219"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/model-camera-response.json",
+    "new": "Docs/QA/investigation_r102/model-camera-response.json",
+    "sha256": "0ca7cdd26e71d6f37dde065ebc5c6f69bc6cdd8077a48aca2dd26a9acdeabb99"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/native-game-rect.json",
+    "new": "Docs/QA/investigation_r102/native-game-rect.json",
+    "sha256": "6a49d34672e339104818e7c444ce1714d0b7402424c76b9af26a0fd2c42ed730"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/persistence-fix-response.json",
+    "new": "Docs/QA/investigation_r102/persistence-fix-response.json",
+    "sha256": "cc6acf11ca722f1d57e53a3bc9eebbbe04837dae21b80b27ddae822f9b5e9250"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/play-final-ui-response.json",
+    "new": "Docs/QA/investigation_r102/play-final-ui-response.json",
+    "sha256": "b3d276616398ea1ba47d503b319027f8e81654e65e67766e3c3f61120cdc36b1"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/play-response.json",
+    "new": "Docs/QA/investigation_r102/play-response.json",
+    "sha256": "938988adaa8b24e840d26968bac73ee261491502beb26f43f9f2f9efd69cf754"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/play-route-headroom-response.json",
+    "new": "Docs/QA/investigation_r102/play-route-headroom-response.json",
+    "sha256": "f3431b413d83c052886c31658bd0325745be9a7ad5ca513f154179fa0ed134f1"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/play-route-response.json",
+    "new": "Docs/QA/investigation_r102/play-route-response.json",
+    "sha256": "2d97b57bd866892b6b506bd82e8a56207d8a427f49728c9194c838a9aa76a804"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/play-route2-response.json",
+    "new": "Docs/QA/investigation_r102/play-route2-response.json",
+    "sha256": "3ea0f6903d6b7d10aaff6611f99ed891152e4e43dfda7ad48ff6250da1238c38"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/play-route3-response.json",
+    "new": "Docs/QA/investigation_r102/play-route3-response.json",
+    "sha256": "015f3a4dc9bc95c0a3bc30b9a821f8dfaf127c2f337f9d5602eb3e13c5c1d434"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/play-route4-response.json",
+    "new": "Docs/QA/investigation_r102/play-route4-response.json",
+    "sha256": "75fbbfc47e2d04d72181be3559eb8b079ad9a8482b0a72422ecdda0e927ae255"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/play-route5-response.json",
+    "new": "Docs/QA/investigation_r102/play-route5-response.json",
+    "sha256": "0eca0c3abf22c61492c0dc4437bec14f0dfc9322871e3c5c30cb35c4d894075a"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/pose-bind-response.json",
+    "new": "Docs/QA/investigation_r102/pose-bind-response.json",
+    "sha256": "cc9135fc2702be2822a576fbd7de54b4a908efb6c54b065ac6fb936dc24b68d2"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/pose-bindings.txt",
+    "new": "Docs/QA/investigation_r102/pose-bindings.txt",
+    "sha256": "43ec7769edabd64a9d8c271290702c49ec38af113847ae82dd0dfe80c63b9a29"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/pose-library.json",
+    "new": "Docs/QA/investigation_r102/pose-library.json",
+    "sha256": "c60fa59e3ae4c235368f6b6ea715480b5ce8a943954873c44f15cd23afc71432"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/pose-matched-roundtrip.json",
+    "new": "Docs/QA/investigation_r102/pose-matched-roundtrip.json",
+    "sha256": "82509d6135faf20c8ce52bb01743964245a8169c340633f93cc708db80531a31"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/preflight-response.json",
+    "new": "Docs/QA/investigation_r102/preflight-response.json",
+    "sha256": "d8cfe1c4f61eb1ab3f86b6c088eeb323a074a2a85cdd7454c749b8dea7d93a21"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/preplay.txt",
+    "new": "Docs/QA/investigation_r102/preplay.txt",
+    "sha256": "a458780213b1fb650552ba15138008a9a3fc805bf26351da0e23859bae887215"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/read-only-r103-start-audit.json",
+    "new": "Docs/QA/investigation_r102/read-only-r103-start-audit.json",
+    "sha256": "9af300f3b2d072940d933fd663c9a7ae8db81a56bfc206c8ab439f803c47b20d"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/README.md",
+    "new": "Docs/QA/investigation_r102/README.md",
+    "sha256": "3a68059034ee406c9a3dc9cda70ab994a3b8276d2de27a6f7ad6ec6a931119d1"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/ready-play-response.json",
+    "new": "Docs/QA/investigation_r102/ready-play-response.json",
+    "sha256": "3c2cc66d0cb6d2be31bfa07c4451e431680fd58bf105d4b2f53b72967c9bfb2c"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/repair-tool-source.json",
+    "new": "Docs/QA/investigation_r102/repair-tool-source.json",
+    "sha256": "4a5bbb063d1d69839fad257573f25fdae89316e89532415e61efbca4dcddcd68"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/route-blocked-bench.txt",
+    "new": "Docs/QA/investigation_r102/route-blocked-bench.txt",
+    "sha256": "eae37614d49291e47183ad208551f9a42056ea369782c82aa0a1cc4fc8b47ed9"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/route-blocked-book.txt",
+    "new": "Docs/QA/investigation_r102/route-blocked-book.txt",
+    "sha256": "8458ea003d50d8b53d9139bf7b0a7b245ef1b40d0fd18ef49d1145927e4a5fa7"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/route-blocked-selfray.txt",
+    "new": "Docs/QA/investigation_r102/route-blocked-selfray.txt",
+    "sha256": "d9eac83dce3fb80f925139758eeae88afd59d25d7c5139e92d7ef686ee8e941c"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/route-final-segment1.txt",
+    "new": "Docs/QA/investigation_r102/route-final-segment1.txt",
+    "sha256": "f50a6a5e57040c3fa38594ed8d0aa0339ad5dbcbee61a9ccf6fa074b54da9d81"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/route-headroom-blocked.txt",
+    "new": "Docs/QA/investigation_r102/route-headroom-blocked.txt",
+    "sha256": "5cf1fb738d59de33221e1bd595f19c3712e5821c5b7e6c5337e88262e4196f27"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/route-motion.txt",
+    "new": "Docs/QA/investigation_r102/route-motion.txt",
+    "sha256": "450538addf0c15f7dc7b46186ada046c077ebb321d7fc03e7867ae0203f4d9be"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/route-progress.txt",
+    "new": "Docs/QA/investigation_r102/route-progress.txt",
+    "sha256": "ffb5f525b5ed2d8113d2269e23483013ba0252c315815bd0e820220e542f194b"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/route-response.json",
+    "new": "Docs/QA/investigation_r102/route-response.json",
+    "sha256": "c884f17478532fb1f49ecd90658e512dba20766e2175112e0f9025e2b8866a6f"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/source-reopen.json",
+    "new": "Docs/QA/investigation_r102/source-reopen.json",
+    "sha256": "7928b885b7b8cfdab9c69ba4c388714457f213ff2d5c79a19d200bc6914d54a5"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/stage-refine-response.json",
+    "new": "Docs/QA/investigation_r102/stage-refine-response.json",
+    "sha256": "8747d9319338b86d77c255fd8bb66a800eff60a22a2f436acce13520ce52957a"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/stop-before-route-response.json",
+    "new": "Docs/QA/investigation_r102/stop-before-route-response.json",
+    "sha256": "0063d26ad0bd0a7af0f93896d337920176a528a32812dae1e4ad4e0e0581c70f"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/stop-collider-fix-response.json",
+    "new": "Docs/QA/investigation_r102/stop-collider-fix-response.json",
+    "sha256": "b35e553f9592660f3a1e8c19b5385e2a7144baac54ffe524370af49ac97df755"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/stop-final-scopefix-response.json",
+    "new": "Docs/QA/investigation_r102/stop-final-scopefix-response.json",
+    "sha256": "612b11bb5b102ab09925aa388fc7581e5eaf9ade1d2d55c75a6960777f91e7c0"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/stop-headroom-response.json",
+    "new": "Docs/QA/investigation_r102/stop-headroom-response.json",
+    "sha256": "e669167a2afe3bf74fe3d185cc6aee310fa99036d3d100d85d54a97650c802d4"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/stop-route2-response.json",
+    "new": "Docs/QA/investigation_r102/stop-route2-response.json",
+    "sha256": "337779d8fabb21c13c416197b987424755ac954bccc3c9ae50ef47abfb6b3c0c"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/stop-selfray-response.json",
+    "new": "Docs/QA/investigation_r102/stop-selfray-response.json",
+    "sha256": "f57afc378326330e412421f32dc36a1ff56ff5739ff9e898662fd5cb536a1f56"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/ui-cipher-probe.txt",
+    "new": "Docs/QA/investigation_r102/ui-cipher-probe.txt",
+    "sha256": "9d942d6a9871db5c64d4a8b9c978cb78f32909c9a923ba7969dc2b83b5c8e860"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/ui-cipher-response.json",
+    "new": "Docs/QA/investigation_r102/ui-cipher-response.json",
+    "sha256": "828e600b0341c14c8f3e82c454a16981ab9bfac78cd11c22bb2864718e191a1e"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/ui-click-probe.txt",
+    "new": "Docs/QA/investigation_r102/ui-click-probe.txt",
+    "sha256": "5b60eda55f3461b78f8f6872be3b85e5ed8401a08226c149045fc78d42b49828"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/ui-click-response.json",
+    "new": "Docs/QA/investigation_r102/ui-click-response.json",
+    "sha256": "9aeca4f8129c3601faae6f6576dea4656bec5b6609f6c41028c1b0fc25a9d33e"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/ui-input-check.txt",
+    "new": "Docs/QA/investigation_r102/ui-input-check.txt",
+    "sha256": "71c556d3acf3b269108c799f1de00c838b5d6962e63c6c3746c5c319eaf67488"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/ui-input-final-response.json",
+    "new": "Docs/QA/investigation_r102/ui-input-final-response.json",
+    "sha256": "27f4fb206e8ce5c3cfd14111b9ec5a387cd858dd16457ad04270db9210f4409a"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/ui-input-final.txt",
+    "new": "Docs/QA/investigation_r102/ui-input-final.txt",
+    "sha256": "189dd45066cad3d48db05faaf6858d616d157e340eba2db15b62b5c781517210"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/ui-input-response.json",
+    "new": "Docs/QA/investigation_r102/ui-input-response.json",
+    "sha256": "d0375ce370c03c6fc9d823c00a3fa91a39a9d56da43a14b6d5fd96c160422198"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/visual-capture-final-live.txt",
+    "new": "Docs/QA/investigation_r102/visual-capture-final-live.txt",
+    "sha256": "d8164e2b2053defacf5eaba8416113c861218e48940c59a6e0e79ed2eb897877"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/visual-capture-final-log.txt",
+    "new": "Docs/QA/investigation_r102/visual-capture-final-log.txt",
+    "sha256": "c3eb3737cbb6a4d543565a0b25d97320d7abc6e73b28fa531b8a6601ac921afd"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/visual-capture-final.json",
+    "new": "Docs/QA/investigation_r102/visual-capture-final.json",
+    "sha256": "188d81fcabcfb47d12fa2f3a7f00d7595fa6c387aebe0bd384524f26f3813088"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/visual-capture-log.txt",
+    "new": "Docs/QA/investigation_r102/visual-capture-log.txt",
+    "sha256": "50d7eab6a4d1c654d4fe97f06fcf2e03850b72ccfb1b9e1a6232f98acf594404"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/visual-capture.json",
+    "new": "Docs/QA/investigation_r102/visual-capture.json",
+    "sha256": "7d2983393ed6281dc86b56c6e900432af7385ddca2c5026f8ad7c0e0dfec096c"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/visual-final-response.json",
+    "new": "Docs/QA/investigation_r102/visual-final-response.json",
+    "sha256": "fb46401a42b7a4ba8ee215eee7f639e3983836a3aa32c34af6bfb2b958594144"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/visual-playback-final-response.json",
+    "new": "Docs/QA/investigation_r102/visual-playback-final-response.json",
+    "sha256": "e0c25eed1164ec9d1145594adff97fb40eb4df4f4e475d7665c8d766fd7bf969"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/visual-playback-response.json",
+    "new": "Docs/QA/investigation_r102/visual-playback-response.json",
+    "sha256": "ef0e8ae52bad0ec4005d51eaf97200237090a659ae9555be1935415923d86e0f"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/visual-playback.txt",
+    "new": "Docs/QA/investigation_r102/visual-playback.txt",
+    "sha256": "c863cd0283af21077d822281c9fbaa012308b6912f10f7293e00495019ebe434"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/window-final-response.json",
+    "new": "Docs/QA/investigation_r102/window-final-response.json",
+    "sha256": "18cdf8a0c4157966b22685ca8c17cea5472f609b48ff58af6ce1bc7283de0e12"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/window-reopen-response.json",
+    "new": "Docs/QA/investigation_r102/window-reopen-response.json",
+    "sha256": "e8d1254580b4403b1471785b46ef77518fa947533753b033c90bfae0d88d50ec"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/window-response.json",
+    "new": "Docs/QA/investigation_r102/window-response.json",
+    "sha256": "d6edc59796ce077557615ff41859636bd3164520e84cffa9fe3d7290b4be6fd8"
+  },
+  {
+    "old": "Test/KetQua/investigation_r102/workshop-placement.txt",
+    "new": "Docs/QA/investigation_r102/workshop-placement.txt",
+    "sha256": "bfdd464d4c16aed66d16f3929b1fb13ae7158bb608e811e082704f2bb457a99f"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/ASSET_SOURCES.md",
+    "new": "Docs/QA/investigation_r103/ASSET_SOURCES.md",
+    "sha256": "44f9c95a43fe008b7714bc1d268b487c453fb915bb322fd4d601382024aca070"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/CHECKLIST.md",
+    "new": "Docs/QA/investigation_r103/CHECKLIST.md",
+    "sha256": "7dcaa2b8f748d799cad546b37fedaad26a82bc7527760be78543ff5962c53ca8"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/click-probe-response.json",
+    "new": "Docs/QA/investigation_r103/click-probe-response.json",
+    "sha256": "ba1190485166597902c80b6b5f560566f3d2f703c73230f372ba66f0e34fe246"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/click-probe.txt",
+    "new": "Docs/QA/investigation_r103/click-probe.txt",
+    "sha256": "a34f63c94ba32e5229cc5d03c09eb62ab7e9c781b642647d9aabf4486f6942e6"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/clip-animation-source.json",
+    "new": "Docs/QA/investigation_r103/clip-animation-source.json",
+    "sha256": "90a49db0ab780e38a772d41d1160ddefc2c8c7ce17cb8cd179fe49086d75c216"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/clip-controls-response.json",
+    "new": "Docs/QA/investigation_r103/clip-controls-response.json",
+    "sha256": "0ab278449f7f63060dfe3b1c5f63a4287c04845d088014f3060d4cd5ee22efad"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/clip-controls-ui.txt",
+    "new": "Docs/QA/investigation_r103/clip-controls-ui.txt",
+    "sha256": "fee15a152dee5db5023ee033d2573b5b3d89c41bac8cb038a52d0e1af8f74d12"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/conclude-final-response.json",
+    "new": "Docs/QA/investigation_r103/conclude-final-response.json",
+    "sha256": "445f404c01d04ac783265b04d54faebc10c56f23cf27b88e372b9f4411c86205"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/conclude-response.json",
+    "new": "Docs/QA/investigation_r103/conclude-response.json",
+    "sha256": "28c891b7ab110dce8420fb80f0e859c17a524d1ecd2b9cc1df0a24966926c8cc"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/conclusion-ui.txt",
+    "new": "Docs/QA/investigation_r103/conclusion-ui.txt",
+    "sha256": "206d39508ba98fe0ab3fc159c349d6c65404dd968abf5b53c60112e325c1968e"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/controller-capture-blocked-hook.json",
+    "new": "Docs/QA/investigation_r103/controller-capture-blocked-hook.json",
+    "sha256": "da55f0d4178be26f349b1c0290e691487502409483af7f02a31e519584762d88"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/controller-capture-final.json",
+    "new": "Docs/QA/investigation_r103/controller-capture-final.json",
+    "sha256": "00930e8c8fbe7d95657ec97de39d2f32ebd2063ed4d75e505b2ab65ff675f473"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/controller-capture-live.txt",
+    "new": "Docs/QA/investigation_r103/controller-capture-live.txt",
+    "sha256": "6e6ee9fc3571af6051356f8ab6cd9e6fdc93ac0e88cd5641ae1f626479d3aa61"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/controller-capture.json",
+    "new": "Docs/QA/investigation_r103/controller-capture.json",
+    "sha256": "da55f0d4178be26f349b1c0290e691487502409483af7f02a31e519584762d88"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/delivery-manifest.json",
+    "new": "Docs/QA/investigation_r103/delivery-manifest.json",
+    "sha256": "4dc1ca728a49144751209097fb46c157cc5d45dfba3a09e538ef376893e8a869"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/editor-open-response.json",
+    "new": "Docs/QA/investigation_r103/editor-open-response.json",
+    "sha256": "9784915ddbb75753916f16104aa4ac62bb580c3c38527b8af88331fbd8f1d7a4"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/editor-open.txt",
+    "new": "Docs/QA/investigation_r103/editor-open.txt",
+    "sha256": "56bc7901c44a42285080a5b68a0de9e5c681c831d19bf41bbfbf9560ee17bf6b"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/evidence-export.json",
+    "new": "Docs/QA/investigation_r103/evidence-export.json",
+    "sha256": "fd2a3ca5f7d698cea487f8197dc95596c4c67e6cb35315072ba21d4bcc588355"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/evidence-manifest.json",
+    "new": "Docs/QA/investigation_r103/evidence-manifest.json",
+    "sha256": "befb2cd0d98587688eb655f3a697d7aa110ef464f1c00b6746bb77080b66be70"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/evidence-source.json",
+    "new": "Docs/QA/investigation_r103/evidence-source.json",
+    "sha256": "f0eedf739ac9f67330e9178ef4841b5f49601d44efa755ef6b52b5354b91c4c2"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/final-audit-response.json",
+    "new": "Docs/QA/investigation_r103/final-audit-response.json",
+    "sha256": "3b84a759de4212826c33d82d0342a0dc06248ee24f9fcfee3849c55af3cff81a"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/final-camera-response.json",
+    "new": "Docs/QA/investigation_r103/final-camera-response.json",
+    "sha256": "8c5b0bb244da87dc598a8c34733f476063a92b9f8484094e01d0fe12b1cade08"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/final-scene-audit.txt",
+    "new": "Docs/QA/investigation_r103/final-scene-audit.txt",
+    "sha256": "43fe45768f5b276e9ae0476804672d2352e68b871d590d49bbfe9e0cafc97032"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/hook-collider-response.json",
+    "new": "Docs/QA/investigation_r103/hook-collider-response.json",
+    "sha256": "85c95c06d1929cdcf8f97de57b1a08287f79ce606f89edc5489c003a56992e28"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/hook-collider.txt",
+    "new": "Docs/QA/investigation_r103/hook-collider.txt",
+    "sha256": "c46fc9dd50355287664331347476e0fb75400b517567ab0e0c8130691addb006"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/hook-stop-response.json",
+    "new": "Docs/QA/investigation_r103/hook-stop-response.json",
+    "sha256": "ef66045c01686487b2e90cacf78bb478f91c063e7c73862d53251e264b20d6ff"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/input-edges-focus-failed.txt",
+    "new": "Docs/QA/investigation_r103/input-edges-focus-failed.txt",
+    "sha256": "a662f7c879aac2e8c6f149f4587fe9986797551a4510ccb387cf42d406cfbf43"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/input-edges-response.json",
+    "new": "Docs/QA/investigation_r103/input-edges-response.json",
+    "sha256": "f7c434af1186d7f0dd7ca3fbd6bfa2a0d89364939e78db6a4f1f9fafc5df1561"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/input-edges.txt",
+    "new": "Docs/QA/investigation_r103/input-edges.txt",
+    "sha256": "0b53be1bb4bc7f6f3b6061184c4ebddaed1b051d8aa0def9ff7bf9e863bf638f"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/input-settings-response.json",
+    "new": "Docs/QA/investigation_r103/input-settings-response.json",
+    "sha256": "cf5aeedd4d53fae84a7400ca764a186e53691e6162aa248ba61deb7745630ce0"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/inspection-stop-response.json",
+    "new": "Docs/QA/investigation_r103/inspection-stop-response.json",
+    "sha256": "e40b6315e6538c5d4ebf5c9f916f7558b8ac5cd213607403ca0d7ef86f2d98d1"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/integration-response.json",
+    "new": "Docs/QA/investigation_r103/integration-response.json",
+    "sha256": "ce463ea1cfa1d3c150ec299c80146524b28313c17892638d8bd5a48c1f773b81"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/integration.txt",
+    "new": "Docs/QA/investigation_r103/integration.txt",
+    "sha256": "0a25c920c88f8e7852079dc380dafd92714ea8cd111028032c0fd2626aa763b7"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/isolation.json",
+    "new": "Docs/QA/investigation_r103/isolation.json",
+    "sha256": "3acfd2ef310ee2657255f4b8b4acbb5a4f11ea55bb5accea3aacca04ef894f9b"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/label-export.json",
+    "new": "Docs/QA/investigation_r103/label-export.json",
+    "sha256": "5204edff1f1817bf17504a470042df43a227b0839f8a775a13462f90c0556842"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/label-fix-stop.json",
+    "new": "Docs/QA/investigation_r103/label-fix-stop.json",
+    "sha256": "0a6d85df209fe5d4b38430a1d010574ba6a5718de6433ae02cbdd16b3c9f77da"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/label-fixture-response.json",
+    "new": "Docs/QA/investigation_r103/label-fixture-response.json",
+    "sha256": "22a470b7282fbae709180bbaba4217d40a75b280cd140d2cb8901810f47433ae"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/legacy-heads-before-removal.txt",
+    "new": "Docs/QA/investigation_r103/legacy-heads-before-removal.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/lifecycle-api.txt",
+    "new": "Docs/QA/investigation_r103/lifecycle-api.txt",
+    "sha256": "cb4e055481cc667c155cc4b0e6b596afbe5852dfe26dfe0df2a34d9d29a955a9"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/lifecycle-response.json",
+    "new": "Docs/QA/investigation_r103/lifecycle-response.json",
+    "sha256": "4330beb354463647b5351e9ade018571f85fa6fabdb7ab888ee040bba3465339"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/load-ui-response.json",
+    "new": "Docs/QA/investigation_r103/load-ui-response.json",
+    "sha256": "2430b4a7deeb82d272965ef21fc3795a8f589ffa98d7df941e5b0b3939688c61"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/mechanism-check.txt",
+    "new": "Docs/QA/investigation_r103/mechanism-check.txt",
+    "sha256": "bab802e5bb8ce16a0a3aafcbc3eb428546aa47a04b91f4697ec59e88ab9aa219"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/mechanism-response.json",
+    "new": "Docs/QA/investigation_r103/mechanism-response.json",
+    "sha256": "e59446acdfbf4e0901714121d74fd53d7a53ecf09937904c742fe79175bd7def"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/mechanism-source.json",
+    "new": "Docs/QA/investigation_r103/mechanism-source.json",
+    "sha256": "1e863ce58c46fdd236d3d814f1e6870979f9eaf9b169e916a3f2f818965a3510"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/native-pause-response.json",
+    "new": "Docs/QA/investigation_r103/native-pause-response.json",
+    "sha256": "09d3cfc4a75f74cf474b5fddf89660de60cbda974d9f8d005bb29b37d38863d9"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/native-pause.txt",
+    "new": "Docs/QA/investigation_r103/native-pause.txt",
+    "sha256": "16be0ae44a76b2e511bb4c3843bd0b48158ce00b522ac558f0d1e17fdbda62a7"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/native-resume-response.json",
+    "new": "Docs/QA/investigation_r103/native-resume-response.json",
+    "sha256": "8ddd8cf086c41666ad47aece8345bad0e0d0592b0978a4583494a42bafcbb4b5"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/native-ui-response.json",
+    "new": "Docs/QA/investigation_r103/native-ui-response.json",
+    "sha256": "087b813a6da3dbe8cd5d85fbb0dbfb0890658da1c3e7ee043a07b98101dcf9b7"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/open-conclusion-native.json",
+    "new": "Docs/QA/investigation_r103/open-conclusion-native.json",
+    "sha256": "0bed71cee399b526c33ddad3287061d647b5340f45c8824083767a65817b1caf"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/playback-response.json",
+    "new": "Docs/QA/investigation_r103/playback-response.json",
+    "sha256": "832b5f6571b093579379a56349376876667280c9e5a208695809d63d8891652c"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/PLAYTEST_NGUOI_MOI.md",
+    "new": "Docs/QA/investigation_r103/PLAYTEST_NGUOI_MOI.md",
+    "sha256": "46061de3d4158fbcdf4c3979a0ed00a7dc7a751a8de09a58affe49b13b67fc0a"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/pre-final-integrate-stop.json",
+    "new": "Docs/QA/investigation_r103/pre-final-integrate-stop.json",
+    "sha256": "af78df79d19f2beb542dc23b874bce386724f0f759409ee2f58ff239cca6fd0e"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/presentation-ui.txt",
+    "new": "Docs/QA/investigation_r103/presentation-ui.txt",
+    "sha256": "b8bf9cac352c27efad5dcc17aa6ccc4732105d99ead4b2c19e1723cf6d3f6aad"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/README.md",
+    "new": "Docs/QA/investigation_r103/README.md",
+    "sha256": "8ebfd34888d8906d8d09fcbf31604e16fae6c76bf97c966c43a072f6129b093e"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/ready-buttons.json",
+    "new": "Docs/QA/investigation_r103/ready-buttons.json",
+    "sha256": "52ef4106b56d5dc0f6329abb379f182e81864371ad1f6153c1248d0b14dc94fb"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/ready-capture-completion.json",
+    "new": "Docs/QA/investigation_r103/ready-capture-completion.json",
+    "sha256": "83a4cea53dbec4c286ac56e4b9805c9d1b7d80edb324e049cff22471f7f86435"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/ready-delivery.json",
+    "new": "Docs/QA/investigation_r103/ready-delivery.json",
+    "sha256": "3ec13e1ab5f81fc0a47cdc50b5baaad0f34803831d40bea86be34929d9cb6e88"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/ready-final-route.json",
+    "new": "Docs/QA/investigation_r103/ready-final-route.json",
+    "sha256": "4814d3fc2611d41589cf479f043896e9fbed568d077abc25e88303699c7b5325"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/ready-final.json",
+    "new": "Docs/QA/investigation_r103/ready-final.json",
+    "sha256": "615f2486152b36db216cb2e61d54d1ea867ef66a0ca91fa817820b0a657eb6f3"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/ready-presentation.json",
+    "new": "Docs/QA/investigation_r103/ready-presentation.json",
+    "sha256": "0a6325072410332cdf289439cf807d4b97c432ffc29e64e9a0b06b4ab092f704"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/ready-prompt.json",
+    "new": "Docs/QA/investigation_r103/ready-prompt.json",
+    "sha256": "ecbd7e3faeac294f301b73df5a72aed5eab51649678255923b369b72575affcb"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/ready-response.json",
+    "new": "Docs/QA/investigation_r103/ready-response.json",
+    "sha256": "71ff2ff220629eef244015507775ef441e9d414eb457e723336a48c7a8316646"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/reopen-references.txt",
+    "new": "Docs/QA/investigation_r103/reopen-references.txt",
+    "sha256": "7b4cae538e3cff9f6e5fff26cd7b6cf01bcc3be40c7f5cf1eeb77b3319fc5701"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/reopen-response.json",
+    "new": "Docs/QA/investigation_r103/reopen-response.json",
+    "sha256": "224a7ace2fde161e1f1828e59f5e9c1549d09cdd366e5efe1a82313db13b1dd8"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/results-manifest.json",
+    "new": "Docs/QA/investigation_r103/results-manifest.json",
+    "sha256": "f1c8fa16afa90be4f42f6e564b09e2c0a749626e109ab6dda81a58ddcab6b066"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/review-response.json",
+    "new": "Docs/QA/investigation_r103/review-response.json",
+    "sha256": "2f5aca1774f7a46f13f7cfd4dbe990e32b3a3d3c9e04b11edc1fc72790911821"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/route-final-response.json",
+    "new": "Docs/QA/investigation_r103/route-final-response.json",
+    "sha256": "d20dc985cbc0c057b4b6731d0ef1783d5dbdb53e77234b4d391eb1e76b5dd686"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/route-motion-blocked-hook.txt",
+    "new": "Docs/QA/investigation_r103/route-motion-blocked-hook.txt",
+    "sha256": "3d4cfe996f5815cf478c61b6d7210d8d380935b8d46e51093c680a7160ee23c6"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/route-motion.txt",
+    "new": "Docs/QA/investigation_r103/route-motion.txt",
+    "sha256": "e6379ade47ef1e6d4a89e9a347b30c7b4698a583bdcaeab284e03b16139c2562"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/route-play-response.json",
+    "new": "Docs/QA/investigation_r103/route-play-response.json",
+    "sha256": "1549be091166274b44ad367211c975d86b268f9a2dec099e83c9affae559934f"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/route-progress.txt",
+    "new": "Docs/QA/investigation_r103/route-progress.txt",
+    "sha256": "739d5ab5154402acbd21550efe3e13493a85bfe5ed4dc21558070398f08f971f"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/route-response.json",
+    "new": "Docs/QA/investigation_r103/route-response.json",
+    "sha256": "ec311fbd39b52c4254786f8e063b3d33bfdd4707ea8b38d4f17ef6c0c96cf326"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/route-window-response.json",
+    "new": "Docs/QA/investigation_r103/route-window-response.json",
+    "sha256": "67384d46429dcc06886ac886e8c6fac3ebabdeb91cdcfcab3fd084cd9305e947"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/screen-probe-response.json",
+    "new": "Docs/QA/investigation_r103/screen-probe-response.json",
+    "sha256": "557d7d3355e825681b6627637f44a11c3a18bb5222f6ce4ab986567b73588663"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/screen720-probe-response.json",
+    "new": "Docs/QA/investigation_r103/screen720-probe-response.json",
+    "sha256": "e5ad419522d92792b2aeef07f95942b4ab6e558c44f5756ac2b355d910e33067"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/sole-final.json",
+    "new": "Docs/QA/investigation_r103/sole-final.json",
+    "sha256": "0aea397ba91a977a93a0acba05625127d8c521dac924beb26830e7e2daa75623"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/sole-probe.json",
+    "new": "Docs/QA/investigation_r103/sole-probe.json",
+    "sha256": "daa2762bc1b8f28de0e30d6eac555977c0542d4b050732da679135989868aca8"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/stable-stop.json",
+    "new": "Docs/QA/investigation_r103/stable-stop.json",
+    "sha256": "d327ef04689884e8d8602cd7a2b6bb0ad77222a0b0afee1012506a4c246fadda"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/stage-view-response.json",
+    "new": "Docs/QA/investigation_r103/stage-view-response.json",
+    "sha256": "b333381883aa594c28f7e8bf99118efbf1e1f013b1d8d35d92c0e647dae22a06"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/stop-before-final-route.json",
+    "new": "Docs/QA/investigation_r103/stop-before-final-route.json",
+    "sha256": "b94df4d5b685dc121c31628c566cc9b633262d41dce891f2a913f5b3fd49a03e"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/stop-conclusion-layout.json",
+    "new": "Docs/QA/investigation_r103/stop-conclusion-layout.json",
+    "sha256": "4097c8e28532fdca3518c12c9fcecb9271f9eb0b2d5bbb117e838fd6d5f9bcf0"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/stop-delivery.json",
+    "new": "Docs/QA/investigation_r103/stop-delivery.json",
+    "sha256": "2d8a107f0ec4ae6f055042c75b46195eb3a357f8a2546d8e81af66a51045a986"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/stop-final-complete.json",
+    "new": "Docs/QA/investigation_r103/stop-final-complete.json",
+    "sha256": "ba00e837250ed4495fb4562f2aab654e74f8d5decdae86debee5cc809b9bba65"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/stop-final-prompt.json",
+    "new": "Docs/QA/investigation_r103/stop-final-prompt.json",
+    "sha256": "13355948c0245af88ae40b0c9db33468e3df4d726efad74d42ab478496df8f3d"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/stop-final-ui.json",
+    "new": "Docs/QA/investigation_r103/stop-final-ui.json",
+    "sha256": "9760ab2ac005c82609b3951af97da577c4dd19b425d82fcb6f4495e6be0263ca"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/stop-invalid-input.json",
+    "new": "Docs/QA/investigation_r103/stop-invalid-input.json",
+    "sha256": "7f8021df860ab146b3ed979371e54d3ac71ae58751c8dff85c05064b5be4fdc4"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/stop-layout.json",
+    "new": "Docs/QA/investigation_r103/stop-layout.json",
+    "sha256": "f36a5160cda6b1128b81cdbbef90d97e4ab78a034390ffcc614adcefb13f7761"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/ui-finish-response.json",
+    "new": "Docs/QA/investigation_r103/ui-finish-response.json",
+    "sha256": "eb9a076115fdd884dc540cb14366efafe84925f63d17c70a418c9e2de8dfaa53"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/ui-finish.txt",
+    "new": "Docs/QA/investigation_r103/ui-finish.txt",
+    "sha256": "50e464354975df872a27aa552be96b0b4a4f44d78f37d450084fba56f688d417"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/ui-fixture-save.json",
+    "new": "Docs/QA/investigation_r103/ui-fixture-save.json",
+    "sha256": "ee703f39c10147ea6f93213423af10577e4ad77d43dc2125b6c4ac17a408cd1b"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/ui-functional-response.json",
+    "new": "Docs/QA/investigation_r103/ui-functional-response.json",
+    "sha256": "22a1421ad814e6aa147982c921768bcc914098e6f4cc5cf73aac50f3c1e015aa"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/ui-functional.txt",
+    "new": "Docs/QA/investigation_r103/ui-functional.txt",
+    "sha256": "8146a2cf830c62ee4bb7d624cab421db1a0f509235a66631c5212dc9c5bc8388"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/ui-layout-response.json",
+    "new": "Docs/QA/investigation_r103/ui-layout-response.json",
+    "sha256": "75b2781ec655bc2916adedd369fc577b954fca140059b1b9e0438f1cff2a47a5"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/ui-layout.txt",
+    "new": "Docs/QA/investigation_r103/ui-layout.txt",
+    "sha256": "083f59a86bc40dbe9e984ac29635f9a17776dfe1322446c843f7431ca4a3ebcb"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/video-metadata.json",
+    "new": "Docs/QA/investigation_r103/video-metadata.json",
+    "sha256": "01dbda6ba0c0f40d581d4704f3f48e0894c43ee4814ff78b588a28e25f7ccc2b"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/VIDEO_INDEX.md",
+    "new": "Docs/QA/investigation_r103/VIDEO_INDEX.md",
+    "sha256": "9a9e9c5019677f96b7ca4310fd4b2ac084314d36df1d298dd68760b4cc20ef33"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/visual-view-response.json",
+    "new": "Docs/QA/investigation_r103/visual-view-response.json",
+    "sha256": "8e2ada89f30cf58eeff8a1fe3e2e4160caa678b6260a8f83097e220119c0c9d3"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/window-delivery.json",
+    "new": "Docs/QA/investigation_r103/window-delivery.json",
+    "sha256": "e44b0282206412ed3a8a3a41e198d279e83984bc97e02cb1743ad964bfe4e49a"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/window-final720.json",
+    "new": "Docs/QA/investigation_r103/window-final720.json",
+    "sha256": "0a1e1fb6a26c68683c58d22fc681e45ec02b7b3535a068cced0abb94134c3471"
+  },
+  {
+    "old": "Test/KetQua/investigation_r103/window720-response.json",
+    "new": "Docs/QA/investigation_r103/window720-response.json",
+    "sha256": "e85072fb0798aa95eed0c62593933f8ccad69e8dc600df52e20924264a1794c6"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/art-final-export.json",
+    "new": "Docs/QA/investigation_r104/art-final-export.json",
+    "sha256": "dc2e6641d55f789722578db56e8aed581cf7b9cd6f485e1804c3ac3dd7fd1a51"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/art-inspection.json",
+    "new": "Docs/QA/investigation_r104/art-inspection.json",
+    "sha256": "25c3b00a2c793bec4dd9a0a25f940f1e386c9d548a1cf841c789b7693cd59a06"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/art-integration-response.json",
+    "new": "Docs/QA/investigation_r104/art-integration-response.json",
+    "sha256": "680c968b0eef7a39d00c0d46fdfd53d5970eab47a020b894d5b1b91ea63998a2"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/art-integration.txt",
+    "new": "Docs/QA/investigation_r104/art-integration.txt",
+    "sha256": "ee00b26b76f6237330784fae753bd27d3bc397918f144aea9bd13561fe002bbb"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/art-source-export.json",
+    "new": "Docs/QA/investigation_r104/art-source-export.json",
+    "sha256": "f941426c901316fabf60d50145c2dc17a097f9dc6f9abbd5fa5c78a03ce9a60c"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/ASSET_SOURCES.md",
+    "new": "Docs/QA/investigation_r104/ASSET_SOURCES.md",
+    "sha256": "5c3993231daa90f5fb21e2b5c66a2bad9477f85ba028f58e7984f0b19121bc48"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/CHECKLIST.md",
+    "new": "Docs/QA/investigation_r104/CHECKLIST.md",
+    "sha256": "c58354eccde13c056307727fc3e91f96b073f0e994caff22530c5f41c2def693"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/clip-and-six-cases-final.mp4.json",
+    "new": "Docs/QA/investigation_r104/clip-and-six-cases-final.mp4.json",
+    "sha256": "aeb866e35fe4061d6a6d4e96f09619f5a2a3cabba1ce88295e2cb9aaad5cb81e"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/clip-and-six-cases.mp4.json",
+    "new": "Docs/QA/investigation_r104/clip-and-six-cases.mp4.json",
+    "sha256": "aeb866e35fe4061d6a6d4e96f09619f5a2a3cabba1ce88295e2cb9aaad5cb81e"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/clip-context.json",
+    "new": "Docs/QA/investigation_r104/clip-context.json",
+    "sha256": "dc549cf14b60dbd0a86c01bfa050383854c7283dca65378191c471bbbd88cbbe"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/conclusion-ui.txt",
+    "new": "Docs/QA/investigation_r104/conclusion-ui.txt",
+    "sha256": "206d39508ba98fe0ab3fc159c349d6c65404dd968abf5b53c60112e325c1968e"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/controller-response.json",
+    "new": "Docs/QA/investigation_r104/controller-response.json",
+    "sha256": "c62b3a015ac9d6dd5e8f4721c73782609d84eb2287b856b877dd2ef187f70ac0"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/controller-route.mp4.json",
+    "new": "Docs/QA/investigation_r104/controller-route.mp4.json",
+    "sha256": "40541931a22f5aa04a06006b465d82f312cb789c030275e9538103633097b181"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/cuff-source.json",
+    "new": "Docs/QA/investigation_r104/cuff-source.json",
+    "sha256": "48fa3fe0e975e59148d23e9ec1a4b3aad6d6dd186a261f9bdb82ecdec847239f"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/delivery-manifest.json",
+    "new": "Docs/QA/investigation_r104/delivery-manifest.json",
+    "sha256": "3351d27a7884f2ffc85e4db279839428f2ec9883a9513c9bd3ff1aa763de032b"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/editor-current.json",
+    "new": "Docs/QA/investigation_r104/editor-current.json",
+    "sha256": "94bb66c33c555dc1bbf8dd43fdc307e3b93dcc736a8eeffdfd656769bab5e4d6"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/evidence-manifest.json",
+    "new": "Docs/QA/investigation_r104/evidence-manifest.json",
+    "sha256": "e68ccba9bf6a6350f0c17785e2f54d7d7ec3fc6859e3725ae911c77b0f79c0c7"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/FAIL-presentation-coordinate.txt",
+    "new": "Docs/QA/investigation_r104/FAIL-presentation-coordinate.txt",
+    "sha256": "5723e6d23c85a217a82286d56e56e02985cea83746f8b4a1c3a9bf24f212651a"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/final-scene-audit.txt",
+    "new": "Docs/QA/investigation_r104/final-scene-audit.txt",
+    "sha256": "8a7c16af3926da4e3e7b5c4de31131f02a78dfe967fb687d4b893a8ae6427f31"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/final-support-response.json",
+    "new": "Docs/QA/investigation_r104/final-support-response.json",
+    "sha256": "ea9199faa4cf0aa1120b05217eba61c61ac3cc8dcbaaa7b797cbe3d49551bf6b"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/isolation.json",
+    "new": "Docs/QA/investigation_r104/isolation.json",
+    "sha256": "5919b9563501a20a704135fe6080735942a877560a18bc31373dd3d404df2a44"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/layout-response.json",
+    "new": "Docs/QA/investigation_r104/layout-response.json",
+    "sha256": "c617c7793f8017c61beee7bbcb9c3287f2c804a7fb566cb756523a343aca60a9"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/legacy-heads-before-removal.txt",
+    "new": "Docs/QA/investigation_r104/legacy-heads-before-removal.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/lifecycle.txt",
+    "new": "Docs/QA/investigation_r104/lifecycle.txt",
+    "sha256": "400cfc572ab55c1e628a85467b91c891a90ee04f2e34dc02988c55bd18678715"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/mechanism-check.txt",
+    "new": "Docs/QA/investigation_r104/mechanism-check.txt",
+    "sha256": "bab802e5bb8ce16a0a3aafcbc3eb428546aa47a04b91f4697ec59e88ab9aa219"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/mechanism-source-comparison.json",
+    "new": "Docs/QA/investigation_r104/mechanism-source-comparison.json",
+    "sha256": "a1a3619e80f3451cdda80578177473c89be9e513ecd6e0bdd4f4600a3cfb1461"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/operator-layer-fix.txt",
+    "new": "Docs/QA/investigation_r104/operator-layer-fix.txt",
+    "sha256": "c5d1cadde535e1165618c4ac01ff8acb9a27453483885b49036c39603d901704"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/operator-ui.txt",
+    "new": "Docs/QA/investigation_r104/operator-ui.txt",
+    "sha256": "83a9629b425b34d23449d94fedaf3d55ee5d6aa5bb4c7d5198257ba37a959bcd"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/play-final.json",
+    "new": "Docs/QA/investigation_r104/play-final.json",
+    "sha256": "d61b1e91f5791ec604e0d428e70b1dd071d12ed6f10e223b8cdfd279c1dc55c1"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/play-response.json",
+    "new": "Docs/QA/investigation_r104/play-response.json",
+    "sha256": "367e75ceb07692a3661da05a80929b9515798a095fe5655d17075cbe1cb3e180"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/PLAYTEST_NGUOI_MOI.md",
+    "new": "Docs/QA/investigation_r104/PLAYTEST_NGUOI_MOI.md",
+    "sha256": "e345c3503bddfddaff5fe1bc3c61ab54d77a869b5d8e9a930c5ba6070d8409a6"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/presentation-response-2.json",
+    "new": "Docs/QA/investigation_r104/presentation-response-2.json",
+    "sha256": "1d5bc7583a4a60357ed7da3ab43444f5b45e927c08006d05577e14dad13f8565"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/presentation-response.json",
+    "new": "Docs/QA/investigation_r104/presentation-response.json",
+    "sha256": "7b3e46aadd2cd8eef361050b7a676281b047c19ddf80e7437f43951ffd2a6402"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/presentation-ui.txt",
+    "new": "Docs/QA/investigation_r104/presentation-ui.txt",
+    "sha256": "4f0c3b5d5e1530c444d3126636ea12b6071f6a89183ff6a8eb6d8a3653779bc7"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/puppet-finish.json",
+    "new": "Docs/QA/investigation_r104/puppet-finish.json",
+    "sha256": "821723cfc36612c4e86a8f5f7e3f91f993e15036942e88bb73353a6cdbea214f"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/read-response.json",
+    "new": "Docs/QA/investigation_r104/read-response.json",
+    "sha256": "336119e82432a9b2c5b89c6cdba58bc1e14ee1fa86de23bdab803ed681449d1d"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/README.md",
+    "new": "Docs/QA/investigation_r104/README.md",
+    "sha256": "5aba4ecd29ce3c263144710bfcf693e25e2be01254ab9970df58e9e9d77084fa"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/repair-support-source.json",
+    "new": "Docs/QA/investigation_r104/repair-support-source.json",
+    "sha256": "fa2e1cc44e3405168465febb8935d8d3cb20d2a2e3d7a3fe5fe574d1dbcf2f29"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/results-manifest.json",
+    "new": "Docs/QA/investigation_r104/results-manifest.json",
+    "sha256": "717bfe821a2e99068576b10add5cb6b14aa081d425888b339dae2fe5b7e938db"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/review-ui-response.json",
+    "new": "Docs/QA/investigation_r104/review-ui-response.json",
+    "sha256": "0a8a83b5b9ca23f040db3cb27072e502c1dd56981167e02dd15bd1a035759a4d"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/route-motion.txt",
+    "new": "Docs/QA/investigation_r104/route-motion.txt",
+    "sha256": "377d2cd555db9336ba5ad7afed7abeab1aa6c3d597303d32fd4042f03aeb92aa"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/route-progress.txt",
+    "new": "Docs/QA/investigation_r104/route-progress.txt",
+    "sha256": "8d3308912ed3e570a1aabe2183b5f45a35ed1d4561f586242fcf8ddb66d47750"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/scene-inventory.txt",
+    "new": "Docs/QA/investigation_r104/scene-inventory.txt",
+    "sha256": "cd082154bed95fc309938603933f6fa98adb7a817e2fa0a9f283cdb2f885590d"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/screen-probe.json",
+    "new": "Docs/QA/investigation_r104/screen-probe.json",
+    "sha256": "c3cbff263ce2cfa7cfa79a9e10c2378c1a8642b551a28ba89cca8addbe1fa780"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/slider-direct-1080.mp4.json",
+    "new": "Docs/QA/investigation_r104/slider-direct-1080.mp4.json",
+    "sha256": "540eeb3d2ce2f5b3c7efb1699b026a2026cc0fa7e92d950e61d498f4efbe0889"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/slider-ui-1080.txt",
+    "new": "Docs/QA/investigation_r104/slider-ui-1080.txt",
+    "sha256": "af0a343386e31dee21a019a368d4ecf29952d63ed0dea8f128cc4074a2f59eb5"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/slider-ui.txt",
+    "new": "Docs/QA/investigation_r104/slider-ui.txt",
+    "sha256": "774d8242f9309f05010777fb0d6d14d145f2e496f099721cca78f328401b53ee"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/stop-review.json",
+    "new": "Docs/QA/investigation_r104/stop-review.json",
+    "sha256": "5632d7c33a9e21d03e76e2a3fb39e8556abf771a495988a333b7e29142c057ad"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/support-final.json",
+    "new": "Docs/QA/investigation_r104/support-final.json",
+    "sha256": "b33366625e6a393b9714affff57a00185e7b54e577b4ba5efa668e9cae4f17a6"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/ui-finish.txt",
+    "new": "Docs/QA/investigation_r104/ui-finish.txt",
+    "sha256": "50e464354975df872a27aa552be96b0b4a4f44d78f37d450084fba56f688d417"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/ui-functional.txt",
+    "new": "Docs/QA/investigation_r104/ui-functional.txt",
+    "sha256": "8146a2cf830c62ee4bb7d624cab421db1a0f509235a66631c5212dc9c5bc8388"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/ui-layout.txt",
+    "new": "Docs/QA/investigation_r104/ui-layout.txt",
+    "sha256": "1c0a27c50275c8552d3e4573e33b868cfbbc302a7863e51e7fb1e7abc4fa6bda"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/video-metadata.json",
+    "new": "Docs/QA/investigation_r104/video-metadata.json",
+    "sha256": "6fa01380ab996d2fb511b33385093ac218e8a30188c090009408010c69162516"
+  },
+  {
+    "old": "Test/KetQua/investigation_r104/VIDEO_INDEX.md",
+    "new": "Docs/QA/investigation_r104/VIDEO_INDEX.md",
+    "sha256": "c5317e0a1e2d6123e06550dd5c5a186be7ea6465f0fcbfd044c6c1c7fc80a12f"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/after-unity.txt",
+    "new": "Docs/QA/investigation_r105/after-unity.txt",
+    "sha256": "b9ef18d7150ad3eae2f67e7bd71ddce4679e772fd488ceb065494d338430b73c"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/ASSET_SOURCES.md",
+    "new": "Docs/QA/investigation_r105/ASSET_SOURCES.md",
+    "sha256": "116cd46e0c00ad2797352374a0342515ae06f357ab13158fea0f4704d2a228e6"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/baseline-source.json",
+    "new": "Docs/QA/investigation_r105/baseline-source.json",
+    "sha256": "868e23fa0d8b9fec8245a682f805979dcabd970407a8d19a0c9eb941b74def4b"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/baseline-unity.txt",
+    "new": "Docs/QA/investigation_r105/baseline-unity.txt",
+    "sha256": "04d6befcd9c035bb4ac75ac0b135bf1b5163fabc57670ec48347fe9341958ed3"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/CHECKLIST.md",
+    "new": "Docs/QA/investigation_r105/CHECKLIST.md",
+    "sha256": "ec9c14f42b941f226a918b0153d7647f57befcfcd54b6a438f1b1e2170531b6d"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/clip-and-six-cases-final.mp4.json",
+    "new": "Docs/QA/investigation_r105/clip-and-six-cases-final.mp4.json",
+    "sha256": "44b9daba927048ea434e81f4d5de0b8e4183a699a524d1357e8918e12f2539b3"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/delivery-manifest.json",
+    "new": "Docs/QA/investigation_r105/delivery-manifest.json",
+    "sha256": "b151dc8c5f53a49514327455d5f91b9beaf97c4f29e825957ac6bb75091b6acf"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/doc-corrections-before.json",
+    "new": "Docs/QA/investigation_r105/doc-corrections-before.json",
+    "sha256": "bc5595e4a9bd8f835c2c587211332a62f0be4f430f7d9569e9d64d195a27222c"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/doc-corrections-final.json",
+    "new": "Docs/QA/investigation_r105/doc-corrections-final.json",
+    "sha256": "b0cc2145219450866bebd87b12f01da6e8729c3308249a4acebd1722fd826479"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/event-binding-audit.txt",
+    "new": "Docs/QA/investigation_r105/event-binding-audit.txt",
+    "sha256": "99203d2fda51e15890d36bdd4e004f552a459473d71fe7cca10ea150489b0e5a"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/evidence-manifest.json",
+    "new": "Docs/QA/investigation_r105/evidence-manifest.json",
+    "sha256": "15eafb5c1f83a48d8338732634a34c35a2d090ab6bf7c185ceb6e946912aed76"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/FAIL-presentation-transition.txt",
+    "new": "Docs/QA/investigation_r105/FAIL-presentation-transition.txt",
+    "sha256": "2a11e288de6d06cd127ebc970158ca71c55355a80852fc3a2e0737ccf404b2bb"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/final-scene-audit.txt",
+    "new": "Docs/QA/investigation_r105/final-scene-audit.txt",
+    "sha256": "8976678eac4e5d22ee7896e45f028d289c89404346a4dc0c443aab0005166ecb"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/integration.txt",
+    "new": "Docs/QA/investigation_r105/integration.txt",
+    "sha256": "5dd0d9f26b5e2a96d2cb4187f230fa466421a108c7907571641a41ced2c75b90"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/isolation.json",
+    "new": "Docs/QA/investigation_r105/isolation.json",
+    "sha256": "5b1ee923f227be56dc952a7367f1d2e3dd3fe796033f4c4de0c823385263e400"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/lifecycle.txt",
+    "new": "Docs/QA/investigation_r105/lifecycle.txt",
+    "sha256": "720359cffcf4ad2c479cb1d53cfe6ffc1e69cbca19c99cb4fbe83215f1c22b8c"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/PLAYTEST_NGUOI_MOI.md",
+    "new": "Docs/QA/investigation_r105/PLAYTEST_NGUOI_MOI.md",
+    "sha256": "899ffc5e87b300374a808e65104c223759f873878680b703df8f3621fae42781"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/presentation-ui.txt",
+    "new": "Docs/QA/investigation_r105/presentation-ui.txt",
+    "sha256": "e8eaaaa114525c11d418679b6a39236bac0b3728dfefa373f8f9a180c97dde74"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/README.md",
+    "new": "Docs/QA/investigation_r105/README.md",
+    "sha256": "f271eb1361fe2201662dfe2cfcf282c62d605937857b3c5dcf8b36d174da4176"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/results-manifest.json",
+    "new": "Docs/QA/investigation_r105/results-manifest.json",
+    "sha256": "df8e43a7c5df65e9a066688d1330aa155ceaf960a2ca0d396f34814bdd8e3ce1"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/route-motion.txt",
+    "new": "Docs/QA/investigation_r105/route-motion.txt",
+    "sha256": "6a5fd3392b7c9ffa372099fb32322ff237e62d471aa5dc321ec3a4cda1357a6e"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/route-progress.txt",
+    "new": "Docs/QA/investigation_r105/route-progress.txt",
+    "sha256": "343fb18c6907e2de07b044d8325f4ad23025f0f03a04312a37945cac2de5ab27"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/shared-law-unchanged.txt",
+    "new": "Docs/QA/investigation_r105/shared-law-unchanged.txt",
+    "sha256": "f9f1003de3b40c465bcf1b1a148a77b45c23f3467e78a420efde25d2cf5e9e96"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/slider-ui-1080.txt",
+    "new": "Docs/QA/investigation_r105/slider-ui-1080.txt",
+    "sha256": "190ef69d4793a88d7a70472f73aceb3adaf2c28f46949dc7b72377f8d4e44cff"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/slider-ui-720.txt",
+    "new": "Docs/QA/investigation_r105/slider-ui-720.txt",
+    "sha256": "180af393aa3b73389ea1eee7580c9756afa1ef21cc18cc39d47789c9db42de20"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/source-final.json",
+    "new": "Docs/QA/investigation_r105/source-final.json",
+    "sha256": "14908cb5d1f47f9b91d6a429c06dd7f4eaf43adc7ddc9e2415ca5b848c459edc"
+  },
+  {
+    "old": "Test/KetQua/investigation_r105/VIDEO_INDEX.md",
+    "new": "Docs/QA/investigation_r105/VIDEO_INDEX.md",
+    "sha256": "ea79d2a67739db0a8cc6417d9d45790a9062b9d1946d2d186a79cd72e82204a8"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/baseline-r105.txt",
+    "new": "Docs/QA/investigation_r106/baseline-r105.txt",
+    "sha256": "da808445a7e30c80722c1bd8531255fc612aadf03761aec604099b1595c4958f"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/CHECKLIST.md",
+    "new": "Docs/QA/investigation_r106/CHECKLIST.md",
+    "sha256": "6c3151e278da5c6f8c9d61cc8b1f7a41a785787e80e4c44e872e645222fadc88"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/cycle-api.txt",
+    "new": "Docs/QA/investigation_r106/cycle-api.txt",
+    "sha256": "9eef03f76d7aebdc5e01d29a787920738e96de215b7aedc81cb722c36f810851"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/cycle-ui-final.txt",
+    "new": "Docs/QA/investigation_r106/cycle-ui-final.txt",
+    "sha256": "007ab8f6dceccecf082cee991ffd0416793fda01e0dc06a2cc4b8ebb616c236b"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/delivery-manifest.json",
+    "new": "Docs/QA/investigation_r106/delivery-manifest.json",
+    "sha256": "6f2b4af45ff72034c15efda91e9781516981f0ebd85f75cf1331965b97ae330d"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/editor-actual-args.txt",
+    "new": "Docs/QA/investigation_r106/editor-actual-args.txt",
+    "sha256": "e31abca0cdce482bf2611c51762e37c4caee80d951b89b236d878b2327b02807"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/editor-current-args.txt",
+    "new": "Docs/QA/investigation_r106/editor-current-args.txt",
+    "sha256": "6d0941fd1dcb0d709ae859ac9356c86ab79e1683f4ff7109a6f6844cd6a1a25e"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/event-binding-audit.txt",
+    "new": "Docs/QA/investigation_r106/event-binding-audit.txt",
+    "sha256": "99203d2fda51e15890d36bdd4e004f552a459473d71fe7cca10ea150489b0e5a"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/evidence-manifest.json",
+    "new": "Docs/QA/investigation_r106/evidence-manifest.json",
+    "sha256": "717a497024a3c36b126e0409053c8e101e388dfa3953b8cb220200cb96ff6756"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/FAIL-immediate-ui-assertion.txt",
+    "new": "Docs/QA/investigation_r106/FAIL-immediate-ui-assertion.txt",
+    "sha256": "8ff18d329cd0ce9f2d39e75acea98332499990428ea23a8aa9fbe9c38d6e14a1"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/FAIL-removal-check-timing.txt",
+    "new": "Docs/QA/investigation_r106/FAIL-removal-check-timing.txt",
+    "sha256": "cdc29331409d2824ff76f5cad7b25e54f5bc8b44d60fa43dd47e68961ff8edf5"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/final-scene-audit.txt",
+    "new": "Docs/QA/investigation_r106/final-scene-audit.txt",
+    "sha256": "82f00c5c6a22393543983cd71af7417f0bfa9c29ec3a040d8bed59eefc19c60c"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/HUONG_DAN_NGUOI_CHOI.md",
+    "new": "Docs/QA/investigation_r106/HUONG_DAN_NGUOI_CHOI.md",
+    "sha256": "4f807fc1c73a22821f21718feec7c78359e62404b6bbb3423035ba93130b792a"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/isolation.json",
+    "new": "Docs/QA/investigation_r106/isolation.json",
+    "sha256": "564b439537b48ef9fd5648b2a784bf9d492c6fdb2bd3174205188ad0b072c054"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/law-unchanged.txt",
+    "new": "Docs/QA/investigation_r106/law-unchanged.txt",
+    "sha256": "aa2a5fc900826a79a1cd387b586900c76f56aca70e510e4f796058b187d8a992"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/MAU_GHI_NHAN_PHIEN.md",
+    "new": "Docs/QA/investigation_r106/MAU_GHI_NHAN_PHIEN.md",
+    "sha256": "33be9be6c5a30780f003250d2da7b82de83f12a9a6567b70296034e6f65fb3d7"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/MAU_TONG_HOP_VAN_DE.md",
+    "new": "Docs/QA/investigation_r106/MAU_TONG_HOP_VAN_DE.md",
+    "sha256": "4a91cb438063edf4ef77d56d211c21310fb2f0bf7ff1ebbe06b0b232faec68f7"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/NGUOI_TO_CHUC.md",
+    "new": "Docs/QA/investigation_r106/NGUOI_TO_CHUC.md",
+    "sha256": "c0d7280d9553c09240a306a7833db87d70323c8330e38299ee239168b5f49f23"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/PLAYTEST_NGUOI_MOI.md",
+    "new": "Docs/QA/investigation_r106/PLAYTEST_NGUOI_MOI.md",
+    "sha256": "057987af499f79116aa8448dbca7cf585cf739e1bc741aa9abc06fd765d81002"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/README.md",
+    "new": "Docs/QA/investigation_r106/README.md",
+    "sha256": "a45e6ed5335b6ff16877dd274319d91a625264fe5824b3f8e856b4699c632a3b"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/regression-ui.txt",
+    "new": "Docs/QA/investigation_r106/regression-ui.txt",
+    "sha256": "ca68b9275dd0e08027bccdbe084fde99eccf3d2580f1dd4295a99f0d42230b3a"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/results-manifest.json",
+    "new": "Docs/QA/investigation_r106/results-manifest.json",
+    "sha256": "c6a921208e5acea9a58a4e271f2132f20670ac610e6cff71a35b05225140ad23"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/six-whole-cycles-final.mp4.json",
+    "new": "Docs/QA/investigation_r106/six-whole-cycles-final.mp4.json",
+    "sha256": "f77b82ea7f448a0c1946d9ccda01fb248b03e71e367decfe72763b72c8be0d1e"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/six-whole-cycles-ui.mp4.json",
+    "new": "Docs/QA/investigation_r106/six-whole-cycles-ui.mp4.json",
+    "sha256": "01f7f4490c11df56c182fb96b1406b8c27f4b0b3d4305730dac8f56447afbdab"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/SIX_CASES.md",
+    "new": "Docs/QA/investigation_r106/SIX_CASES.md",
+    "sha256": "903e8aceef0309c8ea4b4c650452353f1a45d0e7f417dde9f5366f5898133983"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/verification-summary.json",
+    "new": "Docs/QA/investigation_r106/verification-summary.json",
+    "sha256": "7a72d8fb116a8367542257cb6598e44f7aad5ff9e2a545f2441a5b31f8adfaee"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/video-metadata.txt",
+    "new": "Docs/QA/investigation_r106/video-metadata.txt",
+    "sha256": "e52776976a06b47e99675f92f599a869c9e81154475f10bcb2fbcce31784573b"
+  },
+  {
+    "old": "Test/KetQua/investigation_r106/VIDEO_INDEX.md",
+    "new": "Docs/QA/investigation_r106/VIDEO_INDEX.md",
+    "sha256": "44e1164fa8029007cd0ec74e3e9caa35a7a9b90a9a12a1689e75d48ccec69977"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/adjacent-triangle-probe.txt",
+    "new": "Docs/QA/investigation_r107/adjacent-triangle-probe.txt",
+    "sha256": "e78a29e0414555fdcc384104715f312a399fb0c0cf9674ef682f8d6871f08b6a"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/ASSET_SOURCES.md",
+    "new": "Docs/QA/investigation_r107/ASSET_SOURCES.md",
+    "sha256": "aca95c2e244737c429e58646b0859d2939e54d77e33764b9658b249b8c715da5"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/baseline-runtime.txt",
+    "new": "Docs/QA/investigation_r107/baseline-runtime.txt",
+    "sha256": "ab9df5a347b4183201faae0def8eed51804881bfdab21de673bec7a368c5a79d"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/blender-source-audit.json",
+    "new": "Docs/QA/investigation_r107/blender-source-audit.json",
+    "sha256": "99d74fdb232b38d3c8c78485c0bc57f43464cde52b46b6304e2fb951e6b330ec"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/CHECKLIST.md",
+    "new": "Docs/QA/investigation_r107/CHECKLIST.md",
+    "sha256": "88e7bdf5d0cdcf61b360bdefa88c9c78e5cb1cb521affa3a2e483edc3124906a"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/checkpoint-reference-comparison.json",
+    "new": "Docs/QA/investigation_r107/checkpoint-reference-comparison.json",
+    "sha256": "82d9fe3c86ba700cb68ac7ce018b35e54d8d67bfb76bbfdea3d4e553bf3f7417"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/comparison-views-final.txt",
+    "new": "Docs/QA/investigation_r107/comparison-views-final.txt",
+    "sha256": "84a1a54d0dfd5f07df61c55388d13b1304f3114a7eaf6ca5ea25c7e6c056491f"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/comparison-views.txt",
+    "new": "Docs/QA/investigation_r107/comparison-views.txt",
+    "sha256": "84a1a54d0dfd5f07df61c55388d13b1304f3114a7eaf6ca5ea25c7e6c056491f"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/edge-pixel-rays.txt",
+    "new": "Docs/QA/investigation_r107/edge-pixel-rays.txt",
+    "sha256": "5eb34573a80823d659f22014b70f680788918b62846b0cc74d1deaff1396d738"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/evidence-index.json",
+    "new": "Docs/QA/investigation_r107/evidence-index.json",
+    "sha256": "3d042c1a3905c6f684a396b0e627305d5c344d5c8bd298354c62c9dbfcd0c03d"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/FEEDBACK.md",
+    "new": "Docs/QA/investigation_r107/FEEDBACK.md",
+    "sha256": "381a8d7bbe567c95edd65202df7deba30bcbce80c7f9101956673d1a8fb5daf7"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/final-live-audit.txt",
+    "new": "Docs/QA/investigation_r107/final-live-audit.txt",
+    "sha256": "29a172b71540e649034eeb2ef8c8c7224b9b696760c68727866a3da5bc4639a1"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/final-video-metadata.json",
+    "new": "Docs/QA/investigation_r107/final-video-metadata.json",
+    "sha256": "4462316663efa0e8cfc89d515b76dba1f1bf90083776d4967b58c3bd461e294d"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/HUONG_DAN_NGUOI_CHOI.md",
+    "new": "Docs/QA/investigation_r107/HUONG_DAN_NGUOI_CHOI.md",
+    "sha256": "7806f00df5b1f612304d288eb0634086f92fbe1074c13fd9e5955c83dee269d8"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/interactions.txt",
+    "new": "Docs/QA/investigation_r107/interactions.txt",
+    "sha256": "26d2e9e1fe8258edd8b8e2a37a2541e0a3a0c24f8b1b53e3f4e632e0a028ef2c"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/isolation.json",
+    "new": "Docs/QA/investigation_r107/isolation.json",
+    "sha256": "91e661b54b772af684390bab5b2786e7449db0cd0685c0448692280d366592ef"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/landmarks.txt",
+    "new": "Docs/QA/investigation_r107/landmarks.txt",
+    "sha256": "80a10cfb4160a33015ac13e9ddfe601e0a9b9269f10b4f6554031bf9b444cecc"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/map-controller-complete.txt",
+    "new": "Docs/QA/investigation_r107/map-controller-complete.txt",
+    "sha256": "936bc658d23bbfb597f45d019a6ba5bccf70c5ddc2bf866c55c7afdef8fb29de"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/map-controller-progress.txt",
+    "new": "Docs/QA/investigation_r107/map-controller-progress.txt",
+    "sha256": "b57c8c59f2b22817f9226f2dc5ba01d0b926a6cf68848672a5428d51b226158e"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/map-detail.txt",
+    "new": "Docs/QA/investigation_r107/map-detail.txt",
+    "sha256": "5a5079f9b7bea3dd8b6895d6c92e568d97b058c0d333beb5938059a5d0cf7092"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/map-integration-final.txt",
+    "new": "Docs/QA/investigation_r107/map-integration-final.txt",
+    "sha256": "e3d9da7ff232912bf81aea07161b4af738cd6c272bc30fc55abe1317347d603d"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/map-integration.txt",
+    "new": "Docs/QA/investigation_r107/map-integration.txt",
+    "sha256": "83309380c2e8be870a0c7b9a498265acc1b82f4d3950c58a8d4a690c4056cb62"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/map-lifecycle-superseded.txt",
+    "new": "Docs/QA/investigation_r107/map-lifecycle-superseded.txt",
+    "sha256": "83519efb36ddfae81170355c08cf8c6a531943c0b7af1278e1da1e79e0debb45"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/map-lifecycle.txt",
+    "new": "Docs/QA/investigation_r107/map-lifecycle.txt",
+    "sha256": "9ca83c39da339635ca079938337ef220fa4e1629d514dc28d4d8550826d56c02"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/map-path-plan.json",
+    "new": "Docs/QA/investigation_r107/map-path-plan.json",
+    "sha256": "6c55ad071d588e7a68463dcc395213cc1579ebc86e07d4c829cbc9e690347a0a"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/MAP_REPAIR.md",
+    "new": "Docs/QA/investigation_r107/MAP_REPAIR.md",
+    "sha256": "089ab26b68afff440b002b845ee6e0876697e999522ec8c99ba47b3bf202171f"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/onboarding-progress.txt",
+    "new": "Docs/QA/investigation_r107/onboarding-progress.txt",
+    "sha256": "5cbc1451fd1074e3defa5bcaf8850f5c534577b8992ac56ecebe73ca09b670c6"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/onboarding-route.txt",
+    "new": "Docs/QA/investigation_r107/onboarding-route.txt",
+    "sha256": "7fbdb8f671484ff51286f90e4780eb7601313fdfc92d8e92e1a5897a17a9320a"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/onboarding-short-edit.json",
+    "new": "Docs/QA/investigation_r107/onboarding-short-edit.json",
+    "sha256": "b39b512a97f65f1dedb0e0ee760d80159fe5483ae1448d1b1b1c1030caa3655e"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/onboarding-ui-complete.txt",
+    "new": "Docs/QA/investigation_r107/onboarding-ui-complete.txt",
+    "sha256": "92d78517c53915080079bffedc0ba8f5f3800649a975a2c30a2abe7aa3428c3b"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/onboarding-video-metadata.json",
+    "new": "Docs/QA/investigation_r107/onboarding-video-metadata.json",
+    "sha256": "2660fe773325e046210bf27c3fe9cf8de634b01298cd5997288ca0d93d507800"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/path-plan-failed.txt",
+    "new": "Docs/QA/investigation_r107/path-plan-failed.txt",
+    "sha256": "5179d9581a24bbf3e43a444c9a28e99f9b575bb587c085a41de27e5f486c450d"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/PLAYTEST_NGUOI_MOI.md",
+    "new": "Docs/QA/investigation_r107/PLAYTEST_NGUOI_MOI.md",
+    "sha256": "e23c0223823254fc44c47d087304912c6e1231b70ae3e32bedc299dab645aa77"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/product-manifest.json",
+    "new": "Docs/QA/investigation_r107/product-manifest.json",
+    "sha256": "f464b8e8c2ef54bcfed1c88739098889b83a02b4b8188b7b468200e9eef7bf61"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/README.md",
+    "new": "Docs/QA/investigation_r107/README.md",
+    "sha256": "f34f687d639ca7e9155cd811b3d8dfde36f18158c9a82992c25aafcda6447e30"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/reported-player-pose.txt",
+    "new": "Docs/QA/investigation_r107/reported-player-pose.txt",
+    "sha256": "0e3fec24369061e5e43b9c6c1177c2eb1d9ecf8382aa3bb670e1bdc58c71be41"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/residual-faces.txt",
+    "new": "Docs/QA/investigation_r107/residual-faces.txt",
+    "sha256": "b8b3592c0335b2fddc5e363aa0e8b10ccf4c58985f903669aa01c19c0384b65e"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/results-manifest.json",
+    "new": "Docs/QA/investigation_r107/results-manifest.json",
+    "sha256": "5913cb273923275b7006dfcb16ad6b37a693a182dfb90b6579ddd018c7fdbc89"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/source-delivery-gate.json",
+    "new": "Docs/QA/investigation_r107/source-delivery-gate.json",
+    "sha256": "969d08f3922265cbf3c7e0e6e2e7d21e8bbe8b3d201af7e64b48050c3c67c70c"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/source-export-final.json",
+    "new": "Docs/QA/investigation_r107/source-export-final.json",
+    "sha256": "40516a2c4fb8d1404dc54fed3d6edf3a12b895042fc529eaf760a830a196beef"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/source-export.json",
+    "new": "Docs/QA/investigation_r107/source-export.json",
+    "sha256": "d380312d81ec0dc49be05c258d5325e9da6aa09796b1414c911674ddb969aff0"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/source-final-audit.json",
+    "new": "Docs/QA/investigation_r107/source-final-audit.json",
+    "sha256": "65a0bef519fcbdb6f70e2c20976b635a9cea5daae4bd762afe681c817fcfc461"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/stable-code-audit.json",
+    "new": "Docs/QA/investigation_r107/stable-code-audit.json",
+    "sha256": "521d724dd83ecc99c0d8ba53a3601c13244524e2dfc419653f2b665a211f4f12"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/triangle-probe.txt",
+    "new": "Docs/QA/investigation_r107/triangle-probe.txt",
+    "sha256": "d11c8693a7b40913e221401863d68d5b7f1b0cd49b3d56921e9fccf2b37ad83c"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/utf8-audit.json",
+    "new": "Docs/QA/investigation_r107/utf8-audit.json",
+    "sha256": "53214185a46e4687dabdef7376ecd64a41ebd2da3be5368cf8224f7c40fc81fe"
+  },
+  {
+    "old": "Test/KetQua/investigation_r107/VIDEO_INDEX.md",
+    "new": "Docs/QA/investigation_r107/VIDEO_INDEX.md",
+    "sha256": "3d95d4718565952d63e4cc54c2d5ded672878c0b7ec2bc405d58ee08fbe1ee7d"
+  }
+]

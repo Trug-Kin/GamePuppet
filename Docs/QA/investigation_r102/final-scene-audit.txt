@@ -1,0 +1,4 @@
+Unity=6000.6.2f1 Scene=Assets/Scenes/JourneyPresentation_v48_r102.unity dirty=False Missing=0
+Interaction=17 oldHeads=0 explicitRequiredRefFailures=0
+controller=0.3/45
+Main pose refs=9

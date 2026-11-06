@@ -1,0 +1,5 @@
+Synthetic GameView clip controls; inspect screenshot on failure.
+sidebar=clip play=True t=0.8065239
+pause play=False t=0.8065239
+seek play=False t=1.806524
+replay play=True t=0.8117685

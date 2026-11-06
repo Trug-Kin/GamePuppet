@@ -1,0 +1,7 @@
+D:\data_unity\6000.6.2f1\Editor\Unity.exe
+-projectPath
+D:\ConRoi
+--investigation-save-dir
+D:\ConRoi\Test\KetQua\investigation_r106\profile-launch-verified
+-logFile
+D:\ConRoi\Test\KetQua\investigation_r106\editor-profile-launch.log

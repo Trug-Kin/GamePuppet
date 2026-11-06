@@ -1,0 +1,79 @@
+{
+  "source": "D:\\ConRoi\\Source\\Blender\\JourneyV48\\R107\\Terrain_R107_Editable.blend",
+  "blender": "5.2.0 LTS",
+  "rows": [
+    {
+      "name": "TerrainJoin_R90",
+      "vertices": 88126,
+      "triangles": 142387,
+      "finite": true,
+      "zero_area": 0,
+      "remaining_down_top_faces_in_scope": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "uv_layers": 2
+    },
+    {
+      "name": "EastFootwayJoin_R90",
+      "vertices": 6964,
+      "triangles": 10345,
+      "finite": true,
+      "zero_area": 0,
+      "remaining_down_top_faces_in_scope": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "uv_layers": 2
+    },
+    {
+      "name": "TerrainColliderJoin_R90",
+      "vertices": 345645,
+      "triangles": 115190,
+      "finite": true,
+      "zero_area": 0,
+      "remaining_down_top_faces_in_scope": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "uv_layers": 2
+    },
+    {
+      "name": "M95_Service4_NATIVE",
+      "vertices": 2221,
+      "triangles": 3441,
+      "finite": true,
+      "zero_area": 0,
+      "remaining_down_top_faces_in_scope": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "uv_layers": 2
+    },
+    {
+      "name": "BankR91_Grade_017",
+      "vertices": 123850,
+      "triangles": 237682,
+      "finite": true,
+      "zero_area": 0,
+      "remaining_down_top_faces_in_scope": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "uv_layers": 2
+    }
+  ],
+  "missing_images": [],
+  "libraries": [],
+  "scope": "Orientation only, not a complete terrain topology certificate"
+}

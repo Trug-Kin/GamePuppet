@@ -1,0 +1,317 @@
+r102 normal start or unplaced continuation (initialLeg recorded). Synthetic InputSystem keyboard/mouse, unchanged controller. No placements or teleports. Silent window capture separate.
+INITIAL leg=0 position=(774.00000, 6.04000, 286.00000)
+t=0.28 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=0.49 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=0.70 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=0.91 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=1.11 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=1.31 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=1.53 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=1.75 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=1.97 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=2.19 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=2.41 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=2.63 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=2.83 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=3.04 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=3.25 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+E_RAY khai hit=Khai_Investigation distance=2.553
+t=3.48 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=inspect
+t=3.69 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=inspect
+t=3.93 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=inspect
+t=4.16 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=inspect
+t=4.39 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=inspect
+t=4.59 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=inspect
+t=4.81 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=inspect
+t=5.01 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=inspect
+INTERACT khai acquired=True p=(774.0000, 6.0400, 286.0000)
+t=5.22 leg=1 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=5.43 leg=1 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=5.64 leg=1 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=5.85 leg=1 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=6.07 leg=1 p=(773.95470, 6.05003, 286.48000) grounded=True page=
+t=6.29 leg=1 p=(773.87340, 6.05003, 287.28670) grounded=True page=
+t=6.49 leg=1 p=(773.79680, 6.05003, 288.04690) grounded=True page=
+t=6.69 leg=1 p=(773.72380, 6.05003, 288.77100) grounded=True page=
+t=6.91 leg=1 p=(773.64890, 6.05003, 289.51450) grounded=True page=
+t=7.11 leg=1 p=(773.61580, 6.05003, 289.84280) grounded=True page=
+t=7.32 leg=1 p=(773.61580, 6.05003, 289.84280) grounded=True page=
+E_RAY henri hit=Evidence_henri distance=1.763
+t=7.55 leg=1 p=(773.61580, 6.05003, 289.84280) grounded=True page=inspect
+t=7.76 leg=1 p=(773.61580, 6.05003, 289.84280) grounded=True page=inspect
+t=7.97 leg=1 p=(773.61580, 6.05003, 289.84280) grounded=True page=inspect
+t=8.17 leg=1 p=(773.61580, 6.05003, 289.84280) grounded=True page=inspect
+t=8.39 leg=1 p=(773.61580, 6.05003, 289.84280) grounded=True page=inspect
+t=8.60 leg=1 p=(773.61580, 6.05003, 289.84280) grounded=True page=inspect
+t=8.81 leg=1 p=(773.61580, 6.05003, 289.84280) grounded=True page=inspect
+t=9.02 leg=1 p=(773.61580, 6.05003, 289.84280) grounded=True page=inspect
+INTERACT henri acquired=True p=(773.6158, 6.0500, 289.8428)
+t=9.22 leg=2 p=(773.61580, 6.05003, 289.84280) grounded=True page=
+t=9.42 leg=2 p=(773.61580, 6.05003, 289.84280) grounded=True page=
+t=9.64 leg=2 p=(773.61580, 6.05003, 289.84280) grounded=True page=
+t=9.84 leg=2 p=(773.61580, 6.05003, 289.84280) grounded=True page=
+t=10.04 leg=2 p=(773.61580, 6.05003, 289.84280) grounded=True page=
+t=10.26 leg=2 p=(773.79410, 6.05003, 289.77450) grounded=True page=
+t=10.47 leg=2 p=(773.87000, 6.05003, 289.74700) grounded=True page=
+t=10.68 leg=2 p=(773.87000, 6.05003, 289.74700) grounded=True page=
+t=10.91 leg=2 p=(773.87000, 6.05003, 289.74700) grounded=True page=
+E_RAY r03 hit=R03_Investigation distance=1.861
+t=11.13 leg=2 p=(773.87000, 6.05003, 289.74700) grounded=True page=inspect
+t=11.36 leg=2 p=(773.87000, 6.05003, 289.74700) grounded=True page=inspect
+t=11.58 leg=2 p=(773.87000, 6.05003, 289.74700) grounded=True page=inspect
+t=11.80 leg=2 p=(773.87000, 6.05003, 289.74700) grounded=True page=inspect
+t=12.02 leg=2 p=(773.87000, 6.05003, 289.74700) grounded=True page=inspect
+t=12.25 leg=2 p=(773.87000, 6.05003, 289.74700) grounded=True page=inspect
+t=12.46 leg=2 p=(773.87000, 6.05003, 289.74700) grounded=True page=inspect
+t=12.70 leg=2 p=(773.87000, 6.05003, 289.74700) grounded=True page=inspect
+INTERACT r03 acquired=True p=(773.8700, 6.0500, 289.7470)
+t=12.91 leg=3 p=(773.87000, 6.05003, 289.74700) grounded=True page=
+t=13.14 leg=3 p=(773.87000, 6.05003, 289.74700) grounded=True page=
+t=13.35 leg=3 p=(773.87000, 6.05003, 289.74700) grounded=True page=
+t=13.55 leg=3 p=(773.66020, 6.05003, 289.52590) grounded=True page=
+t=13.75 leg=3 p=(773.14860, 6.05003, 288.97610) grounded=True page=
+t=13.98 leg=3 p=(772.59310, 6.05003, 288.37930) grounded=True page=
+t=14.18 leg=3 p=(772.10520, 6.05003, 287.85490) grounded=True page=
+t=14.39 leg=3 p=(771.55050, 6.05003, 287.25890) grounded=True page=
+t=14.61 leg=3 p=(771.15550, 6.05003, 286.71630) grounded=True page=
+t=14.82 leg=3 p=(771.05900, 6.05003, 286.17200) grounded=True page=
+t=15.03 leg=3 p=(770.41890, 6.05003, 285.84780) grounded=True page=
+WAYPOINT 3 p=(770.1710, 6.0500, 285.7329) grounded=True
+t=15.23 leg=4 p=(770.17100, 6.05003, 285.73290) grounded=True page=
+t=15.44 leg=4 p=(770.17100, 6.05003, 285.73290) grounded=True page=
+t=15.66 leg=4 p=(770.17100, 6.05003, 285.73290) grounded=True page=
+t=15.88 leg=4 p=(770.17100, 6.05003, 285.73290) grounded=True page=
+t=16.08 leg=4 p=(770.16330, 6.05003, 286.13190) grounded=True page=
+t=16.29 leg=4 p=(770.15660, 6.43874, 286.83330) grounded=True page=
+t=16.52 leg=4 p=(770.14870, 6.91621, 287.64520) grounded=True page=
+t=16.72 leg=4 p=(770.14110, 7.36917, 288.44230) grounded=True page=
+t=16.92 leg=4 p=(770.13400, 7.79617, 289.16800) grounded=True page=
+t=17.14 leg=4 p=(770.12710, 8.22775, 289.88420) grounded=True page=
+t=17.34 leg=4 p=(770.11940, 8.66341, 290.67960) grounded=True page=
+t=17.56 leg=4 p=(770.11200, 8.97003, 291.45260) grounded=True page=
+t=17.77 leg=4 p=(770.10500, 8.97003, 292.17600) grounded=True page=
+WAYPOINT 4 p=(770.1014, 8.9700, 292.5457) grounded=True
+t=17.99 leg=5 p=(770.10140, 8.97003, 292.54570) grounded=True page=
+t=18.19 leg=5 p=(770.10140, 8.97003, 292.54570) grounded=True page=
+t=18.40 leg=5 p=(770.10140, 8.97003, 292.54570) grounded=True page=
+t=18.61 leg=5 p=(770.31370, 8.97003, 292.57390) grounded=True page=
+t=18.83 leg=5 p=(771.06490, 8.97003, 292.66570) grounded=True page=
+t=19.03 leg=5 p=(771.77860, 8.97003, 292.75290) grounded=True page=
+t=19.24 leg=5 p=(772.58560, 8.97003, 292.85160) grounded=True page=
+t=19.46 leg=5 p=(773.33340, 8.97003, 292.94300) grounded=True page=
+t=19.67 leg=5 p=(773.78060, 8.97003, 292.99760) grounded=True page=
+E_RAY slide hit=Evidence_slide distance=2.301
+t=19.87 leg=5 p=(773.78060, 8.97003, 292.99760) grounded=True page=inspect
+t=20.08 leg=5 p=(773.78060, 8.97003, 292.99760) grounded=True page=inspect
+t=20.29 leg=5 p=(773.78060, 8.97003, 292.99760) grounded=True page=inspect
+t=20.49 leg=5 p=(773.78060, 8.97003, 292.99760) grounded=True page=inspect
+t=20.71 leg=5 p=(773.78060, 8.97003, 292.99760) grounded=True page=inspect
+t=20.93 leg=5 p=(773.78060, 8.97003, 292.99760) grounded=True page=inspect
+t=21.13 leg=5 p=(773.78060, 8.97003, 292.99760) grounded=True page=inspect
+t=21.35 leg=5 p=(773.78060, 8.97003, 292.99760) grounded=True page=inspect
+INTERACT slide acquired=True p=(773.7806, 8.9700, 292.9976)
+t=21.55 leg=6 p=(773.78060, 8.97003, 292.99760) grounded=True page=
+t=21.78 leg=6 p=(773.78060, 8.97003, 292.99760) grounded=True page=
+E_RAY shoeprint hit=Evidence_shoeprint distance=2.169
+t=21.99 leg=6 p=(773.78060, 8.97003, 292.99760) grounded=True page=inspect
+t=22.19 leg=6 p=(773.78060, 8.97003, 292.99760) grounded=True page=inspect
+t=22.40 leg=6 p=(773.78060, 8.97003, 292.99760) grounded=True page=inspect
+t=22.60 leg=6 p=(773.78060, 8.97003, 292.99760) grounded=True page=inspect
+t=22.81 leg=6 p=(773.78060, 8.97003, 292.99760) grounded=True page=inspect
+t=23.02 leg=6 p=(773.78060, 8.97003, 292.99760) grounded=True page=inspect
+t=23.23 leg=6 p=(773.78060, 8.97003, 292.99760) grounded=True page=inspect
+t=23.45 leg=6 p=(773.78060, 8.97003, 292.99760) grounded=True page=inspect
+INTERACT shoeprint acquired=True p=(773.7806, 8.9700, 292.9976)
+t=23.67 leg=7 p=(773.78060, 8.97003, 292.99760) grounded=True page=
+t=23.88 leg=7 p=(773.78060, 8.97003, 292.99760) grounded=True page=
+t=24.08 leg=7 p=(773.78060, 8.97003, 292.99760) grounded=True page=
+t=24.29 leg=7 p=(774.30930, 8.97003, 293.10080) grounded=True page=
+E_RAY phone hit=Evidence_phone distance=1.767
+t=24.51 leg=7 p=(774.70010, 8.97003, 293.17980) grounded=True page=inspect
+t=24.72 leg=7 p=(774.70010, 8.97003, 293.17980) grounded=True page=inspect
+t=24.94 leg=7 p=(774.70010, 8.97003, 293.17980) grounded=True page=inspect
+t=25.18 leg=7 p=(774.70010, 8.97003, 293.17980) grounded=True page=inspect
+t=25.38 leg=7 p=(774.70010, 8.97003, 293.17980) grounded=True page=inspect
+t=25.60 leg=7 p=(774.70010, 8.97003, 293.17980) grounded=True page=inspect
+t=25.80 leg=7 p=(774.70010, 8.97003, 293.17980) grounded=True page=inspect
+t=26.01 leg=7 p=(774.70010, 8.97003, 293.17980) grounded=True page=inspect
+INTERACT phone acquired=True p=(774.7001, 8.9700, 293.1798)
+t=26.22 leg=8 p=(774.70010, 8.97003, 293.17980) grounded=True page=
+t=26.44 leg=8 p=(774.70010, 8.97003, 293.17980) grounded=True page=
+E_RAY r12 hit=R12_Investigation distance=1.225
+t=26.65 leg=8 p=(774.70010, 8.97003, 293.17980) grounded=True page=inspect
+t=26.85 leg=8 p=(774.70010, 8.97003, 293.17980) grounded=True page=inspect
+t=27.11 leg=8 p=(774.70010, 8.97003, 293.17980) grounded=True page=inspect
+t=27.32 leg=8 p=(774.70010, 8.97003, 293.17980) grounded=True page=inspect
+t=27.52 leg=8 p=(774.70010, 8.97003, 293.17980) grounded=True page=inspect
+t=27.73 leg=8 p=(774.70010, 8.97003, 293.17980) grounded=True page=inspect
+t=27.93 leg=8 p=(774.70010, 8.97003, 293.17980) grounded=True page=inspect
+t=28.14 leg=8 p=(774.70010, 8.97003, 293.17980) grounded=True page=inspect
+t=28.34 leg=8 p=(774.70010, 8.97003, 293.17980) grounded=True page=
+INTERACT r12 acquired=True p=(774.7001, 8.9700, 293.1798)
+t=28.54 leg=9 p=(774.70010, 8.97003, 293.17980) grounded=True page=
+t=28.77 leg=9 p=(774.70010, 8.97003, 293.17980) grounded=True page=
+t=28.97 leg=9 p=(774.70010, 8.97003, 293.17980) grounded=True page=
+t=29.17 leg=9 p=(774.70010, 8.97003, 293.17980) grounded=True page=
+t=29.38 leg=9 p=(774.67740, 8.97003, 293.13090) grounded=True page=
+E_RAY mechanism hit=L_return_leaf distance=1.725
+t=29.58 leg=9 p=(774.67740, 8.97003, 293.13090) grounded=True page=inspect
+t=29.79 leg=9 p=(774.67740, 8.97003, 293.13090) grounded=True page=inspect
+t=30.00 leg=9 p=(774.67740, 8.97003, 293.13090) grounded=True page=inspect
+t=30.21 leg=9 p=(774.67740, 8.97003, 293.13090) grounded=True page=inspect
+t=30.43 leg=9 p=(774.67740, 8.97003, 293.13090) grounded=True page=inspect
+t=30.63 leg=9 p=(774.67740, 8.97003, 293.13090) grounded=True page=inspect
+t=30.84 leg=9 p=(774.67740, 8.97003, 293.13090) grounded=True page=inspect
+t=31.05 leg=9 p=(774.67740, 8.97003, 293.13090) grounded=True page=inspect
+INTERACT mechanism acquired=True p=(774.6774, 8.9700, 293.1309)
+t=31.25 leg=10 p=(774.67740, 8.97003, 293.13090) grounded=True page=
+t=31.47 leg=10 p=(774.67740, 8.97003, 293.13090) grounded=True page=
+t=31.67 leg=10 p=(774.67740, 8.97003, 293.13090) grounded=True page=
+t=31.88 leg=10 p=(774.63890, 8.97003, 293.12510) grounded=True page=
+t=32.09 leg=10 p=(773.82480, 8.97003, 293.04880) grounded=True page=
+t=32.32 leg=10 p=(773.06700, 8.97003, 292.97780) grounded=True page=
+t=32.52 leg=10 p=(772.27080, 8.97003, 292.90330) grounded=True page=
+t=32.74 leg=10 p=(771.56950, 8.97003, 292.83760) grounded=True page=
+t=32.95 leg=10 p=(770.71890, 8.97003, 292.75800) grounded=True page=
+WAYPOINT 10 p=(770.2388, 8.9700, 292.7130) grounded=True
+t=33.16 leg=11 p=(770.23880, 8.97003, 292.71300) grounded=True page=
+t=33.37 leg=11 p=(770.23880, 8.97003, 292.71300) grounded=True page=
+t=33.58 leg=11 p=(770.23880, 8.97003, 292.71300) grounded=True page=
+t=33.80 leg=11 p=(770.23320, 8.97003, 292.56850) grounded=True page=
+t=34.00 leg=11 p=(770.21860, 8.97003, 291.82010) grounded=True page=
+t=34.22 leg=11 p=(770.20450, 8.94270, 291.09160) grounded=True page=
+t=34.44 leg=11 p=(770.18820, 8.44592, 290.24880) grounded=True page=
+t=34.64 leg=11 p=(770.17460, 8.00203, 289.54970) grounded=True page=
+t=34.84 leg=11 p=(770.15990, 7.58874, 288.78730) grounded=True page=
+t=35.05 leg=11 p=(770.14520, 7.12931, 288.03380) grounded=True page=
+t=35.26 leg=11 p=(770.13050, 6.68340, 287.27440) grounded=False page=
+t=35.47 leg=11 p=(770.11630, 6.26677, 286.53970) grounded=True page=
+WAYPOINT 11 p=(770.1030, 6.0500, 285.8573) grounded=True
+t=35.67 leg=12 p=(770.10300, 6.05003, 285.85730) grounded=True page=
+t=35.88 leg=12 p=(770.10300, 6.05003, 285.85730) grounded=True page=
+t=36.09 leg=12 p=(770.10300, 6.05003, 285.85730) grounded=True page=
+t=36.30 leg=12 p=(770.10300, 6.05003, 285.85730) grounded=True page=
+t=36.50 leg=12 p=(770.67850, 6.05003, 285.87220) grounded=True page=
+t=36.72 leg=12 p=(771.48830, 6.05003, 285.90340) grounded=True page=
+t=36.92 leg=12 p=(772.23190, 6.05003, 285.93200) grounded=True page=
+t=37.13 leg=12 p=(772.96950, 6.05003, 285.96040) grounded=True page=
+t=37.34 leg=12 p=(773.75360, 6.05003, 285.99050) grounded=True page=
+E_RAY hook hit=M_hook_dust distance=1.554
+t=37.55 leg=12 p=(773.84490, 6.05003, 285.99400) grounded=True page=inspect
+t=37.78 leg=12 p=(773.84490, 6.05003, 285.99400) grounded=True page=inspect
+t=37.98 leg=12 p=(773.84490, 6.05003, 285.99400) grounded=True page=inspect
+t=38.19 leg=12 p=(773.84490, 6.05003, 285.99400) grounded=True page=inspect
+t=38.39 leg=12 p=(773.84490, 6.05003, 285.99400) grounded=True page=inspect
+t=38.60 leg=12 p=(773.84490, 6.05003, 285.99400) grounded=True page=inspect
+t=38.81 leg=12 p=(773.84490, 6.05003, 285.99400) grounded=True page=inspect
+t=39.02 leg=12 p=(773.84490, 6.05003, 285.99400) grounded=True page=inspect
+INTERACT hook acquired=True p=(773.8449, 6.0500, 285.9940)
+t=39.22 leg=13 p=(773.84490, 6.05003, 285.99400) grounded=True page=
+t=39.43 leg=13 p=(773.84490, 6.05003, 285.99400) grounded=True page=
+E_RAY fabric hit=Evidence_fabric distance=1.756
+t=39.63 leg=13 p=(773.84490, 6.05003, 285.99400) grounded=True page=inspect
+t=39.84 leg=13 p=(773.84490, 6.05003, 285.99400) grounded=True page=inspect
+t=40.05 leg=13 p=(773.84490, 6.05003, 285.99400) grounded=True page=inspect
+t=40.29 leg=13 p=(773.84490, 6.05003, 285.99400) grounded=True page=inspect
+t=40.51 leg=13 p=(773.84490, 6.05003, 285.99400) grounded=True page=inspect
+t=40.72 leg=13 p=(773.84490, 6.05003, 285.99400) grounded=True page=inspect
+t=40.93 leg=13 p=(773.84490, 6.05003, 285.99400) grounded=True page=inspect
+t=41.13 leg=13 p=(773.84490, 6.05003, 285.99400) grounded=True page=inspect
+INTERACT fabric acquired=True p=(773.8449, 6.0500, 285.9940)
+t=41.34 leg=14 p=(773.84490, 6.05003, 285.99400) grounded=True page=
+t=41.55 leg=14 p=(773.84490, 6.05003, 285.99400) grounded=True page=
+t=41.75 leg=14 p=(773.84490, 6.05003, 285.99400) grounded=True page=
+t=41.95 leg=14 p=(773.86830, 6.05003, 285.51950) grounded=True page=
+t=42.16 leg=14 p=(773.89550, 6.05003, 284.79260) grounded=True page=
+t=42.37 leg=14 p=(773.92230, 6.05003, 284.07570) grounded=True page=
+t=42.58 leg=14 p=(773.95220, 5.97001, 283.27700) grounded=True page=
+t=42.80 leg=14 p=(773.98030, 5.97001, 282.52500) grounded=True page=
+WAYPOINT 14 p=(773.9956, 5.9700, 282.1183) grounded=True
+t=43.01 leg=15 p=(773.99560, 5.97001, 282.11830) grounded=True page=
+t=43.21 leg=15 p=(773.99560, 5.97001, 282.11830) grounded=True page=
+t=43.41 leg=15 p=(774.15000, 5.97001, 281.95820) grounded=True page=
+t=43.62 leg=15 p=(774.67400, 5.97001, 281.42460) grounded=True page=
+t=43.82 leg=15 p=(775.17470, 5.97001, 280.91460) grounded=True page=
+t=44.02 leg=15 p=(775.68580, 5.97001, 280.39410) grounded=True page=
+t=44.22 leg=15 p=(776.16300, 5.97001, 279.90810) grounded=True page=
+t=44.43 leg=15 p=(776.69750, 5.97001, 279.36360) grounded=True page=
+t=44.63 leg=15 p=(777.17830, 5.96998, 278.87400) grounded=True page=
+t=44.83 leg=15 p=(777.71780, 5.96945, 278.32440) grounded=True page=
+t=45.04 leg=15 p=(778.23020, 5.97001, 277.80260) grounded=True page=
+t=45.24 leg=15 p=(778.73780, 5.97001, 277.28560) grounded=True page=
+t=45.44 leg=15 p=(779.22110, 5.96974, 276.79330) grounded=True page=
+t=45.64 leg=15 p=(779.75590, 5.97001, 276.24860) grounded=True page=
+WAYPOINT 15 p=(779.9213, 5.9700, 276.0801) grounded=True
+t=45.86 leg=16 p=(779.92130, 5.97001, 276.08010) grounded=True page=
+t=46.08 leg=16 p=(779.92130, 5.97001, 276.08010) grounded=True page=
+t=46.29 leg=16 p=(780.40930, 5.97001, 275.96230) grounded=True page=
+t=46.50 leg=16 p=(781.11310, 5.97001, 275.79750) grounded=True page=
+t=46.71 leg=16 p=(781.85750, 5.97001, 275.62320) grounded=True page=
+t=46.92 leg=16 p=(782.60860, 5.97001, 275.44730) grounded=True page=
+t=47.13 leg=16 p=(783.32710, 5.97001, 275.27910) grounded=True page=
+t=47.33 leg=16 p=(784.04550, 5.97001, 275.11080) grounded=True page=
+t=47.54 leg=16 p=(784.76770, 5.97001, 274.94170) grounded=True page=
+t=47.74 leg=16 p=(785.50610, 5.97001, 274.76880) grounded=True page=
+t=47.95 leg=16 p=(785.66350, 5.97001, 274.73200) grounded=True page=
+E_RAY ha hit=Ha_Investigation distance=1.864
+t=48.17 leg=16 p=(785.66350, 5.97001, 274.73200) grounded=True page=inspect
+t=48.38 leg=16 p=(785.66350, 5.97001, 274.73200) grounded=True page=inspect
+t=48.61 leg=16 p=(785.66350, 5.97001, 274.73200) grounded=True page=inspect
+t=48.83 leg=16 p=(785.66350, 5.97001, 274.73200) grounded=True page=inspect
+t=49.04 leg=16 p=(785.66350, 5.97001, 274.73200) grounded=True page=inspect
+t=49.24 leg=16 p=(785.66350, 5.97001, 274.73200) grounded=True page=inspect
+t=49.46 leg=16 p=(785.66350, 5.97001, 274.73200) grounded=True page=inspect
+t=49.66 leg=16 p=(785.66350, 5.97001, 274.73200) grounded=True page=inspect
+INTERACT ha acquired=True p=(785.6635, 5.9700, 274.7320)
+t=49.89 leg=17 p=(785.66350, 5.97001, 274.73200) grounded=True page=
+t=50.09 leg=17 p=(785.66350, 5.97001, 274.73200) grounded=True page=
+t=50.30 leg=17 p=(785.66350, 5.97001, 274.73200) grounded=True page=
+t=50.52 leg=17 p=(785.66350, 5.97001, 274.73200) grounded=True page=
+t=50.73 leg=17 p=(785.66350, 5.97001, 274.73200) grounded=True page=
+t=50.95 leg=17 p=(784.96070, 5.97001, 275.00600) grounded=True page=
+t=51.16 leg=17 p=(784.30800, 5.97001, 275.26830) grounded=True page=
+t=51.37 leg=17 p=(783.48950, 5.97001, 275.59740) grounded=True page=
+t=51.58 leg=17 p=(782.80100, 5.97001, 275.87410) grounded=True page=
+t=51.80 leg=17 p=(782.10750, 5.97001, 276.15290) grounded=True page=
+t=52.00 leg=17 p=(781.43430, 5.97001, 276.42350) grounded=True page=
+t=52.23 leg=17 p=(780.69740, 5.97001, 276.71970) grounded=True page=
+WAYPOINT 17 p=(780.0928, 5.9700, 276.9627) grounded=True
+t=52.44 leg=18 p=(780.09280, 5.97001, 276.96270) grounded=True page=
+t=52.65 leg=18 p=(780.09280, 5.97001, 276.96270) grounded=True page=
+t=52.86 leg=18 p=(779.83140, 5.97001, 277.17190) grounded=True page=
+t=53.07 leg=18 p=(779.27090, 5.97001, 277.63590) grounded=True page=
+t=53.28 leg=18 p=(778.67140, 5.97001, 278.13230) grounded=True page=
+t=53.48 leg=18 p=(778.10930, 5.97001, 278.59770) grounded=True page=
+t=53.68 leg=18 p=(777.55360, 5.97001, 279.05780) grounded=True page=
+t=53.91 leg=18 p=(776.96930, 5.97001, 279.54160) grounded=True page=
+t=54.11 leg=18 p=(776.40610, 5.97001, 280.00780) grounded=True page=
+t=54.33 leg=18 p=(775.77740, 5.97001, 280.52840) grounded=True page=
+t=54.54 leg=18 p=(775.16130, 5.97001, 281.03850) grounded=True page=
+t=54.78 leg=18 p=(774.62900, 5.97001, 281.47920) grounded=True page=
+WAYPOINT 18 p=(774.0624, 5.9700, 281.9483) grounded=True
+t=54.98 leg=19 p=(774.06240, 5.97001, 281.94830) grounded=True page=
+t=55.20 leg=19 p=(774.06240, 5.97001, 281.94830) grounded=True page=
+t=55.41 leg=19 p=(774.06240, 5.97001, 281.94830) grounded=True page=
+t=55.63 leg=19 p=(774.04080, 5.97001, 282.44900) grounded=True page=
+t=55.83 leg=19 p=(774.03190, 5.97001, 283.22700) grounded=True page=
+t=56.06 leg=19 p=(774.02340, 6.04798, 283.96490) grounded=True page=
+t=56.30 leg=19 p=(774.01400, 6.05003, 284.78430) grounded=True page=
+t=56.50 leg=19 p=(774.00400, 6.05003, 285.64920) grounded=True page=
+WAYPOINT 19 p=(774.0013, 6.0500, 285.8799) grounded=True
+t=56.72 leg=20 p=(774.00130, 6.05003, 285.87990) grounded=True page=
+t=56.94 leg=20 p=(774.00130, 6.05003, 285.87990) grounded=True page=
+t=57.14 leg=20 p=(774.18210, 6.05003, 286.51840) grounded=True page=
+t=57.34 leg=20 p=(774.39310, 6.05003, 287.24450) grounded=True page=
+t=57.59 leg=20 p=(774.60000, 6.05003, 287.95590) grounded=True page=
+t=57.81 leg=20 p=(774.65610, 6.05003, 288.14910) grounded=True page=
+E_RAY @table hit=Reconstruction_table_controls distance=1.561
+t=58.02 leg=20 p=(774.65610, 6.05003, 288.14910) grounded=True page=reconstruction
+t=58.23 leg=20 p=(774.65610, 6.05003, 288.14910) grounded=True page=reconstruction
+t=58.48 leg=20 p=(774.65610, 6.05003, 288.14910) grounded=True page=reconstruction
+t=58.69 leg=20 p=(774.65610, 6.05003, 288.14910) grounded=True page=reconstruction
+t=58.90 leg=20 p=(774.65610, 6.05003, 288.14910) grounded=True page=reconstruction
+t=59.10 leg=20 p=(774.65610, 6.05003, 288.14910) grounded=True page=reconstruction
+t=59.31 leg=20 p=(774.65610, 6.05003, 288.14910) grounded=True page=reconstruction
+t=59.52 leg=20 p=(774.65610, 6.05003, 288.14910) grounded=True page=reconstruction
+INTERACT @table acquired=False p=(774.6561, 6.0500, 288.1491)
+END 21/21 seconds=59.7162668000001 data={"schema":1,"namespaceId":"conroi.investigation.v36.r102","position":{"x":774.6561279296875,"y":6.050029754638672,"z":288.1490783691406},"yaw":96.2094497680664,"pitch":31.851470947265625,"inspecting":"","page":"","samplesAllowed":false,"returnedToWorkshop":true,"visitedHa":true,"clipBeforeSeen":false,"clipEventSeen":false,"evidence":[{"id":"khai","collected":true,"observations":[]},{"id":"henri","collected":true,"observations":[]},{"id":"r03","collected":true,"observations":[]},{"id":"slide","collected":true,"observations":[]},{"id":"shoeprint","collected":true,"observations":[]},{"id":"phone","collected":true,"observations":[]},{"id":"r12","collected":true,"observations":[]},{"id":"mechanism","collected":true,"observations":[]},{"id":"hook","collected":true,"observations":[]},{"id":"fabric","collected":true,"observations":[]},{"id":"ha","collected":true,"observations":[]},{"id":"letter","collected":true,"observations":[]},{"id":"receipt","collected":true,"observations":[]},{"id":"draft","collected":true,"observations":[]}],"mapping":[],"relations":[],"trials":[],"conclusions":[{"choice":0,"claim":"","grounds":[]},{"choice":0,"claim":"","grounds":[]},{"choice":0,"claim":"","grounds":[]},{"choice":0,"claim":"","grounds":[]}],"gate":{"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true},"finalized":false}

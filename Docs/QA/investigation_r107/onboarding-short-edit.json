@@ -1,0 +1,17 @@
+{
+  "source": "onboarding-start.mp4",
+  "output": "onboarding-short.mp4",
+  "segments_seconds": [
+    [
+      0,
+      28
+    ],
+    [
+      142,
+      172.83
+    ]
+  ],
+  "omitted": "114 seconds standing still in inspection waiting for tooling; no movement or gameplay state edited",
+  "audio": false,
+  "input": "synthetic controller and mouse/keyboard UI"
+}

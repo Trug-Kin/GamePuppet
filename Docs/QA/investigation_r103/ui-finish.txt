@@ -1,0 +1,3 @@
+Continuation: mouse/text only. API opens compare/conclusion pages.
+PASS R/P text does not close page
+PASS free relation entered and recorded

@@ -1,0 +1,1 @@
+PASS normalized namespace comparison: ReturnGateMechanism, MechanismPresentation, PresentationHands identical to r104. No six independent animations or timing changes.

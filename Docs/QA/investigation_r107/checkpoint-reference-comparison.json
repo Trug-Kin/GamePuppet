@@ -1,0 +1,32 @@
+[
+  {
+    "asset": "Assets/Art/Environment/JourneyV48/BankR97/M95_023_BoundR97.asset",
+    "guid": "c2d39726113501648b9aed2dfd9f05ac",
+    "scenes": [
+      "Assets\\Scenes\\JourneyPresentation_v48_r97.unity",
+      "Assets\\Scenes\\JourneyPresentation_v48_r99.unity",
+      "Assets\\Scenes\\JourneyPresentation_v48_r100.unity",
+      "Assets\\Scenes\\JourneyPresentation_v48_r101.unity",
+      "Assets\\Scenes\\JourneyPresentation_v48_r102.unity",
+      "Assets\\Scenes\\JourneyPresentation_v48_r103.unity",
+      "Assets\\Scenes\\JourneyPresentation_v48_r104.unity",
+      "Assets\\Scenes\\JourneyPresentation_v48_r105.unity",
+      "Assets\\Scenes\\JourneyPresentation_v48_r106.unity"
+    ]
+  },
+  {
+    "asset": "Assets/Art/Environment/JourneyV48/BankR97/M95_002_BoundR97.asset",
+    "guid": "46866fdb6d0de1545899d7e311f74da5",
+    "scenes": [
+      "Assets\\Scenes\\JourneyPresentation_v48_r97.unity",
+      "Assets\\Scenes\\JourneyPresentation_v48_r99.unity",
+      "Assets\\Scenes\\JourneyPresentation_v48_r100.unity",
+      "Assets\\Scenes\\JourneyPresentation_v48_r101.unity",
+      "Assets\\Scenes\\JourneyPresentation_v48_r102.unity",
+      "Assets\\Scenes\\JourneyPresentation_v48_r103.unity",
+      "Assets\\Scenes\\JourneyPresentation_v48_r104.unity",
+      "Assets\\Scenes\\JourneyPresentation_v48_r105.unity",
+      "Assets\\Scenes\\JourneyPresentation_v48_r106.unity"
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+Synthetic GameView mouse/text only for assignments/relations/claims. API loads completed route profile and opens initial page; no solution assigned through API. Known answer test, not novice test.
+PASS wrong letter entered
+PASS clear button
+PASS all fifteen assigned through fields including R
+PASS typing R keeps UI open
+PASS record partial lead without finalizing
+PASS sidebar compare

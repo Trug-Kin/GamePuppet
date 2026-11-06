@@ -1,0 +1,1653 @@
+{
+  "utc": "2026-11-06T08:30:31.049361+00:00",
+  "root": "D:\\ConRoi",
+  "files": 393064,
+  "bytes": 120792105525,
+  "disk": {
+    "total": 209714147328,
+    "free": 7870435328
+  },
+  "groups": {
+    "Test": {
+      "files": 272957,
+      "bytes": 63326642958
+    },
+    "Docs": {
+      "files": 23340,
+      "bytes": 29884240840
+    },
+    ".build-cache": {
+      "files": 68296,
+      "bytes": 12418321999
+    },
+    "Assets": {
+      "files": 26965,
+      "bytes": 12070651900
+    },
+    "Source": {
+      "files": 100,
+      "bytes": 2948714039
+    },
+    "Tools": {
+      "files": 637,
+      "bytes": 115745764
+    },
+    ".tmp": {
+      "files": 560,
+      "bytes": 14005977
+    },
+    "Logs": {
+      "files": 37,
+      "bytes": 8423335
+    },
+    ".agents": {
+      "files": 104,
+      "bytes": 2928116
+    },
+    "UserSettings": {
+      "files": 14,
+      "bytes": 2025183
+    },
+    "Assembly-CSharp.csproj": {
+      "files": 1,
+      "bytes": 129400
+    },
+    "Assembly-CSharp-Editor.csproj": {
+      "files": 1,
+      "bytes": 110177
+    },
+    "ProjectSettings": {
+      "files": 28,
+      "bytes": 58707
+    },
+    ".build-temp": {
+      "files": 11,
+      "bytes": 48210
+    },
+    "Packages": {
+      "files": 2,
+      "bytes": 18530
+    },
+    "motion-response.json": {
+      "files": 1,
+      "bytes": 12561
+    },
+    "BAT_DAU_TAI_DAY.md": {
+      "files": 1,
+      "bytes": 10630
+    },
+    "README.md": {
+      "files": 1,
+      "bytes": 6977
+    },
+    "Builds": {
+      "files": 1,
+      "bytes": 6320
+    },
+    ".vscode": {
+      "files": 3,
+      "bytes": 2273
+    },
+    "ConRoi.sln": {
+      "files": 1,
+      "bytes": 1039
+    },
+    ".gitignore": {
+      "files": 1,
+      "bytes": 339
+    },
+    "ConRoi.code-workspace": {
+      "files": 1,
+      "bytes": 126
+    },
+    "ConRoi.slnx": {
+      "files": 1,
+      "bytes": 125
+    }
+  },
+  "reparse_points": [
+    {
+      "path": ".tmp/scenario-skills-review/CLAUDE.md",
+      "target": "AGENTS.md",
+      "followed": false
+    },
+    {
+      "path": "Library",
+      "target": "REPARSE_POINT",
+      "followed": false
+    }
+  ],
+  "errors": [],
+  "large_files": [
+    {
+      "path": "Assets/Model.rar",
+      "bytes": 1433594944,
+      "mtime_ns": 1793806651018292600
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r90_windows_playtest/source-r90.zip",
+      "bytes": 1403510618,
+      "mtime_ns": 1793503739325195700
+    },
+    {
+      "path": ".build-cache/r92-unity-library/Search/98957a664bd18c47a3e41b2a0189ef53.SearchIndexArtifactImporter.262146.b.index",
+      "bytes": 1031872512,
+      "mtime_ns": 1793934834256534700
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/r91/ConRoi-r91-Windows-20261101/ConRoi_Data/sharedassets0.assets",
+      "bytes": 991878032,
+      "mtime_ns": 1793541369122707300
+    },
+    {
+      "path": ".build-cache/r92-unity-library/PlayerDataCache/Win642/Data/sharedassets0.assets",
+      "bytes": 991877792,
+      "mtime_ns": 1793558539029923900
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/r92/ConRoi-r92-Windows-delayed/ConRoi_Data/sharedassets0.assets",
+      "bytes": 991877792,
+      "mtime_ns": 1793553077457953200
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/restructure-20261102/ConRoi-r92-Reorganized-20261102/ConRoi_Data/sharedassets0.assets",
+      "bytes": 991877792,
+      "mtime_ns": 1793558546945191300
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/restructure-20261102/Verification/Reorganized-20261102/ConRoi_Data/sharedassets0.assets",
+      "bytes": 991877792,
+      "mtime_ns": 1793559766022577100
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/r90_windows_playtest/ConRoi-r90-Windows-playtest/ConRoi-r90-Windows/ConRoi_Data/sharedassets0.assets",
+      "bytes": 939893600,
+      "mtime_ns": 1793507140000000000
+    },
+    {
+      "path": ".build-cache/r92-unity-library/DataStore/UDSData_14.bin",
+      "bytes": 919022431,
+      "mtime_ns": 1793581462763631600
+    },
+    {
+      "path": ".build-cache/r92-unity-library/DataStore/UDSData_0.bin",
+      "bytes": 846115366,
+      "mtime_ns": 1793547308392889200
+    },
+    {
+      "path": ".build-cache/r92-unity-library/DataStore/UDSData_25.bin",
+      "bytes": 808841036,
+      "mtime_ns": 1793807103132191500
+    },
+    {
+      "path": ".build-cache/r92-unity-library/DataStore/UDSData_26.bin",
+      "bytes": 805648964,
+      "mtime_ns": 1793807135619109900
+    },
+    {
+      "path": ".build-cache/r92-unity-library/DataStore/UDSData_1.bin",
+      "bytes": 770879347,
+      "mtime_ns": 1793547717364497900
+    },
+    {
+      "path": ".build-cache/r92-unity-library/DataStore/UDSData_21.bin",
+      "bytes": 735368894,
+      "mtime_ns": 1793727928375387400
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r90_review/r89-scene.meshbin",
+      "bytes": 539445741,
+      "mtime_ns": 1793469576065528700
+    },
+    {
+      "path": ".build-cache/r92-unity-library/DataStore/UDSData_27.bin",
+      "bytes": 538779860,
+      "mtime_ns": 1793813466220573600
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r88/r87-scene.meshbin",
+      "bytes": 537210765,
+      "mtime_ns": 1793449696844059900
+    },
+    {
+      "path": "Test/KetQua/journey_v48/ground_r93/scene-ground.meshbin",
+      "bytes": 475874595,
+      "mtime_ns": 1793611697124301000
+    },
+    {
+      "path": ".build-cache/r92-unity-library/DataStore/25/2519ba4502805a4a4d4fd01322fb4921",
+      "bytes": 434210861,
+      "mtime_ns": 1793583629458461700
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/r91/ConRoi-r91-Windows-playtest.zip",
+      "bytes": 431634518,
+      "mtime_ns": 1793543290182519900
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/r92/ConRoi-r92-Windows-playtest.zip",
+      "bytes": 431632440,
+      "mtime_ns": 1793554445442737000
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/restructure-20261102/ConRoi-r92-Reorganized-20261102-Windows-playtest.zip",
+      "bytes": 431613036,
+      "mtime_ns": 1793559757472691100
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/r90_windows_playtest/ConRoi-r90-Windows-playtest.zip",
+      "bytes": 419602695,
+      "mtime_ns": 1793511450971046100
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/r35/ConRoi-v48-r35-MarketPackages-Windows-x64.zip",
+      "bytes": 406130989,
+      "mtime_ns": 1792738964121516200
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/r42/ConRoi-v48-r42-UIFlow-Windows-x64.zip",
+      "bytes": 406116624,
+      "mtime_ns": 1792813722859720000
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/r41/ConRoi-v48-r41-SlopeHub-Windows-x64.zip",
+      "bytes": 406099379,
+      "mtime_ns": 1792780204628447400
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/r39/ConRoi-v48-r39-GD1Reflection-Windows-x64.zip",
+      "bytes": 406089134,
+      "mtime_ns": 1792768307327834400
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/r38/ConRoi-v48-r38-LakeReview-Windows-x64.zip",
+      "bytes": 406039532,
+      "mtime_ns": 1792760398604252300
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/r37/ConRoi-v48-r37-LakeNotebook-Windows-x64.zip",
+      "bytes": 406010319,
+      "mtime_ns": 1792756651760471300
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/r36/ConRoi-v48-r36-MarketIntegration-Windows-x64.zip",
+      "bytes": 405951173,
+      "mtime_ns": 1792746130585742200
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/r34/ConRoi-v48-r34-Class203-Windows-x64.zip",
+      "bytes": 405611246,
+      "mtime_ns": 1792725945060136900
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/r32/Windows_v48_r32_class203_playtest.zip",
+      "bytes": 405590029,
+      "mtime_ns": 1792690362108789100
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/r31/Windows_v48_r31_integrated_review.zip",
+      "bytes": 405474360,
+      "mtime_ns": 1792685667596435000
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/r31/Windows_v48_r31_integrated_CANDIDATE.zip",
+      "bytes": 405473520,
+      "mtime_ns": 1792684672458353100
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r74/r73-source.meshbin",
+      "bytes": 337982163,
+      "mtime_ns": 1793293763342238400
+    },
+    {
+      "path": "Docs/Reviews/journey_v45/windows/hitches_20261017_232203/school-motion.raw",
+      "bytes": 336560921,
+      "mtime_ns": 1792254142868555000
+    },
+    {
+      "path": "Docs/Reviews/journey_v47/diagnostic-profile/performance_20261018_122300/entry.raw",
+      "bytes": 330446288,
+      "mtime_ns": 1792300991937611700
+    },
+    {
+      "path": "Docs/Reviews/journey_v47/diagnostic-route-profile/performance_20261018_122325/lake-moving.raw",
+      "bytes": 327404830,
+      "mtime_ns": 1792301050366046300
+    },
+    {
+      "path": "Test/KetQua/journey_v48/market_ground_r95/props-baseline.meshbin",
+      "bytes": 321984010,
+      "mtime_ns": 1793642917801474300
+    },
+    {
+      "path": ".build-cache/r92-unity-library/DataStore/UDSData_28.bin",
+      "bytes": 303568595,
+      "mtime_ns": 1793851959258843400
+    },
+    {
+      "path": ".build-cache/r92-unity-library/DataStore/UDSData_16.bin",
+      "bytes": 296814277,
+      "mtime_ns": 1793583832503793800
+    },
+    {
+      "path": ".build-cache/r92-unity-library/ArtifactDB",
+      "bytes": 268435456,
+      "mtime_ns": 1793947661925541800
+    },
+    {
+      "path": "Docs/Reviews/journey_v47/trace2-entry/performance_20261018_124801/entry.raw",
+      "bytes": 262802303,
+      "mtime_ns": 1792302492878425800
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/restructure-20261102/checkpoint-before-restructure.zip",
+      "bytes": 262758616,
+      "mtime_ns": 1793556609326184200
+    },
+    {
+      "path": "Docs/Reviews/journey_v47/normal-entry-profile/normal_20261018_124920/entry.raw",
+      "bytes": 258012149,
+      "mtime_ns": 1792302568387665500
+    },
+    {
+      "path": "Test/BangChung/journey_v47/attempt4-experience/experience_20261018_135855/recording/listener.f32",
+      "bytes": 257340872,
+      "mtime_ns": 1792307411849520200
+    },
+    {
+      "path": "Test/BangChung/journey_v47/experience/experience_20261018_145940/recording/listener.f32",
+      "bytes": 256831960,
+      "mtime_ns": 1792311054614765800
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/ConRoi-v48-r4-binary-only.zip",
+      "bytes": 252979227,
+      "mtime_ns": 1792329608379799900
+    },
+    {
+      "path": "Test/BangChung/journey_v43/windows/experience_20261017_191300/recording/listener.f32",
+      "bytes": 252977104,
+      "mtime_ns": 1792239847932833500
+    },
+    {
+      "path": "Test/BangChung/journey_v44/windows/experience_20261017_213716/recording/listener.f32",
+      "bytes": 252548680,
+      "mtime_ns": 1792248498821537300
+    },
+    {
+      "path": "Test/BangChung/journey_v42/windows/experience_20261017_124637/recording/listener.f32",
+      "bytes": 252038016,
+      "mtime_ns": 1792216661559735200
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v47/ConRoi-v47-RC3-Windows-x64.zip",
+      "bytes": 250336743,
+      "mtime_ns": 1792318179071586100
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v47/ConRoi-v47-RC2-Windows-x64.zip",
+      "bytes": 249749141,
+      "mtime_ns": 1792312757047425100
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v47/ConRoi-v47-RC1-Windows-x64.zip",
+      "bytes": 249678201,
+      "mtime_ns": 1792305317142494600
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v46/ConRoi-v46-Experience-Windows-x64.zip",
+      "bytes": 249649209,
+      "mtime_ns": 1792299595696327700
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v45/ConRoi-v45-Experience-Windows-x64.zip",
+      "bytes": 249637744,
+      "mtime_ns": 1792254685541342600
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v44/ConRoi-v44-Experience-Windows-x64.zip",
+      "bytes": 249612239,
+      "mtime_ns": 1792250356118336900
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v43/ConRoi-v43-Experience-Windows-x64.zip",
+      "bytes": 249496114,
+      "mtime_ns": 1792241273445668100
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v42/ConRoi-v42-Experience-Windows-x64.zip",
+      "bytes": 249412896,
+      "mtime_ns": 1792217496709553200
+    },
+    {
+      "path": "Test/BangChung/journey_v41/windows/experience_20261017_110110/recording/listener.f32",
+      "bytes": 246543848,
+      "mtime_ns": 1792211217818622600
+    },
+    {
+      "path": "Test/BangChung/journey_v41/windows/experience_20261017_112720/recording/listener.f32",
+      "bytes": 246167728,
+      "mtime_ns": 1792211885980120300
+    },
+    {
+      "path": "Test/BangChung/journey_v41/windows/experience_20261017_103859/recording/listener.f32",
+      "bytes": 244868912,
+      "mtime_ns": 1792208986148089300
+    },
+    {
+      "path": "Docs/Reviews/journey_v41/windows/experience_20261017_112720/experience_20261017_042724/frames.csv",
+      "bytes": 233768738,
+      "mtime_ns": 1792211885918093500
+    },
+    {
+      "path": "Docs/Reviews/journey_v40/windows/experience_20261017_095005/experience_20261017_025013/frames.csv",
+      "bytes": 222265402,
+      "mtime_ns": 1792205980459725200
+    },
+    {
+      "path": "Docs/Reviews/journey_v40/windows/experience_20261017_092749/experience_20261017_022757/frames.csv",
+      "bytes": 221612709,
+      "mtime_ns": 1792204645201190900
+    },
+    {
+      "path": "Test/BangChung/journey_v41/windows/experience_20261017_104636/recording/listener.f32",
+      "bytes": 220315648,
+      "mtime_ns": 1792209378720711700
+    },
+    {
+      "path": "Test/BangChung/journey_v40/windows/experience_20261017_092749/recording/listener.f32",
+      "bytes": 218152960,
+      "mtime_ns": 1792204645280775900
+    },
+    {
+      "path": "Test/BangChung/journey_v40/windows/experience_20261017_095005/recording/listener.f32",
+      "bytes": 217744240,
+      "mtime_ns": 1792205980556989200
+    },
+    {
+      "path": "Docs/Reviews/journey_v44/baseline-profile/startup.raw",
+      "bytes": 206101315,
+      "mtime_ns": 1792242570469326600
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v40/ConRoi-v40-Experience-Windows-x64.zip",
+      "bytes": 199128909,
+      "mtime_ns": 1792207124787114300
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v41/ConRoi-v41-Experience-Windows-x64.zip",
+      "bytes": 198184273,
+      "mtime_ns": 1792212370941737800
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r39/source-world-geometry.json",
+      "bytes": 196569872,
+      "mtime_ns": 1792764882485943500
+    },
+    {
+      "path": "Docs/Reviews/journey_v40/windows/experience_20261017_093350/experience_20261017_023359/frames.csv",
+      "bytes": 194574123,
+      "mtime_ns": 1792205009087575400
+    },
+    {
+      "path": "Test/BangChung/journey_v48/r88/walk-market-controller.mp4",
+      "bytes": 193158057,
+      "mtime_ns": 1793454463804298200
+    },
+    {
+      "path": ".build-cache/r92-unity-library/DataStore/UDSData_17.bin",
+      "bytes": 186385207,
+      "mtime_ns": 1793583450478293900
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R107/Terrain_R107_Editable.blend",
+      "bytes": 184685893,
+      "mtime_ns": 1793947346472250800
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R107/Terrain_R107_Editable.blend1",
+      "bytes": 184684739,
+      "mtime_ns": 1793940827794144800
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R101/Terrain_R101_Editable.blend1",
+      "bytes": 184682279,
+      "mtime_ns": 1793804762326039900
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R101/Terrain_R101_Editable.blend",
+      "bytes": 184681693,
+      "mtime_ns": 1793805589376750000
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R99/Stages/Before_Flower_Surface_Mapping.blend",
+      "bytes": 183199524,
+      "mtime_ns": 1793787654814066700
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R99/OngDao_Dam_R99_SectionCandidate.blend",
+      "bytes": 182969603,
+      "mtime_ns": 1793787932166051200
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R100/OngDao_Dam_R100_Editable.blend",
+      "bytes": 182967105,
+      "mtime_ns": 1793790738693831100
+    },
+    {
+      "path": "Docs/Reviews/journey_v41/windows/experience_20261017_110110/experience_20261017_040117/frames.csv",
+      "bytes": 176076813,
+      "mtime_ns": 1792211217751121800
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v36/ConRoi-HoCho-v36-Windows-x64.zip",
+      "bytes": 174627408,
+      "mtime_ns": 1792167814595657100
+    },
+    {
+      "path": "Docs/Reviews/journey_v41/windows/experience_20261017_103859/experience_20261017_033907/frames.csv",
+      "bytes": 167184443,
+      "mtime_ns": 1792208985901844700
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v39/ConRoi-v39-TichHop-Windows-x64.zip",
+      "bytes": 165698429,
+      "mtime_ns": 1792172793878957400
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v38/ConRoi-v38-Truong-Windows-x64.zip",
+      "bytes": 165625071,
+      "mtime_ns": 1792169254673981000
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R99/Stages/Before_Approach_Continuity.blend",
+      "bytes": 165274696,
+      "mtime_ns": 1793776374786433100
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R98/OngDao_Dam_R98_Editable.blend",
+      "bytes": 164791348,
+      "mtime_ns": 1793766759483194300
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R97/Bridgehead_Bank_R97_Editable.blend1",
+      "bytes": 164704652,
+      "mtime_ns": 1793724889834206500
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R97/Bridgehead_Bank_R97_Editable.blend",
+      "bytes": 164569494,
+      "mtime_ns": 1793727685407106000
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R96/Market_Ground_R96_Editable.blend",
+      "bytes": 160402231,
+      "mtime_ns": 1793718447926702200
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R95/Market_Ground_R95_Editable.blend",
+      "bytes": 160376714,
+      "mtime_ns": 1793682705663549000
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R95/Market_Ground_R95_PreFinal.blend",
+      "bytes": 159669683,
+      "mtime_ns": 1793674295107666700
+    },
+    {
+      "path": "Docs/Reviews/model_locations/r39_integrated_models_REVIEW.blend",
+      "bytes": 159587385,
+      "mtime_ns": 1792766926587800900
+    },
+    {
+      "path": "Docs/Reviews/model_locations/r32_integrated_models_REVIEW.blend",
+      "bytes": 159295389,
+      "mtime_ns": 1792689079212230900
+    },
+    {
+      "path": "Docs/Reviews/model_locations/r30_integrated_models_REVIEW.blend",
+      "bytes": 158848963,
+      "mtime_ns": 1792671764574046400
+    },
+    {
+      "path": "Docs/Reviews/model_locations/r29_integrated_models_REVIEW.blend",
+      "bytes": 158833137,
+      "mtime_ns": 1792668774714181800
+    },
+    {
+      "path": "Docs/Reviews/model_locations/r41_integrated_models_REVIEW.blend",
+      "bytes": 158778152,
+      "mtime_ns": 1792776381836179400
+    },
+    {
+      "path": "Docs/Reviews/model_locations/r38_integrated_models_REVIEW.blend",
+      "bytes": 158773049,
+      "mtime_ns": 1792759695985007700
+    },
+    {
+      "path": "Docs/Reviews/model_locations/r40_integrated_models_REVIEW.blend",
+      "bytes": 158771115,
+      "mtime_ns": 1792771885829260300
+    },
+    {
+      "path": "Docs/Reviews/model_locations/r35_integrated_models_REVIEW.blend",
+      "bytes": 158764743,
+      "mtime_ns": 1792734322920279100
+    },
+    {
+      "path": "Docs/Reviews/model_locations/r37_integrated_models_REVIEW.blend",
+      "bytes": 158754323,
+      "mtime_ns": 1792751052847420100
+    },
+    {
+      "path": "Docs/Reviews/model_locations/r46_integrated_models_REVIEW.blend",
+      "bytes": 158521447,
+      "mtime_ns": 1793039377436570800
+    },
+    {
+      "path": "Docs/Reviews/model_locations/r45_integrated_models_REVIEW.blend",
+      "bytes": 158488107,
+      "mtime_ns": 1792977058392516400
+    },
+    {
+      "path": "Test/KetQua/journey_v48/r87_school_slope/telemetry.jsonl",
+      "bytes": 156263392,
+      "mtime_ns": 1793445626001023600
+    },
+    {
+      "path": "Test/BangChung/journey_v43/windows/experience_20261017_185030/recording/listener.f32",
+      "bytes": 152834048,
+      "mtime_ns": 1792238344241145000
+    },
+    {
+      "path": "Test/BangChung/journey_v48/visible/r4-route/recording/listener.f32",
+      "bytes": 150620160,
+      "mtime_ns": 1792330631563286800
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r50/live-meshes.json",
+      "bytes": 150269369,
+      "mtime_ns": 1793085776380494200
+    },
+    {
+      "path": "Test/BangChung/journey_v48/visible/r3-route/recording/listener.f32",
+      "bytes": 149945544,
+      "mtime_ns": 1792327465234997300
+    },
+    {
+      "path": "Test/BangChung/journey_v48/visible/r2-route/recording/listener.f32",
+      "bytes": 149084944,
+      "mtime_ns": 1792325490402333700
+    },
+    {
+      "path": "Docs/Reviews/journey_v40/windows/experience_20261017_093124/experience_20261017_023129/frames.csv",
+      "bytes": 146657564,
+      "mtime_ns": 1792204651799511500
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r92/source-r92-delta-final.zip",
+      "bytes": 142379036,
+      "mtime_ns": 1793549238034610800
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r92/source-r92-delta.zip",
+      "bytes": 142379031,
+      "mtime_ns": 1793549144019368000
+    },
+    {
+      "path": "Test/BangChung/journey_v43/windows/experience_20261017_190541/recording/listener.f32",
+      "bytes": 141635584,
+      "mtime_ns": 1792239118398545100
+    },
+    {
+      "path": "Test/BangChung/journey_v40/windows/experience_20261017_093947/recording/listener.f32",
+      "bytes": 140759040,
+      "mtime_ns": 1792205161246621000
+    },
+    {
+      "path": "Test/BangChung/journey_v40/windows/experience_20261017_093124/recording/listener.f32",
+      "bytes": 139153408,
+      "mtime_ns": 1792204651784679500
+    },
+    {
+      "path": "Test/BangChung/journey_v41/windows/experience_20261017_105011/recording/listener.f32",
+      "bytes": 137269248,
+      "mtime_ns": 1792209378740674300
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r50/unity-mesh-exchange.json",
+      "bytes": 136144421,
+      "mtime_ns": 1793086518234728200
+    },
+    {
+      "path": "Docs/Organization/Test-20261102/moves.jsonl",
+      "bytes": 135660946,
+      "mtime_ns": 1793562820522212800
+    },
+    {
+      "path": "Docs/Reviews/journey_v40/windows/experience_20261017_093947/experience_20261017_023954/frames.csv",
+      "bytes": 134884788,
+      "mtime_ns": 1792205161253137500
+    },
+    {
+      "path": ".build-cache/r92-unity-library/SourceAssetDB",
+      "bytes": 134217728,
+      "mtime_ns": 1793952410145395000
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/ExportPolicyR19/RouteSurfaces.fbx",
+      "bytes": 134137164,
+      "mtime_ns": 1792424138421433900
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/ExportPolicyR20/RouteSurfaces.fbx",
+      "bytes": 134137164,
+      "mtime_ns": 1792424138421433900
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r18/exporter-rebuild/RouteSurfaces.fbx",
+      "bytes": 134137164,
+      "mtime_ns": 1792424138421433900
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r91/editable-sources-r91.zip",
+      "bytes": 132634906,
+      "mtime_ns": 1793541815988104500
+    },
+    {
+      "path": "Assets/Art/Environment/LakeGateMarketV33/RouteSurfaces.fbx",
+      "bytes": 132534684,
+      "mtime_ns": 1792127806936480400
+    },
+    {
+      "path": "Assets/Blender/Model.blend",
+      "bytes": 132081670,
+      "mtime_ns": 1793580627115648500
+    },
+    {
+      "path": "Test/Tam/BlenderTrinhBay-20261102/ConRoi_TongHop_TrinhBay.blend",
+      "bytes": 132081670,
+      "mtime_ns": 1793580627115648500
+    },
+    {
+      "path": "Test/BangChung/journey_v48/r88/walk-bridge-controller.mp4",
+      "bytes": 130673877,
+      "mtime_ns": 1793453892900250000
+    },
+    {
+      "path": "Test/KetQua/journey_v48/dam_r99/attempt-overshoot/dam-end-stairs-controller.mp4",
+      "bytes": 127664957,
+      "mtime_ns": 1793786635476548800
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0921_BoundR95.asset",
+      "bytes": 125837867,
+      "mtime_ns": 1793681418671419300
+    },
+    {
+      "path": "Test/BangChung/journey_v44/windows/experience_20261017_212856/recording/listener.f32",
+      "bytes": 124716688,
+      "mtime_ns": 1792247665003807500
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r44-content/blocker-session-run-20261025/manual/game-audio.wav",
+      "bytes": 124149804,
+      "mtime_ns": 1792917635613022900
+    },
+    {
+      "path": "Docs/Reviews/journey_v40/windows/experience_20261017_094534/experience_20261017_024541/frames.csv",
+      "bytes": 123329264,
+      "mtime_ns": 1792205443519170700
+    },
+    {
+      "path": "Test/BangChung/journey_v48/r4/ConRoi-v48-r4-after-lake-market-player.mp4",
+      "bytes": 121722991,
+      "mtime_ns": 1792330772105815000
+    },
+    {
+      "path": "Test/BangChung/journey_v48/r3/ConRoi-v48-r3-after-lake-market-player.mp4",
+      "bytes": 121376135,
+      "mtime_ns": 1792327686923851900
+    },
+    {
+      "path": "Test/BangChung/journey_v48/visible/before-route/recording/listener.f32",
+      "bytes": 120786792,
+      "mtime_ns": 1792323980810194900
+    },
+    {
+      "path": "Test/BangChung/journey_v40/windows/experience_20261017_094534/recording/listener.f32",
+      "bytes": 115851264,
+      "mtime_ns": 1792205443511424200
+    },
+    {
+      "path": ".build-cache/r92-unity-library/DataStore/UDSData_32.bin",
+      "bytes": 113016672,
+      "mtime_ns": 1793947667195829400
+    },
+    {
+      "path": "Docs/Reviews/journey_v41/windows/walkthrough_20261017_114132/walkthrough_20261017_044136/frames.csv",
+      "bytes": 112992395,
+      "mtime_ns": 1792212316156961500
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0083_BoundR95.asset",
+      "bytes": 112313044,
+      "mtime_ns": 1793681329693187300
+    },
+    {
+      "path": "Test/KetQua/journey_v48/r85/editor-session.log",
+      "bytes": 108295098,
+      "mtime_ns": 1793477689737265400
+    },
+    {
+      "path": "Docs/Reviews/journey_v40/windows/walkthrough_20261017_091329/walkthrough_20261017_021338/frames.csv",
+      "bytes": 107427940,
+      "mtime_ns": 1792203439127447000
+    },
+    {
+      "path": "Test/KetQua/journey_v48/market_ground_r95/scene-ground.meshbin",
+      "bytes": 107376727,
+      "mtime_ns": 1793635520087276000
+    },
+    {
+      "path": "Docs/Reviews/journey_v41/windows/experience_20261017_104636/experience_20261017_034644/frames.csv",
+      "bytes": 106329100,
+      "mtime_ns": 1792209378717355000
+    },
+    {
+      "path": "Docs/Reviews/journey_v42/windows/walkthrough_20261017_120832/walkthrough_20261017_050840/frames.csv",
+      "bytes": 105718810,
+      "mtime_ns": 1792213961419026400
+    },
+    {
+      "path": "Docs/Reviews/journey_v44/windows/experience_20261017_213716/experience_20261017_143721/frames.csv",
+      "bytes": 104370388,
+      "mtime_ns": 1792248498757413900
+    },
+    {
+      "path": "Test/BangChung/journey_v42/windows/experience_20261017_123501/recording/listener.f32",
+      "bytes": 103665664,
+      "mtime_ns": 1792215575278894500
+    },
+    {
+      "path": "Test/BangChung/journey_v48/visible/r4-fullflow/recording/listener.f32",
+      "bytes": 102820528,
+      "mtime_ns": 1792330119588583400
+    },
+    {
+      "path": "Test/BangChung/journey_v48/visible/r10-fullflow/recording/listener.f32",
+      "bytes": 102254384,
+      "mtime_ns": 1792392045341364200
+    },
+    {
+      "path": "Test/BangChung/journey_v41/windows/experience_20261017_105639/recording/listener.f32",
+      "bytes": 101044224,
+      "mtime_ns": 1792209670069781100
+    },
+    {
+      "path": ".build-cache/r92-unity-library/PackageCache/com.unity.ai.assistant@284c75a8d208/RelayApp~/relay_win.exe",
+      "bytes": 100732336,
+      "mtime_ns": 1785254248976000000
+    },
+    {
+      "path": "Test/BangChung/journey_v48/visible/r1-fullflow/recording/listener.f32",
+      "bytes": 99887776,
+      "mtime_ns": 1792324540192357000
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/r90_windows_playtest/ConRoi-r90-Windows-playtest/ConRoi-r90-Windows/ConRoi_Data/sharedassets0.assets.resS",
+      "bytes": 98052864,
+      "mtime_ns": 1793507140000000000
+    },
+    {
+      "path": ".build-cache/r92-unity-library/PlayerDataCache/Win642/Data/sharedassets0.assets.resS",
+      "bytes": 97373376,
+      "mtime_ns": 1793558539031445000
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/r91/ConRoi-r91-Windows-20261101/ConRoi_Data/sharedassets0.assets.resS",
+      "bytes": 97373376,
+      "mtime_ns": 1793541367756463400
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/r92/ConRoi-r92-Windows-delayed/ConRoi_Data/sharedassets0.assets.resS",
+      "bytes": 97373376,
+      "mtime_ns": 1793553076312826700
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/restructure-20261102/ConRoi-r92-Reorganized-20261102/ConRoi_Data/sharedassets0.assets.resS",
+      "bytes": 97373376,
+      "mtime_ns": 1793558545409179600
+    },
+    {
+      "path": "Test/BanChoiThu/journey_v48/restructure-20261102/Verification/Reorganized-20261102/ConRoi_Data/sharedassets0.assets.resS",
+      "bytes": 97373376,
+      "mtime_ns": 1793559766398023400
+    },
+    {
+      "path": ".build-cache/r92-unity-library/PackageCache/com.unity.ai.assistant@284c75a8d208/RelayApp~/relay_linux",
+      "bytes": 96950400,
+      "mtime_ns": 1785254248976000000
+    },
+    {
+      "path": "Docs/Reviews/journey_v40/windows/walkthrough_20261017_095942/walkthrough_20261017_025946/frames.csv",
+      "bytes": 96827467,
+      "mtime_ns": 1792206205360063700
+    },
+    {
+      "path": "Docs/Reviews/journey_v47/experience/experience_20261018_145940/experience_20261018_075945/frames.csv",
+      "bytes": 96603533,
+      "mtime_ns": 1792311054520890600
+    },
+    {
+      "path": "Test/BangChung/journey_v48/visible/r3-fullflow/recording/listener.f32",
+      "bytes": 95962600,
+      "mtime_ns": 1792326153656701500
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/FinitePineNormals/SlopeFoliage_1.asset",
+      "bytes": 94191109,
+      "mtime_ns": 1792374695589770700
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV42/SlopeFoliage_1.asset",
+      "bytes": 92900844,
+      "mtime_ns": 1792213938440853700
+    },
+    {
+      "path": "Test/BangChung/journey_v47/ConRoi-v47-RC2-full-experience.mp4",
+      "bytes": 91841588,
+      "mtime_ns": 1792312499951191100
+    },
+    {
+      "path": "Test/BangChung/journey_v47/ConRoi-v47-RC1-full-experience.mp4",
+      "bytes": 91555695,
+      "mtime_ns": 1792308541993402400
+    },
+    {
+      "path": "Docs/Organization/Test-20261102/plan.jsonl",
+      "bytes": 91130303,
+      "mtime_ns": 1793561876641660800
+    },
+    {
+      "path": "Test/BangChung/journey_v44/ConRoi-v44-gameplay.mp4",
+      "bytes": 90943726,
+      "mtime_ns": 1792248672657786100
+    },
+    {
+      "path": "Test/BangChung/journey_v43/windows/experience_20261017_151151/recording/listener.f32",
+      "bytes": 90515440,
+      "mtime_ns": 1792224952979641700
+    },
+    {
+      "path": "Test/BangChung/journey_v48/r90_review/final-controller.mp4",
+      "bytes": 89944017,
+      "mtime_ns": 1793472289922973500
+    },
+    {
+      "path": "Test/BangChung/journey_v48/ConRoi-v48-before-RC3-scene-player.mp4",
+      "bytes": 89756152,
+      "mtime_ns": 1792325676316201300
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r77/r77-scene.meshbin",
+      "bytes": 88825975,
+      "mtime_ns": 1793352938324827700
+    },
+    {
+      "path": "Test/BangChung/journey_v48/r95_visual_review/bridge-market-return-fixed-controller.mp4",
+      "bytes": 87913651,
+      "mtime_ns": 1793721069655788000
+    },
+    {
+      "path": "Tools/python-deps/imageio_ffmpeg/binaries/ffmpeg-win-x86_64-v7.1.exe",
+      "bytes": 87638016,
+      "mtime_ns": 1792238864372577600
+    },
+    {
+      "path": "Test/BangChung/journey_v48/r87_followup/lake-market-controller.mp4",
+      "bytes": 86887944,
+      "mtime_ns": 1793442000706074400
+    },
+    {
+      "path": "Test/BangChung/journey_v47_rc3/visible/capture-full/recording/listener.f32",
+      "bytes": 86664120,
+      "mtime_ns": 1792316477886890500
+    },
+    {
+      "path": "Test/BangChung/journey_v48/r90_review/survey_before-controller.mp4",
+      "bytes": 84445133,
+      "mtime_ns": 1793470488262991200
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r77/r76-scene.meshbin",
+      "bytes": 84257888,
+      "mtime_ns": 1793350175923385000
+    },
+    {
+      "path": "Test/BangChung/journey_v43/ConRoi-v43-gameplay.mp4",
+      "bytes": 84182041,
+      "mtime_ns": 1792240633131873300
+    },
+    {
+      "path": "Test/BangChung/journey_v42/ConRoi-v42-gameplay.mp4",
+      "bytes": 83628122,
+      "mtime_ns": 1792217402040578400
+    },
+    {
+      "path": "Test/BangChung/journey_v46/before-player/recording/listener.f32",
+      "bytes": 82496616,
+      "mtime_ns": 1792297348023672300
+    },
+    {
+      "path": "Test/BangChung/journey_v46/windows/walkthrough_20261018_113039/recording/listener.f32",
+      "bytes": 82143744,
+      "mtime_ns": 1792298057107676100
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR99/C95_0653_FootwayOverShoulder_Garden_Bank_Return_Walk_Surface_125_BoundR99.asset",
+      "bytes": 80329903,
+      "mtime_ns": 1793779555365017500
+    },
+    {
+      "path": "Docs/Reviews/journey_v47/attempt4-experience/experience_20261018_135855/experience_20261018_065900/frames.csv",
+      "bytes": 79421780,
+      "mtime_ns": 1792307411780114800
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/I2GroundR94/I2_Surface_142_BoundR94.asset",
+      "bytes": 78743051,
+      "mtime_ns": 1793631818979869600
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r74/route-grade-r74.meshbin",
+      "bytes": 78715591,
+      "mtime_ns": 1793305352960991700
+    },
+    {
+      "path": "Test/BangChung/journey_v46/player-observation-before/recording/listener.f32",
+      "bytes": 78689672,
+      "mtime_ns": 1792299281527706600
+    },
+    {
+      "path": "Test/BangChung/journey_v46/player-observation-after/recording/listener.f32",
+      "bytes": 78609792,
+      "mtime_ns": 1792299490531126400
+    },
+    {
+      "path": "Test/BangChung/journey_v48/r87_experience/video_recheck/newgame-lake-market-desktop.mp4",
+      "bytes": 78525373,
+      "mtime_ns": 1793440196418368800
+    },
+    {
+      "path": "Docs/Reviews/model_locations/r49_shore_diagnostic_REVIEW.blend",
+      "bytes": 77940340,
+      "mtime_ns": 1793083460062746800
+    },
+    {
+      "path": "Docs/Reviews/model_locations/meshes.bin.gz",
+      "bytes": 77107187,
+      "mtime_ns": 1792665382662269500
+    },
+    {
+      "path": ".build-cache/r92-unity-library/PackageCache/com.unity.ai.assistant@284c75a8d208/RelayApp~/gateway/codex-acp-darwin-x64",
+      "bytes": 75811248,
+      "mtime_ns": 1785254248976000000
+    },
+    {
+      "path": ".build-cache/r92-unity-library/PackageCache/com.unity.ai.assistant@284c75a8d208/RelayApp~/gateway/codex-acp.exe",
+      "bytes": 75316704,
+      "mtime_ns": 1785254248976000000
+    },
+    {
+      "path": "Test/BangChung/journey_v41/ConRoi-v41-gameplay.mp4",
+      "bytes": 73812967,
+      "mtime_ns": 1792212032181207500
+    },
+    {
+      "path": "Docs/Reviews/journey_v40/windows/route_20261017_101021/route_20261017_031025/frames.csv",
+      "bytes": 72755500,
+      "mtime_ns": 1792206994634873000
+    },
+    {
+      "path": "Docs/Reviews/journey_v39/windows/walkthrough_20261017_002619/walkthrough_20261016_172625/frames.csv",
+      "bytes": 72726870,
+      "mtime_ns": 1792171667020817600
+    },
+    {
+      "path": "Docs/Reviews/journey_v39/windows/walkthrough_20261017_003803/walkthrough_20261016_173808/frames.csv",
+      "bytes": 72243068,
+      "mtime_ns": 1792172370501830000
+    },
+    {
+      "path": ".build-cache/r92-unity-library/PackageCache/com.unity.ai.assistant@284c75a8d208/RelayApp~/gateway/codex-acp-darwin-arm64",
+      "bytes": 71678880,
+      "mtime_ns": 1785254248976000000
+    },
+    {
+      "path": "Test/BangChung/journey_v48/r87_experience/newgame-lake-market-continuous.mp4",
+      "bytes": 71564375,
+      "mtime_ns": 1793438694287925700
+    },
+    {
+      "path": "Docs/Reviews/journey_v40/windows/route_20261017_092419/route_20261017_022423/frames.csv",
+      "bytes": 71477090,
+      "mtime_ns": 1792204233414184600
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/FinitePineNormals/SlopeFoliage_2.asset",
+      "bytes": 70644229,
+      "mtime_ns": 1792374694123362800
+    },
+    {
+      "path": "Assets/Blender/NguonTheoKhu/Ho_CauOngDao/CauOngDao_R48_EDITABLE.blend",
+      "bytes": 70584174,
+      "mtime_ns": 1793580323135990600
+    },
+    {
+      "path": "Docs/Reviews/model_locations/r48_map_source_REVIEW.blend",
+      "bytes": 70050698,
+      "mtime_ns": 1793077880646131800
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r48/ong-dao-r48-source.blend",
+      "bytes": 70049433,
+      "mtime_ns": 1793077877528842100
+    },
+    {
+      "path": "Docs/Reviews/journey_v46/clean/performance_20261018_114602/walkthrough_20261018_044607/frames.csv",
+      "bytes": 69911460,
+      "mtime_ns": 1792298988534041900
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV42/SlopeFoliage_2.asset",
+      "bytes": 69676524,
+      "mtime_ns": 1792213939943046800
+    },
+    {
+      "path": "Docs/Reviews/journey_v39/windows/walkthrough_20261017_001435/walkthrough_20261016_171441/frames.csv",
+      "bytes": 69641261,
+      "mtime_ns": 1792170962601804400
+    },
+    {
+      "path": "Test/BangChung/journey_v48/visible/r3-natural-C/recording/listener.f32",
+      "bytes": 68142800,
+      "mtime_ns": 1792329093755690800
+    },
+    {
+      "path": "Docs/Reviews/journey_v47/baseline-clean/performance_20261018_121123/walkthrough_20261018_051127/frames.csv",
+      "bytes": 67725506,
+      "mtime_ns": 1792300509362573000
+    },
+    {
+      "path": "Docs/Reviews/journey_v46/windows/performance_20261018_113746/walkthrough_20261018_043750/frames.csv",
+      "bytes": 67690879,
+      "mtime_ns": 1792298494771488900
+    },
+    {
+      "path": "Docs/Reviews/journey_v47/baseline-clean/performance_20261018_121511/walkthrough_20261018_051515/frames.csv",
+      "bytes": 67396180,
+      "mtime_ns": 1792300740511998500
+    },
+    {
+      "path": ".build-cache/r92-unity-library/DataStore/uds.db",
+      "bytes": 67108864,
+      "mtime_ns": 1793947667195829400
+    },
+    {
+      "path": "Docs/Reviews/journey_v47/baseline-clean/performance_20261018_120734/walkthrough_20261018_050738/frames.csv",
+      "bytes": 66475871,
+      "mtime_ns": 1792300283512880300
+    },
+    {
+      "path": "Test/BangChung/journey_v44/windows/experience_20261017_211246/recording/listener.f32",
+      "bytes": 66338816,
+      "mtime_ns": 1792246551530660600
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r76/route-seams-r76.meshbin",
+      "bytes": 66282219,
+      "mtime_ns": 1793345135686967800
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR99/OngDaoDamR99.fbx",
+      "bytes": 65634876,
+      "mtime_ns": 1793788048347295100
+    },
+    {
+      "path": "Test/Output/journey_v48/DamR99/OngDaoDamR99.fbx",
+      "bytes": 65634876,
+      "mtime_ns": 1793788048347295100
+    },
+    {
+      "path": "Docs/Reviews/journey_v40/windows/branches_20261017_091837/ending_branches_20261017_021841/frames.csv",
+      "bytes": 64984101,
+      "mtime_ns": 1792203645826225400
+    },
+    {
+      "path": "Assets/Blender/NguonTheoKhu/Ho_CauOngDao/BoHo_R91_Chinh_EDITABLE.blend",
+      "bytes": 64819499,
+      "mtime_ns": 1793544890389940300
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R91/north-bank-r91-source-final.blend",
+      "bytes": 64819499,
+      "mtime_ns": 1793544890389940300
+    },
+    {
+      "path": "Test/BangChung/journey_v47/attempt3-acceptance/acceptance-C_20261018_132040/recording/listener.f32",
+      "bytes": 63660544,
+      "mtime_ns": 1792304612261884600
+    },
+    {
+      "path": "Test/BangChung/journey_v47/attempt4-acceptance/acceptance-C_20261018_134802/recording/listener.f32",
+      "bytes": 63529160,
+      "mtime_ns": 1792306254111334000
+    },
+    {
+      "path": "Test/BangChung/journey_v47/acceptance/acceptance-C_20261018_144841/recording/listener.f32",
+      "bytes": 63366464,
+      "mtime_ns": 1792309892830013200
+    },
+    {
+      "path": "Test/BangChung/journey_v48/r87_experience/newgame-lake-market-main.mp4",
+      "bytes": 62742104,
+      "mtime_ns": 1793439457796066100
+    },
+    {
+      "path": "Docs/Reviews/journey_v40/windows/branches_20261017_100440/ending_branches_20261017_030444/frames.csv",
+      "bytes": 62566596,
+      "mtime_ns": 1792206408708599200
+    },
+    {
+      "path": "Assets/Blender/NguonTheoKhu/Ho_CauOngDao/BoHo_R91_BoSung_EDITABLE.blend",
+      "bytes": 62537439,
+      "mtime_ns": 1793544890671741200
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R91/north-bank-r91-extra-final.blend",
+      "bytes": 62537439,
+      "mtime_ns": 1793544890671741200
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r88/roundabouts-r88-source.blend",
+      "bytes": 62429518,
+      "mtime_ns": 1793453909280236900
+    },
+    {
+      "path": "Docs/Reviews/model_locations/r54_langfarm_REVIEW.blend1",
+      "bytes": 62270730,
+      "mtime_ns": 1793122557154954900
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r54/langfarm-r54-source.blend",
+      "bytes": 62269781,
+      "mtime_ns": 1793123098417042700
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r55/route-r55-source-context.blend",
+      "bytes": 62268700,
+      "mtime_ns": 1793156810072612100
+    },
+    {
+      "path": "Docs/Reviews/model_locations/r55_route_REVIEW.blend",
+      "bytes": 62268700,
+      "mtime_ns": 1793156810229591300
+    },
+    {
+      "path": "Docs/Reviews/model_locations/r54_langfarm_REVIEW.blend",
+      "bytes": 62267543,
+      "mtime_ns": 1793123119219297000
+    },
+    {
+      "path": "Assets/Blender/NguonTheoKhu/Cho/NenCho_NhanhNoi_R90_EDITABLE.blend",
+      "bytes": 62233858,
+      "mtime_ns": 1793473133063591500
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r90_review/market-branches-r90-source.blend",
+      "bytes": 62233858,
+      "mtime_ns": 1793473133063591500
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r90_review/terrain-stage-r90-source.blend",
+      "bytes": 62179069,
+      "mtime_ns": 1793471304753851300
+    },
+    {
+      "path": "Docs/Reviews/journey_v47/reviewed-ray-miss/performance_20261018_151456/walkthrough_20261018_081501/frames.csv",
+      "bytes": 62123132,
+      "mtime_ns": 1792311535618129600
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR99/C95_0654_FootwayOverShoulder_Garden_Bank_Return_Walk_Surface_153_BoundR99.asset",
+      "bytes": 61930645,
+      "mtime_ns": 1793779557789242000
+    },
+    {
+      "path": "Docs/Reviews/journey_v47_rc3/visual-route/walkthrough_20261018_170229/walkthrough_20261018_100234/frames.csv",
+      "bytes": 61769767,
+      "mtime_ns": 1792317989868870100
+    },
+    {
+      "path": "Docs/Reviews/journey_v47/candidate-clean/performance_20261018_151056/walkthrough_20261018_081101/frames.csv",
+      "bytes": 61597458,
+      "mtime_ns": 1792311295001767200
+    },
+    {
+      "path": "Docs/Reviews/model_locations/r53_langfarm_REVIEW.blend",
+      "bytes": 61299132,
+      "mtime_ns": 1793120913679033500
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r53/langfarm-r53-source.blend",
+      "bytes": 61298218,
+      "mtime_ns": 1793120895372878000
+    },
+    {
+      "path": "Docs/Reviews/model_locations/r53_langfarm_REVIEW.blend1",
+      "bytes": 61188911,
+      "mtime_ns": 1793115835879798400
+    },
+    {
+      "path": "Docs/Reviews/journey_v41/windows/walkthrough_20261017_104947/walkthrough_20261017_034953/frames.csv",
+      "bytes": 61136022,
+      "mtime_ns": 1792209198426525100
+    },
+    {
+      "path": "Docs/Reviews/journey_v47/candidate-clean/performance_20261018_152815/walkthrough_20261018_082820/frames.csv",
+      "bytes": 61027083,
+      "mtime_ns": 1792312334055204300
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR100/D99_FLOWERS_Red_2_BoundR100.asset",
+      "bytes": 60913271,
+      "mtime_ns": 1793790944819514400
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR99/D99_FLOWERS_Red_2_BoundR99.asset",
+      "bytes": 60913270,
+      "mtime_ns": 1793788131371083400
+    },
+    {
+      "path": "Test/BangChung/journey_v48/r42/r42-full-CONTINUOUS-OFFSCREEN-preAuditFix.mp4",
+      "bytes": 60896435,
+      "mtime_ns": 1792812847239257700
+    },
+    {
+      "path": "Docs/Reviews/journey_v40/windows/stability_20261017_091721/stability_20261017_021726/frames.csv",
+      "bytes": 60633482,
+      "mtime_ns": 1792203517402545800
+    },
+    {
+      "path": "Test/BangChung/journey_v48/r42/r42-full-CONTINUOUS-OFFSCREEN.mp4",
+      "bytes": 60557950,
+      "mtime_ns": 1792813654804096000
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r52/market-entry-r52-source.blend",
+      "bytes": 60444039,
+      "mtime_ns": 1793113688063672800
+    },
+    {
+      "path": "Docs/Reviews/model_locations/r52_market_entry_REVIEW.blend",
+      "bytes": 60442811,
+      "mtime_ns": 1793113697248101400
+    },
+    {
+      "path": "Test/BangChung/journey_v48/i2_r93_complete/i2-controller.mp4",
+      "bytes": 60421416,
+      "mtime_ns": 1793633457417204800
+    },
+    {
+      "path": ".build-cache/r92-unity-library/PackageCache/com.unity.visualeffectgraph@3c55eb193cdb/Documentation~/Images/WhatsNew_17_1_Instanced_Explosions.mp4",
+      "bytes": 60386662,
+      "mtime_ns": 1788909292000000000
+    },
+    {
+      "path": "Docs/Reviews/model_locations/r52_market_entry_REVIEW.blend1",
+      "bytes": 60146984,
+      "mtime_ns": 1793113273012275400
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r50/shore-r50-unity.meshbin",
+      "bytes": 60090720,
+      "mtime_ns": 1793086696943596300
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r39/lake-r39-overlook-source.blend",
+      "bytes": 59882532,
+      "mtime_ns": 1792766357105599600
+    },
+    {
+      "path": "Docs/Reviews/lake_gate_market_current/ntmk_full_map_ong_dao_v35.blend",
+      "bytes": 59808173,
+      "mtime_ns": 1792141464249116900
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r40/ong-dao-r40-restored-source.blend",
+      "bytes": 59804256,
+      "mtime_ns": 1792771336464526300
+    },
+    {
+      "path": "Assets/Blender/NguonTheoKhu/PhongTro/PhongTro_DaoCuGoc_V34_EDITABLE.blend",
+      "bytes": 59102298,
+      "mtime_ns": 1793580319529262900
+    },
+    {
+      "path": "Docs/Reviews/journey_v47/candidate/walkthrough_20261018_145136/walkthrough_20261018_075141/frames.csv",
+      "bytes": 59028043,
+      "mtime_ns": 1792310135426431900
+    },
+    {
+      "path": "Docs/Reviews/journey_v39/windows/branches_20261017_002824/ending_branches_20261016_172828/frames.csv",
+      "bytes": 58929588,
+      "mtime_ns": 1792171776186707800
+    },
+    {
+      "path": "Docs/Reviews/lake_gate_market_current/ntmk_full_map_lake_market_story_v34.blend",
+      "bytes": 58562766,
+      "mtime_ns": 1792134040303178600
+    },
+    {
+      "path": "Docs/Reviews/lake_gate_market_current/ntmk_full_map_route_materials_v33.blend",
+      "bytes": 58534932,
+      "mtime_ns": 1792129242225472500
+    },
+    {
+      "path": "Docs/Reviews/journey_v39/windows/branches_20261017_004007/ending_branches_20261016_174011/frames.csv",
+      "bytes": 58514505,
+      "mtime_ns": 1792172479766345000
+    },
+    {
+      "path": "Docs/Reviews/lake_gate_market_current/ntmk_full_map_lake_gate_street_v32.blend",
+      "bytes": 58509825,
+      "mtime_ns": 1792124691996451400
+    },
+    {
+      "path": "Assets/Art/Environment/LakeGateMarketV32/LakeGateMarketContext.fbx",
+      "bytes": 58499660,
+      "mtime_ns": 1792124761244666300
+    },
+    {
+      "path": "Docs/Reviews/journey_v40/windows/stability_20261017_100326/stability_20261017_030330/frames.csv",
+      "bytes": 58494154,
+      "mtime_ns": 1792206280638952600
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0888_BoundR95.asset",
+      "bytes": 58396155,
+      "mtime_ns": 1793681391194264500
+    },
+    {
+      "path": "Test/BangChung/journey_v48/r4/ConRoi-v48-r4-after-fullflow-player.mp4",
+      "bytes": 58345041,
+      "mtime_ns": 1792330333532907900
+    },
+    {
+      "path": "Docs/Reviews/lake_gate_market_current/ntmk_full_map_lake_gate_street_v32.blend1",
+      "bytes": 58334231,
+      "mtime_ns": 1792124279940943400
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/M97_Context125_BoundR97.asset",
+      "bytes": 58327034,
+      "mtime_ns": 1793725519898921000
+    },
+    {
+      "path": "Docs/Reviews/journey_v47/attempt4-candidate/walkthrough_20261018_135057/walkthrough_20261018_065102/frames.csv",
+      "bytes": 58272617,
+      "mtime_ns": 1792306499395532500
+    },
+    {
+      "path": "Test/BangChung/journey_v48/r10/ConRoi-v48-r10-fullflow-player.mp4",
+      "bytes": 58249134,
+      "mtime_ns": 1792392212257416900
+    },
+    {
+      "path": "Test/BangChung/journey_v40/ConRoi-v40-gameplay.mp4",
+      "bytes": 57962355,
+      "mtime_ns": 1792206076626204000
+    },
+    {
+      "path": "Test/KetQua/journey_v48/market_ground_r95/props-extra-baseline.meshbin",
+      "bytes": 57515363,
+      "mtime_ns": 1793644670725581600
+    },
+    {
+      "path": "Test/BangChung/journey_v40/windows/experience_20261017_093350/recording/listener.f32",
+      "bytes": 57466880,
+      "mtime_ns": 1792205009205404100
+    },
+    {
+      "path": "Assets/Art/Environment/LakeGateMarket/LakeGateMarketContext.fbx",
+      "bytes": 57354124,
+      "mtime_ns": 1792118846403716700
+    },
+    {
+      "path": "Docs/Reviews/school_v38/windows/walkthrough_20261016_234541/walkthrough_20261016_164547/frames.csv",
+      "bytes": 57182978,
+      "mtime_ns": 1792169220075862300
+    },
+    {
+      "path": "Test/BangChung/journey_v42/windows/experience_20261017_124243/recording/listener.f32",
+      "bytes": 57036800,
+      "mtime_ns": 1792215919434249000
+    },
+    {
+      "path": "Test/BangChung/journey_v48/r3/ConRoi-v48-r3-after-fullflow-player.mp4",
+      "bytes": 56926290,
+      "mtime_ns": 1792327227548493700
+    },
+    {
+      "path": "Test/BangChung/journey_v48/r30/r30-NewGame-to-ending-continuous.mp4",
+      "bytes": 56531823,
+      "mtime_ns": 1792676839981257500
+    },
+    {
+      "path": "Docs/Reviews/journey_v41/windows/experience_20261017_105639/experience_20261017_035646/frames.csv",
+      "bytes": 56378702,
+      "mtime_ns": 1792209670074961800
+    },
+    {
+      "path": "Docs/Reviews/journey_v41/windows/experience_20261017_105011/experience_20261017_035021/frames.csv",
+      "bytes": 56227167,
+      "mtime_ns": 1792209378744445600
+    },
+    {
+      "path": "Test/BangChung/journey_v48/r88_review/r87-overall-camera-dolly.mp4",
+      "bytes": 55915501,
+      "mtime_ns": 1793434176861017100
+    },
+    {
+      "path": "Docs/Reviews/journey_v41/windows/stability_20261017_113807/stability_20261017_043811/frames.csv",
+      "bytes": 55874808,
+      "mtime_ns": 1792211960200055900
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RecoveryFixR21/FootwayOverShoulder_Garden_Bank_Return_Walk_Surface_125.asset",
+      "bytes": 55653193,
+      "mtime_ns": 1792553551208349900
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/ShoreRepairR50/FootwayOverShoulder_Garden_Bank_Return_Walk_Surface_125_R50.asset",
+      "bytes": 55614101,
+      "mtime_ns": 1793087262130514800
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/L98_35_BoundR98.asset",
+      "bytes": 55271426,
+      "mtime_ns": 1793765576528886200
+    },
+    {
+      "path": "Docs/Reviews/journey_v40/windows/walkthrough_20261017_094331/walkthrough_20261017_024336/frames.csv",
+      "bytes": 55093730,
+      "mtime_ns": 1792205161034653000
+    },
+    {
+      "path": "Docs/Reviews/journey_v47/trace2-route/performance_20261018_124823/lake-moving.raw",
+      "bytes": 54536129,
+      "mtime_ns": 1792302548542294200
+    },
+    {
+      "path": "Docs/Reviews/journey_v47/attempt3-candidate/walkthrough_20261018_132335/walkthrough_20261018_062340/frames.csv",
+      "bytes": 54186046,
+      "mtime_ns": 1792304852528503600
+    },
+    {
+      "path": "Docs/Reviews/journey_v41/windows/experience_20261017_112720/activity-exclusive.csv",
+      "bytes": 54022096,
+      "mtime_ns": 1792211886006123100
+    },
+    {
+      "path": "Docs/Reviews/journey_v47/attempt4-candidate-clean/performance_20261018_141409/walkthrough_20261018_071416/frames.csv",
+      "bytes": 54006130,
+      "mtime_ns": 1792307888878053400
+    },
+    {
+      "path": "Docs/Reviews/journey_v48/r91/source-r91-delta.zip",
+      "bytes": 53966887,
+      "mtime_ns": 1793543729314466300
+    },
+    {
+      "path": "Test/BangChung/journey_v48/r87_school_slope/supplement-controller-load-skip.mp4",
+      "bytes": 53784900,
+      "mtime_ns": 1793445448173791200
+    },
+    {
+      "path": "Docs/Reviews/journey_v44/windows/experience_20261017_213716/control-frame-times.csv",
+      "bytes": 53576455,
+      "mtime_ns": 1792248498769164700
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0088_BoundR95.asset",
+      "bytes": 52842123,
+      "mtime_ns": 1793681335668554000
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0090_BoundR95.asset",
+      "bytes": 52821151,
+      "mtime_ns": 1793681342067700700
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0089_BoundR95.asset",
+      "bytes": 52811111,
+      "mtime_ns": 1793681338855724300
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0091_BoundR95.asset",
+      "bytes": 52785581,
+      "mtime_ns": 1793681347257836800
+    },
+    {
+      "path": ".build-cache/r92-unity-library/DataStore/UDSData_30.bin",
+      "bytes": 52732702,
+      "mtime_ns": 1793899146289889900
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/Ground_I2_Transition_Trial_R93.blend",
+      "bytes": 52549050,
+      "mtime_ns": 1793617432599875100
+    }
+  ]
+}

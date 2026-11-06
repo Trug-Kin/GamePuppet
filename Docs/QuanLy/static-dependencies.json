@@ -1,0 +1,1088 @@
+{
+  "scanned": [
+    "Assets",
+    "Tools",
+    "Packages"
+  ],
+  "findings": [
+    {
+      "path": "Assets/Art/Characters/R46/ThreadBindings.json",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Art/Characters/R91/SchoolPushPoseR91.json",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/ExportPolicyR19/surfaces.json",
+      "flags": [
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/ExportPolicyR20/surfaces.json",
+      "flags": [
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapRestoredR11/manifest.json",
+      "flags": [
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/ModelsCompletedR15/manifest.json",
+      "flags": [
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/PlanterRepairR15/manifest.json",
+      "flags": [
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SchoolR29/SchoolR29.geometry.json",
+      "flags": [
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Art/Environment/LakeGateMarket/context.json",
+      "flags": [
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Art/Environment/LakeGateMarketV32/context.json",
+      "flags": [
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Art/Environment/LakeGateMarketV33/surfaces.json",
+      "flags": [
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Art/Environment/LakeR39/layout.json",
+      "flags": [
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Art/Environment/OngDaoV35/bridge_record.json",
+      "flags": [
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Art/Gameplay/Class203R32/Papers.geometry.json",
+      "flags": [
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Art/Gameplay/LakeMarketV34/story_models.json",
+      "flags": [
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Art/Gameplay/LakeR37/Props.geometry.json",
+      "flags": [
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Art/Gameplay/LakeR38/Shoe.geometry.json",
+      "flags": [
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Art/Gameplay/SlopeR41/Props.geometry.json",
+      "flags": [
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Blender/DoiChieu/ban-giao.json",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Blender/DoiChieu/ConRoi_AuditBlender.json",
+      "flags": [
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Blender/DoiChieu/ConRoi_AuditDetails.json",
+      "flags": [
+        "historicalOutputPath",
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Blender/DoiChieu/ghep-va-phu-thuoc.json",
+      "flags": [
+        "historicalOutputPath",
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Blender/DoiChieu/nguon.json",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/CanopyAccessTest_20261014/CanopyAccessFixture.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/CanopyAccessTest_20261014/fixture.json",
+      "flags": [
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/CanopyAccessTest_20261014/Editor/CanopyAccessSetup.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/DaLatMovementTest_20261013/DaLatManualMovementRecorder.cs",
+      "flags": [
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiCompletionV41.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiExperienceV42.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiFinishV40.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiHandoffV47.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiLakeMarketV34.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiModelLocations.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiOngDaoV35.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR21HedgeContinuity.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR21Preflight.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR21ProductReview.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR21RecoveryPrep.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR22Review.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR22Scenery.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR23Opening.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR24Reference.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR25Slope.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR26Slope.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR27Slope.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR28Inspect.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR28School.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR29Inventory.cs",
+      "flags": [
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR29School.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR30.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR30AssetCache.cs",
+      "flags": [
+        "editorAssetPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR30BuildCompatibility.cs",
+      "flags": [
+        "editorAssetPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR30StartupFix.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR31Review.cs",
+      "flags": [
+        "historicalOutputPath",
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR32.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR32Review.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR33Chair.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR34.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR35.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR36.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR37.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR38.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR39.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR40.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR41.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR41Survey.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR42.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR43.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiRepairV48.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiReviewV43.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiReviewV44.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiReviewV45.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiReviewV46.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiReviewV47.cs",
+      "flags": [
+        "reflection",
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiRouteV32.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiRouteV33.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiSceneAssembly.cs",
+      "flags": [
+        "editorAssetPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiSchoolFurnitureV37.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiSchoolV37.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiSchoolV38.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiShoreImport.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiSlopeV39.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiStabilizationV36.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48AcceptanceRepair.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48MapAudit.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48Normals.cs",
+      "flags": [
+        "editorAssetPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48PackageAudit.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R14.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R15.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R16.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R18Audit.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R19.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R20.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R20PhotoAudit.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21ApproachLayers.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21AssetPass.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21Boundaries.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21BoundaryAudit.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21BoundaryCapsule.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21BoundaryFinish.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21BridgeLinks.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21ConstructionNormals.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21ContactFinish.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21Footpaths.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21GeometryAudit.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21LakeMarketBoundary.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21Landscape.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21NativeFollowup.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21PavingEdges.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21PromenadeEdges.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21Reachability.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21RecoveryFix.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21RecoveryGeometry.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21RegroundBoundary.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21SampleRefinement.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21Shore.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21TerrainBoundary.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21TerrainPatch.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21WaterSupportAudit.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48StateAudit.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48SupportFacesRepair.cs",
+      "flags": [
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/KiemTraNguonVaBuild.cs",
+      "flags": [
+        "editorAssetPath",
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ProfileReviewV47.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/R38SavedViews.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/StartupProfileReviewV44.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/Tooling3DTrial.cs",
+      "flags": [
+        "editorAssetPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/AudioProbeV40.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R30WalkReview.cs",
+      "flags": [
+        "Resources"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R32WalkReview.cs",
+      "flags": [
+        "Resources"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R33ChairReview.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R34WalkReview.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R35WalkReview.cs",
+      "flags": [
+        "Resources",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R36IntegrationReview.cs",
+      "flags": [
+        "Resources",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R37LakeReview.cs",
+      "flags": [
+        "Resources",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R38LakeReview.cs",
+      "flags": [
+        "Resources",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R39GeometryProbe.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R39LakeReview.cs",
+      "flags": [
+        "Resources",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R40LakeAudit.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R41SlopeReview.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R42JourneyReview.cs",
+      "flags": [
+        "Resources",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/RegionRenderGateV47.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/MoiTruong/HinhAnhTrangThaiMo.cs",
+      "flags": [
+        "reflection"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Grounded.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.JourneyChecks.cs",
+      "flags": [
+        "Resources",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.MaterialReview.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.OngDao.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.School.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Standalone.cs",
+      "flags": [
+        "Resources",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Walkthrough.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Wall.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ManualWalk.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3RouteFixture.cs",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/Editor/C3LiveEditorBridge.cs",
+      "flags": [
+        "reflection",
+        "editorAssetPath",
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Tools/CapNhatHoSo.py",
+      "flags": [
+        "Addressables",
+        "historicalOutputPath",
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Tools/ChuThichScript.py",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Tools/DuongDanKiem.py",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Tools/KiemDuLieuCanGiu.py",
+      "flags": [
+        "historicalOutputPath",
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Tools/KiemKeSapXep.py",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Tools/KiemTraBaoToan.py",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Tools/KiemUnity.ps1",
+      "flags": [
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Tools/SapXepDuAn.py",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Tools/ToChucDuLieuKiem.py",
+      "flags": [
+        "historicalOutputPath"
+      ]
+    },
+    {
+      "path": "Tools/QuanLy/ChuyenLo.ps1",
+      "flags": [
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Tools/QuanLy/phan_loai.py",
+      "flags": [
+        "historicalOutputPath",
+        "absolutePath"
+      ]
+    },
+    {
+      "path": "Tools/QuanLy/static_dependencies.py",
+      "flags": [
+        "StreamingAssets",
+        "Addressables",
+        "absolutePath"
+      ]
+    }
+  ],
+  "assembly_definitions": [],
+  "local_or_url_packages": {},
+  "policy": "Keep all Assets compiled C#/Editor/tests, Resources, StreamingAssets and original paths. Do not infer unused from scene dependency. Historical recipes held PROVISIONAL; no runtime D:/Game archive path introduced."
+}

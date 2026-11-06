@@ -1,0 +1,8 @@
+R104 art bound: Khai, Ha, R03, R12, cipher puppet, clip R12. Stage/event Tư remain declared neutral prototype performers.
+R03_Investigation -> Art_R104_Puppet idle=Scene pose refs=15
+R12_Investigation -> Art_R104_Puppet idle=Scene pose refs=15
+Khai_Investigation -> Art_R104_Khai idle=Scene pose refs=0
+CipherPuppet_shared_pose_ID -> Art_R104_Puppet idle=Scene pose refs=15
+Ha_Investigation -> Art_R104_Ha idle=Scene pose refs=0
+R12_Investigation -> Art_R104_Puppet idle=Scene pose refs=15
+15 retargeted shared pose IDs; repair pose=Puppet_Rig|RepairBothHands_R104

@@ -1,0 +1,33 @@
+Diagnostic time sampling through API, not player UI/controller evidence.
+t=0 gate={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true}
+RepairTool world=(930.80, 43.00, 301.65) local=(0.80, 3.00, 1.65) parent=EventActor_R105
+handL world=(930.68, 44.20, 301.42) local=(0.00, 0.23, 0.00) parent=foreL
+handR world=(930.28, 44.15, 301.35) local=(0.00, 0.23, 0.00) parent=foreR
+t=3.8 gate={"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":true,"wedge":false,"latched":true}
+RepairTool world=(930.80, 43.00, 301.65) local=(0.80, 3.00, 1.65) parent=EventActor_R105
+handL world=(930.68, 44.20, 301.42) local=(0.00, 0.23, 0.00) parent=foreL
+handR world=(930.28, 44.15, 301.35) local=(0.00, 0.23, 0.00) parent=foreR
+t=4.05 gate={"angle":0.3169153332710266,"velocity":10.567678451538086,"rope":true,"hook":false,"bodyForce":true,"wedge":false,"latched":false}
+RepairTool world=(930.80, 43.00, 301.65) local=(0.80, 3.00, 1.65) parent=EventActor_R105
+handL world=(930.68, 44.20, 301.42) local=(0.00, 0.23, 0.00) parent=foreL
+handR world=(930.28, 44.15, 301.35) local=(0.00, 0.23, 0.00) parent=foreR
+t=4.3 gate={"angle":7.321995735168457,"velocity":39.0401496887207,"rope":true,"hook":false,"bodyForce":true,"wedge":false,"latched":false}
+RepairTool world=(930.80, 43.00, 301.65) local=(0.80, 3.00, 1.65) parent=EventActor_R105
+handL world=(930.68, 44.20, 301.42) local=(0.00, 0.23, 0.00) parent=foreL
+handR world=(930.28, 44.15, 301.35) local=(0.00, 0.23, 0.00) parent=foreR
+t=4.8 gate={"angle":29.389984130859375,"velocity":43.348819732666016,"rope":true,"hook":false,"bodyForce":true,"wedge":false,"latched":false}
+RepairTool world=(930.80, 43.00, 301.65) local=(0.80, 3.00, 1.65) parent=EventActor_R105
+handL world=(930.68, 44.20, 301.42) local=(0.00, 0.23, 0.00) parent=foreL
+handR world=(930.28, 44.15, 301.35) local=(0.00, 0.23, 0.00) parent=foreR
+t=4.833333 gate={"angle":30.668668746948242,"velocity":35.48409652709961,"rope":true,"hook":false,"bodyForce":false,"wedge":false,"latched":false}
+RepairTool world=(930.80, 43.00, 301.65) local=(0.80, 3.00, 1.65) parent=EventActor_R105
+handL world=(930.68, 44.19, 301.31) local=(0.00, 0.23, 0.00) parent=foreL
+handR world=(930.28, 44.14, 301.25) local=(0.00, 0.23, 0.00) parent=foreR
+t=5.2 gate={"angle":33.60544967651367,"velocity":-8.324087142944336,"rope":true,"hook":false,"bodyForce":false,"wedge":false,"latched":false}
+RepairTool world=(930.80, 43.00, 301.65) local=(0.80, 3.00, 1.65) parent=EventActor_R105
+handL world=(930.68, 43.80, 300.22) local=(0.00, 0.23, 0.00) parent=foreL
+handR world=(930.28, 43.72, 300.19) local=(0.00, 0.23, 0.00) parent=foreR
+t=6 gate={"angle":21.353017807006836,"velocity":-15.256242752075195,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":false}
+RepairTool world=(930.80, 43.00, 301.65) local=(0.80, 3.00, 1.65) parent=EventActor_R105
+handL world=(930.68, 41.39, 299.83) local=(0.00, 0.23, 0.00) parent=foreL
+handR world=(930.28, 41.31, 299.86) local=(0.00, 0.23, 0.00) parent=foreR

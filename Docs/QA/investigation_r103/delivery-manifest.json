@@ -1,0 +1,662 @@
+[
+  {
+    "path": "Assets\\Scenes\\JourneyPresentation_v48_r103.unity",
+    "sha256": "e24c84f6e8a45634795c3e611428f2a6772f3662f27251eb32a5437e177852a1",
+    "bytes": 24352675
+  },
+  {
+    "path": "Assets\\Scenes\\JourneyPresentation_v48_r103.unity.meta",
+    "sha256": "9ed13a140b8e0422cc6b21181edb05caa820f7fc7765a453e139b018ccb6baec",
+    "bytes": 162
+  },
+  {
+    "path": "Source\\Blender\\JourneyV48\\R103\\Puppet_Poses_R103_Editable.blend",
+    "sha256": "177d8cdc348f481e23ad83435b7d85ec0e79d1fb2fe14e907d59c4962fc2f2a9",
+    "bytes": 350309
+  },
+  {
+    "path": "Source\\Blender\\JourneyV48\\R103\\Repair_R12_R103_Animation.blend",
+    "sha256": "6bcec79ab05dffde02d1afd291dad40ebbaacaa3d0f342e0b400cd0f7524c45a",
+    "bytes": 522508
+  },
+  {
+    "path": "Source\\Blender\\JourneyV48\\R103\\Workshop_Investigation_R103_Editable.blend",
+    "sha256": "372f76e71b73d13d3405456af991244dc6c37e4d6ec158c120b1326230198c5d",
+    "bytes": 425663
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\EVIDENCE.fbx",
+    "sha256": "8d45387a507a5c70a818302643ee8832424da47107e0dd7daed30f80eb247248",
+    "bytes": 183164
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\EVIDENCE.fbx.meta",
+    "sha256": "0ff1b1521680d77be239ceeaf6b3c73ba17fbaef30236c047916b497250d31ba",
+    "bytes": 3179
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Ha.fbx",
+    "sha256": "96340fb7d8f1994cf614174b8aa14e296a5a1108e6e8a598aacb1655579d078b",
+    "bytes": 140364
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Ha.fbx.meta",
+    "sha256": "cc2b0c73ba643bf27a37574f2b98e58c04b4461fe8c6e7921a12f8f07f826460",
+    "bytes": 3179
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Khai.fbx",
+    "sha256": "e113566bc425bb6c93c4a17361af7dac3858e7d4ac7627150056d7ab3b35eb55",
+    "bytes": 147420
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Khai.fbx.meta",
+    "sha256": "d64ffcfd976de8bee2c344664234d563e59548a1deadbd2c5a9ef456eda80f57",
+    "bytes": 3179
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials.meta",
+    "sha256": "003c871a94f3decd4849859cf07c276fd5bc7e4fd0a421dbd0597c54c8e74c38",
+    "bytes": 180
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\MECHANISM.fbx",
+    "sha256": "cc7f087428360fac02b93a1fa07fc2e35b4579cd0bd48360ed39f0df4aad3d50",
+    "bytes": 42204
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\MECHANISM.fbx.meta",
+    "sha256": "2bda8ce9928467f400cd470c98296c2886149df87968ceee62bdb349dda72af2",
+    "bytes": 3179
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses.meta",
+    "sha256": "f43723d72d4b41ad7f82219d5be6ed974563d623e69b69e06c93a7d40cd625aa",
+    "bytes": 180
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\PuppetPoseLibrary.fbx",
+    "sha256": "65ec0d169d8c687df128d6e206c4b35cafc3cacc6b3003a7b07f4a54c1acfff3",
+    "bytes": 1200588
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\PuppetPoseLibrary.fbx.meta",
+    "sha256": "91bdec7149c056b136b25642581e7be10dd1e2123ce84b6c71b5f452e3705c16",
+    "bytes": 3179
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\R03.fbx",
+    "sha256": "a3732495f292e357ddca229376c02f34a865d3b3fd72514e29524fab40a3b88e",
+    "bytes": 111324
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\R03.fbx.meta",
+    "sha256": "d11c5ef130c2669ae47bbc7941f5c9b9e1acb9783d2c013ba689e987f703adea",
+    "bytes": 3179
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\R12.fbx",
+    "sha256": "23fe61435a7139d29f19341fece98c1104850da5beecf1dbb362e96721aca3f1",
+    "bytes": 111324
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\R12.fbx.meta",
+    "sha256": "3ea3d0085a2457ba374e6f95a6e4ede17079c4a9c745d5fd455219075b2f177b",
+    "bytes": 3179
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Reconstruction.renderTexture",
+    "sha256": "0b0bab64228b81b83e712e6e109ed3334c21f406a92e9742cbb752fddefb569e",
+    "bytes": 860
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Reconstruction.renderTexture.meta",
+    "sha256": "fdda8441745a5e7e3e0c4323987d38bba12550cd4b61bde3fcc67ab3a1686d14",
+    "bytes": 196
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\RepairClip.renderTexture",
+    "sha256": "c9def7dd0e0fd782037bfba1d7ded4ef21357e6bd5a3cafd53bfeeb38f3deb22",
+    "bytes": 856
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\RepairClip.renderTexture.meta",
+    "sha256": "f0f475567e15e24468491a830e168a3633b751a15e968d839204aec69fe710b4",
+    "bytes": 196
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\RepairEventActor.fbx",
+    "sha256": "0da101f68cc4577f74add122a1c28a94d6357dd196ca76e3f8b821de61616373",
+    "bytes": 215676
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\RepairEventActor.fbx.meta",
+    "sha256": "822c6044e048c545a95d242069f928aea401f09f7e969c04e855792764359b4f",
+    "bytes": 3063
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\TraceCrossing.prefab",
+    "sha256": "ca6714dec5c302f734e85fc441d1b567625cf89dd1caf7313fff7bdebb4093b3",
+    "bytes": 2725
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\TraceCrossing.prefab.meta",
+    "sha256": "d73bfbe8340d4c0b25fc37a8be0eacca7c135da1400fa714352cbdcc8163c117",
+    "bytes": 154
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\WORKSHOP.fbx",
+    "sha256": "93931c42a4739d49a6ce6bcbc394a81d2f86ef989d7be6ddb2fdae6fd72d1e21",
+    "bytes": 34716
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\WORKSHOP.fbx.meta",
+    "sha256": "8c7653098edd3042ed433efb199bccc33427400367b1b62bd955c730125bad06",
+    "bytes": 3179
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Blue black ink.mat",
+    "sha256": "aeec1c908c1723ef548c34cae64d377bfddc1f7bb78ae606696d882313bf7c44",
+    "bytes": 4085
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Blue black ink.mat.meta",
+    "sha256": "8e0d7341f43c5f6849d90e7fc03e6a688e827cf6b888bc902ae98c1d7786f312",
+    "bytes": 196
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Charcoal fabric.mat",
+    "sha256": "03c3c3dae5b943f0adb706d3c353688ddca7a5a46284f249db1044db24bb8c32",
+    "bytes": 4085
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Charcoal fabric.mat.meta",
+    "sha256": "eb9bb1fefd79fd034d5e11def8080a995e3eb970d759763c003b32b1dbb77992",
+    "bytes": 196
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Dark hair.mat",
+    "sha256": "07e0f3acd0621876ac96972788b131bd40b22fc23a303ce93744e02b7b27c243",
+    "bytes": 4081
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Dark hair.mat.meta",
+    "sha256": "372ffe321f630c27c494aa59c07123c2abd49c2029c42125237d59634e1e91e9",
+    "bytes": 196
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Dark metal.mat",
+    "sha256": "54902716de9ce23e7e1c2b0abf4d7b1444aeae8299ebf13f68ec5b93696f9770",
+    "bytes": 4082
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Dark metal.mat.meta",
+    "sha256": "301f411c4604e8163026c977899a936d95af7ee7ead708e61e1d0c49004a2b7f",
+    "bytes": 196
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Gate muted teal.mat",
+    "sha256": "7e73c43d16bca1ba4c4c420fe3c970d6fdde0d418df253854de25c56f2c2798b",
+    "bytes": 4084
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Gate muted teal.mat.meta",
+    "sha256": "355ebe8868aec9f9920db8d0379406333da308cdf8adf6b1b13854d3e01555f0",
+    "bytes": 196
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Ha ochre apron.mat",
+    "sha256": "a9bbaa54a6dc3da014b3d747ece212106ed786373b97294e4367f456ca4cf9fa",
+    "bytes": 4082
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Ha ochre apron.mat.meta",
+    "sha256": "325918c850343dfb27f18ad58fc3d2dce8fa2bf710e782e09d8a3c8c0df6ffa7",
+    "bytes": 196
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Khai blue cotton.mat",
+    "sha256": "b2099d5b25d6f526403b1431fb03da22b6d943a7e068ddb33058ae9c58a1619a",
+    "bytes": 4087
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Khai blue cotton.mat.meta",
+    "sha256": "909e72b0d5a3703d596edcdcb73d993a0d813561fc7e7fb83c950240d8b17dff",
+    "bytes": 196
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\LatchReadability.mat",
+    "sha256": "e0bae899c94110214f35a23726c316535e2266a34c8d1e44461a35ec8b6a87f8",
+    "bytes": 3921
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\LatchReadability.mat.meta",
+    "sha256": "4888b1fa74af3efb4c8344e6eb83a8952e3d283299cfcd6889f5f7140acd9c23",
+    "bytes": 188
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Paper ivory.mat",
+    "sha256": "7080c29547228356a2c704b27b8d3835a71546543baa6f90a4a6e87a347f73b1",
+    "bytes": 4077
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Paper ivory.mat.meta",
+    "sha256": "f007923981dc7ff5ce7463cf82182c35d0ea2dcc525f403617fb6de305fd4f27",
+    "bytes": 196
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\R103 blue weave.mat",
+    "sha256": "4a69bbb125d75ab128e9c5d62e30715748b12854cff2c5cd2ada96bf275c9421",
+    "bytes": 3948
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\R103 blue weave.mat.meta",
+    "sha256": "94d9f70822584dec86e88228c3e00bec4b3b56ba0b4f036cfdda4e3bf4458f89",
+    "bytes": 188
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\R103 charcoal impression.mat",
+    "sha256": "c4167d2902ab715b5a71bce0857713d037499ab7641f3809b9b3840feb3291d3",
+    "bytes": 3959
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\R103 charcoal impression.mat.meta",
+    "sha256": "c4f2340afb12e98d9822b8778463d96ea46109d15e402c820f7db17cb1de75f5",
+    "bytes": 188
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\R103 dark rubber.mat",
+    "sha256": "09fd05f27720f039c260fce60f8d4ac86775812c8b30cb0df7cf1751845c4127",
+    "bytes": 3948
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\R103 dark rubber.mat.meta",
+    "sha256": "9315cd71a8524cc9501e6d2685f7aa952b97a5cb68e2fd01c24a160b38931ad2",
+    "bytes": 188
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\R103 label ivory.mat",
+    "sha256": "23b10a66a5d3d8a7214e355e9cbe2151e0841cb776977b3580013179bfa93c3d",
+    "bytes": 3945
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\R103 label ivory.mat.meta",
+    "sha256": "37316d97a18f81927e68c3c453e1de1919e58e4e49783924312bb4bf0aba623d",
+    "bytes": 188
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\R103 pale slide dust.mat",
+    "sha256": "700063b129a71e0ea1ec0772fb9cc9cc3401e01ff053b8158cdcf5cb349fd97e",
+    "bytes": 3953
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\R103 pale slide dust.mat.meta",
+    "sha256": "ffbecb07a4601dfcf8c31abb6e42e9df7548f60abd7ff32c03ab7ae6359b1bd0",
+    "bytes": 188
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\R103 seam thread.mat",
+    "sha256": "e1af3944158aaf5079b40ac9b22e36108d3a52cb3bee08addee282c210cc22a9",
+    "bytes": 3942
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\R103 seam thread.mat.meta",
+    "sha256": "978ac491381d9310b14dd6f2db6a76e016f16d7ff23642e726bb2647e65672e9",
+    "bytes": 188
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\R103 worn rubber.mat",
+    "sha256": "e02c327f6b7f6e43c2ed8d4c3409dffef0271f1f56494ff4297faa959a74f567",
+    "bytes": 3948
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\R103 worn rubber.mat.meta",
+    "sha256": "f5cfc3cad3115cf818f3400d935d233a595a84cb7a430e7651e8177798643969",
+    "bytes": 188
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Repair tool ochre.mat",
+    "sha256": "9648b8765165e8bc396b58721036df8d500506aa0c4ea069fd0e7c3d4bff45e5",
+    "bytes": 4085
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Repair tool ochre.mat.meta",
+    "sha256": "16e597b4bccf2e43f6a288f8f5920d4f4a4c59ae4d3820613cf3b7b9c5283b6c",
+    "bytes": 196
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Repair tool steel.mat",
+    "sha256": "88bdbd87a34d20ce464c24af7fcd27e93b980a9b7b0e11398958dcf651a1afb3",
+    "bytes": 4085
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Repair tool steel.mat.meta",
+    "sha256": "3d5485d9fd47cdd7c0c0164500bf364fd9290fc3e2917cdd147e5dd067623930",
+    "bytes": 196
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Rubber sole.mat",
+    "sha256": "78672b85be0e8327026d9f956b6ff91e648de31cbf65c4875429c494627d7468",
+    "bytes": 4081
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Rubber sole.mat.meta",
+    "sha256": "4b83765e469a69f2b79afde6c5d9ec6742f0e6a60e6a34ba4d49650c6837c891",
+    "bytes": 196
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Trace chalk ochre.mat",
+    "sha256": "79b878e208f7286dd2413cc6a1c184ddb5d32c3948c4b714db5ba2243399ef50",
+    "bytes": 4090
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Trace chalk ochre.mat.meta",
+    "sha256": "92912d5d0b467d9c969c377ede6c4a82e49156c704f296cf06f7d32cb484baf2",
+    "bytes": 196
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Tu plain brown shirt.mat",
+    "sha256": "268021591e11a16c700d8473dc68e0a6f8bf66b09348d642c4bf92d0e58697be",
+    "bytes": 3949
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Tu plain brown shirt.mat.meta",
+    "sha256": "6d4631788f9454f3d363993483da9fdd7a598b950456a168033b324cd307a307",
+    "bytes": 188
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Warm skin.mat",
+    "sha256": "6b1acb2c9dfebe607560b7e6b56fdac5c774fcd8adc8c37a5553159b137fece3",
+    "bytes": 4077
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Warm skin.mat.meta",
+    "sha256": "30152ce4153f9db6aa68a03f2d747f6f9984bbbfcd5169790e4611b776dc1239",
+    "bytes": 196
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Warm worn wood.mat",
+    "sha256": "969e8df85990094acbdd3b389b09d4b7289754e109160d93c527d8fdd75975c4",
+    "bytes": 4087
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Warm worn wood.mat.meta",
+    "sha256": "b09a013ef69d982cf34b7de5e4055673827159e09f270b9f4e311aa95c003b89",
+    "bytes": 196
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Workshop warm plaster.mat",
+    "sha256": "949ed61ea9ced7de954bcfabff056e87f6a583e992340e46ee95126c5619d563",
+    "bytes": 4091
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Materials\\Workshop warm plaster.mat.meta",
+    "sha256": "3cbd442133d436bab191ed3a1e9c06e0c995b7a7ea01f79886d7cc95d09e085d",
+    "bytes": 196
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_A.png",
+    "sha256": "8544ebfa89511297c97f82abfd94f65d6fc85f32659093d41667c9d6e893147e",
+    "bytes": 30024
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_A.png.meta",
+    "sha256": "321123ff64fd168541b412725f3ea96965aae136bba1e54349e1627da08119c5",
+    "bytes": 3203
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_B.png",
+    "sha256": "8070334af67d7a9ef3f9783427e4d889883e3397c3b8bbaf99fa67f6ca28ee4e",
+    "bytes": 29584
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_B.png.meta",
+    "sha256": "cdad71119e607fe6c0a4a4605891c3441efe3a18a0a9cd48e629bd60893e3bce",
+    "bytes": 3203
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_C.png",
+    "sha256": "c00a5d6c10c69d2888a5b8f9877f32e3e6d501f65eb9e6e9e93ea1f4a7bdb5c7",
+    "bytes": 29222
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_C.png.meta",
+    "sha256": "62742f086a0193e702b0d94b822daff778cbe47f155c071d1f4cdb31cf8319c6",
+    "bytes": 3203
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_D.png",
+    "sha256": "57d3680f30adde41a83e6491de0fbb23e80e2d9fcfc0a1d46d6511829ff29851",
+    "bytes": 30423
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_D.png.meta",
+    "sha256": "57de0a85b8a8cb008abf7ac6a8b167fee1714ceae441d5f529c43a5719a719e8",
+    "bytes": 3203
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_E.png",
+    "sha256": "c7ba4fac6a355cc681d6fed618364eca65d63c9bf65881db103e956fbc1e7699",
+    "bytes": 28396
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_E.png.meta",
+    "sha256": "b6f4a46c4a13ca9695cf7efdd77e0f6d3dfeceb7ada3c99a333f5c575a6b797f",
+    "bytes": 3203
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_G.png",
+    "sha256": "1296153ab94c5a6218f607649b8433d0246ad38da0cc0caa6f24a5597206ecf0",
+    "bytes": 28793
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_G.png.meta",
+    "sha256": "78c7b51a29a37a9d8659435ae17d29131d9fd1a3e91f2b06f1c29bafbf954669",
+    "bytes": 3203
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_H.png",
+    "sha256": "7d0d4a522ea3c4d08a579354178f9f29b6998902bd68cb39f78554ed11d8e9fb",
+    "bytes": 30495
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_H.png.meta",
+    "sha256": "8d07acada053bd5d8a90e23a8a690c2eaa5a8aead1653d3ba62ee57c1cbb55f8",
+    "bytes": 3203
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_I.png",
+    "sha256": "49267e5e02fed9252b00e4206940f97080dbe45d481e68fd8b8e3fa1d33555ac",
+    "bytes": 29449
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_I.png.meta",
+    "sha256": "1dd3c8491e4b700eefb5e000d310de50b4a9f175c64f5bb3b8a9293adf34b19b",
+    "bytes": 3203
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_N.png",
+    "sha256": "2c555c113c7174989be65929981ac1d8fc8fbc9fc52d18c333001a0bb46d3b2e",
+    "bytes": 29910
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_N.png.meta",
+    "sha256": "e053571e311fddd55ca69298e885230ac6779e39e92c5676538f03970afee159",
+    "bytes": 3203
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_O.png",
+    "sha256": "56ef31bce66c8146aa493efc2b7bf4faa3407d2dd00ea98ee570f24fb9f49a1b",
+    "bytes": 28853
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_O.png.meta",
+    "sha256": "42501e171a573f489cc1d8d445b71b8cbb35f6fe59579146952e2d90373feabd",
+    "bytes": 3203
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_R.png",
+    "sha256": "29275e968329cf4a86d32d440ff51f747829e33c34bce03981d9a0c06f15b76e",
+    "bytes": 30285
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_R.png.meta",
+    "sha256": "2cb5fdfd4b70786527b24a68ae260359de786d6739ecd12adbe2640ebaa5e5bf",
+    "bytes": 3203
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_S.png",
+    "sha256": "7a1cb8cddf2ce0571e215fb480aedda620724036ffede99149a25aa5be0ce869",
+    "bytes": 30027
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_S.png.meta",
+    "sha256": "1ab671f5b3a77878afcf07d19a46d086c3e53498856250add19c8f089971ab44",
+    "bytes": 3203
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_T.png",
+    "sha256": "1b1ad84ac0d677b24b9d67fdb62dfa5cce6285ae9850186896e6fde0fff093d6",
+    "bytes": 29473
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_T.png.meta",
+    "sha256": "440745e18d52c346d786db4e83861ae2ca732b90fdd50af52a1760429c1d4319",
+    "bytes": 3203
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_W.png",
+    "sha256": "51f5c9b6858338571573ac52d210a0a744b73e14ff361f605fe7181fd8458189",
+    "bytes": 29880
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_W.png.meta",
+    "sha256": "b3b99a4d71dd4dd72b4df8e828859537793a241b2e30c2dd79cf6974a3e3a449",
+    "bytes": 3203
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_Y.png",
+    "sha256": "d077b2a66bf0a2b966aed2d63f4950360447785f42ff7c86219d048e2e2d2692",
+    "bytes": 28755
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103\\Poses\\Pose_Y.png.meta",
+    "sha256": "e907bd9167f06c36150c6b20f971103687256dd71503ebc02801fa3e9d9149dc",
+    "bytes": 3203
+  },
+  {
+    "path": "Assets\\Art\\InvestigationV36\\R103.meta",
+    "sha256": "63ce897f890e96b6f2e63603fa5b4bfe0c7124eb22e05d9330ca20cac422f24e",
+    "bytes": 172
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R103\\InvestigationActor.cs",
+    "sha256": "af79cece6ac688a94fc624432cc7f16704192c8ed996bd45ab75b19f6ba755e2",
+    "bytes": 1669
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R103\\InvestigationActor.cs.meta",
+    "sha256": "ac698869bcda67abc2f2333b6e82be19d0ab86bb133b2f8ee95da9cbbdfeb6f2",
+    "bytes": 60
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R103\\InvestigationEvidence.cs",
+    "sha256": "aea41c6b6a7b598d9c50891b05655f11c5807872231592724b012243a19f9ad2",
+    "bytes": 11095
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R103\\InvestigationEvidence.cs.meta",
+    "sha256": "3d79482d281d29095b5f21a91469b342bda0b3871251e047d51250e7eba8f837",
+    "bytes": 60
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R103\\InvestigationInteractable.cs",
+    "sha256": "ff7ac165dcd71d5e9554d619a86bc1d47bbb0026ac832bff71682b8c25b88da8",
+    "bytes": 264
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R103\\InvestigationInteractable.cs.meta",
+    "sha256": "a7598b02eae64d58304292883aff76640e77428d0876d96793f5119269bcc88f",
+    "bytes": 60
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R103\\InvestigationSession.cs",
+    "sha256": "d58039597eb1377f17164db7f6369aaea6f7de76b5c23486b5230b0acc9ee734",
+    "bytes": 19838
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R103\\InvestigationSession.cs.meta",
+    "sha256": "eeb99ca6a79de89d88e380240cde6bad4c360158604893db9f10ac96832d0fac",
+    "bytes": 60
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R103\\InvestigationSessionUI.cs",
+    "sha256": "dbf8335f35c0d92306fcfe0aa1df280e5d0ef03a5fa0c5ca1362ff0be1960472",
+    "bytes": 18868
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R103\\InvestigationSessionUI.cs.meta",
+    "sha256": "2d2da6ff6bdf4e2a887fa73ef41b4b776e1aabaf7b960b0dbcda93cb4216078b",
+    "bytes": 60
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R103\\MechanismPresentation.cs",
+    "sha256": "71e93382127a3f74b88a26846b49488d229302e591e90ec6bb2d8d34176e248a",
+    "bytes": 1663
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R103\\MechanismPresentation.cs.meta",
+    "sha256": "9b0070c4fcc5f58bc9d48e614da29095524d64dd3b12eff8478a0ef60d067968",
+    "bytes": 59
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R103\\PresentationHands.cs",
+    "sha256": "6df8efe0105e34f65d68bd06f0c610897008fbb1bdde564d7407d9c8047fa51a",
+    "bytes": 1910
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R103\\PresentationHands.cs.meta",
+    "sha256": "84eeeac2e7aebe4a3da495305d0861ad63b1454cf8511602388b66abf0ab6679",
+    "bytes": 59
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R103\\RepairHandBinding.cs",
+    "sha256": "f174bb418077af8d2bf4b7e9dea8011be9e69a7d9d09031e832f395f5b6b7ee5",
+    "bytes": 615
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R103\\RepairHandBinding.cs.meta",
+    "sha256": "619f0f0c3b19ed04d3ce1a1d6f94b630203f801830d5e846b6de62f12d373879",
+    "bytes": 60
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R103\\ReturnGateMechanism.cs",
+    "sha256": "45baaec1300826162236e8c3d3151615498680d3a1c1d90ce68d1577ea643d37",
+    "bytes": 3194
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R103\\ReturnGateMechanism.cs.meta",
+    "sha256": "3a0d4ebfc1ba5f00fc520ed5dc72c512d1c91d281deb37c7fba55a87017e48f1",
+    "bytes": 60
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R103.meta",
+    "sha256": "96b4a22cb150bc5763871dee7d58f4f876ce42504525cedc0e8d682b715ab851",
+    "bytes": 172
+  },
+  {
+    "path": "BAT_DAU_TAI_DAY.md",
+    "sha256": "38a7415c7db82266fc120dd313a8acb28ad8dae6423b7d9bb2d70a29e81d8ed3",
+    "bytes": 5311
+  },
+  {
+    "path": "Docs\\PROJECT_GUIDE_AND_HISTORY.md",
+    "sha256": "928d97f5c251c4ace02a0517b5745a69f6ec2890010339c0a06b3f11c96c2caf",
+    "bytes": 663634
+  },
+  {
+    "path": "Docs\\BLENDER_UNITY_WORKFLOW.md",
+    "sha256": "ec67e77677d84eaca4c4216f8ae9bfa643053bdfce8c93074831f293255ae4ab",
+    "bytes": 381349
+  }
+]

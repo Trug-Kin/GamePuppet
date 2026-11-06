@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "ffmpeg_version": "7.1-essentials_build-www.gyan.dev built with gcc 14.2.0 (Rev1, Built by MSYS2 project)",
+    "codec": "h264",
+    "pix_fmt": "yuv420p(progressive)",
+    "fps": 29.8,
+    "source_size": [
+      1280,
+      780
+    ],
+    "size": [
+      1280,
+      780
+    ],
+    "rotate": 0,
+    "duration": 172.82999999999998
+  },
+  "samples": [
+    0,
+    7,
+    14,
+    22,
+    144.82999999999998,
+    154.82999999999998,
+    163.82999999999998,
+    170.82999999999998
+  ],
+  "audio": false,
+  "input": "synthetic keyboard/mouse; normal controller route then UI continuation"
+}

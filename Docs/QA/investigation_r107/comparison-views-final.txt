@@ -1,0 +1,9 @@
+Diagnostic views; not controller evidence. View 3 uses actual last reported player eye/rotation. Other views are orientation references from that location, not a claim of exact earlier camera positions.
+before view0 camera=(681.10, 3.64, 413.07) rot=(10.10, 120.00, 0.00)
+before view1 camera=(681.10, 3.64, 413.07) rot=(10.10, 155.00, 0.00)
+before view2 camera=(681.10, 3.64, 413.07) rot=(10.10, 310.00, 0.00)
+before view3 camera=(681.10, 3.64, 413.07) rot=(10.10, 230.00, 0.00)
+after view0 camera=(681.10, 3.64, 413.07) rot=(10.10, 120.00, 0.00)
+after view1 camera=(681.10, 3.64, 413.07) rot=(10.10, 155.00, 0.00)
+after view2 camera=(681.10, 3.64, 413.07) rot=(10.10, 310.00, 0.00)
+after view3 camera=(681.10, 3.64, 413.07) rot=(10.10, 230.00, 0.00)

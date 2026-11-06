@@ -1,0 +1,20 @@
+770,275: Context_124 y=5.040026 n=1
+770,282: Context_124 y=5.040028 n=1
+770,290: Context_112 y=5.040029 n=1
+770,298: Context_124 y=5.04003 n=1
+778,275: Context_124 y=5.040026 n=1
+778,282: Context_124 y=5.040028 n=1
+778,290: Context_112 y=5.040029 n=1
+778,298: Context_124 y=5.04003 n=1
+785,275: Context_124 y=5.040026 n=1
+785,282: Context_124 y=5.040028 n=1
+785,290: Context_002 y=12.02583 n=1 | Context_124 y=5.040029 n=1
+785,298: Context_124 y=5.04003 n=1
+792,275: Context_002 y=11.95433 n=1 | Context_124 y=5.040026 n=1
+792,282: Context_002 y=12.02581 n=1 | Context_124 y=5.040028 n=1
+792,290: Context_002 y=12.02583 n=1 | Context_124 y=5.040029 n=1
+792,298: Context_124 y=5.04003 n=1
+Minh_RegionalWalk_180cm parent=
+COL Minh_RegionalWalk_180cm Center: (508.93, 3.15, 514.67), Extents: (0.30, 0.90, 0.30)
+CR_Ha parent=CR_Market
+COL CR_Ha_Interaction Center: (785.80, 5.04, 272.76), Extents: (0.00, 0.00, 0.00)

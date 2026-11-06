@@ -1,0 +1,3 @@
+Known-solution UI test through GameView mouse/text events; not newcomer reasoning test. API clears only this private test board.
+mapping=A=A,B=B,C=C,D=D,E=E,G=G,H=H,I=I,N=N,O=O,R=R,S=S,T=T,W=W,Y=Y
+UI record lead=True finalized=False

@@ -1,0 +1,1 @@
+API layout fixture only: clip/model at1280x720 and1920x1080; ScaleToFit keeps texture aspect. UI behavior verified separately.

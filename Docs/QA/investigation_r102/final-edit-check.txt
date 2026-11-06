@@ -1,0 +1,5 @@
+Scene=Assets/Scenes/JourneyPresentation_v48_r102.unity old head count=8
+gate Self_return_gate_L_C_D line=True wedge=True
+gate Self_return_gate_L_C_D line=True wedge=True
+gate Self_return_gate_L_C_D line=True wedge=True
+clip camera=True coat at=(772.00, 5.96, 289.70)

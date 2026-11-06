@@ -1,0 +1,37 @@
+r105 normal start or unplaced continuation (initialLeg recorded). Synthetic InputSystem keyboard/mouse, unchanged controller. No placements or teleports. Silent window capture separate.
+INITIAL leg=0 position=(774.00000, 6.04000, 286.00000)
+t=0.20 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=0.42 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=0.62 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=0.82 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=1.02 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=1.23 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=1.43 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=1.63 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=1.84 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=2.04 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=2.25 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=2.45 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=2.65 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=2.86 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=3.06 leg=0 p=(774.00000, 6.04000, 286.00000) grounded=True page=
+t=3.27 leg=0 p=(774.22310, 6.05003, 286.73540) grounded=True page=
+t=3.48 leg=0 p=(774.43710, 6.05003, 287.43740) grounded=True page=
+t=3.68 leg=0 p=(774.65410, 6.05003, 288.14920) grounded=True page=
+t=3.90 leg=0 p=(774.65410, 6.05003, 288.14920) grounded=True page=
+E_RAY @table hit=Reconstruction_table_controls distance=1.563
+t=4.11 leg=0 p=(774.65410, 6.05003, 288.14920) grounded=True page=
+t=4.31 leg=0 p=(774.65410, 6.05003, 288.14920) grounded=True page=
+t=4.52 leg=0 p=(774.65410, 6.05003, 288.14920) grounded=True page=
+PROMPT actual controller ray table; visible label derived from focused action; page=
+t=4.80 leg=0 p=(774.65410, 6.05003, 288.14920) grounded=True page=
+t=5.00 leg=0 p=(774.65410, 6.05003, 288.14920) grounded=True page=
+t=5.21 leg=0 p=(774.65410, 6.05003, 288.14920) grounded=True page=reconstruction
+t=5.54 leg=0 p=(774.65410, 6.05003, 288.14920) grounded=True page=reconstruction
+t=5.75 leg=0 p=(774.65410, 6.05003, 288.14920) grounded=True page=reconstruction
+t=5.96 leg=0 p=(774.65410, 6.05003, 288.14920) grounded=True page=reconstruction
+t=6.16 leg=0 p=(774.65410, 6.05003, 288.14920) grounded=True page=reconstruction
+t=6.37 leg=0 p=(774.65410, 6.05003, 288.14920) grounded=True page=reconstruction
+t=6.58 leg=0 p=(774.65410, 6.05003, 288.14920) grounded=True page=reconstruction
+INTERACT @table acquired=False p=(774.6541, 6.0500, 288.1492)
+END 1/1 seconds=6.7366536000045 data={"schema":1,"namespaceId":"conroi.investigation.v36.r105","position":{"x":774.654052734375,"y":6.050029754638672,"z":288.14923095703125},"yaw":96.32679748535156,"pitch":31.812023162841797,"inspecting":"","page":"","samplesAllowed":false,"returnedToWorkshop":false,"visitedHa":false,"clipBeforeSeen":false,"clipEventSeen":false,"clipBeforeExposure":0.0,"clipEventExposure":0.0,"evidence":[],"mapping":[],"relations":[],"trials":[],"conclusions":[{"choice":0,"claim":"","grounds":[]},{"choice":0,"claim":"","grounds":[]},{"choice":0,"claim":"","grounds":[]},{"choice":0,"claim":"","grounds":[]}],"gate":{"angle":0.0,"velocity":0.0,"rope":false,"hook":false,"bodyForce":false,"wedge":false,"latched":true},"finalized":false}

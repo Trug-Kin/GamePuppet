@@ -1,0 +1,174 @@
+Scene=Assets/Scenes/JourneyPresentation_v48_r102.unity
+Disabled legacy behaviours=161
+NhichCameraKhiDungYen @ Minh_RegionalWalk_180cm
+HoTroDiChuyenTheoKhu @ Minh_RegionalWalk_180cm
+TuongTacNguoiChoi @ Minh_RegionalWalk_180cm
+GhiNhanTraiNghiemV40 @ Main Camera
+DoHieuNangRenderV47 @ Main Camera
+AnhSangBeMatTheoKhu @ Regional_Surface_Lighting
+TuongTacHoCho @ CR_Bed
+TuongTacHoCho @ CR_Bed_Interaction
+TuongTacHoCho @ CR_Phone
+TuongTacHoCho @ CR_Phone_Interaction
+DayConRoiR46 @ Desk_Puppet_Broken_Strings
+DaoCuKeChuyenV40 @ Document_TỜ GIẤY CỦA MẸ
+TuongTacVuonV41 @ Window_Garden_Latch
+BieuCamNhoNhanVatV41 @ Lan_Garden_World_Rig
+TuongTacHoCho @ CR_Bao
+HienGuongMatTheoKhu @ CR_Bao
+DienXuatNhanVatV40 @ CR_Bao
+BieuCamNhoNhanVatV41 @ CR_Bao
+TuongTacHoCho @ CR_Bao_Interaction
+TuongTacHoCho @ CR_Lake_Wake
+TuongTacHoCho @ CR_Lake_Wake_Interaction
+DieuKhienConRoi @ ConRoi_Minh_0_0
+DienXuatConRoiV40 @ ConRoi_Minh_0_0
+TiepDatConRoiV41 @ ConRoi_Minh_0_0
+BuocChanConRoiR23 @ ConRoi_Minh_0_0
+DayConRoiR45 @ ConRoi_Minh_0_0
+DayConRoiR46 @ ConRoi_Minh_0_0
+DichTuongTacSoTayR37 @ Mat_ke_an_toan
+DichTuongTacSoTayR37 @ So_cua_Minh
+TuongTacHoCho @ CR_Ha
+HienGuongMatTheoKhu @ CR_Ha
+DienXuatNhanVatV40 @ CR_Ha
+BieuCamNhoNhanVatV41 @ CR_Ha
+TuongTacHoCho @ CR_Ha_Interaction
+TuongTacHoCho @ CR_Market_Wake
+TuongTacHoCho @ CR_Market_Wake_Interaction
+DieuKhienConRoi @ ConRoi_Minh_1_0
+DienXuatConRoiV40 @ ConRoi_Minh_1_0
+TiepDatConRoiV41 @ ConRoi_Minh_1_0
+BuocChanConRoiR23 @ ConRoi_Minh_1_0
+DayConRoiR45 @ ConRoi_Minh_1_0
+DayConRoiR46 @ ConRoi_Minh_1_0
+DieuKhienConRoi @ ConRoi_Minh_1_1
+DienXuatConRoiV40 @ ConRoi_Minh_1_1
+TiepDatConRoiV41 @ ConRoi_Minh_1_1
+BuocChanConRoiR23 @ ConRoi_Minh_1_1
+DayConRoiR45 @ ConRoi_Minh_1_1
+DayConRoiR46 @ ConRoi_Minh_1_1
+DieuKhienConRoi @ ConRoi_Minh_1_2
+DienXuatConRoiV40 @ ConRoi_Minh_1_2
+TiepDatConRoiV41 @ ConRoi_Minh_1_2
+BuocChanConRoiR23 @ ConRoi_Minh_1_2
+DayConRoiR45 @ ConRoi_Minh_1_2
+DayConRoiR46 @ ConRoi_Minh_1_2
+DieuKhienConRoi @ ConRoi_Minh_1_3
+DienXuatConRoiV40 @ ConRoi_Minh_1_3
+TiepDatConRoiV41 @ ConRoi_Minh_1_3
+BuocChanConRoiR23 @ ConRoi_Minh_1_3
+DayConRoiR45 @ ConRoi_Minh_1_3
+DayConRoiR46 @ ConRoi_Minh_1_3
+DayConRoiR45 @ R35_Roi_tai_quay
+DayConRoiR46 @ R35_Roi_tai_quay
+BuocChanConRoiR23 @ R35_Roi_tai_quay
+KhanTrongGoiHangR35 @ Khan_that
+GoiHangChoR35 @ Goi_canh_phieu
+KhanTrongGoiHangR35 @ Khan_that
+GoiHangChoR35 @ Goi_khoang_ben
+KhanTrongGoiHangR35 @ Khan_that
+DichTuongTacChoR35 @ O_giao_hang
+DichTuongTacChoR35 @ Phieu_ghi_hang
+DieuPhoiHanhTrinh @ Lake_Market_Story_GDD21
+PhanChieuMatHo @ Lake_Market_Story_GDD21
+ChuongTruongHocV37 @ Lake_Market_Story_GDD21
+ChuongDocV39 @ Lake_Market_Story_GDD21
+TrinhBayHanhTrinhV39 @ Lake_Market_Story_GDD21
+HoanThienTrinhBayV40 @ Lake_Market_Story_GDD21
+HoanTatHanhTrinhV41 @ Lake_Market_Story_GDD21
+TraiNghiemHanhTrinhV42 @ Lake_Market_Story_GDD21
+DieuChinhHanhTrinhV43 @ Lake_Market_Story_GDD21
+ChanDoanDieuKhienV43 @ Lake_Market_Story_GDD21
+ManHinhTaiV44 @ Lake_Market_Story_GDD21
+DienXuatHanhTrinhV45 @ Lake_Market_Story_GDD21
+GhiNhanKhungHinhTreV45 @ Lake_Market_Story_GDD21
+BeMatNhanVatV46 @ Lake_Market_Story_GDD21
+DoChiPhiTacVuV46 @ Lake_Market_Story_GDD21
+DoChiPhiTacVuV47 @ Lake_Market_Story_GDD21
+PhongTrongMoV47 @ Lake_Market_Story_GDD21
+MenuVaoGameV47 @ Lake_Market_Story_GDD21
+GhiBangChungHienThiV47 @ Lake_Market_Story_GDD21
+HuongDanHanhTrinhV48 @ Lake_Market_Story_GDD21
+CanhQuanChoV48 @ Lake_Market_Story_GDD21
+GhiTrangThaiHinhAnhV48 @ Lake_Market_Story_GDD21
+TuTheBaoBenCauV48 @ Lake_Market_Story_GDD21
+SuongDaLatV48 @ Lake_Market_Story_GDD21
+PhucHoiTaiBienR21 @ Lake_Market_Story_GDD21
+SuongKhongGianR22 @ Lake_Market_Story_GDD21
+TraiNghiemHanhTrinhR23 @ Lake_Market_Story_GDD21
+MoDauBenHoR23 @ Lake_Market_Story_GDD21
+CuonChiDocR24 @ Lake_Market_Story_GDD21
+TraiNghiemDocR25 @ Lake_Market_Story_GDD21
+HoSoSceneR26 @ Lake_Market_Story_GDD21
+TraiNghiemTruongR28 @ Lake_Market_Story_GDD21
+TuongTacGiayLop203R32 @ Lake_Market_Story_GDD21
+QuanLyGoiHangChoR35 @ Lake_Market_Story_GDD21
+HoSoLuuTaiR35 @ Lake_Market_Story_GDD21
+TuongTacSoTayHoR37 @ Lake_Market_Story_GDD21
+ChuanBiHanhLyR41 @ Lake_Market_Story_GDD21
+DieuPhoiGiaoDienR42 @ Lake_Market_Story_GDD21
+KhoiPhucCaoDoSauTaiR73 @ Lake_Market_Story_GDD21
+ChuanBiGoiHangR88 @ Lake_Market_Story_GDD21
+TiepCanCoChuDichR89 @ Lake_Market_Story_GDD21
+TiepCanCoChuDichR89 @ Lake_Market_Story_GDD21
+HienGuongMatTheoKhu @ CoMai_Former_Teacher
+DienXuatNhanVatV40 @ CoMai_Former_Teacher
+BieuCamNhoNhanVatV41 @ CoMai_Former_Teacher
+DieuKhienConRoi @ ConRoi_Minh_GD3
+TiepDatConRoiV41 @ ConRoi_Minh_GD3
+BuocChanConRoiR23 @ ConRoi_Minh_GD3
+DayConRoiR46 @ ConRoi_Minh_GD3
+TuongTacTruongV37 @ School_Return_Clock
+TuongTacTruongV37 @ Mai_Interaction
+TuongTacTruongV37 @ LỊCH HỌC
+TuongTacTruongV37 @ SỔ NHẬN XÉT
+TuongTacTruongV37 @ TRANG VIẾT DỞ
+TuongTacTruongV37 @ BÀI LÀM CŨ
+TuongTacTruongV37 @ THÔNG BÁO
+TuongTacTruongV37 @ GIÁO ÁN
+DaoCuKeChuyenV40 @ Document_THƯ CHƯA GỬI
+DaoCuKeChuyenV40 @ Document_BIÊN BẢN HỌP KHOA
+DaoCuKeChuyenV40 @ Document_NHẬT KÝ THỰC TẬP
+DichTuongTacGiayR32 @ Desk_Top
+DichTuongTacGiayR32 @ Player_Paper
+DichTuongTacGiayR32 @ Right_PaperTray_Base
+TuongTacTruongV37 @ Mai_R28_Interaction
+DaoCuKeChuyenV40 @ Document_THƯ CHƯA GỬI(Clone)
+DaoCuKeChuyenV40 @ Document_BIÊN BẢN HỌP KHOA(Clone)
+DaoCuKeChuyenV40 @ Document_NHẬT KÝ THỰC TẬP(Clone)
+TuongTacTruongV37 @ Gate_Return
+TuongTacTruongV37 @ 203_Return
+DichTuongTacGiayR32 @ Model_Answer_Paper_R32
+DichTuongTacHanhLyR41 @ The_hanh_ly_cu
+DichTuongTacHanhLyR41 @ To_chuan_bi_gap
+DichTuongTacHanhLyR41 @ Dat_the_canh_quai
+TuongTacDocV39 @ VÉ XE CŨ
+TuongTacDocV39 @ ĐỊA CHỈ VIẾT TAY
+HienGuongMatTheoKhu @ AnhTung_Cousin
+DienXuatNhanVatV40 @ AnhTung_Cousin
+BieuCamNhoNhanVatV41 @ AnhTung_Cousin
+TuongTacDocV39 @ Tung_Interaction
+DieuKhienConRoi @ ConRoi_Minh_GD4_FinalOnly
+TiepDatConRoiV41 @ ConRoi_Minh_GD4_FinalOnly
+TuongTacDocV39 @ Last_Door
+MatBienHieuV48 @ CẦU ÔNG ĐẠO →
+Ông Bảo bên lan can
+MatBienHieuV48 @ ← CẦU ÔNG ĐẠO
+LỐI VEN HỒ
+MatBienHieuV48 @ VÒNG XOAY / CHỢ →
+MatBienHieuV48 @ CHỢ ĐÀ LẠT ↑
+Theo phố tới mặt chợ
+MatBienHieuV48 @ CHỢ ĐÀ LẠT ↑
+Theo phố tới mặt chợ
+MatBienHieuV48 @ CHỢ ĐÀ LẠT ↑
+Theo phố tới mặt chợ
+MatBienHieuV48 @ CHỢ ĐÀ LẠT ↑
+Theo phố tới mặt chợ
+MatBienHieuV48 @ MẶT CHỢ ↑
+Có thể đi tiếp rồi quay lại
+MatBienHieuV48 @ TỈNH DẬY
+E · Về phòng trọ
+Removed old actors=CR_Bao,CR_Ha,CoMai_Former_Teacher,AnhTung_Cousin
+Controller unchanged speed=3.6 step=0.3 slope=45
+Workshop=(774,5.04003,290); Ha=(785.8,5.04003,272.76). Existing ground sampled before placement. No terrain mesh changed.

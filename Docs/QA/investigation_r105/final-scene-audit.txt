@@ -1,0 +1,11 @@
+Unity 6000.6.2f1; saved scene reopened Assets/Scenes/JourneyPresentation_v48_r105.unity
+MissingScript=0 broken serialized references=0
+NEW R03_Investigation Art_R104_Puppet idle=Scene poses=15
+NEW R12_Investigation Art_R104_Puppet idle=Scene poses=15
+NEW Khai_Investigation Art_R104_Khai idle=Scene poses=0
+NEW CipherPuppet_shared_pose_ID Art_R104_Puppet idle=Scene poses=15
+NEW Ha_Investigation Art_R104_Ha idle=Scene poses=0
+NEW NguoiGiuDay_GiaThuyet NguoiGiuDay_GiaThuyet idle=Scene poses=0
+NEUTRAL prototype R03_Investigation parent=Reconstruction_stage
+NEW R12_Investigation Art_R104_Puppet idle=Scene poses=15
+Native actors=7; neutral reconstruction actors=1; separate Tư event performer remains prototype. Diagnostics=False scene clean=True

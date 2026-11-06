@@ -1,0 +1,17 @@
+Persistent MonoScript=f738d45e4e037004183ef05fe019737c
+C_latch collider=Center: (775.51, 8.96, 291.50), Extents: (0.09, 0.03, 0.05)
+DK_release_handle collider=Center: (775.50, 6.24, 285.50), Extents: (0.09, 0.07, 0.04)
+M_hook_dust collider=Center: (775.26, 6.31, 285.51), Extents: (0.07, 0.04, 0.03)
+R03_Investigation collider=Center: (772.60, 5.67, 290.97), Extents: (0.28, 0.56, 0.12)
+R12_Investigation collider=Center: (776.20, 8.92, 293.76), Extents: (0.46, 0.90, 0.19)
+Khai_Investigation collider=Center: (776.66, 6.00, 286.02), Extents: (0.19, 0.90, 0.48)
+Evidence_henri collider=Center: (772.00, 5.96, 290.00), Extents: (0.12, 0.02, 0.17)
+Evidence_coat collider=Center: (772.00, 6.10, 289.66), Extents: (0.44, 0.15, 0.32)
+Evidence_shoe collider=Center: (772.00, 6.01, 290.30), Extents: (0.05, 0.06, 0.13)
+Evidence_fabric collider=Center: (775.55, 6.31, 285.55), Extents: (0.06, 0.05, 0.03)
+Evidence_phone collider=Center: (776.30, 8.89, 293.10), Extents: (0.04, 0.02, 0.08)
+Evidence_slide collider=Center: (774.80, 8.06, 292.09), Extents: (0.06, 0.02, 0.40)
+Evidence_shoeprint collider=Center: (774.85, 8.06, 292.10), Extents: (0.05, 0.02, 0.13)
+Reconstruction_table_controls collider=Center: (776.00, 5.96, 288.00), Extents: (0.60, 0.02, 0.51)
+Ha_Investigation collider=Center: (785.80, 5.92, 272.78), Extents: (0.46, 0.90, 0.21)
+REOPEN missing=0 interactions=17

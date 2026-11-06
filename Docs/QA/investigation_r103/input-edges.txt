@@ -1,0 +1,8 @@
+Synthetic InputSystem key/mouse events. API opens known pages and selects test view only. Not controller route.
+PASS raw R while editing stays in cipher
+PASS raw P while editing stays in cipher
+PASS Esc closes page; same-frame E does not open world action
+PASS Esc pauses gameplay
+PASS Esc resumes
+PASS inspection mouse rotates actual preview camera
+PASS inspection wheel zoom changes preview camera

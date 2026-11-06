@@ -1,0 +1,32 @@
+Synthetic GameView mouse regression. API initial profile/page and state assertions; no API seeking. Save/load/pause lifecycle actions explicitly API.
+PASS UI starts case
+PASS switch while running resets old timeline
+PASS held seek time=2.4
+PASS release remains paused
+PASS seek recomputes same mechanism state
+PASS held seek time=2.6
+PASS release remains paused
+PASS seek recomputes same mechanism state
+PASS after rope release person still holds, not auto-cleared
+PASS seek before relatch remains unlatched
+PASS seek after relatch is closed
+PASS seek to end creates no trial record
+PASS seek opens no clip observations
+PASS wide view preserves time/state
+PASS hand view preserves time/state
+PASS intentional body hold remains after end seek
+PASS explicit removal extends playback, no reset/speedup
+PASS pause after removal
+PASS reverse seek restores original hold
+PASS seek after withdrawal shows return not instant relatch
+PASS API pause freezes timeline
+PASS UI resumes same removal timeline
+PASS API save/load while model active
+PASS load resets model and removal schedule safely
+PASS repeat model load 0
+PASS repeat model load 1
+PASS repeat model load 2
+PASS repeat model load 3
+PASS repeat model load 4
+PASS no player drift
+PASS UI dragging never turns player camera

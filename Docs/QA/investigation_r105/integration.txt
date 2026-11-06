@@ -1,0 +1,1 @@
+R104 event actor replaced with R105 FBX rig/body/weighted tool; clipTu/left/right/motion refs moved. Repair cord evaluated continuously from source release anchor. Three suspension lines moved to camera layer30. Stage operator role renamed; cloth neutralized/cuff cue hidden only in model. No route collider/interaction/character art changed. Camera and mechanism unchanged.

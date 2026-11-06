@@ -1,0 +1,8 @@
+Controlled game illustration playback; API opens pages/selects cases. Silent. Not controller movement evidence.
+CLIP watched before=True event=True
+release Cánh còn mở 54.6°, chốt nhả. Thử cả người đổi vị trí rồi quay lại dựa trước khi chốt bắt. Có cửa thời gian mở lại ở mô hình này: không thể loại mở trước chỉ bằng lực hồi. Cần đối chiếu trạng thái đóng/cài trong clip sự kiện, nếu clip đủ đọc.
+help Cánh còn mở 2.5°, chốt nhả. Khi Tư còn giữ lực, thả dây không làm cánh đóng xuyên người; minh họa ngã về sau vẫn có thể xảy ra nếu cánh còn mở. Trạng thái mở sẵn khác clip chỉ khi bạn đã quan sát clip.
+hold Cánh còn mở 1.6°, chốt nhả. Nhả D lúc có lực dựa có thể làm mất chỗ tựa. Mô hình không xác định người kéo hoặc ý định.
+hook Cánh còn mở 2.5°, chốt nhả. Móc giữ D khi không có người ở ĐK. Cần so dấu bụi móc hiện trường.
+wedge Cánh còn mở 35.0°, chốt nhả. Vật chèn giữ cánh mở. Cần so trạng thái khe đã khám, không loại chỉ vì không có trong danh sách.
+after Cánh đã đóng, chốt cài. Người đến sau có thể tạo dấu và đặt đạo cụ. Diễn biến này chưa giải thích cú ngã trước đó.

@@ -1,0 +1,19 @@
+{
+  "source": "D:\\ConRoi\\Source\\Blender\\JourneyV48\\R104\\Repair_R12_R104_Animation.blend",
+  "reopened": true,
+  "puppet_source": "Puppet_R104_Editable.blend",
+  "support_export_local_offset_unity": [
+    0.35,
+    3,
+    1.1
+  ],
+  "continuous_camera": true,
+  "angles": [
+    0,
+    3.8,
+    4.2,
+    4.85,
+    6.0
+  ],
+  "limits": "Editable illustrative animation, not final acting or independent physics proof"
+}

@@ -1,0 +1,536 @@
+{
+  "source": "BaseCharacter.blend CC0",
+  "preserved_silhouette": true,
+  "shared_alphabet": [
+    "Pose_A",
+    "Pose_B",
+    "Pose_C",
+    "Pose_D",
+    "Pose_E",
+    "Pose_G",
+    "Pose_H",
+    "Pose_I",
+    "Pose_N",
+    "Pose_O",
+    "Pose_R",
+    "Pose_S",
+    "Pose_T",
+    "Pose_W",
+    "Pose_Y",
+    "RepairBothHands"
+  ],
+  "report": [
+    {
+      "name": "Puppet",
+      "source": "D:\\ConRoi\\Source\\Blender\\JourneyV48\\R104\\Puppet_R104_Editable.blend",
+      "reopened": true,
+      "export": {
+        "path": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R104\\Puppet.fbx",
+        "preset": "unity_skeletal",
+        "bytes": 401132,
+        "objects": [
+          "Puppet_Rig",
+          "Body",
+          "Joint_seam_upperL",
+          "Joint_seam_foreL",
+          "Joint_seam_handL",
+          "Joint_seam_upperR",
+          "Joint_seam_foreR",
+          "Joint_seam_handR"
+        ],
+        "packed_unsaved_images": [],
+        "settings": {
+          "use_selection": true,
+          "apply_unit_scale": true,
+          "use_mesh_modifiers": true,
+          "mesh_smooth_type": "FACE",
+          "add_leaf_bones": false,
+          "path_mode": "COPY",
+          "embed_textures": true,
+          "axis_forward": "-Z",
+          "axis_up": "Y",
+          "object_types": [
+            "ARMATURE",
+            "MESH"
+          ],
+          "use_armature_deform_only": true,
+          "bake_anim": true,
+          "bake_anim_use_all_actions": false,
+          "bake_anim_use_nla_strips": false,
+          "apply_scale_options": "FBX_SCALE_ALL"
+        }
+      },
+      "roundtrip": {
+        "pass": true,
+        "diffs": [],
+        "before": {
+          "objects": {
+            "Puppet_Rig": {
+              "type": "ARMATURE",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "bones": 23,
+              "deform_bones": 23,
+              "roots": [
+                "Bone"
+              ]
+            },
+            "Body": {
+              "type": "MESH",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                0.6952,
+                0.5555,
+                1.76
+              ],
+              "tris": 2104,
+              "shape_keys": []
+            },
+            "Joint_seam_upperL": {
+              "type": "MESH",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                0.1425,
+                0.1435,
+                0.0283
+              ],
+              "tris": 192,
+              "shape_keys": []
+            },
+            "Joint_seam_foreL": {
+              "type": "MESH",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                0.1438,
+                0.1433,
+                0.0272
+              ],
+              "tris": 192,
+              "shape_keys": []
+            },
+            "Joint_seam_handL": {
+              "type": "MESH",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                0.1037,
+                0.1033,
+                0.0249
+              ],
+              "tris": 192,
+              "shape_keys": []
+            },
+            "Joint_seam_upperR": {
+              "type": "MESH",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                0.1425,
+                0.1435,
+                0.0283
+              ],
+              "tris": 192,
+              "shape_keys": []
+            },
+            "Joint_seam_foreR": {
+              "type": "MESH",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                0.1438,
+                0.1433,
+                0.0272
+              ],
+              "tris": 192,
+              "shape_keys": []
+            },
+            "Joint_seam_handR": {
+              "type": "MESH",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                0.1037,
+                0.1033,
+                0.0249
+              ],
+              "tris": 192,
+              "shape_keys": []
+            }
+          },
+          "actions": [
+            "Puppet_R104_Idle"
+          ]
+        },
+        "after": {
+          "objects": {
+            "Puppet_Rig": {
+              "type": "ARMATURE",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "bones": 23,
+              "deform_bones": 23,
+              "roots": [
+                "Bone"
+              ]
+            },
+            "Joint_seam_foreR": {
+              "type": "MESH",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                0.1438,
+                0.1433,
+                0.0272
+              ],
+              "tris": 192,
+              "shape_keys": []
+            },
+            "Body": {
+              "type": "MESH",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                0.6952,
+                0.5555,
+                1.76
+              ],
+              "tris": 2104,
+              "shape_keys": []
+            },
+            "Joint_seam_foreL": {
+              "type": "MESH",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                0.1438,
+                0.1433,
+                0.0272
+              ],
+              "tris": 192,
+              "shape_keys": []
+            },
+            "Joint_seam_handL": {
+              "type": "MESH",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                0.1037,
+                0.1033,
+                0.0249
+              ],
+              "tris": 192,
+              "shape_keys": []
+            },
+            "Joint_seam_handR": {
+              "type": "MESH",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                0.1037,
+                0.1033,
+                0.0249
+              ],
+              "tris": 192,
+              "shape_keys": []
+            },
+            "Joint_seam_upperL": {
+              "type": "MESH",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                0.1425,
+                0.1435,
+                0.0283
+              ],
+              "tris": 192,
+              "shape_keys": []
+            },
+            "Joint_seam_upperR": {
+              "type": "MESH",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                0.1425,
+                0.1435,
+                0.0283
+              ],
+              "tris": 192,
+              "shape_keys": []
+            }
+          },
+          "actions": [
+            "Puppet_Rig|Scene"
+          ],
+          "file": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R104\\Puppet.fbx",
+          "bytes": 401132
+        }
+      },
+      "gate": [
+        {
+          "object": "Body",
+          "report": {
+            "profile": "game",
+            "eps": 0.000197,
+            "tol": 0.003944,
+            "gap": 0.019722,
+            "pass": true,
+            "errors": [],
+            "warnings": [
+              "Body: no UV map (fine for flat colors; textures and lightmaps need one)"
+            ],
+            "per_object": {
+              "Body": {
+                "tris": 2104,
+                "parts": 6,
+                "errors": [],
+                "warnings": [
+                  "Body: no UV map (fine for flat colors; textures and lightmaps need one)"
+                ]
+              }
+            },
+            "skipped": []
+          }
+        },
+        {
+          "object": "Joint_seam_upperL",
+          "report": {
+            "profile": "game",
+            "eps": 2e-05,
+            "tol": 0.000408,
+            "gap": 0.002042,
+            "pass": true,
+            "errors": [],
+            "warnings": [
+              "Joint_seam_upperL: origin outside the mesh bounds"
+            ],
+            "per_object": {
+              "Joint_seam_upperL": {
+                "tris": 192,
+                "parts": 1,
+                "errors": [],
+                "warnings": [
+                  "Joint_seam_upperL: origin outside the mesh bounds"
+                ]
+              }
+            },
+            "skipped": []
+          }
+        },
+        {
+          "object": "Joint_seam_foreL",
+          "report": {
+            "profile": "game",
+            "eps": 2e-05,
+            "tol": 0.00041,
+            "gap": 0.002048,
+            "pass": true,
+            "errors": [],
+            "warnings": [
+              "Joint_seam_foreL: origin outside the mesh bounds"
+            ],
+            "per_object": {
+              "Joint_seam_foreL": {
+                "tris": 192,
+                "parts": 1,
+                "errors": [],
+                "warnings": [
+                  "Joint_seam_foreL: origin outside the mesh bounds"
+                ]
+              }
+            },
+            "skipped": []
+          }
+        },
+        {
+          "object": "Joint_seam_handL",
+          "report": {
+            "profile": "game",
+            "eps": 1.5e-05,
+            "tol": 0.000297,
+            "gap": 0.001485,
+            "pass": true,
+            "errors": [],
+            "warnings": [
+              "Joint_seam_handL: origin outside the mesh bounds"
+            ],
+            "per_object": {
+              "Joint_seam_handL": {
+                "tris": 192,
+                "parts": 1,
+                "errors": [],
+                "warnings": [
+                  "Joint_seam_handL: origin outside the mesh bounds"
+                ]
+              }
+            },
+            "skipped": []
+          }
+        },
+        {
+          "object": "Joint_seam_upperR",
+          "report": {
+            "profile": "game",
+            "eps": 2e-05,
+            "tol": 0.000408,
+            "gap": 0.002042,
+            "pass": true,
+            "errors": [],
+            "warnings": [
+              "Joint_seam_upperR: origin outside the mesh bounds"
+            ],
+            "per_object": {
+              "Joint_seam_upperR": {
+                "tris": 192,
+                "parts": 1,
+                "errors": [],
+                "warnings": [
+                  "Joint_seam_upperR: origin outside the mesh bounds"
+                ]
+              }
+            },
+            "skipped": []
+          }
+        },
+        {
+          "object": "Joint_seam_foreR",
+          "report": {
+            "profile": "game",
+            "eps": 2e-05,
+            "tol": 0.00041,
+            "gap": 0.002048,
+            "pass": true,
+            "errors": [],
+            "warnings": [
+              "Joint_seam_foreR: origin outside the mesh bounds"
+            ],
+            "per_object": {
+              "Joint_seam_foreR": {
+                "tris": 192,
+                "parts": 1,
+                "errors": [],
+                "warnings": [
+                  "Joint_seam_foreR: origin outside the mesh bounds"
+                ]
+              }
+            },
+            "skipped": []
+          }
+        },
+        {
+          "object": "Joint_seam_handR",
+          "report": {
+            "profile": "game",
+            "eps": 1.5e-05,
+            "tol": 0.000297,
+            "gap": 0.001485,
+            "pass": true,
+            "errors": [],
+            "warnings": [
+              "Joint_seam_handR: origin outside the mesh bounds"
+            ],
+            "per_object": {
+              "Joint_seam_handR": {
+                "tris": 192,
+                "parts": 1,
+                "errors": [],
+                "warnings": [
+                  "Joint_seam_handR: origin outside the mesh bounds"
+                ]
+              }
+            },
+            "skipped": []
+          }
+        }
+      ],
+      "triangles": 3256,
+      "unweighted": 0
+    }
+  ],
+  "pose_export": {
+    "path": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R104\\PuppetPoseLibrary104.fbx",
+    "preset": "unity_skeletal",
+    "bytes": 2263980,
+    "objects": [
+      "Puppet_Rig",
+      "Joint_seam_upperL",
+      "Joint_seam_foreL",
+      "Joint_seam_handL",
+      "Joint_seam_upperR",
+      "Joint_seam_foreR",
+      "Joint_seam_handR",
+      "Body"
+    ],
+    "packed_unsaved_images": [],
+    "settings": {
+      "use_selection": true,
+      "apply_unit_scale": true,
+      "use_mesh_modifiers": true,
+      "mesh_smooth_type": "FACE",
+      "add_leaf_bones": false,
+      "path_mode": "COPY",
+      "embed_textures": true,
+      "axis_forward": "-Z",
+      "axis_up": "Y",
+      "object_types": [
+        "ARMATURE",
+        "MESH"
+      ],
+      "use_armature_deform_only": true,
+      "bake_anim": true,
+      "bake_anim_use_all_actions": true,
+      "bake_anim_use_nla_strips": false,
+      "apply_scale_options": "FBX_SCALE_ALL"
+    }
+  }
+}

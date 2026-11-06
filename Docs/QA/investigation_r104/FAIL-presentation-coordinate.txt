@@ -1,0 +1,5 @@
+Synthetic GameView mouse; API opens initial clip. Clip is silent illustrative animation, not controller footage. Six buttons use same mechanism law.
+clip play time=0 latch=True
+clip event time=0 latch=True angle=0
+FAIL System.Exception: Wrong UI case hook
+  at Unity.AI.Assistant.Agent.Dynamic.Extension.Editor.CommandScript+<>c__DisplayClass0_0.<Execute>b__1 () [0x00303] in <af845a0134474acb8e83cf4a1881e95c>:0 

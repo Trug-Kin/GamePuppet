@@ -1,0 +1,14 @@
+PIXEL (700.00, 370.00)
+(675.62, 1.64, 417.32) LakeGateMarketV32/Context_124 normal=(0.01, 1.00, 0.06) tri=103620
+PIXEL (850.00, 390.00)
+(677.34, 1.60, 418.25) LakeGateMarketV32/Context_124 normal=(0.00, -1.00, -0.04) tri=103621
+(677.04, 1.44, 418.66) R20_Whole_Source_Export/Surface_142 normal=(0.19, 0.98, 0.00) tri=211641
+PIXEL (1000.00, 380.00)
+(678.23, 1.54, 420.25) LakeGateMarketV32/Context_124 normal=(0.01, -1.00, -0.03) tri=103592
+(678.01, 1.37, 420.81) R20_Whole_Source_Export/Surface_142 normal=(0.00, 1.00, 0.00) tri=212450
+PIXEL (1200.00, 450.00)
+(680.41, 1.69, 418.97) LakeGateMarketV32/Context_109 normal=(0.00, 1.00, 0.03) tri=2197
+(680.36, 1.57, 419.33) LakeGateMarketV32/Context_124 normal=(0.01, 1.00, 0.02) tri=103590
+(680.29, 1.37, 419.93) R20_Whole_Source_Export/Surface_142 normal=(0.00, 1.00, 0.00) tri=214212
+PIXEL (550.00, 400.00)
+(675.81, 1.75, 415.19) LakeGateMarketV32/Context_124 normal=(0.00, 1.00, 0.05) tri=103651

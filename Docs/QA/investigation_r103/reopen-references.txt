@@ -1,0 +1,3 @@
+Reopened Assets/Scenes/JourneyPresentation_v48_r103.unity dirty=False inspected components=347 unresolved nonzero visible object refs=0
+initial namespace=conroi.investigation.v36.r103 initial records=0 finalized=False
+clip=Scene seconds=12 actor=EventActor_R103 diagnostics=False

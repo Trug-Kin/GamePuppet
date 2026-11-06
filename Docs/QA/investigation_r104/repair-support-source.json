@@ -1,0 +1,202 @@
+{
+  "source": "D:\\ConRoi\\Source\\Blender\\JourneyV48\\R104\\Repair_R12_R104_Animation.blend",
+  "collection": "R104_R12_REPAIR_SUPPORT",
+  "reopened": true,
+  "export": {
+    "path": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R104\\R12Support.fbx",
+    "preset": "unity",
+    "bytes": 29212,
+    "objects": [
+      "R12_stand_left",
+      "R12_stand_right",
+      "R12_stand_top",
+      "R12_stand_foot_left",
+      "R12_stand_foot_right"
+    ],
+    "packed_unsaved_images": [],
+    "settings": {
+      "use_selection": true,
+      "apply_unit_scale": true,
+      "use_mesh_modifiers": true,
+      "mesh_smooth_type": "FACE",
+      "add_leaf_bones": false,
+      "path_mode": "COPY",
+      "embed_textures": true,
+      "axis_forward": "-Z",
+      "axis_up": "Y",
+      "apply_scale_options": "FBX_SCALE_ALL",
+      "bake_space_transform": true,
+      "object_types": [
+        "EMPTY",
+        "MESH"
+      ],
+      "bake_anim": false
+    }
+  },
+  "roundtrip": {
+    "pass": true,
+    "diffs": [],
+    "before": {
+      "objects": {
+        "R12_stand_left": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.07,
+            0.07,
+            2.1
+          ],
+          "tris": 44,
+          "shape_keys": []
+        },
+        "R12_stand_right": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.07,
+            0.07,
+            2.1
+          ],
+          "tris": 44,
+          "shape_keys": []
+        },
+        "R12_stand_top": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            1.1,
+            0.09,
+            0.09
+          ],
+          "tris": 44,
+          "shape_keys": []
+        },
+        "R12_stand_foot_left": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.08,
+            0.85,
+            0.08
+          ],
+          "tris": 44,
+          "shape_keys": []
+        },
+        "R12_stand_foot_right": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.08,
+            0.85,
+            0.08
+          ],
+          "tris": 44,
+          "shape_keys": []
+        }
+      },
+      "actions": []
+    },
+    "after": {
+      "objects": {
+        "R12_stand_foot_left": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.08,
+            0.85,
+            0.08
+          ],
+          "tris": 44,
+          "shape_keys": []
+        },
+        "R12_stand_foot_right": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.08,
+            0.85,
+            0.08
+          ],
+          "tris": 44,
+          "shape_keys": []
+        },
+        "R12_stand_left": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.07,
+            0.07,
+            2.1
+          ],
+          "tris": 44,
+          "shape_keys": []
+        },
+        "R12_stand_right": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.07,
+            0.07,
+            2.1
+          ],
+          "tris": 44,
+          "shape_keys": []
+        },
+        "R12_stand_top": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            1.1,
+            0.09,
+            0.09
+          ],
+          "tris": 44,
+          "shape_keys": []
+        }
+      },
+      "actions": [],
+      "file": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R104\\R12Support.fbx",
+      "bytes": 29212
+    }
+  }
+}

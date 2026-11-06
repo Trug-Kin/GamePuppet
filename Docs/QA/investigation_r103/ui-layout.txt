@@ -1,0 +1,21 @@
+Layout API fixtures only, page held until screenshot finishes.
+shoeprint 1280x720
+shoe 1280x720
+shoecontrol 1280x720
+fabric 1280x720
+coat 1280x720
+mechanism 1280x720
+cipher 1280x720
+compare 1280x720
+reconstruction 1280x720
+conclusions 1280x720
+shoeprint 1920x1080
+shoe 1920x1080
+shoecontrol 1920x1080
+fabric 1920x1080
+coat 1920x1080
+mechanism 1920x1080
+cipher 1920x1080
+compare 1920x1080
+reconstruction 1920x1080
+conclusions 1920x1080

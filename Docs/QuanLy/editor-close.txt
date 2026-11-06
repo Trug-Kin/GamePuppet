@@ -1,0 +1,1 @@
+Controlled technical Play stopped; scene not dirty; Editor exit without saving runtime. Other Unity projects untouched.

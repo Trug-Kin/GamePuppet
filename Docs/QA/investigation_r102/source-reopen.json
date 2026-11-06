@@ -1,0 +1,17 @@
+{
+  "file": "D:\\ConRoi\\Source\\Blender\\JourneyV48\\R102\\Workshop_Investigation_R102_Editable.blend",
+  "opened": true,
+  "units": 1.0,
+  "missing_textures": false,
+  "external_libraries": 0,
+  "objects": 24,
+  "exported": [
+    "WORKSHOP",
+    "MECHANISM",
+    "EVIDENCE",
+    "Khai",
+    "Ha",
+    "R03",
+    "R12"
+  ]
+}

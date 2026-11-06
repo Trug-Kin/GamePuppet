@@ -1,0 +1,8 @@
+Synthetic keyboard only. Existing controller; no Save/Load API.
+PASS Skip route has no discovered evidence/answers
+PASS Actual diagonal controller displacement
+PASS Grounded after diagonal walk and stop
+PASS F5 wrote technical map-route profile
+PASS Pause holds position
+PASS Load retains skipped tutorial without unseen observations
+PASS Load retains saved pose on repaired ground

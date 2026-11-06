@@ -1,0 +1,11 @@
+{
+  "files": 13446,
+  "bytes": 6222719891,
+  "estimated_unique_lfs_bytes": 4402018286,
+  "free_bytes": 7301316608,
+  "secret_pattern_files": [
+    "Tools/python-deps/PIL/ImageFont.py"
+  ],
+  "unclassified_asset_files": 15514,
+  "policy": "Explicit current/checkpoint + compile/resource/prefab closure; all Source retained. Working tree legacy retained untracked, never discarded. No remote."
+}

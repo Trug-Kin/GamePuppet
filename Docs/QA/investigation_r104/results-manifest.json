@@ -1,0 +1,312 @@
+[
+  {
+    "path": "Test\\KetQua\\investigation_r104\\art-final-export.json",
+    "sha256": "dc2e6641d55f789722578db56e8aed581cf7b9cd6f485e1804c3ac3dd7fd1a51",
+    "bytes": 18465
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\art-inspection.json",
+    "sha256": "25c3b00a2c793bec4dd9a0a25f940f1e386c9d548a1cf841c789b7693cd59a06",
+    "bytes": 113949
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\art-integration-response.json",
+    "sha256": "680c968b0eef7a39d00c0d46fdfd53d5970eab47a020b894d5b1b91ea63998a2",
+    "bytes": 20773
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\art-integration.txt",
+    "sha256": "ee00b26b76f6237330784fae753bd27d3bc397918f144aea9bd13561fe002bbb",
+    "bytes": 573
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\art-source-export.json",
+    "sha256": "f941426c901316fabf60d50145c2dc17a097f9dc6f9abbd5fa5c78a03ce9a60c",
+    "bytes": 30468
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\ASSET_SOURCES.md",
+    "sha256": "5c3993231daa90f5fb21e2b5c66a2bad9477f85ba028f58e7984f0b19121bc48",
+    "bytes": 3211
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\CHECKLIST.md",
+    "sha256": "c58354eccde13c056307727fc3e91f96b073f0e994caff22530c5f41c2def693",
+    "bytes": 1623
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\clip-and-six-cases-final.mp4.json",
+    "sha256": "aeb866e35fe4061d6a6d4e96f09619f5a2a3cabba1ce88295e2cb9aaad5cb81e",
+    "bytes": 225
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\clip-and-six-cases-final.mp4.log",
+    "sha256": "d345b33479c479e4652817166bdde370a071bd1aa9de6c0a974bd4ef20e71558",
+    "bytes": 22562
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\clip-and-six-cases.mp4.json",
+    "sha256": "aeb866e35fe4061d6a6d4e96f09619f5a2a3cabba1ce88295e2cb9aaad5cb81e",
+    "bytes": 225
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\clip-and-six-cases.mp4.log",
+    "sha256": "4acbed118aed7b9860af535cad3ddb6ae96156b8ab75282997d4e18d87f627dd",
+    "bytes": 22979
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\clip-context.json",
+    "sha256": "dc549cf14b60dbd0a86c01bfa050383854c7283dca65378191c471bbbd88cbbe",
+    "bytes": 439
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\conclusion-ui.txt",
+    "sha256": "206d39508ba98fe0ab3fc159c349d6c65404dd968abf5b53c60112e325c1968e",
+    "bytes": 212
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\controller-response.json",
+    "sha256": "c62b3a015ac9d6dd5e8f4721c73782609d84eb2287b856b877dd2ef187f70ac0",
+    "bytes": 24525
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\controller-route.mp4.json",
+    "sha256": "40541931a22f5aa04a06006b465d82f312cb789c030275e9538103633097b181",
+    "bytes": 222
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\controller-route.mp4.log",
+    "sha256": "374f4e03eecd471f2a7da014768eecba6bf46db78423fc872d5d9a88956e22c6",
+    "bytes": 16263
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\cuff-source.json",
+    "sha256": "48fa3fe0e975e59148d23e9ec1a4b3aad6d6dd186a261f9bdb82ecdec847239f",
+    "bytes": 7632
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\downloaded-model-probe.json",
+    "sha256": "4713f292ae32527f5e726df1bd379177b39d35d3fb9f97b128527cac20676d10",
+    "bytes": 352448
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\editor-current.json",
+    "sha256": "94bb66c33c555dc1bbf8dd43fdc307e3b93dcc736a8eeffdfd656769bab5e4d6",
+    "bytes": 2605
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\editor-state-reload.json",
+    "sha256": "8b2803b7216efbcd2b2ee8a45f02369861cceae42a06cfc1f4e2d4219c2459da",
+    "bytes": 2605
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\FAIL-presentation-coordinate.txt",
+    "sha256": "5723e6d23c85a217a82286d56e56e02985cea83746f8b4a1c3a9bf24f212651a",
+    "bytes": 416
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\final-scene-audit.txt",
+    "sha256": "8a7c16af3926da4e3e7b5c4de31131f02a78dfe967fb687d4b893a8ae6427f31",
+    "bytes": 753
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\final-support-response.json",
+    "sha256": "ea9199faa4cf0aa1120b05217eba61c61ac3cc8dcbaaa7b797cbe3d49551bf6b",
+    "bytes": 5181
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\isolation.json",
+    "sha256": "5919b9563501a20a704135fe6080735942a877560a18bc31373dd3d404df2a44",
+    "bytes": 13660
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\layout-response.json",
+    "sha256": "c617c7793f8017c61beee7bbcb9c3287f2c804a7fb566cb756523a343aca60a9",
+    "bytes": 7069
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\legacy-heads-before-removal.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\lifecycle.txt",
+    "sha256": "400cfc572ab55c1e628a85467b91c891a90ee04f2e34dc02988c55bd18678715",
+    "bytes": 825
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\mechanism-check.txt",
+    "sha256": "bab802e5bb8ce16a0a3aafcbc3eb428546aa47a04b91f4697ec59e88ab9aa219",
+    "bytes": 692
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\mechanism-source-comparison.json",
+    "sha256": "a1a3619e80f3451cdda80578177473c89be9e513ecd6e0bdd4f4600a3cfb1461",
+    "bytes": 218
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\operator-layer-fix.txt",
+    "sha256": "c5d1cadde535e1165618c4ac01ff8acb9a27453483885b49036c39603d901704",
+    "bytes": 178
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\operator-ui.txt",
+    "sha256": "83a9629b425b34d23449d94fedaf3d55ee5d6aa5bb4c7d5198257ba37a959bcd",
+    "bytes": 159
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\play-final.json",
+    "sha256": "d61b1e91f5791ec604e0d428e70b1dd071d12ed6f10e223b8cdfd279c1dc55c1",
+    "bytes": 2919
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\play-response.json",
+    "sha256": "367e75ceb07692a3661da05a80929b9515798a095fe5655d17075cbe1cb3e180",
+    "bytes": 2919
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\PLAYTEST_NGUOI_MOI.md",
+    "sha256": "e345c3503bddfddaff5fe1bc3c61ab54d77a869b5d8e9a930c5ba6070d8409a6",
+    "bytes": 1539
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\presentation-response-2.json",
+    "sha256": "1d5bc7583a4a60357ed7da3ab43444f5b45e927c08006d05577e14dad13f8565",
+    "bytes": 13073
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\presentation-response.json",
+    "sha256": "7b3e46aadd2cd8eef361050b7a676281b047c19ddf80e7437f43951ffd2a6402",
+    "bytes": 12761
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\presentation-ui.txt",
+    "sha256": "4f0c3b5d5e1530c444d3126636ea12b6071f6a89183ff6a8eb6d8a3653779bc7",
+    "bytes": 2081
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\protected-final.json",
+    "sha256": "ecb2984f90c129f44a6245e70256690b3a5f58e43b745d8e58ea9c6cc52041fd",
+    "bytes": 444194
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\protected-start.json",
+    "sha256": "3a829019ef44db2e9c5d38ec8d64ec3b486d0e984d16133fca1118279bfe65dc",
+    "bytes": 272343
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\puppet-finish.json",
+    "sha256": "821723cfc36612c4e86a8f5f7e3f91f993e15036942e88bb73353a6cdbea214f",
+    "bytes": 14030
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\read-response.json",
+    "sha256": "336119e82432a9b2c5b89c6cdba58bc1e14ee1fa86de23bdab803ed681449d1d",
+    "bytes": 8209
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\README.md",
+    "sha256": "d2d6c4944a137a6658fa729fe3cc0054dbe3ad03fe46d0ac2447b28c3718ad2b",
+    "bytes": 8564
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\repair-support-source.json",
+    "sha256": "fa2e1cc44e3405168465febb8935d8d3cb20d2a2e3d7a3fe5fe574d1dbcf2f29",
+    "bytes": 4305
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\review-ui-response.json",
+    "sha256": "0a8a83b5b9ca23f040db3cb27072e502c1dd56981167e02dd15bd1a035759a4d",
+    "bytes": 15933
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\route-motion.txt",
+    "sha256": "377d2cd555db9336ba5ad7afed7abeab1aa6c3d597303d32fd4042f03aeb92aa",
+    "bytes": 24327
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\route-progress.txt",
+    "sha256": "8d3308912ed3e570a1aabe2183b5f45a35ed1d4561f586242fcf8ddb66d47750",
+    "bytes": 22870
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\scene-inventory.txt",
+    "sha256": "cd082154bed95fc309938603933f6fa98adb7a817e2fa0a9f283cdb2f885590d",
+    "bytes": 1919
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\screen-probe.json",
+    "sha256": "c3cbff263ce2cfa7cfa79a9e10c2378c1a8642b551a28ba89cca8addbe1fa780",
+    "bytes": 2757
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\slider-direct-1080.mp4.json",
+    "sha256": "540eeb3d2ce2f5b3c7efb1699b026a2026cc0fa7e92d950e61d498f4efbe0889",
+    "bytes": 224
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\slider-direct-1080.mp4.log",
+    "sha256": "e52246a2d4077d4da13269baec96ae0551b232f67303324366c671a3481c821c",
+    "bytes": 5568
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\slider-ui-1080.txt",
+    "sha256": "af0a343386e31dee21a019a368d4ecf29952d63ed0dea8f128cc4074a2f59eb5",
+    "bytes": 1086
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\slider-ui.txt",
+    "sha256": "774d8242f9309f05010777fb0d6d14d145f2e496f099721cca78f328401b53ee",
+    "bytes": 1086
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\stop-review.json",
+    "sha256": "5632d7c33a9e21d03e76e2a3fb39e8556abf771a495988a333b7e29142c057ad",
+    "bytes": 1543
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\support-final.json",
+    "sha256": "b33366625e6a393b9714affff57a00185e7b54e577b4ba5efa668e9cae4f17a6",
+    "bytes": 5550
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\ui-finish.txt",
+    "sha256": "50e464354975df872a27aa552be96b0b4a4f44d78f37d450084fba56f688d417",
+    "bytes": 143
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\ui-functional.txt",
+    "sha256": "8146a2cf830c62ee4bb7d624cab421db1a0f509235a66631c5212dc9c5bc8388",
+    "bytes": 393
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\ui-layout.txt",
+    "sha256": "1c0a27c50275c8552d3e4573e33b868cfbbc302a7863e51e7fb1e7abc4fa6bda",
+    "bytes": 126
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\video-metadata.json",
+    "sha256": "6fa01380ab996d2fb511b33385093ac218e8a30188c090009408010c69162516",
+    "bytes": 408
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\VIDEO_INDEX.md",
+    "sha256": "82e015f16fd8d31631afb9213fc3d523da3e90b9fa7e26aa38d142e3b4de415b",
+    "bytes": 2030
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\lifecycle-profile\\InvestigationV36\\r104\\prototype.json",
+    "sha256": "da58dd6b0e4d66ec8607e012874dc0b381c4ce149f6bcc8b646f87b041d3015c",
+    "bytes": 2816
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\route-profile\\InvestigationV36\\r104\\prototype.json",
+    "sha256": "797854b7fbbe793fb9072a90f5b59b51d3306593ba67054932c70b753bddf5ce",
+    "bytes": 2743
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\ui-profile\\InvestigationV36\\r104\\prototype.json",
+    "sha256": "486077bc3dd359e64feaeea2e9d9ec0ee7d99d398b7ac69a48377709825590ca",
+    "bytes": 4115
+  }
+]

@@ -1,0 +1,9 @@
+Read-only tiny residual face measurement in original mesh local coordinates; world-space float quantization can change almost-collinear normals.
+Assets/Art/Environment/JourneyV48/TerrainR107/BankR91_Grade_017_IntegratedR101_FinalWindingR107.asset tri=194039 localArea=1.11540022E-09 longestEdge=0.00338450447 localNormal=(0.686472, 0.631556, -0.360406)
+Assets/Art/Environment/JourneyV48/TerrainR107/BankR91_Grade_017_IntegratedR101_FinalWindingR107.asset tri=194562 localArea=1.46567813E-10 longestEdge=0.000482951844 localNormal=(0.717330, 0.549043, -0.428940)
+Assets/Art/Environment/JourneyV48/TerrainR107/BankR91_Grade_017_IntegratedR101_FinalWindingR107.asset tri=194564 localArea=6.1582503E-11 longestEdge=0.000202666575 localNormal=(0.718350, 0.548214, -0.428293)
+Assets/Art/Environment/JourneyV48/TerrainR107/BankR91_Grade_017_IntegratedR101_FinalWindingR107.asset tri=198946 localArea=6.9512085E-10 longestEdge=0.00249851542 localNormal=(0.969999, 0.131052, -0.204764)
+Assets/Art/Environment/JourneyV48/TerrainR107/M95_023_BoundR97_WindingR107_FinalWindingR107.asset tri=129420 localArea=1.25650421E-10 longestEdge=0.00117582362 localNormal=(-0.836447, -0.389606, -0.385439)
+Assets/Art/Environment/JourneyV48/TerrainR107/M95_023_BoundR97_WindingR107_FinalWindingR107.asset tri=131871 localArea=1.95321048E-09 longestEdge=0.0118139125 localNormal=(-0.432845, -0.622697, -0.651839)
+Assets/Art/Environment/JourneyV48/TerrainR107/TerrainColliderJoin_R90_IntegratedR101_WindingR107_FinalWindingR107.asset tri=102238 localArea=1.25650421E-10 longestEdge=0.00117582362 localNormal=(-0.836447, -0.389606, -0.385439)
+Assets/Art/Environment/JourneyV48/TerrainR107/TerrainColliderJoin_R90_IntegratedR101_WindingR107_FinalWindingR107.asset tri=104684 localArea=1.95321048E-09 longestEdge=0.0118139125 localNormal=(-0.432845, -0.622697, -0.651839)

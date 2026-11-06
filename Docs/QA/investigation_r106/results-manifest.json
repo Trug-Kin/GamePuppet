@@ -1,0 +1,157 @@
+[
+  {
+    "path": "Test\\KetQua\\investigation_r106\\baseline-r105.txt",
+    "sha256": "da808445a7e30c80722c1bd8531255fc612aadf03761aec604099b1595c4958f",
+    "bytes": 1695
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\CHECKLIST.md",
+    "sha256": "6c3151e278da5c6f8c9d61cc8b1f7a41a785787e80e4c44e872e645222fadc88",
+    "bytes": 3565
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\cycle-api.txt",
+    "sha256": "9eef03f76d7aebdc5e01d29a787920738e96de215b7aedc81cb722c36f810851",
+    "bytes": 3615
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\cycle-transitions.csv",
+    "sha256": "6b3da6ffe9d658d19c5d1289f1de8be993371ae441c8ef7031a69edecddb5964",
+    "bytes": 5094
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\cycle-ui-final.txt",
+    "sha256": "007ab8f6dceccecf082cee991ffd0416793fda01e0dc06a2cc4b8ebb616c236b",
+    "bytes": 5495
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\editor-actual-args.txt",
+    "sha256": "e31abca0cdce482bf2611c51762e37c4caee80d951b89b236d878b2327b02807",
+    "bytes": 230
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\editor-current-args.txt",
+    "sha256": "6d0941fd1dcb0d709ae859ac9356c86ab79e1683f4ff7109a6f6844cd6a1a25e",
+    "bytes": 242
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\editor-profile-launch.log",
+    "sha256": "7a4cd90c006fea6678168fa94a2d08639757bc83b6a8e6060ac57de323248cdf",
+    "bytes": 57133
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\event-binding-audit.txt",
+    "sha256": "99203d2fda51e15890d36bdd4e004f552a459473d71fe7cca10ea150489b0e5a",
+    "bytes": 437
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\FAIL-immediate-ui-assertion.txt",
+    "sha256": "8ff18d329cd0ce9f2d39e75acea98332499990428ea23a8aa9fbe9c38d6e14a1",
+    "bytes": 1176
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\FAIL-removal-check-timing.txt",
+    "sha256": "cdc29331409d2824ff76f5cad7b25e54f5bc8b44d60fa43dd47e68961ff8edf5",
+    "bytes": 5363
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\final-scene-audit.txt",
+    "sha256": "82f00c5c6a22393543983cd71af7417f0bfa9c29ec3a040d8bed59eefc19c60c",
+    "bytes": 759
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\isolation.json",
+    "sha256": "564b439537b48ef9fd5648b2a784bf9d492c6fdb2bd3174205188ad0b072c054",
+    "bytes": 993
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\law-unchanged.txt",
+    "sha256": "aa2a5fc900826a79a1cd387b586900c76f56aca70e510e4f796058b187d8a992",
+    "bytes": 192
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\PLAYTEST_NGUOI_MOI.md",
+    "sha256": "05316662a13c0981736a6f621619d344a5bc8de536633636633d4a7536ba62bf",
+    "bytes": 4519
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\profile-launch-proof.txt",
+    "sha256": "c29e232d8b29fa381420a99ba5d8a50d9bac60b99e1bc7b70c4e155072a7bf19",
+    "bytes": 596
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\profile-relaunch-preflight.txt",
+    "sha256": "707fa8e2142fd8f78cbe7c11abf0a585bdc12c51efbe2044cc832abb343ab11c",
+    "bytes": 146
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\protected-final.json",
+    "sha256": "73d17b49085c48c11c7721765b38cdcf38ce3357c8ca1e40ace50b1fff7c2317",
+    "bytes": 520658
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\protected-start.json",
+    "sha256": "36de85110b7997583326f9fcc8e5726b5afe568a5191e991f67ac20dfccbb56f",
+    "bytes": 318953
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\README.md",
+    "sha256": "b995ef853b0c7152f0374e261d4bbeba7ce742473d1168ffb0b4170492f207c1",
+    "bytes": 5004
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\regression-ui.txt",
+    "sha256": "ca68b9275dd0e08027bccdbe084fde99eccf3d2580f1dd4295a99f0d42230b3a",
+    "bytes": 1304
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\six-whole-cycles-final.mp4.json",
+    "sha256": "f77b82ea7f448a0c1946d9ccda01fb248b03e71e367decfe72763b72c8be0d1e",
+    "bytes": 224
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\six-whole-cycles-final.mp4.log",
+    "sha256": "50e160dbaf3a9cd50ae29682fe178aaa1f91620781002705fa7f35cfb54433bb",
+    "bytes": 26252
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\six-whole-cycles-ui.mp4.json",
+    "sha256": "01f7f4490c11df56c182fb96b1406b8c27f4b0b3d4305730dac8f56447afbdab",
+    "bytes": 218
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\six-whole-cycles-ui.mp4.log",
+    "sha256": "16fdd9f46457abb618b5dc1777d3fdc4c416926b16e9bc95889ea5140d4eec81",
+    "bytes": 19446
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\SIX_CASES.md",
+    "sha256": "903e8aceef0309c8ea4b4c650452353f1a45d0e7f417dde9f5366f5898133983",
+    "bytes": 3309
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\verification-summary.json",
+    "sha256": "7a72d8fb116a8367542257cb6598e44f7aad5ff9e2a545f2441a5b31f8adfaee",
+    "bytes": 971
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\video-metadata.txt",
+    "sha256": "e52776976a06b47e99675f92f599a869c9e81154475f10bcb2fbcce31784573b",
+    "bytes": 648
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\VIDEO_INDEX.md",
+    "sha256": "44e1164fa8029007cd0ec74e3e9caa35a7a9b90a9a12a1689e75d48ccec69977",
+    "bytes": 2317
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\profile-launch-verified\\InvestigationV36\\r106\\prototype.json",
+    "sha256": "a05d5dbc340e3ab080ba52b2b9104c3da9dcede25dcc173e879970e58b81c708",
+    "bytes": 1150
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r106\\regression-profile\\InvestigationV36\\r106\\prototype.json",
+    "sha256": "909ff4da570d68c3b00e7183588eef47b23f61ac48a07b2fc8f0d412f11c7de1",
+    "bytes": 772
+  }
+]

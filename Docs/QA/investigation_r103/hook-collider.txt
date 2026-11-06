@@ -1,0 +1,3 @@
+Before=Center: (775.54, 6.24, 285.50), Extents: (0.07, 0.04, 0.03)
+After=Center: (775.49, 6.31, 285.50), Extents: (0.09, 0.09, 0.02)
+Shared mesh=Hook_M

@@ -1,0 +1,46 @@
+Silent video. Synthetic GameView mouse controls select playback/replay/pause/seek and all six cases. API opens clip/reconstruction pages only; no prescribed trial results. Not controller traversal evidence.
+clip before=True event=True stopped=True
+replay via button time=0.814178 playing=True
+pause/seek time=2.419902 playing=False
+release t=1.018992 angle=38.4088 latched=False rope=True hook=False body=True wedge=False
+release t=3.020473 angle=63.49705 latched=False rope=False hook=False body=False wedge=False
+release t=5.51908 angle=9.968323 latched=False rope=False hook=False body=False wedge=False
+release t=8.010186 angle=1.459884 latched=False rope=False hook=False body=False wedge=False
+completed release selected=release Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Người rời mép rồi quay lại khi chốt chưa bắt. Hãy so với trạng thái trước sự cố trong clip.
+Khai_Investigation hand max target error=7.47525E-05
+R03_Investigation hand max target error=7.47525E-05
+help t=1.003102 angle=37.78798 latched=False rope=True hook=False body=True wedge=False
+help t=3.001454 angle=80.17529 latched=False rope=False hook=False body=True wedge=False
+help t=5.504249 angle=71.60503 latched=False rope=False hook=False body=False wedge=False
+help t=8.012643 angle=11.28581 latched=False rope=False hook=False body=False wedge=False
+completed help selected=help Dây đã thả • chốt đã nhả • cánh đang hồi. Dây đã thả nhưng Tư vẫn giữ lực; cánh chưa hồi qua người. So với khoảng cánh đóng trước sự cố.
+Khai_Investigation hand max target error=7.817803E-05
+R03_Investigation hand max target error=7.8642E-05
+hold t=1.01824 angle=0 latched=True rope=False hook=False body=True wedge=False
+hold t=3.016715 angle=37.99419 latched=False rope=True hook=False body=True wedge=False
+hold t=5.503342 angle=46.12075 latched=False rope=False hook=False body=False wedge=False
+hold t=8.015334 angle=6.791469 latched=False rope=False hook=False body=False wedge=False
+completed hold selected=hold Dây đã thả • chốt đã nhả • cánh đang hồi. Quan sát thời điểm giữ dây và người mất chỗ tựa. Chưa biết người kéo hoặc ý định.
+Khai_Investigation hand max target error=9.035278E-05
+R03_Investigation hand max target error=7.8642E-05
+hook t=1.000003 angle=0 latched=True rope=False hook=False body=False wedge=False
+hook t=3.01669 angle=37.99322 latched=False rope=False hook=True body=True wedge=False
+hook t=5.50326 angle=67.8467 latched=False rope=False hook=True body=False wedge=False
+hook t=8.000672 angle=10.65359 latched=False rope=False hook=True body=False wedge=False
+completed hook selected=hook Móc đang giữ dây • chốt đã nhả • cánh đang hồi. Móc giữ dây thay người. So bề mặt móc tại xưởng.
+Khai_Investigation hand max target error=9.035278E-05
+R03_Investigation hand max target error=7.8642E-05
+wedge t=1.011009 angle=38.09759 latched=False rope=True hook=False body=True wedge=False
+wedge t=3.012505 angle=63.78659 latched=False rope=False hook=False body=False wedge=True
+wedge t=5.508538 angle=35 latched=False rope=False hook=False body=False wedge=True
+wedge t=8.015043 angle=35 latched=False rope=False hook=False body=False wedge=True
+completed wedge selected=wedge Dây đã thả • chốt đã nhả • vật chèn đang giữ cánh. Vật chèn giữ cánh. So khe cánh tại xưởng.
+Khai_Investigation hand max target error=9.035278E-05
+R03_Investigation hand max target error=7.8642E-05
+after t=1.007921 angle=0 latched=True rope=False hook=False body=False wedge=False
+after t=3.014875 angle=0 latched=True rope=False hook=False body=False wedge=False
+after t=5.519003 angle=0 latched=True rope=False hook=False body=False wedge=False
+after t=8.003502 angle=0 latched=True rope=False hook=False body=False wedge=False
+completed after selected=after Dây đã thả • chốt đã cài • cánh đã đóng. Người tới sau có thể để dấu. Diễn biến này chưa giải thích cú ngã trước đó.
+Khai_Investigation hand max target error=9.035278E-05
+R03_Investigation hand max target error=7.8642E-05

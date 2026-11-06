@@ -1,0 +1,4087 @@
+{
+  "source": "D:\\ConRoi\\Source\\Blender\\JourneyV48\\R103\\Repair_R12_R103_Animation.blend",
+  "reopened": true,
+  "silent": true,
+  "fps": 30,
+  "frames": 361,
+  "continuous": true,
+  "export": {
+    "path": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R103\\RepairEventActor.fbx",
+    "preset": "unity_skeletal",
+    "bytes": 215676,
+    "objects": [
+      "Tu_Event_Rig",
+      "Tu_Event_Body"
+    ],
+    "packed_unsaved_images": [],
+    "settings": {
+      "use_selection": true,
+      "apply_unit_scale": true,
+      "use_mesh_modifiers": true,
+      "mesh_smooth_type": "FACE",
+      "add_leaf_bones": false,
+      "path_mode": "COPY",
+      "embed_textures": true,
+      "axis_forward": "-Z",
+      "axis_up": "Y",
+      "object_types": [
+        "ARMATURE",
+        "MESH"
+      ],
+      "use_armature_deform_only": true,
+      "bake_anim": true,
+      "bake_anim_use_all_actions": false,
+      "bake_anim_use_nla_strips": false,
+      "apply_scale_options": "FBX_SCALE_ALL"
+    }
+  },
+  "roundtrip": {
+    "pass": true,
+    "diffs": [],
+    "before": {
+      "objects": {
+        "Tu_Event_Rig": {
+          "type": "ARMATURE",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "bones": 13,
+          "deform_bones": 13,
+          "roots": [
+            "root"
+          ]
+        },
+        "Tu_Event_Body": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.8334,
+            0.7024,
+            1.785
+          ],
+          "tris": 5332,
+          "shape_keys": []
+        }
+      },
+      "actions": [
+        "RepairEventContinuous_R103"
+      ]
+    },
+    "after": {
+      "objects": {
+        "Tu_Event_Rig": {
+          "type": "ARMATURE",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "bones": 13,
+          "deform_bones": 13,
+          "roots": [
+            "root"
+          ]
+        },
+        "Tu_Event_Body": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.8334,
+            0.7024,
+            1.785
+          ],
+          "tris": 5332,
+          "shape_keys": []
+        }
+      },
+      "actions": [
+        "Tu_Event_Rig|Scene"
+      ],
+      "file": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R103\\RepairEventActor.fbx",
+      "bytes": 215676
+    }
+  },
+  "samples": [
+    {
+      "frame": 1,
+      "time": 0.0,
+      "angle": 0.0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 2,
+      "time": 0.03333333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 3,
+      "time": 0.06666666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 4,
+      "time": 0.1,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 5,
+      "time": 0.13333333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 6,
+      "time": 0.16666666666666666,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 7,
+      "time": 0.2,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 8,
+      "time": 0.23333333333333334,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 9,
+      "time": 0.26666666666666666,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 10,
+      "time": 0.3,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 11,
+      "time": 0.3333333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 12,
+      "time": 0.36666666666666664,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 13,
+      "time": 0.4,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 14,
+      "time": 0.43333333333333335,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 15,
+      "time": 0.4666666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 16,
+      "time": 0.5,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 17,
+      "time": 0.5333333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 18,
+      "time": 0.5666666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 19,
+      "time": 0.6,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 20,
+      "time": 0.6333333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 21,
+      "time": 0.6666666666666666,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 22,
+      "time": 0.7,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 23,
+      "time": 0.7333333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 24,
+      "time": 0.7666666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 25,
+      "time": 0.8,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 26,
+      "time": 0.8333333333333334,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 27,
+      "time": 0.8666666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 28,
+      "time": 0.9,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 29,
+      "time": 0.9333333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 30,
+      "time": 0.9666666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 31,
+      "time": 1.0,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 32,
+      "time": 1.0333333333333334,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 33,
+      "time": 1.0666666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 34,
+      "time": 1.1,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 35,
+      "time": 1.1333333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 36,
+      "time": 1.1666666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 37,
+      "time": 1.2,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 38,
+      "time": 1.2333333333333334,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 39,
+      "time": 1.2666666666666666,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 40,
+      "time": 1.3,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 41,
+      "time": 1.3333333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 42,
+      "time": 1.3666666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 43,
+      "time": 1.4,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 44,
+      "time": 1.4333333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 45,
+      "time": 1.4666666666666666,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 46,
+      "time": 1.5,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 47,
+      "time": 1.5333333333333334,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 48,
+      "time": 1.5666666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 49,
+      "time": 1.6,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 50,
+      "time": 1.6333333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 51,
+      "time": 1.6666666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 52,
+      "time": 1.7,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 53,
+      "time": 1.7333333333333334,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 54,
+      "time": 1.7666666666666666,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 55,
+      "time": 1.8,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 56,
+      "time": 1.8333333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 57,
+      "time": 1.8666666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 58,
+      "time": 1.9,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 59,
+      "time": 1.9333333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 60,
+      "time": 1.9666666666666666,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 61,
+      "time": 2.0,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 62,
+      "time": 2.033333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 63,
+      "time": 2.066666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 64,
+      "time": 2.1,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 65,
+      "time": 2.1333333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 66,
+      "time": 2.1666666666666665,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 67,
+      "time": 2.2,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 68,
+      "time": 2.2333333333333334,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 69,
+      "time": 2.2666666666666666,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 70,
+      "time": 2.3,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 71,
+      "time": 2.3333333333333335,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 72,
+      "time": 2.3666666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 73,
+      "time": 2.4,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 74,
+      "time": 2.433333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 75,
+      "time": 2.466666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 76,
+      "time": 2.5,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 77,
+      "time": 2.533333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 78,
+      "time": 2.566666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 79,
+      "time": 2.6,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 80,
+      "time": 2.6333333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 81,
+      "time": 2.6666666666666665,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 82,
+      "time": 2.7,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 83,
+      "time": 2.7333333333333334,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 84,
+      "time": 2.7666666666666666,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 85,
+      "time": 2.8,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 86,
+      "time": 2.8333333333333335,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 87,
+      "time": 2.8666666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 88,
+      "time": 2.9,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 89,
+      "time": 2.933333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 90,
+      "time": 2.966666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 91,
+      "time": 3.0,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 92,
+      "time": 3.033333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 93,
+      "time": 3.066666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 94,
+      "time": 3.1,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 95,
+      "time": 3.1333333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 96,
+      "time": 3.1666666666666665,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 97,
+      "time": 3.2,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 98,
+      "time": 3.2333333333333334,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 99,
+      "time": 3.2666666666666666,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 100,
+      "time": 3.3,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 101,
+      "time": 3.3333333333333335,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 102,
+      "time": 3.3666666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 103,
+      "time": 3.4,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 104,
+      "time": 3.433333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 105,
+      "time": 3.466666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 106,
+      "time": 3.5,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 107,
+      "time": 3.533333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 108,
+      "time": 3.566666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 109,
+      "time": 3.6,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 110,
+      "time": 3.6333333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 111,
+      "time": 3.6666666666666665,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 112,
+      "time": 3.7,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 113,
+      "time": 3.7333333333333334,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 114,
+      "time": 3.7666666666666666,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 115,
+      "time": 3.8,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 116,
+      "time": 3.8333333333333335,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 117,
+      "time": 3.8666666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 118,
+      "time": 3.9,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 119,
+      "time": 3.933333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 120,
+      "time": 3.966666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 121,
+      "time": 4.0,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 122,
+      "time": 4.033333333333333,
+      "angle": 0.15444580008416,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 123,
+      "time": 4.066666666666666,
+      "angle": 0.5319035642837872,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 124,
+      "time": 4.1,
+      "angle": 1.1030953426201404,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 125,
+      "time": 4.133333333333334,
+      "angle": 1.84194430419877,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 126,
+      "time": 4.166666666666667,
+      "angle": 2.7252376703105683,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 127,
+      "time": 4.2,
+      "angle": 3.732324827180976,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 128,
+      "time": 4.233333333333333,
+      "angle": 4.844846954505135,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 129,
+      "time": 4.266666666666667,
+      "angle": 6.046494887289526,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 130,
+      "time": 4.3,
+      "angle": 7.3227922702090895,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 131,
+      "time": 4.333333333333333,
+      "angle": 8.660901369814239,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 132,
+      "time": 4.366666666666666,
+      "angle": 10.049449184185875,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 133,
+      "time": 4.4,
+      "angle": 11.478371735354528,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 134,
+      "time": 4.433333333333334,
+      "angle": 12.938774649943014,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 135,
+      "time": 4.466666666666667,
+      "angle": 14.422808330722324,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 136,
+      "time": 4.5,
+      "angle": 15.923556198472498,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 137,
+      "time": 4.533333333333333,
+      "angle": 17.434934641850532,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 138,
+      "time": 4.566666666666666,
+      "angle": 18.951603454800136,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 139,
+      "time": 4.6,
+      "angle": 20.468885668108218,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 140,
+      "time": 4.633333333333334,
+      "angle": 21.982695795557017,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 141,
+      "time": 4.666666666666667,
+      "angle": 23.48947561711508,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 142,
+      "time": 4.7,
+      "angle": 24.98613671298838,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 143,
+      "time": 4.733333333333333,
+      "angle": 26.470009044219395,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 144,
+      "time": 4.766666666666667,
+      "angle": 27.93879494886735,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 145,
+      "time": 4.8,
+      "angle": 29.39052798851327,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.65
+      ]
+    },
+    {
+      "frame": 146,
+      "time": 4.833333333333333,
+      "angle": 30.669090338620123,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.592857142857143
+      ]
+    },
+    {
+      "frame": 147,
+      "time": 4.866666666666666,
+      "angle": 31.704505305410454,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.535714285714286
+      ]
+    },
+    {
+      "frame": 148,
+      "time": 4.9,
+      "angle": 32.524872368469886,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.4785714285714275
+      ]
+    },
+    {
+      "frame": 149,
+      "time": 4.933333333333334,
+      "angle": 33.155295632147876,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.4214285714285706
+      ]
+    },
+    {
+      "frame": 150,
+      "time": 4.966666666666667,
+      "angle": 33.618197370670195,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.3642857142857139
+      ]
+    },
+    {
+      "frame": 151,
+      "time": 5.0,
+      "angle": 33.933598895169865,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.307142857142857
+      ]
+    },
+    {
+      "frame": 152,
+      "time": 5.033333333333333,
+      "angle": 34.11937214478837,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.25
+      ]
+    },
+    {
+      "frame": 153,
+      "time": 5.066666666666666,
+      "angle": 34.19146504988819,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.192857142857143
+      ]
+    },
+    {
+      "frame": 154,
+      "time": 5.1,
+      "angle": 34.16410339816213,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.1357142857142861
+      ]
+    },
+    {
+      "frame": 155,
+      "time": 5.133333333333334,
+      "angle": 34.04997165018907,
+      "latched": false,
+      "root": [
+        0.8,
+        3,
+        1.0785714285714276
+      ]
+    },
+    {
+      "frame": 156,
+      "time": 5.166666666666667,
+      "angle": 33.86037489633168,
+      "latched": false,
+      "root": [
+        0.8,
+        2.966666666666666,
+        1.05
+      ]
+    },
+    {
+      "frame": 157,
+      "time": 5.2,
+      "angle": 33.60538391872274,
+      "latched": false,
+      "root": [
+        0.8,
+        2.8999999999999995,
+        1.05
+      ]
+    },
+    {
+      "frame": 158,
+      "time": 5.233333333333333,
+      "angle": 33.2939651176823,
+      "latched": false,
+      "root": [
+        0.8,
+        2.833333333333333,
+        1.05
+      ]
+    },
+    {
+      "frame": 159,
+      "time": 5.266666666666667,
+      "angle": 32.934096878778014,
+      "latched": false,
+      "root": [
+        0.8,
+        2.7666666666666666,
+        1.05
+      ]
+    },
+    {
+      "frame": 160,
+      "time": 5.3,
+      "angle": 32.53287379267122,
+      "latched": false,
+      "root": [
+        0.8,
+        2.7,
+        1.05
+      ]
+    },
+    {
+      "frame": 161,
+      "time": 5.333333333333333,
+      "angle": 32.09659999289762,
+      "latched": false,
+      "root": [
+        0.8,
+        2.6333333333333337,
+        1.05
+      ]
+    },
+    {
+      "frame": 162,
+      "time": 5.366666666666666,
+      "angle": 31.63087274503705,
+      "latched": false,
+      "root": [
+        0.8,
+        2.5666666666666673,
+        1.05
+      ]
+    },
+    {
+      "frame": 163,
+      "time": 5.4,
+      "angle": 31.14065730273871,
+      "latched": false,
+      "root": [
+        0.8,
+        2.499999999999999,
+        1.05
+      ]
+    },
+    {
+      "frame": 164,
+      "time": 5.433333333333334,
+      "angle": 30.6303539403612,
+      "latched": false,
+      "root": [
+        0.8,
+        2.4333333333333327,
+        1.05
+      ]
+    },
+    {
+      "frame": 165,
+      "time": 5.466666666666667,
+      "angle": 30.10385797728093,
+      "latched": false,
+      "root": [
+        0.8,
+        2.3666666666666663,
+        1.05
+      ]
+    },
+    {
+      "frame": 166,
+      "time": 5.5,
+      "angle": 29.564613524074367,
+      "latched": false,
+      "root": [
+        0.8,
+        2.3,
+        1.05
+      ]
+    },
+    {
+      "frame": 167,
+      "time": 5.533333333333333,
+      "angle": 29.015661604762382,
+      "latched": false,
+      "root": [
+        0.8,
+        2.2333333333333334,
+        1.05
+      ]
+    },
+    {
+      "frame": 168,
+      "time": 5.566666666666666,
+      "angle": 28.45968324119992,
+      "latched": false,
+      "root": [
+        0.8,
+        2.166666666666667,
+        1.05
+      ]
+    },
+    {
+      "frame": 169,
+      "time": 5.6,
+      "angle": 27.899038024677676,
+      "latched": false,
+      "root": [
+        0.8,
+        2.1000000000000005,
+        1.05
+      ]
+    },
+    {
+      "frame": 170,
+      "time": 5.633333333333334,
+      "angle": 27.3357986451369,
+      "latched": false,
+      "root": [
+        0.8,
+        2.0333333333333323,
+        1.05
+      ]
+    },
+    {
+      "frame": 171,
+      "time": 5.666666666666667,
+      "angle": 26.771781799422467,
+      "latched": false,
+      "root": [
+        0.8,
+        1.9666666666666657,
+        1.05
+      ]
+    },
+    {
+      "frame": 172,
+      "time": 5.7,
+      "angle": 26.208575856121396,
+      "latched": false,
+      "root": [
+        0.8,
+        1.8999999999999992,
+        1.05
+      ]
+    },
+    {
+      "frame": 173,
+      "time": 5.733333333333333,
+      "angle": 25.647565615222796,
+      "latched": false,
+      "root": [
+        0.8,
+        1.8333333333333328,
+        1.05
+      ]
+    },
+    {
+      "frame": 174,
+      "time": 5.766666666666667,
+      "angle": 25.08995446561602,
+      "latched": false,
+      "root": [
+        0.8,
+        1.7666666666666664,
+        1.05
+      ]
+    },
+    {
+      "frame": 175,
+      "time": 5.8,
+      "angle": 24.536784211890357,
+      "latched": false,
+      "root": [
+        0.8,
+        1.7,
+        1.05
+      ]
+    },
+    {
+      "frame": 176,
+      "time": 5.833333333333333,
+      "angle": 23.988952813630675,
+      "latched": false,
+      "root": [
+        0.8,
+        1.6333333333333335,
+        1.05
+      ]
+    },
+    {
+      "frame": 177,
+      "time": 5.866666666666666,
+      "angle": 23.447230255076907,
+      "latched": false,
+      "root": [
+        0.8,
+        1.566666666666667,
+        1.05
+      ]
+    },
+    {
+      "frame": 178,
+      "time": 5.9,
+      "angle": 22.912272740324955,
+      "latched": false,
+      "root": [
+        0.8,
+        1.499999999999999,
+        1.05
+      ]
+    },
+    {
+      "frame": 179,
+      "time": 5.933333333333334,
+      "angle": 22.3846353889185,
+      "latched": false,
+      "root": [
+        0.8,
+        1.4333333333333325,
+        1.05
+      ]
+    },
+    {
+      "frame": 180,
+      "time": 5.966666666666667,
+      "angle": 21.864783588468672,
+      "latched": false,
+      "root": [
+        0.8,
+        1.366666666666666,
+        1.05
+      ]
+    },
+    {
+      "frame": 181,
+      "time": 6.0,
+      "angle": 21.353103144622345,
+      "latched": false,
+      "root": [
+        0.8,
+        1.2999999999999996,
+        1.05
+      ]
+    },
+    {
+      "frame": 182,
+      "time": 6.033333333333333,
+      "angle": 20.849909354081753,
+      "latched": false,
+      "root": [
+        0.8,
+        1.2333333333333332,
+        1.05
+      ]
+    },
+    {
+      "frame": 183,
+      "time": 6.066666666666666,
+      "angle": 20.355455113281995,
+      "latched": false,
+      "root": [
+        0.8,
+        1.1666666666666667,
+        1.05
+      ]
+    },
+    {
+      "frame": 184,
+      "time": 6.1,
+      "angle": 19.869938163600086,
+      "latched": false,
+      "root": [
+        0.8,
+        1.1000000000000003,
+        1.05
+      ]
+    },
+    {
+      "frame": 185,
+      "time": 6.133333333333334,
+      "angle": 19.39350756345786,
+      "latched": false,
+      "root": [
+        0.8,
+        1.033333333333332,
+        1.05
+      ]
+    },
+    {
+      "frame": 186,
+      "time": 6.166666666666667,
+      "angle": 18.926269468263857,
+      "latched": false,
+      "root": [
+        0.8,
+        0.9666666666666659,
+        1.05
+      ]
+    },
+    {
+      "frame": 187,
+      "time": 6.2,
+      "angle": 18.46829229070268,
+      "latched": false,
+      "root": [
+        0.8,
+        0.8999999999999995,
+        1.05
+      ]
+    },
+    {
+      "frame": 188,
+      "time": 6.233333333333333,
+      "angle": 18.019611306321966,
+      "latched": false,
+      "root": [
+        0.8,
+        0.833333333333333,
+        1.05
+      ]
+    },
+    {
+      "frame": 189,
+      "time": 6.266666666666667,
+      "angle": 17.58023276259568,
+      "latched": false,
+      "root": [
+        0.8,
+        0.7666666666666666,
+        1.05
+      ]
+    },
+    {
+      "frame": 190,
+      "time": 6.3,
+      "angle": 17.150137543576232,
+      "latched": false,
+      "root": [
+        0.8,
+        0.7000000000000002,
+        1.05
+      ]
+    },
+    {
+      "frame": 191,
+      "time": 6.333333333333333,
+      "angle": 16.72928443681298,
+      "latched": false,
+      "root": [
+        0.8,
+        0.6333333333333337,
+        1.05
+      ]
+    },
+    {
+      "frame": 192,
+      "time": 6.366666666666666,
+      "angle": 16.317613044346082,
+      "latched": false,
+      "root": [
+        0.8,
+        0.5666666666666673,
+        1.05
+      ]
+    },
+    {
+      "frame": 193,
+      "time": 6.4,
+      "angle": 15.91504637522278,
+      "latched": false,
+      "root": [
+        0.8,
+        0.4999999999999991,
+        1.05
+      ]
+    },
+    {
+      "frame": 194,
+      "time": 6.433333333333334,
+      "angle": 15.521493153075573,
+      "latched": false,
+      "root": [
+        0.8,
+        0.4333333333333327,
+        1.05
+      ]
+    },
+    {
+      "frame": 195,
+      "time": 6.466666666666667,
+      "angle": 15.136849868801164,
+      "latched": false,
+      "root": [
+        0.8,
+        0.36666666666666625,
+        1.05
+      ]
+    },
+    {
+      "frame": 196,
+      "time": 6.5,
+      "angle": 14.761002605242979,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2999999999999998,
+        1.05
+      ]
+    },
+    {
+      "frame": 197,
+      "time": 6.533333333333333,
+      "angle": 14.393828657970658,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2333333333333334,
+        1.05
+      ]
+    },
+    {
+      "frame": 198,
+      "time": 6.566666666666666,
+      "angle": 14.035197973733094,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 199,
+      "time": 6.6,
+      "angle": 13.684974425907031,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 200,
+      "time": 6.633333333333334,
+      "angle": 13.343016944243466,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 201,
+      "time": 6.666666666666667,
+      "angle": 13.009180514404784,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 202,
+      "time": 6.7,
+      "angle": 12.683317061164802,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 203,
+      "time": 6.733333333333333,
+      "angle": 12.365276227691977,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 204,
+      "time": 6.766666666666667,
+      "angle": 12.05490606203548,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 205,
+      "time": 6.8,
+      "angle": 11.752053620768805,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 206,
+      "time": 6.833333333333333,
+      "angle": 11.456565498702034,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 207,
+      "time": 6.866666666666666,
+      "angle": 11.168288292639053,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 208,
+      "time": 6.9,
+      "angle": 10.887069006318823,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 209,
+      "time": 6.933333333333334,
+      "angle": 10.612755402929704,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 210,
+      "time": 6.966666666666667,
+      "angle": 10.345196310914204,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 211,
+      "time": 7.0,
+      "angle": 10.084241888179816,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 212,
+      "time": 7.033333333333333,
+      "angle": 9.829743849292708,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 213,
+      "time": 7.066666666666666,
+      "angle": 9.581555659748473,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 214,
+      "time": 7.1,
+      "angle": 9.339532700981861,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 215,
+      "time": 7.133333333333334,
+      "angle": 9.103532409390342,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 216,
+      "time": 7.166666666666667,
+      "angle": 8.873414392299674,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 217,
+      "time": 7.2,
+      "angle": 8.649040523489257,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 218,
+      "time": 7.233333333333333,
+      "angle": 8.430275020617021,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 219,
+      "time": 7.266666666666667,
+      "angle": 8.216984506634772,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 220,
+      "time": 7.3,
+      "angle": 8.009038057061941,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 221,
+      "time": 7.333333333333333,
+      "angle": 7.806307234786282,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 222,
+      "time": 7.366666666666666,
+      "angle": 7.60866611388129,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 223,
+      "time": 7.4,
+      "angle": 7.415991293770301,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 224,
+      "time": 7.433333333333334,
+      "angle": 7.228161904924014,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 225,
+      "time": 7.466666666666667,
+      "angle": 7.04505960715006,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 226,
+      "time": 7.5,
+      "angle": 6.866568581418576,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 227,
+      "time": 7.533333333333333,
+      "angle": 6.692575516065092,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 228,
+      "time": 7.566666666666666,
+      "angle": 6.522969588120202,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 229,
+      "time": 7.6,
+      "angle": 6.357642440433339,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 230,
+      "time": 7.633333333333334,
+      "angle": 6.1964881551844275,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 231,
+      "time": 7.666666666666667,
+      "angle": 6.039403224311455,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 232,
+      "time": 7.7,
+      "angle": 5.886286517323172,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 233,
+      "time": 7.733333333333333,
+      "angle": 5.737039246913545,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 234,
+      "time": 7.766666666666667,
+      "angle": 5.591564932747551,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 235,
+      "time": 7.8,
+      "angle": 5.449769363745869,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 236,
+      "time": 7.833333333333333,
+      "angle": 5.311560559158448,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 237,
+      "time": 7.866666666666666,
+      "angle": 5.176848728683357,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 238,
+      "time": 7.9,
+      "angle": 5.0455462318573305,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 239,
+      "time": 7.933333333333334,
+      "angle": 4.917567536917636,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 240,
+      "time": 7.966666666666667,
+      "angle": 4.792829179310955,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 241,
+      "time": 8.0,
+      "angle": 4.671249720003653,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 242,
+      "time": 8.033333333333333,
+      "angle": 4.552749703728723,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 243,
+      "time": 8.066666666666666,
+      "angle": 4.437251617287739,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 244,
+      "time": 8.1,
+      "angle": 4.324679848010967,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 245,
+      "time": 8.133333333333333,
+      "angle": 4.214960642465303,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 246,
+      "time": 8.166666666666666,
+      "angle": 4.108022065487685,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 247,
+      "time": 8.2,
+      "angle": 4.0037939596109,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 248,
+      "time": 8.233333333333333,
+      "angle": 3.902207904939213,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 249,
+      "time": 8.266666666666667,
+      "angle": 3.8031971795227357,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 250,
+      "time": 8.3,
+      "angle": 3.7066967202719736,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 251,
+      "time": 8.333333333333334,
+      "angle": 3.6126430844472814,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 252,
+      "time": 8.366666666666667,
+      "angle": 3.5209744117520323,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 253,
+      "time": 8.4,
+      "angle": 3.431630387053086,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 254,
+      "time": 8.433333333333334,
+      "angle": 3.3445522037474573,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 255,
+      "time": 8.466666666666667,
+      "angle": 3.2596825277900097,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 256,
+      "time": 8.5,
+      "angle": 3.1769654623933605,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 257,
+      "time": 8.533333333333333,
+      "angle": 3.0963465134079935,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 258,
+      "time": 8.566666666666666,
+      "angle": 3.0177725553877592,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 259,
+      "time": 8.6,
+      "angle": 2.9411917983434877,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 260,
+      "time": 8.633333333333333,
+      "angle": 2.866553755185259,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 261,
+      "time": 8.666666666666666,
+      "angle": 2.7938092098520046,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 262,
+      "time": 8.7,
+      "angle": 2.722910186125452,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 263,
+      "time": 8.733333333333333,
+      "angle": 2.653809917124008,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 264,
+      "time": 8.766666666666667,
+      "angle": 2.5864628154709273,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 265,
+      "time": 8.8,
+      "angle": 2.520824444130058,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 266,
+      "time": 8.833333333333334,
+      "angle": 2.456851487901543,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 267,
+      "time": 8.866666666666667,
+      "angle": 2.394501725569068,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 268,
+      "time": 8.9,
+      "angle": 2.333734002689607,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 269,
+      "time": 8.933333333333334,
+      "angle": 2.2745082050160588,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 270,
+      "time": 8.966666666666667,
+      "angle": 2.2167852325427124,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 271,
+      "time": 9.0,
+      "angle": 2.160526974163121,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 272,
+      "time": 9.033333333333333,
+      "angle": 2.1056962829296504,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 273,
+      "time": 9.066666666666666,
+      "angle": 2.0522569519037615,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 274,
+      "time": 9.1,
+      "angle": 2.0001736905858927,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 275,
+      "time": 9.133333333333333,
+      "angle": 1.949412101913702,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 276,
+      "time": 9.166666666666666,
+      "angle": 1.8999386598173504,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 277,
+      "time": 9.2,
+      "angle": 1.8517206873204686,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 278,
+      "time": 9.233333333333333,
+      "angle": 1.8047263351754514,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 279,
+      "time": 9.266666666666667,
+      "angle": 1.758924561021752,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 280,
+      "time": 9.3,
+      "angle": 1.7142851090559037,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 281,
+      "time": 9.333333333333334,
+      "angle": 1.6707784902020708,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 282,
+      "time": 9.366666666666667,
+      "angle": 1.6283759627720373,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 283,
+      "time": 9.4,
+      "angle": 1.5870495136036449,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 284,
+      "time": 9.433333333333334,
+      "angle": 1.5467718396668286,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 285,
+      "time": 9.466666666666667,
+      "angle": 1.5075163301265389,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 286,
+      "time": 9.5,
+      "angle": 1.4692570488519867,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 287,
+      "time": 9.533333333333333,
+      "angle": 1.4319687173618132,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 288,
+      "time": 9.566666666666666,
+      "angle": 1.3956266981949503,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 289,
+      "time": 9.6,
+      "angle": 1.3602069786971116,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 290,
+      "time": 9.633333333333333,
+      "angle": 1.3256861552130326,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 291,
+      "time": 9.666666666666666,
+      "angle": 1.2920414176747612,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 292,
+      "time": 9.7,
+      "angle": 1.2592505345764788,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 293,
+      "time": 9.733333333333333,
+      "angle": 1.2272918383265243,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 294,
+      "time": 9.766666666666667,
+      "angle": 1.1961442109674754,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 295,
+      "time": 9.8,
+      "angle": 1.1657870702553335,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 296,
+      "time": 9.833333333333334,
+      "angle": 1.1362003560890401,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 297,
+      "time": 9.866666666666667,
+      "angle": 1.1073645172817446,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 298,
+      "time": 9.9,
+      "angle": 1.0792604986654244,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 299,
+      "time": 9.933333333333334,
+      "angle": 1.0518697285206495,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 300,
+      "time": 9.966666666666667,
+      "angle": 1.0251741063234556,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 301,
+      "time": 10.0,
+      "angle": 0.9991559908014825,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 302,
+      "time": 10.033333333333333,
+      "angle": 0.9737981882917026,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 303,
+      "time": 10.066666666666666,
+      "angle": 0.9490839413922483,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 304,
+      "time": 10.1,
+      "angle": 0.9249969179010157,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 305,
+      "time": 10.133333333333333,
+      "angle": 0.9015212000338954,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 306,
+      "time": 10.166666666666666,
+      "angle": 0.8786412739156475,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 307,
+      "time": 10.2,
+      "angle": 0.8563420193366055,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 308,
+      "time": 10.233333333333333,
+      "angle": 0.834608699768554,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 309,
+      "time": 10.266666666666667,
+      "angle": 0.8134269526332848,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 310,
+      "time": 10.3,
+      "angle": 0.7927827798174941,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 311,
+      "time": 10.333333333333334,
+      "angle": 0.7726625384278331,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 312,
+      "time": 10.366666666666667,
+      "angle": 0.7530529317800784,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 313,
+      "time": 10.4,
+      "angle": 0.7339410006165317,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 314,
+      "time": 10.433333333333334,
+      "angle": 0.7153141145459065,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 315,
+      "time": 10.466666666666667,
+      "angle": 0.6971599637000959,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 316,
+      "time": 10.5,
+      "angle": 0.6794665506023563,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 317,
+      "time": 10.533333333333333,
+      "angle": 0.6622221822415755,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 318,
+      "time": 10.566666666666666,
+      "angle": 0.6454154623474266,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 319,
+      "time": 10.6,
+      "angle": 0.6290352838613361,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 320,
+      "time": 10.633333333333333,
+      "angle": 0.6130708215983194,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 321,
+      "time": 10.666666666666666,
+      "angle": 0.597511525094866,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 322,
+      "time": 10.7,
+      "angle": 0.582347111638169,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 323,
+      "time": 10.733333333333333,
+      "angle": 0.567567559472114,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 324,
+      "time": 10.766666666666667,
+      "angle": 0.5531631011755608,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 325,
+      "time": 10.8,
+      "angle": 0.5391242172085547,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 326,
+      "time": 10.833333333333334,
+      "angle": 0.5254416296222226,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 327,
+      "time": 10.866666666666667,
+      "angle": 0.5121062959282077,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 328,
+      "time": 10.9,
+      "angle": 0.4991094031236062,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 329,
+      "time": 10.933333333333334,
+      "angle": 0.4864423618674682,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 330,
+      "time": 10.966666666666667,
+      "angle": 0.4740968008050233,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 331,
+      "time": 11.0,
+      "angle": 0.46206456103589083,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 332,
+      "time": 11.033333333333333,
+      "angle": 0.4503376907226257,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 333,
+      "time": 11.066666666666666,
+      "angle": 0.43890843983604494,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 334,
+      "time": 11.1,
+      "angle": 0.42776925503386865,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 335,
+      "time": 11.133333333333333,
+      "angle": 0.4169127746692961,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 336,
+      "time": 11.166666666666666,
+      "angle": 0.4063318239262248,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 337,
+      "time": 11.2,
+      "angle": 0.39601941007790115,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 338,
+      "time": 11.233333333333333,
+      "angle": 0.3859687178658735,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 339,
+      "time": 11.266666666666667,
+      "angle": 0.37617310499619844,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 340,
+      "time": 11.3,
+      "angle": 0.3666260977499262,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 341,
+      "time": 11.333333333333334,
+      "angle": 0.357321386704968,
+      "latched": false,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 342,
+      "time": 11.366666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 343,
+      "time": 11.4,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 344,
+      "time": 11.433333333333334,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 345,
+      "time": 11.466666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 346,
+      "time": 11.5,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 347,
+      "time": 11.533333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 348,
+      "time": 11.566666666666666,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 349,
+      "time": 11.6,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 350,
+      "time": 11.633333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 351,
+      "time": 11.666666666666666,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 352,
+      "time": 11.7,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 353,
+      "time": 11.733333333333333,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 354,
+      "time": 11.766666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 355,
+      "time": 11.8,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 356,
+      "time": 11.833333333333334,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 357,
+      "time": 11.866666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 358,
+      "time": 11.9,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 359,
+      "time": 11.933333333333334,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 360,
+      "time": 11.966666666666667,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    },
+    {
+      "frame": 361,
+      "time": 12.0,
+      "angle": 0,
+      "latched": true,
+      "root": [
+        0.8,
+        0.2,
+        1.05
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+Missing=0
+R03_Investigation bounds=Center: (772.60, 5.67, 290.97), Extents: (0.28, 0.56, 0.12) head=(772.60, 5.99, 291.00)
+R12_Investigation bounds=Center: (776.20, 9.14, 293.75), Extents: (0.57, 1.12, 0.23) head=(776.20, 9.80, 293.80)
+Khai_Investigation bounds=Center: (776.68, 6.00, 285.96), Extents: (0.48, 0.90, 0.19) head=(776.70, 6.53, 286.00)
+CipherPuppet_shared_pose_ID bounds=Center: (776.00, 6.22, 288.05), Extents: (0.16, 0.23, 0.08) head=(776.00, 6.31, 288.00)
+Ha_Investigation bounds=Center: (785.80, 5.92, 272.74), Extents: (0.46, 0.90, 0.21) head=(785.80, 6.45, 272.76)
+Khai_Investigation bounds=Center: (898.02, 40.88, 297.04), Extents: (0.48, 0.90, 0.19) head=(898.00, 41.41, 297.00)
+R03_Investigation bounds=Center: (900.80, 43.88, 301.86), Extents: (0.46, 0.90, 0.19) head=(900.80, 44.41, 301.90)
+R03_Investigation bounds=Center: (930.80, 43.88, 301.86), Extents: (0.46, 0.90, 0.19) head=(930.80, 44.41, 301.90)
+R12_Investigation bounds=Center: (930.80, 44.02, 301.07), Extents: (0.32, 0.63, 0.13) head=(930.80, 44.39, 301.10)

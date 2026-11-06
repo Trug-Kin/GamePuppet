@@ -1,0 +1,1 @@
+Existing stage Khai FBX child default layer0 excluded by stage camera mask29. Set descendants29, bind native rig/idle and hand IK. No duplicated actor, no mechanism/input change.

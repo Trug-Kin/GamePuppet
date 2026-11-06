@@ -1,0 +1,28 @@
+scene=Assets/Scenes/JourneyPresentation_v48_r104.unity clean=True
+Actor R03_Investigation parent=Workshop_GDD36 pos=(-1.40, 0.08, 1.00) scale=(0.62, 0.62, 0.62) puppet=True
+Actor R12_Investigation parent=Workshop_GDD36 pos=(2.20, 3.00, 3.80) scale=(1.00, 1.00, 1.00) puppet=True
+Actor Khai_Investigation parent=Workshop_GDD36 pos=(2.70, 0.08, -4.00) scale=(1.00, 1.00, 1.00) puppet=False
+Actor CipherPuppet_shared_pose_ID parent=Workshop_GDD36 pos=(2.00, 0.92, -2.00) scale=(0.23, 0.23, 0.23) puppet=True
+Actor Ha_Investigation parent=Investigation_V36_R104 pos=(785.80, 5.04, 272.76) scale=(1.00, 1.00, 1.00) puppet=False
+Actor Khai_Investigation parent=Reconstruction_stage pos=(-2.00, 0.00, -3.00) scale=(1.00, 1.00, 1.00) puppet=False
+Actor R03_Investigation parent=Reconstruction_stage pos=(0.80, 3.00, 1.90) scale=(1.00, 1.00, 1.00) puppet=True
+Actor R12_Investigation parent=Repair_clip_illustration pos=(0.35, 3.40, 1.10) scale=(0.70, 0.70, 0.70) puppet=True
+Interact L_return_leaf id=mechanism action=inspect
+Interact C_latch id=mechanism action=inspect
+Interact DK_release_handle id=mechanism action=rope
+Interact M_hook_dust id=hook action=inspect
+Interact R03_Investigation id=r03 action=inspect
+Interact R12_Investigation id=r12 action=inspect
+Interact Khai_Investigation id=khai action=inspect
+Interact Evidence_henri id=henri action=inspect
+Interact Evidence_coat id=coat action=inspect
+Interact Evidence_shoe id=shoe action=inspect
+Interact Evidence_fabric id=fabric action=inspect
+Interact Evidence_phone id=phone action=inspect
+Interact Evidence_slide id=slide action=inspect
+Interact Evidence_shoeprint id=shoeprint action=inspect
+Interact Reconstruction_table_controls id= action=table
+Interact StagedRope_R03 id=r03 action=inspect
+Interact Evidence_shoecontrol id=shoecontrol action=inspect
+Interact Ha_Investigation id=ha action=inspect
+clipCamera=(2.70, 4.70, -1.00) fov=30 actor=EventActor_R103

@@ -1,0 +1,9 @@
+Synthetic InputSystem key/mouse events. API opens known pages and selects test view only. Not controller route.
+PASS raw R while editing stays in cipher
+PASS raw P while editing stays in cipher
+PASS Esc closes page; same-frame E does not open world action
+PASS Esc pauses gameplay
+FAIL Esc resumes
+FAIL System.Exception: Esc resumes
+  at Unity.AI.Assistant.Agent.Dynamic.Extension.Editor.CommandScript+<>c__DisplayClass0_0.<Execute>b__0 (System.Boolean ok, System.String t) [0x0002a] in <06b4ed336f1f4c3f8a46634a6f0ef1b6>:0 
+  at Unity.AI.Assistant.Agent.Dynamic.Extension.Editor.CommandScript+<>c__DisplayClass0_0.<Execute>b__1 () [0x0036f] in <06b4ed336f1f4c3f8a46634a6f0ef1b6>:0 

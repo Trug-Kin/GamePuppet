@@ -1,0 +1,44 @@
+[
+  {
+    "file": "controller-route-final.mp4",
+    "metadata": {
+      "ffmpeg_version": "7.1-essentials_build-www.gyan.dev built with gcc 14.2.0 (Rev1, Built by MSYS2 project)",
+      "codec": "h264",
+      "pix_fmt": "yuv420p(progressive)",
+      "fps": 29.64,
+      "source_size": [
+        1280,
+        780
+      ],
+      "size": [
+        1280,
+        780
+      ],
+      "rotate": 0,
+      "duration": 59.0
+    },
+    "audio": false,
+    "input": "synthetic InputSystem keyboard/mouse"
+  },
+  {
+    "file": "clip-six-cases-ui.mp4",
+    "metadata": {
+      "ffmpeg_version": "7.1-essentials_build-www.gyan.dev built with gcc 14.2.0 (Rev1, Built by MSYS2 project)",
+      "codec": "h264",
+      "pix_fmt": "yuv420p(progressive)",
+      "fps": 29.89,
+      "source_size": [
+        1280,
+        780
+      ],
+      "size": [
+        1280,
+        780
+      ],
+      "rotate": 0,
+      "duration": 87.0
+    },
+    "audio": false,
+    "input": "synthetic GameView UI mouse; controlled game illustration"
+  }
+]

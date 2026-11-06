@@ -1,0 +1,107 @@
+[
+  {
+    "path": "Test\\BangChung\\investigation_r106\\after-initial-final.png",
+    "sha256": "82c8e3e336f8261b959aa1892da62a9321ec1e2822a560bcb2ae8adc6b64baf2",
+    "bytes": 317648
+  },
+  {
+    "path": "Test\\BangChung\\investigation_r106\\before-help-at10.png",
+    "sha256": "a2a751e2dbd2733c2af12147a20a8867292bfa60a4ab56f299ab6ae09490f627",
+    "bytes": 364898
+  },
+  {
+    "path": "Test\\BangChung\\investigation_r106\\FAIL-immediate-ui-assertion.mp4",
+    "sha256": "b632a241e951a0dec64b66f9032033c92b00137b5f7ee61984d71bc8b36933e3",
+    "bytes": 491023
+  },
+  {
+    "path": "Test\\BangChung\\investigation_r106\\FAIL-removal-check-timing.mp4",
+    "sha256": "c09f85c7b491d3552fc0554ef2ab44183b736d29b8411220afb6a8cb4651e3f8",
+    "bytes": 1572912
+  },
+  {
+    "path": "Test\\BangChung\\investigation_r106\\help-initial-final.png",
+    "sha256": "1051377e02d579608a574fc5dfcba6c8eddd49295e310d13718217b6ef9f0446",
+    "bytes": 318014
+  },
+  {
+    "path": "Test\\BangChung\\investigation_r106\\hold-initial-final.png",
+    "sha256": "4b5c29ccf3e31c634bd4403e76e71276780ece756f64a0f3b9df218e4c7222d7",
+    "bytes": 317889
+  },
+  {
+    "path": "Test\\BangChung\\investigation_r106\\hook-after-clear.png",
+    "sha256": "53665e34d9cc71735819d3d5ab53af8d4a6e7e6df418374512ac5714526f860a",
+    "bytes": 317809
+  },
+  {
+    "path": "Test\\BangChung\\investigation_r106\\hook-initial-final.png",
+    "sha256": "33aea55439c167995fe91fde5c7b81817e74e5f8932b6855a102bad0c6fc6ad1",
+    "bytes": 323347
+  },
+  {
+    "path": "Test\\BangChung\\investigation_r106\\regression-reset.png",
+    "sha256": "86835a7b4ec830ef698d1b2d420ba10ba1ad98fefd7b695d78b3f8e47eabb3be",
+    "bytes": 272555
+  },
+  {
+    "path": "Test\\BangChung\\investigation_r106\\release-after-clear.png",
+    "sha256": "dd6fa0daf743775abdf51893d2ab4109974d7dddc879ebce2f3720ace6eb162f",
+    "bytes": 330263
+  },
+  {
+    "path": "Test\\BangChung\\investigation_r106\\release-initial-final.png",
+    "sha256": "be008e891aa141f90a72545c3b524aa5257fac200e861ab64b57ffca61aa809b",
+    "bytes": 350521
+  },
+  {
+    "path": "Test\\BangChung\\investigation_r106\\removal-click-diagnostic.png",
+    "sha256": "33aea55439c167995fe91fde5c7b81817e74e5f8932b6855a102bad0c6fc6ad1",
+    "bytes": 323347
+  },
+  {
+    "path": "Test\\BangChung\\investigation_r106\\six-whole-cycles-final.mp4",
+    "sha256": "315dcc4c85a36281562b8835437c7fd91157ad4b826bc6116960e335d3a8df8a",
+    "bytes": 2222956
+  },
+  {
+    "path": "Test\\BangChung\\investigation_r106\\video-review-103.png",
+    "sha256": "8abd24d6db024a66505ae2de00d77270c71676eab8b2aaa9fc6da0b13587a72e",
+    "bytes": 298994
+  },
+  {
+    "path": "Test\\BangChung\\investigation_r106\\video-review-18.png",
+    "sha256": "c1a280f1ba933c055c30a9ef0e79b78d27cef54e428e7ab05753d460457dad19",
+    "bytes": 323688
+  },
+  {
+    "path": "Test\\BangChung\\investigation_r106\\video-review-3.png",
+    "sha256": "1cbb45f9b151ace217651fc3fde89d1a8de5b91429c34fa3e8a849daaa535bd9",
+    "bytes": 344892
+  },
+  {
+    "path": "Test\\BangChung\\investigation_r106\\video-review-40.png",
+    "sha256": "93b0bee86eca6cbf0e9fcdd1167af0e7111012b3aec9f347cbf9e9578e32c1b4",
+    "bytes": 314773
+  },
+  {
+    "path": "Test\\BangChung\\investigation_r106\\video-review-67.png",
+    "sha256": "6f7f395608750bb09f9b83d2f7875bb46ffbcdeb2e849463b3d5ac36ef5e790e",
+    "bytes": 323157
+  },
+  {
+    "path": "Test\\BangChung\\investigation_r106\\video-review-88.png",
+    "sha256": "6dbae42da3668d788599e91fbcc610607b5e6cb8140c318b36e021b3fb0b8882",
+    "bytes": 316941
+  },
+  {
+    "path": "Test\\BangChung\\investigation_r106\\wedge-after-clear.png",
+    "sha256": "55a4c4693acb45e2d38e361112c58e2fdda2cf346411cde0a6bcab7fb2211a32",
+    "bytes": 335512
+  },
+  {
+    "path": "Test\\BangChung\\investigation_r106\\wedge-initial-final.png",
+    "sha256": "fb79e9f682337855f11bba4da4c9c9c55537e17b4bf08999b8baeaec2c48792a",
+    "bytes": 342076
+  }
+]

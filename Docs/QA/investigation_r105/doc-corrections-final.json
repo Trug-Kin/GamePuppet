@@ -1,0 +1,16 @@
+[
+  {
+    "path": "Test\\KetQua\\investigation_r104\\VIDEO_INDEX.md",
+    "before": "82e015f16fd8d31631afb9213fc3d523da3e90b9fa7e26aa38d142e3b4de415b",
+    "after": "c5317e0a1e2d6123e06550dd5c5a186be7ea6465f0fcbfd044c6c1c7fc80a12f",
+    "utf8_reopened": true,
+    "scope": "r104 VIDEO_INDEX and final README operator paragraph; historical evidence status preserved"
+  },
+  {
+    "path": "Test\\KetQua\\investigation_r104\\README.md",
+    "before": "d2d6c4944a137a6658fa729fe3cc0054dbe3ad03fe46d0ac2447b28c3718ad2b",
+    "after": "5aba4ecd29ce3c263144710bfcf693e25e2be01254ab9970df58e9e9d77084fa",
+    "utf8_reopened": true,
+    "scope": "r104 VIDEO_INDEX and final README operator paragraph; historical evidence status preserved"
+  }
+]

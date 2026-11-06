@@ -1,0 +1,222 @@
+[
+  {
+    "path": "Assets\\Scenes\\JourneyPresentation_v48_r107.unity",
+    "bytes": 24426930,
+    "sha256": "c43b15c35a8af096e8cb64af2e87340b38ab2dface787d11a9d22d7da004ce83"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\InvestigationActor.cs",
+    "bytes": 2078,
+    "sha256": "e6be10bc75773ec39bc5804aae2b74313bd90d800a8e69972ce5b5cfb31a45d1"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\InvestigationActor.cs.meta",
+    "bytes": 60,
+    "sha256": "ce71daa244e84540f15c094322b64f207ed616efc5e304b7bf20da5f73ea118e"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\InvestigationEvidence.cs",
+    "bytes": 11358,
+    "sha256": "e6bb360be4c6e2c308ac405fae8da764c89b4e9fbb0ac2244fd1be55889d0157"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\InvestigationEvidence.cs.meta",
+    "bytes": 60,
+    "sha256": "a84f5961321cb360db1073cb6836474c87cc36e095a7d1ede0c5c8d907e45054"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\InvestigationInteractable.cs",
+    "bytes": 264,
+    "sha256": "f8bacb0299686df2533a99f3f6e234c98786f0ab022b40d0a314272f108a1f68"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\InvestigationInteractable.cs.meta",
+    "bytes": 60,
+    "sha256": "f5fa0cdf41ddb62294db234d7b35db063f1e0556d4a715fa1ae39739604a1e1e"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\InvestigationOnboarding.cs",
+    "bytes": 3313,
+    "sha256": "e3a1b6ea76ca9c10ae93779d63fe1b37da352a1b719514ac25cdffcadf8216a2"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\InvestigationOnboarding.cs.meta",
+    "bytes": 59,
+    "sha256": "684913fb3811cdf05f36b4d9d06580c89f6fc0eee5b62f84ff4a5a975d1634a5"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\InvestigationReviewUI.cs",
+    "bytes": 6896,
+    "sha256": "4401c0f609788499ddf316b04d3fe81846fa8660c5b0e5ac378a501bf998296e"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\InvestigationReviewUI.cs.meta",
+    "bytes": 60,
+    "sha256": "07042b290cb4f81d3cfbcb84e93f30eb8c4c047fc48acb629d1a004423987877"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\InvestigationSession.cs",
+    "bytes": 21506,
+    "sha256": "e6175979596b40e6a5e65f8b9e7b1c4769e4d9e15593b11211e4a16c663cddbf"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\InvestigationSession.cs.meta",
+    "bytes": 60,
+    "sha256": "c8bc74cf6beb391a3708216e0d2a0d85eb05877aafd2607a2096e3e6523c9c16"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\InvestigationSessionUI.cs",
+    "bytes": 18123,
+    "sha256": "db51c63f8ab9ccf02bd132e615ad01b432147da2e68b5a50787fec772979c809"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\InvestigationSessionUI.cs.meta",
+    "bytes": 60,
+    "sha256": "71f7b1918bf3a5b7623eb153cec957af773da0deb96478e2f07ad149ebbe1892"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\MechanismPresentation.cs",
+    "bytes": 1691,
+    "sha256": "853b3bee2546fdb1d8f7115e880135065bfbb018398418af9aa9e016d28268a7"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\MechanismPresentation.cs.meta",
+    "bytes": 60,
+    "sha256": "c892a518b840e3252f5bd642da889a11dfda8b6d1bb9c71d32baf403192263a3"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\PresentationHands.cs",
+    "bytes": 1959,
+    "sha256": "9f8e0e367a85b35fc18f3e98fa5ef1b0737c8da94dca38915231247d0b34348f"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\PresentationHands.cs.meta",
+    "bytes": 60,
+    "sha256": "530fc09e080301d3f0539ea5b99bd03d23f8fa4a730bfe7fb31f328f376e8988"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\RepairHandBinding.cs",
+    "bytes": 1350,
+    "sha256": "d57fe1faaf5e7cbbce468b6de073f208bbf4571ddda936f6fa69eb03edcdd538"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\RepairHandBinding.cs.meta",
+    "bytes": 60,
+    "sha256": "9ebddce040ab55ff5111226f713e64e7f92e7384e20c567449f6cda85c45c604"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\ReturnGateMechanism.cs",
+    "bytes": 3194,
+    "sha256": "de536097319dab212f51d9b7670cf57ee02abd70765572777e89ff6c2cf41b77"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\ReturnGateMechanism.cs.meta",
+    "bytes": 60,
+    "sha256": "c73073169432ca274af620f4b8634253f332da6ad5bac8bd7ec7589f8c34beea"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\TrialTimeline.cs",
+    "bytes": 2240,
+    "sha256": "53c4b31843cef8b5dc4d62ae82a173c97e55409d962530173b45fb5ca78df66a"
+  },
+  {
+    "path": "Assets\\Scripts\\InvestigationV36R107\\TrialTimeline.cs.meta",
+    "bytes": 60,
+    "sha256": "b3e5a25fb9d119c875564ce19859b29d93369e3022babad138a5a10a9535bc04"
+  },
+  {
+    "path": "Assets\\Art\\Environment\\JourneyV48\\TerrainR107\\BankR91_Grade_017_IntegratedR101_FinalWindingR107.asset",
+    "bytes": 29280959,
+    "sha256": "12b46d81b3de5276fca9e937453c5589fcdfda7766cdb30b364e8b332202d642"
+  },
+  {
+    "path": "Assets\\Art\\Environment\\JourneyV48\\TerrainR107\\BankR91_Grade_017_IntegratedR101_FinalWindingR107.asset.meta",
+    "bytes": 188,
+    "sha256": "4b577abc05867be5e3fa6c7c470aa8c8a38c161e96b2533db6c3c30bc32b96b1"
+  },
+  {
+    "path": "Assets\\Art\\Environment\\JourneyV48\\TerrainR107\\M95_002_BoundR97_WindingR107.asset",
+    "bytes": 1210026,
+    "sha256": "5b002c7961c744b9c75d331d2dac66ef8aa55d0e88fdec5f6a33880a6c258574"
+  },
+  {
+    "path": "Assets\\Art\\Environment\\JourneyV48\\TerrainR107\\M95_002_BoundR97_WindingR107.asset.meta",
+    "bytes": 188,
+    "sha256": "1ce6608fe432c283bb57e28c19f2886100cfcb9bd419f7f11d42ef09a07a36bc"
+  },
+  {
+    "path": "Assets\\Art\\Environment\\JourneyV48\\TerrainR107\\M95_002_BoundR97_WindingR107_FinalWindingR107.asset",
+    "bytes": 1210043,
+    "sha256": "c8f900b1333cc9e159f5d5d271bdccf0dacf97fed544ac8170e1bf8750e29ab9"
+  },
+  {
+    "path": "Assets\\Art\\Environment\\JourneyV48\\TerrainR107\\M95_002_BoundR97_WindingR107_FinalWindingR107.asset.meta",
+    "bytes": 188,
+    "sha256": "ed3e2df2fcaa586d63953a3c844fb667fb148771c066ade6d06fcf6edae9cce2"
+  },
+  {
+    "path": "Assets\\Art\\Environment\\JourneyV48\\TerrainR107\\M95_023_BoundR97_WindingR107.asset",
+    "bytes": 16971996,
+    "sha256": "c76a14c991e01d97a32cdc42f535e2943f08170ac81c1eb6af1c6a6bc6214632"
+  },
+  {
+    "path": "Assets\\Art\\Environment\\JourneyV48\\TerrainR107\\M95_023_BoundR97_WindingR107.asset.meta",
+    "bytes": 188,
+    "sha256": "1c8470403e2257f0257f668ca553622de24b07f29f215cc4208165324563cfec"
+  },
+  {
+    "path": "Assets\\Art\\Environment\\JourneyV48\\TerrainR107\\M95_023_BoundR97_WindingR107_FinalWindingR107.asset",
+    "bytes": 16972013,
+    "sha256": "086bdab14034bacaea571515cf104317abb605104177cd1c9238252b2d4a4b61"
+  },
+  {
+    "path": "Assets\\Art\\Environment\\JourneyV48\\TerrainR107\\M95_023_BoundR97_WindingR107_FinalWindingR107.asset.meta",
+    "bytes": 188,
+    "sha256": "df38719369f7e8b96fddc5083d1e8ffe2fd17bfc3b8ee6ec4e73c6aa25a6c809"
+  },
+  {
+    "path": "Assets\\Art\\Environment\\JourneyV48\\TerrainR107\\TerrainColliderJoin_R90_IntegratedR101_WindingR107.asset",
+    "bytes": 41480411,
+    "sha256": "2e633368217957a78561cce1a6e33dd9929a915982da02cea5d1c0557bd53a09"
+  },
+  {
+    "path": "Assets\\Art\\Environment\\JourneyV48\\TerrainR107\\TerrainColliderJoin_R90_IntegratedR101_WindingR107.asset.meta",
+    "bytes": 188,
+    "sha256": "4f377313ddef5ac51e5175c8833b189084601bd3dacddc524e91a8609540baf6"
+  },
+  {
+    "path": "Assets\\Art\\Environment\\JourneyV48\\TerrainR107\\TerrainColliderJoin_R90_IntegratedR101_WindingR107_FinalWindingR107.asset",
+    "bytes": 41480428,
+    "sha256": "b846fa760266abee2d7b3b7404e0aa2090263f3c1369d8086506878d9145f19a"
+  },
+  {
+    "path": "Assets\\Art\\Environment\\JourneyV48\\TerrainR107\\TerrainColliderJoin_R90_IntegratedR101_WindingR107_FinalWindingR107.asset.meta",
+    "bytes": 188,
+    "sha256": "910e3946010ed810b7cca6039344a010c46985a9262a151068fe0692d9050aa5"
+  },
+  {
+    "path": "Assets\\Art\\Environment\\JourneyV48\\TerrainR107\\TerrainR107.fbx",
+    "bytes": 11082492,
+    "sha256": "ffd524b768dfaf9645495bd0a760e7c2697f3e807bad71b37d3365bb7f88a0d8"
+  },
+  {
+    "path": "Assets\\Art\\Environment\\JourneyV48\\TerrainR107\\TerrainR107.fbx.meta",
+    "bytes": 3063,
+    "sha256": "4df207e2d86ab90d1a69b14ca8152b4d5a52d601d17e288bd7bd456a387bc6fc"
+  },
+  {
+    "path": "Assets\\Art\\Environment\\JourneyV48\\TerrainR107\\TerrainR107_Final.fbx",
+    "bytes": 17809644,
+    "sha256": "54efa5bc151f1ff31b2106ed8aca6b0bd6e76d5e280a11bfde86f670a100e9bc"
+  },
+  {
+    "path": "Assets\\Art\\Environment\\JourneyV48\\TerrainR107\\TerrainR107_Final.fbx.meta",
+    "bytes": 3063,
+    "sha256": "6afa94d2f02b7ed17e4679f741ff138476021835ac5e1c873da9511d21520821"
+  },
+  {
+    "path": "Source\\Blender\\JourneyV48\\R107\\Terrain_R107_Editable.blend",
+    "bytes": 184685893,
+    "sha256": "416198f352747c368350da49a713a5060bf038c860aff557cf4e108f25fc94d2"
+  }
+]

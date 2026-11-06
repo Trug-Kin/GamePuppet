@@ -1,0 +1,1 @@
+PASS ReturnGateMechanism, MechanismPresentation and PresentationHands identical to r105 after namespace normalization. Manual removal is explicit timeline input; return parameters unchanged.

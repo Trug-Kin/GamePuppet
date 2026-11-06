@@ -1,0 +1,1218 @@
+[
+  {
+    "name": "Khai",
+    "source": "D:\\ConRoi\\Source\\Blender\\JourneyV48\\R104\\Khai_R104_Editable.blend",
+    "reopened": true,
+    "export": {
+      "path": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R104\\Khai.fbx",
+      "preset": "unity_skeletal",
+      "bytes": 742412,
+      "objects": [
+        "Khai_Rig",
+        "Casual_Feet",
+        "Casual_Legs",
+        "Casual_Head",
+        "Casual_Body"
+      ],
+      "packed_unsaved_images": [],
+      "settings": {
+        "use_selection": true,
+        "apply_unit_scale": true,
+        "use_mesh_modifiers": true,
+        "mesh_smooth_type": "FACE",
+        "add_leaf_bones": false,
+        "path_mode": "COPY",
+        "embed_textures": true,
+        "axis_forward": "-Z",
+        "axis_up": "Y",
+        "object_types": [
+          "ARMATURE",
+          "MESH"
+        ],
+        "use_armature_deform_only": true,
+        "bake_anim": true,
+        "bake_anim_use_all_actions": false,
+        "bake_anim_use_nla_strips": false,
+        "apply_scale_options": "FBX_SCALE_ALL"
+      }
+    },
+    "roundtrip": {
+      "pass": true,
+      "diffs": [],
+      "before": {
+        "objects": {
+          "Khai_Rig": {
+            "type": "ARMATURE",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "bones": 62,
+            "deform_bones": 62,
+            "roots": [
+              "Root"
+            ]
+          },
+          "Casual_Feet": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.1095,
+              0.2707,
+              0.1303
+            ],
+            "tris": 256,
+            "shape_keys": []
+          },
+          "Casual_Legs": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.1793,
+              0.2268,
+              0.8671
+            ],
+            "tris": 379,
+            "shape_keys": []
+          },
+          "Casual_Head": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.214,
+              0.2468,
+              0.3452
+            ],
+            "tris": 1888,
+            "shape_keys": []
+          },
+          "Casual_Body": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.2232,
+              0.286,
+              0.7683
+            ],
+            "tris": 1524,
+            "shape_keys": []
+          }
+        },
+        "actions": [
+          "Khai_Idle_R104"
+        ]
+      },
+      "after": {
+        "objects": {
+          "Khai_Rig": {
+            "type": "ARMATURE",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "bones": 62,
+            "deform_bones": 62,
+            "roots": [
+              "Root"
+            ]
+          },
+          "Casual_Head": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.214,
+              0.2468,
+              0.3452
+            ],
+            "tris": 1888,
+            "shape_keys": []
+          },
+          "Casual_Feet": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.1095,
+              0.2707,
+              0.1303
+            ],
+            "tris": 256,
+            "shape_keys": []
+          },
+          "Casual_Legs": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.1793,
+              0.2268,
+              0.8671
+            ],
+            "tris": 379,
+            "shape_keys": []
+          },
+          "Casual_Body": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.2232,
+              0.286,
+              0.7683
+            ],
+            "tris": 1524,
+            "shape_keys": []
+          }
+        },
+        "actions": [
+          "Khai_Rig|Scene"
+        ],
+        "file": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R104\\Khai.fbx",
+        "bytes": 742412
+      }
+    },
+    "gate": [
+      {
+        "object": "Casual_Feet",
+        "report": {
+          "profile": "game",
+          "eps": 3.2e-05,
+          "tol": 0.00064,
+          "gap": 0.003198,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "Casual_Feet: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "Casual_Feet": {
+              "tris": 256,
+              "parts": 1,
+              "errors": [],
+              "warnings": [
+                "Casual_Feet: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      },
+      {
+        "object": "Casual_Legs",
+        "report": {
+          "profile": "game",
+          "eps": 9.1e-05,
+          "tol": 0.001828,
+          "gap": 0.00914,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "Casual_Legs: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "Casual_Legs": {
+              "tris": 379,
+              "parts": 2,
+              "errors": [],
+              "warnings": [
+                "Casual_Legs: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      },
+      {
+        "object": "Casual_Head",
+        "report": {
+          "profile": "game",
+          "eps": 4.8e-05,
+          "tol": 0.00095,
+          "gap": 0.004752,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "Casual_Head: 2 n-gons",
+            "Casual_Head: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "Casual_Head": {
+              "tris": 1888,
+              "parts": 24,
+              "errors": [],
+              "warnings": [
+                "Casual_Head: 2 n-gons",
+                "Casual_Head: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      },
+      {
+        "object": "Casual_Body",
+        "report": {
+          "profile": "game",
+          "eps": 8.5e-05,
+          "tol": 0.001699,
+          "gap": 0.008496,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "Casual_Body: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "Casual_Body": {
+              "tris": 1524,
+              "parts": 1,
+              "errors": [],
+              "warnings": [
+                "Casual_Body: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      }
+    ],
+    "triangles": 4047,
+    "unweighted": 0
+  },
+  {
+    "name": "Ha",
+    "source": "D:\\ConRoi\\Source\\Blender\\JourneyV48\\R104\\Ha_R104_Editable.blend",
+    "reopened": true,
+    "export": {
+      "path": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R104\\Ha.fbx",
+      "preset": "unity_skeletal",
+      "bytes": 325308,
+      "objects": [
+        "Ha_Rig",
+        "Body"
+      ],
+      "packed_unsaved_images": [],
+      "settings": {
+        "use_selection": true,
+        "apply_unit_scale": true,
+        "use_mesh_modifiers": true,
+        "mesh_smooth_type": "FACE",
+        "add_leaf_bones": false,
+        "path_mode": "COPY",
+        "embed_textures": true,
+        "axis_forward": "-Z",
+        "axis_up": "Y",
+        "object_types": [
+          "ARMATURE",
+          "MESH"
+        ],
+        "use_armature_deform_only": true,
+        "bake_anim": true,
+        "bake_anim_use_all_actions": false,
+        "bake_anim_use_nla_strips": false,
+        "apply_scale_options": "FBX_SCALE_ALL"
+      }
+    },
+    "roundtrip": {
+      "pass": true,
+      "diffs": [],
+      "before": {
+        "objects": {
+          "Ha_Rig": {
+            "type": "ARMATURE",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "bones": 23,
+            "deform_bones": 23,
+            "roots": [
+              "Bone"
+            ]
+          },
+          "Body": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.6352,
+              0.7825,
+              1.64
+            ],
+            "tris": 6624,
+            "shape_keys": []
+          }
+        },
+        "actions": [
+          "Ha_Idle_R104"
+        ]
+      },
+      "after": {
+        "objects": {
+          "Ha_Rig": {
+            "type": "ARMATURE",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "bones": 23,
+            "deform_bones": 23,
+            "roots": [
+              "Bone"
+            ]
+          },
+          "Body": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.6352,
+              0.7825,
+              1.64
+            ],
+            "tris": 6624,
+            "shape_keys": []
+          }
+        },
+        "actions": [
+          "Ha_Rig|Scene"
+        ],
+        "file": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R104\\Ha.fbx",
+        "bytes": 325308
+      }
+    },
+    "gate": [
+      {
+        "object": "Body",
+        "report": {
+          "profile": "game",
+          "eps": 0.000192,
+          "tol": 0.00385,
+          "gap": 0.01925,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "Body: no UV map (fine for flat colors; textures and lightmaps need one)"
+          ],
+          "per_object": {
+            "Body": {
+              "tris": 6624,
+              "parts": 23,
+              "errors": [],
+              "warnings": [
+                "Body: no UV map (fine for flat colors; textures and lightmaps need one)"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      }
+    ],
+    "triangles": 6624,
+    "unweighted": 0
+  },
+  {
+    "name": "Puppet",
+    "source": "D:\\ConRoi\\Source\\Blender\\JourneyV48\\R104\\Puppet_R104_Editable.blend",
+    "reopened": true,
+    "export": {
+      "path": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R104\\Puppet.fbx",
+      "preset": "unity_skeletal",
+      "bytes": 354348,
+      "objects": [
+        "Khai_Rig",
+        "R104_Articulated_Puppet",
+        "R104_joint_upperL",
+        "R104_joint_upperR",
+        "R104_joint_foreL",
+        "R104_joint_foreR",
+        "R104_joint_handL",
+        "R104_joint_handR",
+        "R104_joint_thighL",
+        "R104_joint_thighR",
+        "R104_joint_shinL",
+        "R104_joint_shinR",
+        "R104_joint_head"
+      ],
+      "packed_unsaved_images": [],
+      "settings": {
+        "use_selection": true,
+        "apply_unit_scale": true,
+        "use_mesh_modifiers": true,
+        "mesh_smooth_type": "FACE",
+        "add_leaf_bones": false,
+        "path_mode": "COPY",
+        "embed_textures": true,
+        "axis_forward": "-Z",
+        "axis_up": "Y",
+        "object_types": [
+          "ARMATURE",
+          "MESH"
+        ],
+        "use_armature_deform_only": true,
+        "bake_anim": true,
+        "bake_anim_use_all_actions": false,
+        "bake_anim_use_nla_strips": false,
+        "apply_scale_options": "FBX_SCALE_ALL"
+      }
+    },
+    "roundtrip": {
+      "pass": true,
+      "diffs": [],
+      "before": {
+        "objects": {
+          "Khai_Rig": {
+            "type": "ARMATURE",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "bones": 13,
+            "deform_bones": 13,
+            "roots": [
+              "root"
+            ]
+          },
+          "R104_Articulated_Puppet": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.8781,
+              0.5428,
+              1.8362
+            ],
+            "tris": 2104,
+            "shape_keys": []
+          },
+          "R104_joint_upperL": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.088,
+              0.088,
+              0.088
+            ],
+            "tris": 120,
+            "shape_keys": []
+          },
+          "R104_joint_upperR": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.088,
+              0.088,
+              0.088
+            ],
+            "tris": 120,
+            "shape_keys": []
+          },
+          "R104_joint_foreL": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.088,
+              0.088,
+              0.088
+            ],
+            "tris": 120,
+            "shape_keys": []
+          },
+          "R104_joint_foreR": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.088,
+              0.088,
+              0.088
+            ],
+            "tris": 120,
+            "shape_keys": []
+          },
+          "R104_joint_handL": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.088,
+              0.088,
+              0.088
+            ],
+            "tris": 120,
+            "shape_keys": []
+          },
+          "R104_joint_handR": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.088,
+              0.088,
+              0.088
+            ],
+            "tris": 120,
+            "shape_keys": []
+          },
+          "R104_joint_thighL": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.088,
+              0.088,
+              0.088
+            ],
+            "tris": 120,
+            "shape_keys": []
+          },
+          "R104_joint_thighR": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.088,
+              0.088,
+              0.088
+            ],
+            "tris": 120,
+            "shape_keys": []
+          },
+          "R104_joint_shinL": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.088,
+              0.088,
+              0.088
+            ],
+            "tris": 120,
+            "shape_keys": []
+          },
+          "R104_joint_shinR": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.088,
+              0.088,
+              0.088
+            ],
+            "tris": 120,
+            "shape_keys": []
+          },
+          "R104_joint_head": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.088,
+              0.088,
+              0.088
+            ],
+            "tris": 120,
+            "shape_keys": []
+          }
+        },
+        "actions": [
+          "Puppet_R104_Idle"
+        ]
+      },
+      "after": {
+        "objects": {
+          "Khai_Rig": {
+            "type": "ARMATURE",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "bones": 13,
+            "deform_bones": 13,
+            "roots": [
+              "root"
+            ]
+          },
+          "R104_joint_foreL": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.088,
+              0.088,
+              0.088
+            ],
+            "tris": 120,
+            "shape_keys": []
+          },
+          "R104_joint_handL": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.088,
+              0.088,
+              0.088
+            ],
+            "tris": 120,
+            "shape_keys": []
+          },
+          "R104_joint_head": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.088,
+              0.088,
+              0.088
+            ],
+            "tris": 120,
+            "shape_keys": []
+          },
+          "R104_joint_shinR": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.088,
+              0.088,
+              0.088
+            ],
+            "tris": 120,
+            "shape_keys": []
+          },
+          "R104_joint_thighR": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.088,
+              0.088,
+              0.088
+            ],
+            "tris": 120,
+            "shape_keys": []
+          },
+          "R104_joint_upperR": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.088,
+              0.088,
+              0.088
+            ],
+            "tris": 120,
+            "shape_keys": []
+          },
+          "R104_joint_foreR": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.088,
+              0.088,
+              0.088
+            ],
+            "tris": 120,
+            "shape_keys": []
+          },
+          "R104_Articulated_Puppet": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.8781,
+              0.5428,
+              1.8362
+            ],
+            "tris": 2104,
+            "shape_keys": []
+          },
+          "R104_joint_handR": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.088,
+              0.088,
+              0.088
+            ],
+            "tris": 120,
+            "shape_keys": []
+          },
+          "R104_joint_shinL": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.088,
+              0.088,
+              0.088
+            ],
+            "tris": 120,
+            "shape_keys": []
+          },
+          "R104_joint_thighL": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.088,
+              0.088,
+              0.088
+            ],
+            "tris": 120,
+            "shape_keys": []
+          },
+          "R104_joint_upperL": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.088,
+              0.088,
+              0.088
+            ],
+            "tris": 120,
+            "shape_keys": []
+          }
+        },
+        "actions": [
+          "Khai_Rig|Scene"
+        ],
+        "file": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R104\\Puppet.fbx",
+        "bytes": 354348
+      }
+    },
+    "gate": [
+      {
+        "object": "R104_Articulated_Puppet",
+        "report": {
+          "profile": "game",
+          "eps": 0.000211,
+          "tol": 0.004213,
+          "gap": 0.021065,
+          "pass": false,
+          "errors": [
+            "R104_Articulated_Puppet, between its own parts: 4 coplanar overlapping faces (z-fighting)",
+            "R104_Articulated_Puppet: 8 floating fragments (31% of its faces), nearest 0.03 from the rest"
+          ],
+          "warnings": [
+            "R104_Articulated_Puppet: no UV map (fine for flat colors; textures and lightmaps need one)",
+            "R104_Articulated_Puppet: 3 detached fragments (9.4% of its faces), nearest 0.0154 from the rest",
+            "R104_Articulated_Puppet: 1 part enclosed inside another part (hidden geometry)"
+          ],
+          "per_object": {
+            "R104_Articulated_Puppet": {
+              "tris": 2104,
+              "parts": 25,
+              "errors": [
+                "R104_Articulated_Puppet, between its own parts: 4 coplanar overlapping faces (z-fighting)",
+                "R104_Articulated_Puppet: 8 floating fragments (31% of its faces), nearest 0.03 from the rest"
+              ],
+              "warnings": [
+                "R104_Articulated_Puppet: no UV map (fine for flat colors; textures and lightmaps need one)",
+                "R104_Articulated_Puppet: 3 detached fragments (9.4% of its faces), nearest 0.0154 from the rest",
+                "R104_Articulated_Puppet: 1 part enclosed inside another part (hidden geometry)"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      },
+      {
+        "object": "R104_joint_upperL",
+        "report": {
+          "profile": "game",
+          "eps": 1.5e-05,
+          "tol": 0.000305,
+          "gap": 0.001524,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "R104_joint_upperL: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "R104_joint_upperL": {
+              "tris": 120,
+              "parts": 1,
+              "errors": [],
+              "warnings": [
+                "R104_joint_upperL: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      },
+      {
+        "object": "R104_joint_upperR",
+        "report": {
+          "profile": "game",
+          "eps": 1.5e-05,
+          "tol": 0.000305,
+          "gap": 0.001524,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "R104_joint_upperR: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "R104_joint_upperR": {
+              "tris": 120,
+              "parts": 1,
+              "errors": [],
+              "warnings": [
+                "R104_joint_upperR: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      },
+      {
+        "object": "R104_joint_foreL",
+        "report": {
+          "profile": "game",
+          "eps": 1.5e-05,
+          "tol": 0.000305,
+          "gap": 0.001524,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "R104_joint_foreL: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "R104_joint_foreL": {
+              "tris": 120,
+              "parts": 1,
+              "errors": [],
+              "warnings": [
+                "R104_joint_foreL: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      },
+      {
+        "object": "R104_joint_foreR",
+        "report": {
+          "profile": "game",
+          "eps": 1.5e-05,
+          "tol": 0.000305,
+          "gap": 0.001524,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "R104_joint_foreR: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "R104_joint_foreR": {
+              "tris": 120,
+              "parts": 1,
+              "errors": [],
+              "warnings": [
+                "R104_joint_foreR: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      },
+      {
+        "object": "R104_joint_handL",
+        "report": {
+          "profile": "game",
+          "eps": 1.5e-05,
+          "tol": 0.000305,
+          "gap": 0.001524,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "R104_joint_handL: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "R104_joint_handL": {
+              "tris": 120,
+              "parts": 1,
+              "errors": [],
+              "warnings": [
+                "R104_joint_handL: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      },
+      {
+        "object": "R104_joint_handR",
+        "report": {
+          "profile": "game",
+          "eps": 1.5e-05,
+          "tol": 0.000305,
+          "gap": 0.001524,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "R104_joint_handR: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "R104_joint_handR": {
+              "tris": 120,
+              "parts": 1,
+              "errors": [],
+              "warnings": [
+                "R104_joint_handR: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      },
+      {
+        "object": "R104_joint_thighL",
+        "report": {
+          "profile": "game",
+          "eps": 1.5e-05,
+          "tol": 0.000305,
+          "gap": 0.001524,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "R104_joint_thighL: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "R104_joint_thighL": {
+              "tris": 120,
+              "parts": 1,
+              "errors": [],
+              "warnings": [
+                "R104_joint_thighL: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      },
+      {
+        "object": "R104_joint_thighR",
+        "report": {
+          "profile": "game",
+          "eps": 1.5e-05,
+          "tol": 0.000305,
+          "gap": 0.001524,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "R104_joint_thighR: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "R104_joint_thighR": {
+              "tris": 120,
+              "parts": 1,
+              "errors": [],
+              "warnings": [
+                "R104_joint_thighR: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      },
+      {
+        "object": "R104_joint_shinL",
+        "report": {
+          "profile": "game",
+          "eps": 1.5e-05,
+          "tol": 0.000305,
+          "gap": 0.001524,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "R104_joint_shinL: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "R104_joint_shinL": {
+              "tris": 120,
+              "parts": 1,
+              "errors": [],
+              "warnings": [
+                "R104_joint_shinL: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      },
+      {
+        "object": "R104_joint_shinR",
+        "report": {
+          "profile": "game",
+          "eps": 1.5e-05,
+          "tol": 0.000305,
+          "gap": 0.001524,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "R104_joint_shinR: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "R104_joint_shinR": {
+              "tris": 120,
+              "parts": 1,
+              "errors": [],
+              "warnings": [
+                "R104_joint_shinR: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      },
+      {
+        "object": "R104_joint_head",
+        "report": {
+          "profile": "game",
+          "eps": 1.5e-05,
+          "tol": 0.000305,
+          "gap": 0.001524,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "R104_joint_head: origin outside the mesh bounds"
+          ],
+          "per_object": {
+            "R104_joint_head": {
+              "tris": 120,
+              "parts": 1,
+              "errors": [],
+              "warnings": [
+                "R104_joint_head: origin outside the mesh bounds"
+              ]
+            }
+          },
+          "skipped": []
+        }
+      }
+    ],
+    "triangles": 3424,
+    "unweighted": 0
+  }
+]

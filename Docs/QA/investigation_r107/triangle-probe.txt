@@ -1,0 +1,12 @@
+POINT (681.10, 413.07)
+R20_Whole_Source_Export/Surface_104 Assets/Art/Environment/JourneyV48/BankR97/M95_002_BoundR97.asset tri=10088 y=1.954521 normalY=-0.998602
+R20_Whole_Source_Export/Surface_176 Assets/Art/Environment/JourneyV48/BankR97/M95_023_BoundR97.asset tri=131456 y=1.844524 normalY=0.9986018
+POINT (665.00, 400.00)
+R20_Whole_Source_Export/Surface_176 Assets/Art/Environment/JourneyV48/BankR97/M95_023_BoundR97.asset tri=131394 y=2.836016 normalY=-0.9954647
+POINT (650.00, 390.00)
+R20_Whole_Source_Export/Surface_176 Assets/Art/Environment/JourneyV48/BankR97/M95_023_BoundR97.asset tri=142228 y=3.273477 normalY=-0.9919161
+POINT (630.00, 370.00)
+R20_Whole_Source_Export/Surface_176 Assets/Art/Environment/JourneyV48/BankR97/M95_023_BoundR97.asset tri=142249 y=2.96579 normalY=-0.9803602
+POINT (700.00, 380.00)
+R20_Whole_Source_Export/Surface_002 Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0021_BoundR95.asset tri=5 y=0.1720886 normalY=-1;tri=12 y=9.172089 normalY=1
+R20_Whole_Source_Export/Surface_176 Assets/Art/Environment/JourneyV48/BankR97/M95_023_BoundR97.asset tri=36597 y=3.128823 normalY=0.9985974

@@ -1,0 +1,21 @@
+API lifecycle state checks; synthetic mouse starts a real drag. Not controller/novice evidence.
+PASS clip dragging actual pointer
+PASS pause cancels drag; time frozen
+PASS load during clip review
+PASS clip restored stopped at safe time zero
+PASS second drag started
+PASS save/load during held pointer cancels capture
+PASS model progresses
+PASS paused model time frozen
+PASS model resumes
+PASS load active model
+PASS model restores safe reset, not stale moving actors
+PASS repeat load 0
+PASS repeat load 1
+PASS repeat load 2
+PASS repeat load 3
+PASS repeat load 4
+PASS no repeated-load player drift
+PASS no duplicate actors/interactables
+PASS no duplicate evidence IDs
+Counts actors=8 interactables=18; profile=D:\ConRoi\Test\KetQua\investigation_r104\lifecycle-profile\InvestigationV36\r104\prototype.json

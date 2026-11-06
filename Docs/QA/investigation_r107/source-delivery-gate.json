@@ -1,0 +1,188 @@
+[
+  {
+    "name": "TerrainJoin_R90",
+    "gate": {
+      "profile": "game",
+      "eps": 0.067747,
+      "tol": 1.354945,
+      "gap": 6.774723,
+      "pass": false,
+      "errors": [
+        "TerrainJoin_R90: 5 duplicate faces",
+        "TerrainJoin_R90, between its own parts: 6 coplanar overlapping faces (z-fighting)"
+      ],
+      "warnings": [
+        "TerrainJoin_R90: 3 faces pointing into the part (0.00% of its surface): engines cull them, leaving sliver holes",
+        "TerrainJoin_R90: 9 edges shared by 3 or more faces",
+        "TerrainJoin_R90: 3251 loose vertices or edges",
+        "TerrainJoin_R90: 12809 zero-area faces",
+        "TerrainJoin_R90: origin outside the mesh bounds",
+        "TerrainJoin_R90, between its own parts: 4 back-to-back touching faces",
+        "TerrainJoin_R90: 622 detached fragments (12% of its faces), nearest 1.5 from the rest"
+      ],
+      "per_object": {
+        "TerrainJoin_R90": {
+          "tris": 130458,
+          "parts": 751,
+          "errors": [
+            "TerrainJoin_R90: 5 duplicate faces",
+            "TerrainJoin_R90, between its own parts: 6 coplanar overlapping faces (z-fighting)"
+          ],
+          "warnings": [
+            "TerrainJoin_R90: 3 faces pointing into the part (0.00% of its surface): engines cull them, leaving sliver holes",
+            "TerrainJoin_R90: 9 edges shared by 3 or more faces",
+            "TerrainJoin_R90: 3251 loose vertices or edges",
+            "TerrainJoin_R90: 12809 zero-area faces",
+            "TerrainJoin_R90: origin outside the mesh bounds",
+            "TerrainJoin_R90, between its own parts: 4 back-to-back touching faces",
+            "TerrainJoin_R90: 622 detached fragments (12% of its faces), nearest 1.5 from the rest"
+          ],
+          "inward_faces_at": [
+            [
+              -745.6573,
+              -461.5532,
+              0.6117
+            ],
+            [
+              -741.9777,
+              -452.2318,
+              0.6378
+            ],
+            [
+              -741.7777,
+              -452.3274,
+              0.6389
+            ]
+          ]
+        }
+      },
+      "skipped": []
+    }
+  },
+  {
+    "name": "EastFootwayJoin_R90",
+    "gate": {
+      "profile": "game",
+      "eps": 0.055145,
+      "tol": 1.102906,
+      "gap": 5.514528,
+      "pass": false,
+      "errors": [
+        "EastFootwayJoin_R90: 11 floating fragments (42% of its faces), nearest 76.7 from the rest"
+      ],
+      "warnings": [
+        "EastFootwayJoin_R90: 82 edges of opposite winding where faces fold over at a seam; look at it with back-face culling",
+        "EastFootwayJoin_R90: 29 edges shared by 3 or more faces",
+        "EastFootwayJoin_R90: 88 loose vertices or edges",
+        "EastFootwayJoin_R90: 84 zero-area faces",
+        "EastFootwayJoin_R90: origin outside the mesh bounds"
+      ],
+      "per_object": {
+        "EastFootwayJoin_R90": {
+          "tris": 10194,
+          "parts": 12,
+          "errors": [
+            "EastFootwayJoin_R90: 11 floating fragments (42% of its faces), nearest 76.7 from the rest"
+          ],
+          "warnings": [
+            "EastFootwayJoin_R90: 82 edges of opposite winding where faces fold over at a seam; look at it with back-face culling",
+            "EastFootwayJoin_R90: 29 edges shared by 3 or more faces",
+            "EastFootwayJoin_R90: 88 loose vertices or edges",
+            "EastFootwayJoin_R90: 84 zero-area faces",
+            "EastFootwayJoin_R90: origin outside the mesh bounds"
+          ]
+        }
+      },
+      "skipped": []
+    }
+  },
+  {
+    "name": "TerrainColliderJoin_R90",
+    "gate": {
+      "profile": "game",
+      "eps": 0.058518,
+      "tol": 1.170353,
+      "gap": 5.851763,
+      "pass": false,
+      "errors": [
+        "TerrainColliderJoin_R90: 1 duplicate face",
+        "TerrainColliderJoin_R90: 329 floating fragments (49% of its faces), nearest 5.93 from the rest"
+      ],
+      "warnings": [
+        "TerrainColliderJoin_R90: 3 faces pointing into the part (0.00% of its surface): engines cull them, leaving sliver holes",
+        "TerrainColliderJoin_R90: 4 edges shared by 3 or more faces",
+        "TerrainColliderJoin_R90: 3291 loose vertices or edges",
+        "TerrainColliderJoin_R90: 10769 zero-area faces",
+        "TerrainColliderJoin_R90: origin outside the mesh bounds",
+        "TerrainColliderJoin_R90, between its own parts: 2 back-to-back touching faces",
+        "TerrainColliderJoin_R90: 279 detached fragments (3.5% of its faces), nearest 1.2 from the rest"
+      ],
+      "per_object": {
+        "TerrainColliderJoin_R90": {
+          "tris": 103870,
+          "parts": 693,
+          "errors": [
+            "TerrainColliderJoin_R90: 1 duplicate face",
+            "TerrainColliderJoin_R90: 329 floating fragments (49% of its faces), nearest 5.93 from the rest"
+          ],
+          "warnings": [
+            "TerrainColliderJoin_R90: 3 faces pointing into the part (0.00% of its surface): engines cull them, leaving sliver holes",
+            "TerrainColliderJoin_R90: 4 edges shared by 3 or more faces",
+            "TerrainColliderJoin_R90: 3291 loose vertices or edges",
+            "TerrainColliderJoin_R90: 10769 zero-area faces",
+            "TerrainColliderJoin_R90: origin outside the mesh bounds",
+            "TerrainColliderJoin_R90, between its own parts: 2 back-to-back touching faces",
+            "TerrainColliderJoin_R90: 279 detached fragments (3.5% of its faces), nearest 1.2 from the rest"
+          ],
+          "inward_faces_at": [
+            [
+              -745.6573,
+              -461.5532,
+              0.6117
+            ],
+            [
+              -741.9777,
+              -452.2318,
+              0.6378
+            ],
+            [
+              -741.7777,
+              -452.3274,
+              0.6389
+            ]
+          ]
+        }
+      },
+      "skipped": []
+    }
+  },
+  {
+    "name": "M95_Service4_NATIVE",
+    "gate": {
+      "profile": "game",
+      "eps": 0.024008,
+      "tol": 0.48016,
+      "gap": 2.4008,
+      "pass": true,
+      "errors": [],
+      "warnings": [
+        "M95_Service4_NATIVE: 1 edge of opposite winding where faces fold over at a seam; look at it with back-face culling",
+        "M95_Service4_NATIVE: 1 zero-area face",
+        "M95_Service4_NATIVE: origin outside the mesh bounds"
+      ],
+      "per_object": {
+        "M95_Service4_NATIVE": {
+          "tris": 3441,
+          "parts": 1,
+          "errors": [],
+          "warnings": [
+            "M95_Service4_NATIVE: 1 edge of opposite winding where faces fold over at a seam; look at it with back-face culling",
+            "M95_Service4_NATIVE: 1 zero-area face",
+            "M95_Service4_NATIVE: origin outside the mesh bounds"
+          ]
+        }
+      },
+      "skipped": []
+    }
+  }
+]

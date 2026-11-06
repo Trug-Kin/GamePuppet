@@ -1,0 +1,23 @@
+{
+  "scope": "Same action/frame evaluated before/after, unlike initial active-action vs first-imported-action bounds comparison",
+  "max_bounds_delta": 5.960464477539062e-07,
+  "per_pose": {
+    "Pose_A": 2.384185791015625e-07,
+    "Pose_B": 1.4901161193847656e-07,
+    "Pose_C": 2.384185791015625e-07,
+    "Pose_D": 2.384185791015625e-07,
+    "Pose_E": 1.4901161193847656e-07,
+    "Pose_G": 1.4901161193847656e-07,
+    "Pose_H": 5.960464477539062e-07,
+    "Pose_I": 1.7881393432617188e-07,
+    "Pose_N": 1.4901161193847656e-07,
+    "Pose_O": 1.7881393432617188e-07,
+    "Pose_R": 1.4901161193847656e-07,
+    "Pose_S": 1.4901161193847656e-07,
+    "Pose_T": 3.5762786865234375e-07,
+    "Pose_W": 1.7881393432617188e-07,
+    "Pose_Y": 1.4901161193847656e-07,
+    "RepairBothHands": 1.1920928955078125e-07
+  },
+  "pass": true
+}

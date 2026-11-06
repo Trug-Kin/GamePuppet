@@ -1,0 +1,9 @@
+GameView.SendEvent synthetic mouse/text, API prepares private test state only.
+field wrong Z=True
+mapping=A=
+clear=True
+mapping=A=A
+assign A=True
+hint user-open=inspect screenshot for visible hint
+compare button page=compare
+Compare selections checked visually; no reflection

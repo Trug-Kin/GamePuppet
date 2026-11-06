@@ -1,0 +1,19 @@
+{
+  "baseline_files": 27101,
+  "missing": [],
+  "changed": [
+    "ProjectSettings/EditorBuildSettings.asset",
+    ".gitignore",
+    "README.md",
+    "BAT_DAU_TAI_DAY.md",
+    "Docs/PROJECT_GUIDE_AND_HISTORY.md",
+    "Docs/BLENDER_UNITY_WORKFLOW.md"
+  ],
+  "unexpected_changes": [],
+  "archive_verified": 1445,
+  "archive_entries": 1445,
+  "archive_failures": [],
+  "prepared_assets_missing_meta": [],
+  "integration_scene_bytes_equal_checkpoint": true,
+  "free_bytes": 2474708992
+}

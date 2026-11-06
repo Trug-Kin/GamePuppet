@@ -1,0 +1,3 @@
+Synthetic UI mouse/text enters claim, chooses insufficient, scrolls, consents and clicks save. API reads/asserts and loads only.
+finalized=True choice=0 claim=Chua du can cu ve thoi diem.
+three private reloads=True

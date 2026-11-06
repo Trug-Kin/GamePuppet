@@ -1,0 +1,1001 @@
+{
+  "WORKSHOP": {
+    "path": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R102\\WORKSHOP.fbx",
+    "preset": "unity",
+    "bytes": 34716,
+    "objects": [
+      "WorkshopShell"
+    ],
+    "packed_unsaved_images": [],
+    "settings": {
+      "use_selection": true,
+      "apply_unit_scale": true,
+      "use_mesh_modifiers": true,
+      "mesh_smooth_type": "FACE",
+      "add_leaf_bones": false,
+      "path_mode": "COPY",
+      "embed_textures": true,
+      "axis_forward": "-Z",
+      "axis_up": "Y",
+      "apply_scale_options": "FBX_SCALE_ALL",
+      "bake_space_transform": true,
+      "object_types": [
+        "EMPTY",
+        "MESH"
+      ],
+      "bake_anim": false
+    },
+    "roundtrip": {
+      "pass": true,
+      "diffs": [],
+      "before": {
+        "objects": {
+          "WorkshopShell": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              10.18,
+              12.18,
+              5.01
+            ],
+            "tris": 1524,
+            "shape_keys": []
+          }
+        },
+        "actions": []
+      },
+      "after": {
+        "objects": {
+          "WorkshopShell": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              10.18,
+              12.18,
+              5.01
+            ],
+            "tris": 1524,
+            "shape_keys": []
+          }
+        },
+        "actions": [],
+        "file": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R102\\WORKSHOP.fbx",
+        "bytes": 34716
+      }
+    }
+  },
+  "MECHANISM": {
+    "path": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R102\\MECHANISM.fbx",
+    "preset": "unity",
+    "bytes": 38444,
+    "objects": [
+      "GateLeaf_L",
+      "Latch_C",
+      "ReleaseRope_D",
+      "Hook_M",
+      "Handle_DK",
+      "Wedge"
+    ],
+    "packed_unsaved_images": [],
+    "settings": {
+      "use_selection": true,
+      "apply_unit_scale": true,
+      "use_mesh_modifiers": true,
+      "mesh_smooth_type": "FACE",
+      "add_leaf_bones": false,
+      "path_mode": "COPY",
+      "embed_textures": true,
+      "axis_forward": "-Z",
+      "axis_up": "Y",
+      "apply_scale_options": "FBX_SCALE_ALL",
+      "bake_space_transform": true,
+      "object_types": [
+        "EMPTY",
+        "MESH"
+      ],
+      "bake_anim": false
+    },
+    "roundtrip": {
+      "pass": true,
+      "diffs": [],
+      "before": {
+        "objects": {
+          "GateLeaf_L": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              1.556,
+              0.09,
+              0.985
+            ],
+            "tris": 352,
+            "shape_keys": []
+          },
+          "Latch_C": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.18,
+              0.1,
+              0.07
+            ],
+            "tris": 12,
+            "shape_keys": []
+          },
+          "ReleaseRope_D": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.028,
+              6.0415,
+              2.7455
+            ],
+            "tris": 44,
+            "shape_keys": []
+          },
+          "Hook_M": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.1326,
+              0.0634,
+              0.0727
+            ],
+            "tris": 44,
+            "shape_keys": []
+          },
+          "Handle_DK": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.18,
+              0.08,
+              0.14
+            ],
+            "tris": 12,
+            "shape_keys": []
+          },
+          "Wedge": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.25,
+              0.12,
+              0.08
+            ],
+            "tris": 12,
+            "shape_keys": []
+          }
+        },
+        "actions": []
+      },
+      "after": {
+        "objects": {
+          "GateLeaf_L": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              1.556,
+              0.09,
+              0.985
+            ],
+            "tris": 352,
+            "shape_keys": []
+          },
+          "Handle_DK": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.18,
+              0.08,
+              0.14
+            ],
+            "tris": 12,
+            "shape_keys": []
+          },
+          "Hook_M": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.1326,
+              0.0634,
+              0.0727
+            ],
+            "tris": 44,
+            "shape_keys": []
+          },
+          "Latch_C": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.18,
+              0.1,
+              0.07
+            ],
+            "tris": 12,
+            "shape_keys": []
+          },
+          "ReleaseRope_D": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.028,
+              6.0415,
+              2.7455
+            ],
+            "tris": 44,
+            "shape_keys": []
+          },
+          "Wedge": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.25,
+              0.12,
+              0.08
+            ],
+            "tris": 12,
+            "shape_keys": []
+          }
+        },
+        "actions": [],
+        "file": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R102\\MECHANISM.fbx",
+        "bytes": 38444
+      }
+    }
+  },
+  "EVIDENCE": {
+    "path": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R102\\EVIDENCE.fbx",
+    "preset": "unity",
+    "bytes": 58604,
+    "objects": [
+      "EvidencePaper",
+      "RepairPhone",
+      "TornFabric",
+      "ShoeSample",
+      "ShoePrint",
+      "SlideMarks",
+      "StagedRope_R03",
+      "CoatSample"
+    ],
+    "packed_unsaved_images": [],
+    "settings": {
+      "use_selection": true,
+      "apply_unit_scale": true,
+      "use_mesh_modifiers": true,
+      "mesh_smooth_type": "FACE",
+      "add_leaf_bones": false,
+      "path_mode": "COPY",
+      "embed_textures": true,
+      "axis_forward": "-Z",
+      "axis_up": "Y",
+      "apply_scale_options": "FBX_SCALE_ALL",
+      "bake_space_transform": true,
+      "object_types": [
+        "EMPTY",
+        "MESH"
+      ],
+      "bake_anim": false
+    },
+    "roundtrip": {
+      "pass": true,
+      "diffs": [],
+      "before": {
+        "objects": {
+          "EvidencePaper": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.24,
+              0.34,
+              0.006
+            ],
+            "tris": 12,
+            "shape_keys": []
+          },
+          "RepairPhone": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.085,
+              0.15,
+              0.014
+            ],
+            "tris": 24,
+            "shape_keys": []
+          },
+          "TornFabric": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.12,
+              0.004,
+              0.104
+            ],
+            "tris": 28,
+            "shape_keys": []
+          },
+          "ShoeSample": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.1,
+              0.26,
+              0.1195
+            ],
+            "tris": 208,
+            "shape_keys": []
+          },
+          "ShoePrint": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.1,
+              0.26,
+              0.002
+            ],
+            "tris": 196,
+            "shape_keys": []
+          },
+          "SlideMarks": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.1298,
+              0.81,
+              0.002
+            ],
+            "tris": 180,
+            "shape_keys": []
+          },
+          "StagedRope_R03": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.7233,
+              0.6235,
+              3.265
+            ],
+            "tris": 220,
+            "shape_keys": []
+          },
+          "CoatSample": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.8751,
+              0.64,
+              0.29
+            ],
+            "tris": 608,
+            "shape_keys": []
+          }
+        },
+        "actions": []
+      },
+      "after": {
+        "objects": {
+          "CoatSample": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.8751,
+              0.64,
+              0.29
+            ],
+            "tris": 608,
+            "shape_keys": []
+          },
+          "EvidencePaper": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.24,
+              0.34,
+              0.006
+            ],
+            "tris": 12,
+            "shape_keys": []
+          },
+          "RepairPhone": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.085,
+              0.15,
+              0.014
+            ],
+            "tris": 24,
+            "shape_keys": []
+          },
+          "ShoePrint": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.1,
+              0.26,
+              0.002
+            ],
+            "tris": 196,
+            "shape_keys": []
+          },
+          "ShoeSample": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.1,
+              0.26,
+              0.1195
+            ],
+            "tris": 208,
+            "shape_keys": []
+          },
+          "SlideMarks": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.1298,
+              0.81,
+              0.002
+            ],
+            "tris": 180,
+            "shape_keys": []
+          },
+          "StagedRope_R03": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.7233,
+              0.6235,
+              3.265
+            ],
+            "tris": 220,
+            "shape_keys": []
+          },
+          "TornFabric": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.12,
+              0.004,
+              0.104
+            ],
+            "tris": 28,
+            "shape_keys": []
+          }
+        },
+        "actions": [],
+        "file": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R102\\EVIDENCE.fbx",
+        "bytes": 58604
+      }
+    }
+  },
+  "Khai": {
+    "path": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R102\\Khai.fbx",
+    "preset": "unity_skeletal",
+    "bytes": 147420,
+    "objects": [
+      "Khai_Rig",
+      "Khai_Body"
+    ],
+    "packed_unsaved_images": [],
+    "settings": {
+      "use_selection": true,
+      "apply_unit_scale": true,
+      "use_mesh_modifiers": true,
+      "mesh_smooth_type": "FACE",
+      "add_leaf_bones": false,
+      "path_mode": "COPY",
+      "embed_textures": true,
+      "axis_forward": "-Z",
+      "axis_up": "Y",
+      "object_types": [
+        "ARMATURE",
+        "MESH"
+      ],
+      "use_armature_deform_only": true,
+      "bake_anim": false,
+      "bake_anim_use_all_actions": true,
+      "bake_anim_use_nla_strips": false,
+      "apply_scale_options": "FBX_SCALE_ALL"
+    },
+    "roundtrip": {
+      "pass": true,
+      "diffs": [],
+      "before": {
+        "objects": {
+          "Khai_Rig": {
+            "type": "ARMATURE",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "bones": 13,
+            "deform_bones": 13,
+            "roots": [
+              "root"
+            ]
+          },
+          "Khai_Body": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.877,
+              0.335,
+              1.785
+            ],
+            "tris": 5332,
+            "shape_keys": []
+          }
+        },
+        "actions": []
+      },
+      "after": {
+        "objects": {
+          "Khai_Rig": {
+            "type": "ARMATURE",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "bones": 13,
+            "deform_bones": 13,
+            "roots": [
+              "root"
+            ]
+          },
+          "Khai_Body": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.877,
+              0.335,
+              1.785
+            ],
+            "tris": 5332,
+            "shape_keys": []
+          }
+        },
+        "actions": [],
+        "file": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R102\\Khai.fbx",
+        "bytes": 147420
+      }
+    }
+  },
+  "Ha": {
+    "path": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R102\\Ha.fbx",
+    "preset": "unity_skeletal",
+    "bytes": 140364,
+    "objects": [
+      "Ha_Rig",
+      "Ha_Body"
+    ],
+    "packed_unsaved_images": [],
+    "settings": {
+      "use_selection": true,
+      "apply_unit_scale": true,
+      "use_mesh_modifiers": true,
+      "mesh_smooth_type": "FACE",
+      "add_leaf_bones": false,
+      "path_mode": "COPY",
+      "embed_textures": true,
+      "axis_forward": "-Z",
+      "axis_up": "Y",
+      "object_types": [
+        "ARMATURE",
+        "MESH"
+      ],
+      "use_armature_deform_only": true,
+      "bake_anim": false,
+      "bake_anim_use_all_actions": true,
+      "bake_anim_use_nla_strips": false,
+      "apply_scale_options": "FBX_SCALE_ALL"
+    },
+    "roundtrip": {
+      "pass": true,
+      "diffs": [],
+      "before": {
+        "objects": {
+          "Ha_Rig": {
+            "type": "ARMATURE",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "bones": 13,
+            "deform_bones": 13,
+            "roots": [
+              "root"
+            ]
+          },
+          "Ha_Body": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.874,
+              0.385,
+              1.785
+            ],
+            "tris": 4912,
+            "shape_keys": []
+          }
+        },
+        "actions": []
+      },
+      "after": {
+        "objects": {
+          "Ha_Rig": {
+            "type": "ARMATURE",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "bones": 13,
+            "deform_bones": 13,
+            "roots": [
+              "root"
+            ]
+          },
+          "Ha_Body": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.874,
+              0.385,
+              1.785
+            ],
+            "tris": 4912,
+            "shape_keys": []
+          }
+        },
+        "actions": [],
+        "file": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R102\\Ha.fbx",
+        "bytes": 140364
+      }
+    }
+  },
+  "R03": {
+    "path": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R102\\R03.fbx",
+    "preset": "unity_skeletal",
+    "bytes": 111324,
+    "objects": [
+      "R03_Rig",
+      "R03_Body"
+    ],
+    "packed_unsaved_images": [],
+    "settings": {
+      "use_selection": true,
+      "apply_unit_scale": true,
+      "use_mesh_modifiers": true,
+      "mesh_smooth_type": "FACE",
+      "add_leaf_bones": false,
+      "path_mode": "COPY",
+      "embed_textures": true,
+      "axis_forward": "-Z",
+      "axis_up": "Y",
+      "object_types": [
+        "ARMATURE",
+        "MESH"
+      ],
+      "use_armature_deform_only": true,
+      "bake_anim": false,
+      "bake_anim_use_all_actions": true,
+      "bake_anim_use_nla_strips": false,
+      "apply_scale_options": "FBX_SCALE_ALL"
+    },
+    "roundtrip": {
+      "pass": true,
+      "diffs": [],
+      "before": {
+        "objects": {
+          "R03_Rig": {
+            "type": "ARMATURE",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "bones": 13,
+            "deform_bones": 13,
+            "roots": [
+              "root"
+            ]
+          },
+          "R03_Body": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.874,
+              0.335,
+              1.78
+            ],
+            "tris": 3780,
+            "shape_keys": []
+          }
+        },
+        "actions": []
+      },
+      "after": {
+        "objects": {
+          "R03_Rig": {
+            "type": "ARMATURE",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "bones": 13,
+            "deform_bones": 13,
+            "roots": [
+              "root"
+            ]
+          },
+          "R03_Body": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.874,
+              0.335,
+              1.78
+            ],
+            "tris": 3780,
+            "shape_keys": []
+          }
+        },
+        "actions": [],
+        "file": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R102\\R03.fbx",
+        "bytes": 111324
+      }
+    }
+  },
+  "R12": {
+    "path": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R102\\R12.fbx",
+    "preset": "unity_skeletal",
+    "bytes": 111324,
+    "objects": [
+      "R12_Rig",
+      "R12_Body"
+    ],
+    "packed_unsaved_images": [],
+    "settings": {
+      "use_selection": true,
+      "apply_unit_scale": true,
+      "use_mesh_modifiers": true,
+      "mesh_smooth_type": "FACE",
+      "add_leaf_bones": false,
+      "path_mode": "COPY",
+      "embed_textures": true,
+      "axis_forward": "-Z",
+      "axis_up": "Y",
+      "object_types": [
+        "ARMATURE",
+        "MESH"
+      ],
+      "use_armature_deform_only": true,
+      "bake_anim": false,
+      "bake_anim_use_all_actions": true,
+      "bake_anim_use_nla_strips": false,
+      "apply_scale_options": "FBX_SCALE_ALL"
+    },
+    "roundtrip": {
+      "pass": true,
+      "diffs": [],
+      "before": {
+        "objects": {
+          "R12_Rig": {
+            "type": "ARMATURE",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "bones": 13,
+            "deform_bones": 13,
+            "roots": [
+              "root"
+            ]
+          },
+          "R12_Body": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.874,
+              0.335,
+              1.78
+            ],
+            "tris": 3780,
+            "shape_keys": []
+          }
+        },
+        "actions": []
+      },
+      "after": {
+        "objects": {
+          "R12_Rig": {
+            "type": "ARMATURE",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "bones": 13,
+            "deform_bones": 13,
+            "roots": [
+              "root"
+            ]
+          },
+          "R12_Body": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              0.874,
+              0.335,
+              1.78
+            ],
+            "tris": 3780,
+            "shape_keys": []
+          }
+        },
+        "actions": [],
+        "file": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R102\\R12.fbx",
+        "bytes": 111324
+      }
+    }
+  }
+}

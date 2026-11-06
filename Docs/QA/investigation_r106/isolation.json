@@ -1,0 +1,18 @@
+{
+  "scene": "D:\\ConRoi\\Assets\\Scenes\\JourneyPresentation_v48_r106.unity",
+  "script_guids": {
+    "edc641f39ecb4ad6a12fb5c5af73b2dd": "2aa1687c30274437992945723a799c51",
+    "0d6f8bb37ce6447fb8e5f2a38483abf9": "5afce548a1ad42f9b12ea64234e37690",
+    "81a3b18e247b43d7a88236e0f7e738d0": "facdf84ab5e24206a3a5abade5f91c15",
+    "5f9d1b8cc82f4eea90f398aeeddfaf18": "641e843557124bc5bd3bc78cbed915f1",
+    "bdea12d93550432288a97f6ab0226c58": "06fd3174f6cb4e68950a76f22b6208bd",
+    "ffd7fb64a2814679bb5082cef0d55818": "c708c8a3045b40e69bd3ce69e923fcde",
+    "6cad5cfbc9d94e9e9310aab384d9219e": "98ef4952afce44ad85980a8f01851b47",
+    "e4d80dfe6076423cb64ce9ed3d693dc5": "adc1af2af2e04439b702f11bada07cc5",
+    "18c8fbefa3a44f07b34b7c244f33c5de": "3716ed2861414b6ebcc66b51b4a6979e",
+    "aa15485c1823495b8948c9b76d10302c": "48af466669584360a75caa0e1cb5147c"
+  },
+  "protected": 1707,
+  "source": "r105 final",
+  "art": "r104/r105 shared unchanged; no mesh/animation editing"
+}

@@ -1,0 +1,571 @@
+{
+  "gates": {
+    "ShoeSample": {
+      "profile": "game",
+      "eps": 3.4e-05,
+      "tol": 0.000681,
+      "gap": 0.003403,
+      "pass": true,
+      "errors": [],
+      "warnings": [
+        "ShoeSample: 2 n-gons"
+      ],
+      "per_object": {
+        "ShoeSample": {
+          "tris": 172,
+          "parts": 13,
+          "errors": [],
+          "warnings": [
+            "ShoeSample: 2 n-gons"
+          ]
+        }
+      },
+      "skipped": []
+    },
+    "ShoeControl": {
+      "profile": "game",
+      "eps": 3.4e-05,
+      "tol": 0.000681,
+      "gap": 0.003403,
+      "pass": true,
+      "errors": [],
+      "warnings": [
+        "ShoeControl: 2 n-gons"
+      ],
+      "per_object": {
+        "ShoeControl": {
+          "tris": 172,
+          "parts": 13,
+          "errors": [],
+          "warnings": [
+            "ShoeControl: 2 n-gons"
+          ]
+        }
+      },
+      "skipped": []
+    },
+    "TornFabric": {
+      "profile": "game",
+      "eps": 1.7e-05,
+      "tol": 0.000343,
+      "gap": 0.001713,
+      "pass": true,
+      "errors": [],
+      "warnings": [
+        "TornFabric: 14 n-gons",
+        "TornFabric, between its own parts: 8 back-to-back touching faces"
+      ],
+      "per_object": {
+        "TornFabric": {
+          "tris": 364,
+          "parts": 21,
+          "errors": [],
+          "warnings": [
+            "TornFabric: 14 n-gons",
+            "TornFabric, between its own parts: 8 back-to-back touching faces"
+          ]
+        }
+      },
+      "skipped": []
+    },
+    "CoatSample": {
+      "profile": "game",
+      "eps": 0.000112,
+      "tol": 0.002245,
+      "gap": 0.011223,
+      "pass": true,
+      "errors": [],
+      "warnings": [
+        "CoatSample: 8 n-gons"
+      ],
+      "per_object": {
+        "CoatSample": {
+          "tris": 680,
+          "parts": 12,
+          "errors": [],
+          "warnings": [
+            "CoatSample: 8 n-gons"
+          ]
+        }
+      },
+      "skipped": []
+    }
+  },
+  "export": {
+    "path": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R103\\EVIDENCE.fbx",
+    "preset": "unity",
+    "bytes": 182316,
+    "objects": [
+      "EvidencePaper",
+      "RepairPhone",
+      "StagedRope_R03",
+      "CoatSample",
+      "RepairTool",
+      "ShoeSample",
+      "ShoeControl",
+      "ShoePrint",
+      "SlideMarks",
+      "TraceCrossing",
+      "Label_R03",
+      "Label_R12",
+      "RepairCard",
+      "TornFabric"
+    ],
+    "packed_unsaved_images": [],
+    "settings": {
+      "use_selection": true,
+      "apply_unit_scale": true,
+      "use_mesh_modifiers": true,
+      "mesh_smooth_type": "FACE",
+      "add_leaf_bones": false,
+      "path_mode": "COPY",
+      "embed_textures": true,
+      "axis_forward": "-Z",
+      "axis_up": "Y",
+      "apply_scale_options": "FBX_SCALE_ALL",
+      "bake_space_transform": true,
+      "object_types": [
+        "EMPTY",
+        "MESH"
+      ],
+      "bake_anim": false
+    }
+  },
+  "roundtrip": {
+    "pass": true,
+    "diffs": [],
+    "before": {
+      "objects": {
+        "EvidencePaper": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.24,
+            0.34,
+            0.006
+          ],
+          "tris": 12,
+          "shape_keys": []
+        },
+        "RepairPhone": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.085,
+            0.15,
+            0.014
+          ],
+          "tris": 24,
+          "shape_keys": []
+        },
+        "StagedRope_R03": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.7233,
+            0.6235,
+            3.265
+          ],
+          "tris": 220,
+          "shape_keys": []
+        },
+        "CoatSample": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.8751,
+            0.64,
+            0.29
+          ],
+          "tris": 680,
+          "shape_keys": []
+        },
+        "RepairTool": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.06,
+            0.05,
+            0.345
+          ],
+          "tris": 44,
+          "shape_keys": []
+        },
+        "ShoeSample": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.11,
+            0.29,
+            0.14
+          ],
+          "tris": 172,
+          "shape_keys": []
+        },
+        "ShoeControl": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.11,
+            0.29,
+            0.14
+          ],
+          "tris": 172,
+          "shape_keys": []
+        },
+        "ShoePrint": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.2413,
+            0.3182,
+            0.0016
+          ],
+          "tris": 156,
+          "shape_keys": []
+        },
+        "SlideMarks": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.094,
+            0.693,
+            0.0008
+          ],
+          "tris": 720,
+          "shape_keys": []
+        },
+        "TraceCrossing": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.1031,
+            0.693,
+            0.0021
+          ],
+          "tris": 876,
+          "shape_keys": []
+        },
+        "Label_R03": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.28,
+            0.0165,
+            0.12
+          ],
+          "tris": 1368,
+          "shape_keys": []
+        },
+        "Label_R12": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.28,
+            0.0165,
+            0.12
+          ],
+          "tris": 764,
+          "shape_keys": []
+        },
+        "RepairCard": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.5865,
+            0.0165,
+            0.12
+          ],
+          "tris": 1204,
+          "shape_keys": []
+        },
+        "TornFabric": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.1231,
+            0.1191,
+            0.0027
+          ],
+          "tris": 364,
+          "shape_keys": []
+        }
+      },
+      "actions": []
+    },
+    "after": {
+      "objects": {
+        "CoatSample": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.8751,
+            0.64,
+            0.29
+          ],
+          "tris": 680,
+          "shape_keys": []
+        },
+        "EvidencePaper": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.24,
+            0.34,
+            0.006
+          ],
+          "tris": 12,
+          "shape_keys": []
+        },
+        "Label_R03": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.28,
+            0.0165,
+            0.12
+          ],
+          "tris": 1368,
+          "shape_keys": []
+        },
+        "Label_R12": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.28,
+            0.0165,
+            0.12
+          ],
+          "tris": 764,
+          "shape_keys": []
+        },
+        "RepairCard": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.5865,
+            0.0165,
+            0.12
+          ],
+          "tris": 1204,
+          "shape_keys": []
+        },
+        "RepairPhone": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.085,
+            0.15,
+            0.014
+          ],
+          "tris": 24,
+          "shape_keys": []
+        },
+        "RepairTool": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.06,
+            0.05,
+            0.345
+          ],
+          "tris": 44,
+          "shape_keys": []
+        },
+        "ShoeControl": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.11,
+            0.29,
+            0.14
+          ],
+          "tris": 172,
+          "shape_keys": []
+        },
+        "ShoePrint": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.2413,
+            0.3182,
+            0.0016
+          ],
+          "tris": 156,
+          "shape_keys": []
+        },
+        "ShoeSample": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.11,
+            0.29,
+            0.14
+          ],
+          "tris": 172,
+          "shape_keys": []
+        },
+        "SlideMarks": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.094,
+            0.693,
+            0.0008
+          ],
+          "tris": 720,
+          "shape_keys": []
+        },
+        "StagedRope_R03": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.7233,
+            0.6235,
+            3.265
+          ],
+          "tris": 220,
+          "shape_keys": []
+        },
+        "TornFabric": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.1231,
+            0.1191,
+            0.0027
+          ],
+          "tris": 364,
+          "shape_keys": []
+        },
+        "TraceCrossing": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.1031,
+            0.693,
+            0.0021
+          ],
+          "tris": 876,
+          "shape_keys": []
+        }
+      },
+      "actions": [],
+      "file": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R103\\EVIDENCE.fbx",
+      "bytes": 182316
+    }
+  },
+  "reopened": true
+}

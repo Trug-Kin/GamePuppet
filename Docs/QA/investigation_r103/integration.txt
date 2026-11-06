@@ -1,0 +1,4 @@
+R103 source assets integrated. r102 untouched.
+Event clip=Scene length=12
+Interactions=18
+Namespace=conroi.investigation.v36.r103 diagnostics=False

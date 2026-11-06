@@ -1,0 +1,262 @@
+{
+  "reopened": true,
+  "roundtrip": {
+    "pass": true,
+    "diffs": [],
+    "before": {
+      "objects": {
+        "GateLeaf_L": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            1.556,
+            0.09,
+            0.985
+          ],
+          "tris": 352,
+          "shape_keys": []
+        },
+        "Latch_C": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.18,
+            0.1,
+            0.07
+          ],
+          "tris": 12,
+          "shape_keys": []
+        },
+        "ReleaseRope_D": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.028,
+            6.0415,
+            2.7455
+          ],
+          "tris": 44,
+          "shape_keys": []
+        },
+        "Handle_DK": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.18,
+            0.08,
+            0.14
+          ],
+          "tris": 12,
+          "shape_keys": []
+        },
+        "Wedge": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.25,
+            0.12,
+            0.16
+          ],
+          "tris": 12,
+          "shape_keys": []
+        },
+        "ControlPost_DK": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.09,
+            0.09,
+            1.2
+          ],
+          "tris": 12,
+          "shape_keys": []
+        },
+        "Hook_M": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.176,
+            0.036,
+            0.1705
+          ],
+          "tris": 132,
+          "shape_keys": []
+        }
+      },
+      "actions": []
+    },
+    "after": {
+      "objects": {
+        "ControlPost_DK": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.09,
+            0.09,
+            1.2
+          ],
+          "tris": 12,
+          "shape_keys": []
+        },
+        "GateLeaf_L": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            1.556,
+            0.09,
+            0.985
+          ],
+          "tris": 352,
+          "shape_keys": []
+        },
+        "Handle_DK": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.18,
+            0.08,
+            0.14
+          ],
+          "tris": 12,
+          "shape_keys": []
+        },
+        "Hook_M": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.176,
+            0.036,
+            0.1705
+          ],
+          "tris": 132,
+          "shape_keys": []
+        },
+        "Latch_C": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.18,
+            0.1,
+            0.07
+          ],
+          "tris": 12,
+          "shape_keys": []
+        },
+        "ReleaseRope_D": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.028,
+            6.0415,
+            2.7455
+          ],
+          "tris": 44,
+          "shape_keys": []
+        },
+        "Wedge": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.25,
+            0.12,
+            0.16
+          ],
+          "tris": 12,
+          "shape_keys": []
+        }
+      },
+      "actions": [],
+      "file": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R103\\MECHANISM.fbx",
+      "bytes": 42204
+    }
+  },
+  "export": {
+    "path": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R103\\MECHANISM.fbx",
+    "preset": "unity",
+    "bytes": 42204,
+    "objects": [
+      "GateLeaf_L",
+      "Latch_C",
+      "ReleaseRope_D",
+      "Handle_DK",
+      "Wedge",
+      "ControlPost_DK",
+      "Hook_M"
+    ],
+    "packed_unsaved_images": [],
+    "settings": {
+      "use_selection": true,
+      "apply_unit_scale": true,
+      "use_mesh_modifiers": true,
+      "mesh_smooth_type": "FACE",
+      "add_leaf_bones": false,
+      "path_mode": "COPY",
+      "embed_textures": true,
+      "axis_forward": "-Z",
+      "axis_up": "Y",
+      "apply_scale_options": "FBX_SCALE_ALL",
+      "bake_space_transform": true,
+      "object_types": [
+        "EMPTY",
+        "MESH"
+      ],
+      "bake_anim": false
+    }
+  }
+}

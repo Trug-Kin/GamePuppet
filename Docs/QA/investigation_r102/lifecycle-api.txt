@@ -1,0 +1,40 @@
+API-level bounded lifecycle/content checks; not mouse UI or controller traversal evidence.
+PASS pause disables unchanged movement/look and time
+PASS resume
+PASS shoe/fabric never auto finalize or identify timing/intent
+PASS empty map no automatic solution
+PASS arbitrary wrong mapping allowed
+PASS clear mapping
+PASS partial cipher lead no sender conclusion
+PASS free relation stored without correctness grading
+PASS unwatched clip observations locked
+PASS load cipher 0
+PASS load cipher 1
+PASS load cipher 2
+PASS no cumulative movement cipher
+PASS restored page cipher
+PASS records survive cipher
+PASS load compare 0
+PASS load compare 1
+PASS load compare 2
+PASS no cumulative movement compare
+PASS restored page compare
+PASS records survive compare
+PASS load reconstruction 0
+PASS load reconstruction 1
+PASS load reconstruction 2
+PASS no cumulative movement reconstruction
+PASS restored page reconstruction
+PASS records survive reconstruction
+PASS load conclusions 0
+PASS load conclusions 1
+PASS load conclusions 2
+PASS no cumulative movement conclusions
+PASS restored page conclusions
+PASS records survive conclusions
+PASS inspection restored
+PASS active trial safely reset on load
+PASS physical gate saved/restored
+PASS reject old namespace without migration
+PASS restore own valid test file
+PASS no interactable duplication

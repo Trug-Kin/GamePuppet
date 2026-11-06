@@ -1,0 +1,236 @@
+[
+  {
+    "name": "C95_1075_Context_109",
+    "props": {
+      "unity_path": "LakeGateMarketV32/Context_109",
+      "current_asset_source": "Assets/Art/Environment/LakeGateMarketV32/LakeGateMarketContext.fbx",
+      "market95_placement_study": "Editable authored seating; original XZ and shape; candidate until visual gate",
+      "candidate_key": "",
+      "market95_collider_enabled": "True",
+      "market95_render_enabled": "False",
+      "market95_export_key": ""
+    },
+    "verts": 1369,
+    "faces": 1831,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "position": [
+      -750.0,
+      -300.0,
+      0.0
+    ],
+    "collections": [
+      "PLACEMENT_EDITABLE_PENDING_CONTACT"
+    ]
+  },
+  {
+    "name": "EastFootwayJoin_R90",
+    "props": {
+      "unity_path": "R20_Whole_Source_Export/Surface_104",
+      "upstream_asset": "Assets/Art/Environment/JourneyV48/ExportPolicyR20/RouteSurfaces.fbx",
+      "interpretation": "game grading; layout preserved, field reality UNVERIFIED",
+      "role": "ground",
+      "source_checkpoint": "r89 render mesh, editable r88 parent",
+      "repair": "Clip confirmed overlap inside RoadLoop outer border; conform all footway width to existing terrain +2mm, blend to inherited 50mm lift by x816. Ground/collider use matching local Hermite profile.",
+      "authoring_source": "Source/Blender/JourneyV48/R91/north-bank-r91-source-final.blend",
+      "source_object": "EastFootwayJoin_R90",
+      "r93_world_position_check_max": "0.002277931198477745",
+      "market95_export_key": "M95_002",
+      "market95_status": "BLENDER_GATE_PENDING",
+      "market95_design": "User-authorized game grade, not field elevation reconstruction",
+      "review96_fix": "Gentle approach support face winding only, no coordinate/grade change; confirmed controller fall and top-down backface-only hit.",
+      "bank97_cut": "True",
+      "bank97_export": "True"
+    },
+    "verts": 6964,
+    "faces": 10345,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "collections": [
+      "MARKET_GROUND_NATIVE_R95",
+      "R97_EXISTING_LAYERS_CUT_NO_OVERLAY"
+    ]
+  },
+  {
+    "name": "I2_BEFORE_TerrainColliderJoin_R90",
+    "props": {
+      "unity_path": "LakeGateMarketV32/Context_124",
+      "upstream_asset": "Assets/Art/Environment/JourneyV48/PlazaGradeR77/Context_124_R77_Bound.asset",
+      "interpretation": "game grading; layout preserved, field reality UNVERIFIED",
+      "role": "ground",
+      "source_checkpoint": "r87 including r80 Surface176 fix",
+      "repair": "R90 local Hermite transition: inherited loop edge to x816; full 2m footway plus smooth 3m half-width apron, exact old endpoints",
+      "authoring_source": "Source/Blender/JourneyV48/R91/north-bank-r91-source-final.blend",
+      "source_object": "TerrainColliderJoin_R90",
+      "r93_world_position_check_max": "0.0013918993063271046"
+    },
+    "verts": 54585,
+    "faces": 84023,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "collections": [
+      "R99_UNCHANGED_ARCHIVAL_REFERENCES"
+    ]
+  },
+  {
+    "name": "I2_BEFORE_TerrainJoin_R90",
+    "props": {
+      "unity_path": "R20_Whole_Source_Export/Surface_176",
+      "upstream_asset": "Assets/Art/Environment/JourneyV48/MapR80/Surface_176_R80_Bound.asset",
+      "interpretation": "game grading; layout preserved, field reality UNVERIFIED",
+      "role": "ground",
+      "source_checkpoint": "r87 including r80 Surface176 fix",
+      "repair": "R90 local Hermite transition: inherited loop edge to x816; full 2m footway plus smooth 3m half-width apron, exact old endpoints",
+      "authoring_source": "Source/Blender/JourneyV48/R91/north-bank-r91-source-final.blend",
+      "source_object": "TerrainJoin_R90",
+      "r93_world_position_check_max": "0.0012444894528016448"
+    },
+    "verts": 63538,
+    "faces": 98341,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "collections": [
+      "R99_UNCHANGED_ARCHIVAL_REFERENCES"
+    ]
+  },
+  {
+    "name": "M95_Service4_NATIVE",
+    "props": {
+      "unity_path": "LakeGateMarketV32/Context_109",
+      "market95_export_key": "M95_Service4",
+      "market95_status": "BLENDER_GATE_PENDING",
+      "market95_design": "User-authorized game grade, not field elevation reconstruction"
+    },
+    "verts": 2221,
+    "faces": 3441,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "position": [
+      -750.0,
+      -300.0,
+      0.0
+    ],
+    "collections": [
+      "MARKET_GROUND_NATIVE_R95"
+    ]
+  },
+  {
+    "name": "TerrainColliderJoin_R90",
+    "props": {
+      "unity_path": "LakeGateMarketV32/Context_124",
+      "upstream_asset": "Assets/Art/Environment/JourneyV48/PlazaGradeR77/Context_124_R77_Bound.asset",
+      "interpretation": "game grading; layout preserved, field reality UNVERIFIED",
+      "role": "ground",
+      "source_checkpoint": "r87 including r80 Surface176 fix",
+      "repair": "R90 local Hermite transition: inherited loop edge to x816; full 2m footway plus smooth 3m half-width apron, exact old endpoints",
+      "authoring_source": "Source/Blender/JourneyV48/R91/north-bank-r91-source-final.blend",
+      "source_object": "TerrainColliderJoin_R90",
+      "r93_world_position_check_max": "0.0013918993063271046",
+      "pivot": "I2 anchor in native world; unit scale, no compensation",
+      "micro_winding_repairs": "137",
+      "i2_repair": "Retopologized actual native footprint: 0.6-unit interior grid, clipped constrained boundary; full-width Hermite height transition; source UV interpolated. Footway connector smooth with remote endpoint pinned.",
+      "i2_export_key": "I2_Context_124",
+      "i2_status": "BLENDER_ACCEPTED_R94_DERIVED_LOCAL_UNITY_VALIDATED",
+      "source_units": "unit1; native world mapping preserved; no field survey accuracy claim",
+      "market95_export_key": "M95_016",
+      "market95_status": "BLENDER_GATE_PENDING",
+      "market95_design": "User-authorized game grade, not field elevation reconstruction",
+      "review96_fix": "Gentle approach support face winding only, no coordinate/grade change; confirmed controller fall and top-down backface-only hit.",
+      "bank97_cut": "True",
+      "bank97_export": "True",
+      "terrain101_cut": "Obsolete invisible support removed only X640..658/Z411..418; actual terrain render collider remains, no replacement overlay.",
+      "dam99_binding_path": "LakeGateMarketV32/Context_124",
+      "dam99_actual_renderer": "False",
+      "dam99_actual_collider": "True"
+    },
+    "verts": 345645,
+    "faces": 115190,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "collections": [
+      "COLLIDERS_NOT_FOR_RENDER",
+      "R97_EXISTING_LAYERS_CUT_NO_OVERLAY",
+      "TERRAIN_R101_EDITABLE_REPAIR"
+    ]
+  },
+  {
+    "name": "TerrainJoin_R90",
+    "props": {
+      "unity_path": "R20_Whole_Source_Export/Surface_176",
+      "upstream_asset": "Assets/Art/Environment/JourneyV48/MapR80/Surface_176_R80_Bound.asset",
+      "interpretation": "game grading; layout preserved, field reality UNVERIFIED",
+      "role": "ground",
+      "source_checkpoint": "r87 including r80 Surface176 fix",
+      "repair": "R90 local Hermite transition: inherited loop edge to x816; full 2m footway plus smooth 3m half-width apron, exact old endpoints",
+      "authoring_source": "Source/Blender/JourneyV48/R91/north-bank-r91-source-final.blend",
+      "source_object": "TerrainJoin_R90",
+      "r93_world_position_check_max": "0.0012444894528016448",
+      "pivot": "I2 anchor in native world; unit scale, no compensation",
+      "micro_winding_repairs": "137",
+      "i2_repair": "Retopologized actual native footprint: 0.6-unit interior grid, clipped constrained boundary; full-width Hermite height transition; source UV interpolated. Footway connector smooth with remote endpoint pinned.",
+      "i2_export_key": "I2_Surface_176",
+      "i2_status": "BLENDER_ACCEPTED_R94_DERIVED_LOCAL_UNITY_VALIDATED",
+      "source_units": "unit1; native world mapping preserved; no field survey accuracy claim",
+      "market95_export_key": "M95_023",
+      "market95_status": "BLENDER_GATE_PENDING",
+      "market95_design": "User-authorized game grade, not field elevation reconstruction",
+      "review96_fix": "Gentle approach support face winding only, no coordinate/grade change; confirmed controller fall and top-down backface-only hit.",
+      "bank97_cut": "True",
+      "bank97_export": "True"
+    },
+    "verts": 88126,
+    "faces": 142387,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "collections": [
+      "I2_TERRAIN",
+      "R97_EXISTING_LAYERS_CUT_NO_OVERLAY"
+    ]
+  }
+]

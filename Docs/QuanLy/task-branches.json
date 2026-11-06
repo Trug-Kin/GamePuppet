@@ -1,0 +1,11 @@
+{
+  "source_base": "40bcb67035b73776c760b0d84d37dda12ab1fe67",
+  "branches": [
+    "work/map-asset-baseline",
+    "work/runtime-contracts-baseline",
+    "work/ui-onboarding-review"
+  ],
+  "branch_base": "This handoff commit after creation; inspect git show-ref for concrete SHA",
+  "created_local_only": true,
+  "worktrees_created": false
+}

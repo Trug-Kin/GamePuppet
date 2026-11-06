@@ -1,0 +1,308 @@
+{
+  "edge": [
+    [
+      -0.06,
+      0
+    ],
+    [
+      -0.04,
+      0.015
+    ],
+    [
+      -0.02,
+      -0.007
+    ],
+    [
+      0.004,
+      0.024
+    ],
+    [
+      0.024,
+      0.006
+    ],
+    [
+      0.06,
+      0.018
+    ]
+  ],
+  "fragment_side": "negative v",
+  "remaining_cuff_side": "positive v",
+  "complementary": true,
+  "source": "Cuff_Comparison_R104_Editable.blend",
+  "reopened": true,
+  "export": {
+    "path": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R104\\CuffComparison.fbx",
+    "preset": "unity",
+    "bytes": 17484,
+    "objects": [
+      "CuffSample"
+    ],
+    "packed_unsaved_images": [],
+    "settings": {
+      "use_selection": true,
+      "apply_unit_scale": true,
+      "use_mesh_modifiers": true,
+      "mesh_smooth_type": "FACE",
+      "add_leaf_bones": false,
+      "path_mode": "COPY",
+      "embed_textures": true,
+      "axis_forward": "-Z",
+      "axis_up": "Y",
+      "apply_scale_options": "FBX_SCALE_ALL",
+      "bake_space_transform": true,
+      "object_types": [
+        "EMPTY",
+        "MESH"
+      ],
+      "bake_anim": false
+    }
+  },
+  "roundtrip": {
+    "pass": true,
+    "diffs": [],
+    "before": {
+      "objects": {
+        "CuffSample": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.124,
+            0.112,
+            0.004
+          ],
+          "tris": 100,
+          "shape_keys": []
+        }
+      },
+      "actions": []
+    },
+    "after": {
+      "objects": {
+        "CuffSample": {
+          "type": "MESH",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": [
+            0.124,
+            0.112,
+            0.004
+          ],
+          "tris": 100,
+          "shape_keys": []
+        }
+      },
+      "actions": [],
+      "file": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R104\\CuffComparison.fbx",
+      "bytes": 17484
+    }
+  },
+  "khai_export": [
+    {
+      "name": "Khai",
+      "source": "D:\\ConRoi\\Source\\Blender\\JourneyV48\\R104\\Khai_R104_Editable.blend",
+      "reopened": true,
+      "export": {
+        "path": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R104\\Khai.fbx",
+        "preset": "unity_skeletal",
+        "bytes": 350764,
+        "objects": [
+          "Khai_Rig",
+          "Khai_torn_right_cuff",
+          "Body"
+        ],
+        "packed_unsaved_images": [],
+        "settings": {
+          "use_selection": true,
+          "apply_unit_scale": true,
+          "use_mesh_modifiers": true,
+          "mesh_smooth_type": "FACE",
+          "add_leaf_bones": false,
+          "path_mode": "COPY",
+          "embed_textures": true,
+          "axis_forward": "-Z",
+          "axis_up": "Y",
+          "object_types": [
+            "ARMATURE",
+            "MESH"
+          ],
+          "use_armature_deform_only": true,
+          "bake_anim": true,
+          "bake_anim_use_all_actions": false,
+          "bake_anim_use_nla_strips": false,
+          "apply_scale_options": "FBX_SCALE_ALL"
+        }
+      },
+      "roundtrip": {
+        "pass": true,
+        "diffs": [],
+        "before": {
+          "objects": {
+            "Khai_Rig": {
+              "type": "ARMATURE",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "bones": 23,
+              "deform_bones": 23,
+              "roots": [
+                "Bone"
+              ]
+            },
+            "Khai_torn_right_cuff": {
+              "type": "MESH",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                0.1237,
+                0.0197,
+                0.1116
+              ],
+              "tris": 28,
+              "shape_keys": []
+            },
+            "Body": {
+              "type": "MESH",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                0.657,
+                0.7011,
+                1.76
+              ],
+              "tris": 6492,
+              "shape_keys": []
+            }
+          },
+          "actions": [
+            "Khai_Idle_R104"
+          ]
+        },
+        "after": {
+          "objects": {
+            "Khai_Rig": {
+              "type": "ARMATURE",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "bones": 23,
+              "deform_bones": 23,
+              "roots": [
+                "Bone"
+              ]
+            },
+            "Khai_torn_right_cuff": {
+              "type": "MESH",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                0.1237,
+                0.0197,
+                0.1116
+              ],
+              "tris": 28,
+              "shape_keys": []
+            },
+            "Body": {
+              "type": "MESH",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                0.657,
+                0.7011,
+                1.76
+              ],
+              "tris": 6492,
+              "shape_keys": []
+            }
+          },
+          "actions": [
+            "Khai_Rig|Scene"
+          ],
+          "file": "D:\\ConRoi\\Assets\\Art\\InvestigationV36\\R104\\Khai.fbx",
+          "bytes": 350764
+        }
+      },
+      "gate": [
+        {
+          "object": "Khai_torn_right_cuff",
+          "report": {
+            "profile": "game",
+            "eps": 1.7e-05,
+            "tol": 0.000335,
+            "gap": 0.001677,
+            "pass": true,
+            "errors": [],
+            "warnings": [
+              "Khai_torn_right_cuff: 2 n-gons",
+              "Khai_torn_right_cuff: no UV map (fine for flat colors; textures and lightmaps need one)",
+              "Khai_torn_right_cuff: origin outside the mesh bounds"
+            ],
+            "per_object": {
+              "Khai_torn_right_cuff": {
+                "tris": 28,
+                "parts": 1,
+                "errors": [],
+                "warnings": [
+                  "Khai_torn_right_cuff: 2 n-gons",
+                  "Khai_torn_right_cuff: no UV map (fine for flat colors; textures and lightmaps need one)",
+                  "Khai_torn_right_cuff: origin outside the mesh bounds"
+                ]
+              }
+            },
+            "skipped": []
+          }
+        },
+        {
+          "object": "Body",
+          "report": {
+            "profile": "game",
+            "eps": 0.000201,
+            "tol": 0.00401,
+            "gap": 0.020052,
+            "pass": true,
+            "errors": [],
+            "warnings": [
+              "Body: no UV map (fine for flat colors; textures and lightmaps need one)"
+            ],
+            "per_object": {
+              "Body": {
+                "tris": 6492,
+                "parts": 26,
+                "errors": [],
+                "warnings": [
+                  "Body: no UV map (fine for flat colors; textures and lightmaps need one)"
+                ]
+              }
+            },
+            "skipped": []
+          }
+        }
+      ],
+      "triangles": 6520,
+      "unweighted": 0
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "blender": "5.2.0 LTS",
+  "reopened": true,
+  "units": 1.0,
+  "checks": {
+    "ShoeSample": {
+      "vertices": 112,
+      "faces": 82,
+      "negative_scale": false,
+      "degenerate": 0
+    },
+    "ShoeControl": {
+      "vertices": 112,
+      "faces": 82,
+      "negative_scale": false,
+      "degenerate": 0
+    },
+    "ShoePrint": {
+      "vertices": 104,
+      "faces": 78,
+      "negative_scale": false,
+      "degenerate": 0
+    },
+    "SlideMarks": {
+      "vertices": 480,
+      "faces": 360,
+      "negative_scale": false,
+      "degenerate": 0
+    },
+    "TraceCrossing": {
+      "vertices": 584,
+      "faces": 438,
+      "negative_scale": false,
+      "degenerate": 0
+    },
+    "TornFabric": {
+      "vertices": 240,
+      "faces": 164,
+      "negative_scale": false,
+      "degenerate": 0
+    },
+    "CoatSample": {
+      "vertices": 364,
+      "faces": 344,
+      "negative_scale": false,
+      "degenerate": 0
+    },
+    "Label_R03": {
+      "vertices": 1372,
+      "faces": 1021,
+      "negative_scale": false,
+      "degenerate": 0
+    },
+    "Label_R12": {
+      "vertices": 772,
+      "faces": 567,
+      "negative_scale": false,
+      "degenerate": 0
+    }
+  }
+}

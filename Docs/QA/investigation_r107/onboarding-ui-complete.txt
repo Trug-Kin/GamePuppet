@@ -1,0 +1,11 @@
+Synthetic GameView mouse and keyboard UI; read-only API assertions. No API open/observe/save/load.
+PASS intro accepted; only first floor acquired
+PASS inspect rotate/zoom leaves player camera still
+PASS UI records directly visible floor features
+PASS no unseen evidence/solution added
+PASS R returns; one next action is notes
+PASS P opens actual note and advances tutorial
+PASS next objective is phone only
+PASS F5 writes only technical r107 profile
+PASS F6 keeps tutorial progress and acquired note only
+PASS load preserves midgame saved position

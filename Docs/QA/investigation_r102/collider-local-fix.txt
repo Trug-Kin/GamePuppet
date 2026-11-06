@@ -1,0 +1,6 @@
+Local-space collider correction (render geometry unchanged)
+C_latch before=Center: (775.51, 8.96, 291.50), Extents: (0.09, 0.06, 0.08) after=Center: (775.51, 8.96, 291.50), Extents: (0.09, 0.03, 0.05)
+R03_Investigation before=Center: (772.60, 5.67, 290.97), Extents: (0.18, 0.35, 0.07) after=Center: (772.60, 5.15, 291.01), Extents: (0.28, 0.12, 0.56)
+Khai_Investigation before=Center: (776.66, 6.00, 286.02), Extents: (0.19, 0.90, 0.48) after=Center: (776.72, 5.16, 286.02), Extents: (0.90, 0.19, 0.48)
+Evidence_coat before=Center: (772.00, 6.68, 289.70), Extents: (0.44, 0.72, 0.15) after=Center: (772.00, 6.10, 289.66), Extents: (0.44, 0.15, 0.32)
+Evidence_phone before=Center: (776.30, 8.89, 293.10), Extents: (0.08, 0.06, 0.08) after=Center: (776.30, 8.89, 293.10), Extents: (0.04, 0.02, 0.08)

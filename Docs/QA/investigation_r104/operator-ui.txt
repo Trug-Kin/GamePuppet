@@ -1,0 +1,1 @@
+PASS actual UI hold/pause/camera hand/overview at=3.123311 angle=42.03959; clock/state preserved. API only opens initial model page. Synthetic mouse, no audio.

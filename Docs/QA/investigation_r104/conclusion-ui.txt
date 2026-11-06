@@ -1,0 +1,3 @@
+Synthetic mouse UI consent/save and three sidebar reloads, own ui-profile only.
+PASS UI saved insufficient with claim=Chua du chung minh vai tro va y dinh.
+PASS three UI reloads retain claim, page and position
