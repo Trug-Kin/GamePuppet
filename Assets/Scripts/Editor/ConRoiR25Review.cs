@@ -1,0 +1,88 @@
+using System;
+using System.IO;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using Newtonsoft.Json.Linq;
+using UnityEditor;
+using UnityEditor.SceneManagement;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
+
+[InitializeOnLoad]
+public static class ConRoiR25Review
+{
+ const string Out=ConRoiR25Slope.Out;static IEnumerator routine;static Stack<IEnumerator> stack;static double deadline;
+ static JArray checks,errors,walk;static DieuPhoiHanhTrinh s;static Camera eye;static DieuKhienGocNhin mouse;static TraiNghiemDocR25 exp;static int frame;
+ static ConRoiR25Review(){EditorApplication.playModeStateChanged+=state=>{if(state==PlayModeStateChange.EnteredPlayMode&&SessionState.GetBool("r25.review",false)){checks=new JArray();errors=new JArray();walk=new JArray();stack=new Stack<IEnumerator>();stack.Push(Run());deadline=EditorApplication.timeSinceStartup+900;Application.logMessageReceived+=Log;EditorApplication.update+=Tick;}};}
+ public static void Begin(){EditorSceneManager.OpenScene(ConRoiR25Slope.Scene);SessionState.SetBool("r25.review",true);EditorApplication.EnterPlaymode();}
+ public static void RefineAndBegin(){ConRoiR25Slope.Refine();Begin();}
+ static void Log(string m,string t,LogType k){if(k==LogType.Error||k==LogType.Exception||k==LogType.Assert)errors.Add(new JObject{["message"]=m,["trace"]=t});}
+ static void Tick(){try{EditorApplication.QueuePlayerLoopUpdate();if(EditorApplication.timeSinceStartup>deadline)throw new Exception("Review timeout");while(stack.Count>0){var r=stack.Peek();if(!r.MoveNext()){stack.Pop();continue;}if(r.Current is IEnumerator nested){stack.Push(nested);continue;}return;}Finish(null);}catch(Exception e){Finish(e.ToString());}}
+ static void Finish(string error){bool pass=error==null&&errors.Count==0&&checks.All(c=>(bool)c["pass"]);File.WriteAllText(Out+"/playmode.json",new JObject{["complete"]=pass,["failure"]=error,["checks"]=checks,["errors"]=errors,["method"]="Editor Play Mode; story transition APIs outside film, real PlayerMovement controller/filter throughout continuous film. Loading coroutine bypassed in batch. No native Windows input certification."}.ToString());File.WriteAllText(Out+"/slope-walk.json",walk.ToString());SessionState.SetBool("r25.review",false);EditorApplication.update-=Tick;EditorApplication.Exit(pass?0:1);}
+ static void Check(string n,bool p,JToken d=null){checks.Add(new JObject{["name"]=n,["pass"]=p,["detail"]=d});Debug.Log("R25_CHECK "+n+" "+p);}
+ static JArray V(Vector3 p)=>new JArray(p.x,p.y,p.z);
+ static IEnumerator Wait(float seconds){float end=Time.time+seconds;while(Time.time<end)yield return null;}
+ static void Look(Vector3 at){if(mouse)mouse.enabled=false;var d=at-eye.transform.position;var flat=d;flat.y=0;s.player.transform.rotation=Quaternion.LookRotation(flat);eye.transform.rotation=Quaternion.LookRotation(d);}
+ static void Shot(string n){Canvas.ForceUpdateCanvases();ConRoiR22Scenery.Capture(eye,Out+"/play/"+n+".png");}
+ static float C(float z)=>Mathf.Clamp01((z-18)/12)*2;
+ static void Drive(bool moving){float z=s.player.transform.position.z+60,ahead=z+2;var p=new Vector3(-180+C(ahead)+.45f,Mathf.Min(ahead,30)*.2f+1.65f,-60+ahead);var d=p-s.player.transform.position;d.y=0;var local=s.player.transform.InverseTransformDirection(d.normalized)*.65f;s.player.MovementFilter=raw=>moving?new Vector2(local.x,local.z):Vector2.zero;}
+ static void Capture(string phase){ConRoiR22Scenery.Capture(eye,Out+"/slope-walk/frame-"+frame.ToString("D5")+".png");walk.Add(new JObject{["frame"]=frame++,["position"]=V(s.player.transform.position),["eye"]=V(eye.transform.position),["rotation"]=V(eye.transform.eulerAngles),["grounded"]=s.player.controller.isGrounded,["region"]=s.data.region,["phase"]=phase,["trace"]=s.data.slopeTrace,["case_rotation"]=V(s.slopeChapter.suitcase.eulerAngles),["baseline_seconds"]=exp.BaselineVisibleSeconds,["after_seconds"]=exp.AfterVisibleSeconds,["door_prompt"]=exp.DoorPromptVisible});}
+ static void Geometry(){
+  Physics.SyncTransforms();var samples=new JArray();bool pass=true;
+  for(int i=0;i<=88;i++){float z=i*.5f;foreach(float dx in new[]{-.5f,0f,.4f}){
+   var at=new Vector3(-180+C(z)+dx,12,-60+z);var hits=Physics.RaycastAll(at,Vector3.down,16,8,QueryTriggerInteraction.Ignore).Where(h=>!h.transform.IsChildOf(s.player.transform)).OrderBy(h=>h.distance).ToArray();
+   bool found=hits.Length>0;float expected=Mathf.Min(z,30)*.2f;bool good=found&&Mathf.Abs(hits[0].point.y-expected)<.025f&&hits[0].normal.y>.9f;pass&=good;
+   samples.Add(new JObject{["z"]=z,["dx"]=dx,["height"]=found?(JToken)hits[0].point.y:null,["first_hit"]=found?hits[0].transform.name:null,["pass"]=good});
+  }}
+  var meshes=s.slopeChapter.environment.GetComponentsInChildren<MeshFilter>().Where(f=>f.name.StartsWith("R25_"));bool uv=meshes.Any()&&meshes.All(f=>f.sharedMesh.uv.Length==f.sharedMesh.vertexCount&&f.sharedMesh.normals.All(n=>n.sqrMagnitude>.9f));
+  File.WriteAllText(Out+"/geometry-validation.json",new JObject{["pass"]=pass&&uv,["samples"]=samples,["uv_normals"]=uv,["scope"]="267 first-hit layer-3 support samples. Does not filter out blocking architecture. Individual solids audited in Blender; no whole-scene intersection-free claim."}.ToString());Check("267_ramp_court_support_samples",pass);Check("new_mesh_uv_normals",uv);
+ }
+ static IEnumerator Run(){
+  s=UnityEngine.Object.FindAnyObjectByType<DieuPhoiHanhTrinh>();eye=s.player.GetComponentInChildren<Camera>();mouse=s.player.GetComponentInChildren<DieuKhienGocNhin>();exp=s.GetComponent<TraiNghiemDocR25>();
+  InputSystem.settings.updateMode=InputSettings.UpdateMode.ProcessEventsManually;Application.runInBackground=true;
+  Check("private_r25_save_profile",s.SavePathOverride.Contains("r25-playtest"));s.SavePathOverride=Path.GetFullPath(Out+"/fixture-save.json");s.SetMenu(false);s.Restart();yield return null;yield return null;
+  var loader=s.GetComponent<ManHinhTaiV44>();loader.StopAllCoroutines();s.SetLoading(false);loader.enabled=false;
+  Check("boarding_house_retained",s.data.region==-1&&!s.DreamHub);s.Sleep();yield return Wait(3.5f);
+  Check("bao_spawn_preserved",s.data.region==0&&Vector3.Distance(s.lakeSpawn.position,new Vector3(656.05f,2.0521f,514.35f))<.001f);
+  Check("lake_GD1_retained",s.puppets.Where(p=>p.gameObject.activeInHierarchy).All(p=>p.giaiDoanHienTai==DieuKhienConRoi.GiaiDoan.GD1));
+  s.Wake();s.Sleep();yield return Wait(3.5f);Check("market_GD2_retained",s.data.region==1&&s.puppets.Where(p=>p.gameObject.activeInHierarchy).All(p=>p.giaiDoanHienTai==DieuKhienConRoi.GiaiDoan.GD2));
+  s.Wake();s.Sleep();yield return Wait(3.5f);Check("school_CoMai_GD3_retained",s.data.region==2&&s.schoolChapter.ghost.name.Contains("CoMai")&&s.schoolChapter.puppet.giaiDoanHienTai==DieuKhienConRoi.GiaiDoan.GD3);
+  Check("fictional_school_sign_retained",s.schoolChapter.environment.GetComponentsInChildren<TextMesh>(true).Any(t=>t.name=="R24_MainSchoolName"&&t.text=="TRƯỜNG ĐÀ LẠT"));
+  s.Wake();s.Sleep();yield return Wait(3.5f);if(mouse)mouse.enabled=false;
+  Check("slope_GD4_retained",s.data.region==3&&s.slopeChapter.puppet.giaiDoanHienTai==DieuKhienConRoi.GiaiDoan.GD4);Check("single_door_proxy_preserved",s.slopeChapter.environment.GetComponentsInChildren<TuongTacDocV39>().Count(t=>t.finalDoor)==1);
+  Check("technical_signs_disabled",!UnityEngine.Object.FindObjectsByType<TextMesh>(FindObjectsInactive.Exclude).Any(t=>t.text.Contains("CỬA CUỐI DỐC")));
+  var memories=s.slopeChapter.environment.GetComponentsInChildren<TuongTacDocV39>().Where(m=>m.memoryIndex>=0).ToArray();Check("two_optional_papers_retained",memories.Length==2&&memories.Select(m=>m.memoryIndex).Distinct().Count()==2);
+  Geometry();Shot("entry-atmosphere");
+  foreach(var memory in memories){var p=memory.transform.position;s.Place(new Vector3(p.x,p.y-.11f,p.z-1.2f),Quaternion.identity);Look(p);yield return Wait(.2f);Check("paper_"+memory.memoryIndex+"_ray_reachable",s.player.GetComponent<TuongTacNguoiChoi>().Target==memory);memory.Interact();Check("paper_"+memory.memoryIndex+"_reading_preserved",(s.data.slopeReadMask&(1<<memory.memoryIndex))!=0);s.polish.DismissReading();s.Say("");}
+  // Separate negative trial: proximity without seeing the suitcase earns no trace.
+  var caseAt=s.slopeChapter.suitcase.position;var spawn=s.slopeChapter.spawn;
+  s.Place(new Vector3(caseAt.x-.8f,caseAt.y+.93f,caseAt.z-1),Quaternion.identity);Look(eye.transform.position-Vector3.forward*10);yield return Wait(1.4f);
+  Check("unseen_proximity_does_not_invent_change",!s.data.slopeTrace&&exp.BaselineVisibleSeconds<.05f);Check("door_prompt_absent_far",!exp.DoorPromptVisible);
+  s.Place(spawn.position,spawn.rotation);Look(new Vector3(-179,5,-35));yield return Wait(.3f);
+  // Continuous controller walk from entry to final approach. No Place calls in this segment.
+  Time.captureDeltaTime=1f/12;bool baseline=false,after=false;int held=0;float start=s.player.transform.position.z;var rest=s.slopeChapter.suitcase.rotation;
+  while(s.player.transform.position.z< -15.75f&&frame<500){
+   float z=s.player.transform.position.z+60;string phase="walk";
+   if(z>=17.5f&&!baseline){Look(caseAt+Vector3.up*.25f);Drive(false);phase="observe-before";if(++held>=18){baseline=true;held=0;}}
+   else if(baseline&&!s.data.slopeTrace&&z<25){Look(caseAt+Vector3.up*.25f);Drive(true);phase="approach-case";}
+   else if(s.data.slopeTrace&&!after){Look(caseAt+Vector3.up*.25f);Drive(false);phase="observe-after";if(++held>=18){after=true;held=0;}}
+   else{float ahead=z+2;Look(new Vector3(-180+C(ahead)+.45f,Mathf.Min(ahead,30)*.2f+1.65f,-60+ahead));Drive(true);}
+   yield return null;Capture(phase);
+   if(phase=="observe-before"&&held==12)Shot("case-before");if(phase=="observe-after"&&held==12)Shot("case-after");
+  }
+  Drive(false);Check("continuous_walk_reaches_door_approach",s.player.transform.position.z>=-15.75f&&s.player.transform.position.z-start>40,V(s.player.transform.position));
+  Check("case_seen_before_change",exp.BaselineVisibleSeconds>=1.1f,new JValue(exp.BaselineVisibleSeconds));Check("case_after_state_visible",exp.AfterVisibleSeconds>=1.1f,new JValue(exp.AfterVisibleSeconds));Check("native_case_twist_retained",s.data.slopeTrace&&Quaternion.Angle(rest,s.slopeChapter.suitcase.rotation)>11.9f);
+  var door=s.slopeChapter.environment.GetComponentsInChildren<TuongTacDocV39>().Single(t=>t.finalDoor);var interaction=s.player.GetComponent<TuongTacNguoiChoi>();
+  Look(door.transform.position);for(int i=0;i<18;i++){yield return null;Capture("door-near-look");}Shot("door-near-look");
+  Check("door_actual_ray_target",interaction.Target==door);Check("door_exact_context_prompt",exp.DoorPromptVisible&&s.GetComponentsInChildren<Text>().Any(t=>t.text=="E: Mở cửa"));
+  Look(eye.transform.position+Vector3.right*10);for(int i=0;i<12;i++){yield return null;Capture("door-look-away");}Check("lookaway_hides_prompt",!exp.DoorPromptVisible&&!s.GetComponentsInChildren<Text>().Any(t=>t.text=="E: Mở cửa"));
+  Look(door.transform.position);for(int i=0;i<12;i++){yield return null;Capture("door-return-look");}
+  Time.captureDeltaTime=0;s.player.MovementFilter=null;var pose=s.player.transform.position;s.Save();s.Load();yield return Wait(.3f);if(mouse)mouse.enabled=false;
+  Check("slope_save_load_retains_pose_trace",s.data.slopeTrace&&Vector3.Distance(pose,s.player.transform.position)<.1f);Check("load_does_not_invent_baseline",exp.BaselineVisibleSeconds==0);
+  Check("no_assertive_change_hint",!s.GetComponentsInChildren<Text>().Any(t=>t.text.Contains("Một chi tiết quen thuộc đã thay đổi")));
+  door.Interact();door.Interact();yield return Wait(.2f);Check("final_starts_once",s.data.finalStarted&&s.data.finalStarts==1&&s.slopeChapter.puppet.gameObject.activeInHierarchy);Shot("final-GD4");
+  yield return Wait(10.2f);Check("native_ending_still_completes",s.data.region==-1&&s.data.nextRegion==4&&!string.IsNullOrEmpty(s.data.ending));
+ }
+}
