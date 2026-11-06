@@ -1,0 +1,7 @@
+{
+  "hashes_unchanged": 852,
+  "lexical_review_rows": 5,
+  "disposition": "All five rows report identifier from in Python source, not a C# type definition. False positives of language-agnostic regex; no missing compiled C# type established.",
+  "clean_compile": "NOT_RUN",
+  "raw_report": "moved-tools-audit.json"
+}

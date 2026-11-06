@@ -1,0 +1,42 @@
+[
+  {
+    "old": "Test/Output/GitPreparation/first-floor-before-note.png",
+    "source_absent": true,
+    "destination_and_staging_match": true
+  },
+  {
+    "old": "Test/Output/GitPreparation/first-floor-recorded.png",
+    "source_absent": true,
+    "destination_and_staging_match": true
+  },
+  {
+    "old": "Test/Output/GitPreparation/first-floor-rotated-zoomed.png",
+    "source_absent": true,
+    "destination_and_staging_match": true
+  },
+  {
+    "old": "Test/Output/GitPreparation/first-inspection-720.png",
+    "source_absent": true,
+    "destination_and_staging_match": true
+  },
+  {
+    "old": "Test/Output/GitPreparation/first-note-dossier.png",
+    "source_absent": true,
+    "destination_and_staging_match": true
+  },
+  {
+    "old": "Test/Output/GitPreparation/first-note-reminder.png",
+    "source_absent": true,
+    "destination_and_staging_match": true
+  },
+  {
+    "old": "Test/Output/GitPreparation/second-objective.png",
+    "source_absent": true,
+    "destination_and_staging_match": true
+  },
+  {
+    "old": "Logs/team-prepare-editor.log",
+    "source_absent": true,
+    "destination_and_staging_match": true
+  }
+]

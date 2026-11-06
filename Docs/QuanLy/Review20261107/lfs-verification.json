@@ -1,0 +1,3091 @@
+{
+  "scope": "Existing repository only; not clean checkout",
+  "files": 296,
+  "unique_objects": 217,
+  "bytes": 4503946222,
+  "objects_ok": true,
+  "materialized_current_tree": true,
+  "objects": [
+    {
+      "oid": "6a023094b432f35f348257f430141514099f6f10a1cd041f9fbef887b51af4e7",
+      "bytes": 43944,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "74a5c69d50c7bdffdeb0b8d4c0ed2ae5e9b17adda966a407c0f3e85c2c3394db",
+      "bytes": 43185,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "be5026af9f9c5f3d964a047e1c12ab2d3a19aa1aa5bf134a854a299257bcde8e",
+      "bytes": 62444,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "7bac5b0ac5de1de97e542488e84228e03932fb16928342436df6979cb22e9781",
+      "bytes": 23084,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "fed47fe326dea4c65c8b0b985a1fd755a019fd75d89e70d3b2c13c51d9cbdd5a",
+      "bytes": 44908,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "5c311e05d825a2d83c17ae180a4929f1d608c068ec296d6b29efc5075f7efa1f",
+      "bytes": 62444,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "8174950d6ccf3c224e28d8b269152a24769c85466a16c4095a0e336f3802529f",
+      "bytes": 76844,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "ac8ff3b99c0cf179375399e0771b42be89cefa1cc5b4e837b119626c66a4e850",
+      "bytes": 153644,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "85cf8e4f37fc96df8a62ce537b00986c554c75ad889a9cb59c30ac047344a721",
+      "bytes": 18508,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "54d4ac6e512bab61db7c48380d67b23479f182dc60e46d729d116ed26519f7b1",
+      "bytes": 2071756,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "58f49ad14fb77d05f6d482c0f1f852586f30930555fcf8fc89df70bccbfb2e49",
+      "bytes": 2071756,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "45be1bcc7d3fc2e74bd98a2121a897504530a57b2643422975427cb2069e390c",
+      "bytes": 60913271,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "5af7ccd2b72d767992c91c382d268841835580b773cb3901808d092c89d54ee9",
+      "bytes": 55271426,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "6b97473b21b57fe71745937c6847b68df63c0584c2ddbd486d5676c050704ccb",
+      "bytes": 80329903,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "bf6b29a40aa103f98490983248f2789bc66cc5dcdfbd16d9f632cb113ad64be3",
+      "bytes": 61930645,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "953a8c8f21815eee6d2a419b1aafea348b72b3aaed0acaad54e2226d41e40bb5",
+      "bytes": 26908,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "8b7d48c3b20527ed3c85895381b9edaf0478f5746e38d43f0e8bc9cc0ffe9ad7",
+      "bytes": 312828,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "d25557424afeee481fe8572d3e4e79dfeed7f37544c26e96da85c0ec995ebe8e",
+      "bytes": 330972,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "3cf9131f2b786bbd041de4ac959fb10f5a8fe3e2488e5d921352e0ef8cc80b99",
+      "bytes": 335244,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "c1d889c53ad9a1184df73dc9742dbfc51510759b0997bd6c4aba213ea542cd15",
+      "bytes": 134137164,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "425d144a207aa4520ee315f4f4142c75062dd58e4e35ce2cded198e0a7868840",
+      "bytes": 94191109,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "b833990d475c70ca6b3ae0efc353dde95f1946f3a01f3a288b9e60859a2873c7",
+      "bytes": 70644229,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "b2d6887ebccb9fb2ec3810882d9b84ec5f1c6e027682fe15cbda6153d12840ab",
+      "bytes": 78743051,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "ab462f09865015d17650146c422fcfdd11a7156b679ad79199ae6e1b17f75f96",
+      "bytes": 373820,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "87fd8b210743b9d3198ab030e99288fd5b7287a9a3993801d3dc9e48ae085ba2",
+      "bytes": 18572,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "79cf6f5f7c51d0244a9df700a392d06ddbb10ede76957c4e379225aa0ee8a747",
+      "bytes": 89548,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "5ed7a9810cd654ae7075fb16f9951cbac77acdb01d5b63424153331bfa5e370c",
+      "bytes": 24300,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "ab07a079d08eebc2b947d295b6ab0a60ad02d2fce3f65cd1a18fd3e0e1fd31af",
+      "bytes": 379260,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "7d6a1c4a18c7f717e33d5adec64fa9f94845a45b4a3ea925b6463430043020cf",
+      "bytes": 22844,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "38b308308412acc6a18ce8d32d2ef1cc003dd01fe98df09a311f6207f588d4e8",
+      "bytes": 40044,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "39779ac5fa0fdffe074e09a46166013fed286241ec12a244f7523d32ec7f5da1",
+      "bytes": 25596,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "bb77d6e9912b5fcd57cb14d9bb7aa34df9a5141c9554ff56427a073528bcbc55",
+      "bytes": 465628,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "f4ae1c26405689c7860faed1b064087624bbf9b89fe39ae36225cbdf1c8b6ef3",
+      "bytes": 104492,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "2b1cd5368970540e18cc7c76638f3294eb1240ca1baecca57c9d522710d2a26d",
+      "bytes": 229324,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "c6f479fd951d51e3a322cdd06f2259f4a78bf807b46f5ba744b251944129e536",
+      "bytes": 19532,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "e59e5faad549ef3da3a92096fcaf7665349d972d5d81d48b563e3d25e5ae9b6e",
+      "bytes": 18684,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "3310b3cba6184e370bbc23506976f8eb95a89ead4a4a0f0d1e9ec4d0536eddd3",
+      "bytes": 104764,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "e35138e3ef2150790148583d82503921c518477696429564a50e94fbe5d8b2c8",
+      "bytes": 192572,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "841954effd3034e8b860050bfd07e4805854781c07f1333ac28c1e0ad3930f04",
+      "bytes": 904492,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "6bb1a9174e1991159da2ab4828480b2d248cba7a36dd75e5de2b79ae091bd2d3",
+      "bytes": 1857756,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "f0aa72ee6aeda8a86398c64aaeb9cf42109efa8452d92b6270e47f3b80a80b49",
+      "bytes": 73692,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "14857ef44284396aebf3793fd2a941c19fe69d22ba1a4b98fec600870fa8340d",
+      "bytes": 105452,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "72e5f79c3c80378b3c21546852322c5c0aac5f69e526fda0ad5e93a78df2dad3",
+      "bytes": 80828,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "0046c1488db9811e17fbcf0da0c761f36fcad16d3150cde4fcfa8612d58f83a2",
+      "bytes": 43420,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "dc8ac3990d340c24942c8090d73590279e3d09416b27aff6b3055c210af20995",
+      "bytes": 1248379,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "eaad71b9e20a64aef6e71316e0c4995eec6c69ef05e21bfb49fb7850077596f1",
+      "bytes": 6141,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "f27d5369a8424d2b61a5287effb00177069b763886feed8de2ed725dcc813e07",
+      "bytes": 1342652,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "7a2cec0a4daea5b69d16ec85261412e54b5f7aec8b894f4a0be6aeda87a45988",
+      "bytes": 112313044,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "2a10b8cc7e11eecb3f3634372a8943e26da7ec248dc3592fe899e24b8850d370",
+      "bytes": 52842123,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "a6e26d7d5812e57eeee45a9af3b02352eeed99d0f5e2922d839b272a6405ad57",
+      "bytes": 52811111,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "f985feb31778d4b3b15b8ec3138d062eb1c235cb0a7189cbb46fa8178f5d92f0",
+      "bytes": 52821151,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "ae767bc0d82233785a995eb885fff028204cfaf37aa0f59875bf492891c9b12b",
+      "bytes": 52785581,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "039fa7e1ee2bc601403f13e33b3aab5d475806e1c0c7b1352ee935739d9b6dfe",
+      "bytes": 58396155,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "30ece6d4200bcb94ec55f3ce3b8a1df0ddcd0d1035232a1d19d41389ab4f5f15",
+      "bytes": 125837867,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "8da55eceb7727315bd1aa1f4377aeba9bc4134909600b405feda2cadb5e59f02",
+      "bytes": 1555324,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "95a647953d51fd692583071a3c5047e945a3ac549aaa19f78f6c22e01cba5e90",
+      "bytes": 302572,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "5f71b11213805f602d90b3ba1d1363fb4e1ba0b6e14b05155d183b008d14f2f1",
+      "bytes": 274637,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "97ab4b52c7e7cde3005fe298242efc67bd72e238b0f829ce4a77b6e8a19c3e3a",
+      "bytes": 175242,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "f795ccd3e5578c05d5cb0f864a2e5d94de9ada470674daeb5581d69ce2d7440d",
+      "bytes": 225975,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "68693164bfd0a23cb7f3834e0025ce9c4133a6cb9f5b286c4eedf63e67517c2b",
+      "bytes": 3897708,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "0b133e29fe6102621b0b095f64b48e106cab3b562d1bfbe3c0e39ab8bd7605f4",
+      "bytes": 57436,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "368fc723eabaa5369984ac5cb389510563a7c4c08d961d3660872a8003121a99",
+      "bytes": 230332,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "feaf182ce2de78f8e53911257a065bbb2ea5606612fc56eede067db5d17b9c3a",
+      "bytes": 271308,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "5fc5e8a7ea6d09e4a3b54f932bad18e177cc9dab3882a26b9faa20f6bd9442f7",
+      "bytes": 24012,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "8cb56e6cdc9aeb88c833856e9931f091ee5535ca651a2d73fef65f1cc792ed37",
+      "bytes": 40252,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "e51197c6789cd87fa4392244bd00126f0189f6336760d0d84ca0a3f01fbcd3ef",
+      "bytes": 253802,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "fe4d6a8c2906ce148e74e0a0ecee04a6d0599bb97163f096cf939ff50cf1a3a3",
+      "bytes": 290672,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "9259837135aa1539d2a0b140df2eaab6540855a067abc351011f3765ac8b2462",
+      "bytes": 1116065,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "f35e046793c1256660d7c135c52e84ea9ee8f5d3e05d77880fcf771c99e91ced",
+      "bytes": 46716,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "1f2af0f3f7dff7f0c45f913602d97bb53549c6cfa1480c343be967f4134c995c",
+      "bytes": 18508,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "4051a30f8e7466f53c772f02212439ec6b02cd7fa7472e0c79e50d9a8c968256",
+      "bytes": 55614101,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "a7ed628ac87d40eed02e0925520fef495199e6cef805999b26a02f1d068a066c",
+      "bytes": 449638,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "e1b3bb490156ee05b2602bd96884a012d3d06104698c6231f340695b5517a6d5",
+      "bytes": 344930,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "7cf3f1543398eeda77f7b394fe2878d4b3dfb39a66c1d224f63f20d5614d8e2f",
+      "bytes": 345464,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "84b9333ac2b0d66d4d4a8006532851d138db5086d73e96a5f6e87067ecabbf3e",
+      "bytes": 346126,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "fb742a78098f9500ac7c45b359d9f61eefd8befcde1089acd040aeae85cbc6fd",
+      "bytes": 345942,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "24ceec4ca7a6bccb60a31b3b1e4e60cf23b73711e9c80743da5de142d94cb273",
+      "bytes": 346624,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "efbcfec8410f0169998d22b23dc04f5d1b5a2c49d5276d481655d99638a4725d",
+      "bytes": 345658,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "513a78456b024c188f6ff1e1e5f91dd4e81d12c0c881d72e9ff2fa6f7da5b458",
+      "bytes": 339248,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "604172b7affb09a3eb02950b4e488f003a83f03e041cdc01c218cb233c34a675",
+      "bytes": 351256,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "7619ab946d13e89140f92c5c474f25196564494767269000c8db042f2b9c5f34",
+      "bytes": 344945,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "f09394780d24a6d010ae2069a0d182b68d677deae2bb81278ebe102a5169006c",
+      "bytes": 337761,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "ac6568ee16165e3d00958d0796e20bfd86dc8ed5bb46d4f00a5a8324c37f867b",
+      "bytes": 346054,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "164760454e3f47d1708a5e8446a080cd9d91068e969c167c4416a9438d07b8f6",
+      "bytes": 345886,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "aaaa9197de3a03f5d91d12b3a7a7f3847547c74ee7ef320f6cc10ffd65809758",
+      "bytes": 135725,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "10bc64f4710df4f61d0d7d41520a2bd5bf2cba515a1075cd3e5ce09084981c39",
+      "bytes": 134760,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "e3b7e3e8a1a0125dc69e7e63cebfc7de290d54ba9e5345267d8823f71b25a84f",
+      "bytes": 134863,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "174404b8d95fea1b3dc564eb9868bed52be76de6a8010c17a35cf0408f79884e",
+      "bytes": 135542,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "6299214d4bf6eafec5e170e116d5dcfbc2162b76652955a4251fb6a6701a17bf",
+      "bytes": 57354124,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "930fdaba6e2032a283ca26e4458d488bbb82af447ad3b95940d24426dd32d24f",
+      "bytes": 58499660,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "aaac10203cb0416039160c04ab1dcb86dd24bfc3d9ab31bde0bd64664f6076cd",
+      "bytes": 56924,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "a88133b4e72bd26d4e8b24dfe477b2e9f958738b866e888f31a1715001c4ebfe",
+      "bytes": 12524,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "24ecb988b79673bfdfbfc87ac8dbd3add43559c5db79ddb241cdbd6de39113d9",
+      "bytes": 24945,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "a8c2dfad02c56ff58ef75572a1354e6aeafde23e044fbaf92931e017a541d51d",
+      "bytes": 132534684,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "451b676974f1e90e684c47a37413efe27deef0eacda4f8a72198f0e4cbe1ca41",
+      "bytes": 273820,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "e683cb2da8380daafa18976667332eacc7e75a621ff69d1e71aee0d36396d424",
+      "bytes": 2029308,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "9de01f537c4073f427cd68f0d1b37e7c3180c667f1bae04770c200d7a057b79c",
+      "bytes": 55193,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "f071918e4808310e7df342492922c93ab41903d8d747a73203923626868807ff",
+      "bytes": 53977,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "3f517ef3f0851075d9b2b6d10e4d00fc7d77bbdd17dc50db4d9ad1bb12b6836c",
+      "bytes": 223148,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "e54931663b4cdc377219336646718a9bb4298077885291539fb8fa440109bfb9",
+      "bytes": 5776,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "5de1fdca39143ddc614ac0557b7ce6a0538a04a59efb566a3d684620ec8a8e28",
+      "bytes": 10186,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "5df822ddd29bb5ea3f05f61662004d01ed8234c688174cf69baea68edb540eb7",
+      "bytes": 7100,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "6045ef15bc31bcc4d2c52a3f4be5ec606c1e20227fc2efaf8166eb80bb29e2e5",
+      "bytes": 63388,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "96340fb7d8f1994cf614174b8aa14e296a5a1108e6e8a598aacb1655579d078b",
+      "bytes": 140364,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "e113566bc425bb6c93c4a17361af7dac3858e7d4ac7627150056d7ab3b35eb55",
+      "bytes": 147420,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "df4b14bac5e2574b570c0449a86db4df958cf0ee632508e81ad2c2cd39f6a464",
+      "bytes": 38444,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "8544ebfa89511297c97f82abfd94f65d6fc85f32659093d41667c9d6e893147e",
+      "bytes": 30024,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "8070334af67d7a9ef3f9783427e4d889883e3397c3b8bbaf99fa67f6ca28ee4e",
+      "bytes": 29584,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "c00a5d6c10c69d2888a5b8f9877f32e3e6d501f65eb9e6e9e93ea1f4a7bdb5c7",
+      "bytes": 29222,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "57d3680f30adde41a83e6491de0fbb23e80e2d9fcfc0a1d46d6511829ff29851",
+      "bytes": 30423,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "c7ba4fac6a355cc681d6fed618364eca65d63c9bf65881db103e956fbc1e7699",
+      "bytes": 28396,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "1296153ab94c5a6218f607649b8433d0246ad38da0cc0caa6f24a5597206ecf0",
+      "bytes": 28793,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "7d0d4a522ea3c4d08a579354178f9f29b6998902bd68cb39f78554ed11d8e9fb",
+      "bytes": 30495,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "49267e5e02fed9252b00e4206940f97080dbe45d481e68fd8b8e3fa1d33555ac",
+      "bytes": 29449,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "2c555c113c7174989be65929981ac1d8fc8fbc9fc52d18c333001a0bb46d3b2e",
+      "bytes": 29910,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "56ef31bce66c8146aa493efc2b7bf4faa3407d2dd00ea98ee570f24fb9f49a1b",
+      "bytes": 28853,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "29275e968329cf4a86d32d440ff51f747829e33c34bce03981d9a0c06f15b76e",
+      "bytes": 30285,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "7a1cb8cddf2ce0571e215fb480aedda620724036ffede99149a25aa5be0ce869",
+      "bytes": 30027,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "1b1ad84ac0d677b24b9d67fdb62dfa5cce6285ae9850186896e6fde0fff093d6",
+      "bytes": 29473,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "51f5c9b6858338571573ac52d210a0a744b73e14ff361f605fe7181fd8458189",
+      "bytes": 29880,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "d077b2a66bf0a2b966aed2d63f4950360447785f42ff7c86219d048e2e2d2692",
+      "bytes": 28755,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "65ec0d169d8c687df128d6e206c4b35cafc3cacc6b3003a7b07f4a54c1acfff3",
+      "bytes": 1200588,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "a3732495f292e357ddca229376c02f34a865d3b3fd72514e29524fab40a3b88e",
+      "bytes": 111324,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "23fe61435a7139d29f19341fece98c1104850da5beecf1dbb362e96721aca3f1",
+      "bytes": 111324,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "93931c42a4739d49a6ce6bcbc394a81d2f86ef989d7be6ddb2fdae6fd72d1e21",
+      "bytes": 34716,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "8d45387a507a5c70a818302643ee8832424da47107e0dd7daed30f80eb247248",
+      "bytes": 183164,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "cc7f087428360fac02b93a1fa07fc2e35b4579cd0bd48360ed39f0df4aad3d50",
+      "bytes": 42204,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "0da101f68cc4577f74add122a1c28a94d6357dd196ca76e3f8b821de61616373",
+      "bytes": 215676,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "2b33c1e895d2c9f07c22e324b36ca6d24192c8ed06742a3a50800d7dd4b6b2a5",
+      "bytes": 17484,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "efd99762bf4ba9aada33ad4dafe82830cb7f68db4fc1296a83b49875ac88ca1e",
+      "bytes": 352492,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "4472e89197fc2f70cb8a0c28d9c75b960f06788bcd1fa533788edf1aa7f404cc",
+      "bytes": 350764,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "5ef36b06e7c20b440c05e4a93b371d706eee807c0fbea691e99e6882e36e520f",
+      "bytes": 401132,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "477ae8d7bd0d0283f73cec9e4043a7d4b41438a0841e0594fefec635723af34c",
+      "bytes": 2263980,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "b2dbded92883ee3c9a4f96bb602e6b15b4acd96969ac7c5f2700c58940beac2f",
+      "bytes": 35788,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "654223505971178f4b803efb448af34f6df71217af365e38ba88dff94236c908",
+      "bytes": 235756,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "e8a334d0d0822e158d5661e24fa7946b32926b873b1fd87b2d5ce90ba70beb86",
+      "bytes": 4049721,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "0af2bf68c3fed898c9c4762d67b84f8e4d59cb20236a20ebc33bb5cfdf89acdf",
+      "bytes": 176444,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "bce5a45b18bbfab03293a0898c2888959c82be904bf482915da0f63c56c76177",
+      "bytes": 176444,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "484b9d759bcad3fdf44969d96f2d92d1129a06fa83882cb25cc4897db9d708eb",
+      "bytes": 176444,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "e47930336182cabaaee7048ddb27de5ad5ca9a95f5fe145a5c586372b249c012",
+      "bytes": 176444,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "a0a88ad761fe2da7b10326f54a27eb64fb621a509bf42346072764aeb0206e8a",
+      "bytes": 3570,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "f18867b8ec5883a138a96d332dde23ed294286c4b1b8688778c7565ed1242b92",
+      "bytes": 176444,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "2eb75e627b801d3aa594cce2705feca959dfc0c7bdfeda7805b0721bec8d1416",
+      "bytes": 7098,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "9fde94d588d729202da8d8a9625a3278244ad4493a4100637309895cc89e0c5b",
+      "bytes": 5776,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "f8cdf9610b48d405a5935c0024dac7b1d035cda3a62a1d0a87005467b2c50f69",
+      "bytes": 14156,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "52bc8ca0abc43ab145884d10b867f5cf1e97d6f8e85f19552e9fb5e9b0a108ad",
+      "bytes": 176444,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "be9a35586e4b7d31b099eeb3875508724562bd8f3172fb7e4060175d5fb5794a",
+      "bytes": 182967105,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "44f4a4042743267d609c02ca0d91f1d2c387a662348916a157e20ac8990911e6",
+      "bytes": 184681693,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "c63d5d8d21a45d9d755b3232fc7404dff4e8ca3cba79605e76781ec3e578dd0b",
+      "bytes": 184682279,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "177d8cdc348f481e23ad83435b7d85ec0e79d1fb2fe14e907d59c4962fc2f2a9",
+      "bytes": 350309,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "c3456e32f55e392d0043de2f2a2769b78624822ad304a106730b3c571becec9e",
+      "bytes": 307510,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "f8d25aec56eb893a5862a0a68cc90ce469e2052527304f64bbbd90b64ae30899",
+      "bytes": 321439,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "d96c3b93d0df8f326254d8194b566de923a25e2ec78eadf7cd84d26156e250a3",
+      "bytes": 320644,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "b736f24015667e881a37b48f800a762ef270d09fa4492ad37489f92db90cf82b",
+      "bytes": 318730,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "604dc4ae9b68f73a0c54b587c32f1e5d1dca296830e558b940081e0e21345028",
+      "bytes": 319973,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "6bcec79ab05dffde02d1afd291dad40ebbaacaa3d0f342e0b400cd0f7524c45a",
+      "bytes": 522508,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "32bb9b4ee46a7957d19f9f6de5c6cd8e44bc792267b95da68cc4cf0d40aaff45",
+      "bytes": 521943,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "372f76e71b73d13d3405456af991244dc6c37e4d6ec158c120b1326230198c5d",
+      "bytes": 425663,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "b1e5bf3d406408b4c0da93fc808d5bf732328e9cee6140c6407279af88836c40",
+      "bytes": 425683,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "3931d051f64daef4ddd54c584daf46b853251ec433b2583d6b1d33bb14c69f9b",
+      "bytes": 2643478,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "3768ab799326b442362e9ca3373eaf3ee7dc9b04c83d3ee0232f429859dcf9ec",
+      "bytes": 2616246,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "194c5b91f78538177b5dd225e951921fd2d122e3eb9a71ab52af69920a6075a1",
+      "bytes": 2615498,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "ac7a107649cf7ed364b4c0ee5a00affcd0ac83da7299206755294f25eb3907a8",
+      "bytes": 2631704,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "3c2e77e035071a96d3c362fa7a65d66630185c6a3a6c37a634fd2bbb93d13a98",
+      "bytes": 2674786,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "0aaa35a38aa6595bc1117c5264a21d18fe65bbcd9452e26433b37a14843ddb76",
+      "bytes": 3434493,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "e9ef390c60236272280211b3682e6615d020c7bb54904d8fca6b8993335d1405",
+      "bytes": 3393529,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "4c31d774ce2682b0eafe2f98f9327156edb62fc56b4af319126e7baef7ce053c",
+      "bytes": 557152,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "41db14aec233951d16f15cabf5f52552506739a581f6f51e603ac93523c17ad0",
+      "bytes": 556151,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "e1f0f9f1361493c093e5c51a440391d5baf59a0dddb8affd639e44871680f0a8",
+      "bytes": 602672,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "416198f352747c368350da49a713a5060bf038c860aff557cf4e108f25fc94d2",
+      "bytes": 184685893,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "994e01d79d18693833520273332242cf4d7c83ac72084af28ed8cb398bb4d13c",
+      "bytes": 184684739,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "d4532d3ca804b6594ad666ef64c63e35dd4b8d4fd03c8022f2146749bbe7bc7a",
+      "bytes": 3560360,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "356353fa7be978db64e2460b56204ac86af618920109d204150bfa1e99c169d0",
+      "bytes": 62537439,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "08d2c4c7f622b1609988d10c2c25083154a6a7ad5e46b73693a7e65f6ada249a",
+      "bytes": 64819499,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "3ea7a144c2969c42452f6c204054cc096259a64a641f1da2b398e67aad089517",
+      "bytes": 86967,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "6058fbc169fada98f1b1c47a32c0884ab5b88e9b6b0ec88073b92a01e6dd2ef5",
+      "bytes": 3904911,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "79ca22470e2214ac8aa0384fce12d8e2b5063102050882be4b4e3e453d6db8ce",
+      "bytes": 30222736,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "3404403956cee91b82d1386b206dd9e2ec4a0fabedab5cf282c60e5e88a24b1a",
+      "bytes": 51254025,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "d847ce8ab9685279a2ab3ea5989e973653006506c4d2ced4dd0b80c5bb6db9dd",
+      "bytes": 51841931,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "dcf9ab8a374b0bc40fc6fdd2dbdf664b344ed506aadd01377448eb998dfbe690",
+      "bytes": 51252990,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "480f6f591b3be59952135bf318454d076664370b28e833fd0018366c51bb0600",
+      "bytes": 52549050,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "25d558454f05049870ba340cdfa66a5e54004d4005d3806308ffad1960b06529",
+      "bytes": 51327506,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "552566f6db3e52631fb21619fecd749b5616da9b4a3666aff120b4ad834c547f",
+      "bytes": 3147843,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "4de937e53c231a5316ed69ca115d7d5a1941adb81c3c8951f57196e2e6602604",
+      "bytes": 2408523,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "24adfe493609c7ea62bc906a1ca4609f06cc40ee17ef738b90fa33fe7d2a659b",
+      "bytes": 2829671,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "0b3c19e8be41827dfdc499c1c82b169250c8e19ce1a51b6f79d98a9a038417d6",
+      "bytes": 2857880,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "5a4d69040166242e0fedca292e31392e53d81e84900689be6d8201a88341155e",
+      "bytes": 3170932,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "3775c23c307ba60fb0f0a7bc95ac7703c9ed79cea45f1ca929fdea3573007d9b",
+      "bytes": 160376714,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "cb2c3a481f12552f45615170faf05abab6b9f23234d9af25d881ca8cc358b5d0",
+      "bytes": 159669683,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "dd84c17d5a7a44f44f9e91d898daf453736ec339024ca88fe742dcd49c418a0a",
+      "bytes": 160402231,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "5574ad4a58f8196107f4cbf4690595d8db2ffa4998a9a65b594419b833f7655d",
+      "bytes": 164569494,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "51b16ae9d28b0e1f59290969367bd9f49caf21a2026e61311591a8e7f5c84a1b",
+      "bytes": 164704652,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "0bca2887e9b8f3d6f6d870a512a366f2f8499c7e5c7905e8f5423e09e169ceae",
+      "bytes": 164791348,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "9ab59004289b0f957670e1060d77f9dba743786d601c65c979497f27f0a8b249",
+      "bytes": 182969603,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "b4b51f536c4286ec2f89c09d5787f31e75a41fb49c14ef9f07f7682f8c131bc8",
+      "bytes": 165274696,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "ae018a41c610ef990a2d40141e6b8adc1725d24e925c77e9afe43db69fc2f4f7",
+      "bytes": 183199524,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "bf88b7b60506799c2087aad6a2141834695f4974f94ed16f0ba04c9055f74518",
+      "bytes": 1808864,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "8b033ab6343c8ef095fb6ed1bb46ea8308f449ae2b7241b3a9b1413314e3d016",
+      "bytes": 5769268,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "df3dae4a16a7e331c0b7662f768cb4eabe8fb0863e9ab09cbfdf3031cf8d8955",
+      "bytes": 2158424,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "d138d37cfb3f71400455bcbd9363a69d6e3e6f7288aede8b5bfabcf1d3a14816",
+      "bytes": 5839836,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "ca9c264a4549eb664c6945db053ea2db1d0809a98ffc55cc2800e5dd09ecf55f",
+      "bytes": 2150000,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "93d18fd6e9170db341560cc3b3909e01346fcaad6ac26128bb8fafca65b4c546",
+      "bytes": 7888896,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "1ead5ef5fb2b0b40d5a92c4baa5e4e111b187e9f9f4e895a1ab8cea8e12318f2",
+      "bytes": 2662400,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "6b2b71a29b684727c100cbe2810a69cde03d32fd489150f90ef7ca155556a5fe",
+      "bytes": 275968,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "6661a925b55bc9c0465699a64327b3b7602d1b04391caf5ab88efa77e8569838",
+      "bytes": 2250240,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "c7b33008753087a66980ea6e79e59b38191f0a8e3eb61b6bba030d8058128359",
+      "bytes": 21504,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "5fb6ac5e4421ca73765ce283fc13f49d67e0932bba9d5155435baecada5c316a",
+      "bytes": 12288,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "d3a5ebaf8a550fe1e3a5baed6eac89e6e21a5ccd3c8f8f22ae577a57248173c7",
+      "bytes": 14336,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "2d5846f349212f73e613ab18076851d360d3deb0dd7b41db76357ed06e65f39d",
+      "bytes": 415744,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "2ce797a0f88d7f067180338fb227f7b1928ea727bd9a4d7a1d022f7c52af71a3",
+      "bytes": 87638016,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "0948bdb5c70b82e5055b55e9419b78d68372b1d0ec877277fa6e79276f6299b9",
+      "bytes": 2627584,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "6e65985b30831761887de3217853a720147626b18cb41668cd2bdc43d1bcded1",
+      "bytes": 501760,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "0fa7eb792d3fbcf2233e4ea47e9144b9b1309ba8ed5d4731a72fffa8f4f556d6",
+      "bytes": 557416,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "39d2b4b38296d4546e27013b98525af5a1ed91947a0feef41825a0dc6c08d3bc",
+      "bytes": 238592,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "218c857d0bd5499f5c82c5235baca0e6c632f7cc0e503efc24c4286e9b59993b",
+      "bytes": 50176,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "50be0f564d51f7ed88d4ebf6db0ea72fd7c1c1c89321614b3df71c6a72cb8f58",
+      "bytes": 166400,
+      "exists": true,
+      "hash_ok": true
+    },
+    {
+      "oid": "856d37b9c5d192ffcd4fa9f6da81d7989b22f33b9bba201835a0b7cf91910443",
+      "bytes": 293376,
+      "exists": true,
+      "hash_ok": true
+    }
+  ],
+  "working_tree": [
+    {
+      "path": "Assets/Art/Environment/JourneyV40/ConcretePavers.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV40/DampPlaster.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV40/PageTurn.wav",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV40/Receiver.wav",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV40/TimberGrain.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV41/PaperRustle.wav",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV41/ParcelCloth.wav",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV41/Watering.wav",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BoundaryFinishR21/Cypress_Needles.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BridgeRepairR11/BridgeLocalSupport.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BridgeRepairR12/BridgeLocalSupport.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR100/D99_FLOWERS_Red_2_BoundR100.asset",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/L98_35_BoundR98.asset",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR99/C95_0653_FootwayOverShoulder_Garden_Bank_Return_Walk_Surface_125_BoundR99.asset",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR99/C95_0654_FootwayOverShoulder_Garden_Bank_Return_Walk_Surface_153_BoundR99.asset",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/EastMarketHotelR67/Context_Surface106_R67.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/EastMarketHotelR67/EastMarketHotel_R67.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/EastMarketHotelR68/EastMarketHotel_R68.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/EastMarketHotelR69/EastMarketHotel_R69.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/ExportPolicyR20/RouteSurfaces.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/FinitePineNormals/SlopeFoliage_1.asset",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/FinitePineNormals/SlopeFoliage_2.asset",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/I2GroundR94/I2_Surface_142_BoundR94.asset",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR80/ThreeBayCanopy_R80.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR80/ThreeBayCanopy_R80_Residuals.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR81/ClosedFrontage_R81.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR81/ClosedFrontage_R81_Residuals.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR83/EastShop_R83.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR83/EastShop_R83_CollisionResiduals.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR83/EastShop_R83_Residuals.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR83/EastShop_R83_RoofCollision.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR85/TTC_Lobby_R85.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR85/TTC_Lobby_R85_CollisionResiduals.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR85/TTC_Lobby_R85_Residuals.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR85/TTC_Lobby_R85_RoofCollision.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR86/LangfarmFasciaRemain_R86.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR86/LangfarmReturn_R86.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR87/GateClock_R87.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR93/Langfarm_R93.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapRestoredR11/RestoredMarket.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketEntranceR71/MarketEntrance_R71.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketEntranceR71/MarketEntrance_R71_Residuals.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketEntranceR72/MarketEntrance_R72.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketEntranceR72/MarketEntrance_R72_ColliderResiduals.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketEntryR54/BrickColor.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketEntryR54/BrickNormal.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketEntryR54/LangfarmR54.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0083_BoundR95.asset",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0088_BoundR95.asset",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0089_BoundR95.asset",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0090_BoundR95.asset",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0091_BoundR95.asset",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0888_BoundR95.asset",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0921_BoundR95.asset",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketIslandR61/Island125314010_R61.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketIslandR61/Textures/R61_FlowerCream_BaseColor.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketIslandR61/Textures/R61_FlowerPink_BaseColor.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketIslandR61/Textures/R61_Grass_BaseColor.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketIslandR61/Textures/R61_Paving_BaseColor.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketIslandR62/Island125314010_R62.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketUtilityRoofR70/MarketUtilityRoof_R70.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketWestAnnexR63/MarketWestAnnex_R63.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketWestAnnexR64/MarketWestAnnex_R64.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/ModelsCompletedR15/CompletedModels.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/PlanterRepairR15/PlanterBases.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/PlaytestR21/After_2_BaseColorSmoothness.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/PlaytestR21/After_Yellow_BaseColorSmoothness.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoadMaterialsR65/Asphalt_4m_R65.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoadMaterialsR65/RoadLoop_125314010_R65.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SceneryR22/MarketAwning.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/ShoreRepairR50/FootwayOverShoulder_Garden_Bank_Return_Walk_Surface_125_R50.asset",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/Concrete.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/Earth.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/GrayRender.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/Leaves.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/Limewash.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/Moss.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/OxideSteel.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/RoofSheet.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/StoneWall.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/TealPaint.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/Timber.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/Trim.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/YardPlaster.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/Concrete.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/Earth.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/Flower.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/GrayRender.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/LeafDeep.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/LeafLight.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/Leaves.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/Limewash.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/Moss.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/OxideSteel.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/RoofSheet.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/StoneCool.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/StoneWall.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/StoneWarm.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/TealPaint.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/Timber.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/Trim.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/YardPlaster.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/Concrete.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/Earth.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/Flower.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/GrayRender.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/LeafDeep.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/LeafLight.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/Leaves.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/Limewash.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/Moss.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/OxideSteel.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/RoofSheet.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/StoneCool.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/StoneWall.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/StoneWarm.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/TealPaint.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/Timber.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/Trim.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/YardPlaster.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/LakeGateMarket/LakeGateMarketContext.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/LakeGateMarketV32/LakeGateMarketContext.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/LakeGateMarketV33/CavitySurfaces.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/LakeGateMarketV33/GatePanels.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/LakeGateMarketV33/GateWayfinding.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/LakeGateMarketV33/RouteSurfaces.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/LakeShoreV31/LakeShoreV31.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Environment/OngDaoV35/OngDaoDetails.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Gameplay/Class203R32/Minh.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Gameplay/Class203R32/Model.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Gameplay/LakeMarketV34/StoryProps.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Gameplay/LakeR37/Close.wav",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Gameplay/LakeR37/Paper.wav",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Gameplay/LakeR37/Place.wav",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/EVIDENCE.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Ha.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Khai.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/MECHANISM.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_A.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_B.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_C.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_D.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_E.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_G.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_H.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_I.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_N.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_O.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_R.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_S.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_T.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_W.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_Y.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/PuppetPoseLibrary.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/R03.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/R12.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/WORKSHOP.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/EVIDENCE.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Ha.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Khai.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/MECHANISM.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_A.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_B.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_C.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_D.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_E.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_G.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_H.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_I.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_N.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_O.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_R.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_S.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_T.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_W.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_Y.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/PuppetPoseLibrary.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/R03.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/R12.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/RepairEventActor.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/WORKSHOP.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/CuffComparison.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/EVIDENCE.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Ha.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Khai.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/MECHANISM.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_A.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_B.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_C.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_D.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_E.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_G.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_H.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_I.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_N.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_O.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_R.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_S.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_T.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_W.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_Y.png",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Puppet.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/PuppetPoseLibrary.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/PuppetPoseLibrary104.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/R03.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/R12.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/R12Support.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/RepairEventActor.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/WORKSHOP.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R105/RepairEventActor_R105.fbx",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/Art/Models/Model.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/ConRoiGame/Audio/Chợ vắng.wav",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/ConRoiGame/Audio/Drone.wav",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/ConRoiGame/Audio/Gió mặt hồ.wav",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/ConRoiGame/Audio/Gió trên dốc.wav",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/ConRoiGame/Audio/Gỗ va.wav",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/ConRoiGame/Audio/Phòng trọ.wav",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/ConRoiGame/Audio/Thông báo.wav",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/ConRoiGame/Audio/V39_Step.wav",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/ConRoiGame/Audio/V39_Wire.wav",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Assets/ConRoiGame/Audio/Đồng hồ lớp.wav",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R100/OngDao_Dam_R100_Editable.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R101/Terrain_R101_Editable.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R101/Terrain_R101_Editable.blend1",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R102/Puppet_Poses_R102_Editable.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R102/Puppet_Poses_R102_Editable.blend1",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R102/Workshop_Investigation_R102_Editable.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R102/Workshop_Investigation_R102_Editable.blend1",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R102/Workshop_R102_Before_Headroom.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R102/Workshop_R102_Before_RepairTool.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R103/Puppet_Poses_R103_Editable.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R103/Repair_R12_R103_Animation.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R103/Repair_R12_R103_Animation.blend1",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R103/Workshop_Investigation_R103_Editable.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R103/Workshop_Investigation_R103_Editable.blend1",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R104/Cuff_Comparison_R104_Editable.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R104/Ha_R104_Editable.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R104/Ha_R104_Editable.blend1",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R104/Khai_R104_Editable.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R104/Khai_R104_Editable.blend1",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R104/Puppet_Poses_R104_Editable.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R104/Puppet_R104_Editable.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R104/Puppet_R104_Editable.blend1",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R104/Repair_R12_R104_Animation.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R104/Repair_R12_R104_Animation.blend1",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R104/Workshop_Investigation_R104_Editable.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R105/Repair_R12_R105_Animation.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R105/Repair_R12_R105_Animation.blend1",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R107/Terrain_R107_Editable.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R107/Terrain_R107_Editable.blend1",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R91/character-repairs-r91-source.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R91/north-bank-r91-extra-final.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R91/north-bank-r91-source-final.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R91/stall-sign-r91-source.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R92/character-repairs-r92-source.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/GroundSurvey_R93_Editable.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/Ground_I2_Inner_Transition_Study_R93.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/Ground_I2_R93_Editable.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/Ground_I2_South_Transition_Study_R93.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/Ground_I2_Transition_Trial_R93.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/Ground_I2_Wide_Transition_Study_R93.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/Langfarm_R93_Editable.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/langfarm-r93-editable-diagnostic.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/langfarm-r93-editable-structure.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/langfarm-r93-editable-study.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/langfarm-r93-photo-relative.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R95/Market_Ground_R95_Editable.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R95/Market_Ground_R95_PreFinal.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R96/Market_Ground_R96_Editable.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R97/Bridgehead_Bank_R97_Editable.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R97/Bridgehead_Bank_R97_Editable.blend1",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R98/OngDao_Dam_R98_Editable.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R99/OngDao_Dam_R99_SectionCandidate.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R99/Stages/Before_Approach_Continuity.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R99/Stages/Before_Flower_Surface_Mapping.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Downloads/Quaternius_R104/BaseCharacter.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Downloads/Quaternius_R104/Casual_2.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Downloads/Quaternius_R104/Casual_Female.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Downloads/Quaternius_R104/Casual_Hoodie.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Source/Downloads/Quaternius_R104/Casual_Male.blend",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Tools/python-deps/PIL/_avif.cp311-win_amd64.pyd",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Tools/python-deps/PIL/_imaging.cp311-win_amd64.pyd",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Tools/python-deps/PIL/_imagingcms.cp311-win_amd64.pyd",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Tools/python-deps/PIL/_imagingft.cp311-win_amd64.pyd",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Tools/python-deps/PIL/_imagingmath.cp311-win_amd64.pyd",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Tools/python-deps/PIL/_imagingmorph.cp311-win_amd64.pyd",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Tools/python-deps/PIL/_imagingtk.cp311-win_amd64.pyd",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Tools/python-deps/PIL/_webp.cp311-win_amd64.pyd",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Tools/python-deps/imageio_ffmpeg/binaries/ffmpeg-win-x86_64-v7.1.exe",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Tools/python-deps/shapely.libs/geos-bf067cd6ff74ee0ad5f3ff52c7ef08c9.dll",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Tools/python-deps/shapely.libs/geos_c-6dd9fd915eef8a7928285416bef1e666.dll",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Tools/python-deps/shapely.libs/msvcp140-0fa7eb792d3fbcf2233e4ea47e9144b9.dll",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Tools/python-deps/shapely/_geometry_helpers.cp311-win_amd64.pyd",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Tools/python-deps/shapely/_geos.cp311-win_amd64.pyd",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Tools/python-deps/shapely/lib.cp311-win_amd64.pyd",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    },
+    {
+      "path": "Tools/python-deps/triangle/core.cp311-win_amd64.pyd",
+      "exists": true,
+      "is_pointer": false,
+      "size_matches": true
+    }
+  ],
+  "no_mutation": true
+}

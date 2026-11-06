@@ -1,0 +1,1665 @@
+{
+  "compiled_files": 336,
+  "flags": [
+    {
+      "path": "Assets/CanopyAccessTest_20261014/CanopyAccessRun.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/DaLatMovementTest_20261013/DaLatManualMovementRecorder.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/DaLatMovementTest_20261013/DaLatRayMissProbe.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/ChanDoan/GhiBangChungHienThiV47.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/ChanDoan/GhiNhanTraiNghiemV40.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/CharacterCraftV44.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiCompletionV41.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiExperienceV42.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiFinishV40.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiHandoffV47.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiLakeMarketV34.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiModelLocations.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiOngDaoV35.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR21HedgeContinuity.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR21Preflight.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR21ProductReview.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR21RecoveryPrep.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR22Scenery.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR22Screen.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR23Build.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR23Opening.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR24Build.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR24Reference.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR25Build.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR25Slope.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR26Build.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR26Slope.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR27Slope.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR28School.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR29Finalize.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR29Inventory.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR29School.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR30.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR30AssetCache.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR30BuildCompatibility.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR32.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR33Chair.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR34.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR35.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR36.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR37.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR38.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR39.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR40.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR41.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR41Survey.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiR42.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiRepairV48.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiReviewV43.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiReviewV44.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiReviewV45.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiReviewV46.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiReviewV47.cs",
+      "flags": [
+        "reflection",
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiRouteV32.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiRouteV33.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiSceneAssembly.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiSchoolFurnitureV37.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiSchoolV37.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiSchoolV38.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiShoreImport.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiSlopeV39.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiStabilizationV36.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48AcceptanceRepair.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48MapAudit.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48Normals.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R14.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R15.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R16.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R19.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R20.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R20PhotoAudit.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21ApproachLayers.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21AssetPass.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21Boundaries.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21BoundaryCapsule.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21BoundaryFinish.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21BridgeLinks.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21ConstructionNormals.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21ContactFinish.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21Footpaths.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21GeometryAudit.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21LakeMarketBoundary.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21Landscape.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21NativeFollowup.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21PavingEdges.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21PromenadeEdges.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21RecoveryFix.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21RecoveryGeometry.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21RegroundBoundary.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21SampleRefinement.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21Shore.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21TerrainBoundary.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48R21WaterSupportAudit.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48StateAudit.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/ConRoiV48SupportFacesRepair.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/KiemTraNguonVaBuild.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Editor/Tooling3DTrial.cs",
+      "flags": [
+        "AssetDatabase"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/GiaoDien/HoanThienTrinhBayV40.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/AudioProbeV40.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/EntryProfileV47.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/MapReviewCaptureV48.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R30NativeLifecycleReview.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R30WalkReview.cs",
+      "flags": [
+        "Resources",
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R31ObservationTelemetry.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R32WalkReview.cs",
+      "flags": [
+        "Resources",
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R33ChairReview.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R34WalkReview.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R35WalkReview.cs",
+      "flags": [
+        "Resources",
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R36IntegrationReview.cs",
+      "flags": [
+        "Resources",
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R37LakeReview.cs",
+      "flags": [
+        "Resources",
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R38LakeReview.cs",
+      "flags": [
+        "Resources",
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R39GeometryProbe.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R39LakeReview.cs",
+      "flags": [
+        "Resources",
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R40LakeAudit.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R41SlopeReview.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R42AudioCapture.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R42JourneyReview.cs",
+      "flags": [
+        "Resources",
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/VerificationInputIsolationV43.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/Scripts/MoiTruong/HinhAnhTrangThaiMo.cs",
+      "flags": [
+        "reflection"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.AcceptanceV47.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.ActingV45.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.BoundaryV44.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Capture.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Experience.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.FeedbackV48.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.GddV47.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Grounded.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.HitchesV45.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.JourneyChecks.cs",
+      "flags": [
+        "Resources",
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.MaterialReview.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.OngDao.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Region.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.School.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.SchoolIntegration.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.SlopeIntegration.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Standalone.cs",
+      "flags": [
+        "Resources",
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Story.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Walkthrough.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Wall.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ManualWalk.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3RouteFixture.cs",
+      "flags": [
+        "Define"
+      ]
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/Editor/C3LiveEditorBridge.cs",
+      "flags": [
+        "reflection",
+        "AssetDatabase"
+      ]
+    }
+  ],
+  "literal_asset_roots": {
+    "Assets/CanopyAccessTest_20261014/DaLatMovementTest.unity": [
+      "Assets/CanopyAccessTest_20261014/Editor/CanopyAccessSetup.cs"
+    ],
+    "Assets/Scenes/JourneyExperience_v41.unity": [
+      "Assets/Scripts/Editor/ConRoiCompletionV41.cs",
+      "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Region.cs",
+      "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Region.cs"
+    ],
+    "Assets/Art/Environment/JourneyV41": [
+      "Assets/Scripts/Editor/ConRoiCompletionV41.cs"
+    ],
+    "Assets/Art/Environment/LakeGateMarketV33/surfaces.json": [
+      "Assets/Scripts/Editor/ConRoiCompletionV41.cs"
+    ],
+    "Assets/Art/Environment/JourneyV40/Pine_Layer_Conical.asset": [
+      "Assets/Scripts/Editor/ConRoiCompletionV41.cs"
+    ],
+    "Assets/Art/Environment/JourneyV40/TimberGrain.png": [
+      "Assets/Scripts/Editor/ConRoiCompletionV41.cs",
+      "Assets/Scripts/Editor/ConRoiExperienceV42.cs"
+    ],
+    "Assets/Scenes/JourneyExperience_v42.unity": [
+      "Assets/Scripts/Editor/ConRoiExperienceV42.cs",
+      "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Region.cs",
+      "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Region.cs"
+    ],
+    "Assets/Art/Environment/JourneyV42": [
+      "Assets/Scripts/Editor/ConRoiExperienceV42.cs",
+      "Assets/Scripts/Editor/ConRoiV48Normals.cs"
+    ],
+    "Assets/Art/Environment/JourneyV41/Carved_Tapered_Torso.asset": [
+      "Assets/Scripts/Editor/ConRoiExperienceV42.cs"
+    ],
+    "Assets/Scenes/JourneyExperience_v40.unity": [
+      "Assets/Scripts/Editor/ConRoiFinishV40.cs",
+      "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Region.cs",
+      "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Region.cs"
+    ],
+    "Assets/Art/Environment/JourneyV40": [
+      "Assets/Scripts/Editor/ConRoiFinishV40.cs"
+    ],
+    "Assets/Art/Environment/SchoolV38/WorldText.mat": [
+      "Assets/Scripts/Editor/ConRoiFinishV40.cs",
+      "Assets/Scripts/Editor/ConRoiR24Reference.cs",
+      "Assets/Scripts/Editor/ConRoiR28School.cs",
+      "Assets/Scripts/Editor/ConRoiSchoolV38.cs",
+      "Assets/Scripts/Editor/ConRoiSlopeV39.cs"
+    ],
+    "Assets/Scenes/JourneyAcceptance_v47_rc3.unity": [
+      "Assets/Scripts/Editor/ConRoiHandoffV47.cs",
+      "Assets/Scripts/Editor/ConRoiRepairV48.cs",
+      "Assets/Scripts/Editor/ConRoiRepairV48.cs",
+      "Assets/Scripts/Editor/ConRoiRepairV48.cs",
+      "Assets/Scripts/Editor/ConRoiRepairV48.cs",
+      "Assets/Scripts/Editor/ConRoiRepairV48.cs",
+      "Assets/Scripts/Editor/ConRoiV48StateAudit.cs"
+    ],
+    "Assets/Scenes/LakeMarketStory_v34.unity": [
+      "Assets/Scripts/Editor/ConRoiLakeMarketV34.cs",
+      "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Region.cs",
+      "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Region.cs"
+    ],
+    "Assets/Art/Gameplay/LakeMarketV34": [
+      "Assets/Scripts/Editor/ConRoiLakeMarketV34.cs"
+    ],
+    "Assets/Art/Models/Model.blend": [
+      "Assets/Scripts/Editor/ConRoiLakeMarketV34.cs",
+      "Assets/Scripts/Editor/ConRoiSceneAssembly.cs",
+      "Assets/Scripts/Editor/ConRoiSchoolV37.cs",
+      "Assets/WRouteC3Test_v30_20261016/Editor/C3LiveEditorBridge.cs"
+    ],
+    "Assets/ConRoiGame/Audio": [
+      "Assets/Scripts/Editor/ConRoiLakeMarketV34.cs"
+    ],
+    "Assets/ConRoiGame/Audio/Gỗ va.wav": [
+      "Assets/Scripts/Editor/ConRoiLakeMarketV34.cs",
+      "Assets/Scripts/Editor/ConRoiSlopeV39.cs"
+    ],
+    "Assets/ConRoiGame/Audio/Drone.wav": [
+      "Assets/Scripts/Editor/ConRoiLakeMarketV34.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r28.unity": [
+      "Assets/Scripts/Editor/ConRoiModelLocations.cs",
+      "Assets/Scripts/Editor/ConRoiModelLocations.cs",
+      "Assets/Scripts/Editor/ConRoiModelLocations.cs",
+      "Assets/Scripts/Editor/ConRoiR28School.cs"
+    ],
+    "Assets/Art/Environment/OngDaoV35": [
+      "Assets/Scripts/Editor/ConRoiOngDaoV35.cs",
+      "Assets/Scripts/Editor/ConRoiR39.cs"
+    ],
+    "Assets/Scenes/LakeMarketStory_v35.unity": [
+      "Assets/Scripts/Editor/ConRoiOngDaoV35.cs",
+      "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Region.cs"
+    ],
+    "Assets": [
+      "Assets/Scripts/Editor/ConRoiOngDaoV35.cs",
+      "Assets/Scripts/Editor/ConRoiR30AssetCache.cs",
+      "Assets/Scripts/Editor/ConRoiRouteV33.cs",
+      "Assets/Scripts/Editor/ConRoiStabilizationV36.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r21_recoveryprep.unity": [
+      "Assets/Scripts/Editor/ConRoiR21HedgeContinuity.cs",
+      "Assets/Scripts/Editor/ConRoiR21Preflight.cs",
+      "Assets/Scripts/Editor/ConRoiR21ProductReview.cs",
+      "Assets/Scripts/Editor/ConRoiR21RecoveryPrep.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/RecoveryPrepR21": [
+      "Assets/Scripts/Editor/ConRoiR21HedgeContinuity.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/RecoveryFixR21/Cypress_Hedge.mat": [
+      "Assets/Scripts/Editor/ConRoiR21HedgeContinuity.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/RecoveryFixR21/Bank_Planted_Shoulders.mat": [
+      "Assets/Scripts/Editor/ConRoiR21HedgeContinuity.cs"
+    ],
+    "Assets/DaLatMovementTest_20261013/DaLatRayMissProbe.cs": [
+      "Assets/Scripts/Editor/ConRoiR21Preflight.cs"
+    ],
+    "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.cs": [
+      "Assets/Scripts/Editor/ConRoiR21Preflight.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r21_playtest.unity": [
+      "Assets/Scripts/Editor/ConRoiR21ProductReview.cs",
+      "Assets/Scripts/Editor/ConRoiR22Scenery.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/PlaytestR21": [
+      "Assets/Scripts/Editor/ConRoiR21ProductReview.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/SceneryR22": [
+      "Assets/Scripts/Editor/ConRoiR22Build.cs",
+      "Assets/Scripts/Editor/ConRoiR22Scenery.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r22.unity": [
+      "Assets/Scripts/Editor/ConRoiR22Scenery.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/PlaytestR21/PetalRed_Review.mat": [
+      "Assets/Scripts/Editor/ConRoiR22Scenery.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/PlaytestR21/PetalYellow_Review.mat": [
+      "Assets/Scripts/Editor/ConRoiR22Scenery.cs"
+    ],
+    "Assets/Art/Characters/R23/WoodenStep.json": [
+      "Assets/Scripts/Editor/ConRoiR23Build.cs",
+      "Assets/Scripts/Editor/ConRoiR23Opening.cs",
+      "Assets/Scripts/Editor/ConRoiR24Build.cs",
+      "Assets/Scripts/Editor/ConRoiR25Build.cs",
+      "Assets/Scripts/Editor/ConRoiR26Build.cs"
+    ],
+    "Assets/Art/UI/R23/ReadableUI.shader": [
+      "Assets/Scripts/Editor/ConRoiR23Build.cs",
+      "Assets/Scripts/Editor/ConRoiR24Build.cs",
+      "Assets/Scripts/Editor/ConRoiR25Build.cs",
+      "Assets/Scripts/Editor/ConRoiR26Build.cs"
+    ],
+    "Assets/Art/UI/R23/ReadableUI.mat": [
+      "Assets/Scripts/Editor/ConRoiR23Build.cs",
+      "Assets/Scripts/Editor/ConRoiR23Opening.cs",
+      "Assets/Scripts/Editor/ConRoiR23Opening.cs",
+      "Assets/Scripts/Editor/ConRoiR24Build.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/SceneryR22/Flowers_Red_0.asset": [
+      "Assets/Scripts/Editor/ConRoiR23Build.cs",
+      "Assets/Scripts/Editor/ConRoiR24Build.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/SceneryR22/Flowers_Yellow_2.asset": [
+      "Assets/Scripts/Editor/ConRoiR23Build.cs",
+      "Assets/Scripts/Editor/ConRoiR24Build.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/SceneryR22/MarketAwning.fbx": [
+      "Assets/Scripts/Editor/ConRoiR23Build.cs",
+      "Assets/Scripts/Editor/ConRoiR24Build.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/SceneryR22/WorldMist.shader": [
+      "Assets/Scripts/Editor/ConRoiR23Build.cs",
+      "Assets/Scripts/Editor/ConRoiR24Build.cs",
+      "Assets/Scripts/Editor/ConRoiR25Build.cs",
+      "Assets/Scripts/Editor/ConRoiR26Build.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/SceneryR22/Pipeline.asset": [
+      "Assets/Scripts/Editor/ConRoiR23Build.cs",
+      "Assets/Scripts/Editor/ConRoiR24Build.cs",
+      "Assets/Scripts/Editor/ConRoiR30.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/SceneryR22/IslandDeckCollider.asset": [
+      "Assets/Scripts/Editor/ConRoiR23Build.cs",
+      "Assets/Scripts/Editor/ConRoiR24Build.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r23.unity": [
+      "Assets/Scripts/Editor/ConRoiR23Opening.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/ReferenceR24/school_Peach_Plaster_True.asset": [
+      "Assets/Scripts/Editor/ConRoiR24Build.cs",
+      "Assets/Scripts/Editor/ConRoiR25Build.cs",
+      "Assets/Scripts/Editor/ConRoiR26Build.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/ReferenceR24/slope_Weathered_Concrete_True.asset": [
+      "Assets/Scripts/Editor/ConRoiR24Build.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/ReferenceR24/slope_Turquoise_Plaster_True.asset": [
+      "Assets/Scripts/Editor/ConRoiR24Build.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r24.unity": [
+      "Assets/Scripts/Editor/ConRoiR24Reference.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/ReferenceR24": [
+      "Assets/Scripts/Editor/ConRoiR24Reference.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/RecoveryFixR21/Bank_Gravel.mat": [
+      "Assets/Scripts/Editor/ConRoiR24Reference.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r25.unity": [
+      "Assets/Scripts/Editor/ConRoiR25Slope.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/SlopeR25": [
+      "Assets/Scripts/Editor/ConRoiR25Slope.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r26.unity": [
+      "Assets/Scripts/Editor/ConRoiR26Slope.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/SlopeR26": [
+      "Assets/Scripts/Editor/ConRoiR26Slope.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r27.unity": [
+      "Assets/Scripts/Editor/ConRoiR27Slope.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/SlopeR27": [
+      "Assets/Scripts/Editor/ConRoiR27Slope.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/SchoolR28": [
+      "Assets/Scripts/Editor/ConRoiR28School.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/SlopeR27/Textures": [
+      "Assets/Scripts/Editor/ConRoiR28School.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r29.unity": [
+      "Assets/Scripts/Editor/ConRoiR29Inventory.cs",
+      "Assets/Scripts/Editor/ConRoiR29Inventory.cs",
+      "Assets/Scripts/Editor/ConRoiR29Inventory.cs",
+      "Assets/Scripts/Editor/ConRoiR29School.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/SchoolR29": [
+      "Assets/Scripts/Editor/ConRoiR29School.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r30.unity": [
+      "Assets/Scripts/Editor/ConRoiR30.cs",
+      "Assets/Scripts/Editor/ConRoiR31Review.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/IntegrationR30": [
+      "Assets/Scripts/Editor/ConRoiR30.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/SceneryR22/Renderer.asset": [
+      "Assets/Scripts/Editor/ConRoiR30.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r32.unity": [
+      "Assets/Scripts/Editor/ConRoiR32.cs"
+    ],
+    "Assets/Art/Gameplay/Class203R32": [
+      "Assets/Scripts/Editor/ConRoiR32.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r33.unity": [
+      "Assets/Scripts/Editor/ConRoiR33Chair.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r34.unity": [
+      "Assets/Scripts/Editor/ConRoiR34.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r35.unity": [
+      "Assets/Scripts/Editor/ConRoiR35.cs"
+    ],
+    "Assets/Art/Gameplay/MarketR35": [
+      "Assets/Scripts/Editor/ConRoiR35.cs",
+      "Assets/Scripts/Editor/ConRoiR35.cs",
+      "Assets/Scripts/Editor/ConRoiR35.cs",
+      "Assets/Scripts/Editor/ConRoiR35.cs",
+      "Assets/Scripts/Editor/ConRoiR35.cs",
+      "Assets/Scripts/Editor/ConRoiR35.cs"
+    ],
+    "Assets/Art/Gameplay/MarketR35/Props.geometry.json": [
+      "Assets/Scripts/Editor/ConRoiR35.cs",
+      "Assets/Scripts/Editor/ConRoiR35.cs",
+      "Assets/Scripts/Editor/ConRoiR35.cs"
+    ],
+    "Assets/Art/Gameplay/MarketR35/Preview.mat": [
+      "Assets/Scripts/Editor/ConRoiR35.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r36.unity": [
+      "Assets/Scripts/Editor/ConRoiR36.cs"
+    ],
+    "Assets/Art/Gameplay/MarketR36": [
+      "Assets/Scripts/Editor/ConRoiR36.cs"
+    ],
+    "Assets/Art/Gameplay/MarketR36/DepthTestedFont.mat": [
+      "Assets/Scripts/Editor/ConRoiR36.cs",
+      "Assets/Scripts/Editor/ConRoiR37.cs",
+      "Assets/Scripts/Editor/ConRoiR41.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r37.unity": [
+      "Assets/Scripts/Editor/ConRoiR37.cs"
+    ],
+    "Assets/Art/Gameplay/LakeR37": [
+      "Assets/Scripts/Editor/ConRoiR37.cs",
+      "Assets/Scripts/Editor/ConRoiR38.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r38.unity": [
+      "Assets/Scripts/Editor/ConRoiR38.cs"
+    ],
+    "Assets/Art/Gameplay/LakeR38/Shoe.geometry.json": [
+      "Assets/Scripts/Editor/ConRoiR38.cs"
+    ],
+    "Assets/Art/Gameplay/LakeR38/Bao_Flat_Shoe_R38.asset": [
+      "Assets/Scripts/Editor/ConRoiR38.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r39.unity": [
+      "Assets/Scripts/Editor/ConRoiR39.cs",
+      "Assets/Scripts/KiemThuLichSu/R40LakeAudit.cs"
+    ],
+    "Assets/Art/Environment/LakeR39/OngDaoReflectionOverlook.fbx": [
+      "Assets/Scripts/Editor/ConRoiR39.cs"
+    ],
+    "Assets/Art/Environment/OngDaoV35/bridge_record.json": [
+      "Assets/Scripts/Editor/ConRoiR39.cs",
+      "Assets/Scripts/Editor/ConRoiV48AcceptanceRepair.cs",
+      "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.OngDao.cs"
+    ],
+    "Assets/Art/Environment/LakeR39/layout.json": [
+      "Assets/Scripts/Editor/ConRoiR39.cs",
+      "Assets/Scripts/Editor/ConRoiR39.cs"
+    ],
+    "Assets/Art/Environment/LakeR39/WaterReflection.mat": [
+      "Assets/Scripts/Editor/ConRoiR39.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r40.unity": [
+      "Assets/Scripts/Editor/ConRoiR40.cs",
+      "Assets/Scripts/KiemThuLichSu/R40LakeAudit.cs",
+      "Assets/Scripts/KiemThuLichSu/R40LakeAudit.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r41.unity": [
+      "Assets/Scripts/Editor/ConRoiR41.cs"
+    ],
+    "Assets/Art/Gameplay/SlopeR41": [
+      "Assets/Scripts/Editor/ConRoiR41.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r42.unity": [
+      "Assets/Scripts/Editor/ConRoiR42.cs",
+      "Assets/Scripts/Editor/ConRoiR43.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48.unity": [
+      "Assets/Scripts/Editor/ConRoiRepairV48.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48": [
+      "Assets/Scripts/Editor/ConRoiRepairV48.cs",
+      "Assets/Scripts/Editor/ConRoiV48AcceptanceRepair.cs",
+      "Assets/Scripts/Editor/ConRoiV48R15.cs",
+      "Assets/Scripts/Editor/ConRoiV48R19.cs",
+      "Assets/Scripts/Editor/ConRoiV48R19.cs",
+      "Assets/Scripts/Editor/ConRoiV48R20.cs",
+      "Assets/Scripts/Editor/ConRoiV48R20.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21NativeFollowup.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/Sign_Painted_Green.mat": [
+      "Assets/Scripts/Editor/ConRoiRepairV48.cs",
+      "Assets/Scripts/Editor/ConRoiRepairV48.cs"
+    ],
+    "Assets/Scenes/JourneyExperience_v43.unity": [
+      "Assets/Scripts/Editor/ConRoiReviewV43.cs"
+    ],
+    "Assets/Art/Environment/JourneyV43": [
+      "Assets/Scripts/Editor/ConRoiReviewV43.cs"
+    ],
+    "Assets/Art/Environment/JourneyV42/Old_BlueGreen_Glass.mat": [
+      "Assets/Scripts/Editor/ConRoiReviewV43.cs"
+    ],
+    "Assets/Art/Environment/JourneyV42/Pine_Needle_Shadow.mat": [
+      "Assets/Scripts/Editor/ConRoiReviewV43.cs"
+    ],
+    "Assets/Art/Environment/JourneyV42/Timber_Worn_Warm.mat": [
+      "Assets/Scripts/Editor/ConRoiReviewV43.cs",
+      "Assets/Scripts/Editor/ConRoiReviewV43.cs",
+      "Assets/Scripts/Editor/ConRoiReviewV44.cs"
+    ],
+    "Assets/Art/Environment/SchoolV38/Weathered_ ochre.mat": [
+      "Assets/Scripts/Editor/ConRoiReviewV43.cs",
+      "Assets/Scripts/Editor/ConRoiReviewV43.cs"
+    ],
+    "Assets/Art/Environment/SlopeV39/Retaining_Stone.mat": [
+      "Assets/Scripts/Editor/ConRoiReviewV43.cs",
+      "Assets/Scripts/Editor/ConRoiReviewV43.cs"
+    ],
+    "Assets/Art/Environment/SlopeV39/Old_ Timber.mat": [
+      "Assets/Scripts/Editor/ConRoiReviewV43.cs",
+      "Assets/Scripts/Editor/ConRoiReviewV43.cs"
+    ],
+    "Assets/Art/Environment/JourneyV42/Ha_Terracotta_Apron.mat": [
+      "Assets/Scripts/Editor/ConRoiReviewV43.cs"
+    ],
+    "Assets/Scenes/JourneyExperience_v44.unity": [
+      "Assets/Scripts/Editor/ConRoiReviewV44.cs"
+    ],
+    "Assets/Art/Environment/JourneyV44": [
+      "Assets/Scripts/Editor/ConRoiReviewV44.cs"
+    ],
+    "Assets/Scenes/JourneyExperience_v45.unity": [
+      "Assets/Scripts/Editor/ConRoiReviewV45.cs"
+    ],
+    "Assets/Scenes/JourneyExperience_v46.unity": [
+      "Assets/Scripts/Editor/ConRoiReviewV46.cs"
+    ],
+    "Assets/Art/Environment/HumanPalmV46.asset": [
+      "Assets/Scripts/Editor/ConRoiReviewV46.cs"
+    ],
+    "Assets/Scenes/JourneyAcceptance_v47.unity": [
+      "Assets/Scripts/Editor/ConRoiReviewV47.cs"
+    ],
+    "Assets/ConRoiGame/Audio/Thông báo.wav": [
+      "Assets/Scripts/Editor/ConRoiReviewV47.cs"
+    ],
+    "Assets/Art/Environment/LakeGateMarketV32": [
+      "Assets/Scripts/Editor/ConRoiRouteV32.cs"
+    ],
+    "Assets/Scenes/LakeGateMarket_v32.unity": [
+      "Assets/Scripts/Editor/ConRoiRouteV32.cs",
+      "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Region.cs"
+    ],
+    "Assets/WRouteC3Test_v30_20261016/DaLatMovementTest.unity": [
+      "Assets/Scripts/Editor/ConRoiRouteV32.cs",
+      "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.cs",
+      "Assets/WRouteC3Test_v30_20261016/C3ManualWalk.cs",
+      "Assets/WRouteC3Test_v30_20261016/C3RouteFixture.cs",
+      "Assets/WRouteC3Test_v30_20261016/C3RouteFixture.cs",
+      "Assets/WRouteC3Test_v30_20261016/Editor/C3LiveEditorBridge.cs"
+    ],
+    "Assets/Scenes": [
+      "Assets/Scripts/Editor/ConRoiRouteV32.cs"
+    ],
+    "Assets/Art/Environment/LakeGateMarketV33": [
+      "Assets/Scripts/Editor/ConRoiRouteV33.cs"
+    ],
+    "Assets/Scenes/LakeGateMarket_v33.unity": [
+      "Assets/Scripts/Editor/ConRoiRouteV33.cs",
+      "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Region.cs",
+      "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Region.cs",
+      "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Region.cs"
+    ],
+    "Assets/ConRoiGame": [
+      "Assets/Scripts/Editor/ConRoiSceneAssembly.cs"
+    ],
+    "Assets/WRouteC3Test_v30_20261016/route_fixture.json": [
+      "Assets/Scripts/Editor/ConRoiSceneAssembly.cs"
+    ],
+    "Assets/Art/Environment/SchoolV37": [
+      "Assets/Scripts/Editor/ConRoiSchoolFurnitureV37.cs",
+      "Assets/Scripts/Editor/ConRoiSchoolV37.cs"
+    ],
+    "Assets/Scenes/SchoolContinuation_v37.unity": [
+      "Assets/Scripts/Editor/ConRoiSchoolV37.cs"
+    ],
+    "Assets/Art/Environment/StabilizationV36/MarketPosts_Outward.asset": [
+      "Assets/Scripts/Editor/ConRoiSchoolV37.cs",
+      "Assets/Scripts/Editor/ConRoiSchoolV37.cs",
+      "Assets/Scripts/Editor/ConRoiStabilizationV36.cs"
+    ],
+    "Assets/ConRoiGame/Audio/Đồng hồ lớp.wav": [
+      "Assets/Scripts/Editor/ConRoiSchoolV37.cs"
+    ],
+    "Assets/Scenes/SchoolIntegration_v38.unity": [
+      "Assets/Scripts/Editor/ConRoiSchoolV38.cs",
+      "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Region.cs"
+    ],
+    "Assets/Art/Environment/SchoolV38": [
+      "Assets/Scripts/Editor/ConRoiSchoolV38.cs",
+      "Assets/Scripts/Editor/ConRoiSchoolV38.cs"
+    ],
+    "Assets/Art/Environment/LakeShoreV31": [
+      "Assets/Scripts/Editor/ConRoiShoreImport.cs"
+    ],
+    "Assets/Art/Environment/LakeGateMarket": [
+      "Assets/Scripts/Editor/ConRoiShoreImport.cs",
+      "Assets/Scripts/Editor/ConRoiShoreImport.cs"
+    ],
+    "Assets/Scenes/JourneyIntegration_v39.unity": [
+      "Assets/Scripts/Editor/ConRoiSlopeV39.cs",
+      "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Region.cs"
+    ],
+    "Assets/Art/Environment/SlopeV39": [
+      "Assets/Scripts/Editor/ConRoiSlopeV39.cs"
+    ],
+    "Assets/ConRoiGame/Audio/Gió trên dốc.wav": [
+      "Assets/Scripts/Editor/ConRoiSlopeV39.cs"
+    ],
+    "Assets/ConRoiGame/Audio/V39_Wire.wav": [
+      "Assets/Scripts/Editor/ConRoiSlopeV39.cs"
+    ],
+    "Assets/ConRoiGame/Audio/V39_Step.wav": [
+      "Assets/Scripts/Editor/ConRoiSlopeV39.cs"
+    ],
+    "Assets/Scenes/LakeMarketIntegration_v36.unity": [
+      "Assets/Scripts/Editor/ConRoiStabilizationV36.cs",
+      "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Region.cs"
+    ],
+    "Assets/Art/Environment/StabilizationV36/SE_Shoulders.asset": [
+      "Assets/Scripts/Editor/ConRoiStabilizationV36.cs"
+    ],
+    "Assets/Art/Environment/StabilizationV36": [
+      "Assets/Scripts/Editor/ConRoiStabilizationV36.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r11.unity": [
+      "Assets/Scripts/Editor/ConRoiV48AcceptanceRepair.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r10.unity": [
+      "Assets/Scripts/Editor/ConRoiV48AcceptanceRepair.cs",
+      "Assets/Scripts/Editor/ConRoiV48MapAudit.cs",
+      "Assets/Scripts/Editor/ConRoiV48StateAudit.cs"
+    ],
+    "Assets/Art/Environment/OngDaoV35/OD35_Concrete.mat": [
+      "Assets/Scripts/Editor/ConRoiV48AcceptanceRepair.cs",
+      "Assets/Scripts/Editor/ConRoiV48R15.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21BoundaryCapsule.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/FinitePineNormals": [
+      "Assets/Scripts/Editor/ConRoiV48Normals.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r12.unity": [
+      "Assets/Scripts/Editor/ConRoiV48R14.cs",
+      "Assets/Scripts/Editor/ConRoiV48SupportFacesRepair.cs",
+      "Assets/Scripts/Editor/ConRoiV48SupportFacesRepair.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r14.unity": [
+      "Assets/Scripts/Editor/ConRoiV48R14.cs",
+      "Assets/Scripts/Editor/ConRoiV48R15.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r15.unity": [
+      "Assets/Scripts/Editor/ConRoiV48R15.cs",
+      "Assets/Scripts/Editor/ConRoiV48R16.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/ExportPolicyR19": [
+      "Assets/Scripts/Editor/ConRoiV48R19.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r19.unity": [
+      "Assets/Scripts/Editor/ConRoiV48R19.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r17.unity": [
+      "Assets/Scripts/Editor/ConRoiV48R19.cs",
+      "Assets/Scripts/Editor/ConRoiV48R19.cs",
+      "Assets/Scripts/Editor/ConRoiV48R20.cs",
+      "Assets/Scripts/Editor/ConRoiV48R20.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/ExportPolicyR19/SE_Shoulder_Local.asset": [
+      "Assets/Scripts/Editor/ConRoiV48R19.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/ExportPolicyR20": [
+      "Assets/Scripts/Editor/ConRoiV48R20.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r20.unity": [
+      "Assets/Scripts/Editor/ConRoiV48R20.cs",
+      "Assets/Scripts/Editor/ConRoiV48R20PhotoAudit.cs",
+      "Assets/Scripts/Editor/ConRoiV48R20PhotoAudit.cs",
+      "Assets/Scripts/Editor/ConRoiV48R20PhotoAudit.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/ExportPolicyR20/SE_Shoulder_Local.asset": [
+      "Assets/Scripts/Editor/ConRoiV48R20.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21Footpaths.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r21.unity": [
+      "Assets/Scripts/Editor/ConRoiV48R21.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21ApproachLayers.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21ApproachLayers.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21AssetPass.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21Boundaries.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21BoundaryAudit.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21BoundaryCapsule.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21BoundaryCapsule.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21BoundaryFinish.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21BridgeLinks.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21BridgeLinks.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21ConstructionNormals.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21ContactFinish.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21ContactFinish.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21Footpaths.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21GeometryAudit.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21LakeMarketBoundary.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21LakeMarketBoundary.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21LakeMarketBoundary.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21LakeMarketBoundary.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21Landscape.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21Landscape.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21NativeFollowup.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21NativeFollowup.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21NativeFollowup.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21NativeFollowup.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21NativeFollowup.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21PavingEdges.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21PromenadeEdges.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21Reachability.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21RecoveryFix.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21RegroundBoundary.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21SampleRefinement.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21Shore.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21TerrainBoundary.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21WaterSupportAudit.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/FlowersR21": [
+      "Assets/Scripts/Editor/ConRoiV48R21AssetPass.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21AssetPass.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/BoundaryR21": [
+      "Assets/Scripts/Editor/ConRoiV48R21Boundaries.cs"
+    ],
+    "Assets/Art/Environment/OngDaoV35/OD35_GreenMetal.mat": [
+      "Assets/Scripts/Editor/ConRoiV48R21Boundaries.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21LakeMarketBoundary.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21LakeMarketBoundary.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21TerrainBoundary.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/BoundaryFinishR21": [
+      "Assets/Scripts/Editor/ConRoiV48R21BoundaryFinish.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/LandscapeR21": [
+      "Assets/Scripts/Editor/ConRoiV48R21BridgeLinks.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21Footpaths.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21Landscape.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21PavingEdges.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21PromenadeEdges.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/ContactFinishR21": [
+      "Assets/Scripts/Editor/ConRoiV48R21ConstructionNormals.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21ContactFinish.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21ContactFinish.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/ExportPolicyR20/RouteSurfaces.fbx": [
+      "Assets/Scripts/Editor/ConRoiV48R21Footpaths.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21Footpaths.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21Landscape.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/LakeMarketBoundaryR21": [
+      "Assets/Scripts/Editor/ConRoiV48R21LakeMarketBoundary.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21RegroundBoundary.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21TerrainBoundary.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/ShoreR21/R21_LocalBank_Surface_142.asset": [
+      "Assets/Scripts/Editor/ConRoiV48R21Landscape.cs"
+    ],
+    "Assets/Art/Environment/OngDaoV35/OD35_Paving.mat": [
+      "Assets/Scripts/Editor/ConRoiV48R21Landscape.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21PavingEdges.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r21_recoveryfix.unity": [
+      "Assets/Scripts/Editor/ConRoiV48R21RecoveryFix.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21RecoveryGeometry.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/RecoveryFixR21": [
+      "Assets/Scripts/Editor/ConRoiV48R21RecoveryFix.cs",
+      "Assets/Scripts/Editor/ConRoiV48R21RecoveryGeometry.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/BoundaryFinishR21/Cypress_Hedge.mat": [
+      "Assets/Scripts/Editor/ConRoiV48R21RecoveryGeometry.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/ShoreR21": [
+      "Assets/Scripts/Editor/ConRoiV48R21Shore.cs"
+    ],
+    "Assets/Scenes/JourneyRepair_v48_r8_isolation.unity": [
+      "Assets/Scripts/Editor/ConRoiV48StateAudit.cs"
+    ],
+    "Assets/Art/Environment/JourneyV48/BridgeRepairR12/BridgeLocalSupport.fbx": [
+      "Assets/Scripts/Editor/ConRoiV48SupportFacesRepair.cs"
+    ],
+    "Assets/Scenes/JourneyPresentation_v48_r92.unity": [
+      "Assets/Scripts/Editor/KiemTraNguonVaBuild.cs"
+    ],
+    "Assets/Scenes/JourneyPresentation_v48_r90.unity": [
+      "Assets/Scripts/Editor/KiemTraNguonVaBuild.cs"
+    ],
+    "Assets/Scenes/JourneyPresentation_v48_r91.unity": [
+      "Assets/Scripts/Editor/KiemTraNguonVaBuild.cs"
+    ],
+    "Assets/_Recovery/0 (2).unity": [
+      "Assets/Scripts/Editor/KiemTraNguonVaBuild.cs"
+    ],
+    "Assets/Art/Terrain/New Terrain.asset": [
+      "Assets/Scripts/Editor/KiemTraNguonVaBuild.cs"
+    ],
+    "Assets/Tooling3DTrial": [
+      "Assets/Scripts/Editor/Tooling3DTrial.cs"
+    ],
+    "Assets/Art/Environment/LakeShoreV31/landscape.json": [
+      "Assets/WRouteC3Test_v30_20261016/Editor/C3LiveEditorBridge.cs"
+    ],
+    "Assets/Art/Environment/LakeShoreV31/LakeShoreV31.prefab": [
+      "Assets/WRouteC3Test_v30_20261016/Editor/C3LiveEditorBridge.cs"
+    ],
+    "Assets/Art/Environment/LakeGateMarket/LakeGateMarketContext.prefab": [
+      "Assets/WRouteC3Test_v30_20261016/Editor/C3LiveEditorBridge.cs"
+    ],
+    "Assets/ConRoiGame/ConRoi.unity": [
+      "Assets/WRouteC3Test_v30_20261016/Editor/C3LiveEditorBridge.cs"
+    ],
+    "Assets/Art/Models/Main_character.blend": [
+      "Assets/WRouteC3Test_v30_20261016/Editor/C3LiveEditorBridge.cs"
+    ],
+    "Assets/Art/Models/main_character/texture_fbx/texture.fbx": [
+      "Assets/WRouteC3Test_v30_20261016/Editor/C3LiveEditorBridge.cs"
+    ]
+  },
+  "resources_literal_keys": [
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R30WalkReview.cs",
+      "key": "VerificationV36/bridge"
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R30WalkReview.cs",
+      "key": "VerificationV36/route"
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R30WalkReview.cs",
+      "key": "VerificationV36/route"
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R32WalkReview.cs",
+      "key": "VerificationV36/bridge"
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R32WalkReview.cs",
+      "key": "VerificationV36/route"
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R32WalkReview.cs",
+      "key": "VerificationV36/route"
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R35WalkReview.cs",
+      "key": "VerificationV36/route"
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R36IntegrationReview.cs",
+      "key": "VerificationV36/route"
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R37LakeReview.cs",
+      "key": "VerificationV36/bridge"
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R38LakeReview.cs",
+      "key": "VerificationV36/bridge"
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R39LakeReview.cs",
+      "key": "VerificationV36/bridge"
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R42JourneyReview.cs",
+      "key": "VerificationV36/bridge"
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R42JourneyReview.cs",
+      "key": "VerificationV36/route"
+    },
+    {
+      "path": "Assets/Scripts/KiemThuLichSu/R42JourneyReview.cs",
+      "key": "VerificationV36/route"
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.JourneyChecks.cs",
+      "key": "VerificationV36/route"
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.JourneyChecks.cs",
+      "key": "VerificationV39/"
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.JourneyChecks.cs",
+      "key": "VerificationV39/school_completed"
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Standalone.cs",
+      "key": "VerificationV36/route"
+    },
+    {
+      "path": "Assets/WRouteC3Test_v30_20261016/C3ActualPlayRun.Standalone.cs",
+      "key": "VerificationV36/bridge"
+    }
+  ],
+  "absolute_D_Game_consumers": [],
+  "policy": "No asset moved; historical Editor path consumers require retention or explicit deprecation decision, not scene-only pruning"
+}

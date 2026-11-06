@@ -1,3 +1,5 @@
+> 07/11/2026: [Rà soát mới](Review20261107/README.md). Baseline rà `90147d9`; checkout sạch BLOCKED_CAPACITY, chưa nâng task branch. Không kế thừa kiểm máy gốc thành PASS checkout.
+
 # Clone/LFS và bắt đầu
 
 Repo local `D:/ConRoi`; nhánh chuẩn bị `chore/prepare-r107`. Không có remote trong đợt này. URL từng được nhắc không tự được thêm; yêu cầu mới nhất là **không push**. Xem `HANDOFF.md` để biết commit thực tế và trạng thái checkout.

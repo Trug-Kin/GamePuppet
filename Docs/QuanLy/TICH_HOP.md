@@ -1,3 +1,5 @@
+> 07/11/2026: [Rà soát mới](Review20261107/README.md). Baseline rà `90147d9`; checkout sạch BLOCKED_CAPACITY, chưa nâng task branch. Không kế thừa kiểm máy gốc thành PASS checkout.
+
 # Tích hợp Git cho ba người
 
 Unity **6000.6.2f1**, URP/package lock giữ nguyên. Không nâng package hoặc đổi schema/save IDs. Scene checkpoint `Assets/Scenes/JourneyPresentation_v48_r107.unity` giữ nguyên. Xem README đợt để biết scene entry thực tế sau chuẩn bị.

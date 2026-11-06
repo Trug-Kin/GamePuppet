@@ -1,0 +1,39 @@
+{
+  "materialized_checkout_bytes": 6223984553,
+  "independent_lfs_object_bytes": 4503946222,
+  "git_object_bytes": 306433037,
+  "library_budget_bytes": 12380354545,
+  "library_budget_basis": "Existing original Library cache measured without following Library junction; conservative estimate, new import not run",
+  "reserve_bytes": 4294967296,
+  "total_required_bytes": 27709685653,
+  "drives": [
+    {
+      "path": "C:/",
+      "type": "FIXED_LOCAL",
+      "total": 301373321216,
+      "free": 10197442560,
+      "shortfall_bytes": 17512243093,
+      "sufficient": false
+    },
+    {
+      "path": "D:/",
+      "type": "FIXED_LOCAL",
+      "total": 209714147328,
+      "free": 2464395264,
+      "shortfall_bytes": 25245290389,
+      "sufficient": false
+    },
+    {
+      "path": "G:/",
+      "type": "FIXED_LOCAL",
+      "total": 301373321216,
+      "free": 9687568384,
+      "shortfall_bytes": 18022117269,
+      "sufficient": false
+    }
+  ],
+  "checkout_status": "BLOCKED_CAPACITY",
+  "unity_launched": false,
+  "external_cloud_or_removable_used": false,
+  "moving_to_D_Game_increases_D_free": false
+}

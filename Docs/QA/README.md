@@ -1,3 +1,5 @@
+> 07/11/2026: [Rà soát mới](../QuanLy/Review20261107/README.md). Baseline rà `90147d9`; checkout sạch BLOCKED_CAPACITY, chưa nâng task branch. Không kế thừa kiểm máy gốc thành PASS checkout.
+
 # QA của nhóm Con Rối
 
 Entry: `Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity`, bản copy r107 có GUID scene riêng; checkpoint r107 giữ nguyên. Unity6000.6.2f1. Người mới sau r107 **NOT_RUN**, không dùng kiểm tổng hợp thay người thật.

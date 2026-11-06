@@ -1,0 +1,13 @@
+{
+    "archive":  "D:\\Game\\ConRoi_LuuTru\\git-review-20261107-001945-00b993",
+    "deletedFiles":  0,
+    "batch":  "git-review-20261107-001945-00b993",
+    "restore":  "Use per-file old/new/SHA256; verify then copy back only if old absent, never overwrite conflicts",
+    "sourceGuidChanges":  0,
+    "stagingRetained":  true,
+    "additional_staging_bytes":  2108862,
+    "files":  8,
+    "bytes":  2108862,
+    "runtimeMediaMoved":  false,
+    "D_free_space_gain":  0
+}

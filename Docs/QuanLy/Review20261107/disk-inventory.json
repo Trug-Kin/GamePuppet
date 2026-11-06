@@ -1,0 +1,795 @@
+{
+  "drives": [
+    {
+      "path": "C:/",
+      "type": "FIXED_LOCAL",
+      "total": 301373321216,
+      "free": 10197442560
+    },
+    {
+      "path": "D:/",
+      "type": "FIXED_LOCAL",
+      "total": 209714147328,
+      "free": 2464395264
+    },
+    {
+      "path": "G:/",
+      "type": "FIXED_LOCAL",
+      "total": 301373321216,
+      "free": 9687568384
+    }
+  ],
+  "reparse_points": [
+    {
+      "path": "Library",
+      "target": "\\\\?\\D:\\ConRoi\\.build-cache\\r92-unity-library",
+      "followed": false
+    }
+  ],
+  "groups": {
+    "Test/BangChung": {
+      "files": 257536,
+      "bytes": 43300116577
+    },
+    "Docs/Reviews": {
+      "files": 21904,
+      "bytes": 29433699662
+    },
+    "Test/BanChoiThu": {
+      "files": 1073,
+      "bytes": 15454835272
+    },
+    ".build-cache/r92-unity-library": {
+      "files": 68296,
+      "bytes": 12380354545
+    },
+    "Assets/Art": {
+      "files": 20356,
+      "bytes": 5615289423
+    },
+    "Test/KetQua": {
+      "files": 12289,
+      "bytes": 3790654045
+    },
+    "Source/Blender": {
+      "files": 85,
+      "bytes": 2928276898
+    },
+    "Assets/Scenes": {
+      "files": 245,
+      "bytes": 2639049066
+    },
+    "Assets/Model": {
+      "files": 3788,
+      "bytes": 1676563682
+    },
+    "Assets/Model.rar": {
+      "files": 1,
+      "bytes": 1433594944
+    },
+    "Assets/Blender": {
+      "files": 142,
+      "bytes": 539279424
+    },
+    "Docs/Organization": {
+      "files": 17,
+      "bytes": 233352180
+    },
+    "Test/Tam": {
+      "files": 415,
+      "bytes": 145467435
+    },
+    "Assets/_Recovery": {
+      "files": 12,
+      "bytes": 139411916
+    },
+    "Test/Output": {
+      "files": 203,
+      "bytes": 128829767
+    },
+    "Tools/python-deps": {
+      "files": 619,
+      "bytes": 115614497
+    },
+    "Docs/QuanLy": {
+      "files": 51,
+      "bytes": 97129473
+    },
+    "Docs/Tooling3D": {
+      "files": 421,
+      "bytes": 87986224
+    },
+    "Docs/Photo_3D_Model_Source": {
+      "files": 87,
+      "bytes": 40348726
+    },
+    "Docs/Photo_3D_Model_Source.zip": {
+      "files": 1,
+      "bytes": 39262579
+    },
+    "Test/BugModel": {
+      "files": 14,
+      "bytes": 34885803
+    },
+    "Docs/Checkpoints": {
+      "files": 25,
+      "bytes": 26219307
+    },
+    "Assets/ConRoi": {
+      "files": 34,
+      "bytes": 24443243
+    },
+    "Source/Downloads": {
+      "files": 15,
+      "bytes": 20437141
+    },
+    "Docs/SourceImages": {
+      "files": 24,
+      "bytes": 11592906
+    },
+    "Assets/ConRoiGame": {
+      "files": 1645,
+      "bytes": 10521958
+    },
+    "Assets/WRouteC3Test_v30_20261016": {
+      "files": 60,
+      "bytes": 8446816
+    },
+    "Logs/Editor-prev.log": {
+      "files": 1,
+      "bytes": 6302894
+    },
+    "Assets/DaLat-reference-sources-20261022": {
+      "files": 20,
+      "bytes": 5376902
+    },
+    ".tmp/scenario-skills-review": {
+      "files": 164,
+      "bytes": 5178545
+    },
+    "Docs/Archives": {
+      "files": 819,
+      "bytes": 4771482
+    },
+    ".tmp/scenario-codex-protocol": {
+      "files": 318,
+      "bytes": 3629800
+    },
+    ".tmp/scenario-discovery-codex-home": {
+      "files": 68,
+      "bytes": 3012568
+    },
+    ".agents/skills": {
+      "files": 104,
+      "bytes": 2928116
+    },
+    "Docs/References": {
+      "files": 7,
+      "bytes": 2924010
+    },
+    "Docs/Inventory": {
+      "files": 4,
+      "bytes": 2580730
+    },
+    "Docs/QA": {
+      "files": 372,
+      "bytes": 2353236
+    },
+    "Assets/Scripts": {
+      "files": 630,
+      "bytes": 2299821
+    },
+    "Tools/TaiTao": {
+      "files": 853,
+      "bytes": 2054139
+    },
+    "UserSettings/Layouts": {
+      "files": 2,
+      "bytes": 2018217
+    },
+    "Docs/PROJECT_GUIDE_AND_HISTORY.md": {
+      "files": 1,
+      "bytes": 676345
+    },
+    "Assets/CanopyAccessTest_20261014": {
+      "files": 11,
+      "bytes": 520986
+    },
+    "Logs/traces.jsonl": {
+      "files": 1,
+      "bytes": 485590
+    },
+    ".tmp/r44-add-resolution.png": {
+      "files": 1,
+      "bytes": 449254
+    },
+    "Docs/BLENDER_UNITY_WORKFLOW.md": {
+      "files": 1,
+      "bytes": 393331
+    },
+    ".tmp/r44-resolution.png": {
+      "files": 1,
+      "bytes": 340101
+    },
+    ".tmp/r44-new-resolution-popup.png": {
+      "files": 1,
+      "bytes": 332230
+    },
+    ".tmp/r44-editor-window.png": {
+      "files": 1,
+      "bytes": 327226
+    },
+    ".tmp/r44-foot-component-check.png": {
+      "files": 1,
+      "bytes": 286132
+    },
+    ".tmp/r44-runner-setup.png": {
+      "files": 1,
+      "bytes": 282449
+    },
+    ".tmp/r44-editor-close.png": {
+      "files": 1,
+      "bytes": 158458
+    },
+    "Logs/team-prepare-editor.log": {
+      "files": 1,
+      "bytes": 139719
+    },
+    "Logs/relay.txt": {
+      "files": 1,
+      "bytes": 138191
+    },
+    "Logs/Editor.log": {
+      "files": 1,
+      "bytes": 124697
+    },
+    "Assets/Tooling3DTrial": {
+      "files": 10,
+      "bytes": 109064
+    },
+    "Tools/QuanLy": {
+      "files": 28,
+      "bytes": 86806
+    },
+    "Docs/Fixtures": {
+      "files": 17,
+      "bytes": 79799
+    },
+    "Assets/HDRPDefaultResources": {
+      "files": 4,
+      "bytes": 79352
+    },
+    "Docs/CON_ROI_GDD_v3_4.txt": {
+      "files": 1,
+      "bytes": 74975
+    },
+    "Assets/Settings": {
+      "files": 14,
+      "bytes": 73565
+    },
+    "Logs/AssetImportWorkerHW1.log": {
+      "files": 1,
+      "bytes": 65480
+    },
+    "Logs/AssetImportWorkerHW0-prev.log": {
+      "files": 1,
+      "bytes": 64917
+    },
+    "Logs/artifacts": {
+      "files": 5,
+      "bytes": 63451
+    },
+    "Docs/CON_ROI_GDD_v2.2.txt": {
+      "files": 1,
+      "bytes": 63298
+    },
+    "Logs/AssetImportWorkerHW0.log": {
+      "files": 1,
+      "bytes": 63288
+    },
+    "Docs/Audits": {
+      "files": 2,
+      "bytes": 60881
+    },
+    "Docs/CON_ROI_GDD_v3.6_CHOT_TRIEN_KHAI.md": {
+      "files": 1,
+      "bytes": 48412
+    },
+    "Tools/__pycache__": {
+      "files": 3,
+      "bytes": 47483
+    },
+    "Docs/CON_ROI_GDD_v3.2.txt": {
+      "files": 1,
+      "bytes": 47452
+    },
+    "ProjectSettings/ProjectSettings.asset": {
+      "files": 1,
+      "bytes": 26517
+    },
+    "Logs/AssetImportWorkerHW2.log": {
+      "files": 1,
+      "bytes": 24975
+    },
+    "Assets/DaLatMovementTest_20261013": {
+      "files": 6,
+      "bytes": 18326
+    },
+    "Logs/AssetImportWorkerHW3.log": {
+      "files": 1,
+      "bytes": 18063
+    },
+    ".build-temp/write-test-docs.py": {
+      "files": 1,
+      "bytes": 16675
+    },
+    "Docs/Design": {
+      "files": 1,
+      "bytes": 16227
+    },
+    "Packages/packages-lock.json": {
+      "files": 1,
+      "bytes": 16156
+    },
+    "Tools/CapNhatHoSo.py": {
+      "files": 1,
+      "bytes": 15825
+    },
+    "Docs/GDDv2.1.txt": {
+      "files": 1,
+      "bytes": 15730
+    },
+    "Tools/ChuThichScript.py": {
+      "files": 1,
+      "bytes": 14483
+    },
+    "Tools/ToChucDuLieuKiem.py": {
+      "files": 1,
+      "bytes": 12477
+    },
+    "Assets/DaLat-reference-sources-20261022.zip": {
+      "files": 1,
+      "bytes": 12262
+    },
+    "Docs/HUONG_DAN_HOAN_THIEN_CONROI.md": {
+      "files": 1,
+      "bytes": 10584
+    },
+    "Docs/ASSET_SOURCES.md": {
+      "files": 1,
+      "bytes": 10312
+    },
+    "Tools/SapXepDuAn.py": {
+      "files": 1,
+      "bytes": 9351
+    },
+    "Test/README.md": {
+      "files": 1,
+      "bytes": 8601
+    },
+    "Docs/GDD_IMPLEMENTATION_CURRENT.md": {
+      "files": 1,
+      "bytes": 8185
+    },
+    "Tools/DieuKhienNhapLieu.py": {
+      "files": 1,
+      "bytes": 7983
+    },
+    ".tmp/ViFarm_References_IEEE.bib": {
+      "files": 1,
+      "bytes": 7875
+    },
+    "Builds/README.md": {
+      "files": 1,
+      "bytes": 6320
+    },
+    ".build-temp/finalize-docs.py": {
+      "files": 1,
+      "bytes": 5811
+    },
+    "ProjectSettings/InputManager.asset": {
+      "files": 1,
+      "bytes": 5804
+    },
+    ".build-temp/finalize-evidence.py": {
+      "files": 1,
+      "bytes": 4935
+    },
+    ".build-temp/finalize-test-reports.py": {
+      "files": 1,
+      "bytes": 4230
+    },
+    "Tools/KiemKeSapXep.py": {
+      "files": 1,
+      "bytes": 4026
+    },
+    ".build-temp/configure-test-tools.py": {
+      "files": 1,
+      "bytes": 3928
+    },
+    "Logs/upm.log": {
+      "files": 1,
+      "bytes": 3816
+    },
+    "ProjectSettings/QualitySettings.asset": {
+      "files": 1,
+      "bytes": 3723
+    },
+    "ProjectSettings/SceneTemplateSettings.json": {
+      "files": 1,
+      "bytes": 3535
+    },
+    "Tools/Unity": {
+      "files": 1,
+      "bytes": 3353
+    },
+    "ProjectSettings/GraphicsSettings.asset": {
+      "files": 1,
+      "bytes": 3134
+    },
+    "Tools/KiemTraBaoToan.py": {
+      "files": 1,
+      "bytes": 3064
+    },
+    "UserSettings/EditorUserSettings.asset": {
+      "files": 1,
+      "bytes": 2648
+    },
+    ".build-temp/reclassify-test-temp-evidence.py": {
+      "files": 1,
+      "bytes": 2596
+    },
+    "Tools/KiemUnity.ps1": {
+      "files": 1,
+      "bytes": 2529
+    },
+    "Packages/manifest.json": {
+      "files": 1,
+      "bytes": 2374
+    },
+    "Tools/README.md": {
+      "files": 1,
+      "bytes": 2338
+    },
+    "UserSettings/Search.settings": {
+      "files": 1,
+      "bytes": 2131
+    },
+    ".build-temp/final-test-supplement.py": {
+      "files": 1,
+      "bytes": 2095
+    },
+    ".build-temp/verify-test-protected.py": {
+      "files": 1,
+      "bytes": 2040
+    },
+    ".vscode/settings.json": {
+      "files": 1,
+      "bytes": 2020
+    },
+    ".build-temp/prepare-test-move.py": {
+      "files": 1,
+      "bytes": 2011
+    },
+    ".build-temp/recover-test-move.py": {
+      "files": 1,
+      "bytes": 1968
+    },
+    ".build-temp/update-test-links.py": {
+      "files": 1,
+      "bytes": 1921
+    },
+    "ProjectSettings/Physics2DSettings.asset": {
+      "files": 1,
+      "bytes": 1862
+    },
+    "Tools/DongGoiBanSapXep.py": {
+      "files": 1,
+      "bytes": 1802
+    },
+    "Tools/KiemDuLieuCanGiu.py": {
+      "files": 1,
+      "bytes": 1721
+    },
+    "ProjectSettings/EditorSettings.asset": {
+      "files": 1,
+      "bytes": 1687
+    },
+    "ProjectSettings/DynamicsManager.asset": {
+      "files": 1,
+      "bytes": 1553
+    },
+    "Test/PlaytestProfiles": {
+      "files": 1,
+      "bytes": 1542
+    },
+    "Tools/DuongDanKiem.py": {
+      "files": 1,
+      "bytes": 1530
+    },
+    "UserSettings/HierarchyWindow.settings": {
+      "files": 1,
+      "bytes": 1331
+    },
+    "Tools/GuiLenhUnity.py": {
+      "files": 1,
+      "bytes": 1319
+    },
+    "ProjectSettings/NavMeshAreas.asset": {
+      "files": 1,
+      "bytes": 1308
+    },
+    "ProjectSettings/MemorySettings.asset": {
+      "files": 1,
+      "bytes": 1192
+    },
+    "ProjectSettings/PackageManagerSettings.asset": {
+      "files": 1,
+      "bytes": 1157
+    },
+    "Assets/Readme.asset": {
+      "files": 1,
+      "bytes": 1144
+    },
+    "ProjectSettings/UnityConnectSettings.asset": {
+      "files": 1,
+      "bytes": 1063
+    },
+    "ProjectSettings/ProjectAuditorSettings.asset": {
+      "files": 1,
+      "bytes": 1036
+    },
+    "ProjectSettings/VFXManager.asset": {
+      "files": 1,
+      "bytes": 1001
+    },
+    ".tmp/extract_docx.py": {
+      "files": 1,
+      "bytes": 722
+    },
+    "UserSettings/HDRPUserSettings.asset": {
+      "files": 1,
+      "bytes": 712
+    },
+    "UserSettings/AI.Pbr": {
+      "files": 1,
+      "bytes": 687
+    },
+    "Logs/UDS-Service-prev.log": {
+      "files": 1,
+      "bytes": 671
+    },
+    "Logs/UDS-Service.log": {
+      "files": 1,
+      "bytes": 671
+    },
+    "UserSettings/AI.Animate": {
+      "files": 1,
+      "bytes": 639
+    },
+    "UserSettings/AI.Image": {
+      "files": 1,
+      "bytes": 635
+    },
+    "UserSettings/AI.Mesh": {
+      "files": 1,
+      "bytes": 630
+    },
+    ".tmp/r45-source-inspect.py": {
+      "files": 1,
+      "bytes": 617
+    },
+    "UserSettings/AI.Sound": {
+      "files": 1,
+      "bytes": 615
+    },
+    "ProjectSettings/EditorBuildSettings.asset": {
+      "files": 1,
+      "bytes": 604
+    },
+    "ProjectSettings/TagManager.asset": {
+      "files": 1,
+      "bytes": 581
+    },
+    "ProjectSettings/ShaderGraphSettings.asset": {
+      "files": 1,
+      "bytes": 556
+    },
+    "UserSettings/PlayModeUserSettings.asset": {
+      "files": 1,
+      "bytes": 495
+    },
+    "UserSettings/AI.Generators": {
+      "files": 1,
+      "bytes": 490
+    },
+    "Logs/shadercompiler-AssetImportWorkerHW0-0.log": {
+      "files": 1,
+      "bytes": 479
+    },
+    "ProjectSettings/URPProjectSettings.asset": {
+      "files": 1,
+      "bytes": 461
+    },
+    "ProjectSettings/AudioManager.asset": {
+      "files": 1,
+      "bytes": 413
+    },
+    "Logs/shadercompiler-AssetImportWorkerHW2-0.log": {
+      "files": 1,
+      "bytes": 398
+    },
+    "Logs/Editor-UDS.log": {
+      "files": 1,
+      "bytes": 393
+    },
+    "UserSettings/Search.index": {
+      "files": 1,
+      "bytes": 380
+    },
+    "Logs/shadercompiler-AssetImportWorkerHW3-0.log": {
+      "files": 1,
+      "bytes": 371
+    },
+    "ProjectSettings/Packages": {
+      "files": 1,
+      "bytes": 342
+    },
+    "Logs/AssetImportWorkerHW0-UDS-prev.log": {
+      "files": 1,
+      "bytes": 324
+    },
+    "Logs/AssetImportWorkerHW0-UDS.log": {
+      "files": 1,
+      "bytes": 324
+    },
+    "Logs/AssetImportWorkerHW1-UDS.log": {
+      "files": 1,
+      "bytes": 324
+    },
+    "Logs/AssetImportWorkerHW2-UDS.log": {
+      "files": 1,
+      "bytes": 324
+    },
+    "Logs/AssetImportWorkerHW3-UDS.log": {
+      "files": 1,
+      "bytes": 324
+    },
+    "Logs/Editor-UDS-prev.log": {
+      "files": 1,
+      "bytes": 313
+    },
+    "ProjectSettings/TimeManager.asset": {
+      "files": 1,
+      "bytes": 305
+    },
+    "ProjectSettings/VersionControlSettings.asset": {
+      "files": 1,
+      "bytes": 188
+    },
+    "Assets/Readme.asset.meta": {
+      "files": 1,
+      "bytes": 182
+    },
+    "Assets/WRouteC3Test_v30_20261016.meta": {
+      "files": 1,
+      "bytes": 180
+    },
+    ".vscode/launch.json": {
+      "files": 1,
+      "bytes": 178
+    },
+    "Assets/Blender.meta": {
+      "files": 1,
+      "bytes": 172
+    },
+    "Assets/CanopyAccessTest_20261014.meta": {
+      "files": 1,
+      "bytes": 172
+    },
+    "Assets/ConRoi.meta": {
+      "files": 1,
+      "bytes": 172
+    },
+    "Assets/ConRoiGame.meta": {
+      "files": 1,
+      "bytes": 172
+    },
+    "Assets/DaLat-reference-sources-20261022.meta": {
+      "files": 1,
+      "bytes": 172
+    },
+    "Assets/DaLatMovementTest_20261013.meta": {
+      "files": 1,
+      "bytes": 172
+    },
+    "Assets/HDRPDefaultResources.meta": {
+      "files": 1,
+      "bytes": 172
+    },
+    "Assets/Model.meta": {
+      "files": 1,
+      "bytes": 172
+    },
+    "Assets/Prefabs.meta": {
+      "files": 1,
+      "bytes": 172
+    },
+    "Assets/Resources.meta": {
+      "files": 1,
+      "bytes": 172
+    },
+    "Assets/Scenes.meta": {
+      "files": 1,
+      "bytes": 172
+    },
+    "Assets/Scripts.meta": {
+      "files": 1,
+      "bytes": 172
+    },
+    "Assets/Settings.meta": {
+      "files": 1,
+      "bytes": 172
+    },
+    "Assets/Tooling3DTrial.meta": {
+      "files": 1,
+      "bytes": 172
+    },
+    "Assets/_Recovery.meta": {
+      "files": 1,
+      "bytes": 172
+    },
+    "Assets/Art.meta": {
+      "files": 1,
+      "bytes": 169
+    },
+    "Docs/scene_assembly_current.json": {
+      "files": 1,
+      "bytes": 165
+    },
+    "Logs/trace-config.json": {
+      "files": 1,
+      "bytes": 161
+    },
+    "ProjectSettings/XRSettings.asset": {
+      "files": 1,
+      "bytes": 158
+    },
+    "ProjectSettings/MultiplayerManager.asset": {
+      "files": 1,
+      "bytes": 157
+    },
+    "Logs/shadercompiler-UnityShaderCompiler.exe-0.log": {
+      "files": 1,
+      "bytes": 156
+    },
+    "Assets/DaLat-reference-sources-20261022.zip.meta": {
+      "files": 1,
+      "bytes": 155
+    },
+    "Assets/Model.rar.meta": {
+      "files": 1,
+      "bytes": 155
+    },
+    "ProjectSettings/PhysicsCoreProjectSettings2D.asset": {
+      "files": 1,
+      "bytes": 151
+    },
+    "ProjectSettings/PresetManager.asset": {
+      "files": 1,
+      "bytes": 146
+    },
+    "ProjectSettings/ClusterInputManager.asset": {
+      "files": 1,
+      "bytes": 114
+    },
+    "ProjectSettings/ProjectVersion.txt": {
+      "files": 1,
+      "bytes": 83
+    },
+    ".vscode/extensions.json": {
+      "files": 1,
+      "bytes": 75
+    }
+  }
+}
