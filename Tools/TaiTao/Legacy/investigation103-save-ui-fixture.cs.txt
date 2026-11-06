@@ -1,0 +1,2 @@
+using UnityEngine;using UnityEditor;using ConRoi.Investigation.V36.R103;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){var s=Object.FindFirstObjectByType<InvestigationSession>();s.Save();r.Log("API saves unfinished UI test only, not conclusion proof");EditorApplication.isPlaying=false;}}

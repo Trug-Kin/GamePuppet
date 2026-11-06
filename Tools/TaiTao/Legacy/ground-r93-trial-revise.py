@@ -1,0 +1,18 @@
+from pathlib import Path
+p=Path('Test/Tam/ground-r93-transition-trial.py')
+s=p.read_text()
+s=s.replace('Ground_I2_Transition_Trial_R93.blend','Ground_I2_South_Transition_Study_R93.blend')
+s=s.replace('def delta(x,y,z,terrain=False):','def delta(x,y,z,terrain=False,offset=0):')
+s=s.replace('if terrain:w*=smooth(y/.3)','w*=smooth((z-cz)/6) # spatial southern-sector constraint, never a height-dependent guard')
+s=s.replace('return (target-.04-y if terrain else target-old)*w','return (target+offset-y)*w')
+s=s.replace("for i in np.flatnonzero(near):dy[i]=delta(*world[i],terrain=terrain)","offset=-.04 if terrain else (.06 if path.endswith(('Surface_153','Context_116')) else (.015 if path.endswith(('Surface_129','Surface_173','Context_111','Context_136')) else 0))\n for i in np.flatnonzero(near):dy[i]=delta(*world[i],terrain=terrain,offset=offset)")
+s=s.replace('retain island, bridge, old r88 pins and outer edge','retain island, bridge and outer edge; southern sector only; direct per-layer height blend')
+s=s.replace("D/'transition-trial.json'","D/'south-transition-study.json'")
+s=s.replace("M/'I2-trial-plan.png'","M/'I2-south-study-plan.png'")
+s=s.replace('sc.name=\'I2_GROUND_TRANSITION_TRIAL_NOT_INTEGRATED\'','sc.name=\'I2_SOUTH_STUDY_NOT_INTEGRATED\'')
+Path('Test/Tam/ground-r93-south-study.py').write_text(s)
+r=Path('Test/Tam/ground-r93-trial-reopen.py').read_text().replace('Ground_I2_Transition_Trial_R93.blend','Ground_I2_South_Transition_Study_R93.blend').replace("'trial-'","'south-study-'").replace('I2-trial-oblique','I2-south-study-oblique').replace('trial-reopen-audit.json','south-study-reopen-audit.json')
+Path('Test/Tam/ground-r93-south-reopen.py').write_text(r)
+for n in ['measure','quality']:
+ r=Path('Test/Tam/ground-r93-trial-'+n+'.py').read_text().replace('transition-trial.json','south-transition-study.json').replace("'trial-'","'south-study-'").replace('trial-layer-sections.json','south-study-layer-sections.json').replace('trial-section-comparison.json','south-study-section-comparison.json').replace('trial-face-grades.json','south-study-face-grades.json').replace('-trial-comparison.png','-south-study-comparison.png')
+ Path('Test/Tam/ground-r93-south-'+n+'.py').write_text(r)

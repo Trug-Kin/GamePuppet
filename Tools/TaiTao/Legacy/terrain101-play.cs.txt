@@ -1,0 +1,2 @@
+using UnityEngine;using UnityEditor;using UnityEditor.SceneManagement;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult result){if(!EditorSceneManager.GetActiveScene().path.EndsWith("r101.unity")||EditorSceneManager.GetActiveScene().isDirty)throw new System.Exception("Clean r98 required");EditorApplication.isPlaying=true;result.Log("Play requested; fixture remains opt-in outside Assets");}}

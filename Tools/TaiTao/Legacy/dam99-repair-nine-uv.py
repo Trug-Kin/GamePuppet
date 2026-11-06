@@ -1,0 +1,9 @@
+import bpy,json,numpy as np
+from pathlib import Path
+R=Path('D:/ConRoi');D=R/'Test/KetQua/journey_v48/dam_r99';P=R/'Source/Blender/JourneyV48/R99/OngDao_Dam_R99_SectionCandidate.blend';raw=(D/'Surface149-original-uv.bin').read_bytes();actual=np.frombuffer(raw,dtype='<f4',offset=4).reshape(-1,5).astype(float)
+bpy.ops.wm.open_mainfile(filepath=str(R/'Source/Blender/JourneyV48/R98/OngDao_Dam_R98_Editable.blend'));o=bpy.data.objects['C95_0182_Surface_149'];old=np.array([o.matrix_world@v.co for v in o.data.vertices]);old=np.c_[-old[:,0],old[:,2],-old[:,1]];assert len(old)==len(actual) and np.max(np.linalg.norm(old-actual[:,:3],axis=1))<.001
+bpy.ops.wm.open_mainfile(filepath=str(P));o=bpy.data.objects['C95_0182_Surface_149'];uv=o.data.uv_layers[0];valid=np.flatnonzero(np.isfinite(actual[:,3:]).all(1));fix=[]
+for li in range(len(uv.data)):
+ if np.isfinite(uv.data[li].uv).all():continue
+ ix=o.data.loops[li].vertex_index;p=actual[ix,:3];dd=np.linalg.norm(actual[valid,:3]-p,axis=1);near=valid[np.argsort(dd)[:12]];q=actual[near,:3]-p;mat=np.c_[q,np.ones(len(q))];fit=np.linalg.lstsq(mat,actual[near,3:],rcond=1e-6)[0];new=fit[-1];assert np.isfinite(new).all();uv.data[li].uv=new;fix.append(dict(loop=li,original_vertex=ix,uv=new.tolist(),nearest_valid_distance=float(dd.min()),method='Local affine UV continuation from 12 nearest finite original Unity UV vertices. Original Unity UV is also NaN here; not copied as valid.'))
+assert len(fix)==9,len(fix);(D/'uv-nine-repair.json').write_text(json.dumps(dict(inherited_actual_nan_vertices=int(np.sum(~np.isfinite(actual[:,3:]).all(1))),geometry_unchanged=True,other_uvs_unchanged=True,repairs=fix),indent=2));bpy.context.preferences.filepaths.save_version=0;bpy.ops.wm.save_as_mainfile(filepath=str(P),compress=True);print('RESULT nine inherited invalid UV loops repaired',flush=True)

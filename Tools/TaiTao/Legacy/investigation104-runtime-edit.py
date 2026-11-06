@@ -1,0 +1,12 @@
+from pathlib import Path
+R=Path('D:/ConRoi');P=R/'Assets/Scripts/InvestigationV36R104'
+p=P/'InvestigationActor.cs';s=p.read_text(encoding='utf-8').replace('public AnimationClip repairClip;','public AnimationClip repairClip;\n        public Transform nativeRoot; public AnimationClip nativeIdle; public float greetingUntil;\n        public void Greet(){greetingUntil=Time.time+1.2f;}')
+s=s.replace('            if(repairHands&&repairClip){repairClip.SampleAnimation(gameObject,0);return;}', '            var target=nativeRoot?nativeRoot.gameObject:gameObject;\n            if(repairHands&&repairClip){repairClip.SampleAnimation(target,0);return;}')
+s=s.replace('poseClips[pose].SampleAnimation(gameObject,0)','poseClips[pose].SampleAnimation(target,0)')
+s=s.replace('            float t=Time.time;', '            if(nativeIdle){nativeIdle.SampleAnimation(target,Time.time%nativeIdle.length);if(Time.time<greetingUntil&&rightFore)rightFore.localRotation*=Quaternion.Euler(-20,0,0);return;}\n            float t=Time.time;')
+p.write_text(s,encoding='utf-8')
+p=P/'InvestigationSession.cs';s=p.read_text(encoding='utf-8').replace('            Acquire(target.evidenceId);','            var actor=target.GetComponent<InvestigationActor>();if(actor)actor.Greet();\n            Acquire(target.evidenceId);');p.write_text(s,encoding='utf-8')
+p=P/'InvestigationReviewUI.cs';s=p.read_text(encoding='utf-8').replace('bool recorded=trialRecorded;TrialTime=0;AdvanceTrial','bool recorded=trialRecorded;trialRecorded=true;TrialTime=0;AdvanceTrial');p.write_text(s,encoding='utf-8')
+p=P/'PresentationHands.cs';s=p.read_text(encoding='utf-8').replace('!session.TrialRunning','string.IsNullOrEmpty(session.TrialId)');p.write_text(s,encoding='utf-8')
+p=P/'RepairHandBinding.cs';s=p.read_text(encoding='utf-8').replace('public Transform rightHand,repairAttachment;','public Transform rightHand,repairAttachment; public InvestigationSession session;').replace('repairString.SetPosition(0,rightHand.position);repairString.SetPosition(1,(rightHand.position+repairAttachment.position)*.5f+Vector3.down*.025f);','Vector3 start=(!session||session.ClipTime<4.8f)?rightHand.position:repairAttachment.position+Vector3.down*.25f;repairString.SetPosition(0,start);repairString.SetPosition(1,(start+repairAttachment.position)*.5f+Vector3.down*.025f);');p.write_text(s,encoding='utf-8')
+print('R104 native art animation bindings; paused model IK; released repair thread')

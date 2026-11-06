@@ -1,0 +1,2 @@
+using UnityEditor;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult result){EditorApplication.isPlaying=false;result.Log("End completed private ground review; no runtime state saved to product scene");}}

@@ -1,0 +1,2 @@
+using UnityEngine;using UnityEditor;using UnityEditor.SceneManagement;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult result){var s=EditorSceneManager.GetActiveScene();result.Log("scene="+s.path+" dirty="+s.isDirty+" play="+EditorApplication.isPlaying+" compiling="+EditorApplication.isCompiling);}}

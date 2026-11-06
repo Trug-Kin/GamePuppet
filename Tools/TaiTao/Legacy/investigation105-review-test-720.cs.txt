@@ -1,0 +1,25 @@
+using UnityEngine;using UnityEditor;using System;using System.Linq;using System.IO;using System.Text;using ConRoi.Investigation.V36.R105;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){if(!EditorApplication.isPlaying)throw new Exception("Play required");var s=Object.FindFirstObjectByType<InvestigationSession>();s.SaveDirectoryOverride=Path.GetFullPath("Test/KetQua/investigation_r105/ui-profile");var w=EditorWindow.GetWindow(Type.GetType("UnityEditor.GameView,UnityEditor"));w.ShowUtility();w.minSize=w.maxSize=new Vector2(1024,597.2f);w.position=new Rect(0,0,1024,597.2f);w.Focus();s.data=new InvestigationSave();s.Acquire("phone");s.Acquire("clip");s.OpenPage("clip");var log=new StringBuilder("Synthetic GameView mouse down/drag/up. API opens initial clip only; no API seeking or assigning observations.\n");int step=0;double next=EditorApplication.timeSinceStartup+1;Quaternion before=s.eye.transform.rotation;float first=0,second=0;EditorApplication.CallbackFunction f=null;
+Action<bool,string> check=(ok,msg)=>{log.AppendLine((ok?"PASS ":"FAIL ")+msg+" time="+s.ClipTime+" seeking="+s.ClipScrubbing);if(!ok)throw new Exception(msg);};
+Action<EventType,float,float> mouse=(type,x,y)=>w.SendEvent(new Event{type=type,button=0,mousePosition=new Vector2(x*Screen.width/1200f/1.25f,y*Screen.height/800f/1.25f+55)});
+Action<float,float> click=(x,y)=>{mouse(EventType.MouseDown,x,y);mouse(EventType.MouseUp,x,y);};
+f=()=>{if(EditorApplication.timeSinceStartup<next)return;next=EditorApplication.timeSinceStartup+.6;try{switch(step++){
+case 0:mouse(EventType.MouseDown,200,634);break;
+case 1:check(s.ClipScrubbing&&!s.ClipPlaying,"slider pointer held pauses playback");first=s.ClipTime;mouse(EventType.MouseDrag,800,634);break;
+case 2:check(s.ClipScrubbing&&s.ClipTime>first+4,"drag forward changes observed time");second=s.ClipTime;mouse(EventType.MouseDrag,440,634);break;
+case 3:check(s.ClipTime<second-2,"drag backwards changes time");mouse(EventType.MouseUp,440,634);break;
+case 4:check(!s.ClipScrubbing&&!s.ClipPlaying,"release ends drag and remains stopped");check(!s.data.clipBeforeSeen&&!s.data.clipEventSeen,"seeking alone unlocks no unseen observation");first=s.ClipTime;click(100,684);break;
+case 5:check(s.ClipPlaying&&s.ClipTime>first+.1,"UI resumes after release");click(100,684);break;
+case 6:check(!s.ClipPlaying,"UI pauses");check(Quaternion.Angle(before,s.eye.transform.rotation)<.001,"UI drag does not turn player camera");ScreenCapture.CaptureScreenshot("Test/BangChung/investigation_r105/clip-slider-ui-720.png");break;
+case 7:click(980,40);break;
+case 8:check(s.Page=="","visible Back closes clip");s.OpenPage("reconstruction");break;
+case 9:click(120,150);break;
+case 10:check(s.TrialId=="release"&&s.TrialRunning,"actual first case button starts shared mechanism");click(1060,621);break;
+case 11:check(!s.TrialRunning,"actual model pause button");first=s.TrialTime;second=s.modelGate.state.angle;click(550,621);break;
+case 12:check(Mathf.Abs(s.TrialTime-first)<.001&&Mathf.Abs(s.modelGate.state.angle-second)<.001,"camera change preserves time and gate state");mouse(EventType.MouseDown,440,664);break;
+case 13:mouse(EventType.MouseDrag,800,664);break;
+case 14:check(s.TrialScrubbing&&s.TrialTime>5,"model seek holds pointer");mouse(EventType.MouseDrag,550,664);break;
+case 15:check(s.TrialTime<5,"model reverse seek");mouse(EventType.MouseUp,550,664);break;
+case 16:check(!s.TrialScrubbing&&!s.TrialRunning,"model release remains paused");ScreenCapture.CaptureScreenshot("Test/BangChung/investigation_r105/model-slider-ui-720.png");break;
+default:EditorApplication.update-=f;File.WriteAllText("Test/KetQua/investigation_r105/slider-ui-720.txt",log.ToString());return;
+}}catch(Exception e){EditorApplication.update-=f;File.WriteAllText("Test/KetQua/investigation_r105/slider-ui-720.txt",log+"FAIL "+e);}};EditorApplication.update+=f;r.Log("Bounded direct UI slider drag and model view checks started");}}

@@ -1,0 +1,2 @@
+using UnityEngine;using UnityEditor;using UnityEngine.InputSystem;using ConRoi.Investigation.V36.R103;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){var s=Object.FindFirstObjectByType<InvestigationSession>();r.Log("inputMode="+InputSystem.settings.updateMode+" asset="+AssetDatabase.Contains(InputSystem.settings)+" timescale="+Time.timeScale+" pause="+s.Paused+" page="+s.Page);}}

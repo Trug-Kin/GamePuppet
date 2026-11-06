@@ -1,0 +1,2 @@
+using UnityEditor;using UnityEditor.SceneManagement;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult result){var s=EditorSceneManager.GetActiveScene();if(s.path!="Assets/Scenes/JourneyPresentation_v48_r96.unity"||s.isDirty)throw new System.Exception("Require clean r96 derivative");EditorApplication.isPlaying=true;result.Log("Entering Play r96 for local ground review, no build");}}

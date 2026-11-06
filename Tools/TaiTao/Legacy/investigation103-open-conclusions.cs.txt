@@ -1,0 +1,2 @@
+using UnityEngine;using UnityEditor;using ConRoi.Investigation.V36.R103;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){var s=Object.FindFirstObjectByType<InvestigationSession>();s.OpenPage("conclusions");r.Log("Open conclusions only; no choices assigned");}}

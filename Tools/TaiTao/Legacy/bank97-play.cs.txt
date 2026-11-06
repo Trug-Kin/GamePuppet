@@ -1,0 +1,2 @@
+using UnityEngine;using UnityEditor;using UnityEditor.SceneManagement;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult result){if(!EditorSceneManager.GetActiveScene().path.EndsWith("r97.unity")||EditorSceneManager.GetActiveScene().isDirty)throw new System.Exception("Clean r97 required");EditorApplication.isPlaying=true;result.Log("Play requested; local copied-save fixture next, no product automation installed");}}

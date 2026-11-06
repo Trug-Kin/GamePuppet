@@ -1,0 +1,16 @@
+using UnityEngine;using System;using System.IO;using System.Text;using ConRoi.Investigation.V36;
+internal class CommandScript:IRunCommand
+{
+ static void Step(GateState s,float seconds){for(float t=0;t<seconds;t+=1f/120)ReturnGateMechanism.Advance(s,1f/120);}
+ static void Must(bool condition,string name){if(!condition)throw new Exception(name);}
+ public void Execute(ExecutionResult r){var b=new StringBuilder("Deterministic state checks, not independent physical validation or player evidence. Units: degrees, seconds.\n");var paths=new StringBuilder();foreach(var root in UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects())foreach(var head in root.GetComponentsInChildren<Transform>(true))if(head.name=="ConRoi_Head_SameAsMinh"){var t=head;string path=t.name;while(t.parent){t=t.parent;path=t.name+"/"+path;}paths.AppendLine(path);}File.WriteAllText("Test/KetQua/investigation_r102/legacy-heads-before-removal.txt",paths.ToString());
+ var s=new GateState{bodyForce=true};Step(s,3);Must(s.angle==0&&s.latched,"Latched gate opened under ordinary force");b.AppendLine("Latched + force: closed.");
+ s=new GateState{rope=true};Step(s,3);Must(s.angle==0&&!s.latched,"Rope moved leaf without force");b.AppendLine("D alone releases latch, does not open leaf.");
+ s.bodyForce=true;Step(s,3);float opened=s.angle;Must(opened>60,"Force failed to open");s.rope=false;s.bodyForce=false;float elapsed=0;while(!s.latched&&elapsed<20){ReturnGateMechanism.Advance(s,1f/120);elapsed+=1f/120;}Must(s.latched&&elapsed>1,"No finite return");b.AppendLine("Opened "+opened+"°; no-force return/latch="+elapsed.ToString("F4")+"s.");
+ s=new GateState{rope=true,bodyForce=true};Step(s,3);s.rope=false;Step(s,4);Must(s.angle>60&&!s.latched,"Closed through held body force");b.AppendLine("D released, body still holds: angle="+s.angle+", latch="+s.latched);
+ s.bodyForce=false;float held=s.angle;for(int i=0;i<240;i++)ReturnGateMechanism.Advance(s,1f/120,true);Must(s.angle==held,"Contact was penetrated during close");b.AppendLine("Contact holds against return; no closing through controller contact.");
+ s=new GateState{hook=true,bodyForce=true};Step(s,3);Must(s.angle>60&&!s.latched,"Hook path failed");s.bodyForce=false;Step(s,12);Must(s.angle<.35f&&!s.latched,"Taut rope alone held gate open or latched");s.hook=false;Step(s,1);Must(s.latched,"Slack did not relatch");b.AppendLine("Hook retains D; no force → closed but unlatched; remove hook → latched.");
+ s=new GateState{rope=true,bodyForce=true};Step(s,3);s.wedge=true;s.rope=false;s.bodyForce=false;Step(s,12);Must(s.angle>=35&&!s.latched,"Wedge not respected");b.AppendLine("Wedge leaves "+s.angle+"° opening; remove and return tested next.");s.wedge=false;Step(s,12);Must(s.latched,"Removing wedge did not allow close");
+ s=new GateState{rope=true,bodyForce=true};Step(s,2.5f);s.rope=false;s.bodyForce=false;Step(s,6);float before=s.angle;bool wasLatch=s.latched;s.bodyForce=true;Step(s,1.5f);b.AppendLine("Open-before, release, move away/return after6s: angle before="+before+", latched="+wasLatch+", after renewed lean="+s.angle+". This window must not be ruled out by spring alone; compare event clip independently.");
+ File.WriteAllText("Test/KetQua/investigation_r102/mechanism-check.txt",b.ToString());r.Log(b.ToString());}
+}

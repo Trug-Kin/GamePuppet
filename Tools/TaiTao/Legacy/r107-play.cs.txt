@@ -1,0 +1,2 @@
+using UnityEngine;using UnityEditor;using UnityEditor.SceneManagement;using System;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){if(EditorApplication.isPlaying||EditorSceneManager.GetActiveScene().isDirty)throw new Exception("Clean Edit required");var w=EditorWindow.GetWindow(Type.GetType("UnityEditor.GameView,UnityEditor"));w.ShowUtility();w.minSize=w.maxSize=new Vector2(1024,597.2f);w.position=new Rect(0,0,1024,597.2f);w.Focus();EditorApplication.isPlaying=true;r.Log("R107 Play, normal saved exterior spawn, intro not bypassed");}}

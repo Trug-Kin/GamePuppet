@@ -1,0 +1,2 @@
+using UnityEngine;using UnityEditor;using System.IO;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult result){File.WriteAllText("Test/KetQua/journey_v48/r95_visual_review/fall-stop.txt","Stopped connected route after visible unsupported descent; no PASS. p="+Object.FindFirstObjectByType<DieuPhoiHanhTrinh>().player.transform.position.ToString("F6"));EditorApplication.isPlaying=false;result.Log("Stop Play after route fall; preserve source scene");}}

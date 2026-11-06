@@ -1,0 +1,1 @@
+public class MinimalCompilationTest{public int Value{ get; set; }public int Calculate(int x) {return x + Value;}}

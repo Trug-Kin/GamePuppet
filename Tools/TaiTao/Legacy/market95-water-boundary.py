@@ -1,0 +1,3 @@
+exec(open('Test/Tam/market95-grade.py').read().split('data=')[0])
+inv=json.loads((D/'props-geometry-inventory.json').read_text())+json.loads((D/'props-extra-geometry-inventory.json').read_text());r=next(r for r in inv if r['path']=='R20_Whole_Source_Export/Surface_051');a=np.load(D/(r['cache']+'.npz'));q=a['v'][a['tri']];n=np.cross(q[:,1]-q[:,0],q[:,2]-q[:,0]);q=q[abs(n[:,1])>1e-9];p=shapely.make_valid(shapely.union_all(shapely.polygons(q[:,:,[0,2]])))
+(D/'protected-actual-water.geojson').write_text(shapely.to_geojson(p));print('ACTUAL_WATER',p.area,p.bounds,'627375',p.covers(shapely.Point(627,375)),'632388',p.covers(shapely.Point(632,388)),flush=True)

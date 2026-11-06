@@ -1,0 +1,2 @@
+using UnityEditor;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult result){if(EditorApplication.isPlaying)throw new System.Exception("Edit only");EditorUtility.RequestScriptReload();result.Log("Requested normal domain reload to clear interrupted review callbacks; no asset edits");}}

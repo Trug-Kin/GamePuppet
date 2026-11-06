@@ -1,0 +1,31 @@
+using UnityEngine;using UnityEditor;using System;using System.IO;using System.Text;using System.Collections.Generic;using ConRoi.Investigation.V36.R106;
+internal class CommandScript:IRunCommand
+{
+ public void Execute(ExecutionResult r){
+ var session=Object.FindFirstObjectByType<InvestigationSession>();session.SaveDirectoryOverride=Path.GetFullPath("Test/KetQua/investigation_r106/api-profile");
+ var log=new StringBuilder("API deterministic whole-cycle test; not UI/player evidence. Time resolution 1/120 second.\n");
+ var csv=new StringBuilder("case,phase,time,event,angle,velocity,rope,hook,bodyForce,wedge,latched\n");
+ Action<bool,string> check=(v,m)=>{log.AppendLine((v?"PASS ":"FAIL ")+m);if(!v)throw new Exception(m);};
+ Action<string,string,float> sample=(id,phase,clear)=>{
+ var state=new GateState();float end=TrialTimeline.End(id,clear);float time=0;bool first=true;string prev="";bool closing=false,closed=false,latched=true;
+ while(time<=end+.02f){TrialTimeline.Inputs(id,time,clear,state,out bool contact);ReturnGateMechanism.Advance(state,1f/120,contact);string inputs=state.rope+"/"+state.hook+"/"+state.bodyForce+"/"+state.wedge+"/contact="+contact;var events=new List<string>();
+ if(first||inputs!=prev)events.Add("inputs:"+inputs);if(state.velocity<-.05f&&!closing)events.Add("return-start");if(state.angle<.35f&&!closed)events.Add("closed-window");if(state.latched&&!latched)events.Add("relatched");
+ if(events.Count>0)csv.AppendLine(id+","+phase+","+time.ToString("F4")+",\""+string.Join(";",events)+"\","+state.angle+","+state.velocity+","+state.rope+","+state.hook+","+state.bodyForce+","+state.wedge+","+state.latched);
+ prev=inputs;first=false;closing=state.velocity<-.05f;closed=state.angle<.35f;latched=state.latched;time+=1f/120;}
+ log.AppendLine("FINAL "+id+" "+phase+" duration="+end+" clearAt="+clear+" state="+JsonUtility.ToJson(TrialTimeline.At(id,end,clear)));
+ };
+ try{foreach(var id in new[]{"release","help","hold","hook","wedge","after"}){
+ session.StartTrial(id);float end=session.TrialDuration;check(end<59,"bounded finish "+id+" duration="+end);session.AdvanceTrial(end);
+ check(!session.TrialRunning&&session.TrialSettled,"settled actual session "+id);sample(id,"initial",float.PositiveInfinity);
+ foreach(var t in new[]{0f,2.5f,6f,10f}){string original=JsonUtility.ToJson(ConRoi.Investigation.V36.R105.MechanismPresentation.At(id,t));string current=JsonUtility.ToJson(TrialTimeline.At(id,t,float.PositiveInfinity));check(original==current,"original law/inputs exact at "+id+" t="+t);}
+ if(id=="help"||id=="hold"||id=="after")check(session.modelGate.state.latched,"free case relatched "+id);
+ if(id=="hook")check(!session.modelGate.state.latched&&session.modelGate.state.hook&&session.modelGate.state.angle<.35f,"hook remains released at closed window");
+ if(id=="wedge")check(session.modelGate.state.wedge&&Mathf.Abs(session.modelGate.state.angle-35)<.01f,"wedge intentionally held");
+ if(id=="release")check(session.modelGate.state.bodyForce&&session.modelGate.state.angle>=81.99f,"returning person intentionally holds open");
+ if(session.CanClearTrialHolds){session.ClearTrialHolds();float clear=session.TrialClearAt;sample(id,"user-clear",clear);session.AdvanceTrial(session.TrialDuration-session.TrialTime);check(session.TrialSettled&&session.modelGate.state.latched&&!session.modelGate.state.rope&&!session.modelGate.state.hook&&!session.modelGate.state.bodyForce&&!session.modelGate.state.wedge,"explicit clear then closes and relatches "+id);}
+ }
+ check(!session.data.clipBeforeSeen&&!session.data.clipEventSeen,"API model cycles do not unlock clip observations");
+ }catch(Exception e){log.AppendLine("FAIL "+e);}
+ session.ResetTrial();File.WriteAllText("Test/KetQua/investigation_r106/cycle-api.txt",log.ToString());File.WriteAllText("Test/KetQua/investigation_r106/cycle-transitions.csv",csv.ToString());r.Log(log.ToString());
+ }
+}

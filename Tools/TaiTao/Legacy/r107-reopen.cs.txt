@@ -1,0 +1,2 @@
+using UnityEditor;using UnityEditor.SceneManagement;using System;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){if(EditorApplication.isPlaying||EditorSceneManager.GetActiveScene().isDirty)throw new Exception("Clean Edit required");EditorSceneManager.OpenScene("Assets/Scenes/JourneyPresentation_v48_r107.unity");r.Log("Reopened saved R107, no runtime state retained.");}}

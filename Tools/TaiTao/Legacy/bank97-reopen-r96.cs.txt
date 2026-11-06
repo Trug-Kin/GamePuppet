@@ -1,0 +1,2 @@
+using UnityEngine;using UnityEditor;using UnityEditor.SceneManagement;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult result){if(EditorApplication.isPlaying)throw new System.Exception("Edit only");var sc=EditorSceneManager.GetActiveScene();if(!sc.path.EndsWith("r96.unity"))throw new System.Exception(sc.path);EditorSceneManager.OpenScene("Assets/Scenes/JourneyPresentation_v48_r96.unity",OpenSceneMode.Single);result.Log("Discarded only unsaved partial R97 integration; immutable r96 reopened clean");}}

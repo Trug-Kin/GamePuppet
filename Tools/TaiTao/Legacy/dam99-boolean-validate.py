@@ -1,0 +1,6 @@
+﻿from pathlib import Path
+p=Path('Test/Tam/dam99-throat-cut.py');s=p.read_text(encoding='utf-8-sig');s=s.replace('from mathutils import Vector,Matrix','from mathutils import Vector,Matrix\nfrom mathutils.bvhtree import BVHTree')
+s=s.replace("o=bpy.data.objects[name];count=len(o.data.polygons);", "o=bpy.data.objects[name];count=len(o.data.polygons);samples=[]\n for poly in o.data.polygons:\n  if poly.index%5:continue\n  q=o.matrix_world@poly.center;ss,dd=(np.array([-q.x,-q.y])-A)@np.c_[T,N]\n  if not L-.10<ss<L+3.10 or not -.08<dd<4.66:samples.append(q.copy())\n ")
+s=s.replace("assert len(o.data.polygons)>count*.8,(name,'unexpected boolean deletion',count,len(o.data.polygons))", "tree=BVHTree.FromPolygons([o.matrix_world@p.co for p in o.data.vertices],[tuple(p.vertices) for p in o.data.polygons]);distances=[float(tree.find_nearest(q)[3]) for q in samples];outside_max=max(distances,default=0);print('CANDIDATE_BOOLEAN',name,'faces',count,len(o.data.polygons),'outside max',outside_max,flush=True)\n assert outside_max<.002,(name,'changed outside cut',outside_max)")
+s=s.replace('faces_after=len(o.data.polygons),scope_s=', 'faces_after=len(o.data.polygons),outside_samples=len(samples),outside_max_distance=outside_max,scope_s=')
+p.write_text(s,encoding='utf-8')

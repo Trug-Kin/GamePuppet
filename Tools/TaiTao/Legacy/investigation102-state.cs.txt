@@ -1,0 +1,2 @@
+﻿using UnityEngine;using UnityEditor;using System.IO;using ConRoi.Investigation.V36;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){var s=Object.FindFirstObjectByType<InvestigationSession>();r.Log("play="+EditorApplication.isPlaying+" p="+s.movement.transform.position.ToString("F5")+" count="+s.InspectionCount);}}

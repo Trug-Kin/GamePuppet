@@ -1,0 +1,2 @@
+using UnityEngine;using UnityEditor;using ConRoi.Investigation.V36.R107;using System.IO;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){var s=Object.FindFirstObjectByType<InvestigationSession>();ScreenCapture.CaptureScreenshot("Test/BangChung/investigation_r107/current-inspection-720.png");File.WriteAllText("Test/KetQua/investigation_r107/current-observation-state.json",JsonUtility.ToJson(s.data,true));r.Log("Read-only capture, no input, page="+s.Page);}}

@@ -1,0 +1,2 @@
+using UnityEngine;using UnityEditor;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult result){foreach(var w in Resources.FindObjectsOfTypeAll<EditorWindow>())if(w.GetType().Name=="GameView"&&!w.docked)w.Close();EditorApplication.isPlaying=false;result.Log("Scoped Play ended; temporary detached Game view closed. No scene save from Play.");}}

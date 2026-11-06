@@ -1,0 +1,2 @@
+using UnityEngine;using UnityEditor;using ConRoi.Investigation.V36.R107;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){var s=Object.FindFirstObjectByType<InvestigationSession>();r.Log("Page="+s.Page+" paused="+s.Paused+" evidence="+s.InspectionCount+" intro="+s.data.introAccepted+" p="+s.movement.transform.position+" yaw="+s.movement.transform.eulerAngles+" Save="+s.SavePath);}}

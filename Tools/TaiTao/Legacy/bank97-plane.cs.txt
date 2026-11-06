@@ -1,0 +1,2 @@
+using UnityEngine;using UnityEditor;using System.IO;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult result){string s="";foreach(var r in Object.FindObjectsByType<Renderer>(FindObjectsInactive.Include,FindObjectsSortMode.None)){var b=r.bounds;if(b.size.x*b.size.z<1000||b.size.y>.2f)continue;s+=r.name+" "+b.min.ToString("F4")+".."+b.max.ToString("F4")+" active="+r.gameObject.activeInHierarchy+" enabled="+r.enabled+"\n";}File.WriteAllText("Test/KetQua/journey_v48/bank_r97/planes.txt",s);result.Log(s);}}

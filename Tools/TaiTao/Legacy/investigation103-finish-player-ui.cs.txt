@@ -1,0 +1,11 @@
+using UnityEngine;using UnityEditor;using System;using System.IO;using System.Linq;using System.Text;using ConRoi.Investigation.V36.R103;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){var s=Object.FindFirstObjectByType<InvestigationSession>();var w=EditorWindow.GetWindow(Type.GetType("UnityEditor.GameView,UnityEditor"));s.OpenPage("compare");Action<float,float> click=(x,y)=>{var p=new Vector2(x*Screen.width/1200/1.25f,y*Screen.height/800/1.25f+55);w.SendEvent(new Event{type=EventType.MouseDown,button=0,mousePosition=p});w.SendEvent(new Event{type=EventType.MouseUp,button=0,mousePosition=p});};Action<string> type=t=>{foreach(char c in t)w.SendEvent(new Event{type=EventType.KeyDown,character=c,keyCode=KeyCode.None});};Action<float> wheel=y=>w.SendEvent(new Event{type=EventType.ScrollWheel,mousePosition=new Vector2(750,520),delta=new Vector2(0,y)});int i=0;double next=EditorApplication.timeSinceStartup+.6;var log=new StringBuilder("Continuation: mouse/text only. API opens compare/conclusion pages.\n");Action<bool,string> check=(ok,t)=>{log.AppendLine((ok?"PASS ":"FAIL ")+t);if(!ok)throw new Exception(t);};EditorApplication.CallbackFunction f=null;f=()=>{if(EditorApplication.timeSinceStartup<next)return;next=EditorApplication.timeSinceStartup+.65;try{switch(i++){
+case 0:wheel(200);break;
+case 1:click(650,652);type("RP - Chua du du lieu noi hai muc nay.");break;
+case 2:check(s.Page=="compare","R/P text does not close page");click(650,706);break;
+case 3:check(s.data.relations.Any(z=>z.note.StartsWith("RP")),"free relation entered and recorded");ScreenCapture.CaptureScreenshot("Test/BangChung/investigation_r103/compare-ui-final.png");break;
+case 4:s.OpenPage("conclusions");break;
+case 5:click(650,370);type("Chua du chung minh vai tro va y dinh.");break;
+case 6:wheel(100);break;
+case 7:ScreenCapture.CaptureScreenshot("Test/BangChung/investigation_r103/conclusion-ui-ready.png");EditorApplication.update-=f;File.WriteAllText("Test/KetQua/investigation_r103/ui-finish.txt",log.ToString());break;
+}}catch(Exception e){EditorApplication.update-=f;File.WriteAllText("Test/KetQua/investigation_r103/ui-finish.txt",log+"FAIL "+e);}};EditorApplication.update+=f;r.Log("Continue relation and conclusion entry through UI");}}

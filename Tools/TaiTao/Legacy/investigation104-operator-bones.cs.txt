@@ -1,0 +1,1 @@
+﻿using UnityEngine;using System;using ConRoi.Investigation.V36.R104;internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){var a=Object.FindFirstObjectByType<InvestigationSession>().modelKhai;foreach(var t in a.GetComponentsInChildren<Transform>(true))r.Log(t.name);}}

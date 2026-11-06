@@ -1,0 +1,1 @@
+﻿using UnityEngine;using UnityEditor;using System;internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){var w=EditorWindow.GetWindow(Type.GetType("UnityEditor.GameView,UnityEditor"));w.ShowUtility();w.position=new Rect(0,0,1536,800);w.Focus();r.Log("Restored calibrated floating Game view");}}

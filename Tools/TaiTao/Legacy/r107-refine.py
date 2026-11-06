@@ -1,0 +1,10 @@
+from pathlib import Path
+R=Path('D:/ConRoi')
+p=R/'Assets/Scripts/InvestigationV36R107/InvestigationOnboarding.cs';s=p.read_text(encoding='utf-8')
+s=s.replace('int i=Mathf.Clamp(data.tutorialWaypoint,0,tutorialPoints.Length);','var player=movement.transform.position;\n            if(player.x>768&&player.x<780&&player.z>285&&player.z<297)data.tutorialWaypoint=Mathf.Max(data.tutorialWaypoint,1);\n            if(player.x<771.5f&&player.x>768&&player.z>286&&player.z<295)data.tutorialWaypoint=Mathf.Max(data.tutorialWaypoint,2);\n            if(player.y>8&&player.z>291&&player.x>769&&player.x<779)data.tutorialWaypoint=Mathf.Max(data.tutorialWaypoint,3);\n            int i=Mathf.Clamp(data.tutorialWaypoint,0,tutorialPoints.Length);')
+p.write_text(s,encoding='utf-8')
+p=R/'Assets/Scripts/InvestigationV36R107/InvestigationSessionUI.cs';s=p.read_text(encoding='utf-8').replace('focused.evidenceId=="slide"?', '(focused.evidenceId=="slide"||focused.evidenceId=="shoeprint")?')
+s=s.replace('if(Button("Nhìn mặt trên"))','if(inspectId!="slide"&&inspectId!="shoeprint"&&Button("Nhìn mặt trên"))').replace('if(Button("Nhìn mặt dưới"))','if(inspectId!="slide"&&inspectId!="shoeprint"&&Button("Nhìn mặt dưới"))')
+s=s.replace('if(Button("Ghi quan sát"))RecordVisibleObservations(e.id);','if(Button(e.observations.Select((_,i)=>Observation(e.id,i)).All(v=>v)?"Đã ghi quan sát":"Ghi quan sát"))RecordVisibleObservations(e.id);')
+p.write_text(s,encoding='utf-8')
+p=R/'Test/Tam/r107-comparison-views.cs.txt';s=p.read_text().replace('LoadAssetAtPath<Mesh>','LoadAssetAtPath<UnityEngine.Mesh>');p.write_text(s)

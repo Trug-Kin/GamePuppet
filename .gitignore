@@ -1,0 +1,38 @@
+# Unity per-machine data (Library is a junction on the original machine)
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/.build-cache/
+/.build-temp/
+/.tmp/
+/.vs/
+**/__pycache__/
+/*.csproj
+/*.sln
+/*.slnx
+*.user
+*.userprefs
+*.suo
+*.pidb
+*.opendb
+*.VC.db
+.DS_Store
+Thumbs.db
+# Specific technical output roots, never blanket-ignore game media or Assets
+/Test/BangChung/
+/Test/BanChoiThu/
+/Test/Output/
+/Test/PlaytestProfiles/
+/Test/Tam/
+/Build/
+/Builds/*
+!/Builds/README.md
+# Packages, Source, all game media, scene/prefab text and .meta are kept.
+
+/Docs/QA/GitPreparation/technical-live-state.json
+
+/Docs/QuanLy/live-state-preserved.json
+
+/Docs/QuanLy/KiemKe/files.json

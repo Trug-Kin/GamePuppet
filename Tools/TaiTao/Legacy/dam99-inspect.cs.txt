@@ -1,0 +1,7 @@
+using UnityEngine;using UnityEditor;using UnityEditor.SceneManagement;using System;using System.Linq;using System.IO;using System.Text;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult result){
+var sc=EditorSceneManager.GetActiveScene();var b=new StringBuilder();b.AppendLine("scene="+sc.path+" dirty="+sc.isDirty+" play="+EditorApplication.isPlaying);var s=UnityEngine.Object.FindFirstObjectByType<DieuPhoiHanhTrinh>();
+foreach(var c in s.GetComponents<MonoBehaviour>())if(c.GetType().Name.Contains("Bao")||c is KhoiPhucCaoDoSauTaiR73)b.AppendLine(c.GetType().Name+" "+EditorJsonUtility.ToJson(c,true));
+b.AppendLine("STORY "+EditorJsonUtility.ToJson(s,true));
+foreach(var t in sc.GetRootGameObjects().SelectMany(g=>g.GetComponentsInChildren<Transform>(true)))if(t.name.Contains("Bao")||t.name.Contains("Lake")||t.name.Contains("R98")||t.name.Contains("Notebook"))b.AppendLine("TR "+t.name+" pos="+t.position+" parent="+(t.parent?t.parent.name:"root"));
+File.WriteAllText("Test/KetQua/journey_v48/dam_r99/unity-before-inspect.txt",b.ToString());result.Log(b.ToString().Substring(0,Math.Min(1400,b.Length)));}}

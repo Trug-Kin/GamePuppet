@@ -1,0 +1,2 @@
+using UnityEngine;using UnityEditor;using System.IO;using System;using ConRoi.Investigation.V36.R107;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){var s=UnityEngine.Object.FindFirstObjectByType<InvestigationSession>();if(s.Page!="intro"||s.InspectionCount!=0)throw new Exception("Fresh intro required");s.SaveDirectoryOverride=Path.GetFullPath("Test/KetQua/investigation_r107/mid-tutorial-profile");if(File.Exists(s.SavePath))throw new Exception("Unused profile required");r.Log("Fresh mid-tutorial technical profile="+s.SavePath);}}

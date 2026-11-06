@@ -1,0 +1,66 @@
+﻿using UnityEngine;using UnityEditor;using UnityEngine.InputSystem;using UnityEngine.InputSystem.LowLevel;using System;using System.IO;using System.Text;using System.Linq;using ConRoi.Investigation.V36.R103;
+internal class CommandScript:IRunCommand
+{
+ public void Execute(ExecutionResult result)
+ {
+  if(!EditorApplication.isPlaying)throw new Exception("Play required");var s=UnityEngine.Object.FindFirstObjectByType<InvestigationSession>();int initialLeg=0;if(s.InspectionCount==1&&s.Has("khai")&&Vector2.Distance(new Vector2(s.movement.transform.position.x,s.movement.transform.position.z),new Vector2(773.6127f,289.8756f))<.3f)initialLeg=1;else if(Vector2.Distance(new Vector2(s.movement.transform.position.x,s.movement.transform.position.z),new Vector2(774,286))>.3f||s.InspectionCount!=0)throw new Exception("Normal start or exact unplaced continuation required");
+  s.SaveDirectoryOverride=Path.GetFullPath("Test/KetQua/investigation_r103/route-profile");s.ClosePage();
+  var settings=InputSystem.settings;if(AssetDatabase.Contains(settings))throw new Exception("Runtime InputSettings required");string prior=JsonUtility.ToJson(settings);settings.editorInputBehaviorInPlayMode=InputSettings.EditorInputBehaviorInPlayMode.AllDeviceInputAlwaysGoesToGameView;settings.backgroundBehavior=InputSettings.BackgroundBehavior.IgnoreFocus;
+  var kb=InputSystem.AddDevice<Keyboard>("Investigation103_SyntheticKeyboard");var mouse=InputSystem.AddDevice<Mouse>("Investigation103_SyntheticMouse");var map=InputSystem.ListEnabledActions().First(a=>a.name=="Move"&&a.actionMap.name=="Gameplay").actionMap;var devices=map.devices;map.devices=new InputDevice[]{kb,mouse};
+  var goals=new[]{
+   (new Vector2(774,286),"khai",new Vector3(776.7f,6.1f,286)),
+   (new Vector2(773.6f,290),"henri",new Vector3(772.05f,5.956f,290.14f)),
+   (new Vector2(774,289.7f),"r03",new Vector3(772.6f,5.7f,291)),
+   (new Vector2(770.1f,285.7f),"",Vector3.zero),
+   (new Vector2(770.1f,292.7f),"",Vector3.zero),
+   (new Vector2(773.8f,293),"slide",new Vector3(774.835f,8.075f,292.02f)),
+   (new Vector2(773.8f,293),"shoeprint",new Vector3(774.827f,8.11f,291.67f)),
+   (new Vector2(774.8f,293.2f),"phone",new Vector3(776.3f,8.895f,293.1f)),
+   (new Vector2(774.8f,293.2f),"r12",new Vector3(776.2f,9,293.8f)),
+   (new Vector2(774.6f,293),"mechanism",new Vector3(774.75f,9.05f,291.5f)),
+   (new Vector2(770.1f,292.7f),"",Vector3.zero),
+   (new Vector2(770.1f,285.7f),"",Vector3.zero),
+   (new Vector2(774,286),"hook",new Vector3(775.42f,6.37f,285.5f)),
+   (new Vector2(774,286),"fabric",new Vector3(775.55f,6.345f,285.55f)),
+   (new Vector2(774,282),"",Vector3.zero),
+   (new Vector2(780,276),"",Vector3.zero),
+   (new Vector2(785.8f,274.7f),"ha",new Vector3(785.8f,6.0f,272.76f)),
+   (new Vector2(780,277),"",Vector3.zero),
+   (new Vector2(774,282),"",Vector3.zero),
+   (new Vector2(774,286),"",Vector3.zero),
+   (new Vector2(774.7f,288.3f),"@table",new Vector3(776,5.96f,288))
+  };
+  int leg=initialLeg,mode=0;bool shot=false,finished=false;double begin=EditorApplication.timeSinceStartup,last=0,hold=begin+3,legStart=begin;var log=new StringBuilder("r103 normal start or unplaced continuation (initialLeg recorded). Synthetic InputSystem keyboard/mouse, unchanged controller. No placements or teleports. Silent window capture separate.\n");
+  log.AppendLine("INITIAL leg="+initialLeg+" position="+s.movement.transform.position.ToString("F5"));
+  Action input=()=>{
+   if(InputState.currentUpdateType!=InputUpdateType.Dynamic)return;double now=EditorApplication.timeSinceStartup;var keys=new KeyboardState();Vector2 delta=Vector2.zero;
+   if(now>hold&&leg<goals.Length&&!finished){var g=goals[leg];var p=s.movement.transform.position;
+    if(mode==2){if(!shot&&now>hold+.4){ScreenCapture.CaptureScreenshot("Test/BangChung/investigation_r103/route-"+leg.ToString("D2")+"-"+g.Item2.Replace("@","")+".png");shot=true;}if(now>hold+1.7){keys=new KeyboardState(Key.R);mode=3;}}
+    else if(mode==3){if(s.Page==""){log.AppendLine("INTERACT "+g.Item2+" acquired="+s.Has(g.Item2)+" p="+p.ToString("F4"));leg++;mode=0;hold=now+.3;legStart=now;}}
+    else {
+     var d=g.Item1-new Vector2(p.x,p.z);bool arrived=d.magnitude<.16f;Vector3 aim=arrived&&g.Item2!=""?g.Item3-s.eye.transform.position:new Vector3(d.x,0,d.y);
+     float yaw=Mathf.Atan2(aim.x,aim.z)*Mathf.Rad2Deg;float turn=Mathf.DeltaAngle(s.movement.transform.eulerAngles.y,yaw);float pitch=arrived&&g.Item2!=""?Mathf.Atan2(-aim.y,new Vector2(aim.x,aim.z).magnitude)*Mathf.Rad2Deg:8;
+     float dp=Mathf.DeltaAngle(s.eye.transform.localEulerAngles.x,pitch);delta=new Vector2(Mathf.Clamp(turn,-4,4),-Mathf.Clamp(dp,-4,4))/(s.look.mouseSensitivity*.0002f);
+     if(!arrived){if(Mathf.Abs(turn)<6)keys=new KeyboardState(Key.W);}
+     else if(g.Item2==""){log.AppendLine("WAYPOINT "+leg+" p="+p.ToString("F4")+" grounded="+s.movement.controller.isGrounded);leg++;hold=now+.3;legStart=now;}
+     else if(Mathf.Abs(turn)<2&&Mathf.Abs(dp)<2){
+      bool hit=s.TryInteractionHit(out var ray);var item=hit?ray.collider.GetComponentInParent<InvestigationInteractable>():null;
+      if(item&&(item.evidenceId==g.Item2||(g.Item2=="@table"&&item.action=="table"))){keys=new KeyboardState(Key.E);mode=2;shot=false;hold=now;log.AppendLine("E_RAY "+g.Item2+" hit="+ray.collider.name+" distance="+ray.distance.ToString("F3"));}
+      else if(now-legStart>8){log.AppendLine("BLOCKED_RAY "+g.Item2+" hit="+(hit?ray.collider.name:"none")+" id="+(item?item.evidenceId:"none")+" p="+p.ToString("F4"));finished=true;}
+     }
+    }
+   }
+   InputSystem.QueueStateEvent(kb,keys);InputSystem.QueueStateEvent(mouse,new MouseState{delta=delta});
+  };
+  InputSystem.onBeforeUpdate+=input;
+  EditorApplication.CallbackFunction update=null;update=()=>{
+   double now=EditorApplication.timeSinceStartup,t=now-begin;if(!EditorApplication.isPlaying){EditorApplication.update-=update;InputSystem.onBeforeUpdate-=input;return;}
+   if(t-last>.2){last=t;log.AppendLine("t="+t.ToString("F2")+" leg="+leg+" p="+s.movement.transform.position.ToString("F5")+" grounded="+s.movement.controller.isGrounded+" page="+s.Page);File.WriteAllText("Test/KetQua/investigation_r103/route-progress.txt",log.ToString());}
+   if(leg<goals.Length&&!finished&&t<210&&now-legStart<35)return;
+   InputSystem.onBeforeUpdate-=input;InputSystem.ResetDevice(kb);map.devices=devices;InputSystem.RemoveDevice(kb);InputSystem.RemoveDevice(mouse);JsonUtility.FromJsonOverwrite(prior,settings);EditorApplication.update-=update;s.Save();log.AppendLine("END "+leg+"/"+goals.Length+" seconds="+t+" data="+JsonUtility.ToJson(s.data));File.WriteAllText("Test/KetQua/investigation_r103/route-motion.txt",log.ToString());
+  };EditorApplication.update+=update;result.Log("Started continuous controller route / E ray interactions. 20 stops, max210s; no placement. Final report generated after actual traversal.");
+ }
+}
+
+
+

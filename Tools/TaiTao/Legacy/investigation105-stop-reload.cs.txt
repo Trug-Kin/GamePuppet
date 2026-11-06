@@ -1,0 +1,2 @@
+﻿using UnityEditor;using System.IO;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){File.WriteAllText("Test/KetQua/investigation_r105/presentation-ui.txt","FAIL capture helper stalled on screenshot transition; superseded by corrected final capture.");EditorApplication.isPlaying=false;EditorUtility.RequestScriptReload();r.Log("Stopped Play and requested reload to clear stalled diagnostic callback");}}

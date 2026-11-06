@@ -1,0 +1,2 @@
+﻿using UnityEngine;using UnityEditor;using ConRoi.Investigation.V36;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){var s=Object.FindFirstObjectByType<InvestigationSession>();s.OpenPage("reconstruction");ScreenCapture.CaptureScreenshot("Test/BangChung/investigation_r102/model-camera-review.png");r.Log("Model camera candidate captured after next frame");}}

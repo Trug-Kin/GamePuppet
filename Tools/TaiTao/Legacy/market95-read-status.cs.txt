@@ -1,0 +1,2 @@
+using UnityEngine;using UnityEditor;using UnityEditor.SceneManagement;using System.Linq;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult result){var sc=EditorSceneManager.GetActiveScene();var f=GameObject.Find("R20_Whole_Source_Export/Surface_063").GetComponent<MeshFilter>();try{result.Log("scene="+sc.path+" dirty="+sc.isDirty+" play="+EditorApplication.isPlaying+" mesh="+f.sharedMesh.name+" readable="+f.sharedMesh.isReadable+" vertices="+f.sharedMesh.vertices.Length);}catch(System.Exception e){result.Log(e.ToString());}}}

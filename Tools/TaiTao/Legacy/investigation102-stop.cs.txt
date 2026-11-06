@@ -1,0 +1,2 @@
+using UnityEditor;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){EditorApplication.isPlaying=false;r.Log("Exit scoped investigation Play; no runtime scene save.");}}

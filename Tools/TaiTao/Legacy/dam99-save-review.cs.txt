@@ -1,0 +1,20 @@
+using UnityEngine;using UnityEditor;using System.IO;using System.Text;
+internal class CommandScript:IRunCommand{
+public void Execute(ExecutionResult result){
+var s=Object.FindFirstObjectByType<DieuPhoiHanhTrinh>();string d="Test/KetQua/journey_v48/dam_r99/";
+var seed=JsonUtility.FromJson<DieuPhoiHanhTrinh.State>(File.ReadAllText(d+"private-local.json"));seed.region=0;seed.position=new Vector3(659,2.0521f,515);
+var current=JsonUtility.FromJson<DieuPhoiHanhTrinh.State>(File.ReadAllText(d+"migrated-private.json"));var memory=JsonUtility.FromJson<TiepCanCoChuDichR89.Memory>(current.lakeApproachR89);
+if(memory==null||string.IsNullOrEmpty(memory.plants))throw new System.Exception("Actual captured current PlantState required");
+var plants=JsonUtility.FromJson<BuocChanConRoiR23.PlantState>(memory.plants);if(plants.feet.Length!=2)throw new System.Exception("Paired feet required");
+float dy=s.GetComponent<TuTheBaoBenCauV48>().bridgeDeckElevation-1.14006f;
+for(int k=0;k<2;k++)plants.feet[k]-=Vector3.up*dy;plants.previous-=Vector3.up*dy;plants.swingFrom-=Vector3.up*dy;plants.restY-=dy;
+seed.lakeApproachR89=JsonUtility.ToJson(new TiepCanCoChuDichR89.Memory{phase=2,elapsed=.2f,progress=.3f,position=new Vector3(659.9268f,1.10135f,506.8988f),plants=JsonUtility.ToJson(plants)});
+if(seed.puppetPositions!=null&&seed.puppetPositions.Length>0)seed.puppetPositions[0]=new Vector3(659.9268f,1.10135f,506.8988f);
+File.WriteAllText(d+"old-height-private.json",JsonUtility.ToJson(seed,true));File.Copy(d+"old-height-private.json",d+"old-height-private.before.json",true);
+var log=new StringBuilder();int i=0;double next=0;EditorApplication.CallbackFunction cb=null;
+cb=()=>{if(!EditorApplication.isPlaying){EditorApplication.update-=cb;return;}double now=EditorApplication.timeSinceStartup;if(now<next)return;
+string file=i<3?"old-height-private.json":"migrated-private.json";s.SavePathOverride=Path.GetFullPath(d+file);s.Load();s.SetMenu(true);
+log.AppendLine("load="+i+" file="+file+" player="+s.player.transform.position.ToString("F6")+" migration="+s.GetComponent<KhoiPhucCaoDoSauTaiR73>().LastResult+" BaoFoot="+s.GetComponent<TuTheBaoBenCauV48>().FootError+" lakeMemory="+s.data.lakeApproachR89);
+File.WriteAllText(d+"repeat-load-"+i+".json",JsonUtility.ToJson(s.data,true));if(i==2){s.SavePathOverride=Path.GetFullPath(d+"migrated-private.json");s.Save();}
+i++;next=now+.5;if(i<6)return;File.WriteAllText(d+"repeat-load.txt",log.ToString());EditorApplication.update-=cb;};
+EditorApplication.update+=cb;result.Log("Six private loads, including valid actual PlantState shifted back to old elevation. No original save write.");}}

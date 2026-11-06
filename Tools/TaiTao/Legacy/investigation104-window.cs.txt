@@ -1,0 +1,1 @@
+﻿using UnityEngine;using UnityEditor;using System;internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){var w=EditorWindow.GetWindow(Type.GetType("UnityEditor.GameView,UnityEditor"));w.ShowUtility();w.minSize=w.maxSize=new Vector2(1536,885.2f);w.position=new Rect(0,0,1536,885.2f);w.Focus();r.Log("Game utility ready");}}

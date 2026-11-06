@@ -1,0 +1,2 @@
+﻿using UnityEditor;using UnityEditor.SceneManagement;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){if(EditorApplication.isPlaying)throw new System.Exception("Edit required");if(!EditorSceneManager.GetActiveScene().path.EndsWith("r102.unity")||EditorSceneManager.GetActiveScene().isDirty)throw new System.Exception("Clean r102 required");EditorApplication.isPlaying=true;r.Log("Fresh Play from saved r102");}}

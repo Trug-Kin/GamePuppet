@@ -1,0 +1,2 @@
+using UnityEngine;using UnityEditor;using UnityEditor.SceneManagement;using System;using System.IO;using System.Linq;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){if(EditorApplication.isPlaying||EditorSceneManager.GetActiveScene().isDirty)throw new Exception("Clean Edit required");AssetDatabase.Refresh();var sc=EditorSceneManager.OpenScene("Assets/Scenes/JourneyPresentation_v48_r104.unity");r.Log("Opened "+sc.path+" clean="+!sc.isDirty);}}

@@ -1,0 +1,2 @@
+﻿using UnityEditor;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult result){EditorApplication.isPlaying=false;result.Log("Exit scoped R98 Play; no source gameplay changes");}}

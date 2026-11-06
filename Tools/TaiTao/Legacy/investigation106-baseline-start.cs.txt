@@ -1,0 +1,2 @@
+﻿using UnityEditor;using UnityEditor.SceneManagement;using UnityEngine;using System;using System.IO;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){if(EditorApplication.isPlaying||EditorSceneManager.GetActiveScene().isDirty)throw new Exception("Clean Edit required");EditorSceneManager.OpenScene("Assets/Scenes/JourneyPresentation_v48_r105.unity");EditorApplication.isPlaying=true;r.Log("r105 baseline Play");}}

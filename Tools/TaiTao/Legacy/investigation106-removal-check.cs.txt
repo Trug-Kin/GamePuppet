@@ -1,0 +1,2 @@
+﻿using UnityEngine;using UnityEditor;using System.IO;using ConRoi.Investigation.V36.R106;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){var s=Object.FindFirstObjectByType<InvestigationSession>();r.Log("case="+s.TrialId+" time="+s.TrialTime+" clear="+s.TrialClearAt+" running="+s.TrialRunning+" canClear="+s.CanClearTrialHolds+" duration="+s.TrialDuration);ScreenCapture.CaptureScreenshot("Test/BangChung/investigation_r106/removal-click-diagnostic.png");}}

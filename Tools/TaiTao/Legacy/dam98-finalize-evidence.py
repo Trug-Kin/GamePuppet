@@ -1,0 +1,15 @@
+from pathlib import Path
+import sys,json,hashlib,subprocess,re,struct
+sys.path.insert(0,'Tools/python-deps')
+import imageio_ffmpeg
+R=Path('D:/ConRoi');D=R/'Test/KetQua/journey_v48/dam_r98';M=R/'Test/BangChung/journey_v48/dam_r98'
+exe=imageio_ffmpeg.get_ffmpeg_exe();p=M/'dam-end-stairs-controller.mp4';raw=subprocess.run([exe,'-hide_banner','-i',str(p),'-map','0:v:0','-c','copy','-f','null','-'],capture_output=True,text=True,check=True).stderr
+frames=int(re.findall(r'frame=\s*(\d+)',raw)[-1]);dur=re.search(r'Duration: (\d+):(\d+):(\d+\.\d+)',raw);duration=int(dur[1])*3600+int(dur[2])*60+float(dur[3]);size=re.search(r'Video:.*?, (\d+x\d+)',raw)[1]
+motion=(D/'route-motion.txt').read_text();seconds=float(re.search(r'END reached=\d+/\d+ seconds=([\d.]+)',motion)[1]);reached=re.search(r'END reached=(\d+/\d+)',motion)[1]
+(D/'video-metadata.json').write_text(json.dumps(dict(path=str(p.relative_to(R)),sha256=hashlib.file_digest(p.open('rb'),'sha256').hexdigest(),duration_seconds=duration,frames=frames,average_fps=frames/duration,dimensions=size,source_fps_requested=30,fps_mode='vfr',audio=False,hardware_input='NOT_RUN',input='Synthetic InputSystem keyboard/mouse through unchanged controller',initial_fixture='One copied-save local fixture, no placement between waypoints',continuous=True,motion_seconds=seconds,reached=reached,lighting='Runtime daylight review, then restored gameplay sun/fog at waypoint32; sky unchanged'),indent=2))
+rows=json.loads((D/'export-reopen.json').read_text())['rows'];rounds=json.loads((D/'fbx-roundtrip.json').read_text());assert len(rows)==31 and len({r['key'] for r in rounds})==31
+report=dict(source=rows[0]['export'].get('path') if isinstance(rows[0]['export'],dict) else None,blender='Source/Blender/JourneyV48/R98/OngDao_Dam_R98_Editable.blend',source_sha256=hashlib.file_digest((R/'Source/Blender/JourneyV48/R98/OngDao_Dam_R98_Editable.blend').open('rb'),'sha256').hexdigest(),binding_count=len(rows),new_parts=len([r for r in rows if not r['legacy']]),legacy_cut_count=len([r for r in rows if r['legacy']]),new_part_gates=[dict(key=r['key'],passed=r['gate']['pass']) for r in rows if not r['legacy']],maximum_roundtrip_error=max(r['max_world_error_m'] for r in rounds),current_geometry_report='export-reopen.json; author-result.json is initial construction record, not final stair/rail inventory',scope='Concrete apron and two ends only; R97 lower endpoint changes explicit in refine-result.json; toe source cleanup in toe-cleanup.json')
+assert all(r['passed'] for r in report['new_part_gates']);(D/'source-final.json').write_text(json.dumps(report,indent=2))
+for name in ['Docs/PROJECT_GUIDE_AND_HISTORY.md','Docs/BLENDER_UNITY_WORKFLOW.md']:
+ path=R/name;s=path.read_text(encoding='utf-8');first,end=s.split('\n## ',1);first=first.replace('81.00s',f'{duration:.2f}s').replace('81s',f'{duration:.2f}s').replace('≈29.65',f'≈{frames/duration:.4f}').replace('83.81s',f'{seconds:.2f}s');path.write_text(first+'\n## '+end,encoding='utf-8')
+print(json.dumps(dict(video_seconds=duration,frames=frames,fps=frames/duration,size=size,motion_seconds=seconds,reached=reached,parts=report['new_parts'],bindings=31)))

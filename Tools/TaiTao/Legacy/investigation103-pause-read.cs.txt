@@ -1,0 +1,2 @@
+using UnityEngine;using UnityEditor;using UnityEngine.InputSystem;using System.IO;using ConRoi.Investigation.V36.R103;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){var s=Object.FindFirstObjectByType<InvestigationSession>();string t="pause="+s.Paused+" timeScale="+Time.timeScale+" page="+s.Page+" keyboard="+Keyboard.current.name;File.AppendAllText("Test/KetQua/investigation_r103/native-pause.txt",t+"\n");r.Log(t);}}

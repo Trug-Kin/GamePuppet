@@ -1,0 +1,65 @@
+using UnityEngine;using UnityEditor;using UnityEditor.SceneManagement;using UnityEngine.SceneManagement;using System;using System.Linq;using System.IO;using System.Collections.Generic;using ConRoi.Investigation.V36;
+internal class CommandScript:IRunCommand
+{
+ const string A="Assets/Art/InvestigationV36/R102/";
+ static Transform Find(Transform root,string name)=>root.GetComponentsInChildren<Transform>(true).FirstOrDefault(t=>t.name==name);
+ static void Materialize(GameObject root){foreach(var r in root.GetComponentsInChildren<Renderer>(true)){r.sharedMaterials=r.sharedMaterials.Select(m=>{if(!m)return m;string path=A+"Materials/"+m.name.Replace(" (Instance)","")+".mat";var n=AssetDatabase.LoadAssetAtPath<Material>(path);if(!n){n=new Material(Shader.Find("Universal Render Pipeline/Lit"));n.name=m.name;n.color=m.HasProperty("_Color")?m.color:Color.white;if(m.HasProperty("_BaseColor"))n.color=m.GetColor("_BaseColor");AssetDatabase.CreateAsset(n,path);}return n;}).ToArray();}}
+ static GameObject Part(string file,string child,string name,Transform parent,Vector3 p){var asset=AssetDatabase.LoadAssetAtPath<GameObject>(A+file+".fbx");if(!asset)throw new Exception("Missing FBX "+file);var source=Find(asset.transform,child);if(!source&&file=="WORKSHOP"&&asset.GetComponent<MeshFilter>())source=asset.transform;if(!source)throw new Exception("Missing FBX object "+child);var g=UnityEngine.Object.Instantiate(source.gameObject);g.name=name;g.transform.SetParent(parent,false);g.transform.localPosition+=p;Materialize(g);return g;}
+ static GameObject Actor(string file,Transform parent,Vector3 p,float yaw,float scale=1){var asset=AssetDatabase.LoadAssetAtPath<GameObject>(A+file+".fbx");var g=(GameObject)PrefabUtility.InstantiatePrefab(asset);g.name=file+"_Investigation";g.transform.SetParent(parent,false);g.transform.localPosition=p;g.transform.localRotation=Quaternion.Euler(0,yaw,0);g.transform.localScale=Vector3.one*scale;Materialize(g);var a=g.AddComponent<InvestigationActor>();a.puppet=file.StartsWith("R");a.head=Find(g.transform,"head");a.leftUpper=Find(g.transform,"upperL");a.rightUpper=Find(g.transform,"upperR");a.leftFore=Find(g.transform,"foreL");a.rightFore=Find(g.transform,"foreR");return g;}
+ static void Collider(GameObject g){foreach(var f in g.GetComponentsInChildren<MeshFilter>()){var c=f.gameObject.AddComponent<MeshCollider>();c.sharedMesh=f.sharedMesh;}}
+ static void Interaction(GameObject g,string id,string verb,string action="inspect"){var t=g.AddComponent<InvestigationInteractable>();t.evidenceId=id;t.verb=verb;t.action=action;if(!g.GetComponentsInChildren<Collider>().Any()){var renderers=g.GetComponentsInChildren<Renderer>();var b=new Bounds(g.transform.position,Vector3.zero);foreach(var r in renderers)b.Encapsulate(r.bounds);var c=g.AddComponent<BoxCollider>();c.center=g.transform.InverseTransformPoint(b.center);c.size=new Vector3(Mathf.Max(.16f,b.size.x),Mathf.Max(.12f,b.size.y),Mathf.Max(.16f,b.size.z));}}
+ static void Label(Transform parent,string text,Vector3 p,float size=.09f){var g=new GameObject("Label_"+text);g.transform.SetParent(parent,false);g.transform.localPosition=p;g.transform.localRotation=Quaternion.Euler(0,180,0);var tm=g.AddComponent<TextMesh>();tm.text=text;tm.fontSize=48;tm.characterSize=size;tm.anchor=TextAnchor.MiddleCenter;tm.color=new Color(.9f,.78f,.51f);}
+ static ReturnGateMechanism Gate(Transform parent,Vector3 p,bool physical){var g=new GameObject("Self_return_gate_L_C_D");g.transform.SetParent(parent,false);g.transform.localPosition=p;var gate=g.AddComponent<ReturnGateMechanism>();var leaf=Part("MECHANISM","GateLeaf_L","L_return_leaf",g.transform,Vector3.zero);gate.leaf=leaf.transform;var latch=Part("MECHANISM","Latch_C","C_latch",g.transform,Vector3.zero);gate.latch=latch.transform;gate.rope=Part("MECHANISM","ReleaseRope_D","D_rope",g.transform,Vector3.zero).transform;if(physical){Collider(leaf);Interaction(leaf,"mechanism","Khám");Interaction(latch,"mechanism","Khám");}gate.checkPlayerContact=physical;return gate;}
+ static Camera StageCam(Transform parent,string name,Vector3 p,Vector3 target,int layer,out RenderTexture texture){var g=new GameObject(name);g.transform.SetParent(parent,false);g.transform.localPosition=p;g.transform.LookAt(parent.TransformPoint(target));var c=g.AddComponent<Camera>();c.cullingMask=1<<layer;c.clearFlags=CameraClearFlags.SolidColor;c.backgroundColor=new Color(.12f,.15f,.16f);c.fieldOfView=43;c.nearClipPlane=.03f;texture=new RenderTexture(1000,650,24){name=name+"_RT"};c.targetTexture=texture;return c;}
+ static void Layer(Transform root,int layer){foreach(var t in root.GetComponentsInChildren<Transform>(true))t.gameObject.layer=layer;}
+ public void Execute(ExecutionResult result)
+ {
+  var scene=EditorSceneManager.GetActiveScene();if(EditorApplication.isPlaying||scene.isDirty)throw new Exception("Clean Edit required");
+  string dest="Assets/Scenes/JourneyPresentation_v48_r102.unity";bool resume=File.Exists(dest)&&!File.Exists("Test/KetQua/investigation_r102/integration.txt")&&File.ReadAllBytes(dest).SequenceEqual(File.ReadAllBytes("Assets/Scenes/JourneyPresentation_v48_r101.unity"));if(File.Exists(dest)&&!resume)throw new Exception("r102 exists with changes; do not overwrite");if(!resume&&!scene.path.EndsWith("r101.unity"))throw new Exception("Baseline r101 required");
+  Directory.CreateDirectory(A+"Materials");AssetDatabase.Refresh();
+  foreach(var file in new[]{"WORKSHOP","MECHANISM","EVIDENCE","Khai","Ha","R03","R12"}){var path=A+file+".fbx";var importer=(ModelImporter)AssetImporter.GetAtPath(path);if(!importer)throw new Exception("Not imported "+path);importer.isReadable=true;importer.globalScale=1;importer.importAnimation=false;importer.meshCompression=ModelImporterMeshCompression.Off;importer.SaveAndReimport();}
+  if(!resume)EditorSceneManager.SaveScene(scene,dest,true);scene=EditorSceneManager.OpenScene(dest);
+  var all=scene.GetRootGameObjects().SelectMany(g=>g.GetComponentsInChildren<Transform>(true)).ToArray();
+  var player=all.Single(t=>t.name=="Minh_RegionalWalk_180cm").gameObject;var movement=player.GetComponent<DieuKhienDiChuyen>();var look=player.GetComponent<DieuKhienGocNhin>();
+  var oldActors=all.Where(t=>t&&((t.GetComponent<HienGuongMatTheoKhu>()!=null)||t.name.StartsWith("Roi_")||t.name=="CR_Puppet"||t.name=="CR_Minh"||t.name=="CR_Vy"||t.name.EndsWith("Puppet"))).ToArray();
+  var disabled=new List<string>();foreach(var m in all.SelectMany(t=>t.GetComponents<MonoBehaviour>()).Where(m=>m).ToArray()){if(m==movement||m==look||m.GetType().Assembly!=typeof(DieuKhienDiChuyen).Assembly)continue;disabled.Add(m.GetType().Name+" @ "+m.name);UnityEngine.Object.DestroyImmediate(m);}
+  foreach(var a in all.SelectMany(t=>t.GetComponents<Animation>()))a.enabled=false;
+  foreach(var c in all.SelectMany(t=>t.GetComponents<Canvas>()))c.enabled=false;
+  // Remove old actor/puppet hierarchies only from this derived scene, never shared assets.
+  var removed=new List<string>();foreach(var t in oldActors){if(!t||t.gameObject==player)continue;removed.Add(t.name);UnityEngine.Object.DestroyImmediate(t.gameObject);}
+  foreach(var r in player.GetComponentsInChildren<Renderer>(true))r.enabled=false;
+  player.name="Khang_FirstPerson_R102";var cc=movement.controller;cc.enabled=false;player.transform.SetPositionAndRotation(new Vector3(774,6.04f,286),Quaternion.identity);cc.enabled=true;
+  var camera=player.GetComponentInChildren<Camera>();camera.cullingMask&=~((1<<29)|(1<<30));look.RestorePitch(0);
+  var root=new GameObject("Investigation_V36_R102");var s=root.AddComponent<InvestigationSession>();s.movement=movement;s.look=look;s.eye=camera;
+  var workshop=new GameObject("Workshop_GDD36");workshop.transform.SetParent(root.transform);workshop.transform.position=new Vector3(774,5.04003f,290);
+  var shell=Part("WORKSHOP","WorkshopShell","WorkshopShell_SourceFBX",workshop.transform,Vector3.zero);Collider(shell);
+  s.gate=Gate(workshop.transform,new Vector3(0,3,1.5f),true);s.gate.player=cc;
+  var handle=Part("MECHANISM","Handle_DK","DK_release_handle",workshop.transform,new Vector3(1.5f,1.2f,-4.5f));Interaction(handle,"mechanism","Giữ / thả D","rope");s.gate.handle=handle.transform;
+  var hook=Part("MECHANISM","Hook_M","M_hook_dust",workshop.transform,new Vector3(1.2f,1.25f,-4.5f));Interaction(hook,"hook","Khám");
+  Label(workshop.transform,"XƯỞNG • KHÁM TRƯỚC KHI THỬ",new Vector3(0,2.5f,-5.85f),.025f);
+  var r03=Actor("R03",workshop.transform,new Vector3(-1.4f,.08f,1),180,.62f);Interaction(r03,"r03","Xem");
+  var r12=Actor("R12",workshop.transform,new Vector3(2.2f,3,3.8f),180,1.25f);Interaction(r12,"r12","Xem");
+  var khai=Actor("Khai",workshop.transform,new Vector3(2.7f,.08f,-4),180);Interaction(khai,"khai","Nói chuyện với");
+  var ha=Actor("Ha",root.transform,new Vector3(785.8f,5.04003f,272.76f),180);Interaction(ha,"ha","Hỏi");
+  foreach(var e in new[]{new{ id="henri",pos=new Vector3(-2,.93f,0)},new{ id="coat",pos=new Vector3(-2,.93f,-.3f)},new{ id="shoe",pos=new Vector3(-2,.94f,.3f)},new{ id="fabric",pos=new Vector3(1.55f,1.3f,-4.45f)},new{ id="phone",pos=new Vector3(2.3f,3.85f,3.1f)},new{ id="slide",pos=new Vector3(.8f,3.015f,1.7f)},new{ id="shoeprint",pos=new Vector3(.85f,3.02f,2.1f)}}){
+   string mesh=e.id=="phone"?"RepairPhone":e.id=="coat"?"CoatSample":e.id=="fabric"?"TornFabric":e.id=="shoe"||e.id=="shoeprint"?"ShoeSample":e.id=="slide"?"SlideMarks":"EvidencePaper";
+   var g=Part("EVIDENCE",mesh,"Evidence_"+e.id,workshop.transform,e.pos);Interaction(g,e.id,"Xem");Label(workshop.transform,InvestigationContent.Get(e.id).title,e.pos+Vector3.up*.16f,.008f);
+  }
+  var table=Part("EVIDENCE","EvidencePaper","Reconstruction_table_controls",workshop.transform,new Vector3(2,.94f,-2));table.transform.localScale=new Vector3(5,1,3);Interaction(table,"","Dựng lại","table");Label(workshop.transform,"BÀN DỰNG LẠI • BẢN SAO",new Vector3(2,1.3f,-2),.012f);
+  // Separate, fully modeled stage photographed by a fixed camera; never a route fixture.
+  var stage=new GameObject("Reconstruction_stage");stage.transform.SetParent(root.transform);stage.transform.position=new Vector3(900,40,300);
+  var stageShell=Part("WORKSHOP","WorkshopShell","ModelShell",stage.transform,Vector3.zero);s.modelGate=Gate(stage.transform,new Vector3(0,3,1.5f),false);s.modelKhai=Actor("Khai",stage.transform,new Vector3(-2,0,-3),0).transform;s.modelTu=Actor("R03",stage.transform,new Vector3(.8f,3,1.9f),180).transform;
+  Layer(stage.transform,29);s.stageCamera=StageCam(stage.transform,"Reconstruction fixed camera",new Vector3(9,9,-11),new Vector3(0,2,1),29,out var rt);AssetDatabase.CreateAsset(rt,A+"Reconstruction.renderTexture");s.stageTexture=rt;
+  var clip=new GameObject("Repair_clip_illustration");clip.transform.SetParent(root.transform);clip.transform.position=new Vector3(930,40,300);s.clipGate=Gate(clip.transform,new Vector3(0,3,1.5f),false);s.clipGate.enabled=false;
+  var clipFloor=Part("WORKSHOP","WorkshopShell","ClipShell",clip.transform,Vector3.zero);s.clipTu=Actor("R03",clip.transform,new Vector3(.8f,3,1.9f),180).transform;var actor=s.clipTu.GetComponent<InvestigationActor>();actor.repairHands=true;
+  s.clipRepair=Actor("R12",clip.transform,new Vector3(.8f,3,2.75f),180,.85f).transform;
+  var tool=Part("MECHANISM","Handle_DK","Tool_in_hand",s.clipTu,new Vector3(.38f,.9f,.1f));
+  Layer(clip.transform,30);var clipCam=StageCam(clip.transform,"Repair fixed camera",new Vector3(3.3f,5.6f,-2.1f),new Vector3(.8f,3.9f,1.8f),30,out var clipRT);clipCam.fieldOfView=40;AssetDatabase.CreateAsset(clipRT,A+"RepairClip.renderTexture");s.clipTexture=clipRT;
+  // Interior lights are authored scene components; no map or terrain change.
+  foreach(var p in new[]{new Vector3(0,4.6f,0),new Vector3(0,4.7f,4)}){var g=new GameObject("Workshop practical light");g.transform.SetParent(workshop.transform,false);g.transform.localPosition=p;var l=g.AddComponent<Light>();l.type=LightType.Point;l.range=14;l.intensity=2.7f;l.color=new Color(1,.88f,.7f);l.shadows=LightShadows.None;}
+  RenderSettings.fog=false;if(RenderSettings.sun){RenderSettings.sun.intensity=1.1f;RenderSettings.sun.transform.rotation=Quaternion.Euler(45,220,0);}RenderSettings.ambientLight=new Color(.45f,.45f,.43f);
+  EditorSceneManager.MarkSceneDirty(scene);EditorSceneManager.SaveScene(scene);AssetDatabase.SaveAssets();
+  File.WriteAllText("Test/KetQua/investigation_r102/integration.txt","Scene="+scene.path+"\nDisabled legacy behaviours="+disabled.Count+"\n"+string.Join("\n",disabled)+"\nRemoved old actors="+string.Join(",",removed)+"\nController unchanged speed="+movement.speed+" step="+cc.stepOffset+" slope="+cc.slopeLimit+"\nWorkshop=(774,5.04003,290); Ha=(785.8,5.04003,272.76). Existing ground sampled before placement. No terrain mesh changed.");
+  result.Log("Created r102 with isolated investigation root, authored source assets, first-person Khang and replacement Khai/Ha/R03/R12. Old saves not loaded. Review visually and playtest before handoff.");
+ }
+}

@@ -1,0 +1,2 @@
+using UnityEditor;using UnityEngine;using System.Linq;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult result){EditorApplication.ExecuteMenuItem("Window/General/Game");var t=System.Type.GetType("UnityEditor.GameView,UnityEditor");var w=EditorWindow.GetWindow(t);w.ShowUtility();w.position=new Rect(0,0,1280,760);w.Focus();result.Log("game ready; roots="+Object.FindObjectsByType<Transform>(FindObjectsInactive.Include,FindObjectsSortMode.None).Count(x=>x.name=="Langfarm_R93"));}}

@@ -1,0 +1,2 @@
+using UnityEditor;using System.Reflection;using System.Linq;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult result){int count=0;foreach(var d in EditorApplication.update.GetInvocationList()){var t=d.Target;if(t!=null&&t.GetType().GetFields(BindingFlags.Instance|BindingFlags.Public|BindingFlags.NonPublic).Any(f=>f.FieldType==typeof(UnityEngine.Vector2[]))){EditorApplication.update-=(EditorApplication.CallbackFunction)d;count++;}}result.Log("Removed only route review closure callbacks="+count+" after interrupted Play");}}

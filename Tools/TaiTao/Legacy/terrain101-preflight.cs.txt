@@ -1,0 +1,3 @@
+﻿using UnityEngine;using UnityEditor;using UnityEditor.SceneManagement;using System.IO;using System.Linq;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult result){var sc=EditorSceneManager.GetActiveScene();var s=Object.FindFirstObjectByType<DieuPhoiHanhTrinh>();string txt="project="+Application.dataPath+" Unity="+Application.unityVersion+" scene="+sc.path+" dirty="+sc.isDirty+" play="+EditorApplication.isPlaying+" compiling="+EditorApplication.isCompiling;File.WriteAllText("Test/KetQua/journey_v48/terrain_r101/editor-preflight.txt",txt);result.Log(txt);}}
+

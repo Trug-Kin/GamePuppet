@@ -1,0 +1,28 @@
+using UnityEngine;using UnityEditor;using System;using System.IO;using System.Text;using System.Collections.Generic;using ConRoi.Investigation.V36.R106;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){var s=Object.FindFirstObjectByType<InvestigationSession>();s.data=new InvestigationSave();s.SaveDirectoryOverride=Path.GetFullPath("Test/KetQua/investigation_r106/regression-profile");s.ResetTrial();s.OpenPage("reconstruction");var w=EditorWindow.GetWindow(Type.GetType("UnityEditor.GameView,UnityEditor"));w.Focus();var log=new StringBuilder("Synthetic GameView mouse regression. API initial profile/page and state assertions; no API seeking. Save/load/pause lifecycle actions explicitly API.\n");var q=new Queue<Action>();
+Action<bool,string> check=(v,m)=>{log.AppendLine((v?"PASS ":"FAIL ")+m);if(!v)throw new Exception(m);};
+Action<EventType,float,float> mouse=(t,x,y)=>w.SendEvent(new Event{type=t,button=0,mousePosition=new Vector2(x*Screen.width/1200/1.25f,y*Screen.height/800/1.25f+55)});
+Action<float,float> click=(x,y)=>{mouse(EventType.MouseDown,x,y);mouse(EventType.MouseUp,x,y);};
+Func<float,float> sliderX=t=>s.TrialSliderRect.x+24+9+(s.TrialSliderRect.width-18)*t/s.TrialDuration;
+Action<float> seek=t=>{q.Enqueue(()=>mouse(EventType.MouseDown,sliderX(s.TrialTime),664));q.Enqueue(()=>mouse(EventType.MouseDrag,sliderX(t),664));q.Enqueue(()=>check(s.TrialScrubbing&&Mathf.Abs(s.TrialTime-t)<.03f,"held seek time="+t));q.Enqueue(()=>mouse(EventType.MouseUp,sliderX(t),664));q.Enqueue(()=>{check(!s.TrialRunning&&!s.TrialScrubbing,"release remains paused");var expected=TrialTimeline.At(s.TrialId,s.TrialTime,s.TrialClearAt);check(Mathf.Abs(s.modelGate.state.angle-expected.angle)<.0001f&&s.modelGate.state.latched==expected.latched,"seek recomputes same mechanism state");});};
+float end=0,clear=0,paused=0,angle=0;int trials=0;Vector3 player=s.movement.transform.position;Quaternion eye=s.eye.transform.rotation;
+q.Enqueue(()=>click(120,148));q.Enqueue(()=>check(s.TrialId=="release"&&s.TrialRunning,"UI starts case"));q.Enqueue(()=>click(120,217));q.Enqueue(()=>{check(s.TrialId=="help"&&s.TrialRunning&&s.TrialTime<1,"switch while running resets old timeline");end=s.TrialDuration;trials=s.data.trials.Count;click(1060,621);});
+seek(2.4f);seek(2.6f);
+q.Enqueue(()=>check(!s.modelGate.state.rope&&s.modelGate.state.bodyForce,"after rope release person still holds, not auto-cleared"));
+q.Enqueue(()=>{mouse(EventType.MouseDown,sliderX(end-.15f),664);mouse(EventType.MouseUp,sliderX(end-.15f),664);});
+q.Enqueue(()=>check(!s.modelGate.state.latched,"seek before relatch remains unlatched"));
+q.Enqueue(()=>{mouse(EventType.MouseDown,sliderX(end),664);mouse(EventType.MouseUp,sliderX(end),664);});
+q.Enqueue(()=>{check(s.modelGate.state.latched,"seek after relatch is closed");check(s.data.trials.Count==trials,"seek to end creates no trial record");check(!s.data.clipBeforeSeen&&!s.data.clipEventSeen,"seek opens no clip observations");paused=s.TrialTime;angle=s.modelGate.state.angle;click(350,621);});
+q.Enqueue(()=>{check(s.TrialTime==paused&&s.modelGate.state.angle==angle,"wide view preserves time/state");click(780,621);});
+q.Enqueue(()=>{check(s.TrialTime==paused&&s.modelGate.state.angle==angle,"hand view preserves time/state");click(120,148);});
+q.Enqueue(()=>{end=s.TrialDuration;mouse(EventType.MouseDown,sliderX(end),664);mouse(EventType.MouseUp,sliderX(end),664);});
+q.Enqueue(()=>{check(s.CanClearTrialHolds,"intentional body hold remains after end seek");click(140,640);});
+q.Enqueue(()=>{clear=s.TrialClearAt;check(float.IsFinite(clear)&&s.TrialRunning&&s.TrialDuration>end+5,"explicit removal extends playback, no reset/speedup");click(1060,621);});
+q.Enqueue(()=>{paused=s.TrialTime;check(!s.TrialRunning,"pause after removal");mouse(EventType.MouseDown,sliderX(clear-.05f),664);mouse(EventType.MouseUp,sliderX(clear-.05f),664);});
+q.Enqueue(()=>{check(s.modelGate.state.bodyForce,"reverse seek restores original hold");mouse(EventType.MouseDown,sliderX(clear+.7f),664);mouse(EventType.MouseUp,sliderX(clear+.7f),664);});
+q.Enqueue(()=>{check(!s.modelGate.state.bodyForce&&!s.modelGate.state.latched,"seek after withdrawal shows return not instant relatch");paused=s.TrialTime;s.SetPaused(true);});
+q.Enqueue(()=>{check(s.TrialTime==paused&&s.Paused,"API pause freezes timeline");s.SetPaused(false);click(1060,621);});
+q.Enqueue(()=>check(s.TrialRunning&&s.TrialTime>paused,"UI resumes same removal timeline"));
+q.Enqueue(()=>{s.Save();check(s.Load(),"API save/load while model active");});
+q.Enqueue(()=>{check(s.Page=="reconstruction"&&!s.TrialRunning&&s.TrialTime==0&&s.TrialId==""&&float.IsPositiveInfinity(s.TrialClearAt),"load resets model and removal schedule safely");for(int i=0;i<5;i++)check(s.Load(),"repeat model load "+i);check(Vector3.Distance(player,s.movement.transform.position)<.001f,"no player drift");check(Quaternion.Angle(eye,s.eye.transform.rotation)<.001f,"UI dragging never turns player camera");ScreenCapture.CaptureScreenshot("Test/BangChung/investigation_r106/regression-reset.png");});
+double next=EditorApplication.timeSinceStartup+1;EditorApplication.CallbackFunction f=null;f=()=>{if(EditorApplication.timeSinceStartup<next)return;next=EditorApplication.timeSinceStartup+.3;try{if(q.Count>0){q.Dequeue()();return;}EditorApplication.update-=f;File.WriteAllText("Test/KetQua/investigation_r106/regression-ui.txt",log.ToString());}catch(Exception e){EditorApplication.update-=f;File.WriteAllText("Test/KetQua/investigation_r106/regression-ui.txt",log+"FAIL "+e);}};EditorApplication.update+=f;r.Log("Bounded targeted UI/lifecycle regression queued");}}
