@@ -1,0 +1,44 @@
+{
+  "binary_checkpoint": {
+    "path": "Assets/_Recovery/0 (2).unity",
+    "original_bytes": 7619172,
+    "git_8ea91d4_bytes": 7619162,
+    "original_sha256": "00eac743343893f614abbb6cbb1ddc286565d95f330e4913ced30345384a7939",
+    "git_8ea91d4_sha256": "262a99df2849efc83b1872f69aea18f8adfe8b5a6815d4946f3c8b10e3901024",
+    "cause": "Explicit *.unity text forced CRLF normalization on a legacy binary scene. Repair by exact-path LFS -text, without editing/reserializing checkpoint."
+  },
+  "promoted_D": [
+    {
+      "path": "Assets/HDRPDefaultResources.meta",
+      "bytes": 172,
+      "sha256": "76dc67c174d17938775a47dcf221333c21700fcf3fa50e136048f1b003cbef3e",
+      "reason": "Verified existing GraphicsSettings HDRP global GUID 49e2c02c67bdb254fb2e233cd8e14627 and its serialized asset closure; preserve existing config, do not activate HDRP"
+    },
+    {
+      "path": "Assets/HDRPDefaultResources/HDRenderPipelineGlobalSettings.asset",
+      "bytes": 57907,
+      "sha256": "090bb2c6c5cebdcaf2dc0ca1b2bd410414b7e2069a3e0b597fd84ef7887b6bb1",
+      "reason": "Verified existing GraphicsSettings HDRP global GUID 49e2c02c67bdb254fb2e233cd8e14627 and its serialized asset closure; preserve existing config, do not activate HDRP"
+    },
+    {
+      "path": "Assets/HDRPDefaultResources/HDRenderPipelineGlobalSettings.asset.meta",
+      "bytes": 189,
+      "sha256": "20b484928e77be84eea872d3ffd434b9c2a8f5fa944ca88ab2e68fc60d34f64b",
+      "reason": "Verified existing GraphicsSettings HDRP global GUID 49e2c02c67bdb254fb2e233cd8e14627 and its serialized asset closure; preserve existing config, do not activate HDRP"
+    },
+    {
+      "path": "Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset",
+      "bytes": 21067,
+      "sha256": "1e0d28ee61801f52a3ab6be6b6016616f051ecc3ac266634b985aeb735d5ccf9",
+      "reason": "Verified existing GraphicsSettings HDRP global GUID 49e2c02c67bdb254fb2e233cd8e14627 and its serialized asset closure; preserve existing config, do not activate HDRP"
+    },
+    {
+      "path": "Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset.meta",
+      "bytes": 189,
+      "sha256": "fba8b9f8de2a40ca9c80a37d13156eb0271eae2467e1ef0d401c7b272310fa64",
+      "reason": "Verified existing GraphicsSettings HDRP global GUID 49e2c02c67bdb254fb2e233cd8e14627 and its serialized asset closure; preserve existing config, do not activate HDRP"
+    }
+  ],
+  "D_remaining": 4183,
+  "source_bytes_modified": false
+}
