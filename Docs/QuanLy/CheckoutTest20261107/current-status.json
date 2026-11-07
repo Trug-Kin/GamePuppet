@@ -1,0 +1,52 @@
+{
+  "utc": "2026-11-07T09:58:40.490907+00:00",
+  "source_commit": "a789222286f1a56db5b6cc21e1ffb5a0e7542be4",
+  "checkout_commit": "8ea91d4d64236f5d8507f216112997402d9b46f6",
+  "source_branch": "chore/prepare-r107",
+  "checkout": "C:\\ConRoi_CheckoutTest",
+  "unity": "6000.6.2f1",
+  "status": "BLOCKED_EDITOR_CONTROL_AND_PENDING_CORRECTED_BASELINE_TEST",
+  "checkout_creation": "PASS",
+  "initial_lfs": "PASS: 877 materialized files / 795 independently hashed objects",
+  "compile_initial": "PASS: Assembly-CSharp and Editor compiled; no CS errors observed",
+  "entry_reference": "PASS at 8ea91d4: 32958 components, 0 MissingScript, 0 broken serialized reference, 4582 dependencies present",
+  "render_1080": "PASS rendering only, not UI traversal",
+  "ui_flow": "INCOMPLETE / NOT_RUN; see FIXTURE_ATTEMPTS.md",
+  "original_saves_modified": false,
+  "entry_bytes_equal_after_line_normalization": true,
+  "A_meta_guid_mismatches": [],
+  "binary_checkpoint_LFS_object_sha256": "00eac743343893f614abbb6cbb1ddc286565d95f330e4913ced30345384a7939",
+  "D_unclassified_remaining": 4183,
+  "preserved_checkout_changes": [
+    {
+      "path": "Assets/Settings/UniversalRenderPipelineGlobalSettings.asset",
+      "snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\ImportedChanges_20261107_095818\\Assets\\Settings\\UniversalRenderPipelineGlobalSettings.asset",
+      "bytes": 29234,
+      "sha256": "038489ddd03b6cf9ce53fd986e340251b92a4199b45480f73e5ecb506f6dae45"
+    },
+    {
+      "path": "Assets/_Recovery/0 (2).unity",
+      "snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\ImportedChanges_20261107_095818\\Assets\\_Recovery\\0 (2).unity",
+      "bytes": 3539,
+      "sha256": "1e4d3517d23750d2470a70d35343e19f34e3cf209416bc0d169ab73601fc5044"
+    },
+    {
+      "path": "ProjectSettings/GraphicsSettings.asset",
+      "snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\ImportedChanges_20261107_095818\\ProjectSettings\\GraphicsSettings.asset",
+      "bytes": 3134,
+      "sha256": "2964bcf23f232d27d1bb8a28ad060be915eedd4d50a9dede4d170c41c3051427"
+    }
+  ],
+  "live_snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\LiveSnapshot_20261107_095413",
+  "private_profile": "C:\\ConRoi_CheckoutTest\\Test\\PlaytestProfiles\\Clean_20261107",
+  "measured_Library_bytes": 6273778145,
+  "C_free_now": 15013732352,
+  "D_free_now": 1879302144,
+  "task_branches": [
+    "work/map-asset-baseline a209c0e3b41a8b55e438aeabf1025b5ef6e7d940",
+    "work/runtime-contracts-baseline a209c0e3b41a8b55e438aeabf1025b5ef6e7d940",
+    "work/ui-onboarding-review a209c0e3b41a8b55e438aeabf1025b5ef6e7d940"
+  ],
+  "remotes": [],
+  "next": "Confirm checkout Editor is not being used; preserve/close controlled Play, apply corrected Git baseline a789222 without losing recorded auto changes, materialize new binary-scene LFS object, reopen/test entry and all missing UI cases, then advance task branches safely. No automatic reset/discard/overwrite."
+}

@@ -1,0 +1,5 @@
+Read-only fresh-checkout reference audit; not UI evidence.
+Unity=6000.6.2f1 project=C:/ConRoi_CheckoutTest/Assets scene=Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity dirty=False playing=False compiling=False
+components=32958 MissingScript=0 brokenSerializedReferences=0 session=True
+AssetDatabase dependency count=4582 missing dependency files=0
+profile=C:/Users/kaito/AppData/LocalLow/DefaultCompany/Con Roi\InvestigationV36\r107\prototype.json evidence=0 mapping=0 finalized=False page=

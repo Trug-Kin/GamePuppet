@@ -1,0 +1,4401 @@
+{
+  "commit": "8ea91d4d64236f5d8507f216112997402d9b46f6",
+  "checkout": "C:\\ConRoi_CheckoutTest",
+  "independent_git_objects": true,
+  "independent_lfs": true,
+  "files_copied_from_untracked": 0,
+  "library_before_unity": false,
+  "remotes": [],
+  "lfs_files": 877,
+  "unique_lfs_objects": 795,
+  "unique_lfs_bytes": 6136024587,
+  "lfs_fsck": "Git LFS fsck OK",
+  "C_free_before_import": 43972919296,
+  "materialized": [
+    {
+      "path": "Assets/Art/Environment/JourneyV40/ConcretePavers.png",
+      "oid": "6a023094b432f35f348257f430141514099f6f10a1cd041f9fbef887b51af4e7",
+      "bytes": 43944
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV40/DampPlaster.png",
+      "oid": "74a5c69d50c7bdffdeb0b8d4c0ed2ae5e9b17adda966a407c0f3e85c2c3394db",
+      "bytes": 43185
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV40/PageTurn.wav",
+      "oid": "be5026af9f9c5f3d964a047e1c12ab2d3a19aa1aa5bf134a854a299257bcde8e",
+      "bytes": 62444
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV40/Receiver.wav",
+      "oid": "7bac5b0ac5de1de97e542488e84228e03932fb16928342436df6979cb22e9781",
+      "bytes": 23084
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV40/TimberGrain.png",
+      "oid": "fed47fe326dea4c65c8b0b985a1fd755a019fd75d89e70d3b2c13c51d9cbdd5a",
+      "bytes": 44908
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV41/PaperRustle.wav",
+      "oid": "5c311e05d825a2d83c17ae180a4929f1d608c068ec296d6b29efc5075f7efa1f",
+      "bytes": 62444
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV41/ParcelCloth.wav",
+      "oid": "8174950d6ccf3c224e28d8b269152a24769c85466a16c4095a0e336f3802529f",
+      "bytes": 76844
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV41/Watering.wav",
+      "oid": "ac8ff3b99c0cf179375399e0771b42be89cefa1cc5b4e837b119626c66a4e850",
+      "bytes": 153644
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV42/SlopeFoliage_1.asset",
+      "oid": "fb5bda892277a39891bdf8e9e8d96a9013d82f0ec79426a708505539283a0716",
+      "bytes": 92900844
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV42/SlopeFoliage_2.asset",
+      "oid": "ded56927ec70b47a2e314441e400c6b8241531a5c2755bd3be733f5918bdbb92",
+      "bytes": 69676524
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR91/BankR91_Context125_R91.fbx",
+      "oid": "19b8a008bf04e17acafdbb287d3da2239d6647bbd4bfec94093d411295e0b4af",
+      "bytes": 4929436
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR91/BankR91_Grade_000.fbx",
+      "oid": "a97fcd769a36298c3d904cfe5bdfda8270ffc2c9e1d1e44e586366eacdea76da",
+      "bytes": 5375612
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR91/BankR91_Grade_007.fbx",
+      "oid": "fa3f4a67627491845c67beff0b70c2aa501d8bd689ac55bd1f43ddd441b6c8dc",
+      "bytes": 1882188
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR91/BankR91_Grade_015.fbx",
+      "oid": "59f937140a0abddea6d7a7ca74cc9953955b9e2ccaf5a130a39ce8f69edf1bb2",
+      "bytes": 1717132
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR91/BankR91_Grade_017.fbx",
+      "oid": "e19f0fe383dfb22b5eb659fa43026a97accbb318780e0cdc5734ad8f93f792ab",
+      "bytes": 6493100
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR91/BankR91_Grade_033.fbx",
+      "oid": "242f5453bc6cb5b0849e179290fda148c8b3be4bd73431a12fe7d1e46f803fea",
+      "bytes": 84620
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR91/BankR91_Grade_037.fbx",
+      "oid": "573f9f67951b6b893c82f0359e07050e6fceda6a2ef16b063b9f9083673c208f",
+      "bytes": 318188
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR91/BankR91_Grade_040.fbx",
+      "oid": "8899e4974d16bedb04321176dc3cea9ef277673cf79d76a407ab658a976ae28c",
+      "bytes": 1394492
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR91/BankR91_Grade_048.fbx",
+      "oid": "c43430f3b56608f9f35ad0e2c91f7114fdeb0e4b15e36350602886028443a224",
+      "bytes": 314780
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR91/BankR91_Grade_052.fbx",
+      "oid": "8f4df18862d2cde8047b2d9ccf6fb595179a32c32b3f58a2ecbf72d6820d8a7f",
+      "bytes": 1719164
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR91/BankR91_Grade_057.fbx",
+      "oid": "906ed6d5afa3779b6f8908cd01044afdfb7acf8efd29792aa006ffd1b481dcb7",
+      "bytes": 1882188
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR91/BankR91_Grade_077.fbx",
+      "oid": "50356c51cfae0d497fedef72d807046b40c77d75be426406230f0619bcb923be",
+      "bytes": 1205500
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/M95_000.fbx",
+      "oid": "5505afb61502bd1353e2d5e2d325784944a11244f8908dc33e29db4521c801b3",
+      "bytes": 6076124
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/M95_000_BoundR97.asset",
+      "oid": "999cbe92ee421877f57d27e9ac6c1a10ceaf2915ea83aaad1416ed6f86e97dfd",
+      "bytes": 17871201
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/M95_002.fbx",
+      "oid": "dc9246ead368ce0d9d907afe844cbf8103c1b6350401634e9abd3a60e7f5e03b",
+      "bytes": 385436
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/M95_012.fbx",
+      "oid": "f9fe35a4889409ffaede4416854e936447e68009bc669c783fb67cba791e835c",
+      "bytes": 370428
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/M95_014.fbx",
+      "oid": "b91f7c6f0e145d7b335d1a0ec8fe65214f57cfa8c1352afe591f63e81ab4c7c8",
+      "bytes": 1797644
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/M95_016.fbx",
+      "oid": "567e7504118e2606e428e37bb69e4f4e8a8732940c6d1220fa1a92413b264bfb",
+      "bytes": 4179292
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/M95_017.fbx",
+      "oid": "e9c92d458418103248a44044fd13bf13b7c392816340a123913ba1d5aa9cb25b",
+      "bytes": 1511516
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/M95_019.fbx",
+      "oid": "6166bf74a822e639c3c2b389382f22782314e7a8852ea9d4ec6b54c7428fe5e5",
+      "bytes": 1797420
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/M95_022.fbx",
+      "oid": "ab4e6f122b8c31fa617617efc522db6f89499d0e55661a18072601c853010ac7",
+      "bytes": 6837836
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/M95_022_BoundR97.asset",
+      "oid": "bd0a1236ae1045e852bc6e38afe18d04c684e469992df53fa133c43f7274dd8e",
+      "bytes": 27545453
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/M95_023.fbx",
+      "oid": "588a7447034f29a385fd88ff497bf2aa3b9700711509f79d9d15d83e1cbd8420",
+      "bytes": 4939868
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/M97_Context125.fbx",
+      "oid": "605744e9e233526f98143e5a05593fe49e9ee90464453dc585e157811c7c8e78",
+      "bytes": 5737772
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/M97_Context125_BoundR97.asset",
+      "oid": "2f741fa251ab7eb949331e3d8e77f1bd7edc06fafce65fd679210d5ff8d97a75",
+      "bytes": 58327034
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/M97_Edge085.fbx",
+      "oid": "c934f12d6d0c6f1431613233aa7e483a2c0c263d31453b85cb3eee2a206e5c0a",
+      "bytes": 23068
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/R97_INTERMEDIATE_WALK.fbx",
+      "oid": "9112c96b5842a345ad9a37712a9b454ca641acc38f1d0c1242f0cf2519cd6b47",
+      "bytes": 28300
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/R97_LOWER_GRASS.fbx",
+      "oid": "1ef2fe69590151faddbad21cb6cbf9d06ce2920bf074d36aacc2264dcb947535",
+      "bytes": 47356
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/R97_LOWER_WALK.fbx",
+      "oid": "c14aa9a31fe2a4677ebb8a7ebbcf6d535702bb233cae25b062f0af9fb88e3539",
+      "bytes": 27036
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/R97_PHOTO_SHORT_RAIL.fbx",
+      "oid": "ec870a81cf1d3a12eb7f60bc0bb072813c1e7c2e9aaaa8cf4c68cb994230142d",
+      "bytes": 32188
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/R97_QUAY_WATER_EDGE.fbx",
+      "oid": "759e44cc8985fcd20c759b200f3f66e4f7eeec7cc7f4451035623931b78164b8",
+      "bytes": 21132
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/R97_STAIR_429_LOWER.fbx",
+      "oid": "71f99a323162e48ff77c80615cb66d9bb61c3132aa842aecdbc443fb0c874996",
+      "bytes": 15964
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/R97_STAIR_429_UPPER.fbx",
+      "oid": "3ea941fd5dbaebc4b1a5b5aab80017ec7f44d84a2c903e10aba30235f0505504",
+      "bytes": 15964
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/R97_STAIR_450_LOWER.fbx",
+      "oid": "bfe82bbace8bb7b0c8df70780cda1a3b96d9dd4cc57cdc52e927ea4ec00ead65",
+      "bytes": 15628
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/R97_STAIR_450_UPPER.fbx",
+      "oid": "5fc03d193dd8fea58f770613b80f874ef0f5c6d58a9d9cffd5ecfcbbcc23ca3e",
+      "bytes": 15644
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/R97_STAIR_471_LOWER.fbx",
+      "oid": "65a51f0b8bff165800d26e355618f168876e8e4e792556a322a574435b67da5e",
+      "bytes": 15612
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/R97_STAIR_471_UPPER.fbx",
+      "oid": "19edaae01d2251c93cc490e286fe0edb8b067e48302d5d8eef0c809af29aa988",
+      "bytes": 15628
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/R97_UPPER_GRASS.fbx",
+      "oid": "b06888d3eb21acfdbee11e850afb6f3092304b6cd24971b2f0dbf19b5bd0938d",
+      "bytes": 60156
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BankR97/R97_UPPER_WALK.fbx",
+      "oid": "f9a7df2fe91cba53a67bf7aaabbe188f50ac3ba5a6b81a1aed878dce6bfce9a6",
+      "bytes": 35340
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BoundaryFinishR21/Cypress_Needles.png",
+      "oid": "85cf8e4f37fc96df8a62ce537b00986c554c75ad889a9cb59c30ac047344a721",
+      "bytes": 18508
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BoundaryFinishR21/FootwayOverShoulder_Garden_Bank_Return_Walk_Surface_125.asset",
+      "oid": "978534d395817b39e6f53dbd16ec85560b737c4a4d755ce2faee4b849be41911",
+      "bytes": 32695205
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BoundaryFinishR21/FootwayOverShoulder_Lake_Bank_Return_Walk_Surface_125.asset",
+      "oid": "3003764bd73aaf9927eda3b29fb5178e37777d55d8449a08fb03e95f42c0c1d9",
+      "bytes": 18245662
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BridgeRepairR11/BridgeLocalSupport.fbx",
+      "oid": "54d4ac6e512bab61db7c48380d67b23479f182dc60e46d729d116ed26519f7b1",
+      "bytes": 2071756
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/BridgeRepairR12/BridgeLocalSupport.fbx",
+      "oid": "58f49ad14fb77d05f6d482c0f1f852586f30930555fcf8fc89df70bccbfb2e49",
+      "bytes": 2071756
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR100/D99_FLOWERS_Red_2_BoundR100.asset",
+      "oid": "45be1bcc7d3fc2e74bd98a2121a897504530a57b2643422975427cb2069e390c",
+      "bytes": 60913271
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR100/OngDaoDamR100_Delta.fbx",
+      "oid": "d20fc5f39a67dccdbdb6eda3a39f12ddddebe87f1fb98a4b9c1476213aa6d6d0",
+      "bytes": 20705020
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/L98_00.fbx",
+      "oid": "6f4dde21f9e23303be08eff1c589af6d5c43e0071b695c3c4b2ec8543ece3f51",
+      "bytes": 5101788
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/L98_02.fbx",
+      "oid": "4080e6a24e269745d0e124d9acb3259e9bdf3b6cd472abdcba6882d2a25d1c1d",
+      "bytes": 23260
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/L98_08.fbx",
+      "oid": "6885b869bfca13f7d2b2f12839a53efa39a5428ba22d86f222d82251123b9b84",
+      "bytes": 1421980
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/L98_12.fbx",
+      "oid": "3b72e681b20fb108c0205b4cf26022986bed076fb00a3cbd96ea65a1faa32a64",
+      "bytes": 6446428
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/L98_15.fbx",
+      "oid": "407ca62744af93d5b7f2665ac96e9d42e29f0d423813341f133f6010939f8042",
+      "bytes": 30140
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/L98_16.fbx",
+      "oid": "335d4bcc123054f75f4bbc58a12f0a61a9595f589679ff1bff51f00c4bfdba71",
+      "bytes": 18620
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/L98_25.fbx",
+      "oid": "e74c67d1201d138ddaa0c62a5e3d1bb8b40ec8d90aca1d92ddbb364a74220944",
+      "bytes": 59724
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/L98_26.fbx",
+      "oid": "906652395c56cac8c734a57c64a88bdd71442b42e538ea2f70b3efdf79a03cfd",
+      "bytes": 28508
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/L98_33.fbx",
+      "oid": "1adadf406c820e7fa34ea46d7800763f99a00457c2615cf0f3097ec4b82e8b0f",
+      "bytes": 22156
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/L98_34.fbx",
+      "oid": "4dc7b56ca41fed4bf7e5f97318236983d59771f715893fe693acaffc61874f1f",
+      "bytes": 40108
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/L98_35.fbx",
+      "oid": "fc529ec7bd73166ddcafb10755f9e3fbb589aadd1b17a98c904977732642ccbd",
+      "bytes": 5460684
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/L98_35_BoundR98.asset",
+      "oid": "5af7ccd2b72d767992c91c382d268841835580b773cb3901808d092c89d54ee9",
+      "bytes": 55271426
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/R98_CONCRETE_DAM_13_BAYS.fbx",
+      "oid": "a22aa16ebfa49550f68a04f79ee07b36a58d35e4a3989915190ac3df9b80950c",
+      "bytes": 27852
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/R98_FAR_END_STAIR_AND_LOW_LANDING.fbx",
+      "oid": "ea83ff2136517c1179173a829709cc369bf3a3ecb4ab5f979ae5b0f36768162a",
+      "bytes": 17612
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/R98_FAR_IN_STAIR_SIDE_RAIL.fbx",
+      "oid": "d891e02e62ca81f13afa1446d96e709907bbae71cb0bdfaa8c4ca501bca2a96d",
+      "bytes": 25628
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/R98_FAR_OUT_STAIR_SIDE_RAIL.fbx",
+      "oid": "d11e58876a26e5bae8f1056eeedc39daa450a97680251952082bf95a423efb18",
+      "bytes": 25772
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/R98_GATE_END_STAIR_AND_LOW_LANDING.fbx",
+      "oid": "6520b9298b65e19b786143c67b02f003384f91ef419dc45583c3fe9e453773f8",
+      "bytes": 17564
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/R98_GATE_IN_STAIR_SIDE_RAIL.fbx",
+      "oid": "da89f68ccdb322d92cb6db3c174a7611b54effda2d7faf8f7ec07f0f6e85470d",
+      "bytes": 25532
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/R98_GATE_OUT_STAIR_SIDE_RAIL.fbx",
+      "oid": "9bc26888a263af795d645685f792195b40ae4bd711636522845a8a0707faf18b",
+      "bytes": 25628
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/R98_TOE_GRILLE_01.fbx",
+      "oid": "31b8819c3975326fc466651241f9e587bf84f4c367c4324558f71859b0ce8c62",
+      "bytes": 30236
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/R98_TOE_GRILLE_02.fbx",
+      "oid": "e8bb3c5dfd1c349aba097ab4b680498ef728aa3b363f57579b949925deab8353",
+      "bytes": 30300
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/R98_TOE_GRILLE_03.fbx",
+      "oid": "b162efad0f193e510dacaaba9441e77fb90c55256f11099a11ef67ccd3784b2f",
+      "bytes": 30380
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/R98_TOE_GRILLE_04.fbx",
+      "oid": "b569aeac4f0511a910adcc2c7133ae0182bae0a3d1535298908d89911da1c0b2",
+      "bytes": 30060
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/R98_TOE_GRILLE_05.fbx",
+      "oid": "d67a5aea61797fc306b8e1a1c0d23063126c779678b890f5be9d5a522650a7c5",
+      "bytes": 29820
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/R98_TOE_GRILLE_06.fbx",
+      "oid": "0c15e1424e5e438900b2c22ad52eb4912f502724c0b69b5e4125ec540aea3f9b",
+      "bytes": 30332
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/R98_TOE_GRILLE_07.fbx",
+      "oid": "da09881349eeff3e682333fb2c7bf90701017661e70d8a9b3af8d788de82032e",
+      "bytes": 30220
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/R98_TOE_GRILLE_08.fbx",
+      "oid": "4c95b631f824e83a17669d69703cc3d67faf99421898ad17bc8edced4df8f2a8",
+      "bytes": 30156
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/R98_TOE_GRILLE_09.fbx",
+      "oid": "9e71eed9517c486879f8085a7e8bbb91f54749892f1b00663c2a13f38fd4b46d",
+      "bytes": 30140
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/R98_TOE_GRILLE_10.fbx",
+      "oid": "c086f6cd0f00fef522fd603b5b6d8bffda8b625f2b4c5fc6bfb661e14f5e8463",
+      "bytes": 30188
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/R98_TOE_GRILLE_11.fbx",
+      "oid": "08658b4d5a17ed11f3264a193dd0f1762a567d56b46b00f3d02eea306cebdabe",
+      "bytes": 30204
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/R98_TOE_GRILLE_12.fbx",
+      "oid": "7c4fbde869993bda49bf1c810abdd618a25d0e2cce3deec13606a47c421e13f2",
+      "bytes": 29996
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR98/R98_TOE_GRILLE_13.fbx",
+      "oid": "58fece0127748e922184f073e9cf8ae5275a828d1859941ff0e46b0c5ed055c1",
+      "bytes": 30236
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR99/BankR91_Grade_017_BoundR99.asset",
+      "oid": "9992eeed700726ab574466726e17c9c27ebc7f5d696b4f14fd512842193e2e59",
+      "bytes": 29302032
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR99/C95_0653_FootwayOverShoulder_Garden_Bank_Return_Walk_Surface_125_BoundR99.asset",
+      "oid": "6b97473b21b57fe71745937c6847b68df63c0584c2ddbd486d5676c050704ccb",
+      "bytes": 80329903
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR99/C95_0654_FootwayOverShoulder_Garden_Bank_Return_Walk_Surface_153_BoundR99.asset",
+      "oid": "bf6b29a40aa103f98490983248f2789bc66cc5dcdfbd16d9f632cb113ad64be3",
+      "bytes": 61930645
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR99/D99_FLOWERS_Red_0_BoundR99.asset",
+      "oid": "db024f24d1943ba422f2961ea466109a41d9979957077541dc7cbdeea3f7df34",
+      "bytes": 32258134
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR99/D99_FLOWERS_Red_2_BoundR99.asset",
+      "oid": "29d400fa864e74e5c9c212dcc29557b081d079cdc2aa5004eb9259fc5ddafc36",
+      "bytes": 60913270
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR99/D99_FLOWERS_Yellow_2_BoundR99.asset",
+      "oid": "cb1c18ddfee3bb3b791da9f36e218d2ce4772dd7f3c4ba0403961cac2d8c79ff",
+      "bytes": 22521333
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/DamR99/OngDaoDamR99.fbx",
+      "oid": "593c063b7138a72b998c389dfb069641990aefcc8b90f8d2777667025f575442",
+      "bytes": 65634876
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/EastMarketHotelR67/Context_Surface106_R67.fbx",
+      "oid": "953a8c8f21815eee6d2a419b1aafea348b72b3aaed0acaad54e2226d41e40bb5",
+      "bytes": 26908
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/EastMarketHotelR67/EastMarketHotel_R67.fbx",
+      "oid": "8b7d48c3b20527ed3c85895381b9edaf0478f5746e38d43f0e8bc9cc0ffe9ad7",
+      "bytes": 312828
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/EastMarketHotelR68/EastMarketHotel_R68.fbx",
+      "oid": "d25557424afeee481fe8572d3e4e79dfeed7f37544c26e96da85c0ec995ebe8e",
+      "bytes": 330972
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/EastMarketHotelR69/EastMarketHotel_R69.fbx",
+      "oid": "3cf9131f2b786bbd041de4ac959fb10f5a8fe3e2488e5d921352e0ef8cc80b99",
+      "bytes": 335244
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/ExportPolicyR19/RouteSurfaces.fbx",
+      "oid": "c1d889c53ad9a1184df73dc9742dbfc51510759b0997bd6c4aba213ea542cd15",
+      "bytes": 134137164
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/ExportPolicyR20/RouteSurfaces.fbx",
+      "oid": "c1d889c53ad9a1184df73dc9742dbfc51510759b0997bd6c4aba213ea542cd15",
+      "bytes": 134137164
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/FinitePineNormals/SlopeFoliage_1.asset",
+      "oid": "425d144a207aa4520ee315f4f4142c75062dd58e4e35ce2cded198e0a7868840",
+      "bytes": 94191109
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/FinitePineNormals/SlopeFoliage_2.asset",
+      "oid": "b833990d475c70ca6b3ae0efc353dde95f1946f3a01f3a288b9e60859a2873c7",
+      "bytes": 70644229
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/FlowersR21/FlowerModule.fbx",
+      "oid": "fd957d38f6bb188383002e7aed67fd920e0b709085f60219a9a8fe9c8a7e2303",
+      "bytes": 40444
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/I2GroundR94/I2_Context_110.fbx",
+      "oid": "96b54d3069301aca74741433047c40ea987decbff24e5f30da46a815469c9403",
+      "bytes": 1847420
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/I2GroundR94/I2_Context_111.fbx",
+      "oid": "c61e32ca54eb2988a0c1dc2eaa48162c5e94174fbee1aea7af20c928ef3b288b",
+      "bytes": 331356
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/I2GroundR94/I2_Context_124.fbx",
+      "oid": "13660e0f3f3b77c7cc6fecce8cce18f047b11ba1cbddb328df511fa1a6ecae0b",
+      "bytes": 2648700
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/I2GroundR94/I2_Context_136.fbx",
+      "oid": "abfbec7746e4c659856feeaff34b8f8b88386be99ad5b3cac720991e4b51f924",
+      "bytes": 1557292
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/I2GroundR94/I2_Surface_128.fbx",
+      "oid": "81736be867ea6ba199451ee04fd13c857e1efc55de25860315a3c0fd4870683d",
+      "bytes": 1847468
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/I2GroundR94/I2_Surface_128_BoundR94.asset",
+      "oid": "8f563d644dc2f9ecefc6caca5214241bdf8b3cad50b94537f6e59f3f4b251281",
+      "bytes": 25060074
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/I2GroundR94/I2_Surface_129.fbx",
+      "oid": "133335bd640ffc1a6e0e7b97f4bc41b11f30d6c5e27070170a939abc528d07c3",
+      "bytes": 213548
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/I2GroundR94/I2_Surface_142.fbx",
+      "oid": "b320657bc32f105df20e59e5de8fc150fb01cecf5422fefbea991015a1031139",
+      "bytes": 7084860
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/I2GroundR94/I2_Surface_142_BoundR94.asset",
+      "oid": "b2d6887ebccb9fb2ec3810882d9b84ec5f1c6e027682fe15cbda6153d12840ab",
+      "bytes": 78743051
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/I2GroundR94/I2_Surface_153.fbx",
+      "oid": "495d7e554b4e895538a1b00b8c9c7d5e9d5c8b2fee973cf2133bd406cd353fc3",
+      "bytes": 1557292
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/I2GroundR94/I2_Surface_176.fbx",
+      "oid": "249adc5c67b7d9a7bbeb4a32a7b780c341bab6b5d5913f6d0035f91a3d7c3f48",
+      "bytes": 3109948
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR80/Surface_176_R80.fbx",
+      "oid": "859f354eb79e2b55a2f71b4950c84a897c83aec63d424e1ff297c19c01a577c5",
+      "bytes": 3120396
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR80/ThreeBayCanopy_R80.fbx",
+      "oid": "ab462f09865015d17650146c422fcfdd11a7156b679ad79199ae6e1b17f75f96",
+      "bytes": 373820
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR80/ThreeBayCanopy_R80_Residuals.fbx",
+      "oid": "87fd8b210743b9d3198ab030e99288fd5b7287a9a3993801d3dc9e48ae085ba2",
+      "bytes": 18572
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR81/ClosedFrontage_R81.fbx",
+      "oid": "79cf6f5f7c51d0244a9df700a392d06ddbb10ede76957c4e379225aa0ee8a747",
+      "bytes": 89548
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR81/ClosedFrontage_R81_Residuals.fbx",
+      "oid": "5ed7a9810cd654ae7075fb16f9951cbac77acdb01d5b63424153331bfa5e370c",
+      "bytes": 24300
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR83/EastShop_R83.fbx",
+      "oid": "ab07a079d08eebc2b947d295b6ab0a60ad02d2fce3f65cd1a18fd3e0e1fd31af",
+      "bytes": 379260
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR83/EastShop_R83_CollisionResiduals.fbx",
+      "oid": "7d6a1c4a18c7f717e33d5adec64fa9f94845a45b4a3ea925b6463430043020cf",
+      "bytes": 22844
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR83/EastShop_R83_Residuals.fbx",
+      "oid": "38b308308412acc6a18ce8d32d2ef1cc003dd01fe98df09a311f6207f588d4e8",
+      "bytes": 40044
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR83/EastShop_R83_RoofCollision.fbx",
+      "oid": "39779ac5fa0fdffe074e09a46166013fed286241ec12a244f7523d32ec7f5da1",
+      "bytes": 25596
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR84/EastShop_Steps_R84.fbx",
+      "oid": "6d351fb0eefe4ba526790499a0868ef16f6626b6137fea46040c61b6ae4476ad",
+      "bytes": 90412
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR85/TTC_Lobby_R85.fbx",
+      "oid": "bb77d6e9912b5fcd57cb14d9bb7aa34df9a5141c9554ff56427a073528bcbc55",
+      "bytes": 465628
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR85/TTC_Lobby_R85_CollisionResiduals.fbx",
+      "oid": "f4ae1c26405689c7860faed1b064087624bbf9b89fe39ae36225cbdf1c8b6ef3",
+      "bytes": 104492
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR85/TTC_Lobby_R85_Residuals.fbx",
+      "oid": "2b1cd5368970540e18cc7c76638f3294eb1240ca1baecca57c9d522710d2a26d",
+      "bytes": 229324
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR85/TTC_Lobby_R85_RoofCollision.fbx",
+      "oid": "c6f479fd951d51e3a322cdd06f2259f4a78bf807b46f5ba744b251944129e536",
+      "bytes": 19532
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR86/LangfarmFasciaRemain_R86.fbx",
+      "oid": "e59e5faad549ef3da3a92096fcaf7665349d972d5d81d48b563e3d25e5ae9b6e",
+      "bytes": 18684
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR86/LangfarmReturn_R86.fbx",
+      "oid": "3310b3cba6184e370bbc23506976f8eb95a89ead4a4a0f0d1e9ec4d0536eddd3",
+      "bytes": 104764
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR87/GateClock_R87.fbx",
+      "oid": "e35138e3ef2150790148583d82503921c518477696429564a50e94fbe5d8b2c8",
+      "bytes": 192572
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapR93/Langfarm_R93.fbx",
+      "oid": "841954effd3034e8b860050bfd07e4805854781c07f1333ac28c1e0ad3930f04",
+      "bytes": 904492
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MapRestoredR11/RestoredMarket.fbx",
+      "oid": "6bb1a9174e1991159da2ab4828480b2d248cba7a36dd75e5de2b79ae091bd2d3",
+      "bytes": 1857756
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketBranchesR90/EastFootwayJoin_R90.fbx",
+      "oid": "dbedd463b4b3d64984dc3704f29e0b7bcfd4c4eadd896409bf9eb7549b5d6ee7",
+      "bytes": 460300
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketBranchesR90/TerrainColliderJoin_R90.fbx",
+      "oid": "30a41f2ae8cf712ae1a5b8d7bf6ef17cec2e41b26a63c7f842045b4af0984d3d",
+      "bytes": 2832732
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketBranchesR90/TerrainJoin_R90.fbx",
+      "oid": "4762c2fbd348f0039449f5050e35dce298ddcfe8d1a246b56bc3244878328ce0",
+      "bytes": 3302300
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketEntranceR71/MarketEntrance_R71.fbx",
+      "oid": "f0aa72ee6aeda8a86398c64aaeb9cf42109efa8452d92b6270e47f3b80a80b49",
+      "bytes": 73692
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketEntranceR71/MarketEntrance_R71_Residuals.fbx",
+      "oid": "14857ef44284396aebf3793fd2a941c19fe69d22ba1a4b98fec600870fa8340d",
+      "bytes": 105452
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketEntranceR72/MarketEntrance_R72.fbx",
+      "oid": "72e5f79c3c80378b3c21546852322c5c0aac5f69e526fda0ad5e93a78df2dad3",
+      "bytes": 80828
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketEntranceR72/MarketEntrance_R72_ColliderResiduals.fbx",
+      "oid": "0046c1488db9811e17fbcf0da0c761f36fcad16d3150cde4fcfa8612d58f83a2",
+      "bytes": 43420
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketEntryR52/MarketEntryR52.fbx",
+      "oid": "580a78440161454a56025e159cf4a791b83f4270460a39ac5037a364169e8e92",
+      "bytes": 772572
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketEntryR53/BrickColor.png",
+      "oid": "dc8ac3990d340c24942c8090d73590279e3d09416b27aff6b3055c210af20995",
+      "bytes": 1248379
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketEntryR53/BrickNormal.png",
+      "oid": "eaad71b9e20a64aef6e71316e0c4995eec6c69ef05e21bfb49fb7850077596f1",
+      "bytes": 6141
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketEntryR53/LangfarmR53.fbx",
+      "oid": "2fe5fbfdad1e703a3e9fb185776a7d32b87b65a674d042aa2c14a084b5585d53",
+      "bytes": 1291132
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketEntryR54/BrickColor.png",
+      "oid": "dc8ac3990d340c24942c8090d73590279e3d09416b27aff6b3055c210af20995",
+      "bytes": 1248379
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketEntryR54/BrickNormal.png",
+      "oid": "eaad71b9e20a64aef6e71316e0c4995eec6c69ef05e21bfb49fb7850077596f1",
+      "bytes": 6141
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketEntryR54/LangfarmR54.fbx",
+      "oid": "f27d5369a8424d2b61a5287effb00177069b763886feed8de2ed725dcc813e07",
+      "bytes": 1342652
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_000.fbx",
+      "oid": "6b079243f92c0899be91c48b4c32f91b232177db89b2bcccbd90d3e178c131ae",
+      "bytes": 5969436
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_001.fbx",
+      "oid": "d64b1a6c28c7b0c10988a418cfb3d7a7bb196e33473e47c1020072baf6d98a5b",
+      "bytes": 331804
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_002.fbx",
+      "oid": "e4f981104447c2b2bfe7f7916e772cdf866d525c28ec337e64b5d2433651ddbd",
+      "bytes": 386684
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_003.fbx",
+      "oid": "33cd334f175995002761d86d907155549bc1dc3ae3438c3f47f1775f3ad94fe4",
+      "bytes": 86204
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_004.fbx",
+      "oid": "7f1db7ab2f265a166f7097fb1c9d136c3d29a358aeb77fc29f4c661a9b2fa311",
+      "bytes": 709484
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_005.fbx",
+      "oid": "ce595b6e8cc66b1e460b0ed3b62a253c4e19ee57df91bb86993907983332d72e",
+      "bytes": 84076
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_007.fbx",
+      "oid": "281109fd7b7a7d5a3c2a9f9cb5d49c39b99a9d0397f7737e5449e3702546eab0",
+      "bytes": 51884
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_009.fbx",
+      "oid": "0f84b054a28704c00c628597319394ece7dceaddcfb6cf15f08fa43724238ddd",
+      "bytes": 28060
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_010.fbx",
+      "oid": "3f9f710d5c609be8745c6dedfbe8ca3d0c73c95f5fce12ff2a0aa35015c39c99",
+      "bytes": 32588
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_011.fbx",
+      "oid": "ae7f85613133bf17a6b121a210562360d06630b06dbbb9456bbbe617b0d96b13",
+      "bytes": 309212
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_012.fbx",
+      "oid": "88368c8911ca2dbbb42d272fdde1d61a1217df0a4cd70246bd6a7db7b2466e48",
+      "bytes": 362620
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_013.fbx",
+      "oid": "ab98b99aba8b580912ca64e1e5ae14ad97f6af989ae3b8ba2386a6317fa4ecbe",
+      "bytes": 1521324
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_014.fbx",
+      "oid": "d07afab98c2bfa2832a2c2b7a7c1988e34552ba1dbb0aec1b2b1b39765154793",
+      "bytes": 1777244
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_015.fbx",
+      "oid": "db4794d2304f6403d6102b467406744c31562717864c516e6f3088c25cc112b8",
+      "bytes": 202684
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_016.fbx",
+      "oid": "0b270a74e538938a6b899ca07443a00f1310cba4a1f7081a66e499522c1fe2b8",
+      "bytes": 4277052
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_017.fbx",
+      "oid": "cd4ec886fa9ef389350ea8b9d66199e5865e163677e74e2df4be0c8220f1c6a6",
+      "bytes": 1446460
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_018.fbx",
+      "oid": "e7e775e6b0296096be2f4b5b3b787a431e9563de9ccf1b66529cb5bcd4bd244d",
+      "bytes": 375324
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_019.fbx",
+      "oid": "d3ec02b55e54be9b0a97020499febf4450fa9f68910f6cdce33a780b52114da4",
+      "bytes": 1777244
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_020.fbx",
+      "oid": "1786832321207493bd5f1e183fea6869a41c33422eafa3800629bc20a0ac9373",
+      "bytes": 234252
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_021.fbx",
+      "oid": "f885a272a55bfedcb31cf646d16ae27cfecb2751d04e4c631474cc6599dc1267",
+      "bytes": 1521324
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_022.fbx",
+      "oid": "e4fdf136bbe33203ff8f2ff6bc5fa952ced9616593c6620433b1a3efba03756d",
+      "bytes": 7414316
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_022_BoundR95.asset",
+      "oid": "d25a67d4941bec7f6702e4bded54f3b26862a125edb4f749709cbfaa02e97552",
+      "bytes": 21415276
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_023.fbx",
+      "oid": "93cd015a424b06650fc11e627f45b907448c231659f55464cb457c0150356c26",
+      "bytes": 5167868
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_024.fbx",
+      "oid": "b1405493752bb4be9136a0a2930f3ee4cc60ff62ad56635b695a231eb46024e6",
+      "bytes": 61452
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_025.fbx",
+      "oid": "4b2970bf8d32d7e4cab83736216756c16cad791d0e630822cf4e512177f5b5b7",
+      "bytes": 66300
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_026.fbx",
+      "oid": "5ad5792de59505bf5ce968ca16e433e02afeb6669a0c67c453df27bd62515acc",
+      "bytes": 28380
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_027.fbx",
+      "oid": "4011c5d788b267abf73f1f9fe4f3b5272ef01018075669dbf7809e31ac6c14cf",
+      "bytes": 25756
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_028.fbx",
+      "oid": "2fa496af0dcce48f3acd5ea3659f5c44733b744fe0c753bbf9fe85dcf20f72b0",
+      "bytes": 59612
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_029.fbx",
+      "oid": "228c65e4fa1d8b9c297e9aeab4defccdf30bb368406386d8156182dd4367d4d3",
+      "bytes": 340172
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_030.fbx",
+      "oid": "91794b3ebb5ae6909f151c5eb89ec911ca0b6677a2f5be55d2d82df633b5944f",
+      "bytes": 59132
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_031.fbx",
+      "oid": "58df22485ba014a95120fe76469d06cf84276719ee57e90fe6012d5940ed1690",
+      "bytes": 341260
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_032.fbx",
+      "oid": "593313913abc07a09dc2fe33358ad7151aa9a1a1ef31ee89558f28fd6dc99092",
+      "bytes": 16572
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_033.fbx",
+      "oid": "533d48822fe7ee27f3f86d30fd5b36dd9665cf660602179c65bea7a5e005c6ed",
+      "bytes": 66236
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_034.fbx",
+      "oid": "5e1a61c6efe844cbd4a4af0a3c4afd7c4a0c9ea097473b9adf47e04d7c2eacbd",
+      "bytes": 81036
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_035.fbx",
+      "oid": "d22646e61287f8b62265f5330cb06b9f51afcf2e12fe7fd2705fbfa227b105a7",
+      "bytes": 21388
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_036.fbx",
+      "oid": "736b109b6c7bef37c6cff3b5a708788d76a07d3e76cdfb26acedf1a9e7112d07",
+      "bytes": 28444
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_037.fbx",
+      "oid": "e09f0f63abbe939904124dd6d92000d6a9675c406aa379270e5e2c7700926b34",
+      "bytes": 65932
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_038.fbx",
+      "oid": "3df927f3ae201be4953084380e004edb02aee170cdab30bdd192cd8908028a1b",
+      "bytes": 206636
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_039.fbx",
+      "oid": "e5a0c48521a8c9cb852e0c23a47669802f2675a3d1d5e8d7ae6c4478a3417920",
+      "bytes": 60444
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_040.fbx",
+      "oid": "04872457d75ae14e85fbd684570dc76fd4cbde679784e97dbf00b1b8ecc34bef",
+      "bytes": 17692
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_041.fbx",
+      "oid": "e797d0f362c459dfd2fd7b63faf058cd4c6a717d119ed64838aa3ec084d4584f",
+      "bytes": 314156
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_042.fbx",
+      "oid": "fc3a1967b931b103329372c9a4e4425c2874b73060b26fbf616f672dc5bde242",
+      "bytes": 339356
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_043.fbx",
+      "oid": "df22a95f8293730357b998a04bb613bc56bf5b4b68131e4cecab2c3d0cf6b199",
+      "bytes": 104236
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_044.fbx",
+      "oid": "f2e8512b549fee86e51cdb96e0fe3619a639201d0f64eda46ee1e1d131300c9f",
+      "bytes": 61452
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_045.fbx",
+      "oid": "1018e6bf6ca1209b85f6bfd90684da075dca93f8f64a679b404ef3e2b1218286",
+      "bytes": 248204
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_046.fbx",
+      "oid": "da1c8e9937b657721f6d617e6bdd1521212e8e28de5b1365de62b2273279fd63",
+      "bytes": 21324
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_047.fbx",
+      "oid": "6931f28ef51b7c016ebb07825b2a06d72c7e4d99335e50c0898a154b55f9805a",
+      "bytes": 59564
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_048.fbx",
+      "oid": "0ab7c073063801fb0af5cd3c2b51fcb6d1d726db4a0e43206c14c94a66d4c44a",
+      "bytes": 303228
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_049.fbx",
+      "oid": "304a3e620ba92713005c9ea90c1ac47db70e22685a1ca0aa5caaad834b081ad0",
+      "bytes": 21308
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_050.fbx",
+      "oid": "f5f593e6bd80ab6dbe281f3ce17de79e258173bed420eb0b946b49a192834123",
+      "bytes": 21292
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_051.fbx",
+      "oid": "52b79aceb92ab75f399d9612de5b7e7ecc1774a2a306719898625553a460038a",
+      "bytes": 285260
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_052.fbx",
+      "oid": "9b6313b6f80eb65e51cd16d30a285c9236f2f5646fa82179ce470b3a3f3939f7",
+      "bytes": 337884
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_053.fbx",
+      "oid": "58b9cb37b307875df641a1870d3d62d8b6b0ee7d7756238a7a5c3ea3368810cc",
+      "bytes": 28476
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_054.fbx",
+      "oid": "ac2193b836fa4c0f69a3491873f5953efe8c6ed02d183de9f366f3dc8fe601e7",
+      "bytes": 18124
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_055.fbx",
+      "oid": "20afffb824ebf088624103017adb9393bf79ac49bc77ac6ab1ffc81d6439281a",
+      "bytes": 65980
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_056.fbx",
+      "oid": "b7d62e97a886f0c3537d333abf956bb2e8bc0e84d311f840008b11727df07956",
+      "bytes": 61740
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_057.fbx",
+      "oid": "fc7f380cf72abd53a9f044c893c345f1e6567256252d60cf81045960fa69472c",
+      "bytes": 295964
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_058.fbx",
+      "oid": "ffdd4375019a5747b596f137e87a4e26bea06761deafa8a27b34236a68f0f137",
+      "bytes": 29020
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_059.fbx",
+      "oid": "c8737ef020518a482215720355e7d6190ad4baea8590a8d5b1bf75213d69a1ef",
+      "bytes": 21340
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_060.fbx",
+      "oid": "2de5152b83b999d732efd21475daaa693f13928bc623ad6605bb2df49cf0a40c",
+      "bytes": 102972
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_061.fbx",
+      "oid": "5b8dea3a5cb3eabf4d24b1f05fdc65bbe7fb674e21cee9b020c00b14f1ed9c59",
+      "bytes": 29164
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_062.fbx",
+      "oid": "28ff15bd59d583231ef77265fc7dbd97a9bc5704ac1635854c6e43bfb98d187f",
+      "bytes": 21372
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_063.fbx",
+      "oid": "e675b8795a445d4137889475122da46a7a8d325f4bf0cf460074874cb59aa83c",
+      "bytes": 246332
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_064.fbx",
+      "oid": "c354e56527d61a2b38b7ac2b3969554fb5e76f09f88703a339d05a59de5ab15f",
+      "bytes": 339980
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_065.fbx",
+      "oid": "51f808038024bd84a7f846cdfa00924066c5d3454ef12a30df13b8c3d7dd6f8d",
+      "bytes": 59948
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_066.fbx",
+      "oid": "a55f7b1bc6f0a7396d52ed608d3b96b30a9d2b86e02a9816ca4c38004530517c",
+      "bytes": 29660
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_067.fbx",
+      "oid": "021af852653c2198b2943dd264e43b4aed8b177d718387a58d73756c650225b1",
+      "bytes": 104124
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_068.fbx",
+      "oid": "bff1b9f047fe09812f1d2bfb491304cd8dd37d346a026fd5ec6f544d0205c2e6",
+      "bytes": 212268
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_069.fbx",
+      "oid": "7d2b9340307eb069672439a600116fcf047b270e174ec8d1f629063baef4ecaa",
+      "bytes": 106428
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_070.fbx",
+      "oid": "184a271c4df065b96379ef6267cc99b0427b70c6db700bc6261c997c990b6b5c",
+      "bytes": 21388
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_071.fbx",
+      "oid": "8355fc3355eb3255d6176e1dbddd333ecef8923418a921e0de7083feb6fb9680",
+      "bytes": 59148
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_072.fbx",
+      "oid": "658acda6611faa1df111b873b51414ef8e427537c3692b74693ae26fb7e01c8f",
+      "bytes": 62316
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_073.fbx",
+      "oid": "6dbad75c01525eb202b27640e9a2c1a28dd3a15b4acf17e68fef0af8154258e4",
+      "bytes": 29436
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_074.fbx",
+      "oid": "69df9720b28e691be3d54fadfb67e668547a81b518d01282be0e072642e81fc5",
+      "bytes": 21372
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_ClockFoot.fbx",
+      "oid": "5f5923a5c484d9b1113c7648ebfc2f519467b77d3881bac20e92d8d8bff1954b",
+      "bytes": 16444
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_F000.fbx",
+      "oid": "d0695960e2799692307af6166cc2fd20225ead7f3cae91880d0a911eabd78b42",
+      "bytes": 183644
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_F001.fbx",
+      "oid": "06e4196c003bf235c9b7982392cbe234024322a471c0ed1124ceb871d52b57af",
+      "bytes": 25004
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_F002.fbx",
+      "oid": "aeb623856629374ecc23a5bf4929bd374bfa14190c117e7828d55d7669c25c5d",
+      "bytes": 16684
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_F003.fbx",
+      "oid": "5b682e7fd4af585325fe037f77550c39c40cfb07d4e342cfb50a86e34115dbd2",
+      "bytes": 21308
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_F008.fbx",
+      "oid": "9f908e91647572910fea3eaf5299a28889b8a7e0bcd6303eb766516b22e6d9cc",
+      "bytes": 20124
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_F017.fbx",
+      "oid": "4263f344dc01670c0f8b1dfc719d2a244a415775bdf8d1b8849c839a45babee8",
+      "bytes": 21676
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_F018.fbx",
+      "oid": "1b20c8afcfbf259e45fc33dfa3164e120cc3b6d12178694a1d39effe4c283efd",
+      "bytes": 21676
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_F019.fbx",
+      "oid": "2aa4e59a71a8b3a41bef964e4efc353040aadbbd9071c63e52f3a5dde3a7f84f",
+      "bytes": 21660
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_F020.fbx",
+      "oid": "29833669aa957319b944c4df584be544b29ce2129623a77216889938a2a5d9e7",
+      "bytes": 21660
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_F554.fbx",
+      "oid": "471c9a5394ce987b37a3ceee7abed4868dc208e24a8ad1a09ed6748d1d33a333",
+      "bytes": 27276
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_F555.fbx",
+      "oid": "33a67f246d7ac3d463c1bee6643714ab3120e0fa13f431ce3ec9299825ea55fb",
+      "bytes": 27276
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_F556.fbx",
+      "oid": "b0f2f32b70b4ba5e83e6def745d2d2bee70871a95cb33f955b7485f1889c8ca6",
+      "bytes": 27868
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0000.fbx",
+      "oid": "ca2ae7d93a1d947b0940de340db8ce3af46067384ba0082fdaacd98c214780c7",
+      "bytes": 39036
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0020.fbx",
+      "oid": "d2373ee82207482fa565d858a29c05a0da9f6f969717852a51b62f6c88ff757a",
+      "bytes": 17692
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0021.fbx",
+      "oid": "8d5943d129cbd15dca26bea3797da1e58817dce30bc0d2ff2bb33528a6d48b6c",
+      "bytes": 30108
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0022.fbx",
+      "oid": "9db7eb30bff9374fa05a04241bc95f93683f7e518d79575b604f4d9d007670ab",
+      "bytes": 16780
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0023.fbx",
+      "oid": "aeddd747df7ebda7a91145042e5ebd2b0415bd23a372b05f851fd9bba364e648",
+      "bytes": 24428
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0024.fbx",
+      "oid": "fecdfbead2c9d3df964a0ab77f75bcf0c8c4a972e2109e74e7303e0acf597e95",
+      "bytes": 29292
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0025.fbx",
+      "oid": "d2eece99aaf74a77664db4da31b85358a28b342f17c235dd7c5174bfde518c1f",
+      "bytes": 37084
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0026.fbx",
+      "oid": "effd326bc1d94208a7b1722ba6bedb662c24775c6e8c7e7c906d08e7c11c1191",
+      "bytes": 16796
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0027.fbx",
+      "oid": "7e8f8835dd8d8f4d696f68d9b35264d8b58af7158117641bc03b8c05415cff01",
+      "bytes": 25660
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0028.fbx",
+      "oid": "ae1cc017c4abb73dcca59a37ce0a53d9806730cfca07e25d5d999df5f2b9482a",
+      "bytes": 23180
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0029.fbx",
+      "oid": "b8fe5c8ae55136c933a4125153b0cb53049a667c1cc76e7044a9702f00b49357",
+      "bytes": 39724
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0030.fbx",
+      "oid": "0766cd946f4b395ecc36b621ebb313fb2bfa98cbcd5c853b567bee6ac6321f0a",
+      "bytes": 30732
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0031.fbx",
+      "oid": "1d87f542dcb24e417515742dd9effa2554bda566e709ba8181c7cfb76ffef4aa",
+      "bytes": 20124
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0032.fbx",
+      "oid": "d662b319a5781a3006a75a280791c958d1cb171bce87ae096c39f74403902ec9",
+      "bytes": 17324
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0033.fbx",
+      "oid": "b190435523a53c6bb7b1e2d3ffef4dc4cf58b1fa5f25b38c03cb7ca54950c651",
+      "bytes": 24188
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0034.fbx",
+      "oid": "28178dbc0a9b932cdec039a2090d95dd0b254825db3fe9f4d07c4137f9a81a42",
+      "bytes": 17692
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0035.fbx",
+      "oid": "1e3ed0b4602c094ef18b83b684963c45309e5819f933651949b25b9c1afb35a9",
+      "bytes": 20684
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0036.fbx",
+      "oid": "dafe7357c21accfa1b6de0ceda962c41e914d76f0e25419669f18e32b2fcccee",
+      "bytes": 18668
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0037.fbx",
+      "oid": "9066cac65802628941dcb9c638e632f6ce92aba5b63c6684ed61434a38f076ce",
+      "bytes": 19276
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0038.fbx",
+      "oid": "8b2d8b896bd2361a88672f103ba6dbe194305a4fc7f67dd51ef338f47cc51a4d",
+      "bytes": 23068
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0039.fbx",
+      "oid": "751bfbdd0f9a8b1cac69fb75ab9f666836ee4afe2dbd0447a5edde765efe02cb",
+      "bytes": 80348
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0040.fbx",
+      "oid": "479b22eb51fa0f16789470d70130eada91478d4d75a4acbd922ea6bc2328b46a",
+      "bytes": 60732
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0041.fbx",
+      "oid": "9fb71b3ab506f1977f9744640a6a848221e3b69bd09d343633b5c5e2e3d58da2",
+      "bytes": 40092
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0042.fbx",
+      "oid": "3037e32d9183f83a9911c97fcf503402e487f0a2fdf90b23ca224c8e516284a2",
+      "bytes": 30940
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0043.fbx",
+      "oid": "8051e7bf90d6e438cb6acddd414f630557b44ee908517c137f834fd1145385bc",
+      "bytes": 918636
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0044.fbx",
+      "oid": "5ff05e2c8a68453e7410f6019648673fef7e4d0ec3aed1bc3369b1ff5d77b62f",
+      "bytes": 8108540
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0045.fbx",
+      "oid": "a34c12759efaea2189acabb77654f04617cbc6dd0fc2e6b922e60a9f80025fc4",
+      "bytes": 16364
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0046.fbx",
+      "oid": "cf171f85374789809e12a5ab4b1b1b39c860752ab0495e8544925103b747f0aa",
+      "bytes": 109772
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0047.fbx",
+      "oid": "d79842a3728c7062d6a0278138962118de6a7aeaecd49773bc71978475c853d0",
+      "bytes": 20636
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0048.fbx",
+      "oid": "2a04860767a4f57418f349bdfe80be0cbd54d552506a5f4c83758e3df7d37b35",
+      "bytes": 16220
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0049.fbx",
+      "oid": "ce1b76ae7a43931a9499c3c5849fd6de76d9cc9c113702c6ea8c67aebac3cad3",
+      "bytes": 16204
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0050.fbx",
+      "oid": "cf52d4df3fb1401c05a76b6a4987e411f8ff59f004a1ea5581072cf21a6ca399",
+      "bytes": 16700
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0051.fbx",
+      "oid": "ce9387923d48e0381a42e63ba512bbd2d721897109e685bfefb715b14e1e41c2",
+      "bytes": 31948
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0052.fbx",
+      "oid": "cb1fc186881184932580526343e5759c3fda43c4242035deb9ae975be2512227",
+      "bytes": 17100
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0053.fbx",
+      "oid": "3ed1d3162d1e3fdc203b23cb026f5a52f1ccf0d9fd1f95e8299a914e0912981a",
+      "bytes": 45772
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0054.fbx",
+      "oid": "05ac689de6496e03e2e43563ecdc28b3150d1f4afb1b02d02ab1d59c08ae3177",
+      "bytes": 85436
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0055.fbx",
+      "oid": "4afbd710c012c52df4ec01ef32c5835d6f0bda632018fd93facbf063c6ec6d0d",
+      "bytes": 417964
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0056.fbx",
+      "oid": "c34ab1d582e73d1b0dfef62b1ca402508bbfb1be0c733f1092ad57b26b40af11",
+      "bytes": 21276
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0057.fbx",
+      "oid": "841d4d5fba4ec654dfd38cc01d749778abab28dabb0e8b72c8ae13905bb0af11",
+      "bytes": 18844
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0058.fbx",
+      "oid": "aeea0c7625318f9ae3588e329aa8c22b8e34ff3748d8c53d13a742ae8a4bac53",
+      "bytes": 39100
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0059.fbx",
+      "oid": "5c7cbca90db868b0a9e06a4109ce8168f006f454fa7585bb704d2c8707c9634e",
+      "bytes": 17020
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0060.fbx",
+      "oid": "b132bd1397919053ea275ee9fe6862e10d243c8d167bfbb4cbfafff4fffee0a0",
+      "bytes": 190444
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0061.fbx",
+      "oid": "7204ab7415ea63ccf5be497d5be71246804794993bb4faabf7e4a56f558faebf",
+      "bytes": 316476
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0062.fbx",
+      "oid": "42da3905f1654ecbce9f9d68f2980e285bd57ec598df8628734dce9e9c8bfb4b",
+      "bytes": 18684
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0063.fbx",
+      "oid": "ad694f0f03662df4603dbda2d8f45db83d08d1b4c447a4ae2f0e21432e19b604",
+      "bytes": 38972
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0064.fbx",
+      "oid": "3e022272ce92127d0ee79b18fc6417a721c427019e76bc728e0b1ce396bf8c9b",
+      "bytes": 50748
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0065.fbx",
+      "oid": "2fc20e2b3d6b5c1be0f070f9ba52ba1844e604c556db7d79d995dd81ad4a2402",
+      "bytes": 235884
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0066.fbx",
+      "oid": "3669c4abba4470bd92de4a7a45dadf50f527186ee361de5e89e705a71a3c1f94",
+      "bytes": 16156
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0067.fbx",
+      "oid": "81e5c5c1259148e8210d3419b452d73e91bb839f4bd37d13aa6f90e5fb18ca36",
+      "bytes": 15948
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0068.fbx",
+      "oid": "d23d25a45899b1d07deb4228f26e3e0d6b9e356352424b9ed528c270f1290d45",
+      "bytes": 35644
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0069.fbx",
+      "oid": "ea2707d0e6f10cf2ec7cfe704412c80b7ca450ec7b5ce53e59eab4fd31e9f3f8",
+      "bytes": 228684
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0070.fbx",
+      "oid": "9f402573ea0acbc2f012b656d0c0a9fc2b676306ddc75eb3b01de9747ed02399",
+      "bytes": 95036
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0071.fbx",
+      "oid": "642014eff4548e77c8e7270a6831b721d5970886499dd59691a83f4715d25967",
+      "bytes": 177836
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0072.fbx",
+      "oid": "08818773d235f709c379e187b12f1d363de5b4207a49a9f752775ac9648dde25",
+      "bytes": 153372
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0073.fbx",
+      "oid": "202c5172c0204bf42845a63b042316abe25f191363c751ce7ad6de945a034700",
+      "bytes": 58140
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0074.fbx",
+      "oid": "413ba82389ea1eb04413f9a82bfdee1aa1f51cdeb38936693609bbc9913710de",
+      "bytes": 24348
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0075.fbx",
+      "oid": "5178b059c7d47a6ef13ee01e01c4d33dbf93c9eb5dd86735865d57fd492375e4",
+      "bytes": 49740
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0076.fbx",
+      "oid": "fd094b83cad877e5a45b94d0be2304ad2058af52ec129cc740c2c68d0b2977a7",
+      "bytes": 50924
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0077.fbx",
+      "oid": "b74e3fe74587cb5bad49c08566a209a09086371a1da3f6e1cee24eced79ca69a",
+      "bytes": 37564
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0078.fbx",
+      "oid": "2d914f3d30ce3cfc4fce027af3124b01f587361bd68d524b206331440b4277a0",
+      "bytes": 49052
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0079.fbx",
+      "oid": "b5789eaac1f3c75d7a4ba1e5583a498d18b09ba16dc3adb78225a8354f77fcfd",
+      "bytes": 67852
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0080.fbx",
+      "oid": "fe8cfcf091db6d24a1990c8809f1bf1759cbb3bf5fb8b6c8104767d8b764c829",
+      "bytes": 67436
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0081.fbx",
+      "oid": "e7a996ad89f292f3cddb2fab5443658f518f755040737c077e42de45af3432f8",
+      "bytes": 79996
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0082.fbx",
+      "oid": "c5607c746397492a87a57f0f086ba47cc7370a4a32325cada828453f3e234679",
+      "bytes": 58348
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0083.fbx",
+      "oid": "e7d900b94f2fdc6b12868e6844036bd0f0fa6314f233b11eaa21d6e43c04a64d",
+      "bytes": 19081820
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0083_BoundR95.asset",
+      "oid": "7a2cec0a4daea5b69d16ec85261412e54b5f7aec8b894f4a0be6aeda87a45988",
+      "bytes": 112313044
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0084.fbx",
+      "oid": "30d96be6da7abcc2bbcc8aa18c20e18ab117e100ead3d569fcd8e0e6f3a8ea29",
+      "bytes": 93884
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0085.fbx",
+      "oid": "54ac0ded23e3b857cc52735fb8bfb5cc8578585ea1202f2c7884cf7f7e8922db",
+      "bytes": 93996
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0086.fbx",
+      "oid": "6aaf0ac6f9d680d81155b5e20d083aae5216bf7247d436f5e269fc427e16c5fd",
+      "bytes": 93724
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0087.fbx",
+      "oid": "169753dae34d551984a038d0a6f154391a07be8cf46bff0a933c0fe41162821c",
+      "bytes": 93836
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0088.fbx",
+      "oid": "ece844b99d537ac38319a1137ceec7bab20be1977ac3d68c1dc81b763c2580a0",
+      "bytes": 7352284
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0088_BoundR95.asset",
+      "oid": "2a10b8cc7e11eecb3f3634372a8943e26da7ec248dc3592fe899e24b8850d370",
+      "bytes": 52842123
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0089.fbx",
+      "oid": "5e37fbbbe60f079d02f77489ee1596bca23f2b4750a2202609bdbdc16be5c939",
+      "bytes": 7349068
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0089_BoundR95.asset",
+      "oid": "a6e26d7d5812e57eeee45a9af3b02352eeed99d0f5e2922d839b272a6405ad57",
+      "bytes": 52811111
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0090.fbx",
+      "oid": "6dc425fe541e720885dc5edd7d44e835e4d538eb7a9fd9c17652f8e085f04b7a",
+      "bytes": 7349996
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0090_BoundR95.asset",
+      "oid": "f985feb31778d4b3b15b8ec3138d062eb1c235cb0a7189cbb46fa8178f5d92f0",
+      "bytes": 52821151
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0091.fbx",
+      "oid": "29a5dfd40b227a591af66bc81e811f93a2330f52dba827a579279539d24288b1",
+      "bytes": 7342988
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0091_BoundR95.asset",
+      "oid": "ae767bc0d82233785a995eb885fff028204cfaf37aa0f59875bf492891c9b12b",
+      "bytes": 52785581
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0092.fbx",
+      "oid": "30049e70197dceae1f13f16503a08492f8c6243bb9d0c83254d71423bf022dee",
+      "bytes": 23308
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0093.fbx",
+      "oid": "4ac425fcd3c5d97a3d561ec518e291761d7a6e8a3bec539997bf4f4cc403601f",
+      "bytes": 126044
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0094.fbx",
+      "oid": "5be4b343692e2c63a267b3de40fe016020bba56cc29bbc186c753c9b4e893a13",
+      "bytes": 47356
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0095.fbx",
+      "oid": "42a6f5dcc4c4d6e1686d624bd6332352378d0f3ed4796f1fd9af42d0969b610d",
+      "bytes": 70956
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0096.fbx",
+      "oid": "3a88a47fd337cf4612c5be394776ecac333476b601dc82fc25cecab02429bafa",
+      "bytes": 30812
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0097.fbx",
+      "oid": "2a389d9b604b9a70846c198d157b1a2603601dc2fc8b10372f362da1b47bd5a0",
+      "bytes": 84268
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0098.fbx",
+      "oid": "a9688fad63fd8e3bc4ae53ad912967a7bf494b6859e98994a701731a6a4f83c8",
+      "bytes": 61852
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0099.fbx",
+      "oid": "d99542cf0aa43e44fea3330f74c98d8921d67d7b7dc86e6731f74e160fc45fc0",
+      "bytes": 39276
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0100.fbx",
+      "oid": "9322b3bbec44719f013efb2790df87f9a000f5fc132378811a0484e40d9ef792",
+      "bytes": 187324
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0101.fbx",
+      "oid": "a85a84b1525ee020dfd446b8bb4fec14fd9fa2ef316b31de88392c09e645730d",
+      "bytes": 186908
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0102.fbx",
+      "oid": "dbdb85ba0bb0b601d07e644ec86037eff7793d0d03dc9b72182ec809fa666201",
+      "bytes": 187292
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0103.fbx",
+      "oid": "f45858a17f7e3e324b11503139f35672259de164d8550e76963e2d00716ccf5e",
+      "bytes": 186940
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0104.fbx",
+      "oid": "a354b1e44b11f9fe7c202483f9ba1ab597dd58a4e78c8c0fd4ea446c01d7acc3",
+      "bytes": 26796
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0105.fbx",
+      "oid": "bb298d24ec0e9da2385933afa6f5a6f4b73856f5e82a199bddb9599c981e4bab",
+      "bytes": 37692
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0106.fbx",
+      "oid": "59e3e8c87dc9939260214751586830121d07f45d22208532316950e861d8bff8",
+      "bytes": 21980
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0107.fbx",
+      "oid": "3bdeee7ae0631bb2d4eb256dae59407918176ad37994b1f1d0c025c8e52e7980",
+      "bytes": 125916
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0111.fbx",
+      "oid": "98c7a3c89e74678ab3a166ea62e4b583bebe2e7f85d04520d306b4df81d0db67",
+      "bytes": 39788
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0113.fbx",
+      "oid": "90a3cb9bd84e1f8e0c7c5e0286338e2e9f66a15259390bdbd231cd0f867d92c4",
+      "bytes": 28860
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0116.fbx",
+      "oid": "ba2e86f8e617e22f76b3ea8541939c0882a7d20c7bf13f229d08712e894793c5",
+      "bytes": 17164
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0117.fbx",
+      "oid": "f21e66a253cc45c23dc8b22b7b57464b8bea9206f0d2b7f4ea529c40e30a5441",
+      "bytes": 16380
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0118.fbx",
+      "oid": "6dcc79c5441ffe68661b4b722c576befab64ecb3f1b974d876227af0a61bbd99",
+      "bytes": 17324
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0119.fbx",
+      "oid": "50f6a20b450b37fe8df890a6eb0f2e9e019b24b66f88f7d952391243be437b6c",
+      "bytes": 30940
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0120.fbx",
+      "oid": "9d8309ba603c0af0ea1d81a0dba623438e19fed0f0921cfd96499d81043cd390",
+      "bytes": 16380
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0121.fbx",
+      "oid": "781e1ad16b2bf1b0742625e29dbffadd5cf5b19fe4dc421ff437941fab5cf54f",
+      "bytes": 32492
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0122.fbx",
+      "oid": "ff1f781f4abc35fbbed4f2699562ac19e4427a1f0af97704754510a0a59075c2",
+      "bytes": 20492
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0123.fbx",
+      "oid": "9c2dea14f3defc5d8a55a02fa3c8728a978a0db8126ef72bc9749c14955217c7",
+      "bytes": 16780
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0124.fbx",
+      "oid": "27075cc40bdcab995309ea23afa5f78937def0616e0da79e472d383279a071a1",
+      "bytes": 17676
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0125.fbx",
+      "oid": "c7625ffde254e1ce3e7772dad09fe490b6c99d6ac7c6035ea7d99fa9db626501",
+      "bytes": 27852
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0126.fbx",
+      "oid": "c73583e9553a820d541a29209effcaeacf17f49e33e798d32a64b346c1d77db1",
+      "bytes": 43020
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0127.fbx",
+      "oid": "b567abf3ce0995ab94dd72c5830f65b128e737a7b5b93da826c368ff8993ed90",
+      "bytes": 42124
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0128.fbx",
+      "oid": "62cfa1bca61d2458f58a14e2f4d29f2abce064adb5e2f8dd4cb58548780eeb6f",
+      "bytes": 24268
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0129.fbx",
+      "oid": "f0b33a6c6122faf4a482241ecbcc37b2a0533abc0fa94a642a7044f7d3b9e5db",
+      "bytes": 25260
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0130.fbx",
+      "oid": "0dbca2ca2d8bf282774172df2d131923ff03826ea561149af3ca6b2b09ec9726",
+      "bytes": 16812
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0131.fbx",
+      "oid": "8f47d639a34401f832867159612da2f74b8642ac3300c153526c56f00cb1e876",
+      "bytes": 19676
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0132.fbx",
+      "oid": "1e449408cd44f8b7e744de7de7598a9991cd158fb1069b7471b53271d30fecc6",
+      "bytes": 19036
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0133.fbx",
+      "oid": "b46b1a6d9bfb68980336c817afe246aeff8b679592607019734d66b2ecfd3429",
+      "bytes": 18124
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0134.fbx",
+      "oid": "b91d86e127e6bb2b43a7533b42c8bd204ff4678980a4646336f4f57cbefd7fb3",
+      "bytes": 25452
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0135.fbx",
+      "oid": "fe0227a5f3d95aab67c723b9a3a38df7d323d7a0be0f1fb44215a8d0726132b2",
+      "bytes": 22204
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0136.fbx",
+      "oid": "a03ae3816e79852eb89a3257eb7bd02aae6345607bf232116bdbf41b8c1af8f1",
+      "bytes": 34716
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0137.fbx",
+      "oid": "af7b743ec5a040007ab06220f8d80520ab295d26e7d0a7be4c9e8c6d5511b6c2",
+      "bytes": 16156
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0138.fbx",
+      "oid": "07f3119a5487d9afe0fd4e8e4be0e14448764abd394876edc030a259a79f255d",
+      "bytes": 16300
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0139.fbx",
+      "oid": "080561deb7365f3ad09da841ec629275893e5a612d8f36547169dc18221d8433",
+      "bytes": 22236
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0140.fbx",
+      "oid": "42d3d77c0668a4441e2ea69c8edb7543f58052af2eb20eff345bab65c5519f35",
+      "bytes": 16332
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0141.fbx",
+      "oid": "7b27eacf1b9295f9104948fb2d02809595c70dd8120fa1f89304326cc455230a",
+      "bytes": 24700
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0144.fbx",
+      "oid": "24df0f569159143a4a26bdc3bad1c8ff6d5d3d14f6d24ad3d3f4cc7ffc2917b2",
+      "bytes": 23468
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0863.fbx",
+      "oid": "f2bea7dd0b81a4710c2abb6523d7c50b0e9ead0a15f530eb809110591021b949",
+      "bytes": 17708
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0864.fbx",
+      "oid": "4f73d0496d95ece005458130889fa6628405f29a7ba50a293d82312a46fda5d9",
+      "bytes": 32252
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0865.fbx",
+      "oid": "fb4ebe7265a94475f3ce6be6750b56e622acb63a7b24f5d9469cf4701f116c9d",
+      "bytes": 33804
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0866.fbx",
+      "oid": "6077c8e10842d3bba5a77296c7175c1f0fbed0193007424ac29cbcf099dbc837",
+      "bytes": 33484
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0867.fbx",
+      "oid": "a0e6b54cbd3ddd502036149af1f4129e6904daf2503a10f3d49b45f046c4e564",
+      "bytes": 16812
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0868.fbx",
+      "oid": "fcdcb6154e6f5e85300e1c39bade76303911f72f5eac6994d70b468b390ee6ec",
+      "bytes": 24748
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0869.fbx",
+      "oid": "66192e1a0a720e3db8be64fd1e6b0adb252a9ccb29be4cbbcffb039fd46d22dd",
+      "bytes": 29724
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0870.fbx",
+      "oid": "67fc1f3fb0f60d23895534d87aed1bcecba0c993f5c143e576abef7d74280c48",
+      "bytes": 37772
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0871.fbx",
+      "oid": "c1e73f5c2b0da424617bdeffdfc64977b871352c9a2cc2234690ee9547d4a91b",
+      "bytes": 16828
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0872.fbx",
+      "oid": "e581f52441c37aed55e5ab38e8f7619e34db62a3b0a3cf9f2dfede37c35a8a2f",
+      "bytes": 25980
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0873.fbx",
+      "oid": "85c2e2e5ce8cba8c68cad32bc9907b1b500516cca019b9a0b2c1cf7b4f579233",
+      "bytes": 23484
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0874.fbx",
+      "oid": "6411ef9798100841976bede0ba6580401315ccecfa734981d5e5aa3b9aea3247",
+      "bytes": 40556
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0875.fbx",
+      "oid": "88e869bf7624907c3ca9132601355d036ec2823b5ba1c6bb5e2ada4f56f4279e",
+      "bytes": 31228
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0876.fbx",
+      "oid": "3c0bafb27861991d9c76793c321941e88e0d7161799a29114afe17610e812726",
+      "bytes": 20108
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0877.fbx",
+      "oid": "f77bdb1846187f9286625458359b25d8d6bdfcb765f57104509476c5b4adefe1",
+      "bytes": 17340
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0878.fbx",
+      "oid": "9b912f23665a93decab65e7ef3c016db35f64af61e04fc62592b0c65ba38b423",
+      "bytes": 24444
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0879.fbx",
+      "oid": "bef1a96ccd400b7c4946035e7737d93a0bdc0ed4c59840dd5a638fc623cefcb1",
+      "bytes": 17852
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0880.fbx",
+      "oid": "fe1b1a2e3d3909cb1c0fbc8c4a952573785e2a2fd0dca66aeafb33042f9869e0",
+      "bytes": 17740
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0881.fbx",
+      "oid": "15a4c82972145692639221c38409bb924bcba6fdbf751d893b412cf4264b0942",
+      "bytes": 20508
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0882.fbx",
+      "oid": "f9e377bdb6fa7bbf2eb9280d211e64e126d8d41dfbccacf57590e188d947698f",
+      "bytes": 18540
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0883.fbx",
+      "oid": "93a03b99ed805e2be531caa347b13e4048b5b77f4f732a1ea95b2a43610c2c36",
+      "bytes": 19420
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0884.fbx",
+      "oid": "c1a4427c8e4ef62e77416060a654cba399ee715f59ea2fa1f0c32deb0448bf24",
+      "bytes": 61180
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0885.fbx",
+      "oid": "da30e44214db0bedc29575bfdb555a94832082b3776b778b666489270006c645",
+      "bytes": 40460
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0886.fbx",
+      "oid": "72ee8c22f38bbca211751cf54d66b3a6461d51164fe0e9fffb9ed109ecb3d0ef",
+      "bytes": 31100
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0887.fbx",
+      "oid": "7b18ecb9cf1e53417eb0c04fb2e02561a4ffaad1ac4e6b91804e1c700092a77a",
+      "bytes": 922508
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0888.fbx",
+      "oid": "cbc2c88725b4f758816a41db06cae3d480264e7a529e33ffb71397995ac4d2dd",
+      "bytes": 8355596
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0888_BoundR95.asset",
+      "oid": "039fa7e1ee2bc601403f13e33b3aab5d475806e1c0c7b1352ee935739d9b6dfe",
+      "bytes": 58396155
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0889.fbx",
+      "oid": "4083eb238e900271ae8ed97acdd7c53b294be092ee315d013eed4e36d9219b1d",
+      "bytes": 16828
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0890.fbx",
+      "oid": "414879f7aae843a008ff30c17313523e3bf85670066686419165f1476c74c4df",
+      "bytes": 16380
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0891.fbx",
+      "oid": "615fc2db56a62c0c6614df15ec2bda21a7e346d0bed987380866c8068bd116ea",
+      "bytes": 113788
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0892.fbx",
+      "oid": "5f5b2112d2c4f63b828550098a170d9de9d3ac7beb2986286c3526b675896a63",
+      "bytes": 19756
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0893.fbx",
+      "oid": "c38ad405f238c8ade403d9f4de813329b3b2336724e33213f5f922f0c4c3383f",
+      "bytes": 18700
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0894.fbx",
+      "oid": "e437bca153d7dbe8e04b533a06aa672b05a35dd40da43a263b70cca8dfa66d25",
+      "bytes": 33436
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0895.fbx",
+      "oid": "dd72494be3a620698c47f79a72c01a71204b8b4747a06c4c4e3273fe7306b0e1",
+      "bytes": 17052
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0896.fbx",
+      "oid": "fc80e27e98bec8587fc55678e046c502edfdd4c2b87d0618779b1750a2ca5b7d",
+      "bytes": 159948
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0897.fbx",
+      "oid": "0e324d1605c0fa40e00fd5f57ae9a5541899105031f964c8e6d6331776ebdd5b",
+      "bytes": 246300
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0898.fbx",
+      "oid": "74ea7a991c48d6d2808ff8387ad20166490fac83fabe66361dc430a8aeddf624",
+      "bytes": 18508
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0899.fbx",
+      "oid": "2994a294b91727f1fa6841fad2dfd1d07aac9eb3fb410952450049f3ef67ec99",
+      "bytes": 33404
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0900.fbx",
+      "oid": "f9deef038e7e36297940587e60129193255528a2910be9452a83c93eb1f0f31b",
+      "bytes": 48988
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0901.fbx",
+      "oid": "44a0b147ac5050554cba0f47c74b439b58fa17dd6a3f08e704d0a9f6444c5cdd",
+      "bytes": 29996
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0902.fbx",
+      "oid": "a6c4f540d5c6d46a10a0610c572d7481d4cdc0c5a4014b22a2900d35a47a4a51",
+      "bytes": 242124
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0903.fbx",
+      "oid": "0b143285eb7e2f4707142d9c44d7fdf87150ce2856e6df347c47b6fe7ac26bd7",
+      "bytes": 25052
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0904.fbx",
+      "oid": "86591bf724236b08ebf7a74cf6ab9d2a0497611ab43b1b2ce3fa3d5dcf56079f",
+      "bytes": 16172
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0905.fbx",
+      "oid": "ec75a65ee4c701d178f3ff77d98eaaca1d97e7ff411bc623255b14957ebc4d75",
+      "bytes": 15964
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0906.fbx",
+      "oid": "967050038ace69255b338f3486d6416d671c5a1a8c59d721608055ae43d433ea",
+      "bytes": 34860
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0907.fbx",
+      "oid": "33bc31a80bad3b80679e88361e372148a1fcab7a3420f570f9540504c86ba91a",
+      "bytes": 235356
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0908.fbx",
+      "oid": "f19c024a52c8bc0a098ac0824b3700163b09d28c54a1a8d0b25940680360c77d",
+      "bytes": 94220
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0909.fbx",
+      "oid": "eafd5b218027eb5ed354b36ac5c8de8d6b61b3083f5c6dbda8a43052d20b64c0",
+      "bytes": 179436
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0910.fbx",
+      "oid": "50ea0fa474f5d471ca6b48cd06c40a0c8acea9e7e4d7b50882790201f648d4a0",
+      "bytes": 155596
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0911.fbx",
+      "oid": "1d63b034c02ad517b05eed15bc8ede4dd1f2500e3a3b776d9561cc3df9bffb04",
+      "bytes": 59244
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0912.fbx",
+      "oid": "51fd2be616b8ccdafb1f26638c93d176d1a83851e09108cbb0086bffdedd598f",
+      "bytes": 24524
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0913.fbx",
+      "oid": "a0fa18042933d3626c676f28c421b88c4c26c65912bbd177ad200071b1326ff7",
+      "bytes": 50444
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0914.fbx",
+      "oid": "1436209d90f4bc809a1b33fc76dcaa0498fc8055285b0e3865402e863c9fc450",
+      "bytes": 51580
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0915.fbx",
+      "oid": "4955560b88d8409948c4de52d70f1ca95711d095880bcb898e116fe2190a6cd0",
+      "bytes": 37932
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0916.fbx",
+      "oid": "9825bf4da20faa5d0728d3e4a1a9318cccd57b64a9c0aed006cbc3bde37619db",
+      "bytes": 49836
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0917.fbx",
+      "oid": "8fb1ba5c81fb02f81d538d732736305a284793d207a79504aa66f4238cd7759d",
+      "bytes": 68428
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0918.fbx",
+      "oid": "750456a7c50ead723c8b48c171a8f2b7556d58cf38e51a5e65eacf9154d210df",
+      "bytes": 67676
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0919.fbx",
+      "oid": "f74905dc116afcea2e4dffb478883c422794d295c1a01dddee8d5b5c21f8b30f",
+      "bytes": 79196
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0920.fbx",
+      "oid": "e5fcaf8d302453b5cb384a5edce29ed93c67db283e306fdce360c55ee976ddc9",
+      "bytes": 57980
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0921.fbx",
+      "oid": "43171380c116ee19fff1280133c5450e91ad079f00f635dada2dd3e6ac6c57b8",
+      "bytes": 19638988
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0921_BoundR95.asset",
+      "oid": "30ece6d4200bcb94ec55f3ce3b8a1df0ddcd0d1035232a1d19d41389ab4f5f15",
+      "bytes": 125837867
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0922.fbx",
+      "oid": "d4b3f1aacf57e52b21798961bb6175f9f27c1587031c84c4a1862e6c4a92e505",
+      "bytes": 16380
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0923.fbx",
+      "oid": "be50154c2582f364947fa2dc908ea31437317c585abcb49d42f78cec90ce69b1",
+      "bytes": 72252
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0924.fbx",
+      "oid": "82ff057fc041b2bf93c3c0ecc3b98350bd9959283ab6d9ef3a74a125cc17795c",
+      "bytes": 27068
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0925.fbx",
+      "oid": "c92463efcf2d995b1c5f48eef9fce87f819aa9f7d47cfbc7ca71805a11968772",
+      "bytes": 38236
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0926.fbx",
+      "oid": "e79fa092006d9eb3ff670d63961438fc567c8b05d6b7497f21d015329c4e1963",
+      "bytes": 22172
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0927.fbx",
+      "oid": "f9e0c3919876ec0cb067c2940f88321ede9157b88534fcc3574b0c3613d75946",
+      "bytes": 128300
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0931.fbx",
+      "oid": "657baa58259faac04d05c33780685664211364becb642ae5e6ca0cbbf7f4b3c3",
+      "bytes": 114652
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0936.fbx",
+      "oid": "4325a1d8f66ab9a114284b329d9d3ff4f7cd23486952aaab33c9ce3b729936e9",
+      "bytes": 17132
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0937.fbx",
+      "oid": "517139f056289f7d0d4e072015be05ac11ec087d7036eff6d677aaef9e46f2e3",
+      "bytes": 16396
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0938.fbx",
+      "oid": "7c1c539ff4d3cdc6c7a8b80a74e00409579bbd8e263da26381ac05e593e6e72b",
+      "bytes": 17340
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0939.fbx",
+      "oid": "7b21cd108b1dc7e38a2af401bb977b4695ac825208d483998c82545f3c8dda43",
+      "bytes": 31404
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0940.fbx",
+      "oid": "392da1e84c01a6ff0e6405dc76e95ba7fd0292c395575d91b5d852ae7ef4929c",
+      "bytes": 16380
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0941.fbx",
+      "oid": "47c91a86a4ad78209bdbe9ff4ea1cd18c6bd816e93f8d01a868996114330197f",
+      "bytes": 33324
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0942.fbx",
+      "oid": "aab2b92f1092160e7674478b8fd06bc2bea0ee7a29fac43a3462707be4434c3f",
+      "bytes": 20652
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0943.fbx",
+      "oid": "bf1cadad59b7f27f6c94b4428409d28b444327bb4ca24a7e5c15fda34d3a07dd",
+      "bytes": 16796
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0944.fbx",
+      "oid": "1f9b081b4b6c3cc15c0ed63cf209fa9f3782fb8f10563181a50e8ce4ed1721a0",
+      "bytes": 17724
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0945.fbx",
+      "oid": "6bc18917495ed34fdd161bf31cd8d7e287d6bf75cf8fe5b62dac69293518ef03",
+      "bytes": 28236
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0946.fbx",
+      "oid": "c0a67abd978540a5e3cfc9a2837ddb412fb7e5a1301ed02c4f8860982a10ae0e",
+      "bytes": 43900
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0947.fbx",
+      "oid": "3f079bcab8f9f5828872fb186f21d00fe388a69f819327d864da1d43112a8744",
+      "bytes": 42972
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0948.fbx",
+      "oid": "20e3d1de0c4edd72fe63accd68920fcafb9ab7ca7dec79e766f578ad86955d06",
+      "bytes": 24588
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0949.fbx",
+      "oid": "5b5049cec3f613e63c8920943f6b5e02dc1e7b6af09e1705a296a67cd2150535",
+      "bytes": 25500
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0950.fbx",
+      "oid": "ffe251dbb956f121576de3dc9a96613984d5d95840c921bfbef55fa4a243687f",
+      "bytes": 16844
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0951.fbx",
+      "oid": "beb1ef974c6d13a6158e68c45ea6f919cabe960c735e35bd5cd4e86e0968665d",
+      "bytes": 19804
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0952.fbx",
+      "oid": "3a0554e611aa6344aad5090080b195103610d6514113c7a0237326ce036f6095",
+      "bytes": 19180
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0953.fbx",
+      "oid": "e027c6d1336e8f77be09d638bb070b326d902120403995a2909c5784c852419b",
+      "bytes": 18188
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0954.fbx",
+      "oid": "9c21834e7783d529c33a3f73555fe5e8adcae33c1570c30c30de386b6452ee2e",
+      "bytes": 25836
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0955.fbx",
+      "oid": "b5eae76b93cf0633d76e120768b5f7b07424e21cd8a9f6663621442a0e2978c4",
+      "bytes": 22460
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0956.fbx",
+      "oid": "93abee191f3330330153ede29acfc8f1147d4ace01e745fce19fd4713e3854a6",
+      "bytes": 35052
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0957.fbx",
+      "oid": "01e9715b1c8b283c23083d582c6b1d82bf39147bbe9567a8b9941acf234e4970",
+      "bytes": 16092
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0958.fbx",
+      "oid": "181ba5c99d58024c4cc638d03d48494d122744e39bab45049dd888747d76dc0e",
+      "bytes": 16316
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0959.fbx",
+      "oid": "f5a55656300c9c2821586466facda7e93321da18a9b5ff811e7e6b91efd05d1b",
+      "bytes": 22428
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0960.fbx",
+      "oid": "44e1bf7c53bbb0fd3eea5214ac291dc84bf8becc3374cada3e6b12019dc74ded",
+      "bytes": 16332
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0961.fbx",
+      "oid": "3b954144803c66a1c9f9df802e4c15a93d565f712a0a5b6189cd3c2fd4ff2ad8",
+      "bytes": 24956
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0981.fbx",
+      "oid": "7c7a71e8005e75d9ba6621afa5c0e2233f28c77a8273760d4f4bd3e9e0d97426",
+      "bytes": 17612
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0982.fbx",
+      "oid": "5508464356979a4bfd0f1ab6ceef2a4bfd81774d29ff450690baf25f91e883a9",
+      "bytes": 17884
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0983.fbx",
+      "oid": "403f51f985458f11d4c3a3f3c3d28c1a0d8951921e7979184e4a0e27dc2ea60b",
+      "bytes": 17276
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0984.fbx",
+      "oid": "5f341dfb63ad181707565842613e28deb90463436f3c8b8e5b3f6e56b102bbd3",
+      "bytes": 17308
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0985.fbx",
+      "oid": "3166240fd66f2a42b9143988ab56243450b7902904087e9683f4d2e64aa29896",
+      "bytes": 17308
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0986.fbx",
+      "oid": "b0f01cc0fe87c836a285956def15b475a6726988e0b9b7256cee4dadeeeccf01",
+      "bytes": 17324
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0987.fbx",
+      "oid": "dac8ca513130aeb2a8f4f04c57aadd3001e137ebecc041589bdcb87b07692bff",
+      "bytes": 17020
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0988.fbx",
+      "oid": "17ae1ff3bfb466d1f03164be708e4d2e0f7b4ba888c6ac1700fe331aef7bbe57",
+      "bytes": 17036
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0989.fbx",
+      "oid": "3c134e9af1566c53f139ec7321e245a3d318c88ddfcd02ae84311856b5a735b6",
+      "bytes": 17052
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0990.fbx",
+      "oid": "7a02a19cb951bc35f3e013c317315f227d9b0d8f45034f2c758c1c8fbf2d9a45",
+      "bytes": 17052
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0991.fbx",
+      "oid": "bb340b0931c4cb43850db63973e4d15d67f1ddad5a29f667f69f515a637b3e18",
+      "bytes": 17052
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0992.fbx",
+      "oid": "71f2c6dcca1a2ffc407dc40940f0e8cbeceb7b452d13b6bf10c5f02af97193c7",
+      "bytes": 17036
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0993.fbx",
+      "oid": "e83641e66b1576f4e19390c131218fe63f5f92646070b6fd0f42fa5b5689dcb6",
+      "bytes": 17020
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0994.fbx",
+      "oid": "f9908473dfa284303c71453367005bad6dc0c2c739049759ea2cd2fa6c544d27",
+      "bytes": 17020
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0995.fbx",
+      "oid": "6dbbdb1865242229cc798407f4829352456d0a66c6fee8d89d6a73f39ec10c01",
+      "bytes": 17052
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0996.fbx",
+      "oid": "512c85a8ab7c76415cc6bc4f31639b5285bd31012f8fb3d63f8633e00503bde0",
+      "bytes": 17068
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0997.fbx",
+      "oid": "803addaf78e5e28a50c916098b3114ba491c5cdbb341a4109b15f1a387d8f91e",
+      "bytes": 17068
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_P0998.fbx",
+      "oid": "3f5e1abb64e4cfb9c41e17754194cde1c9938a65e759724d2e9ad8577bea4adc",
+      "bytes": 17052
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_Service0.fbx",
+      "oid": "2de643602c834df05b2d84fbbf1342f7e1f6d06e349d6d5e57c11d1050b5d323",
+      "bytes": 44652
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_Service1.fbx",
+      "oid": "d8fed907aa96765ed83c67ebf786d051c9d2e0ea8f7a6b64dda58a120909ec86",
+      "bytes": 249052
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_Service2.fbx",
+      "oid": "c35a3835a3cb2d78a575212836ac97ebec0b419b9a321212cbb46f13752be347",
+      "bytes": 107596
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_Service3.fbx",
+      "oid": "60ad499dc2814e46bacf323ed11b862bf74688a2b90394deb9c6c72fe77db418",
+      "bytes": 90604
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_Service4.fbx",
+      "oid": "9983dfb680fad8b2458a7a3c806a41b8052dfc1e82b7796bf0515f60c56ec31a",
+      "bytes": 120940
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR96/M95_000.fbx",
+      "oid": "3f57f8ba9cb776f9accced51838a346b739d0dec7c18c91716245d7b92b29ea4",
+      "bytes": 5961564
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR96/M95_001.fbx",
+      "oid": "5972771f898d718cb66302f7910d2150b0341177b7d65ce4225a4381e99fa4c9",
+      "bytes": 331708
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR96/M95_002.fbx",
+      "oid": "3b0e8ec4f2b1b23aad19778b09652d102422bb8ee8dc7fc695a8afdb8904f845",
+      "bytes": 386844
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR96/M95_012.fbx",
+      "oid": "c09f0fd425450cf13d0eb95e81023ef1dac0c70cbb88e3851434252cd9fa1d03",
+      "bytes": 361484
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR96/M95_013.fbx",
+      "oid": "44f0ce28fba1f7e5157e5c55ae1cb8a01529e41f258b08b79c38b5fd49f9b0f7",
+      "bytes": 1523484
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR96/M95_014.fbx",
+      "oid": "0349f6fbde8a06003b7197bd838871725f51d7a53955b4edd17a89799bbb2256",
+      "bytes": 1776796
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR96/M95_015.fbx",
+      "oid": "f7ffb1a16e668dbb91b910d484717673f3abd8fabd249ba5867e80f5709ac2b4",
+      "bytes": 202924
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR96/M95_016.fbx",
+      "oid": "9113c43e15ee91e445f4f3c9f52d721b694c6051eb4adef091da2a426783773e",
+      "bytes": 4269484
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR96/M95_017.fbx",
+      "oid": "cd6b478844c7c52bf3842d1ff4827060cd4fd88cb0e2fa7d7fda667009044851",
+      "bytes": 1449532
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR96/M95_018.fbx",
+      "oid": "65c3478f5d0a0f8ae9a42cdc6a753a28457312300b10fb332804f33ac9291f58",
+      "bytes": 374716
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR96/M95_019.fbx",
+      "oid": "a626994c8266114e1c8e8b740cb5984711986df1dd5f6beaf6f1fd5623e64226",
+      "bytes": 1776940
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR96/M95_020.fbx",
+      "oid": "3b791805c8a2524a22a280735e3ea4a66a2274952730e6e0c431aafd594a8bbe",
+      "bytes": 232236
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR96/M95_021.fbx",
+      "oid": "c880f77f724f5bf509cf3ac62d6164c659028134a73f4fd00f7b3d99aa3d9db9",
+      "bytes": 1523484
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR96/M95_022.fbx",
+      "oid": "10739e7de4440075082522f67a70248cf6e2952ded4d17f9a83d457fb239642c",
+      "bytes": 7427548
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR96/M95_022_BoundR95.asset",
+      "oid": "4eb2c2bdfcf44df9f93419c8ad50f9a209882a5a7096e3c647e8a7e31b250238",
+      "bytes": 21428716
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketGroundR96/M95_023.fbx",
+      "oid": "e95cd923776fec20eb1ba2f481da649f70be3ef08e26055c185bc24ca37c0dfe",
+      "bytes": 5159276
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketIslandR61/Island125314010_R61.fbx",
+      "oid": "8da55eceb7727315bd1aa1f4377aeba9bc4134909600b405feda2cadb5e59f02",
+      "bytes": 1555324
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketIslandR61/Textures/R61_FlowerCream_BaseColor.png",
+      "oid": "95a647953d51fd692583071a3c5047e945a3ac549aaa19f78f6c22e01cba5e90",
+      "bytes": 302572
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketIslandR61/Textures/R61_FlowerPink_BaseColor.png",
+      "oid": "5f71b11213805f602d90b3ba1d1363fb4e1ba0b6e14b05155d183b008d14f2f1",
+      "bytes": 274637
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketIslandR61/Textures/R61_Grass_BaseColor.png",
+      "oid": "97ab4b52c7e7cde3005fe298242efc67bd72e238b0f829ce4a77b6e8a19c3e3a",
+      "bytes": 175242
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketIslandR61/Textures/R61_Paving_BaseColor.png",
+      "oid": "f795ccd3e5578c05d5cb0f864a2e5d94de9ada470674daeb5581d69ce2d7440d",
+      "bytes": 225975
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketIslandR62/Island125314010_R62.fbx",
+      "oid": "68693164bfd0a23cb7f3834e0025ce9c4133a6cb9f5b286c4eedf63e67517c2b",
+      "bytes": 3897708
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketUtilityRoofR70/MarketUtilityRoof_R70.fbx",
+      "oid": "0b133e29fe6102621b0b095f64b48e106cab3b562d1bfbe3c0e39ab8bd7605f4",
+      "bytes": 57436
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketWestAnnexR63/MarketWestAnnex_R63.fbx",
+      "oid": "368fc723eabaa5369984ac5cb389510563a7c4c08d961d3660872a8003121a99",
+      "bytes": 230332
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/MarketWestAnnexR64/MarketWestAnnex_R64.fbx",
+      "oid": "feaf182ce2de78f8e53911257a065bbb2ea5606612fc56eede067db5d17b9c3a",
+      "bytes": 271308
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/ModelsCompletedR15/CompletedModels.fbx",
+      "oid": "5fc5e8a7ea6d09e4a3b54f932bad18e177cc9dab3882a26b9faa20f6bd9442f7",
+      "bytes": 24012
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/PlanterRepairR15/PlanterBases.fbx",
+      "oid": "8cb56e6cdc9aeb88c833856e9931f091ee5535ca651a2d73fef65f1cc792ed37",
+      "bytes": 40252
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/PlaytestR21/After_2_BaseColorSmoothness.png",
+      "oid": "e51197c6789cd87fa4392244bd00126f0189f6336760d0d84ca0a3f01fbcd3ef",
+      "bytes": 253802
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/PlaytestR21/After_Yellow_BaseColorSmoothness.png",
+      "oid": "fe4d6a8c2906ce148e74e0a0ecee04a6d0599bb97163f096cf939ff50cf1a3a3",
+      "bytes": 290672
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/PlaytestR21/FlowerModule_Refined.fbx",
+      "oid": "2653f8d2a895641ab76d6ddbbb77fee5ff7457e965816536916e7f29e5ace987",
+      "bytes": 297260
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/PlazaGradeR77/Context_106_R77.fbx",
+      "oid": "fd61412eb55d6409c95e3cf6150f6fc16b3250be24355004dc159831c18ceca8",
+      "bytes": 1175468
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/PlazaGradeR77/Context_124_R77.fbx",
+      "oid": "cdca00fa172afedf506b757e98053e7847894f4fbd9702e1eb8029d002712689",
+      "bytes": 2447500
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/PlazaGradeR77/Context_132_R77.fbx",
+      "oid": "49f99a9a6107063a524b3781f75a7f0c9fccf20b9db5260682b3dfb42843699c",
+      "bytes": 307660
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/PlazaGradeR77/Context_136_R77.fbx",
+      "oid": "4bd88c4ca0e413169d3128f97d02165b3ec9686718e4c90a29f737a8c57cb490",
+      "bytes": 1791212
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/PlazaGradeR77/Restored_029_R77.fbx",
+      "oid": "5b26f64d96ab302e4843b023a57a5c9b38eb5efd8121e74c19ee20c7a99ff47a",
+      "bytes": 434140
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/PlazaGradeR77/Surface_149_R77.fbx",
+      "oid": "5e11e1a564429ccd9c05832bc40da9f73d6db744470909ef6acea74b618f8135",
+      "bytes": 304220
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/PlazaGradeR77/Surface_153_R77.fbx",
+      "oid": "52ebaa75063004800c2b054bedb31b776e0a0be67a873a2ad77ebd7d370f30b8",
+      "bytes": 1791212
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/PlazaGradeR77/Surface_174_R77.fbx",
+      "oid": "44eed053003f7da76a64e532ddb52086b0f617380b1f1d5033fb9feae8a46c24",
+      "bytes": 51628
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/PlazaGradeR77/Surface_175_R77.fbx",
+      "oid": "0afe6c46e351cb4456785ba48a7d9a48eabf80f7ea75b4e05d257c040d2b4e40",
+      "bytes": 269468
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/PlazaGradeR77/Surface_176_R77.fbx",
+      "oid": "be34338e8b52c5798321ddc2f9e695e87211e76d3efa348f4ce43554265e133b",
+      "bytes": 2864988
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RecoveryFixR21/FootwayOverShoulder_Garden_Bank_Return_Walk_Surface_125.asset",
+      "oid": "b7e16dca5c8168f0cc2efa7f75fd3ee94a8f3cc8a821f99ec43815ecebc9a915",
+      "bytes": 55653193
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RecoveryFixR21/FootwayOverShoulder_Garden_Bank_Return_Walk_Surface_153.asset",
+      "oid": "d9cdeada186d3907e4ab62c9ef2a3a101d56c9b242f26b1f1925f93ec91e3da7",
+      "bytes": 43118503
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/ReferenceR24/ReferenceModules.fbx",
+      "oid": "e2dba3496e368daf1f087c658e5af9d26571644d8d6ec46d43b507a3d39b9b67",
+      "bytes": 2036044
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoadMaterialsR65/Asphalt_4m_R65.png",
+      "oid": "9259837135aa1539d2a0b140df2eaab6540855a067abc351011f3765ac8b2462",
+      "bytes": 1116065
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoadMaterialsR65/RoadLoop_125314010_R65.fbx",
+      "oid": "f35e046793c1256660d7c135c52e84ea9ee8f5d3e05d77880fcf771c99e91ced",
+      "bytes": 46716
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_000_R88.fbx",
+      "oid": "0582f34dad783331ab9a772bfb74f5ee360b1ed0b7e92ee91fa27d1b22d99a8c",
+      "bytes": 5668924
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_001_R88.fbx",
+      "oid": "c222a7d81c5494d7a0e43d82056b21bfa06dbefc488f5933ce3b9a3aa03731ee",
+      "bytes": 66124
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_002_R88.fbx",
+      "oid": "e69efd074b4d178fd3c4eded862fdc7fb56775ba819f3a30e4056d2378287e59",
+      "bytes": 67244
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_003_R88.fbx",
+      "oid": "26a6f63e9fbfadae3005f3a8a91a4d1d4b165ed5e883bab78f591f3f8ff6db7e",
+      "bytes": 32140
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_004_R88.fbx",
+      "oid": "e36557ed587a9042fa081e283319bf9f0a35190ca42611cfa4d869ce8dbf3667",
+      "bytes": 32444
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_005_R88.fbx",
+      "oid": "186a4f4b4c41ed3c604c0ff0b52631adb2512eb32629faf054e7039c3ea479fb",
+      "bytes": 4353820
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_006_R88.fbx",
+      "oid": "4a6be7f362594f06d9ecc43ca1a33ea6bb22bf483038211b0014da386f6da5d6",
+      "bytes": 314284
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_007_R88.fbx",
+      "oid": "2ecaf213193882c26667473a8f344127b9db621d2a02f8a15edde9f200088405",
+      "bytes": 1980108
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_008_R88.fbx",
+      "oid": "ff5d84c7f87a1627ae8c324191cd19311bccb034b412725e6416bc6248d999c0",
+      "bytes": 64412
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_009_R88.fbx",
+      "oid": "bb929e5805463490eab2cc597440edac0ff9a5e010bfe6e5e691bbaff4b750ac",
+      "bytes": 356076
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_010_R88.fbx",
+      "oid": "17c60bf9566c8b2074e3316f552f6915a91bd15ba0991aa6c1bfa4af16682788",
+      "bytes": 61004
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_011_R88.fbx",
+      "oid": "a39d8be86b4ba6a3c1b71a44322db6ef6aeac039af99f5e9f3e83e12e695774c",
+      "bytes": 357228
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_012_R88.fbx",
+      "oid": "ef4d08c4c7dfacb7659a949d97ac972495bef4614043acbebe236995b3eb40e1",
+      "bytes": 16940
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_013_R88.fbx",
+      "oid": "e88747b99a0e0e2899a0774d64cb9fe74611e18e566b347efbe0ac141a546095",
+      "bytes": 67164
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_014_R88.fbx",
+      "oid": "dec72f58a0bf2950c38bc7560100746faa9c7ae6d349f47a84fddb8db1b659b6",
+      "bytes": 26764
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_015_R88.fbx",
+      "oid": "5107828ace3a2b87b28d926e16d5891d5aac1feca650e4bc0f63376bd061dad0",
+      "bytes": 1390300
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_016_R88.fbx",
+      "oid": "05f404fb8d9b7b46d8287c5a6554b0f9f4e6f86b83c17c913f3cb9e961a88af2",
+      "bytes": 82156
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_017_R88.fbx",
+      "oid": "980f5031606e29cc6ed8c8d2d5cabe848d8c355e19e0ce618a49a9bbfc8fed07",
+      "bytes": 4450140
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_018_R88.fbx",
+      "oid": "1d9f03711bfe8618f64c04848f3338b70b34ca625bc1d6d2320468ea4a48f409",
+      "bytes": 473580
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_019_R88.fbx",
+      "oid": "90fb23f25537576e4f84a2c9253afd619d09cdfbe97bcd3a97d56493b85e5120",
+      "bytes": 22876
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_020_R88.fbx",
+      "oid": "41d1f781a544e04ce53df96d36fb05d2e75a31a7aea063b2013baa1806192e06",
+      "bytes": 28972
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_021_R88.fbx",
+      "oid": "58ab16448d60d6507e63d2054889e42923811d2dc0c899b7c84f5eb21fb341d8",
+      "bytes": 32172
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_022_R88.fbx",
+      "oid": "aa200d3b9ba1548c39e724d0233818e30c1545feff73e4192df71f2c350d66d7",
+      "bytes": 45388
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_023_R88.fbx",
+      "oid": "a2744274781d1a668195f8a9d5488475729f56cbb3240981291dc41c0235a881",
+      "bytes": 11562300
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_024_R88.fbx",
+      "oid": "7e41dc123bd66911fc917bf527e01d1600596896b417ded0e278111ee6c30846",
+      "bytes": 66844
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_025_R88.fbx",
+      "oid": "d1a4afd0544ff32120debbf34b45f3b5343a8798bc7653bb73c94c16a680c2b2",
+      "bytes": 198380
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_026_R88.fbx",
+      "oid": "521362c43b63c218bc4cd2791ac58f957224e615980dfcfb637068780182f93f",
+      "bytes": 3259612
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_027_R88.fbx",
+      "oid": "d8d0b643dfd2d0dc9a275fcd9dc8857831b75136f72c8ebbd3ee7296ed34099c",
+      "bytes": 64940
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_028_R88.fbx",
+      "oid": "41e89db1fb8024133787b7ac8fd6c6fe839f28438ab92aa2d6d985d60aa7b7d8",
+      "bytes": 17964
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_029_R88.fbx",
+      "oid": "04f5b8ec7cf9f5de0ca3a5ce48f0c2b7413b7702d8df9d03b3aa39351e1a1f2f",
+      "bytes": 280748
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_030_R88.fbx",
+      "oid": "7240513cc8604d0517af3b2ad6eed30c9df254ef6f6a63063e5735e200cdfb82",
+      "bytes": 355308
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_031_R88.fbx",
+      "oid": "ae420f3ef5f0746e5ce35954e413af8fd333db4524568299499040407832ae18",
+      "bytes": 96604
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_032_R88.fbx",
+      "oid": "3833b397b66a65d83fce84b85caaeb7e6c52c989eee111066349d65c76c37fa8",
+      "bytes": 33004
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_033_R88.fbx",
+      "oid": "fc82bb059ec9fdb725cc16b0f812bd6d08730d8debd22de05dce6729a4fbd25e",
+      "bytes": 30908
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_034_R88.fbx",
+      "oid": "ee8a32b2baaf5b6b173e65d836457a98e27d188f7a9e6203e9138e701f50b946",
+      "bytes": 248284
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_035_R88.fbx",
+      "oid": "dd1bf5c0a6a62d535e8eacf1a2aac2a2d4219570c69583a40f4b78998c5bac69",
+      "bytes": 1996956
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_036_R88.fbx",
+      "oid": "de24f9190875c684b7cb1f8225318c3f9a0230c365de9cd99677729f8b6cf0a8",
+      "bytes": 2794876
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_037_R88.fbx",
+      "oid": "6a552b4ac079fddd1750bde25e2c5af4f48f26703e0086a2c7975e411f7067cc",
+      "bytes": 341676
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_038_R88.fbx",
+      "oid": "8c9dbca5eeeac81019bf1d49a556d581306312bb90e267ab9c948d95152ab5aa",
+      "bytes": 2159132
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_039_R88.fbx",
+      "oid": "e1db9515415c3cef346ce286bd583b0329d94b7eebd347b92fcc8fdf79e7f205",
+      "bytes": 66252
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_040_R88.fbx",
+      "oid": "bf3697b15999e772d73ddfbd6009ca904619e7fdd3c3d3b5b15808702cd58466",
+      "bytes": 1289628
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_041_R88.fbx",
+      "oid": "c8e9a8767e2c5335f93be46e76f586bc3862dacc56ca310df31412207abc042a",
+      "bytes": 259996
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_042_R88.fbx",
+      "oid": "abcbaad5b68b5bd89eea2242f32a3c388f2dfecd194ee8031e6153fa42ace2df",
+      "bytes": 5740236
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_043_R88.fbx",
+      "oid": "63cd66a7685a7865eb6a08cdbb8e02b2b815e9eb788b15d85490aea1819d19db",
+      "bytes": 22748
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_044_R88.fbx",
+      "oid": "de7ef78250bb6f17109d0a0fd129faf8e36aabb1d67eeec63c9c5c4fd071d138",
+      "bytes": 64300
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_045_R88.fbx",
+      "oid": "2df6bc35f88bfb917abd71cb9622626d4318c3de75580df0650d203b1d134e7b",
+      "bytes": 278204
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_046_R88.fbx",
+      "oid": "ea94c20694d0d22e1136a052d41674a4f0f106f08bfa037e09c19e75f750ac4f",
+      "bytes": 334876
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_047_R88.fbx",
+      "oid": "0e4de1a89070fe602dc8d2f12d032f7426daec8ddd12b02474f8adc187c277e7",
+      "bytes": 22828
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_048_R88.fbx",
+      "oid": "23a8ca824434e9b508a58f2e67e8f3881c942528ddd175905022a7c7acc2626e",
+      "bytes": 337948
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_049_R88.fbx",
+      "oid": "64c1946b7a6184654ee30ebb2a1f0f1f5765accf93f7d1b23cf0387fa982143a",
+      "bytes": 191644
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_050_R88.fbx",
+      "oid": "ecca68120b438e2ccf4605486a8c4e095118838b64dc36d18b203642be1e1f45",
+      "bytes": 22780
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_051_R88.fbx",
+      "oid": "7965803a8f0e5174d8f74179eedfd76901b51bb70e81101297baa18b303220ca",
+      "bytes": 274700
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_052_R88.fbx",
+      "oid": "aea5f072f261cb60f3319a870383217ebeaf16018ed704fc216f2c9922ac652e",
+      "bytes": 1391308
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_053_R88.fbx",
+      "oid": "f09f7bc6e45779e62e6c152ad9e112292aa21456d33097eccb5ed3e91dcc1034",
+      "bytes": 57324
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_054_R88.fbx",
+      "oid": "3f20b831a7609b58d1a03ac0e2a7727fb88bef425b7d7498ea76b6d97263ce9c",
+      "bytes": 400380
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_055_R88.fbx",
+      "oid": "246834f05f1eb87bc225c64ff48b2db2d56128a360879f14466d8f1abf071f54",
+      "bytes": 32140
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_056_R88.fbx",
+      "oid": "e1521da5cf53f9ff17277f988e6c18be5e8bce24c1c38e130bbd3a2c6201cb8d",
+      "bytes": 146140
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_057_R88.fbx",
+      "oid": "7107ab66f7ea2135839079c0a10bcbe3079fdae687acd7a1685b1ff92420ecb5",
+      "bytes": 1980108
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_058_R88.fbx",
+      "oid": "d8008572e2b4297d291cd0264ad5c8674456725d98dcdba6ecb89582646b85f2",
+      "bytes": 18572
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_059_R88.fbx",
+      "oid": "762db2dd94a4cd0da992213f02ca3a8894cb3c1faee629b93098ba27ae929c18",
+      "bytes": 66988
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_060_R88.fbx",
+      "oid": "fdae8126a2b055fae36dc95751dd6b8565868044a0147d805e213300366ea74d",
+      "bytes": 27900
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_061_R88.fbx",
+      "oid": "bc3ef6736f485199897f5397e448a8f3594e1d095a85309c9be0014e90a04a24",
+      "bytes": 511948
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_062_R88.fbx",
+      "oid": "1552416d896abefd7208f28a1a9f6d5d3ea17988cbf3df0f552818ff90fa0702",
+      "bytes": 317468
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_063_R88.fbx",
+      "oid": "5bac6c0fdcf8781ee081320bbb3634efbb7f8fed15adc2aeb8ff40f7b086e3ea",
+      "bytes": 66508
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_064_R88.fbx",
+      "oid": "8a3b12c423c4d952ac55589a50393b87a32b560fb58b79852ec7063960bbf82f",
+      "bytes": 276620
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_065_R88.fbx",
+      "oid": "134b06003a74466342d8e2d3385328992fd2b9144e6059f0c4311195889dc544",
+      "bytes": 186732
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_066_R88.fbx",
+      "oid": "9177c010cfc955eceaff4e6e56d0d89cc2a791164e7bdf0cd07e784ba32f5234",
+      "bytes": 32156
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_067_R88.fbx",
+      "oid": "140d4bf206f7c30bcd8be88aab2c5d133a81324166abfa739e7820ae2e403e1d",
+      "bytes": 22876
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_068_R88.fbx",
+      "oid": "fa7638470e77db49c5c0b830adcb13ab48ada2cb3593de2e4e4289ccda10b1a3",
+      "bytes": 95068
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_069_R88.fbx",
+      "oid": "0a345c821a8c6ee425909531adc592732e37e04bf56dce2376735c737d5dba56",
+      "bytes": 32284
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_070_R88.fbx",
+      "oid": "c439fa7f3b6607ef25df1cbb60f9e65f56c714a96a3e3cb73eeec9611aac845d",
+      "bytes": 22860
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_071_R88.fbx",
+      "oid": "6f0d96686cf825a9d5a96e3769afe25bbc0febe0ae4c5ac2510ad512b68421cb",
+      "bytes": 190748
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_072_R88.fbx",
+      "oid": "8d6a791e6e509a627f22b9a7e22cef037ffe1575081c0b0ad0aa22ebd5aeca19",
+      "bytes": 258460
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_073_R88.fbx",
+      "oid": "90b6aefd34d4f7ba7c30ac2a6e34765bb1e69563e43a2d26a02d50a32b3c7bd9",
+      "bytes": 356124
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_074_R88.fbx",
+      "oid": "bb37b529fb4860151a77d8faf46f01cf451e45009e376c4b91b2c94b086b408c",
+      "bytes": 64492
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_075_R88.fbx",
+      "oid": "192be8f4d01703956fee20fd2a16d2a32a54ced8326bd01ddebe48263cad424b",
+      "bytes": 479724
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_076_R88.fbx",
+      "oid": "938029e9339d89c785a0eb6a23d3fde0fdecfc4db12f19eb56615cbdb9319fbc",
+      "bytes": 46556
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_077_R88.fbx",
+      "oid": "e7dcfe6c97f8db6c1fe18de9a64ffd8097339d1b0119af53618bd1959576b810",
+      "bytes": 350716
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_078_R88.fbx",
+      "oid": "377378d126926ed5d68bb1dd8cadd2ff22667ee3be990a4da58d5c65af5b9aa4",
+      "bytes": 32988
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_079_R88.fbx",
+      "oid": "e5769537d39d0cebee0e74dc10c8dc3c61839198b1ead3b22fc9ed62d6c15bd6",
+      "bytes": 97116
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_080_R88.fbx",
+      "oid": "400d0911921ffb83bcae1e18508d06c7bc059d59268ea1a154a16842e2a03ef0",
+      "bytes": 110924
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_081_R88.fbx",
+      "oid": "ddc3f815cf663cefcb54bdd74b1ea8f8201ab175fc85bfa23f055bca047e9ace",
+      "bytes": 199420
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_082_R88.fbx",
+      "oid": "ca492b3b23f4faac61fd121b4c2a811b0e68d75f0f7e3cd803e11d90582c17fe",
+      "bytes": 98940
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_083_R88.fbx",
+      "oid": "a343f463300084790d88dab590ce1eb6506d466668868686fbaf05c41824d6a9",
+      "bytes": 30620
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_084_R88.fbx",
+      "oid": "a3adccf47e67b08a52017a65faf252dbf0829cafb0f4c334b80bd29773b3ffcd",
+      "bytes": 16940
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_085_R88.fbx",
+      "oid": "25cc031144fa29d0d5d6a5032f10643fdaddf1818464fa08c7e6b6b5afaf49c2",
+      "bytes": 23996
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_086_R88.fbx",
+      "oid": "4098718d45d6a22c476de12e0d391fc07c114e03156cb261965492483be7e1f3",
+      "bytes": 22796
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_087_R88.fbx",
+      "oid": "1339cb20d9a7b7f2a71bd1c96fb32543b2ce075ed12988f6d90181c706818aac",
+      "bytes": 60940
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_088_R88.fbx",
+      "oid": "2decf8c82d5e2ee3eba224ad46b55e0733188cfcc012ea93c890457745dc39c2",
+      "bytes": 68124
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_089_R88.fbx",
+      "oid": "af29575429873a40d7c66b8233f09265c18ba95a75c7780c113d4ca8ffaba79f",
+      "bytes": 18716
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_090_R88.fbx",
+      "oid": "972c1ae99f45c4c422eba745fde4fe42991c3a1288ef339bb7b694ac8652f601",
+      "bytes": 775756
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_091_R88.fbx",
+      "oid": "90ea07a4abfc7826dc8dc4a74a1827fa433be76c43ee609e032dea40ad28f310",
+      "bytes": 158316
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_092_R88.fbx",
+      "oid": "dcf8cdc9ace372e4fb927d2551cd0336764ecbf0816d98f8137a1ed8214c0ab0",
+      "bytes": 32860
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RoundaboutsR88/Grade_093_R88.fbx",
+      "oid": "6f4512aebcf71431f2fe5b5b4227716af568319108604ce6a265f7662efd2dc5",
+      "bytes": 22860
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RouteGradeR74/Red_0_R74.asset",
+      "oid": "5f99609f2b976a87fe81562664d016be8e416caee7691839a79c06b532781c1d",
+      "bytes": 20241891
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RouteGradeR74/Red_2_R74.asset",
+      "oid": "0a2d9f9fb833c91a0aeb2c0f2a4d849fbeb06ed554d8ab31c7c2caafeba190cd",
+      "bytes": 39816676
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RouteSeamsR76/Red_0_R76.asset",
+      "oid": "edecd43c2d873253851d2ccdbc014e66ea1e14f288415093b177afd69423ad49",
+      "bytes": 20241891
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/RouteSeamsR76/Red_2_R76.asset",
+      "oid": "92bcd17d3101f00ef82417804628a40e318bbe32557a2cbcde8ef3f892658413",
+      "bytes": 39816676
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SceneryR22/FlowerR22.fbx",
+      "oid": "781f9648b7f6e9ef6477428dd442d01861b8a9b86aad9a66794af82b55021c37",
+      "bytes": 301980
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SceneryR22/Flowers_Red_0.asset",
+      "oid": "89d6ea91db9bcaf3db54e4def6862d33587ff36626a0d95c55f8b4d347ff2b4c",
+      "bytes": 20241895
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SceneryR22/Flowers_Red_2.asset",
+      "oid": "5628257ae2a9821b460314cb09ec0b43891cd124d0564a1d0824623cfcd3747f",
+      "bytes": 39816680
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SceneryR22/MarketAwning.fbx",
+      "oid": "1f2af0f3f7dff7f0c45f913602d97bb53549c6cfa1480c343be967f4134c995c",
+      "bytes": 18508
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SchoolR29/SchoolR29.fbx",
+      "oid": "8eb66036b9c98a1250265155e9b93e337eea164d052ae31853f1441c6c5a1982",
+      "bytes": 742412
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/ShadowR79/Surface_176_R79.fbx",
+      "oid": "8c1551026770096dc1a2e4964afd17706aad114c106f1210fdb7a14c12d2a429",
+      "bytes": 2865020
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/ShoreRepairR50/FootwayOverShoulder_Garden_Bank_Return_Walk_Surface_125_R50.asset",
+      "oid": "4051a30f8e7466f53c772f02212439ec6b02cd7fa7472e0c79e50d9a8c968256",
+      "bytes": 55614101
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/SlopeR25.fbx",
+      "oid": "27d58c52de940e5fdcc0e0dd912b3e5c4f13e530e91f48b94731dba8f8686952",
+      "bytes": 3744972
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/Concrete.png",
+      "oid": "a7ed628ac87d40eed02e0925520fef495199e6cef805999b26a02f1d068a066c",
+      "bytes": 449638
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/Earth.png",
+      "oid": "e1b3bb490156ee05b2602bd96884a012d3d06104698c6231f340695b5517a6d5",
+      "bytes": 344930
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/GrayRender.png",
+      "oid": "7cf3f1543398eeda77f7b394fe2878d4b3dfb39a66c1d224f63f20d5614d8e2f",
+      "bytes": 345464
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/Leaves.png",
+      "oid": "84b9333ac2b0d66d4d4a8006532851d138db5086d73e96a5f6e87067ecabbf3e",
+      "bytes": 346126
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/Limewash.png",
+      "oid": "fb742a78098f9500ac7c45b359d9f61eefd8befcde1089acd040aeae85cbc6fd",
+      "bytes": 345942
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/Moss.png",
+      "oid": "24ceec4ca7a6bccb60a31b3b1e4e60cf23b73711e9c80743da5de142d94cb273",
+      "bytes": 346624
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/OxideSteel.png",
+      "oid": "efbcfec8410f0169998d22b23dc04f5d1b5a2c49d5276d481655d99638a4725d",
+      "bytes": 345658
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/RoofSheet.png",
+      "oid": "513a78456b024c188f6ff1e1e5f91dd4e81d12c0c881d72e9ff2fa6f7da5b458",
+      "bytes": 339248
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/StoneWall.png",
+      "oid": "604172b7affb09a3eb02950b4e488f003a83f03e041cdc01c218cb233c34a675",
+      "bytes": 351256
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/TealPaint.png",
+      "oid": "7619ab946d13e89140f92c5c474f25196564494767269000c8db042f2b9c5f34",
+      "bytes": 344945
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/Timber.png",
+      "oid": "f09394780d24a6d010ae2069a0d182b68d677deae2bb81278ebe102a5169006c",
+      "bytes": 337761
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/Trim.png",
+      "oid": "ac6568ee16165e3d00958d0796e20bfd86dc8ed5bb46d4f00a5a8324c37f867b",
+      "bytes": 346054
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR25/Textures/YardPlaster.png",
+      "oid": "164760454e3f47d1708a5e8446a080cd9d91068e969c167c4416a9438d07b8f6",
+      "bytes": 345886
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/SlopeR26.fbx",
+      "oid": "33e00c73eb1329f1f7206e0d1e885822f633de3f1740eb75d3bce007ec1c2b06",
+      "bytes": 4144524
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/Concrete.png",
+      "oid": "aaaa9197de3a03f5d91d12b3a7a7f3847547c74ee7ef320f6cc10ffd65809758",
+      "bytes": 135725
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/Earth.png",
+      "oid": "e1b3bb490156ee05b2602bd96884a012d3d06104698c6231f340695b5517a6d5",
+      "bytes": 344930
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/Flower.png",
+      "oid": "fb742a78098f9500ac7c45b359d9f61eefd8befcde1089acd040aeae85cbc6fd",
+      "bytes": 345942
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/GrayRender.png",
+      "oid": "7cf3f1543398eeda77f7b394fe2878d4b3dfb39a66c1d224f63f20d5614d8e2f",
+      "bytes": 345464
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/LeafDeep.png",
+      "oid": "84b9333ac2b0d66d4d4a8006532851d138db5086d73e96a5f6e87067ecabbf3e",
+      "bytes": 346126
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/LeafLight.png",
+      "oid": "84b9333ac2b0d66d4d4a8006532851d138db5086d73e96a5f6e87067ecabbf3e",
+      "bytes": 346126
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/Leaves.png",
+      "oid": "84b9333ac2b0d66d4d4a8006532851d138db5086d73e96a5f6e87067ecabbf3e",
+      "bytes": 346126
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/Limewash.png",
+      "oid": "fb742a78098f9500ac7c45b359d9f61eefd8befcde1089acd040aeae85cbc6fd",
+      "bytes": 345942
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/Moss.png",
+      "oid": "24ceec4ca7a6bccb60a31b3b1e4e60cf23b73711e9c80743da5de142d94cb273",
+      "bytes": 346624
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/OxideSteel.png",
+      "oid": "efbcfec8410f0169998d22b23dc04f5d1b5a2c49d5276d481655d99638a4725d",
+      "bytes": 345658
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/RoofSheet.png",
+      "oid": "513a78456b024c188f6ff1e1e5f91dd4e81d12c0c881d72e9ff2fa6f7da5b458",
+      "bytes": 339248
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/StoneCool.png",
+      "oid": "10bc64f4710df4f61d0d7d41520a2bd5bf2cba515a1075cd3e5ce09084981c39",
+      "bytes": 134760
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/StoneWall.png",
+      "oid": "e3b7e3e8a1a0125dc69e7e63cebfc7de290d54ba9e5345267d8823f71b25a84f",
+      "bytes": 134863
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/StoneWarm.png",
+      "oid": "174404b8d95fea1b3dc564eb9868bed52be76de6a8010c17a35cf0408f79884e",
+      "bytes": 135542
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/TealPaint.png",
+      "oid": "7619ab946d13e89140f92c5c474f25196564494767269000c8db042f2b9c5f34",
+      "bytes": 344945
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/Timber.png",
+      "oid": "f09394780d24a6d010ae2069a0d182b68d677deae2bb81278ebe102a5169006c",
+      "bytes": 337761
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/Trim.png",
+      "oid": "ac6568ee16165e3d00958d0796e20bfd86dc8ed5bb46d4f00a5a8324c37f867b",
+      "bytes": 346054
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR26/Textures/YardPlaster.png",
+      "oid": "164760454e3f47d1708a5e8446a080cd9d91068e969c167c4416a9438d07b8f6",
+      "bytes": 345886
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/SlopeR27.fbx",
+      "oid": "b7479c57b2a569f3fe4f9acf499fb90dde890e1ca34183e2f79c9e595f5776a8",
+      "bytes": 14398108
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/Concrete.png",
+      "oid": "aaaa9197de3a03f5d91d12b3a7a7f3847547c74ee7ef320f6cc10ffd65809758",
+      "bytes": 135725
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/Earth.png",
+      "oid": "e1b3bb490156ee05b2602bd96884a012d3d06104698c6231f340695b5517a6d5",
+      "bytes": 344930
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/Flower.png",
+      "oid": "fb742a78098f9500ac7c45b359d9f61eefd8befcde1089acd040aeae85cbc6fd",
+      "bytes": 345942
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/GrayRender.png",
+      "oid": "7cf3f1543398eeda77f7b394fe2878d4b3dfb39a66c1d224f63f20d5614d8e2f",
+      "bytes": 345464
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/LeafDeep.png",
+      "oid": "84b9333ac2b0d66d4d4a8006532851d138db5086d73e96a5f6e87067ecabbf3e",
+      "bytes": 346126
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/LeafLight.png",
+      "oid": "84b9333ac2b0d66d4d4a8006532851d138db5086d73e96a5f6e87067ecabbf3e",
+      "bytes": 346126
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/Leaves.png",
+      "oid": "84b9333ac2b0d66d4d4a8006532851d138db5086d73e96a5f6e87067ecabbf3e",
+      "bytes": 346126
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/Limewash.png",
+      "oid": "fb742a78098f9500ac7c45b359d9f61eefd8befcde1089acd040aeae85cbc6fd",
+      "bytes": 345942
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/Moss.png",
+      "oid": "24ceec4ca7a6bccb60a31b3b1e4e60cf23b73711e9c80743da5de142d94cb273",
+      "bytes": 346624
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/OxideSteel.png",
+      "oid": "efbcfec8410f0169998d22b23dc04f5d1b5a2c49d5276d481655d99638a4725d",
+      "bytes": 345658
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/RoofSheet.png",
+      "oid": "513a78456b024c188f6ff1e1e5f91dd4e81d12c0c881d72e9ff2fa6f7da5b458",
+      "bytes": 339248
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/StoneCool.png",
+      "oid": "10bc64f4710df4f61d0d7d41520a2bd5bf2cba515a1075cd3e5ce09084981c39",
+      "bytes": 134760
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/StoneWall.png",
+      "oid": "e3b7e3e8a1a0125dc69e7e63cebfc7de290d54ba9e5345267d8823f71b25a84f",
+      "bytes": 134863
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/StoneWarm.png",
+      "oid": "174404b8d95fea1b3dc564eb9868bed52be76de6a8010c17a35cf0408f79884e",
+      "bytes": 135542
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/TealPaint.png",
+      "oid": "7619ab946d13e89140f92c5c474f25196564494767269000c8db042f2b9c5f34",
+      "bytes": 344945
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/Timber.png",
+      "oid": "f09394780d24a6d010ae2069a0d182b68d677deae2bb81278ebe102a5169006c",
+      "bytes": 337761
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/Trim.png",
+      "oid": "ac6568ee16165e3d00958d0796e20bfd86dc8ed5bb46d4f00a5a8324c37f867b",
+      "bytes": 346054
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/SlopeR27/Textures/YardPlaster.png",
+      "oid": "164760454e3f47d1708a5e8446a080cd9d91068e969c167c4416a9438d07b8f6",
+      "bytes": 345886
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/TerrainR101/BankR91_Grade_017_ClosedR101.asset",
+      "oid": "654c24eda7654f7f5d3154c4a256bf25db137bfc521656d5f43d86a9b6409ed4",
+      "bytes": 29280306
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/TerrainR101/BankR91_Grade_017_DeliveryR101.asset",
+      "oid": "cbad3f68c976a19296fb5a20c55321808de015fde586ce977fbc883a43c0074c",
+      "bytes": 29285900
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/TerrainR101/BankR91_Grade_017_FinalR101.asset",
+      "oid": "cb65c1f4aed6863bd74b1162d846dd6be27138940ad0b04ab150837220d466cd",
+      "bytes": 29302369
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/TerrainR101/BankR91_Grade_017_VerifiedR101.asset",
+      "oid": "6294f9d7da574b4a3ffb58612d195abd6a83cf2947024134162d86af5aa159fa",
+      "bytes": 29285900
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/TerrainR101/Surface142_TerrainR101.asset",
+      "oid": "5f6d124d7feee414bd54c350adb8594fe76d5a85163b516fdeb87320fd1bb04a",
+      "bytes": 29302364
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/TerrainR101/TerrainColliderJoin_R90_DeliveryR101.asset",
+      "oid": "73633cb79247930c20c695b41446d95190a9a30bf9da13f03e303069d477e8cd",
+      "bytes": 41480397
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/TerrainR101/TerrainR101.fbx",
+      "oid": "e672c180cf2b48f5c95e7412c55198111b30973ab66a79e8465882bf511e3ccf",
+      "bytes": 6740940
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/TerrainR101/TerrainR101_Closed.fbx",
+      "oid": "45a27ae825a4eb1493ee02f221edde91b9c1f77702ef15c6cbaff4cb4bcadfa4",
+      "bytes": 6909292
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/TerrainR101/TerrainR101_Delivery.fbx",
+      "oid": "3d3949a14e06988a549d2e435c6be45e1631bdd671a1b736f9b187ef7ea8d421",
+      "bytes": 12572620
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/TerrainR101/TerrainR101_Final.fbx",
+      "oid": "c8180957b285bc65eb59c935a6de7ecdc27580ac956b92b9544c0a42b5463edf",
+      "bytes": 6909036
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/TerrainR101/TerrainR101_Integrated.fbx",
+      "oid": "876747ef8674848f84b55f2fbd16b9ff2281d186a89c86aeb1586ffa118d86d4",
+      "bytes": 12572044
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/TerrainR101/TerrainR101_Verified.fbx",
+      "oid": "58b2c48559b48c2d1fc00cd112a3831323ff355fa41a22e84ab5c000d82bbb5b",
+      "bytes": 6911340
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/TerrainR107/M95_023_BoundR97_WindingR107.asset",
+      "oid": "c76a14c991e01d97a32cdc42f535e2943f08170ac81c1eb6af1c6a6bc6214632",
+      "bytes": 16971996
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/TerrainR107/TerrainColliderJoin_R90_IntegratedR101_WindingR107.asset",
+      "oid": "2e633368217957a78561cce1a6e33dd9929a915982da02cea5d1c0557bd53a09",
+      "bytes": 41480411
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/TerrainR107/TerrainR107.fbx",
+      "oid": "ffd524b768dfaf9645495bd0a760e7c2697f3e807bad71b37d3365bb7f88a0d8",
+      "bytes": 11082492
+    },
+    {
+      "path": "Assets/Art/Environment/JourneyV48/TerrainR107/TerrainR107_Final.fbx",
+      "oid": "54efa5bc151f1ff31b2106ed8aca6b0bd6e76d5e280a11bfde86f670a100e9bc",
+      "bytes": 17809644
+    },
+    {
+      "path": "Assets/Art/Environment/LakeGateMarket/LakeGateMarketContext.fbx",
+      "oid": "6299214d4bf6eafec5e170e116d5dcfbc2162b76652955a4251fb6a6701a17bf",
+      "bytes": 57354124
+    },
+    {
+      "path": "Assets/Art/Environment/LakeGateMarketV32/LakeGateMarketContext.fbx",
+      "oid": "930fdaba6e2032a283ca26e4458d488bbb82af447ad3b95940d24426dd32d24f",
+      "bytes": 58499660
+    },
+    {
+      "path": "Assets/Art/Environment/LakeGateMarketV33/CavitySurfaces.fbx",
+      "oid": "aaac10203cb0416039160c04ab1dcb86dd24bfc3d9ab31bde0bd64664f6076cd",
+      "bytes": 56924
+    },
+    {
+      "path": "Assets/Art/Environment/LakeGateMarketV33/GatePanels.fbx",
+      "oid": "a88133b4e72bd26d4e8b24dfe477b2e9f958738b866e888f31a1715001c4ebfe",
+      "bytes": 12524
+    },
+    {
+      "path": "Assets/Art/Environment/LakeGateMarketV33/GateWayfinding.png",
+      "oid": "24ecb988b79673bfdfbfc87ac8dbd3add43559c5db79ddb241cdbd6de39113d9",
+      "bytes": 24945
+    },
+    {
+      "path": "Assets/Art/Environment/LakeGateMarketV33/RouteSurfaces.fbx",
+      "oid": "a8c2dfad02c56ff58ef75572a1354e6aeafde23e044fbaf92931e017a541d51d",
+      "bytes": 132534684
+    },
+    {
+      "path": "Assets/Art/Environment/LakeR39/OngDaoReflectionOverlook.fbx",
+      "oid": "46d22292ca58fc6cf85352c699a6523eb8fe1ae8f12a99d7c160e086537d0f12",
+      "bytes": 2159836
+    },
+    {
+      "path": "Assets/Art/Environment/LakeShoreV31/LakeShoreV31.fbx",
+      "oid": "451b676974f1e90e684c47a37413efe27deef0eacda4f8a72198f0e4cbe1ca41",
+      "bytes": 273820
+    },
+    {
+      "path": "Assets/Art/Environment/OngDaoV35/OngDaoDetails.fbx",
+      "oid": "e683cb2da8380daafa18976667332eacc7e75a621ff69d1e71aee0d36396d424",
+      "bytes": 2029308
+    },
+    {
+      "path": "Assets/Art/Gameplay/Class203R32/Class203Papers.fbx",
+      "oid": "4abf15a69c6c46c29cc44fbc2bc0113ccd8e5e500b3a66d79724a977e437e7c7",
+      "bytes": 133452
+    },
+    {
+      "path": "Assets/Art/Gameplay/Class203R32/Minh.png",
+      "oid": "9de01f537c4073f427cd68f0d1b37e7c3180c667f1bae04770c200d7a057b79c",
+      "bytes": 55193
+    },
+    {
+      "path": "Assets/Art/Gameplay/Class203R32/Model.png",
+      "oid": "f071918e4808310e7df342492922c93ab41903d8d747a73203923626868807ff",
+      "bytes": 53977
+    },
+    {
+      "path": "Assets/Art/Gameplay/LakeMarketV34/StoryProps.fbx",
+      "oid": "3f517ef3f0851075d9b2b6d10e4d00fc7d77bbdd17dc50db4d9ad1bb12b6836c",
+      "bytes": 223148
+    },
+    {
+      "path": "Assets/Art/Gameplay/LakeR37/Close.wav",
+      "oid": "e54931663b4cdc377219336646718a9bb4298077885291539fb8fa440109bfb9",
+      "bytes": 5776
+    },
+    {
+      "path": "Assets/Art/Gameplay/LakeR37/Notebook.fbx",
+      "oid": "2f77829ebe01fdacd96b9efed062f26ebd0a8e4faabf7b102e3a6e914d7ccbdb",
+      "bytes": 56028
+    },
+    {
+      "path": "Assets/Art/Gameplay/LakeR37/Paper.wav",
+      "oid": "5de1fdca39143ddc614ac0557b7ce6a0538a04a59efb566a3d684620ec8a8e28",
+      "bytes": 10186
+    },
+    {
+      "path": "Assets/Art/Gameplay/LakeR37/Place.wav",
+      "oid": "5df822ddd29bb5ea3f05f61662004d01ed8234c688174cf69baea68edb540eb7",
+      "bytes": 7100
+    },
+    {
+      "path": "Assets/Art/Gameplay/MarketR35/MarketProps.fbx",
+      "oid": "15ecc7763dd2d8fea656a24eb206009c218fc27986c9dabb843cc7719802395f",
+      "bytes": 217356
+    },
+    {
+      "path": "Assets/Art/Gameplay/SlopeR41/Preparations.fbx",
+      "oid": "4a48e5f6d25036c5650c37f84b875d561f9f025ac281949805ca367c5a3ecbe0",
+      "bytes": 22636
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/EVIDENCE.fbx",
+      "oid": "6045ef15bc31bcc4d2c52a3f4be5ec606c1e20227fc2efaf8166eb80bb29e2e5",
+      "bytes": 63388
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Ha.fbx",
+      "oid": "96340fb7d8f1994cf614174b8aa14e296a5a1108e6e8a598aacb1655579d078b",
+      "bytes": 140364
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Khai.fbx",
+      "oid": "e113566bc425bb6c93c4a17361af7dac3858e7d4ac7627150056d7ab3b35eb55",
+      "bytes": 147420
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/MECHANISM.fbx",
+      "oid": "df4b14bac5e2574b570c0449a86db4df958cf0ee632508e81ad2c2cd39f6a464",
+      "bytes": 38444
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_A.png",
+      "oid": "8544ebfa89511297c97f82abfd94f65d6fc85f32659093d41667c9d6e893147e",
+      "bytes": 30024
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_B.png",
+      "oid": "8070334af67d7a9ef3f9783427e4d889883e3397c3b8bbaf99fa67f6ca28ee4e",
+      "bytes": 29584
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_C.png",
+      "oid": "c00a5d6c10c69d2888a5b8f9877f32e3e6d501f65eb9e6e9e93ea1f4a7bdb5c7",
+      "bytes": 29222
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_D.png",
+      "oid": "57d3680f30adde41a83e6491de0fbb23e80e2d9fcfc0a1d46d6511829ff29851",
+      "bytes": 30423
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_E.png",
+      "oid": "c7ba4fac6a355cc681d6fed618364eca65d63c9bf65881db103e956fbc1e7699",
+      "bytes": 28396
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_G.png",
+      "oid": "1296153ab94c5a6218f607649b8433d0246ad38da0cc0caa6f24a5597206ecf0",
+      "bytes": 28793
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_H.png",
+      "oid": "7d0d4a522ea3c4d08a579354178f9f29b6998902bd68cb39f78554ed11d8e9fb",
+      "bytes": 30495
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_I.png",
+      "oid": "49267e5e02fed9252b00e4206940f97080dbe45d481e68fd8b8e3fa1d33555ac",
+      "bytes": 29449
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_N.png",
+      "oid": "2c555c113c7174989be65929981ac1d8fc8fbc9fc52d18c333001a0bb46d3b2e",
+      "bytes": 29910
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_O.png",
+      "oid": "56ef31bce66c8146aa493efc2b7bf4faa3407d2dd00ea98ee570f24fb9f49a1b",
+      "bytes": 28853
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_R.png",
+      "oid": "29275e968329cf4a86d32d440ff51f747829e33c34bce03981d9a0c06f15b76e",
+      "bytes": 30285
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_S.png",
+      "oid": "7a1cb8cddf2ce0571e215fb480aedda620724036ffede99149a25aa5be0ce869",
+      "bytes": 30027
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_T.png",
+      "oid": "1b1ad84ac0d677b24b9d67fdb62dfa5cce6285ae9850186896e6fde0fff093d6",
+      "bytes": 29473
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_W.png",
+      "oid": "51f5c9b6858338571573ac52d210a0a744b73e14ff361f605fe7181fd8458189",
+      "bytes": 29880
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/Poses/Pose_Y.png",
+      "oid": "d077b2a66bf0a2b966aed2d63f4950360447785f42ff7c86219d048e2e2d2692",
+      "bytes": 28755
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/PuppetPoseLibrary.fbx",
+      "oid": "65ec0d169d8c687df128d6e206c4b35cafc3cacc6b3003a7b07f4a54c1acfff3",
+      "bytes": 1200588
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/R03.fbx",
+      "oid": "a3732495f292e357ddca229376c02f34a865d3b3fd72514e29524fab40a3b88e",
+      "bytes": 111324
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/R12.fbx",
+      "oid": "23fe61435a7139d29f19341fece98c1104850da5beecf1dbb362e96721aca3f1",
+      "bytes": 111324
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R102/WORKSHOP.fbx",
+      "oid": "93931c42a4739d49a6ce6bcbc394a81d2f86ef989d7be6ddb2fdae6fd72d1e21",
+      "bytes": 34716
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/EVIDENCE.fbx",
+      "oid": "8d45387a507a5c70a818302643ee8832424da47107e0dd7daed30f80eb247248",
+      "bytes": 183164
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Ha.fbx",
+      "oid": "96340fb7d8f1994cf614174b8aa14e296a5a1108e6e8a598aacb1655579d078b",
+      "bytes": 140364
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Khai.fbx",
+      "oid": "e113566bc425bb6c93c4a17361af7dac3858e7d4ac7627150056d7ab3b35eb55",
+      "bytes": 147420
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/MECHANISM.fbx",
+      "oid": "cc7f087428360fac02b93a1fa07fc2e35b4579cd0bd48360ed39f0df4aad3d50",
+      "bytes": 42204
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_A.png",
+      "oid": "8544ebfa89511297c97f82abfd94f65d6fc85f32659093d41667c9d6e893147e",
+      "bytes": 30024
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_B.png",
+      "oid": "8070334af67d7a9ef3f9783427e4d889883e3397c3b8bbaf99fa67f6ca28ee4e",
+      "bytes": 29584
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_C.png",
+      "oid": "c00a5d6c10c69d2888a5b8f9877f32e3e6d501f65eb9e6e9e93ea1f4a7bdb5c7",
+      "bytes": 29222
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_D.png",
+      "oid": "57d3680f30adde41a83e6491de0fbb23e80e2d9fcfc0a1d46d6511829ff29851",
+      "bytes": 30423
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_E.png",
+      "oid": "c7ba4fac6a355cc681d6fed618364eca65d63c9bf65881db103e956fbc1e7699",
+      "bytes": 28396
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_G.png",
+      "oid": "1296153ab94c5a6218f607649b8433d0246ad38da0cc0caa6f24a5597206ecf0",
+      "bytes": 28793
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_H.png",
+      "oid": "7d0d4a522ea3c4d08a579354178f9f29b6998902bd68cb39f78554ed11d8e9fb",
+      "bytes": 30495
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_I.png",
+      "oid": "49267e5e02fed9252b00e4206940f97080dbe45d481e68fd8b8e3fa1d33555ac",
+      "bytes": 29449
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_N.png",
+      "oid": "2c555c113c7174989be65929981ac1d8fc8fbc9fc52d18c333001a0bb46d3b2e",
+      "bytes": 29910
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_O.png",
+      "oid": "56ef31bce66c8146aa493efc2b7bf4faa3407d2dd00ea98ee570f24fb9f49a1b",
+      "bytes": 28853
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_R.png",
+      "oid": "29275e968329cf4a86d32d440ff51f747829e33c34bce03981d9a0c06f15b76e",
+      "bytes": 30285
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_S.png",
+      "oid": "7a1cb8cddf2ce0571e215fb480aedda620724036ffede99149a25aa5be0ce869",
+      "bytes": 30027
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_T.png",
+      "oid": "1b1ad84ac0d677b24b9d67fdb62dfa5cce6285ae9850186896e6fde0fff093d6",
+      "bytes": 29473
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_W.png",
+      "oid": "51f5c9b6858338571573ac52d210a0a744b73e14ff361f605fe7181fd8458189",
+      "bytes": 29880
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/Poses/Pose_Y.png",
+      "oid": "d077b2a66bf0a2b966aed2d63f4950360447785f42ff7c86219d048e2e2d2692",
+      "bytes": 28755
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/PuppetPoseLibrary.fbx",
+      "oid": "65ec0d169d8c687df128d6e206c4b35cafc3cacc6b3003a7b07f4a54c1acfff3",
+      "bytes": 1200588
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/R03.fbx",
+      "oid": "a3732495f292e357ddca229376c02f34a865d3b3fd72514e29524fab40a3b88e",
+      "bytes": 111324
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/R12.fbx",
+      "oid": "23fe61435a7139d29f19341fece98c1104850da5beecf1dbb362e96721aca3f1",
+      "bytes": 111324
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/RepairEventActor.fbx",
+      "oid": "0da101f68cc4577f74add122a1c28a94d6357dd196ca76e3f8b821de61616373",
+      "bytes": 215676
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R103/WORKSHOP.fbx",
+      "oid": "93931c42a4739d49a6ce6bcbc394a81d2f86ef989d7be6ddb2fdae6fd72d1e21",
+      "bytes": 34716
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/CuffComparison.fbx",
+      "oid": "2b33c1e895d2c9f07c22e324b36ca6d24192c8ed06742a3a50800d7dd4b6b2a5",
+      "bytes": 17484
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/EVIDENCE.fbx",
+      "oid": "8d45387a507a5c70a818302643ee8832424da47107e0dd7daed30f80eb247248",
+      "bytes": 183164
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Ha.fbx",
+      "oid": "efd99762bf4ba9aada33ad4dafe82830cb7f68db4fc1296a83b49875ac88ca1e",
+      "bytes": 352492
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Khai.fbx",
+      "oid": "4472e89197fc2f70cb8a0c28d9c75b960f06788bcd1fa533788edf1aa7f404cc",
+      "bytes": 350764
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/MECHANISM.fbx",
+      "oid": "cc7f087428360fac02b93a1fa07fc2e35b4579cd0bd48360ed39f0df4aad3d50",
+      "bytes": 42204
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_A.png",
+      "oid": "8544ebfa89511297c97f82abfd94f65d6fc85f32659093d41667c9d6e893147e",
+      "bytes": 30024
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_B.png",
+      "oid": "8070334af67d7a9ef3f9783427e4d889883e3397c3b8bbaf99fa67f6ca28ee4e",
+      "bytes": 29584
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_C.png",
+      "oid": "c00a5d6c10c69d2888a5b8f9877f32e3e6d501f65eb9e6e9e93ea1f4a7bdb5c7",
+      "bytes": 29222
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_D.png",
+      "oid": "57d3680f30adde41a83e6491de0fbb23e80e2d9fcfc0a1d46d6511829ff29851",
+      "bytes": 30423
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_E.png",
+      "oid": "c7ba4fac6a355cc681d6fed618364eca65d63c9bf65881db103e956fbc1e7699",
+      "bytes": 28396
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_G.png",
+      "oid": "1296153ab94c5a6218f607649b8433d0246ad38da0cc0caa6f24a5597206ecf0",
+      "bytes": 28793
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_H.png",
+      "oid": "7d0d4a522ea3c4d08a579354178f9f29b6998902bd68cb39f78554ed11d8e9fb",
+      "bytes": 30495
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_I.png",
+      "oid": "49267e5e02fed9252b00e4206940f97080dbe45d481e68fd8b8e3fa1d33555ac",
+      "bytes": 29449
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_N.png",
+      "oid": "2c555c113c7174989be65929981ac1d8fc8fbc9fc52d18c333001a0bb46d3b2e",
+      "bytes": 29910
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_O.png",
+      "oid": "56ef31bce66c8146aa493efc2b7bf4faa3407d2dd00ea98ee570f24fb9f49a1b",
+      "bytes": 28853
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_R.png",
+      "oid": "29275e968329cf4a86d32d440ff51f747829e33c34bce03981d9a0c06f15b76e",
+      "bytes": 30285
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_S.png",
+      "oid": "7a1cb8cddf2ce0571e215fb480aedda620724036ffede99149a25aa5be0ce869",
+      "bytes": 30027
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_T.png",
+      "oid": "1b1ad84ac0d677b24b9d67fdb62dfa5cce6285ae9850186896e6fde0fff093d6",
+      "bytes": 29473
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_W.png",
+      "oid": "51f5c9b6858338571573ac52d210a0a744b73e14ff361f605fe7181fd8458189",
+      "bytes": 29880
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Poses/Pose_Y.png",
+      "oid": "d077b2a66bf0a2b966aed2d63f4950360447785f42ff7c86219d048e2e2d2692",
+      "bytes": 28755
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Puppet.fbx",
+      "oid": "5ef36b06e7c20b440c05e4a93b371d706eee807c0fbea691e99e6882e36e520f",
+      "bytes": 401132
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/PuppetPoseLibrary.fbx",
+      "oid": "65ec0d169d8c687df128d6e206c4b35cafc3cacc6b3003a7b07f4a54c1acfff3",
+      "bytes": 1200588
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/PuppetPoseLibrary104.fbx",
+      "oid": "477ae8d7bd0d0283f73cec9e4043a7d4b41438a0841e0594fefec635723af34c",
+      "bytes": 2263980
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/R03.fbx",
+      "oid": "a3732495f292e357ddca229376c02f34a865d3b3fd72514e29524fab40a3b88e",
+      "bytes": 111324
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/R12.fbx",
+      "oid": "23fe61435a7139d29f19341fece98c1104850da5beecf1dbb362e96721aca3f1",
+      "bytes": 111324
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/R12Support.fbx",
+      "oid": "b2dbded92883ee3c9a4f96bb602e6b15b4acd96969ac7c5f2700c58940beac2f",
+      "bytes": 35788
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/RepairEventActor.fbx",
+      "oid": "0da101f68cc4577f74add122a1c28a94d6357dd196ca76e3f8b821de61616373",
+      "bytes": 215676
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/WORKSHOP.fbx",
+      "oid": "93931c42a4739d49a6ce6bcbc394a81d2f86ef989d7be6ddb2fdae6fd72d1e21",
+      "bytes": 34716
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R105/RepairEventActor_R105.fbx",
+      "oid": "654223505971178f4b803efb448af34f6df71217af365e38ba88dff94236c908",
+      "bytes": 235756
+    },
+    {
+      "path": "Assets/Art/Models/Main_character.blend",
+      "oid": "bfd4a5e2c7e0897a346d701aeaee9247c55db71fc31279ae9a560e3a4e8edb5d",
+      "bytes": 2756939
+    },
+    {
+      "path": "Assets/Art/Models/Model.blend",
+      "oid": "e8a334d0d0822e158d5661e24fa7946b32926b873b1fd87b2d5ce90ba70beb86",
+      "bytes": 4049721
+    },
+    {
+      "path": "Assets/Art/Models/main_character/texture_fbx/texture.fbx",
+      "oid": "3c773979b3455e39f9a13ae80badb9a41903074013a2d078864225a700c18556",
+      "bytes": 18626044
+    },
+    {
+      "path": "Assets/ConRoiGame/Audio/Ch\u1ee3 v\u1eafng.wav",
+      "oid": "0af2bf68c3fed898c9c4762d67b84f8e4d59cb20236a20ebc33bb5cfdf89acdf",
+      "bytes": 176444
+    },
+    {
+      "path": "Assets/ConRoiGame/Audio/Drone.wav",
+      "oid": "bce5a45b18bbfab03293a0898c2888959c82be904bf482915da0f63c56c76177",
+      "bytes": 176444
+    },
+    {
+      "path": "Assets/ConRoiGame/Audio/Gi\u00f3 m\u1eb7t h\u1ed3.wav",
+      "oid": "484b9d759bcad3fdf44969d96f2d92d1129a06fa83882cb25cc4897db9d708eb",
+      "bytes": 176444
+    },
+    {
+      "path": "Assets/ConRoiGame/Audio/Gi\u00f3 tr\u00ean d\u1ed1c.wav",
+      "oid": "e47930336182cabaaee7048ddb27de5ad5ca9a95f5fe145a5c586372b249c012",
+      "bytes": 176444
+    },
+    {
+      "path": "Assets/ConRoiGame/Audio/G\u1ed7 va.wav",
+      "oid": "a0a88ad761fe2da7b10326f54a27eb64fb621a509bf42346072764aeb0206e8a",
+      "bytes": 3570
+    },
+    {
+      "path": "Assets/ConRoiGame/Audio/Ph\u00f2ng tr\u1ecd.wav",
+      "oid": "f18867b8ec5883a138a96d332dde23ed294286c4b1b8688778c7565ed1242b92",
+      "bytes": 176444
+    },
+    {
+      "path": "Assets/ConRoiGame/Audio/Th\u00f4ng b\u00e1o.wav",
+      "oid": "2eb75e627b801d3aa594cce2705feca959dfc0c7bdfeda7805b0721bec8d1416",
+      "bytes": 7098
+    },
+    {
+      "path": "Assets/ConRoiGame/Audio/V39_Step.wav",
+      "oid": "9fde94d588d729202da8d8a9625a3278244ad4493a4100637309895cc89e0c5b",
+      "bytes": 5776
+    },
+    {
+      "path": "Assets/ConRoiGame/Audio/V39_Wire.wav",
+      "oid": "f8cdf9610b48d405a5935c0024dac7b1d035cda3a62a1d0a87005467b2c50f69",
+      "bytes": 14156
+    },
+    {
+      "path": "Assets/ConRoiGame/Audio/\u0110\u1ed3ng h\u1ed3 l\u1edbp.wav",
+      "oid": "52bc8ca0abc43ab145884d10b867f5cf1e97d6f8e85f19552e9fb5e9b0a108ad",
+      "bytes": 176444
+    },
+    {
+      "path": "Assets/Tooling3DTrial/FlowerClump.fbx",
+      "oid": "9e05cb36aa4d25509efc764762c0d34e7f8e6219b2ec7d49671df46129a1586c",
+      "bytes": 77164
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R100/OngDao_Dam_R100_Editable.blend",
+      "oid": "be9a35586e4b7d31b099eeb3875508724562bd8f3172fb7e4060175d5fb5794a",
+      "bytes": 182967105
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R101/Terrain_R101_Editable.blend",
+      "oid": "44f4a4042743267d609c02ca0d91f1d2c387a662348916a157e20ac8990911e6",
+      "bytes": 184681693
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R101/Terrain_R101_Editable.blend1",
+      "oid": "c63d5d8d21a45d9d755b3232fc7404dff4e8ca3cba79605e76781ec3e578dd0b",
+      "bytes": 184682279
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R102/Puppet_Poses_R102_Editable.blend",
+      "oid": "177d8cdc348f481e23ad83435b7d85ec0e79d1fb2fe14e907d59c4962fc2f2a9",
+      "bytes": 350309
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R102/Puppet_Poses_R102_Editable.blend1",
+      "oid": "c3456e32f55e392d0043de2f2a2769b78624822ad304a106730b3c571becec9e",
+      "bytes": 307510
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R102/Workshop_Investigation_R102_Editable.blend",
+      "oid": "f8d25aec56eb893a5862a0a68cc90ce469e2052527304f64bbbd90b64ae30899",
+      "bytes": 321439
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R102/Workshop_Investigation_R102_Editable.blend1",
+      "oid": "d96c3b93d0df8f326254d8194b566de923a25e2ec78eadf7cd84d26156e250a3",
+      "bytes": 320644
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R102/Workshop_R102_Before_Headroom.blend",
+      "oid": "b736f24015667e881a37b48f800a762ef270d09fa4492ad37489f92db90cf82b",
+      "bytes": 318730
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R102/Workshop_R102_Before_RepairTool.blend",
+      "oid": "604dc4ae9b68f73a0c54b587c32f1e5d1dca296830e558b940081e0e21345028",
+      "bytes": 319973
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R103/Puppet_Poses_R103_Editable.blend",
+      "oid": "177d8cdc348f481e23ad83435b7d85ec0e79d1fb2fe14e907d59c4962fc2f2a9",
+      "bytes": 350309
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R103/Repair_R12_R103_Animation.blend",
+      "oid": "6bcec79ab05dffde02d1afd291dad40ebbaacaa3d0f342e0b400cd0f7524c45a",
+      "bytes": 522508
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R103/Repair_R12_R103_Animation.blend1",
+      "oid": "32bb9b4ee46a7957d19f9f6de5c6cd8e44bc792267b95da68cc4cf0d40aaff45",
+      "bytes": 521943
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R103/Workshop_Investigation_R103_Editable.blend",
+      "oid": "372f76e71b73d13d3405456af991244dc6c37e4d6ec158c120b1326230198c5d",
+      "bytes": 425663
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R103/Workshop_Investigation_R103_Editable.blend1",
+      "oid": "b1e5bf3d406408b4c0da93fc808d5bf732328e9cee6140c6407279af88836c40",
+      "bytes": 425683
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R104/Cuff_Comparison_R104_Editable.blend",
+      "oid": "3931d051f64daef4ddd54c584daf46b853251ec433b2583d6b1d33bb14c69f9b",
+      "bytes": 2643478
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R104/Ha_R104_Editable.blend",
+      "oid": "3768ab799326b442362e9ca3373eaf3ee7dc9b04c83d3ee0232f429859dcf9ec",
+      "bytes": 2616246
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R104/Ha_R104_Editable.blend1",
+      "oid": "194c5b91f78538177b5dd225e951921fd2d122e3eb9a71ab52af69920a6075a1",
+      "bytes": 2615498
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R104/Khai_R104_Editable.blend",
+      "oid": "ac7a107649cf7ed364b4c0ee5a00affcd0ac83da7299206755294f25eb3907a8",
+      "bytes": 2631704
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R104/Khai_R104_Editable.blend1",
+      "oid": "3c2e77e035071a96d3c362fa7a65d66630185c6a3a6c37a634fd2bbb93d13a98",
+      "bytes": 2674786
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R104/Puppet_Poses_R104_Editable.blend",
+      "oid": "177d8cdc348f481e23ad83435b7d85ec0e79d1fb2fe14e907d59c4962fc2f2a9",
+      "bytes": 350309
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R104/Puppet_R104_Editable.blend",
+      "oid": "0aaa35a38aa6595bc1117c5264a21d18fe65bbcd9452e26433b37a14843ddb76",
+      "bytes": 3434493
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R104/Puppet_R104_Editable.blend1",
+      "oid": "e9ef390c60236272280211b3682e6615d020c7bb54904d8fca6b8993335d1405",
+      "bytes": 3393529
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R104/Repair_R12_R104_Animation.blend",
+      "oid": "4c31d774ce2682b0eafe2f98f9327156edb62fc56b4af319126e7baef7ce053c",
+      "bytes": 557152
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R104/Repair_R12_R104_Animation.blend1",
+      "oid": "41db14aec233951d16f15cabf5f52552506739a581f6f51e603ac93523c17ad0",
+      "bytes": 556151
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R104/Workshop_Investigation_R104_Editable.blend",
+      "oid": "372f76e71b73d13d3405456af991244dc6c37e4d6ec158c120b1326230198c5d",
+      "bytes": 425663
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R105/Repair_R12_R105_Animation.blend",
+      "oid": "e1f0f9f1361493c093e5c51a440391d5baf59a0dddb8affd639e44871680f0a8",
+      "bytes": 602672
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R105/Repair_R12_R105_Animation.blend1",
+      "oid": "4c31d774ce2682b0eafe2f98f9327156edb62fc56b4af319126e7baef7ce053c",
+      "bytes": 557152
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R107/Terrain_R107_Editable.blend",
+      "oid": "416198f352747c368350da49a713a5060bf038c860aff557cf4e108f25fc94d2",
+      "bytes": 184685893
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R107/Terrain_R107_Editable.blend1",
+      "oid": "994e01d79d18693833520273332242cf4d7c83ac72084af28ed8cb398bb4d13c",
+      "bytes": 184684739
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R91/character-repairs-r91-source.blend",
+      "oid": "d4532d3ca804b6594ad666ef64c63e35dd4b8d4fd03c8022f2146749bbe7bc7a",
+      "bytes": 3560360
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R91/north-bank-r91-extra-final.blend",
+      "oid": "356353fa7be978db64e2460b56204ac86af618920109d204150bfa1e99c169d0",
+      "bytes": 62537439
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R91/north-bank-r91-source-final.blend",
+      "oid": "08d2c4c7f622b1609988d10c2c25083154a6a7ad5e46b73693a7e65f6ada249a",
+      "bytes": 64819499
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R91/stall-sign-r91-source.blend",
+      "oid": "3ea7a144c2969c42452f6c204054cc096259a64a641f1da2b398e67aad089517",
+      "bytes": 86967
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R92/character-repairs-r92-source.blend",
+      "oid": "6058fbc169fada98f1b1c47a32c0884ab5b88e9b6b0ec88073b92a01e6dd2ef5",
+      "bytes": 3904911
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/GroundSurvey_R93_Editable.blend",
+      "oid": "79ca22470e2214ac8aa0384fce12d8e2b5063102050882be4b4e3e453d6db8ce",
+      "bytes": 30222736
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/Ground_I2_Inner_Transition_Study_R93.blend",
+      "oid": "3404403956cee91b82d1386b206dd9e2ec4a0fabedab5cf282c60e5e88a24b1a",
+      "bytes": 51254025
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/Ground_I2_R93_Editable.blend",
+      "oid": "d847ce8ab9685279a2ab3ea5989e973653006506c4d2ced4dd0b80c5bb6db9dd",
+      "bytes": 51841931
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/Ground_I2_South_Transition_Study_R93.blend",
+      "oid": "dcf9ab8a374b0bc40fc6fdd2dbdf664b344ed506aadd01377448eb998dfbe690",
+      "bytes": 51252990
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/Ground_I2_Transition_Trial_R93.blend",
+      "oid": "480f6f591b3be59952135bf318454d076664370b28e833fd0018366c51bb0600",
+      "bytes": 52549050
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/Ground_I2_Wide_Transition_Study_R93.blend",
+      "oid": "25d558454f05049870ba340cdfa66a5e54004d4005d3806308ffad1960b06529",
+      "bytes": 51327506
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/Langfarm_R93_Editable.blend",
+      "oid": "552566f6db3e52631fb21619fecd749b5616da9b4a3666aff120b4ad834c547f",
+      "bytes": 3147843
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/langfarm-r93-editable-diagnostic.blend",
+      "oid": "4de937e53c231a5316ed69ca115d7d5a1941adb81c3c8951f57196e2e6602604",
+      "bytes": 2408523
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/langfarm-r93-editable-structure.blend",
+      "oid": "24adfe493609c7ea62bc906a1ca4609f06cc40ee17ef738b90fa33fe7d2a659b",
+      "bytes": 2829671
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/langfarm-r93-editable-study.blend",
+      "oid": "0b3c19e8be41827dfdc499c1c82b169250c8e19ce1a51b6f79d98a9a038417d6",
+      "bytes": 2857880
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R93/langfarm-r93-photo-relative.blend",
+      "oid": "5a4d69040166242e0fedca292e31392e53d81e84900689be6d8201a88341155e",
+      "bytes": 3170932
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R95/Market_Ground_R95_Editable.blend",
+      "oid": "3775c23c307ba60fb0f0a7bc95ac7703c9ed79cea45f1ca929fdea3573007d9b",
+      "bytes": 160376714
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R95/Market_Ground_R95_PreFinal.blend",
+      "oid": "cb2c3a481f12552f45615170faf05abab6b9f23234d9af25d881ca8cc358b5d0",
+      "bytes": 159669683
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R96/Market_Ground_R96_Editable.blend",
+      "oid": "dd84c17d5a7a44f44f9e91d898daf453736ec339024ca88fe742dcd49c418a0a",
+      "bytes": 160402231
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R97/Bridgehead_Bank_R97_Editable.blend",
+      "oid": "5574ad4a58f8196107f4cbf4690595d8db2ffa4998a9a65b594419b833f7655d",
+      "bytes": 164569494
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R97/Bridgehead_Bank_R97_Editable.blend1",
+      "oid": "51b16ae9d28b0e1f59290969367bd9f49caf21a2026e61311591a8e7f5c84a1b",
+      "bytes": 164704652
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R98/OngDao_Dam_R98_Editable.blend",
+      "oid": "0bca2887e9b8f3d6f6d870a512a366f2f8499c7e5c7905e8f5423e09e169ceae",
+      "bytes": 164791348
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R99/OngDao_Dam_R99_SectionCandidate.blend",
+      "oid": "9ab59004289b0f957670e1060d77f9dba743786d601c65c979497f27f0a8b249",
+      "bytes": 182969603
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R99/Stages/Before_Approach_Continuity.blend",
+      "oid": "b4b51f536c4286ec2f89c09d5787f31e75a41fb49c14ef9f07f7682f8c131bc8",
+      "bytes": 165274696
+    },
+    {
+      "path": "Source/Blender/JourneyV48/R99/Stages/Before_Flower_Surface_Mapping.blend",
+      "oid": "ae018a41c610ef990a2d40141e6b8adc1725d24e925c77e9afe43db69fc2f4f7",
+      "bytes": 183199524
+    },
+    {
+      "path": "Source/Downloads/Quaternius_R104/BaseCharacter.blend",
+      "oid": "bf88b7b60506799c2087aad6a2141834695f4974f94ed16f0ba04c9055f74518",
+      "bytes": 1808864
+    },
+    {
+      "path": "Source/Downloads/Quaternius_R104/Casual_2.blend",
+      "oid": "8b033ab6343c8ef095fb6ed1bb46ea8308f449ae2b7241b3a9b1413314e3d016",
+      "bytes": 5769268
+    },
+    {
+      "path": "Source/Downloads/Quaternius_R104/Casual_Female.blend",
+      "oid": "df3dae4a16a7e331c0b7662f768cb4eabe8fb0863e9ab09cbfdf3031cf8d8955",
+      "bytes": 2158424
+    },
+    {
+      "path": "Source/Downloads/Quaternius_R104/Casual_Hoodie.blend",
+      "oid": "d138d37cfb3f71400455bcbd9363a69d6e3e6f7288aede8b5bfabcf1d3a14816",
+      "bytes": 5839836
+    },
+    {
+      "path": "Source/Downloads/Quaternius_R104/Casual_Male.blend",
+      "oid": "ca9c264a4549eb664c6945db053ea2db1d0809a98ffc55cc2800e5dd09ecf55f",
+      "bytes": 2150000
+    },
+    {
+      "path": "Tools/python-deps/PIL/_avif.cp311-win_amd64.pyd",
+      "oid": "93d18fd6e9170db341560cc3b3909e01346fcaad6ac26128bb8fafca65b4c546",
+      "bytes": 7888896
+    },
+    {
+      "path": "Tools/python-deps/PIL/_imaging.cp311-win_amd64.pyd",
+      "oid": "1ead5ef5fb2b0b40d5a92c4baa5e4e111b187e9f9f4e895a1ab8cea8e12318f2",
+      "bytes": 2662400
+    },
+    {
+      "path": "Tools/python-deps/PIL/_imagingcms.cp311-win_amd64.pyd",
+      "oid": "6b2b71a29b684727c100cbe2810a69cde03d32fd489150f90ef7ca155556a5fe",
+      "bytes": 275968
+    },
+    {
+      "path": "Tools/python-deps/PIL/_imagingft.cp311-win_amd64.pyd",
+      "oid": "6661a925b55bc9c0465699a64327b3b7602d1b04391caf5ab88efa77e8569838",
+      "bytes": 2250240
+    },
+    {
+      "path": "Tools/python-deps/PIL/_imagingmath.cp311-win_amd64.pyd",
+      "oid": "c7b33008753087a66980ea6e79e59b38191f0a8e3eb61b6bba030d8058128359",
+      "bytes": 21504
+    },
+    {
+      "path": "Tools/python-deps/PIL/_imagingmorph.cp311-win_amd64.pyd",
+      "oid": "5fb6ac5e4421ca73765ce283fc13f49d67e0932bba9d5155435baecada5c316a",
+      "bytes": 12288
+    },
+    {
+      "path": "Tools/python-deps/PIL/_imagingtk.cp311-win_amd64.pyd",
+      "oid": "d3a5ebaf8a550fe1e3a5baed6eac89e6e21a5ccd3c8f8f22ae577a57248173c7",
+      "bytes": 14336
+    },
+    {
+      "path": "Tools/python-deps/PIL/_webp.cp311-win_amd64.pyd",
+      "oid": "2d5846f349212f73e613ab18076851d360d3deb0dd7b41db76357ed06e65f39d",
+      "bytes": 415744
+    },
+    {
+      "path": "Tools/python-deps/imageio_ffmpeg/binaries/ffmpeg-win-x86_64-v7.1.exe",
+      "oid": "2ce797a0f88d7f067180338fb227f7b1928ea727bd9a4d7a1d022f7c52af71a3",
+      "bytes": 87638016
+    },
+    {
+      "path": "Tools/python-deps/shapely.libs/geos-bf067cd6ff74ee0ad5f3ff52c7ef08c9.dll",
+      "oid": "0948bdb5c70b82e5055b55e9419b78d68372b1d0ec877277fa6e79276f6299b9",
+      "bytes": 2627584
+    },
+    {
+      "path": "Tools/python-deps/shapely.libs/geos_c-6dd9fd915eef8a7928285416bef1e666.dll",
+      "oid": "6e65985b30831761887de3217853a720147626b18cb41668cd2bdc43d1bcded1",
+      "bytes": 501760
+    },
+    {
+      "path": "Tools/python-deps/shapely.libs/msvcp140-0fa7eb792d3fbcf2233e4ea47e9144b9.dll",
+      "oid": "0fa7eb792d3fbcf2233e4ea47e9144b9b1309ba8ed5d4731a72fffa8f4f556d6",
+      "bytes": 557416
+    },
+    {
+      "path": "Tools/python-deps/shapely/_geometry_helpers.cp311-win_amd64.pyd",
+      "oid": "39d2b4b38296d4546e27013b98525af5a1ed91947a0feef41825a0dc6c08d3bc",
+      "bytes": 238592
+    },
+    {
+      "path": "Tools/python-deps/shapely/_geos.cp311-win_amd64.pyd",
+      "oid": "218c857d0bd5499f5c82c5235baca0e6c632f7cc0e503efc24c4286e9b59993b",
+      "bytes": 50176
+    },
+    {
+      "path": "Tools/python-deps/shapely/lib.cp311-win_amd64.pyd",
+      "oid": "50be0f564d51f7ed88d4ebf6db0ea72fd7c1c1c89321614b3df71c6a72cb8f58",
+      "bytes": 166400
+    },
+    {
+      "path": "Tools/python-deps/triangle/core.cp311-win_amd64.pyd",
+      "oid": "856d37b9c5d192ffcd4fa9f6da81d7989b22f33b9bba201835a0b7cf91910443",
+      "bytes": 293376
+    }
+  ]
+}

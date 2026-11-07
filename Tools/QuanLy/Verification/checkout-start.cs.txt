@@ -1,0 +1,7 @@
+using UnityEngine;using UnityEditor;using UnityEditor.SceneManagement;using System;using System.IO;using ConRoi.Investigation.V36.R107;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){
+if(Path.GetFullPath(Path.GetDirectoryName(Application.dataPath))!=@"C:\ConRoi_CheckoutTest")throw new Exception("Wrong project");
+if(EditorApplication.isPlaying||EditorSceneManager.GetActiveScene().isDirty)throw new Exception("Clean Edit mode required");
+if(EditorSceneManager.GetActiveScene().path!="Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity")throw new Exception("Wrong entry");
+var s=UnityEngine.Object.FindFirstObjectByType<InvestigationSession>();if(!s||s.InspectionCount!=0||s.data.mapping.Count!=0||s.data.finalized)throw new Exception("Clean serialized state required");
+var w=EditorWindow.GetWindow(Type.GetType("UnityEditor.GameView,UnityEditor"));w.ShowUtility();w.minSize=w.maxSize=new Vector2(1536,885.2f);w.position=new Rect(0,0,1536,885.2f);w.Focus();Directory.CreateDirectory("Test/Output/CleanCheckout");EditorApplication.isPlaying=true;r.Log("Start unmodified clean-checkout entry, private profile from launch CLI; 1080p target, dimensions to be verified in Play.");}}

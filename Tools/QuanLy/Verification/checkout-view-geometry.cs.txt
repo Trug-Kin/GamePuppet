@@ -1,0 +1,2 @@
+using UnityEngine;using UnityEditor;using System;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){var w=EditorWindow.GetWindow(Type.GetType("UnityEditor.GameView,UnityEditor"));r.Log("screen="+Screen.width+"x"+Screen.height+" window="+w.position+" ppp="+EditorGUIUtility.pixelsPerPoint+" root="+w.rootVisualElement.worldBound);}}

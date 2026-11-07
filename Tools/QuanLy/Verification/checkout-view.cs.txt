@@ -1,0 +1,2 @@
+using UnityEngine;using UnityEditor;using System;using System.IO;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){var w=EditorWindow.GetWindow(Type.GetType("UnityEditor.GameView,UnityEditor"));w.minSize=w.maxSize=new Vector2(1920,1101.2f);w.position=new Rect(0,0,1920,1101.2f);w.Focus();r.Log("Resize test GameView only, no product settings; pixelsPerPoint="+EditorGUIUtility.pixelsPerPoint);}}

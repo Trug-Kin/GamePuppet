@@ -1,0 +1,8 @@
+Synthetic GameView click + InputSystem keys; state assertions via read-only API.
+resolution=1920x1080 profile=C:\ConRoi_CheckoutTest\Test\PlaytestProfiles\Clean_20261107\InvestigationV36\r107\prototype.json
+PASS 1080p render dimensions
+FAIL Start through intro button
+FAIL System.Exception: Start through intro button
+  at Unity.AI.Assistant.Agent.Dynamic.Extension.Editor.CommandScript+<>c__DisplayClass0_0.<Execute>b__0 (System.Boolean v, System.String m) [0x0002a] in <c3092d387efa4ad5b2669971e5ea5443>:0 
+  at Unity.AI.Assistant.Agent.Dynamic.Extension.Editor.CommandScript+<>c__DisplayClass0_0.<Execute>b__5 () [0x0001c] in <c3092d387efa4ad5b2669971e5ea5443>:0 
+  at Unity.AI.Assistant.Agent.Dynamic.Extension.Editor.CommandScript+<>c__DisplayClass0_0.<Execute>b__10 () [0x00056] in <c3092d387efa4ad5b2669971e5ea5443>:0 

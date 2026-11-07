@@ -1,0 +1,14 @@
+using UnityEngine;using UnityEditor;using UnityEngine.SceneManagement;using System;using System.IO;using System.Linq;using System.Text;using ConRoi.Investigation.V36.R107;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){
+if(Path.GetFullPath(Path.GetDirectoryName(Application.dataPath))!=@"C:\ConRoi_CheckoutTest")throw new Exception("Wrong project");
+var sc=SceneManager.GetActiveScene();if(sc.path!="Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity")throw new Exception("Wrong scene "+sc.path);
+var b=new StringBuilder("Read-only fresh-checkout reference audit; not UI evidence.\n");int missing=0,broken=0,count=0;
+foreach(var go in sc.GetRootGameObjects().SelectMany(g=>g.GetComponentsInChildren<Transform>(true)).Select(t=>t.gameObject)){
+missing+=GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(go);
+foreach(var c in go.GetComponents<Component>()){if(!c)continue;count++;var so=new SerializedObject(c);var p=so.GetIterator();while(p.Next(true))if(p.propertyType==SerializedPropertyType.ObjectReference&&p.objectReferenceValue==null&&!p.objectReferenceEntityIdValue.Equals(default(UnityEngine.EntityId)))broken++;}}
+var s=UnityEngine.Object.FindFirstObjectByType<InvestigationSession>();b.AppendLine("Unity="+Application.unityVersion+" project="+Application.dataPath+" scene="+sc.path+" dirty="+sc.isDirty+" playing="+EditorApplication.isPlaying+" compiling="+EditorApplication.isCompiling);
+b.AppendLine("components="+count+" MissingScript="+missing+" brokenSerializedReferences="+broken+" session="+(s!=null));
+var deps=AssetDatabase.GetDependencies(sc.path,true);b.AppendLine("AssetDatabase dependency count="+deps.Length+" missing dependency files="+deps.Count(p=>p.StartsWith("Assets/")&&!File.Exists(p)));
+if(s)b.AppendLine("profile="+s.SavePath+" evidence="+s.InspectionCount+" mapping="+s.data.mapping.Count+" finalized="+s.data.finalized+" page="+s.Page);
+Directory.CreateDirectory("Test/Output/CleanCheckout");File.WriteAllText("Test/Output/CleanCheckout/reference-audit.txt",b.ToString());File.WriteAllLines("Test/Output/CleanCheckout/entry-dependencies.txt",deps);r.Log(b.ToString());
+}}

@@ -1,3 +1,5 @@
+> 07/11/2026: [Checkout C thực và giới hạn hiện hành](CheckoutTest20261107/README.md). Source a789222; checkout mở ban đầu 8ea91d4. Compile/reference entry đạt; UI và baseline sửa chưa kiểm xong, task branch chưa tiến.
+
 > 07/11/2026: [Rà soát mới](Review20261107/README.md). Baseline rà `90147d9`; checkout sạch BLOCKED_CAPACITY, chưa nâng task branch. Không kế thừa kiểm máy gốc thành PASS checkout.
 
 # Clone/LFS và bắt đầu
