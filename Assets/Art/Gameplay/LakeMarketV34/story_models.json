@@ -1,0 +1,144 @@
+{
+  "source": "D:\\Game\\GameHorror\\Game\\Docs\\Reviews\\lake_gate_market_current\\ntmk_full_map_route_materials_v33.blend",
+  "source_sha256": "33464a3e30695270b590e628a484a6adc486b8a1fbbfea8029a93c6dad363b8e",
+  "derivative": "D:\\Game\\GameHorror\\Game\\Docs\\Reviews\\lake_gate_market_current\\ntmk_full_map_lake_market_story_v34.blend",
+  "new_objects": 87,
+  "lake_trace": [
+    527.3518676757812,
+    4.592423915863037,
+    525.6343383789062
+  ],
+  "market_trace": [
+    786.898681640625,
+    6.965000152587891,
+    273.11456298828125
+  ],
+  "lake_spawn": [
+    508.93310546875,
+    2.1905517578125,
+    514.6689453125
+  ],
+  "market_spawn": [
+    732.97509765625,
+    1.0593022108078003,
+    416.6480712890625
+  ],
+  "hub_spawn": [
+    -35,
+    0.94,
+    -36
+  ],
+  "wake_positions": [
+    [
+      594.6630859375,
+      1.1699600219726562,
+      555.0364379882812
+    ],
+    [
+      781.8793334960938,
+      5.5741119384765625,
+      275.1589660644531
+    ]
+  ],
+  "ghost_positions": [
+    [
+      529.712890625,
+      3.2039794921875,
+      526.456298828125
+    ],
+    [
+      785.7987060546875,
+      5.753959655761719,
+      272.7645568847656
+    ]
+  ],
+  "materials": {
+    "CR34_Timber": [
+      0.2199999988079071,
+      0.11999999731779099,
+      0.054999999701976776,
+      1.0
+    ],
+    "CR34_Paper": [
+      0.7200000286102295,
+      0.6800000071525574,
+      0.550000011920929,
+      1.0
+    ],
+    "CR34_Linen": [
+      0.3700000047683716,
+      0.4300000071525574,
+      0.3799999952316284,
+      1.0
+    ],
+    "CR34_DarkMetal": [
+      0.054999999701976776,
+      0.07500000298023224,
+      0.06499999761581421,
+      1.0
+    ],
+    "CR34_Ink": [
+      0.017999999225139618,
+      0.02500000037252903,
+      0.023000000044703484,
+      1.0
+    ],
+    "CR34_BaoSkin": [
+      0.3799999952316284,
+      0.23999999463558197,
+      0.15000000596046448,
+      1.0
+    ],
+    "CR34_GreyHair": [
+      0.1599999964237213,
+      0.17000000178813934,
+      0.1599999964237213,
+      1.0
+    ],
+    "CR34_HaSkin": [
+      0.47999998927116394,
+      0.3199999928474426,
+      0.2199999988079071,
+      1.0
+    ],
+    "CR34_BlueCloth": [
+      0.10000000149011612,
+      0.1599999964237213,
+      0.20000000298023224,
+      1.0
+    ],
+    "CR34_GreenCover": [
+      0.07000000029802322,
+      0.18000000715255737,
+      0.11999999731779099,
+      1.0
+    ],
+    "CR34_RedCover": [
+      0.25,
+      0.07500000298023224,
+      0.03999999910593033,
+      1.0
+    ]
+  },
+  "collision_names": [
+    "CR_Hub_Floor",
+    "CR_Hub_Wall_Back",
+    "CR_Hub_Wall_Left",
+    "CR_Hub_Wall_Right",
+    "CR_Hub_Wall_FrontLow",
+    "CR_Hub_Wall_FrontTop",
+    "CR_Hub_Wall_WindowLeft",
+    "CR_Hub_Wall_WindowRight",
+    "CR_Bed_Frame",
+    "CR_Desk_Top",
+    "CR_Desk_Leg",
+    "CR_Desk_Leg.001",
+    "CR_Desk_Leg.002",
+    "CR_Desk_Leg.003",
+    "CR_Calendar_Stand",
+    "CR_Lake_Wake_Post",
+    "CR_Market_Wake_Post"
+  ],
+  "old_map_geometry_changed": false,
+  "interpretation": "Calendar memory at lakeside, unopened books at existing recessed counter; new rental-room furnishings and distinct Bao/Ha figures. No external assets. Original puppet/Minh models reused from Assets/Art/Models/Model.blend in Unity."
+}

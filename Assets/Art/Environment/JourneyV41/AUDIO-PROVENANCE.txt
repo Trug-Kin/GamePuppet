@@ -1,0 +1,1 @@
+Authored procedural mono foley, seeded PRNG 410, 48 kHz PCM16. Paper: band limited noise bursts; cloth: low pass noise; watering: filtered noise and small water resonances. No dialogue synthesis or external samples. Played through the existing two narrative voices; no crowd layer.

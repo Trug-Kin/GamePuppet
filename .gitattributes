@@ -46,3 +46,30 @@
 *.blend1 filter=lfs diff=lfs merge=lfs -text
 *.exe filter=lfs diff=lfs merge=lfs -text
 *.pyd filter=lfs diff=lfs merge=lfs -text
+
+# Individually retained legacy meshes from approved A dependency manifest.
+"Assets/Art/Environment/JourneyV48/BankR97/M95_000_BoundR97.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/BankR97/M95_022_BoundR97.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/BoundaryFinishR21/FootwayOverShoulder_Garden_Bank_Return_Walk_Surface_125.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/BoundaryFinishR21/FootwayOverShoulder_Lake_Bank_Return_Walk_Surface_125.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/DamR99/BankR91_Grade_017_BoundR99.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/DamR99/D99_FLOWERS_Red_0_BoundR99.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/DamR99/D99_FLOWERS_Yellow_2_BoundR99.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/I2GroundR94/I2_Surface_128_BoundR94.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/MarketGroundR95/M95_022_BoundR95.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/MarketGroundR96/M95_022_BoundR95.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/RecoveryFixR21/FootwayOverShoulder_Garden_Bank_Return_Walk_Surface_153.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/RouteGradeR74/Red_0_R74.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/RouteGradeR74/Red_2_R74.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/RouteSeamsR76/Red_0_R76.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/RouteSeamsR76/Red_2_R76.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/SceneryR22/Flowers_Red_0.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/SceneryR22/Flowers_Red_2.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/TerrainR101/BankR91_Grade_017_ClosedR101.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/TerrainR101/BankR91_Grade_017_DeliveryR101.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/TerrainR101/BankR91_Grade_017_FinalR101.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/TerrainR101/BankR91_Grade_017_VerifiedR101.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/TerrainR101/Surface142_TerrainR101.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/TerrainR101/TerrainColliderJoin_R90_DeliveryR101.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/TerrainR107/M95_023_BoundR97_WindingR107.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Art/Environment/JourneyV48/TerrainR107/TerrainColliderJoin_R90_IntegratedR101_WindingR107.asset" filter=lfs diff=lfs merge=lfs -text

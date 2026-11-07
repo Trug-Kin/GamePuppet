@@ -1,0 +1,4663 @@
+{
+  "source": "D:\\Game\\GameHorror\\Game\\Docs\\Reviews\\lake_gate_market_current\\ntmk_full_map_route_materials_v33.blend",
+  "source_sha256": "33464a3e30695270b590e628a484a6adc486b8a1fbbfea8029a93c6dad363b8e",
+  "source_unchanged": true,
+  "objects": [
+    {
+      "name": "Core_Road_steps_W99661181",
+      "triangles_added": 1,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "Core_Road_steps_W1308355819",
+      "triangles_added": 50,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Core_Road_service_W934416335",
+      "triangles_added": 305,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Core_Road_service_W407705339",
+      "triangles_added": 3,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Core_Road_residential_W51561546",
+      "triangles_added": 205,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "Core_Terrain_UTM49N_Graded40m",
+      "triangles_added": 1732,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "b_525191979",
+      "triangles_added": 6,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "b_525191980",
+      "triangles_added": 10,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "b_1303227328",
+      "triangles_added": 42,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "b_1303678474",
+      "triangles_added": 2,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "b_1445968073",
+      "triangles_added": 6,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "b_1445968075",
+      "triangles_added": 32,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "b_1445968076",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "b_1445968077",
+      "triangles_added": 24,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "r_4119185_outer_1",
+      "triangles_added": 42,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "r_4119185_outer_2",
+      "triangles_added": 88,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketPermanentName",
+      "triangles_added": 3316,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "PhotoStudy_MarketMainHall_RevisedProportions",
+      "triangles_added": 60,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryRearOpeningBand",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryRearColumn_00",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryRearColumn_01",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryRearColumn_02",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryRearColumn_03",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryRearColumn_04",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryRearColumn_05",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryRearColumn_06",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryRearColumn_07",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryRearColumn_08",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryRearColumn_09",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryRearColumn_10",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryRearColumn_11",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_TerracottaStructuralBand",
+      "triangles_added": 24,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_UpperGlazing_Revised",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_UpperMullion_Revised_00",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_UpperMullion_Revised_01",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_UpperMullion_Revised_02",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_UpperMullion_Revised_03",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_UpperMullion_Revised_04",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_UpperMullion_Revised_05",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_UpperMullion_Revised_06",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_UpperMullion_Revised_07",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_UpperMullion_Revised_08",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_UpperMullion_Revised_09",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_UpperMullion_Revised_10",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_UpperMullion_Revised_11",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_UpperMullion_Revised_12",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_UpperMullion_Revised_13",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_UpperMullion_Revised_14",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_UpperMullion_Revised_15",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_UpperMullion_Revised_16",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_UpperMullion_Revised_17",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_UpperMullion_Revised_18",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_UpperMullion_Revised_19",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_UpperMullion_Revised_20",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GlassHorizontal_18.42",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GlassHorizontal_19.86",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GlassHorizontal_21.77",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LowerGlazingHorizontal_00",
+      "triangles_added": 400,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LowerGlazingHorizontal_01",
+      "triangles_added": 400,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LowerGlazingHorizontal_02",
+      "triangles_added": 400,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LowerGlazingHorizontal_03",
+      "triangles_added": 400,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LowerGlazingHorizontal_04",
+      "triangles_added": 400,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LowerGlazingHorizontal_05",
+      "triangles_added": 400,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LowerGlazingHorizontal_06",
+      "triangles_added": 400,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LowerGlazingHorizontal_07",
+      "triangles_added": 400,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_MainRoofNameBand",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_MainRoofEdge",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LeftFlankReturn",
+      "triangles_added": 24,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RightUprightReturn",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RightJunctionReveal",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RightVerticalInset",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RightInsetFrame_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RightInsetFrame_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RightInsetFrame_2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RightInsetFrame_3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RightInsetFrame_4",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_CurvedGalleryDense_52",
+      "triangles_added": 1296,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryCap_52",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GallerySill_52",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_SignBackboard_52",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_SignTopCornice_52",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailAwning_52",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_AwningFrontFascia_52",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_BlankSign_52_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreBay_52_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_52_0_0.08",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_52_0_2.29",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreLintel_52_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_52_0_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_52_0_2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_52_0_3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreMidrail_52_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LocalThreshold_52_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_BlankSign_52_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreBay_52_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_52_1_2.45",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_52_1_4.66",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreLintel_52_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_52_1_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_52_1_2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_52_1_3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreMidrail_52_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LocalThreshold_52_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_CurvedGalleryDense_53",
+      "triangles_added": 1296,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryCap_53",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GallerySill_53",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_SignBackboard_53",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_SignTopCornice_53",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailAwning_53",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_AwningFrontFascia_53",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_BlankSign_53_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreBay_53_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_53_0_0.08",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_53_0_2.30",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreLintel_53_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_53_0_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_53_0_2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_53_0_3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreMidrail_53_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LocalThreshold_53_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_BlankSign_53_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreBay_53_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_53_1_2.46",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_53_1_4.68",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreLintel_53_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_53_1_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_53_1_2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_53_1_3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreMidrail_53_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LocalThreshold_53_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_CurvedGalleryDense_54",
+      "triangles_added": 1296,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryCap_54",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GallerySill_54",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_SignBackboard_54",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_SignTopCornice_54",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailAwning_54",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_AwningFrontFascia_54",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_BlankSign_54_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreBay_54_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_54_0_0.08",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_54_0_2.21",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreLintel_54_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_54_0_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_54_0_2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_54_0_3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreMidrail_54_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LocalThreshold_54_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_BlankSign_54_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreBay_54_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_54_1_2.37",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_54_1_4.50",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreLintel_54_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_54_1_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_54_1_2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_54_1_3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreMidrail_54_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LocalThreshold_54_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_CurvedGalleryDense_55",
+      "triangles_added": 1092,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryCap_55",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GallerySill_55",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_SignBackboard_55",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_SignTopCornice_55",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailAwning_55",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_AwningFrontFascia_55",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_BlankSign_55_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreBay_55_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_55_0_0.08",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_55_0_1.97",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreLintel_55_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_55_0_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_55_0_2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_55_0_3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreMidrail_55_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LocalThreshold_55_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_BlankSign_55_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreBay_55_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_55_1_2.13",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_55_1_4.01",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreLintel_55_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_55_1_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_55_1_2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_55_1_3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreMidrail_55_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LocalThreshold_55_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_CurvedGalleryDense_56",
+      "triangles_added": 1392,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryCap_56",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GallerySill_56",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_SignBackboard_56",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_SignTopCornice_56",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailAwning_56",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_AwningFrontFascia_56",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_BlankSign_56_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreBay_56_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_56_0_0.08",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_56_0_2.51",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreLintel_56_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_56_0_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_56_0_2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_56_0_3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreMidrail_56_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LocalThreshold_56_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_BlankSign_56_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreBay_56_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_56_1_2.67",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_56_1_5.09",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreLintel_56_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_56_1_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_56_1_2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_56_1_3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreMidrail_56_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LocalThreshold_56_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_CurvedGalleryDense_57",
+      "triangles_added": 1296,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryCap_57",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GallerySill_57",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_SignBackboard_57",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_SignTopCornice_57",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailAwning_57",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_AwningFrontFascia_57",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_BlankSign_57_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreBay_57_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_57_0_0.08",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_57_0_2.20",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreLintel_57_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_57_0_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_57_0_2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_57_0_3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreMidrail_57_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LocalThreshold_57_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_BlankSign_57_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreBay_57_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_57_1_2.36",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_57_1_4.48",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreLintel_57_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_57_1_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_57_1_2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_57_1_3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreMidrail_57_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LocalThreshold_57_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_CurvedGalleryDense_58",
+      "triangles_added": 1392,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryCap_58",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GallerySill_58",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_SignBackboard_58",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_SignTopCornice_58",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailAwning_58",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_AwningFrontFascia_58",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_BlankSign_58_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreBay_58_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_58_0_0.08",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_58_0_2.50",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreLintel_58_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_58_0_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_58_0_2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_58_0_3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreMidrail_58_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LocalThreshold_58_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_BlankSign_58_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreBay_58_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_58_1_2.66",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_58_1_5.07",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreLintel_58_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_58_1_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_58_1_2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_58_1_3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreMidrail_58_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LocalThreshold_58_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_CurvedGalleryDense_59",
+      "triangles_added": 1200,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryCap_59",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GallerySill_59",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_SignBackboard_59",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_SignTopCornice_59",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailAwning_59",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_AwningFrontFascia_59",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_BlankSign_59_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreBay_59_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_59_0_0.08",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_59_0_2.01",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreLintel_59_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_59_0_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_59_0_2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_59_0_3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreMidrail_59_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LocalThreshold_59_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_BlankSign_59_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreBay_59_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_59_1_2.17",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_59_1_4.09",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreLintel_59_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_59_1_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_59_1_2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_59_1_3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreMidrail_59_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LocalThreshold_59_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_CurvedGalleryDense_60",
+      "triangles_added": 804,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryCap_60",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GallerySill_60",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_SignBackboard_60",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_SignTopCornice_60",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailAwning_60",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_AwningFrontFascia_60",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_BlankSign_60_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreBay_60_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_60_0_0.08",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_60_0_2.88",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreLintel_60_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_60_0_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_60_0_2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_60_0_3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreMidrail_60_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LocalThreshold_60_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_CurvedGalleryDense_61",
+      "triangles_added": 696,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryCap_61",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GallerySill_61",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_SignBackboard_61",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_SignTopCornice_61",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailAwning_61",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_AwningFrontFascia_61",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_BlankSign_61_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreBay_61_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_61_0_0.08",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_RetailJamb_61_0_2.60",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreLintel_61_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_61_0_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_61_0_2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreVertical_61_0_3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_StoreMidrail_61_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_LocalThreshold_61_0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryInnerShadow_52",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryInnerShadow_53",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryInnerShadow_54",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryInnerShadow_55",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryInnerShadow_56",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryInnerShadow_57",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryInnerShadow_58",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryInnerShadow_59",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryInnerShadow_60",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "Market_GalleryInnerShadow_61",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_UpperBay_WeatherCanopy",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_RoofGallery_Glazing",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_RoofGallery_Mullion_00",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_RoofGallery_Mullion_01",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_RoofGallery_Mullion_02",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_RoofGallery_Mullion_03",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_RoofGallery_Mullion_04",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_RoofGallery_Mullion_05",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_RoofGallery_Mullion_06",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_RoofGallery_Mullion_07",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_RoofGallery_Mullion_08",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_RoofGallery_Mullion_09",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_RoofGallery_Mullion_10",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_RoofGallery_Mullion_11",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_RoofGallery_Mullion_12",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_RoofGallery_Mullion_13",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_RoofGallery_Mullion_14",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_Utility_LouverRecess",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_Utility_Louver_00",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_Utility_Louver_01",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_Utility_Louver_02",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_Utility_Louver_03",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_Utility_Louver_04",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "MarketV15_Utility_HipRoof",
+      "triangles_added": 6,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_MainWhiteMass",
+      "triangles_added": 2,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "F01_Wing1FloorBand3.7",
+      "triangles_added": 2,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "F01_Wing1FloorBand6.9",
+      "triangles_added": 2,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "F01_Wing1FloorBand10.1",
+      "triangles_added": 2,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "F01_Wing1FloorBand13.3",
+      "triangles_added": 2,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "F01_Wing1FloorBand16.5",
+      "triangles_added": 2,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "F01_Wing1FloorBand19.9",
+      "triangles_added": 2,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "F01_Wing1FloorBand23.9",
+      "triangles_added": 2,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "F01_Wing1CornerPilaster22.243614117579824",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_0Slab",
+      "triangles_added": 2,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_0Rail17.01",
+      "triangles_added": 2,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_0Rail17.910000000000004",
+      "triangles_added": 2,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_0Baluster18",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_0Return1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_0Slab",
+      "triangles_added": 2,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_0Rail20.41",
+      "triangles_added": 2,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_0Rail21.310000000000002",
+      "triangles_added": 2,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_0Baluster18",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_0Return1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Recess",
+      "triangles_added": 17,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Frame0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Frame1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Frame2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Frame3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Frame4",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Frame5",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Frame6",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Frame7",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Frame8",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Frame9",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Frame10",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Frame11",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Frame12",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Frame13",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Frame14",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Frame15",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Frame16",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Frame17",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Frame18",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Glass",
+      "triangles_added": 17,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Mullion",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_1Sill",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Recess",
+      "triangles_added": 17,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Frame0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Frame1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Frame2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Frame3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Frame4",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Frame5",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Frame6",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Frame7",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Frame8",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Frame9",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Frame10",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Frame11",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Frame12",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Frame13",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Frame14",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Frame15",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Frame16",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Frame17",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Frame18",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Glass",
+      "triangles_added": 17,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Mullion",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_1Sill",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Recess",
+      "triangles_added": 17,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Frame0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Frame1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Frame2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Frame3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Frame4",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Frame5",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Frame6",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Frame7",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Frame8",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Frame9",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Frame10",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Frame11",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Frame12",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Frame13",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Frame14",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Frame15",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Frame16",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Frame17",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Frame18",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Glass",
+      "triangles_added": 17,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Mullion",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_1Sill",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Recess",
+      "triangles_added": 17,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Frame0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Frame1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Frame2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Frame3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Frame4",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Frame5",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Frame6",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Frame7",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Frame8",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Frame9",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Frame10",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Frame11",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Frame12",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Frame13",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Frame14",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Frame15",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Frame16",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Frame17",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Frame18",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Glass",
+      "triangles_added": 17,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Mullion",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_1Sill",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_0_1Recess",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_0_1Pane",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_0_1Mullion-3.3072690195966374",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_0_1Mullion0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_0_1Mullion3.3072690195966374",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_0_1Frame-1.2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_0_1Frame1.2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_GalleryInset_0_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Slab",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Rail17.01",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Rail17.910000000000004",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Baluster0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Baluster1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Baluster2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Baluster3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Baluster4",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Baluster5",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Baluster6",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Baluster7",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Baluster8",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Baluster9",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Baluster10",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Baluster11",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Baluster12",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Baluster13",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Baluster14",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Baluster15",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Baluster16",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Baluster17",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Baluster18",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Return-1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_1Return1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_1_1Recess",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_1_1Pane",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_1_1Mullion-3.3072690195966374",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_1_1Mullion0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_1_1Mullion3.3072690195966374",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_1_1Frame-1.2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_1_1Frame1.2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_GalleryInset_1_1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Slab",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Rail20.41",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Rail21.310000000000002",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Baluster0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Baluster1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Baluster2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Baluster3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Baluster4",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Baluster5",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Baluster6",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Baluster7",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Baluster8",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Baluster9",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Baluster10",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Baluster11",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Baluster12",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Baluster13",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Baluster14",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Baluster15",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Baluster16",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Baluster17",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Baluster18",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Return-1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_1Return1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Recess",
+      "triangles_added": 17,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Frame0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Frame1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Frame2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Frame3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Frame4",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Frame5",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Frame6",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Frame7",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Frame8",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Frame9",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Frame10",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Frame11",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Frame12",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Frame13",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Frame14",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Frame15",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Frame16",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Frame17",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Frame18",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Glass",
+      "triangles_added": 17,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Mullion",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_0_2Sill",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Recess",
+      "triangles_added": 17,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Frame0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Frame1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Frame2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Frame3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Frame4",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Frame5",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Frame6",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Frame7",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Frame8",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Frame9",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Frame10",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Frame11",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Frame12",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Frame13",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Frame14",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Frame15",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Frame16",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Frame17",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Frame18",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Glass",
+      "triangles_added": 17,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Mullion",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_1_2Sill",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Recess",
+      "triangles_added": 17,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Frame0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Frame1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Frame2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Frame3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Frame4",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Frame5",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Frame6",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Frame7",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Frame8",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Frame9",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Frame10",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Frame11",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Frame12",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Frame13",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Frame14",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Frame15",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Frame16",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Frame17",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Frame18",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Glass",
+      "triangles_added": 17,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Mullion",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_2_2Sill",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Recess",
+      "triangles_added": 17,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Frame0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Frame1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Frame2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Frame3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Frame4",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Frame5",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Frame6",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Frame7",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Frame8",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Frame9",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Frame10",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Frame11",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Frame12",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Frame13",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Frame14",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Frame15",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Frame16",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Frame17",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Frame18",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Glass",
+      "triangles_added": 17,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Mullion",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Arch_3_2Sill",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_0_2Recess",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_0_2Pane",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_0_2Mullion-3.3072690195966374",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_0_2Mullion0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_0_2Mullion3.3072690195966374",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_0_2Frame-1.2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_0_2Frame1.2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_GalleryInset_0_2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Slab",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Rail17.01",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Rail17.910000000000004",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Baluster0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Baluster1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Baluster2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Baluster3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Baluster4",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Baluster5",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Baluster6",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Baluster7",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Baluster8",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Baluster9",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Baluster10",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Baluster11",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Baluster12",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Baluster13",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Baluster14",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Baluster15",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Baluster16",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Baluster17",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Baluster18",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Return-1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_0_2Return1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_1_2Recess",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_1_2Pane",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_1_2Mullion-3.3072690195966374",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_1_2Mullion0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_1_2Mullion3.3072690195966374",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_1_2Frame-1.2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_Gallery_1_2Frame1.2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_GalleryInset_1_2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Slab",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Rail20.41",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Rail21.310000000000002",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Baluster0",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Baluster1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Baluster2",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Baluster3",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Baluster4",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Baluster5",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Baluster6",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Baluster7",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Baluster8",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Baluster9",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Baluster10",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Baluster11",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Baluster12",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Baluster13",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Baluster14",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Baluster15",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Baluster16",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Baluster17",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Baluster18",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Return-1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1_UpperBalcony_1_2Return1",
+      "triangles_added": 12,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "F01_Wing1GroundUnresolved",
+      "triangles_added": 2,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "F01_Wing1RoofCornice",
+      "triangles_added": 2,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "F01_Wing1RoofParapet",
+      "triangles_added": 2,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "F01_Wing1PlainRoofCap",
+      "triangles_added": 2,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "F01_ContinuousPlainRoofSlab",
+      "triangles_added": 2,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "V18_RENDER_Core_Road_residential_W125314010_Forecourt_NoCast",
+      "triangles_added": 541,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "V18_RENDER_Core_Road_residential_W125314011_Forecourt_NoCast",
+      "triangles_added": 546,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "V18_RENDER_Core_Road_residential_W125314011_Outside_KeepCast",
+      "triangles_added": 1288,
+      "previously_partially_exported": false
+    }
+  ],
+  "meshes": [
+    {
+      "mesh": "Restored_000",
+      "material": "Building_Default_41_Review_Magenta",
+      "reuse_material": "Surface_002",
+      "sources": [
+        "b_1303678474"
+      ],
+      "triangles": 2,
+      "collision": true,
+      "color": [
+        0.8899999856948853,
+        0.25,
+        0.5099999904632568,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_001",
+      "material": "MarketV15_NeutralUnletteredSign",
+      "reuse_material": null,
+      "sources": [
+        "MarketV15_Utility_LouverRecess",
+        "Market_SignBackboard_52",
+        "Market_SignBackboard_53",
+        "Market_SignBackboard_54",
+        "Market_SignBackboard_55",
+        "Market_SignBackboard_56",
+        "Market_SignBackboard_57",
+        "Market_SignBackboard_58",
+        "Market_SignBackboard_59",
+        "Market_SignBackboard_60",
+        "Market_SignBackboard_61"
+      ],
+      "triangles": 132,
+      "collision": true,
+      "color": [
+        0.3199999928474426,
+        0.3100000023841858,
+        0.27000001072883606,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_002",
+      "material": "MarketV15_OchreUtility",
+      "reuse_material": null,
+      "sources": [
+        "PhotoStudy_MarketMainHall_RevisedProportions"
+      ],
+      "triangles": 12,
+      "collision": true,
+      "color": [
+        0.6499999761581421,
+        0.4300000071525574,
+        0.02500000037252903,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_003",
+      "material": "MarketV15_RoofTerracotta",
+      "reuse_material": null,
+      "sources": [
+        "Market_RetailAwning_52",
+        "Market_RetailAwning_53",
+        "Market_RetailAwning_54",
+        "Market_RetailAwning_55",
+        "Market_RetailAwning_56",
+        "Market_RetailAwning_57",
+        "Market_RetailAwning_58",
+        "Market_RetailAwning_59",
+        "Market_RetailAwning_60",
+        "Market_RetailAwning_61"
+      ],
+      "triangles": 120,
+      "collision": true,
+      "color": [
+        0.27000001072883606,
+        0.07999999821186066,
+        0.03500000014901161,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_004",
+      "material": "MarketV15_WarmBrownFascia",
+      "reuse_material": null,
+      "sources": [
+        "Market_AwningFrontFascia_52",
+        "Market_AwningFrontFascia_53",
+        "Market_AwningFrontFascia_54",
+        "Market_AwningFrontFascia_55",
+        "Market_AwningFrontFascia_56",
+        "Market_AwningFrontFascia_57",
+        "Market_AwningFrontFascia_58",
+        "Market_AwningFrontFascia_59",
+        "Market_AwningFrontFascia_60",
+        "Market_AwningFrontFascia_61"
+      ],
+      "triangles": 120,
+      "collision": true,
+      "color": [
+        0.36000001430511475,
+        0.1599999964237213,
+        0.07500000298023224,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_005",
+      "material": "MarketV17_Canopy_ClayBrown",
+      "reuse_material": null,
+      "sources": [
+        "MarketV15_UpperBay_WeatherCanopy"
+      ],
+      "triangles": 12,
+      "collision": true,
+      "color": [
+        0.3199999928474426,
+        0.11500000208616257,
+        0.054999999701976776,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_006",
+      "material": "MarketV17_Fascia_OrangeBrown",
+      "reuse_material": null,
+      "sources": [
+        "Market_TerracottaStructuralBand"
+      ],
+      "triangles": 24,
+      "collision": true,
+      "color": [
+        0.4699999988079071,
+        0.22499999403953552,
+        0.10499999672174454,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_007",
+      "material": "MarketV17_Frames_SatinMetal",
+      "reuse_material": null,
+      "sources": [
+        "MarketV15_RoofGallery_Mullion_00",
+        "MarketV15_RoofGallery_Mullion_01",
+        "MarketV15_RoofGallery_Mullion_02",
+        "MarketV15_RoofGallery_Mullion_03",
+        "MarketV15_RoofGallery_Mullion_04",
+        "MarketV15_RoofGallery_Mullion_05",
+        "MarketV15_RoofGallery_Mullion_06",
+        "MarketV15_RoofGallery_Mullion_07",
+        "MarketV15_RoofGallery_Mullion_08",
+        "MarketV15_RoofGallery_Mullion_09",
+        "MarketV15_RoofGallery_Mullion_10",
+        "MarketV15_RoofGallery_Mullion_11",
+        "MarketV15_RoofGallery_Mullion_12",
+        "MarketV15_RoofGallery_Mullion_13",
+        "MarketV15_RoofGallery_Mullion_14",
+        "MarketV15_Utility_Louver_00",
+        "MarketV15_Utility_Louver_01",
+        "MarketV15_Utility_Louver_02",
+        "MarketV15_Utility_Louver_03",
+        "MarketV15_Utility_Louver_04",
+        "Market_GlassHorizontal_18.42",
+        "Market_GlassHorizontal_19.86",
+        "Market_GlassHorizontal_21.77",
+        "Market_UpperMullion_Revised_00",
+        "Market_UpperMullion_Revised_01",
+        "Market_UpperMullion_Revised_02",
+        "Market_UpperMullion_Revised_03",
+        "Market_UpperMullion_Revised_04",
+        "Market_UpperMullion_Revised_05",
+        "Market_UpperMullion_Revised_06",
+        "Market_UpperMullion_Revised_07",
+        "Market_UpperMullion_Revised_08",
+        "Market_UpperMullion_Revised_09",
+        "Market_UpperMullion_Revised_10",
+        "Market_UpperMullion_Revised_11",
+        "Market_UpperMullion_Revised_12",
+        "Market_UpperMullion_Revised_13",
+        "Market_UpperMullion_Revised_14",
+        "Market_UpperMullion_Revised_15",
+        "Market_UpperMullion_Revised_16",
+        "Market_UpperMullion_Revised_17",
+        "Market_UpperMullion_Revised_18",
+        "Market_UpperMullion_Revised_19",
+        "Market_UpperMullion_Revised_20"
+      ],
+      "triangles": 528,
+      "collision": true,
+      "color": [
+        0.5899999737739563,
+        0.6399999856948853,
+        0.6200000047683716,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_008",
+      "material": "MarketV17_Glass_Dark",
+      "reuse_material": null,
+      "sources": [
+        "MarketV15_RoofGallery_Glazing",
+        "Market_RightVerticalInset",
+        "Market_UpperGlazing_Revised"
+      ],
+      "triangles": 36,
+      "collision": true,
+      "color": [
+        0.027000000700354576,
+        0.05999999865889549,
+        0.05700000002980232,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_009",
+      "material": "MarketV17_Louver_BrightMetal",
+      "reuse_material": null,
+      "sources": [
+        "Market_LowerGlazingHorizontal_00",
+        "Market_LowerGlazingHorizontal_01",
+        "Market_LowerGlazingHorizontal_02",
+        "Market_LowerGlazingHorizontal_03",
+        "Market_LowerGlazingHorizontal_04",
+        "Market_LowerGlazingHorizontal_05",
+        "Market_LowerGlazingHorizontal_06",
+        "Market_LowerGlazingHorizontal_07"
+      ],
+      "triangles": 960,
+      "collision": true,
+      "color": [
+        0.7099999785423279,
+        0.7350000143051147,
+        0.7099999785423279,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_010",
+      "material": "MarketV17_Louver_FoldMetal",
+      "reuse_material": null,
+      "sources": [
+        "Market_LowerGlazingHorizontal_00",
+        "Market_LowerGlazingHorizontal_01",
+        "Market_LowerGlazingHorizontal_02",
+        "Market_LowerGlazingHorizontal_03",
+        "Market_LowerGlazingHorizontal_04",
+        "Market_LowerGlazingHorizontal_05",
+        "Market_LowerGlazingHorizontal_06",
+        "Market_LowerGlazingHorizontal_07"
+      ],
+      "triangles": 2240,
+      "collision": true,
+      "color": [
+        0.4699999988079071,
+        0.5099999904632568,
+        0.49000000953674316,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_011",
+      "material": "MarketV17_Roof_Green",
+      "reuse_material": null,
+      "sources": [
+        "MarketV15_Utility_HipRoof"
+      ],
+      "triangles": 6,
+      "collision": true,
+      "color": [
+        0.125,
+        0.20499999821186066,
+        0.14000000059604645,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_012",
+      "material": "MarketV17_Wall_Light",
+      "reuse_material": null,
+      "sources": [
+        "Market_CurvedGalleryDense_52",
+        "Market_CurvedGalleryDense_53",
+        "Market_CurvedGalleryDense_54",
+        "Market_CurvedGalleryDense_55",
+        "Market_CurvedGalleryDense_56",
+        "Market_CurvedGalleryDense_57",
+        "Market_CurvedGalleryDense_58",
+        "Market_CurvedGalleryDense_59",
+        "Market_CurvedGalleryDense_60",
+        "Market_CurvedGalleryDense_61",
+        "Market_GalleryCap_52",
+        "Market_GalleryCap_53",
+        "Market_GalleryCap_54",
+        "Market_GalleryCap_55",
+        "Market_GalleryCap_56",
+        "Market_GalleryCap_57",
+        "Market_GalleryCap_58",
+        "Market_GalleryCap_59",
+        "Market_GalleryCap_60",
+        "Market_GalleryCap_61",
+        "Market_GalleryRearColumn_00",
+        "Market_GalleryRearColumn_01",
+        "Market_GalleryRearColumn_02",
+        "Market_GalleryRearColumn_03",
+        "Market_GalleryRearColumn_04",
+        "Market_GalleryRearColumn_05",
+        "Market_GalleryRearColumn_06",
+        "Market_GalleryRearColumn_07",
+        "Market_GalleryRearColumn_08",
+        "Market_GalleryRearColumn_09",
+        "Market_GalleryRearColumn_10",
+        "Market_GalleryRearColumn_11",
+        "Market_GallerySill_52",
+        "Market_GallerySill_53",
+        "Market_GallerySill_54",
+        "Market_GallerySill_55",
+        "Market_GallerySill_56",
+        "Market_GallerySill_57",
+        "Market_GallerySill_58",
+        "Market_GallerySill_59",
+        "Market_GallerySill_60",
+        "Market_GallerySill_61",
+        "Market_LeftFlankReturn",
+        "Market_MainRoofEdge",
+        "Market_MainRoofNameBand",
+        "Market_RightInsetFrame_0",
+        "Market_RightInsetFrame_1",
+        "Market_RightInsetFrame_2",
+        "Market_RightInsetFrame_3",
+        "Market_RightInsetFrame_4",
+        "Market_RightUprightReturn",
+        "PhotoStudy_MarketMainHall_RevisedProportions"
+      ],
+      "triangles": 12312,
+      "collision": true,
+      "color": [
+        0.6899999976158142,
+        0.6949999928474426,
+        0.6600000262260437,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_013",
+      "material": "NTMKCluster_BalconyInset",
+      "reuse_material": "Surface_052",
+      "sources": [
+        "F01_Wing1_GalleryInset_0_1",
+        "F01_Wing1_GalleryInset_0_2",
+        "F01_Wing1_GalleryInset_1_1",
+        "F01_Wing1_GalleryInset_1_2"
+      ],
+      "triangles": 48,
+      "collision": true,
+      "color": [
+        0.6200000047683716,
+        0.5899999737739563,
+        0.4399999976158142,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_014",
+      "material": "NTMKCluster_DullRoof",
+      "reuse_material": "Surface_053",
+      "sources": [
+        "F01_ContinuousPlainRoofSlab",
+        "F01_Wing1PlainRoofCap"
+      ],
+      "triangles": 4,
+      "collision": true,
+      "color": [
+        0.3199999928474426,
+        0.3400000035762787,
+        0.30000001192092896,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_015",
+      "material": "NTMKCluster_MutedGlass",
+      "reuse_material": "Surface_054",
+      "sources": [
+        "F01_Wing1_Arch_0_1Glass",
+        "F01_Wing1_Arch_0_2Glass",
+        "F01_Wing1_Arch_1_1Glass",
+        "F01_Wing1_Arch_1_2Glass",
+        "F01_Wing1_Arch_2_1Glass",
+        "F01_Wing1_Arch_2_2Glass",
+        "F01_Wing1_Arch_3_1Glass",
+        "F01_Wing1_Arch_3_2Glass",
+        "F01_Wing1_Gallery_0_1Pane",
+        "F01_Wing1_Gallery_0_2Pane",
+        "F01_Wing1_Gallery_1_1Pane",
+        "F01_Wing1_Gallery_1_2Pane"
+      ],
+      "triangles": 184,
+      "collision": true,
+      "color": [
+        0.1599999964237213,
+        0.2199999988079071,
+        0.2199999988079071,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_016",
+      "material": "NTMKCluster_PaintedIron",
+      "reuse_material": "Surface_056",
+      "sources": [
+        "F01_Wing1_Arch_0_1Mullion",
+        "F01_Wing1_Arch_0_2Mullion",
+        "F01_Wing1_Arch_1_1Mullion",
+        "F01_Wing1_Arch_1_2Mullion",
+        "F01_Wing1_Arch_2_1Mullion",
+        "F01_Wing1_Arch_2_2Mullion",
+        "F01_Wing1_Arch_3_1Mullion",
+        "F01_Wing1_Arch_3_2Mullion",
+        "F01_Wing1_UpperBalcony_0_0Baluster18",
+        "F01_Wing1_UpperBalcony_0_0Rail17.01",
+        "F01_Wing1_UpperBalcony_0_0Rail17.910000000000004",
+        "F01_Wing1_UpperBalcony_0_0Return1",
+        "F01_Wing1_UpperBalcony_0_1Baluster0",
+        "F01_Wing1_UpperBalcony_0_1Baluster1",
+        "F01_Wing1_UpperBalcony_0_1Baluster10",
+        "F01_Wing1_UpperBalcony_0_1Baluster11",
+        "F01_Wing1_UpperBalcony_0_1Baluster12",
+        "F01_Wing1_UpperBalcony_0_1Baluster13",
+        "F01_Wing1_UpperBalcony_0_1Baluster14",
+        "F01_Wing1_UpperBalcony_0_1Baluster15",
+        "F01_Wing1_UpperBalcony_0_1Baluster16",
+        "F01_Wing1_UpperBalcony_0_1Baluster17",
+        "F01_Wing1_UpperBalcony_0_1Baluster18",
+        "F01_Wing1_UpperBalcony_0_1Baluster2",
+        "F01_Wing1_UpperBalcony_0_1Baluster3",
+        "F01_Wing1_UpperBalcony_0_1Baluster4",
+        "F01_Wing1_UpperBalcony_0_1Baluster5",
+        "F01_Wing1_UpperBalcony_0_1Baluster6",
+        "F01_Wing1_UpperBalcony_0_1Baluster7",
+        "F01_Wing1_UpperBalcony_0_1Baluster8",
+        "F01_Wing1_UpperBalcony_0_1Baluster9",
+        "F01_Wing1_UpperBalcony_0_1Rail17.01",
+        "F01_Wing1_UpperBalcony_0_1Rail17.910000000000004",
+        "F01_Wing1_UpperBalcony_0_1Return-1",
+        "F01_Wing1_UpperBalcony_0_1Return1",
+        "F01_Wing1_UpperBalcony_0_2Baluster0",
+        "F01_Wing1_UpperBalcony_0_2Baluster1",
+        "F01_Wing1_UpperBalcony_0_2Baluster10",
+        "F01_Wing1_UpperBalcony_0_2Baluster11",
+        "F01_Wing1_UpperBalcony_0_2Baluster12",
+        "F01_Wing1_UpperBalcony_0_2Baluster13",
+        "F01_Wing1_UpperBalcony_0_2Baluster14",
+        "F01_Wing1_UpperBalcony_0_2Baluster15",
+        "F01_Wing1_UpperBalcony_0_2Baluster16",
+        "F01_Wing1_UpperBalcony_0_2Baluster17",
+        "F01_Wing1_UpperBalcony_0_2Baluster18",
+        "F01_Wing1_UpperBalcony_0_2Baluster2",
+        "F01_Wing1_UpperBalcony_0_2Baluster3",
+        "F01_Wing1_UpperBalcony_0_2Baluster4",
+        "F01_Wing1_UpperBalcony_0_2Baluster5",
+        "F01_Wing1_UpperBalcony_0_2Baluster6",
+        "F01_Wing1_UpperBalcony_0_2Baluster7",
+        "F01_Wing1_UpperBalcony_0_2Baluster8",
+        "F01_Wing1_UpperBalcony_0_2Baluster9",
+        "F01_Wing1_UpperBalcony_0_2Rail17.01",
+        "F01_Wing1_UpperBalcony_0_2Rail17.910000000000004",
+        "F01_Wing1_UpperBalcony_0_2Return-1",
+        "F01_Wing1_UpperBalcony_0_2Return1",
+        "F01_Wing1_UpperBalcony_1_0Baluster18",
+        "F01_Wing1_UpperBalcony_1_0Rail20.41",
+        "F01_Wing1_UpperBalcony_1_0Rail21.310000000000002",
+        "F01_Wing1_UpperBalcony_1_0Return1",
+        "F01_Wing1_UpperBalcony_1_1Baluster0",
+        "F01_Wing1_UpperBalcony_1_1Baluster1",
+        "F01_Wing1_UpperBalcony_1_1Baluster10",
+        "F01_Wing1_UpperBalcony_1_1Baluster11",
+        "F01_Wing1_UpperBalcony_1_1Baluster12",
+        "F01_Wing1_UpperBalcony_1_1Baluster13",
+        "F01_Wing1_UpperBalcony_1_1Baluster14",
+        "F01_Wing1_UpperBalcony_1_1Baluster15",
+        "F01_Wing1_UpperBalcony_1_1Baluster16",
+        "F01_Wing1_UpperBalcony_1_1Baluster17",
+        "F01_Wing1_UpperBalcony_1_1Baluster18",
+        "F01_Wing1_UpperBalcony_1_1Baluster2",
+        "F01_Wing1_UpperBalcony_1_1Baluster3",
+        "F01_Wing1_UpperBalcony_1_1Baluster4",
+        "F01_Wing1_UpperBalcony_1_1Baluster5",
+        "F01_Wing1_UpperBalcony_1_1Baluster6",
+        "F01_Wing1_UpperBalcony_1_1Baluster7",
+        "F01_Wing1_UpperBalcony_1_1Baluster8",
+        "F01_Wing1_UpperBalcony_1_1Baluster9",
+        "F01_Wing1_UpperBalcony_1_1Rail20.41",
+        "F01_Wing1_UpperBalcony_1_1Rail21.310000000000002",
+        "F01_Wing1_UpperBalcony_1_1Return-1",
+        "F01_Wing1_UpperBalcony_1_1Return1",
+        "F01_Wing1_UpperBalcony_1_2Baluster0",
+        "F01_Wing1_UpperBalcony_1_2Baluster1",
+        "F01_Wing1_UpperBalcony_1_2Baluster10",
+        "F01_Wing1_UpperBalcony_1_2Baluster11",
+        "F01_Wing1_UpperBalcony_1_2Baluster12",
+        "F01_Wing1_UpperBalcony_1_2Baluster13",
+        "F01_Wing1_UpperBalcony_1_2Baluster14",
+        "F01_Wing1_UpperBalcony_1_2Baluster15",
+        "F01_Wing1_UpperBalcony_1_2Baluster16",
+        "F01_Wing1_UpperBalcony_1_2Baluster17",
+        "F01_Wing1_UpperBalcony_1_2Baluster18",
+        "F01_Wing1_UpperBalcony_1_2Baluster2",
+        "F01_Wing1_UpperBalcony_1_2Baluster3",
+        "F01_Wing1_UpperBalcony_1_2Baluster4",
+        "F01_Wing1_UpperBalcony_1_2Baluster5",
+        "F01_Wing1_UpperBalcony_1_2Baluster6",
+        "F01_Wing1_UpperBalcony_1_2Baluster7",
+        "F01_Wing1_UpperBalcony_1_2Baluster8",
+        "F01_Wing1_UpperBalcony_1_2Baluster9",
+        "F01_Wing1_UpperBalcony_1_2Rail20.41",
+        "F01_Wing1_UpperBalcony_1_2Rail21.310000000000002",
+        "F01_Wing1_UpperBalcony_1_2Return-1",
+        "F01_Wing1_UpperBalcony_1_2Return1"
+      ],
+      "triangles": 1256,
+      "collision": true,
+      "color": [
+        0.2199999988079071,
+        0.25,
+        0.23000000417232513,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_017",
+      "material": "NTMKCluster_PaleCornice",
+      "reuse_material": "Surface_057",
+      "sources": [
+        "F01_Wing1CornerPilaster22.243614117579824",
+        "F01_Wing1FloorBand10.1",
+        "F01_Wing1FloorBand13.3",
+        "F01_Wing1FloorBand16.5",
+        "F01_Wing1FloorBand19.9",
+        "F01_Wing1FloorBand23.9",
+        "F01_Wing1FloorBand3.7",
+        "F01_Wing1FloorBand6.9",
+        "F01_Wing1RoofCornice",
+        "F01_Wing1_Arch_0_1Frame0",
+        "F01_Wing1_Arch_0_1Frame1",
+        "F01_Wing1_Arch_0_1Frame10",
+        "F01_Wing1_Arch_0_1Frame11",
+        "F01_Wing1_Arch_0_1Frame12",
+        "F01_Wing1_Arch_0_1Frame13",
+        "F01_Wing1_Arch_0_1Frame14",
+        "F01_Wing1_Arch_0_1Frame15",
+        "F01_Wing1_Arch_0_1Frame16",
+        "F01_Wing1_Arch_0_1Frame17",
+        "F01_Wing1_Arch_0_1Frame18",
+        "F01_Wing1_Arch_0_1Frame2",
+        "F01_Wing1_Arch_0_1Frame3",
+        "F01_Wing1_Arch_0_1Frame4",
+        "F01_Wing1_Arch_0_1Frame5",
+        "F01_Wing1_Arch_0_1Frame6",
+        "F01_Wing1_Arch_0_1Frame7",
+        "F01_Wing1_Arch_0_1Frame8",
+        "F01_Wing1_Arch_0_1Frame9",
+        "F01_Wing1_Arch_0_1Sill",
+        "F01_Wing1_Arch_0_2Frame0",
+        "F01_Wing1_Arch_0_2Frame1",
+        "F01_Wing1_Arch_0_2Frame10",
+        "F01_Wing1_Arch_0_2Frame11",
+        "F01_Wing1_Arch_0_2Frame12",
+        "F01_Wing1_Arch_0_2Frame13",
+        "F01_Wing1_Arch_0_2Frame14",
+        "F01_Wing1_Arch_0_2Frame15",
+        "F01_Wing1_Arch_0_2Frame16",
+        "F01_Wing1_Arch_0_2Frame17",
+        "F01_Wing1_Arch_0_2Frame18",
+        "F01_Wing1_Arch_0_2Frame2",
+        "F01_Wing1_Arch_0_2Frame3",
+        "F01_Wing1_Arch_0_2Frame4",
+        "F01_Wing1_Arch_0_2Frame5",
+        "F01_Wing1_Arch_0_2Frame6",
+        "F01_Wing1_Arch_0_2Frame7",
+        "F01_Wing1_Arch_0_2Frame8",
+        "F01_Wing1_Arch_0_2Frame9",
+        "F01_Wing1_Arch_0_2Sill",
+        "F01_Wing1_Arch_1_1Frame0",
+        "F01_Wing1_Arch_1_1Frame1",
+        "F01_Wing1_Arch_1_1Frame10",
+        "F01_Wing1_Arch_1_1Frame11",
+        "F01_Wing1_Arch_1_1Frame12",
+        "F01_Wing1_Arch_1_1Frame13",
+        "F01_Wing1_Arch_1_1Frame14",
+        "F01_Wing1_Arch_1_1Frame15",
+        "F01_Wing1_Arch_1_1Frame16",
+        "F01_Wing1_Arch_1_1Frame17",
+        "F01_Wing1_Arch_1_1Frame18",
+        "F01_Wing1_Arch_1_1Frame2",
+        "F01_Wing1_Arch_1_1Frame3",
+        "F01_Wing1_Arch_1_1Frame4",
+        "F01_Wing1_Arch_1_1Frame5",
+        "F01_Wing1_Arch_1_1Frame6",
+        "F01_Wing1_Arch_1_1Frame7",
+        "F01_Wing1_Arch_1_1Frame8",
+        "F01_Wing1_Arch_1_1Frame9",
+        "F01_Wing1_Arch_1_1Sill",
+        "F01_Wing1_Arch_1_2Frame0",
+        "F01_Wing1_Arch_1_2Frame1",
+        "F01_Wing1_Arch_1_2Frame10",
+        "F01_Wing1_Arch_1_2Frame11",
+        "F01_Wing1_Arch_1_2Frame12",
+        "F01_Wing1_Arch_1_2Frame13",
+        "F01_Wing1_Arch_1_2Frame14",
+        "F01_Wing1_Arch_1_2Frame15",
+        "F01_Wing1_Arch_1_2Frame16",
+        "F01_Wing1_Arch_1_2Frame17",
+        "F01_Wing1_Arch_1_2Frame18",
+        "F01_Wing1_Arch_1_2Frame2",
+        "F01_Wing1_Arch_1_2Frame3",
+        "F01_Wing1_Arch_1_2Frame4",
+        "F01_Wing1_Arch_1_2Frame5",
+        "F01_Wing1_Arch_1_2Frame6",
+        "F01_Wing1_Arch_1_2Frame7",
+        "F01_Wing1_Arch_1_2Frame8",
+        "F01_Wing1_Arch_1_2Frame9",
+        "F01_Wing1_Arch_1_2Sill",
+        "F01_Wing1_Arch_2_1Frame0",
+        "F01_Wing1_Arch_2_1Frame1",
+        "F01_Wing1_Arch_2_1Frame10",
+        "F01_Wing1_Arch_2_1Frame11",
+        "F01_Wing1_Arch_2_1Frame12",
+        "F01_Wing1_Arch_2_1Frame13",
+        "F01_Wing1_Arch_2_1Frame14",
+        "F01_Wing1_Arch_2_1Frame15",
+        "F01_Wing1_Arch_2_1Frame16",
+        "F01_Wing1_Arch_2_1Frame17",
+        "F01_Wing1_Arch_2_1Frame18",
+        "F01_Wing1_Arch_2_1Frame2",
+        "F01_Wing1_Arch_2_1Frame3",
+        "F01_Wing1_Arch_2_1Frame4",
+        "F01_Wing1_Arch_2_1Frame5",
+        "F01_Wing1_Arch_2_1Frame6",
+        "F01_Wing1_Arch_2_1Frame7",
+        "F01_Wing1_Arch_2_1Frame8",
+        "F01_Wing1_Arch_2_1Frame9",
+        "F01_Wing1_Arch_2_1Sill",
+        "F01_Wing1_Arch_2_2Frame0",
+        "F01_Wing1_Arch_2_2Frame1",
+        "F01_Wing1_Arch_2_2Frame10",
+        "F01_Wing1_Arch_2_2Frame11",
+        "F01_Wing1_Arch_2_2Frame12",
+        "F01_Wing1_Arch_2_2Frame13",
+        "F01_Wing1_Arch_2_2Frame14",
+        "F01_Wing1_Arch_2_2Frame15",
+        "F01_Wing1_Arch_2_2Frame16",
+        "F01_Wing1_Arch_2_2Frame17",
+        "F01_Wing1_Arch_2_2Frame18",
+        "F01_Wing1_Arch_2_2Frame2",
+        "F01_Wing1_Arch_2_2Frame3",
+        "F01_Wing1_Arch_2_2Frame4",
+        "F01_Wing1_Arch_2_2Frame5",
+        "F01_Wing1_Arch_2_2Frame6",
+        "F01_Wing1_Arch_2_2Frame7",
+        "F01_Wing1_Arch_2_2Frame8",
+        "F01_Wing1_Arch_2_2Frame9",
+        "F01_Wing1_Arch_2_2Sill",
+        "F01_Wing1_Arch_3_1Frame0",
+        "F01_Wing1_Arch_3_1Frame1",
+        "F01_Wing1_Arch_3_1Frame10",
+        "F01_Wing1_Arch_3_1Frame11",
+        "F01_Wing1_Arch_3_1Frame12",
+        "F01_Wing1_Arch_3_1Frame13",
+        "F01_Wing1_Arch_3_1Frame14",
+        "F01_Wing1_Arch_3_1Frame15",
+        "F01_Wing1_Arch_3_1Frame16",
+        "F01_Wing1_Arch_3_1Frame17",
+        "F01_Wing1_Arch_3_1Frame18",
+        "F01_Wing1_Arch_3_1Frame2",
+        "F01_Wing1_Arch_3_1Frame3",
+        "F01_Wing1_Arch_3_1Frame4",
+        "F01_Wing1_Arch_3_1Frame5",
+        "F01_Wing1_Arch_3_1Frame6",
+        "F01_Wing1_Arch_3_1Frame7",
+        "F01_Wing1_Arch_3_1Frame8",
+        "F01_Wing1_Arch_3_1Frame9",
+        "F01_Wing1_Arch_3_1Sill",
+        "F01_Wing1_Arch_3_2Frame0",
+        "F01_Wing1_Arch_3_2Frame1",
+        "F01_Wing1_Arch_3_2Frame10",
+        "F01_Wing1_Arch_3_2Frame11",
+        "F01_Wing1_Arch_3_2Frame12",
+        "F01_Wing1_Arch_3_2Frame13",
+        "F01_Wing1_Arch_3_2Frame14",
+        "F01_Wing1_Arch_3_2Frame15",
+        "F01_Wing1_Arch_3_2Frame16",
+        "F01_Wing1_Arch_3_2Frame17",
+        "F01_Wing1_Arch_3_2Frame18",
+        "F01_Wing1_Arch_3_2Frame2",
+        "F01_Wing1_Arch_3_2Frame3",
+        "F01_Wing1_Arch_3_2Frame4",
+        "F01_Wing1_Arch_3_2Frame5",
+        "F01_Wing1_Arch_3_2Frame6",
+        "F01_Wing1_Arch_3_2Frame7",
+        "F01_Wing1_Arch_3_2Frame8",
+        "F01_Wing1_Arch_3_2Frame9",
+        "F01_Wing1_Arch_3_2Sill",
+        "F01_Wing1_Gallery_0_1Frame-1.2",
+        "F01_Wing1_Gallery_0_1Frame1.2",
+        "F01_Wing1_Gallery_0_1Mullion-3.3072690195966374",
+        "F01_Wing1_Gallery_0_1Mullion0",
+        "F01_Wing1_Gallery_0_1Mullion3.3072690195966374",
+        "F01_Wing1_Gallery_0_2Frame-1.2",
+        "F01_Wing1_Gallery_0_2Frame1.2",
+        "F01_Wing1_Gallery_0_2Mullion-3.3072690195966374",
+        "F01_Wing1_Gallery_0_2Mullion0",
+        "F01_Wing1_Gallery_0_2Mullion3.3072690195966374",
+        "F01_Wing1_Gallery_1_1Frame-1.2",
+        "F01_Wing1_Gallery_1_1Frame1.2",
+        "F01_Wing1_Gallery_1_1Mullion-3.3072690195966374",
+        "F01_Wing1_Gallery_1_1Mullion0",
+        "F01_Wing1_Gallery_1_1Mullion3.3072690195966374",
+        "F01_Wing1_Gallery_1_2Frame-1.2",
+        "F01_Wing1_Gallery_1_2Frame1.2",
+        "F01_Wing1_Gallery_1_2Mullion-3.3072690195966374",
+        "F01_Wing1_Gallery_1_2Mullion0",
+        "F01_Wing1_Gallery_1_2Mullion3.3072690195966374",
+        "F01_Wing1_UpperBalcony_0_0Slab",
+        "F01_Wing1_UpperBalcony_0_1Slab",
+        "F01_Wing1_UpperBalcony_0_2Slab",
+        "F01_Wing1_UpperBalcony_1_0Slab",
+        "F01_Wing1_UpperBalcony_1_1Slab",
+        "F01_Wing1_UpperBalcony_1_2Slab"
+      ],
+      "triangles": 2240,
+      "collision": true,
+      "color": [
+        0.8199999928474426,
+        0.8199999928474426,
+        0.75,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_018",
+      "material": "NTMKCluster_WarmWhitePlaster",
+      "reuse_material": "Surface_058",
+      "sources": [
+        "F01_MainWhiteMass",
+        "F01_Wing1GroundUnresolved",
+        "F01_Wing1RoofParapet"
+      ],
+      "triangles": 6,
+      "collision": true,
+      "color": [
+        0.699999988079071,
+        0.699999988079071,
+        0.6499999761581421,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_019",
+      "material": "NTMKCluster_WindowRecess",
+      "reuse_material": "Surface_059",
+      "sources": [
+        "F01_Wing1_Arch_0_1Recess",
+        "F01_Wing1_Arch_0_2Recess",
+        "F01_Wing1_Arch_1_1Recess",
+        "F01_Wing1_Arch_1_2Recess",
+        "F01_Wing1_Arch_2_1Recess",
+        "F01_Wing1_Arch_2_2Recess",
+        "F01_Wing1_Arch_3_1Recess",
+        "F01_Wing1_Arch_3_2Recess",
+        "F01_Wing1_Gallery_0_1Recess",
+        "F01_Wing1_Gallery_0_2Recess",
+        "F01_Wing1_Gallery_1_1Recess",
+        "F01_Wing1_Gallery_1_2Recess"
+      ],
+      "triangles": 184,
+      "collision": true,
+      "color": [
+        0.054999999701976776,
+        0.06400000303983688,
+        0.05999999865889549,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_020",
+      "material": "PhotoStudy_AsphaltApprox",
+      "reuse_material": "Surface_092",
+      "sources": [
+        "Core_Road_residential_W51561546",
+        "Core_Road_service_W407705339",
+        "Core_Road_service_W934416335",
+        "Core_Road_steps_W1308355819",
+        "Core_Road_steps_W99661181"
+      ],
+      "triangles": 564,
+      "collision": true,
+      "color": [
+        0.14000000059604645,
+        0.15000000596046448,
+        0.1599999964237213,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_021",
+      "material": "PhotoStudy_BlankBoard_NoAdvertising",
+      "reuse_material": null,
+      "sources": [
+        "Market_BlankSign_52_0",
+        "Market_BlankSign_52_1",
+        "Market_BlankSign_53_0",
+        "Market_BlankSign_53_1",
+        "Market_BlankSign_54_0",
+        "Market_BlankSign_54_1",
+        "Market_BlankSign_55_0",
+        "Market_BlankSign_55_1",
+        "Market_BlankSign_56_0",
+        "Market_BlankSign_56_1",
+        "Market_BlankSign_57_0",
+        "Market_BlankSign_57_1",
+        "Market_BlankSign_58_0",
+        "Market_BlankSign_58_1",
+        "Market_BlankSign_59_0",
+        "Market_BlankSign_59_1",
+        "Market_BlankSign_60_0",
+        "Market_BlankSign_61_0"
+      ],
+      "triangles": 216,
+      "collision": true,
+      "color": [
+        0.6399999856948853,
+        0.6200000047683716,
+        0.550000011920929,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_022",
+      "material": "PhotoStudy_ContextClay",
+      "reuse_material": "Surface_093",
+      "sources": [
+        "b_1303227328",
+        "b_1445968073",
+        "b_1445968075",
+        "b_1445968076",
+        "b_1445968077",
+        "b_525191979",
+        "b_525191980"
+      ],
+      "triangles": 132,
+      "collision": true,
+      "color": [
+        0.5600000023841858,
+        0.5699999928474426,
+        0.5600000023841858,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_023",
+      "material": "PhotoStudy_DarkGlazingApprox",
+      "reuse_material": null,
+      "sources": [
+        "Market_StoreBay_52_0",
+        "Market_StoreBay_53_0",
+        "Market_StoreBay_54_0",
+        "Market_StoreBay_55_0",
+        "Market_StoreBay_56_0",
+        "Market_StoreBay_57_0",
+        "Market_StoreBay_58_0",
+        "Market_StoreBay_59_0",
+        "Market_StoreBay_60_0",
+        "Market_StoreBay_61_0"
+      ],
+      "triangles": 120,
+      "collision": true,
+      "color": [
+        0.07000000029802322,
+        0.12999999523162842,
+        0.15000000596046448,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_024",
+      "material": "PhotoStudy_DeepOpeningApprox",
+      "reuse_material": "Surface_094",
+      "sources": [
+        "Market_GalleryInnerShadow_52",
+        "Market_GalleryInnerShadow_53",
+        "Market_GalleryInnerShadow_54",
+        "Market_GalleryInnerShadow_55",
+        "Market_GalleryInnerShadow_56",
+        "Market_GalleryInnerShadow_57",
+        "Market_GalleryInnerShadow_58",
+        "Market_GalleryInnerShadow_59",
+        "Market_GalleryInnerShadow_60",
+        "Market_GalleryInnerShadow_61",
+        "Market_GalleryRearOpeningBand",
+        "Market_RightJunctionReveal",
+        "Market_StoreBay_52_1",
+        "Market_StoreBay_53_1",
+        "Market_StoreBay_54_1",
+        "Market_StoreBay_55_1",
+        "Market_StoreBay_56_1",
+        "Market_StoreBay_57_1",
+        "Market_StoreBay_58_1",
+        "Market_StoreBay_59_1"
+      ],
+      "triangles": 240,
+      "collision": true,
+      "color": [
+        0.04500000178813934,
+        0.04699999839067459,
+        0.04399999976158142,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_025",
+      "material": "PhotoStudy_MarketLettersApprox",
+      "reuse_material": null,
+      "sources": [
+        "MarketPermanentName"
+      ],
+      "triangles": 3316,
+      "collision": true,
+      "color": [
+        0.44999998807907104,
+        0.05000000074505806,
+        0.03500000014901161,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_026",
+      "material": "PhotoStudy_MetalFrameApprox",
+      "reuse_material": null,
+      "sources": [
+        "Market_LocalThreshold_52_0",
+        "Market_LocalThreshold_52_1",
+        "Market_LocalThreshold_53_0",
+        "Market_LocalThreshold_53_1",
+        "Market_LocalThreshold_54_0",
+        "Market_LocalThreshold_54_1",
+        "Market_LocalThreshold_55_0",
+        "Market_LocalThreshold_55_1",
+        "Market_LocalThreshold_56_0",
+        "Market_LocalThreshold_56_1",
+        "Market_LocalThreshold_57_0",
+        "Market_LocalThreshold_57_1",
+        "Market_LocalThreshold_58_0",
+        "Market_LocalThreshold_58_1",
+        "Market_LocalThreshold_59_0",
+        "Market_LocalThreshold_59_1",
+        "Market_LocalThreshold_60_0",
+        "Market_LocalThreshold_61_0",
+        "Market_StoreMidrail_52_0",
+        "Market_StoreMidrail_52_1",
+        "Market_StoreMidrail_53_0",
+        "Market_StoreMidrail_53_1",
+        "Market_StoreMidrail_54_0",
+        "Market_StoreMidrail_54_1",
+        "Market_StoreMidrail_55_0",
+        "Market_StoreMidrail_55_1",
+        "Market_StoreMidrail_56_0",
+        "Market_StoreMidrail_56_1",
+        "Market_StoreMidrail_57_0",
+        "Market_StoreMidrail_57_1",
+        "Market_StoreMidrail_58_0",
+        "Market_StoreMidrail_58_1",
+        "Market_StoreMidrail_59_0",
+        "Market_StoreMidrail_59_1",
+        "Market_StoreMidrail_60_0",
+        "Market_StoreMidrail_61_0",
+        "Market_StoreVertical_52_0_1",
+        "Market_StoreVertical_52_0_2",
+        "Market_StoreVertical_52_0_3",
+        "Market_StoreVertical_52_1_1",
+        "Market_StoreVertical_52_1_2",
+        "Market_StoreVertical_52_1_3",
+        "Market_StoreVertical_53_0_1",
+        "Market_StoreVertical_53_0_2",
+        "Market_StoreVertical_53_0_3",
+        "Market_StoreVertical_53_1_1",
+        "Market_StoreVertical_53_1_2",
+        "Market_StoreVertical_53_1_3",
+        "Market_StoreVertical_54_0_1",
+        "Market_StoreVertical_54_0_2",
+        "Market_StoreVertical_54_0_3",
+        "Market_StoreVertical_54_1_1",
+        "Market_StoreVertical_54_1_2",
+        "Market_StoreVertical_54_1_3",
+        "Market_StoreVertical_55_0_1",
+        "Market_StoreVertical_55_0_2",
+        "Market_StoreVertical_55_0_3",
+        "Market_StoreVertical_55_1_1",
+        "Market_StoreVertical_55_1_2",
+        "Market_StoreVertical_55_1_3",
+        "Market_StoreVertical_56_0_1",
+        "Market_StoreVertical_56_0_2",
+        "Market_StoreVertical_56_0_3",
+        "Market_StoreVertical_56_1_1",
+        "Market_StoreVertical_56_1_2",
+        "Market_StoreVertical_56_1_3",
+        "Market_StoreVertical_57_0_1",
+        "Market_StoreVertical_57_0_2",
+        "Market_StoreVertical_57_0_3",
+        "Market_StoreVertical_57_1_1",
+        "Market_StoreVertical_57_1_2",
+        "Market_StoreVertical_57_1_3",
+        "Market_StoreVertical_58_0_1",
+        "Market_StoreVertical_58_0_2",
+        "Market_StoreVertical_58_0_3",
+        "Market_StoreVertical_58_1_1",
+        "Market_StoreVertical_58_1_2",
+        "Market_StoreVertical_58_1_3",
+        "Market_StoreVertical_59_0_1",
+        "Market_StoreVertical_59_0_2",
+        "Market_StoreVertical_59_0_3",
+        "Market_StoreVertical_59_1_1",
+        "Market_StoreVertical_59_1_2",
+        "Market_StoreVertical_59_1_3",
+        "Market_StoreVertical_60_0_1",
+        "Market_StoreVertical_60_0_2",
+        "Market_StoreVertical_60_0_3",
+        "Market_StoreVertical_61_0_1",
+        "Market_StoreVertical_61_0_2",
+        "Market_StoreVertical_61_0_3"
+      ],
+      "triangles": 1080,
+      "collision": true,
+      "color": [
+        0.27000001072883606,
+        0.28999999165534973,
+        0.28999999165534973,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_027",
+      "material": "PhotoStudy_OffWhiteApprox",
+      "reuse_material": null,
+      "sources": [
+        "Market_RetailJamb_52_0_0.08",
+        "Market_RetailJamb_52_0_2.29",
+        "Market_RetailJamb_52_1_2.45",
+        "Market_RetailJamb_52_1_4.66",
+        "Market_RetailJamb_53_0_0.08",
+        "Market_RetailJamb_53_0_2.30",
+        "Market_RetailJamb_53_1_2.46",
+        "Market_RetailJamb_53_1_4.68",
+        "Market_RetailJamb_54_0_0.08",
+        "Market_RetailJamb_54_0_2.21",
+        "Market_RetailJamb_54_1_2.37",
+        "Market_RetailJamb_54_1_4.50",
+        "Market_RetailJamb_55_0_0.08",
+        "Market_RetailJamb_55_0_1.97",
+        "Market_RetailJamb_55_1_2.13",
+        "Market_RetailJamb_55_1_4.01",
+        "Market_RetailJamb_56_0_0.08",
+        "Market_RetailJamb_56_0_2.51",
+        "Market_RetailJamb_56_1_2.67",
+        "Market_RetailJamb_56_1_5.09",
+        "Market_RetailJamb_57_0_0.08",
+        "Market_RetailJamb_57_0_2.20",
+        "Market_RetailJamb_57_1_2.36",
+        "Market_RetailJamb_57_1_4.48",
+        "Market_RetailJamb_58_0_0.08",
+        "Market_RetailJamb_58_0_2.50",
+        "Market_RetailJamb_58_1_2.66",
+        "Market_RetailJamb_58_1_5.07",
+        "Market_RetailJamb_59_0_0.08",
+        "Market_RetailJamb_59_0_2.01",
+        "Market_RetailJamb_59_1_2.17",
+        "Market_RetailJamb_59_1_4.09",
+        "Market_RetailJamb_60_0_0.08",
+        "Market_RetailJamb_60_0_2.88",
+        "Market_RetailJamb_61_0_0.08",
+        "Market_RetailJamb_61_0_2.60",
+        "Market_SignTopCornice_52",
+        "Market_SignTopCornice_53",
+        "Market_SignTopCornice_54",
+        "Market_SignTopCornice_55",
+        "Market_SignTopCornice_56",
+        "Market_SignTopCornice_57",
+        "Market_SignTopCornice_58",
+        "Market_SignTopCornice_59",
+        "Market_SignTopCornice_60",
+        "Market_SignTopCornice_61",
+        "Market_StoreLintel_52_0",
+        "Market_StoreLintel_52_1",
+        "Market_StoreLintel_53_0",
+        "Market_StoreLintel_53_1",
+        "Market_StoreLintel_54_0",
+        "Market_StoreLintel_54_1",
+        "Market_StoreLintel_55_0",
+        "Market_StoreLintel_55_1",
+        "Market_StoreLintel_56_0",
+        "Market_StoreLintel_56_1",
+        "Market_StoreLintel_57_0",
+        "Market_StoreLintel_57_1",
+        "Market_StoreLintel_58_0",
+        "Market_StoreLintel_58_1",
+        "Market_StoreLintel_59_0",
+        "Market_StoreLintel_59_1",
+        "Market_StoreLintel_60_0",
+        "Market_StoreLintel_61_0",
+        "r_4119185_outer_1",
+        "r_4119185_outer_2"
+      ],
+      "triangles": 898,
+      "collision": true,
+      "color": [
+        0.7300000190734863,
+        0.7300000190734863,
+        0.6899999976158142,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_028",
+      "material": "RoadSurface_residential",
+      "reuse_material": "Surface_110",
+      "sources": [
+        "V18_RENDER_Core_Road_residential_W125314010_Forecourt_NoCast",
+        "V18_RENDER_Core_Road_residential_W125314011_Forecourt_NoCast",
+        "V18_RENDER_Core_Road_residential_W125314011_Outside_KeepCast"
+      ],
+      "triangles": 2375,
+      "collision": true,
+      "color": [
+        0.1599999964237213,
+        0.17000000178813934,
+        0.18000000715255737,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Restored_029",
+      "material": "WALK29_Core_Terrain_UTM49N_Graded40m_0",
+      "reuse_material": "Surface_159",
+      "sources": [
+        "Core_Terrain_UTM49N_Graded40m"
+      ],
+      "triangles": 1732,
+      "collision": true,
+      "color": [
+        0.28999999165534973,
+        0.3100000023841858,
+        0.2800000011920929,
+        1.0
+      ]
+    }
+  ],
+  "method": "Restore missing evaluated source triangles; retain world coordinates and original object/generated/UV material coordinates; no source writes"
+}

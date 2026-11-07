@@ -1,0 +1,85 @@
+{
+  "source": "D:\\Game\\GameHorror\\Game\\Docs\\Reviews\\lake_gate_market_current\\ntmk_full_map_route_materials_v33.blend",
+  "source_sha256": "33464a3e30695270b590e628a484a6adc486b8a1fbbfea8029a93c6dad363b8e",
+  "source_unchanged": true,
+  "objects": [
+    {
+      "name": "b_361851710",
+      "triangles_added": 22,
+      "previously_partially_exported": true
+    },
+    {
+      "name": "b_525191979",
+      "triangles_added": 34,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "b_525191980",
+      "triangles_added": 2,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "b_1445968073",
+      "triangles_added": 6,
+      "previously_partially_exported": false
+    },
+    {
+      "name": "r_4119185_outer_1",
+      "triangles_added": 2,
+      "previously_partially_exported": false
+    }
+  ],
+  "meshes": [
+    {
+      "mesh": "Completed_000",
+      "material": "Building_Default_41_Review_Magenta",
+      "reuse_material": "Surface_002",
+      "sources": [
+        "b_361851710"
+      ],
+      "triangles": 22,
+      "collision": true,
+      "color": [
+        0.8899999856948853,
+        0.25,
+        0.5099999904632568,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Completed_001",
+      "material": "PhotoStudy_ContextClay",
+      "reuse_material": "Surface_093",
+      "sources": [
+        "b_1445968073",
+        "b_525191979",
+        "b_525191980"
+      ],
+      "triangles": 42,
+      "collision": true,
+      "color": [
+        0.5600000023841858,
+        0.5699999928474426,
+        0.5600000023841858,
+        1.0
+      ]
+    },
+    {
+      "mesh": "Completed_002",
+      "material": "PhotoStudy_OffWhiteApprox",
+      "reuse_material": null,
+      "sources": [
+        "r_4119185_outer_1"
+      ],
+      "triangles": 2,
+      "collision": true,
+      "color": [
+        0.7300000190734863,
+        0.7300000190734863,
+        0.6899999976158142,
+        1.0
+      ]
+    }
+  ],
+  "method": "Restore missing evaluated source triangles; retain world coordinates and original object/generated/UV material coordinates; no source writes"
+}

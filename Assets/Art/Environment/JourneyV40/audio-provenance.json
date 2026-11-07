@@ -1,0 +1,6 @@
+{
+  "creator": "Tools/prepare_audio_v40.py",
+  "source": "original deterministic synthesis",
+  "seed": 40,
+  "speech": false
+}

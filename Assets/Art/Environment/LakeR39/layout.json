@@ -1,0 +1,64 @@
+{
+  "source": "D:\\Game\\GameHorror\\Game\\Docs\\Reviews\\journey_v48\\r39\\lake-r39-overlook-source.blend",
+  "checkpoint": "D:\\Game\\GameHorror\\Game\\Docs\\Reviews\\lake_gate_market_current\\ntmk_full_map_ong_dao_v35.blend",
+  "removed_rail_parts": [
+    "OD35_Rail_Horizontal.135",
+    "OD35_Rail_Horizontal.136",
+    "OD35_Rail_Horizontal.137",
+    "OD35_Rail_Infill.225",
+    "OD35_Rail_Infill.226",
+    "OD35_Rail_Infill.227",
+    "OD35_Rail_Infill.228",
+    "OD35_Rail_Infill.229",
+    "OD35_Rail_Post.047",
+    "OD35_Rail_Horizontal.138",
+    "OD35_Rail_Horizontal.139",
+    "OD35_Rail_Horizontal.140",
+    "OD35_Rail_Infill.230",
+    "OD35_Rail_Infill.231",
+    "OD35_Rail_Infill.232",
+    "OD35_Rail_Infill.233",
+    "OD35_Rail_Infill.234"
+  ],
+  "entrance": [
+    660.8829345703125,
+    1.1399999856948853,
+    508.756591796875
+  ],
+  "along": [
+    -0.7634662389755249,
+    0.0,
+    0.645847737789154
+  ],
+  "waterward": [
+    -0.645847737789154,
+    0.0,
+    -0.7634662389755249
+  ],
+  "observer": [
+    654.6951904296875,
+    1.1399999856948853,
+    496.17755126953125
+  ],
+  "puppet": [
+    649.6270141601562,
+    1.1399999856948853,
+    499.9410095214844
+  ],
+  "bao": [
+    653.3711547851562,
+    1.1399999856948853,
+    494.6124572753906
+  ],
+  "rail_contact": [
+    653.1451416015625,
+    2.1599998474121094,
+    494.3452453613281
+  ],
+  "stem_width": 3.6,
+  "finger_width": 2.4,
+  "water_gap_width": 4.4,
+  "deck_height": 1.14,
+  "depth": 16,
+  "objects": 46
+}
