@@ -1,0 +1,9 @@
+UI navigation via synthetic keys/GameView clicks; letter seeded API in separate fixture profile.
+PASS Conclusions current page from actual navigation
+PASS Confirm and save conclusions through UI
+PASS All conclusion choices remain insufficient proof; no automatic culprit
+PASS F6 preserves conclusion choice, typed mapping and actual observations in fixture profile
+PASS Compare accessible from conclusion navigation
+PASS Compare relation entered and recorded through UI
+PASS F5 while comparing writes fixture profile
+PASS F6 restores comparison and recorded relation

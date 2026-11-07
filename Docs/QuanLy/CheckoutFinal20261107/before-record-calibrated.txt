@@ -1,0 +1,8 @@
+Synthetic GameView click + InputSystem keys; state assertions via read-only API.
+resolution=1920x1080 profile=C:\ConRoi_CheckoutTest\Test\PlaytestProfiles\Final_a789222_20261107_1740\InvestigationV36\r107\prototype.json
+PASS 1080p render dimensions
+PASS Start through intro button
+PASS F5 before first record, empty case saved only under private profile
+PASS P opens empty dossier
+PASS F6 restores pre-record page and empty evidence
+PASS load preserves saved spawn

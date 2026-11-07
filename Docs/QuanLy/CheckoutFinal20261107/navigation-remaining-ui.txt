@@ -1,0 +1,7 @@
+UI navigation via synthetic keys/GameView clicks; letter seeded API in separate fixture profile.
+P retry page=
+PASS Escape opens pause after cipher Back
+PASS Dossier accessible through pause button
+PASS Compare reached by dossier navigation
+PASS P returns after compare without text entry
+PASS Conclusions reached by dossier main action

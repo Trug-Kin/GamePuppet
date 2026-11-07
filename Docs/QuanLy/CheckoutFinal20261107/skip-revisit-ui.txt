@@ -1,0 +1,7 @@
+Skip revisit via synthetic keys; no evidence seeded or pages opened through API.
+PASS Skipped route has only viewed floor, no observations auto-recorded
+PASS R returns from skipped inspection
+PASS E revisits same floor through existing controller raycast
+PASS F5 saves unrecorded floor inspection under Skip profile
+PASS Existing viewed evidence remains accessible in dossier
+PASS F6 restores unrecorded inspection and skip state without awarding observations

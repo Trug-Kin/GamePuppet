@@ -1,0 +1,77 @@
+{
+  "utc": "2026-11-07T10:25:41.825880+00:00",
+  "checkout": "C:\\ConRoi_CheckoutTest",
+  "commit": "8ea91d4d64236f5d8507f216112997402d9b46f6",
+  "snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\BeforeSync_20261107_102541_948f58",
+  "bytes": 117627,
+  "files": [
+    {
+      "path": "Assets/HDRPDefaultResources.meta",
+      "snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\BeforeSync_20261107_102541_948f58\\Files\\Assets\\HDRPDefaultResources.meta",
+      "bytes": 172,
+      "sha256": "659393d2d10c30b0b87707a17fb3631d5abe03b0b3f2d4ae2ea622af5fdce34e"
+    },
+    {
+      "path": "Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset",
+      "snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\BeforeSync_20261107_102541_948f58\\Files\\Assets\\HDRPDefaultResources\\DefaultSettingsVolumeProfile.asset",
+      "bytes": 21067,
+      "sha256": "7b70632ae7a2526deb13983d0a2dd132878e642a3fcfd75a4bd064d1e7dcae0a"
+    },
+    {
+      "path": "Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset.meta",
+      "snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\BeforeSync_20261107_102541_948f58\\Files\\Assets\\HDRPDefaultResources\\DefaultSettingsVolumeProfile.asset.meta",
+      "bytes": 189,
+      "sha256": "979b34b2183bfd5638cc3e905c089a55390d72a42811b0dda5adc433b44486c7"
+    },
+    {
+      "path": "Assets/HDRPDefaultResources/HDRenderPipelineGlobalSettings.asset",
+      "snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\BeforeSync_20261107_102541_948f58\\Files\\Assets\\HDRPDefaultResources\\HDRenderPipelineGlobalSettings.asset",
+      "bytes": 57907,
+      "sha256": "31efecfd958dfd5039947175f6f25714159c7d4eb634b0190b3b72695c6fe496"
+    },
+    {
+      "path": "Assets/HDRPDefaultResources/HDRenderPipelineGlobalSettings.asset.meta",
+      "snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\BeforeSync_20261107_102541_948f58\\Files\\Assets\\HDRPDefaultResources\\HDRenderPipelineGlobalSettings.asset.meta",
+      "bytes": 189,
+      "sha256": "640ee4e15f405d42a9bdbba09eff83ff05edfbcef32f057b1d89152f6b901914"
+    },
+    {
+      "path": "Assets/Settings/UniversalRenderPipelineGlobalSettings.asset",
+      "snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\BeforeSync_20261107_102541_948f58\\Files\\Assets\\Settings\\UniversalRenderPipelineGlobalSettings.asset",
+      "bytes": 29234,
+      "sha256": "038489ddd03b6cf9ce53fd986e340251b92a4199b45480f73e5ecb506f6dae45"
+    },
+    {
+      "path": "Assets/_Recovery/0 (2).unity",
+      "snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\BeforeSync_20261107_102541_948f58\\Files\\Assets\\_Recovery\\0 (2).unity",
+      "bytes": 3539,
+      "sha256": "1e4d3517d23750d2470a70d35343e19f34e3cf209416bc0d169ab73601fc5044"
+    },
+    {
+      "path": "ProjectSettings/EditorBuildSettings.asset",
+      "snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\BeforeSync_20261107_102541_948f58\\Files\\ProjectSettings\\EditorBuildSettings.asset",
+      "bytes": 604,
+      "sha256": "61b81004081de287d300738d601bb2002379ac1d6f5f6c8c51f9e76675041106"
+    },
+    {
+      "path": "ProjectSettings/GraphicsSettings.asset",
+      "snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\BeforeSync_20261107_102541_948f58\\Files\\ProjectSettings\\GraphicsSettings.asset",
+      "bytes": 3134,
+      "sha256": "2964bcf23f232d27d1bb8a28ad060be915eedd4d50a9dede4d170c41c3051427"
+    },
+    {
+      "path": "ProjectSettings/ProjectAuditorSettings.asset",
+      "snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\BeforeSync_20261107_102541_948f58\\Files\\ProjectSettings\\ProjectAuditorSettings.asset",
+      "bytes": 1036,
+      "sha256": "9e68444b9bda981e2927a98df9edf69ea88362f0c6b7f3c81b39b9d515d2a416"
+    },
+    {
+      "path": "ProjectSettings/ShaderGraphSettings.asset",
+      "snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\BeforeSync_20261107_102541_948f58\\Files\\ProjectSettings\\ShaderGraphSettings.asset",
+      "bytes": 556,
+      "sha256": "cdba1e5d65bcf6e3269d76ed3e60b6c21f98322002996642c9d74f1eb89f6b91"
+    }
+  ],
+  "play_not_stopped": true,
+  "no_source_files_moved": true
+}

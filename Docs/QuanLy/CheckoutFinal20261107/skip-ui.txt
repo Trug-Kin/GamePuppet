@@ -1,0 +1,7 @@
+UI navigation via synthetic keys/GameView clicks; letter seeded API in separate fixture profile.
+PASS Fresh Play does not auto load previous technical save
+PASS Skip UI at 1080p
+PASS Skip button keeps case empty and grants no observations
+PASS F5 creates only new Skip profile
+PASS P works with empty skipped tutorial
+PASS F6 preserves skipped tutorial before first evidence

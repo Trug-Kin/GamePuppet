@@ -1,0 +1,3 @@
+Synthetic GameView mouse + InputSystem controller. Normal saved spawn; no teleport, API page open, evidence injection, or API Observe.
+E_RAY=phone distance=1.409121 p=(775.21, 8.97, 293.57)
+PASS phone reached and opened through E/raycast; records=2 objective=Xem đoạn quay sửa rối trong điện thoại.

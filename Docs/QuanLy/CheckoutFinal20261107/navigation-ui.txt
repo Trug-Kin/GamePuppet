@@ -1,0 +1,4 @@
+UI navigation via synthetic keys/GameView clicks; letter seeded API in separate fixture profile.
+PASS R leaves phone
+PASS P opens dossier with eligible navigation
+PASS Cipher reached by dossier button

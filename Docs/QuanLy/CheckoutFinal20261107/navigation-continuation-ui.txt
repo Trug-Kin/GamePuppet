@@ -1,0 +1,7 @@
+UI navigation via synthetic keys/GameView clicks; letter seeded API in separate fixture profile.
+PASS Cipher field accepts a typed letter through UI
+FAIL Back then P returns to dossier
+System.Exception: Back then P returns to dossier
+  at Unity.AI.Assistant.Agent.Dynamic.Extension.Editor.CommandScript+<>c__DisplayClass0_0.<Execute>b__0 (System.Boolean v, System.String m) [0x0002a] in <550f971edfb74e60960507f806324ee4>:0 
+  at Unity.AI.Assistant.Agent.Dynamic.Extension.Editor.CommandScript+<>c__DisplayClass0_0.<Execute>b__10 () [0x00028] in <550f971edfb74e60960507f806324ee4>:0 
+  at Unity.AI.Assistant.Agent.Dynamic.Extension.Editor.CommandScript+<>c__DisplayClass0_0.<Execute>b__22 () [0x00056] in <550f971edfb74e60960507f806324ee4>:0 

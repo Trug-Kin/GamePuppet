@@ -1,0 +1,164 @@
+[
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\reference-audit.txt",
+    "bytes": 503,
+    "sha256": "85bba8010de53b0452557fe5e15d0ecd3752d3a339733b764e35e85a897c3e77",
+    "in_git": true
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\before-record-calibrated.txt",
+    "bytes": 472,
+    "sha256": "0ef9af36b3a8c77ed4d8d76acc741cde0d3e9575e7179a617308d62691ea3051",
+    "in_git": true
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\onboarding-route.txt",
+    "bytes": 486,
+    "sha256": "78b50d5eff056e3d62da33144a6561990a0b8cddee2927497878fbe81d2dcd80",
+    "in_git": true
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\onboarding-ui-complete.txt",
+    "bytes": 558,
+    "sha256": "92d78517c53915080079bffedc0ba8f5f3800649a975a2c30a2abe7aa3428c3b",
+    "in_git": true
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\phone-route.txt",
+    "bytes": 313,
+    "sha256": "27b06c6d06c66dfef3fd95c25437ba98d9e944dc5945dc10ee86e642e25f0204",
+    "in_git": true
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\nav-fixture-disclosure.txt",
+    "bytes": 277,
+    "sha256": "d869c8b38a769e4bd773ad3a7191d9f6d66ccd99973b19e32717e44c9c9965f4",
+    "in_git": true
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\nav-setup.txt",
+    "bytes": 49,
+    "sha256": "7ac78b6f06833e5035726e44e8efdeef8e3a93dc11c3287d61855c2a36156ab4",
+    "in_git": true
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\navigation-ui.txt",
+    "bytes": 204,
+    "sha256": "403e54dbd401678517c755b7ce5f86036a66eb0d9aabc4f60017b0e2a0fdaa29",
+    "in_git": true
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\navigation-continuation-ui.txt",
+    "bytes": 749,
+    "sha256": "2b2a16ea61e09ce67664990e1e12d5f4dcb0b5de5460ba8116e280387504a6c8",
+    "in_git": true
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\navigation-remaining-ui.txt",
+    "bytes": 343,
+    "sha256": "fe01bd8bd2821aa05c3cc13e02f291afe3f440e51e93a987f58b855eca213bed",
+    "in_git": true
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\navigation-save-ui.txt",
+    "bytes": 575,
+    "sha256": "90895a9ebe87f71892b5179d34109017aa19d48ec9b2b578c79cdbbaae18e827",
+    "in_git": true
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\skip-ui.txt",
+    "bytes": 381,
+    "sha256": "c0b8122ff96626336535aa3c632abe994f825989c8968cceb0f9544f9a6a54e3",
+    "in_git": true
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\skip-route.txt",
+    "bytes": 483,
+    "sha256": "dd9dfdcfb29f39e7373b450af984b24cb7a5db63024e75d52d48cd4170360c64",
+    "in_git": true
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\skip-revisit-ui.txt",
+    "bytes": 466,
+    "sha256": "5e70607e0ba2947eeb6773431344f255b35f3e76a96079f7558eddf520fa3078",
+    "in_git": true
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\post-tests-close.txt",
+    "bytes": 72,
+    "sha256": "fd2bf5b62e7010b43d8426ef51ee3612a8297b93e48b97929d2cb9d76232510a",
+    "in_git": true
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\skip-intro-1080.png",
+    "bytes": 212912,
+    "sha256": "2021f2293741338412f6787496110a03d020eb8331d20113d3a8f6dd8e4c828e",
+    "in_git": false
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\first-inspection-720.png",
+    "bytes": 273147,
+    "sha256": "3a582567bffab5a56251dc03a47abee065fca90eaa059af8515b46b7fc82e516",
+    "in_git": false
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\first-floor-recorded.png",
+    "bytes": 308292,
+    "sha256": "5d19782871ae2e3196dc7fbbba14799f4299dfd8d6aeaa000e124ac2ebb9dc46",
+    "in_git": false
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\first-note-dossier.png",
+    "bytes": 251500,
+    "sha256": "2ed8418b0b8e6d03804c6ab61790540d22999ef5abf0a077a79d931ce071c32e",
+    "in_git": false
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\phone-inspection-1080.png",
+    "bytes": 248915,
+    "sha256": "087d4acf17ae3e989a99d2dda07af9f91c317ebf5c22aba37231294887618dc7",
+    "in_git": false
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\cipher-typed-1080.png",
+    "bytes": 259012,
+    "sha256": "477d1c0abe7633870afaf0562d38cac2297dd3f7b139abb93368da34976e8707",
+    "in_git": false
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\compare-selected-1080.png",
+    "bytes": 310880,
+    "sha256": "38455afd257f7a918503f5d76ee752bff2eb38435756eb8d86e982a6fb1c6929",
+    "in_git": false
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\conclusions-saved-1080.png",
+    "bytes": 292704,
+    "sha256": "19cdfc06e56be6c935ef2fd6b91dace1e6ed721a8429d9464b9ebd6e670faf75",
+    "in_git": false
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\compare-relation-1080.png",
+    "bytes": 328601,
+    "sha256": "af1ac12bd3c9a1bbfbd715bb8fb2f78889ad513c5cbfae1aabc7914fd892dab0",
+    "in_git": false
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\skip-revisited-load-1080.png",
+    "bytes": 274225,
+    "sha256": "4043eac22f0fabbbf8be4b5dd1ba0177253085f9aa0e3da9f01455d24ef560fa",
+    "in_git": false
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\post-tests-live.json",
+    "bytes": 1506,
+    "sha256": "a23e4954f460877aeac6f35363cce165fc8a522ca76471b3a8239b80d2d0064c",
+    "in_git": false
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\CleanCheckout\\pre-skip-stop-live.json",
+    "bytes": 1958,
+    "sha256": "7059d0b524dae6dbfb92b574b8921913d958c8e86d8c513feaadded1a69b3377",
+    "in_git": false
+  }
+]

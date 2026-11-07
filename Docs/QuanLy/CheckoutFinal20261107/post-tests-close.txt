@@ -1,0 +1,1 @@
+Play stopped after state/diff snapshot. No scene save. Edit clean; exit.

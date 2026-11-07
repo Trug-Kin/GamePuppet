@@ -1,0 +1,1 @@
+API fixture: letter acquired only to expose cipher navigation. Floor and phone previously acquired by controller/E; no API OpenPage/Observe/Save/Load. Separate profile=C:\ConRoi_CheckoutTest\Test\PlaytestProfiles\NavFixture_a789222_20261107\InvestigationV36\r107\prototype.json

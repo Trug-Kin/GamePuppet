@@ -1,3 +1,6 @@
+<!-- checkout-final-a789222-20261107 -->
+> Kết quả mới nhất: [kiểm a789222](CheckoutFinal20261107/README.md), Git/LFS/import/reference đạt; tổng thể BLOCKED_UI_REGRESSION (P sau nhập mật mã). Ba task branch giữ a209c0e, ownership không đổi; không push. Các trạng thái checkout cũ bên dưới là lịch sử.
+
 # Ownership — r107, ba người
 
 Không phát triển tính năng trong đợt chuẩn bị này. Module là ranh giới trách nhiệm, **chưa phải ba assembly/game độc lập**. Giữ đường dẫn legacy khi chưa đủ căn cứ move.

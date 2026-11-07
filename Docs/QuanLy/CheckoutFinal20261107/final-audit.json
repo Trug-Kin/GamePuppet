@@ -1,0 +1,31 @@
+{
+  "utc": "2026-11-07T10:57:40.687851+00:00",
+  "source_branch": "chore/prepare-r107",
+  "source_head_before_report_commit": "137ce0eb396557c77af8bb042ab5f3399cde5487",
+  "tested_commit": "a789222286f1a56db5b6cc21e1ffb5a0e7542be4",
+  "checkout": "C:\\ConRoi_CheckoutTest",
+  "unity": "6000.6.2f1",
+  "entry": "Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity",
+  "source_product_diff": [],
+  "checkout_tracked_status": "M ProjectSettings/EditorBuildSettings.asset\n M ProjectSettings/ProjectAuditorSettings.asset\n M ProjectSettings/QualitySettings.asset",
+  "meta_guid_compared": 11458,
+  "meta_guid_mismatch": [],
+  "recovery_sha256_after_import": "00eac743343893f614abbb6cbb1ddc286565d95f330e4913ced30345384a7939",
+  "original_archived_profile_sha256": "d53465c765207efc84979b30b8699d6bc5fa15bdb72c9b943955653fc924ed6f",
+  "unclassified_assets_files": 4183,
+  "task_branches": [
+    "work/map-asset-baseline a209c0e3b41a8b55e438aeabf1025b5ef6e7d940",
+    "work/runtime-contracts-baseline a209c0e3b41a8b55e438aeabf1025b5ef6e7d940",
+    "work/ui-onboarding-review a209c0e3b41a8b55e438aeabf1025b5ef6e7d940"
+  ],
+  "source_remotes": [],
+  "checkout_remotes": [],
+  "free_C": 34536083456,
+  "free_D": 1927393280,
+  "overall": "BLOCKED_UI_REGRESSION",
+  "newcomer": "NOT_RUN",
+  "independent_checkout_import": "PASS",
+  "ui_scope": "Synthetic controller/InputSystem + GameView/native mouse; letter-only API fixture for later navigation",
+  "library": "Originally created fresh at 8ea91d4; incremental import of a789222, never shared/copied from D",
+  "checkout_content_diff": []
+}
