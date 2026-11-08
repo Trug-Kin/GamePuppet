@@ -1,4 +1,6 @@
-# SAVE-REFERENCE-02 — audit hoàn tất, đề xuất chưa triển khai
+# SAVE-REFERENCE-02 — guard đã triển khai, audit gốc được giữ lại
+
+Kết quả triển khai mới nằm ở mục cuối. Phần audit ban đầu bên dưới ghi trạng thái trước khi được giao sửa, không phải trạng thái hiện tại.
 
 Gameplay & Dữ liệu, 08/11/2026. Base thực tế `810168d2`, nhánh `work/runtime-contracts-baseline`, worktree `C:/ConRoi_Nguoi2`. Không có nhiệm vụ runtime tiếp theo đã giao trong tiến độ/HANDOFF/hướng dẫn tích hợp đã đọc. Vì vậy gói lần này là **xác minh thiếu sót và đề xuất cụ thể**, chưa sửa gameplay hoặc guard.
 
@@ -61,3 +63,59 @@ Tool chỉ audit hiện trạng, không phải bộ acceptance sau sửa. Profil
 Hai trạng thái settings tự sinh (EditorBuildSettings/ProjectAuditorSettings, diff không có thay đổi nội dung) được copy/hash vào output ImportedChanges trước khi khôi phục riêng. Scene thử và scene tích hợp không đổi; runtime/guard gốc giữ nguyên hash. Không tác động map, save gốc, archive hoặc legacy chưa xác minh. Hai thư mục untracked có từ trước giữ nguyên, không stage. Không reset/push/merge/build/ZIP.
 
 Điểm dừng: audit có bằng chứng và task nhỏ có acceptance, **chờ review/giao triển khai SAVE-REFERENCE-02**; chưa có bản sửa runtime để tích hợp. Các điểm OPEN của [SAVE-VALIDATION-01](../SAVE-VALIDATION-01/README.md) giữ nguyên.
+
+
+## Triển khai được cho phép — từ audit 5b88f245
+
+Commit nguồn: **aee7d5592b082a20dc0c849160cd4c4120680011**. Hai file nguồn thay đổi: `Assets/Scripts/InvestigationV36R107/InvestigationSaveValidation.cs` và `Assets/ConRoi/Modules/Gameplay/Editor/SaveLoadContractChecks.cs`. Luồng Load/session, UI, schema, ID, GUID và scene không đổi. Kết quả audit gốc phía trên được giữ nguyên; phần này thay trạng thái “chờ giao triển khai”.
+
+### Quy tắc tham chiếu đã xác minh và guard thực tế
+
+`EvidenceRelation` hiện hành chỉ có `first`, `second`, `note`. Registry trỏ `InvestigationEvidence.cs` làm nguồn ID; mỗi đầu tham chiếu đã lưu phải có definition trong `InvestigationContent`. Không có relation loại khác hoặc một đầu tùy chọn trong cấu trúc này. `relations=[]` hợp lệ. `note` là chuỗi trình bày, không phải ID; null/rỗng không làm lookup thiếu definition và vẫn được Load nhận. API `AddRelation` của thao tác mới vẫn giữ yêu cầu note không trắng và hai mục đã thu; không sửa luật API này.
+
+Guard thêm đúng hai lookup definition trong vòng lặp relation sau kiểm null record; first/second lạ/rỗng/null bị từ chối qua TryValidate hiện có trước `data=incoming`. Lý do qua cơ chế Message hiện có: “Không tải: Liên hệ trong hồ sơ tham chiếu vật chứng không tồn tại.” Không thêm event/API lỗi mới hoặc validation thứ hai trong UI.
+
+Không áp thêm quy tắc hai đầu phải khác nhau, phải nằm trong evidence đã thu, note phải chắc chắn hoặc phải kết luận đúng. Các mẫu có definition nhưng chưa thu/cùng ID vẫn đọc được để không siết schema ngoài gói. `hook` được tra từ source definition thật dù registry văn bản chưa liệt kê; không thay ID hoặc sửa thay registry.
+
+### Kiểm fixture/API và hồi quy chịu ảnh hưởng
+
+Unity6000.6.2f1, Gameplay_ThuNghiem, profile mới `Test/PlaytestProfiles/SaveReference02_API_20261108`. [Kết quả](implemented-api-results.json): **54 ca, 0 lỗi**; đối chiếu tên cho thấy toàn bộ42 ca SAVE-VALIDATION-01 trước đó vẫn có và đạt. Chạy lại có căn cứ vì thay cùng validator.
+
+12 ca mới gồm sáu Load từ JSON với first/second lạ/rỗng/null và sáu Load/Save/Load hợp lệ: không relation, note chưa chắc, note rỗng, note null, ID definition chưa thu, hai đầu cùng ID. Helper từ chối kiểm data identity/toàn data, position/yaw/pitch/gate/page/pause/movement/look/actions/cursor/timeScale cùng bytes input và lý do lỗi; sau mỗi ca phục hồi file hợp lệ và Load được. Save thật từ baseline SAVE-VALIDATION-01 được đọc rồi tiếp tục Observe/Save/Load; source baseline không đổi. Đây là fixture/API có ghi dữ liệu thử, không phải tuyến tự nhiên.
+
+### Kiểm Load/UI qua profile riêng
+
+[Chi tiết UI](implemented-ui-results.json). GUI Editor chạy đúng commit nguồn, công cụ sandbox hiện có dựng môi trường tạm trong Play, controller và IMGUI thật. Không lưu scene. Tiến trình được tạo bằng input Windows tổng hợp: Bắt đầu → E/Ghi quan sát slide → D/E/Ghi quan sát shoeprint → P/Đối chiếu → chọn hai mục → nhập “can kiem them” → Ghi liên hệ → nút Trở lại → P → F5/F6. Không seed tiến trình hoặc mở trang bằng API.
+
+Bản hợp lệ `valid-ui.json` xuất phát từ thao tác trên. Mỗi mẫu lỗi chỉ sửa **bản sao file profile thử**, không sửa state đang chơi:
+
+| Mẫu/ngữ cảnh | Guard qua F6 | Kiểm tiếp và phục hồi |
+|---|---|---|
+| ID lạ ở first / world | Từ chối, mọi trường state so sánh và bytes file giữ nguyên | Ba chu kỳ P, lookup hồ sơ, E/R/Esc, W bị chặn trong modal, di chuyển/chuột, F6 hợp lệ và F5/F6 tiếp đạt |
+| ID lạ ở second / dossier | Như trên; hồ sơ tiếp tục dùng relation hợp lệ đang chơi | Cùng các kiểm điều khiển/phục hồi trên đạt |
+| first=null / pause | Từ chối, giữ cả pause/timeScale và bytes file | Phần điều khiển tiếp bị gián đoạn focus, chưa gộp thành PASS trọn ca; guard API null và phục hồi đã đạt riêng trong54 ca |
+
+Không có NullReferenceException/MissingReferenceException trong log GUI của đợt kiểm. Sau từ chối unknown endpoints, mở hồ sơ hiển thị title hai vật và note cũ, không đưa relation lỗi vào phiên. Các giá trị rỗng/null đủ sáu tổ hợp được kiểm Load/API; không tuyên bố cả sáu đều chạy UI.
+
+Một snapshot ngay sau nút Ghi liên hệ chưa có record nhưng readback tiếp có record và UI báo đã ghi; giữ cả hai thay vì gọi đó là lỗi gameplay. Ở ca null-first sau pause, P có lần không chuyển trong timeout. Khi kiểm lại, P mở hồ sơ được, nhưng trước phím tiếp theo script xác nhận foreground đổi từ Unity PID380 sang browser PID26204 và dừng gửi input. Focus mất đã xác nhận cho **lần kiểm lại này**; chưa đủ căn cứ gán cùng nguyên nhân cho lần P trước hoặc đóng điểm P-close cũ. UI-LOAD-FEEDBACK-01 vẫn OPEN: Message có lý do nhưng modal không hiện; không sửa UI ở gói này. 1080p và người mới NOT_RUN; Game captures thực1536×746.
+
+### Đánh giá lookup từ luồng khác
+
+Rà writer của dữ liệu r107: thao tác sản phẩm đi qua AddRelation, chỉ nhận ID đã có; Acquire chỉ nhận definition biết trước. Load được guard bảo vệ trước nhận data. Các ghi trực tiếp vào relations tìm được trong Gameplay là fixture/validator/audit, không phải producer gameplay mới. Chưa xác minh một luồng sản phẩm khác tạo relation thiếu đầu tham chiếu ngoài Load.
+
+`session.data` vẫn public/mutable: caller tương lai hoặc tool có thể bỏ qua AddRelation và làm data thiếu. Không biến data thành private, không refactor toàn hệ thống hoặc thêm null-check che lỗi ở DossierUI trong gói này. Contracts yêu cầu producer mới giữ invariant definition tồn tại, hoặc gửi task biên dữ liệu riêng trước sử dụng. Nếu UI/UX & Tích hợp muốn fallback khi dữ liệu bị sửa ngoài contract, review riêng cách hiện lỗi có nguồn; không thay guard bằng việc bỏ record âm thầm. Không có thay đổi UI để nhận trong commit nguồn.
+
+### Nhận gói
+
+Nhận chuỗi từ audit5b88f245 qua nguồn aee7d559 rồi commit báo cáo của đợt này; không chỉ nhận tài liệu hoặc tool. Các caller Load/F6 hiện có tự dùng guard, không wiring mới/migration. Không tuyên bố đã sửa toàn bộ dữ liệu save hoặc rollback exception binding sau validation. Các điểm OPEN SAVE-VALIDATION-01 giữ nguyên.
+
+
+### Chốt kiểm và bảo toàn
+
+Commit kiểm byte chính xác: **ea49025a** (chỉ đổi helper test). Kiểm cuối chạy đúng commit này, Unity6000.6.2f1/profile `SaveReference02_API_Final_20261108`: **54/54 đạt**. Guard hash không đổi so với commit aee7d559 đã chạy GUI; không chạy lại UI chỉ vì thay helper test. Trong lần cuối helper đọc bytes ngay trước/sau Load và so byte chính xác, bổ sung kiểm cursor/timeScale/actions; không chỉ so chuỗi JSON. Hai ca GUI unknown endpoints và bước từ chối null-first cũng so bytes trực tiếp.
+
+[Manifest triển khai](implementation-evidence-manifest.json) ghi hash source, log, snapshot/capture và fixture/profile tương ứng; kết quả gốc của các lần đầu được giữ local. Nhật ký xác nhận browser lấy focus được bảo toàn, không gửi thêm input sau phát hiện. Không có desktop dành riêng được xác nhận trong thời gian chốt nên dừng phần UI null bổ sung ở giới hạn đã nêu; không suy thành lỗi gameplay hoặc PASS trọn ca.
+
+Đã snapshot state/diff trước stop, sceneDirty=false, thoát đúng Unity phiên thử. Profile UI thử đang giữ bản null-first lỗi đã bị từ chối; bản hợp lệ tạo qua UI nằm ở `Test/Output/SaveReference02/UI_20261108/valid-ui.json`, không ghi đè tự động trong cleanup. Không dùng profile này làm New Game. State/ảnh đã giữ local; save gốc không bị chạm. Các settings tự sinh/line-ending EditorBuildSettings, ProjectAuditorSettings, QualitySettings đã copy/so hash trước khôi phục từng file; không commit chúng hoặc Library/profile/capture.
+
+Chuỗi bàn giao: gói SAVE-VALIDATION-01 đến810168d2 là tiền đề → audit5b88f245 → guard aee7d559 → helper kiểm byte ea49025a → commit báo cáo. Nhận cả chuỗi theo nhánh sau review, không chỉ cherry-pick tài liệu/test vào baseline thiếu lớp validator. Chưa push/merge.

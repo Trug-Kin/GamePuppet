@@ -72,3 +72,18 @@ Prompt nhận việc: “Trên work/runtime-contracts-baseline từ fcbb7e19, x�
 - Trạng thái: HOAN_TAT_AUDIT_CHO_REVIEW_DE_XUAT. Đề xuất SAVE-REFERENCE-02 chỉ chặn definition không tồn tại ở first/second của relation; chưa triển khai, chưa đổi contract runtime. [Báo cáo/acceptance/hash](../QA/Tasks/N2/SAVE-REFERENCE-02/README.md).
 - File thực đổi: RelationReferenceAudit.cs/meta mới; báo cáo/kết quả/manifest riêng, HOP_DONG_MODULE và tiến độ này. Runtime, save schema, IDs/GUID cũ và scene không đổi; không chạy lại42 ca vì không sửa validator. Giữ các điểm OPEN và bằng chứng SAVE-VALIDATION-01 tại810168d2.
 - Bàn giao UI/UX & Tích hợp: review đề xuất nhỏ và giao triển khai nếu thống nhất; không cần wiring hay nhận bản vá runtime trong gói audit. Tiếp theo khi được giao: kiểm đầu vào relation ở biên save và chạy acceptance Load/state/file/UI đã nêu; không mở rộng cốt truyện hoặc sửa UI.
+
+
+## Gameplay & Dữ liệu — SAVE-REFERENCE-02, triển khai được giao 08/11/2026
+
+- Xuất phát `5b88f245`, tracked sạch; worktree/nhánh không đổi. Người dùng cho phép triển khai acceptance audit, không reset hoặc sửa UI.
+- Quy tắc xác minh: relation đã lưu có first/second là ID definition thực từ InvestigationContent (registry dẫn source này); không có đầu tham chiếu tùy chọn. List relations rỗng hợp lệ. Note không phải reference, chấp nhận null/rỗng ở biên Load; AddRelation của thao tác mới vẫn yêu cầu note không trắng. Không thêm luật membership, cùng ID hoặc chấm nội dung.
+- File sẽ đổi: InvestigationSaveValidation.cs, kiểm SaveLoadContractChecks.cs trong Gameplay/Editor, báo cáo/contract/tiến độ riêng. Không đổi schema/ID/GUID cũ hoặc runtime UI.
+- Acceptance: sáu mẫu first/second lạ/rỗng/null bị Load từ chối trước thay state/file; các mẫu hợp lệ và save baseline tiếp tục đọc/lưu/tải. Chạy hồi quy SAVE-VALIDATION-01 vì đổi validator. Kiểm F6/UI bằng input tổng hợp ở profile sandbox mới, ghi rõ fixture và giới hạn. Các điểm OPEN SAVE-VALIDATION-01 giữ nguyên.
+- Trạng thái: DANG_THUC_HIEN; snapshot và log riêng Test/Output/SaveReference02, không ghi save gốc.
+
+- Kết quả chốt: nguồn guard `aee7d559`, helper so byte `ea49025a`; 54/54 fixture/API cuối đạt, gồm42 ca SAVE-VALIDATION-01 và12 ca relation. Sáu first/second lạ/rỗng/null bị từ chối có lý do, giữ state/file; save hợp lệ và baseline tiếp tục tải/lưu được. Không đổi schema/IDs/GUID hoặc UI.
+- UI/controller: relation hợp lệ tạo từ E/ghi/đối chiếu/nhập/Ghi liên hệ bằng input OS tổng hợp; F5/F6 đạt. Hai mẫu ID lạ nguồn/đích qua F6, state/bytes giữ, ba chu kỳP/lookup hồ sơ/E/R/Esc/modal/movement/mouse và phục hồiF5/F6 đạt. Null-first qua F6 giữ state/file; kiểm tiếp bị gián đoạn focus browser đã xác nhận, chưa PASS trọn phần thao tác tiếp của mẫu bổ sung. Không có NullReferenceException trong log GUI. Các điểm P/1080p/người mới/thông báo modal của SAVE-VALIDATION-01 giữ OPEN/NOT_RUN, không tự nhận UI.
+- Đánh giá luồng khác: runtime r107 có AddRelation và Load; producer thao tác giữ ID hợp lệ, Load có guard. data vẫn public mutable; caller mới phải giữ invariant, chưa có producer sản phẩm khác được xác minh cần vá. Không thêm null-check UI che lỗi hoặc refactor session partial.
+- Trạng thái: PHAN_SUA_VA_KIEM_CHINH_DAT_CHO_REVIEW; giữ giới hạn UI null bị gián đoạn. [Báo cáo, source/harness commit và manifest](../QA/Tasks/N2/SAVE-REFERENCE-02/README.md). Nhận toàn bộ chuỗi sau SAVE-VALIDATION-01/audit, không wiring/migration mới. Bàn giao UI/UX & Tích hợp review và giữ các yêu cầu UI riêng.
+- Phiên Editor đã đóng sau snapshot, scene không dirty; settings tự sinh được bảo toàn trước khôi phục riêng. Log/capture/profile local không stage, runtime chỉ đổi validator. Chưa push/merge, không sửa map/scene tích hợp/save gốc hoặc legacy.

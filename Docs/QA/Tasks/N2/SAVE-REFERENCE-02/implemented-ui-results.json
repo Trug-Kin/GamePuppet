@@ -1,0 +1,68 @@
+{
+  "sourceCommit": "aee7d5592b082a20dc0c849160cd4c4120680011",
+  "method": "GUI_EDITOR_OS_SYNTHESIZED_KEYBOARD_MOUSE_REAL_CONTROLLER_AND_IMGUI_ENVIRONMENT_FIXTURE_ONLY",
+  "profile": "Test/PlaytestProfiles/SaveReference02_UI_20261108",
+  "gameCapture": [
+    1536,
+    746
+  ],
+  "validRelationCreatedViaUI": true,
+  "cases": [
+    {
+      "case": "unknown-first",
+      "context": "world",
+      "statePreserved": true,
+      "differences": {},
+      "fileUnchanged": true,
+      "sha256": "ee781993fd05417ac4adea055149df2fe295d7e0f9e0a77bf2d1bd2375fd2319",
+      "message": "Không tải: Liên hệ trong hồ sơ tham chiếu vật chứng không tồn tại.",
+      "PRepeatedCycles": 3,
+      "dossierLookup": true,
+      "Econtext": true,
+      "Rclose": true,
+      "EscPauseResume": true,
+      "modalMovementBlocked": true,
+      "worldMovement": true,
+      "mouseLook": true,
+      "validRecovery": true,
+      "F5F6Continues": true
+    },
+    {
+      "case": "unknown-second",
+      "context": "dossier",
+      "statePreserved": true,
+      "differences": {},
+      "fileUnchanged": true,
+      "sha256": "a46b5acbad3366aa60d278cc06fe39a26e8f951f452f98a61972fdf2af20826a",
+      "message": "Không tải: Liên hệ trong hồ sơ tham chiếu vật chứng không tồn tại.",
+      "PRepeatedCycles": 3,
+      "dossierLookup": true,
+      "Econtext": true,
+      "Rclose": true,
+      "EscPauseResume": true,
+      "modalMovementBlocked": true,
+      "worldMovement": true,
+      "mouseLook": true,
+      "validRecovery": true,
+      "F5F6Continues": true
+    },
+    {
+      "case": "null-first",
+      "context": "pause",
+      "statePreserved": true,
+      "differences": {},
+      "fileUnchanged": true,
+      "sha256": "b04129d1ef5ae5ec8155d229018513386394c7891ffa0fed38948da109c16f94",
+      "message": "Không tải: Liên hệ trong hồ sơ tham chiếu vật chứng không tồn tại."
+    }
+  ],
+  "status": "TWO_UNKNOWN_ENDPOINT_UI_FLOWS_PASS_NULL_FOLLOWUP_INTERRUPTED_BY_FOREGROUND_CHANGE",
+  "limits": [
+    "Browser PID26204 took foreground from Unity PID380 during null-first control recheck; stopped before next input.",
+    "Initial P-open timeout after pause has no established cause; do not close existing P issue.",
+    "No newcomer playtest, natural workshop route or 1080p claim.",
+    "UI-LOAD-FEEDBACK-01 remains OPEN; no UI edits."
+  ],
+  "guardSha256": "b05b72a9866a905dd495257797f4136ff045ba983a4b4665bd212af9ad7e64c0",
+  "finalApiHarnessCommit": "ea49025a06b9e5497c545aa3193562a1758c13f0"
+}

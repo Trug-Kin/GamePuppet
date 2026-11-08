@@ -66,3 +66,10 @@ Baseline tái hiện 2 lỗi/16 ca; sau sửa 42 ca/0 lỗi bằng fixture/API. 
 Audit trên base810168d2 xác minh validator hiện hành nhận relation có first/second không tồn tại, dù lookup definition `.title` tương ứng phát sinh NullReferenceException. Hai mẫu đối chứng không có relation/relation hợp lệ đạt. Đây là kiểm serialize/parse + validator/lookup API, không phải Load/UI đã chạy. [Bằng chứng, phạm vi và acceptance đề xuất](../QA/Tasks/N2/SAVE-REFERENCE-02/README.md).
 
 Đề xuất Gameplay & Dữ liệu bổ sung guard definition tồn tại cho hai đầu relation trước nhận save, giữ schema1/namespace/ID và note tự do. Chờ UI/UX & Tích hợp review/giao thực hiện; chưa có API hoặc hành vi runtime mới. Không tự thêm luật membership/đánh giá suy luận, không thay phần hiển thị lỗi UI-LOAD-FEEDBACK-01; toàn bộ session partial tiếp tục cùng chủ Gameplay & Dữ liệu.
+
+
+### SAVE-REFERENCE-02 — contract Load đã triển khai tại aee7d559
+
+Theo yêu cầu triển khai sau audit5b88f245, TryValidate nay yêu cầu **cả first và second của mỗi EvidenceRelation có definition trong InvestigationContent**. Rỗng/null/ID lạ không có definition nên bị từ chối trước gán state. List relations rỗng hợp lệ; note không là reference, Load vẫn nhận null/rỗng. Không thêm luật membership, hai ID phải khác hoặc chấm nội dung. AddRelation của thao tác mới không đổi điều kiện; schema1/namespace/ID/GUID và chữ ký API không đổi. Message trả lý do theo cơ chế hiện hành, không sự kiện/UI validation mới.
+
+Runtime producer hiện có AddRelation/Acquire giữ invariant; Load được guard. data vẫn public/mutable, producer/tool mới không được tự đưa đầu relation thiếu definition vào phiên rồi dựa UI null-check. Chưa phát hiện producer sản phẩm khác cần vá trong phạm vi rà, không đổi UI. [Kết quả và giới hạn UI/API](../QA/Tasks/N2/SAVE-REFERENCE-02/README.md). Phần đề xuất/audit ở trên giữ để tra lịch sử, đã được yêu cầu triển khai này thay trạng thái.
