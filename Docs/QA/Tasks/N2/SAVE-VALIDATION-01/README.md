@@ -112,3 +112,8 @@ Muốn kiểm lại: dùng checkout thử không có Editor khác đang ghi, pro
 Cuối phiên đã snapshot state/diff trước stop, scene dirty=false, thoát đúng Editor do tác vụ mở. ProjectAuditorSettings tự sinh và hai trạng thái line-ending EditorBuildSettings/QualitySettings sau quit đã được copy/hash vào output ImportedChanges rồi khôi phục riêng; không commit settings/cache/profile/capture. Dữ liệu gốc, legacy và thay đổi ngoài phạm vi giữ nguyên. Không push/merge/build/ZIP.
 
 Compile công cụ controller đạt (Tundra build success trong log); không có error CS, NullReferenceException hoặc MissingReferenceException trong log phiên này. Template và fixture không có bằng chứng thay thế việc audit reference scene tích hợp.
+
+
+## Liên kết bàn giao gộp
+
+Chuỗi commit đầy đủ, vai trò nguồn/công cụ/tài liệu và các trạng thái OPEN/NOT_RUN riêng được liệt kê ở [bàn giao gộp SAVE-VALIDATION-01 + SAVE-REFERENCE-02](../SAVE-REFERENCE-02/README.md#bàn-giao-gộp-save-validation-01-và-save-reference-02). Giữ nguyên bằng chứng và giới hạn của báo cáo này; không lấy kết quả gói sau làm playtest người mới hoặc tự đóng UI-LOAD-FEEDBACK-01/P-close.

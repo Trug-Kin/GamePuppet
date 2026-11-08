@@ -87,3 +87,12 @@ Prompt nhận việc: “Trên work/runtime-contracts-baseline từ fcbb7e19, x�
 - Đánh giá luồng khác: runtime r107 có AddRelation và Load; producer thao tác giữ ID hợp lệ, Load có guard. data vẫn public mutable; caller mới phải giữ invariant, chưa có producer sản phẩm khác được xác minh cần vá. Không thêm null-check UI che lỗi hoặc refactor session partial.
 - Trạng thái: PHAN_SUA_VA_KIEM_CHINH_DAT_CHO_REVIEW; giữ giới hạn UI null bị gián đoạn. [Báo cáo, source/harness commit và manifest](../QA/Tasks/N2/SAVE-REFERENCE-02/README.md). Nhận toàn bộ chuỗi sau SAVE-VALIDATION-01/audit, không wiring/migration mới. Bàn giao UI/UX & Tích hợp review và giữ các yêu cầu UI riêng.
 - Phiên Editor đã đóng sau snapshot, scene không dirty; settings tự sinh được bảo toàn trước khôi phục riêng. Log/capture/profile local không stage, runtime chỉ đổi validator. Chưa push/merge, không sửa map/scene tích hợp/save gốc hoặc legacy.
+
+
+## Gameplay & Dữ liệu — hoàn tất UI null từ abd0ea7e
+
+- Nhánh/worktree và HEAD xác nhận đúng; tracked sạch lúc bắt đầu, hai thư mục untracked giữ nguyên. Hash nguồn khớp, không sửa runtime, không chạy lại54 ca.
+- Đã mở GUI Unity6000.6.2f1, Gameplay_ThuNghiem, profile NullCompletion mới riêng. Lượt chưa bắt đầu Load: trước phím/chuột scripted đầu tiên, intro đã rời và có tiến trình ngoài script chưa rõ nguồn. Đánh dấu INTERRUPTED_PRECONDITION_UNKNOWN_INPUT, không PASS null hoặc FAIL gameplay.
+- Đã bảo toàn snapshot Game/state/Git diff/status/log copy; không ghi SavePath hoặc dừng Play/đóng Editor/discard state chưa xác định. Đang chờ xác nhận phiên đang được dùng và desktop dành riêng. Không thay thời gian chờ bằng câu trả lời. Các settings tự sinh chưa restore khi Editor còn live.
+- Đã hoàn tất bảng bàn giao gộp trong [báo cáo SAVE-REFERENCE-02](../QA/Tasks/N2/SAVE-REFERENCE-02/README.md), đủ baseline0d878e3b, nguồn546833aa/aee7d559, công cụ/meta/kiểmbb88d4cc/5b88f245/ea49025a và tài liệu57dcbb03/810168d2/abd0ea7e; tất cả ancestor đã kiểm. SAVE-VALIDATION-01 có liên kết tới bảng này.
+- Còn thiếu: chạy Load null và toàn bộ phần thao tác/phục hồi của lượt mới khi phiên kiểm an toàn. Giữ giới hạn lượt cũ, UI-LOAD-FEEDBACK-01/P-close OPEN; UI1080p và người mới NOT_RUN. Không push/merge, không sửa UI/map/scene tích hợp/save gốc.

@@ -119,3 +119,45 @@ Commit kiểm byte chính xác: **ea49025a** (chỉ đổi helper test). Kiểm 
 Đã snapshot state/diff trước stop, sceneDirty=false, thoát đúng Unity phiên thử. Profile UI thử đang giữ bản null-first lỗi đã bị từ chối; bản hợp lệ tạo qua UI nằm ở `Test/Output/SaveReference02/UI_20261108/valid-ui.json`, không ghi đè tự động trong cleanup. Không dùng profile này làm New Game. State/ảnh đã giữ local; save gốc không bị chạm. Các settings tự sinh/line-ending EditorBuildSettings, ProjectAuditorSettings, QualitySettings đã copy/so hash trước khôi phục từng file; không commit chúng hoặc Library/profile/capture.
 
 Chuỗi bàn giao: gói SAVE-VALIDATION-01 đến810168d2 là tiền đề → audit5b88f245 → guard aee7d559 → helper kiểm byte ea49025a → commit báo cáo. Nhận cả chuỗi theo nhánh sau review, không chỉ cherry-pick tài liệu/test vào baseline thiếu lớp validator. Chưa push/merge.
+
+
+## Bàn giao gộp SAVE-VALIDATION-01 và SAVE-REFERENCE-02
+
+Nhánh `work/runtime-contracts-baseline`; thứ tự phụ thuộc dưới đây đã kiểm bằng Git, tất cả đều là ancestor của abd0ea7e. Chưa push/merge. Nhận chuỗi sau review từ baseline chung, không chỉ nhận commit báo cáo hoặc hai commit test cuối. Không cần wiring scene mới; Load/F6 hiện có đi qua validator.
+
+| Thứ tự | Commit đầy đủ | Vai trò trong gói |
+|---|---|---|
+| 1 | `0d878e3b7163c4d50e3976cd5c46118403b19240` | Baseline nhóm, runtime/scene/contracts tiền đề; không reset nhánh có tiến độ mới |
+| 2 | `546833aace5f59c0c98349ebe0fb7cd33cbe5df0` | SAVE-VALIDATION-01: guard cấu trúc/observation + fixture/meta ban đầu |
+| 3 | `57dcbb038223b7d9b7fa59548f43cd77a1a96a13` | SAVE-VALIDATION-01: contracts/tiến độ và42 ca fixture/API |
+| 4 | `bb88d4cc97ad78427320d03a64f0f49f4050857b` | Sandbox Editor controller/UI và meta, không seed tiến trình |
+| 5 | `810168d2cc3dea11434b20055226476f19120ae0` | SAVE-VALIDATION-01: kiểm UI/controller và yêu cầu UI còn OPEN |
+| 6 | `5b88f2457beaadb404b7a2f6701988ad5f17b43e` | SAVE-REFERENCE-02: audit tái hiện reference thiếu + tool/meta/acceptance |
+| 7 | `aee7d5592b082a20dc0c849160cd4c4120680011` | SAVE-REFERENCE-02: guard definition first/second +12 ca acceptance bổ sung |
+| 8 | `ea49025a06b9e5497c545aa3193562a1758c13f0` | Helper kiểm bytes chính xác;54 ca gồm42 cũ và12 mới |
+| 9 | `abd0ea7ef10ff0ac226eb3f3ed2b29c4456d19ac` | SAVE-REFERENCE-02: kết quả/giới hạn UI, contracts và manifest |
+
+Bản vá runtime chỉ ở InvestigationSaveValidation.cs (luồng Load trong Session.cs đã dùng từ SAVE-VALIDATION-01). Bộ kiểm tại Gameplay/Editor: SaveLoadContractChecks.cs, SaveGuardControllerChecks.cs, RelationReferenceAudit.cs và meta hiện có. Các source/test commit và docs đều cần được review; không tự cập nhật các nhánh khác hoặc scene tích hợp trong đợt kiểm này.
+
+| Hạng mục độc lập | Trạng thái giữ riêng |
+|---|---|
+| Guard/API và hồi quy có căn cứ |42 ca SAVE-VALIDATION-01;54 ca sau SAVE-REFERENCE-02 đã đạt theo báo cáo trước, không chạy lại trong đợt chỉ kiểm UI này |
+| UI hiển thị lý do Load trong hồ sơ/pause | OPEN, UI-LOAD-FEEDBACK-01; Message đã có, không nhân đôi validation UI |
+| P-close sau mật mã/pause | OPEN cho kiểm tích hợp; các chu kỳ lặp đạt không tự xác định nguyên nhân lần bất thường trước |
+| UI1080p | NOT_RUN trong các đợt này; Game captures1536×746 không thay thế kiểm1080p |
+| Người chơi mới | NOT_RUN; fixture và input tổng hợp không thay người chơi |
+
+Kết quả lượt hoàn tất UI null mới phải đọc cùng các trạng thái này; không dùng một ca guard đạt để đóng tất cả vấn đề. Báo cáo bổ sung sẽ giữ rõ lượt gián đoạn và phần thực sự chạy.
+
+
+## Lượt hoàn tất UI null từ abd0ea7e — gián đoạn trước kiểm
+
+Checkout đã xác nhận `abd0ea7ef10ff0ac226eb3f3ed2b29c4456d19ac`; hash source guard/công cụ khớp manifest trước. Không sửa runtime và không chạy lại54 ca API. Mở đúng Gameplay_ThuNghiem bằng Unity6000.6.2f1, profile mới `Test/PlaytestProfiles/SaveReference02_NullCompletion_20261108`, output `Test/Output/SaveReference02/NullCompletion_20261108`.
+
+**INTERRUPTED_PRECONDITION_UNKNOWN_INPUT; ca Load null mới NOT_RUN.** Khi script mới lấy focus và chờ intro, state đã rời intro, có shoeprint/slide và quan sát slide, đang ở dossier; chưa có scripted key/click/mouse-relative nào. Nguồn input/thay đổi chưa xác định. Không suy intro tự đổi là lỗi gameplay, không tính kết quả null đã đạt hoặc kết luận FAIL gameplay. Lượt kiểm trước tại abd0ea7e và giới hạn còn thiếu của nó giữ nguyên.
+
+Đã lưu snapshot Game/state, Git status/diff và log copy ở output trước mọi bước tiếp. Chưa gọi F6, chưa ghi file SavePath, chưa dừng Play hoặc đóng Editor có live state chưa rõ nguồn. Phiên PID23308 được để nguyên chờ xác nhận đang có ai dùng và dành riêng desktop; không ghi đè/discard runtime progress. Các trạng thái ProjectSettings tự sinh hiện có cũng giữ nguyên, không khôi phục trong lúc Editor còn chạy. Không lấy thời gian chờ làm câu trả lời cho phép.
+
+[Kết quả lượt gián đoạn](null-completion-results.json) và [manifest snapshot/log copy](null-completion-evidence-manifest.json). Profile dự kiến nhận bản sao save tạo qua UI ở đợt trước, không phải New Game tự nhiên; chưa nạp fixture vì điều kiện trước kiểm không đạt. Người mới/1080p vẫn NOT_RUN, UI-LOAD-FEEDBACK-01 và P-close vẫn OPEN riêng.
+
+Việc còn thiếu không đổi: với phiên được dành cho kiểm, F6 từ chối `first=null` (và kiểm riêng record relation=null nếu dùng mẫu đó), so state/bytes → P/E/Esc/modal/movement → F6 hợp lệ → tiếp tục chơi/F5/F6. Chỉ ghi PASS khi cả đoạn đã thực hiện; các lượt mất focus/tiến trình ngoài script phải được giữ như lượt gián đoạn. Bảng bàn giao gộp ở trên đã hoàn tất độc lập với ca UI đang chờ.
