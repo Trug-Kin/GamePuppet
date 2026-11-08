@@ -231,7 +231,7 @@ namespace ConRoi.Investigation.V36.R107
         public void Save()
         {
             try{data.position=movement.transform.position;data.yaw=movement.transform.eulerAngles.y;data.pitch=eye.transform.localEulerAngles.x;data.gate=JsonUtility.FromJson<GateState>(JsonUtility.ToJson(gate.state));data.page=Page;data.inspecting=inspectId;
-                Directory.CreateDirectory(Path.GetDirectoryName(SavePath));string temp=SavePath+".tmp";File.WriteAllText(temp,JsonUtility.ToJson(data,true));File.Copy(temp,SavePath,true);File.Delete(temp);Message="Đã lưu hồ sơ prototype riêng.";
+                InvestigationSaveFile.Write(SavePath,JsonUtility.ToJson(data,true));Message="Đã lưu hồ sơ prototype riêng.";
             }catch(Exception e){Message="Không lưu được: "+e.Message;}
         }
         public bool Load()
