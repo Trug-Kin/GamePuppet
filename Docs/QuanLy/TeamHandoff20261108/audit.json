@@ -1,0 +1,47 @@
+{
+  "utc": "2026-11-08T04:09:47.531675+00:00",
+  "baseline": "fcbb7e19c094a2a52d99237d03587df16679d579",
+  "head_before_documentation": "55d7f04cc62089ec576efbd2b55d4192aa70f2e5",
+  "branch": "chore/prepare-r107",
+  "tracked_status": "",
+  "remote_names_only": [],
+  "worktrees": "worktree D:/ConRoi\nHEAD 55d7f04cc62089ec576efbd2b55d4192aa70f2e5\nbranch refs/heads/chore/prepare-r107",
+  "stash_commits": [],
+  "tasks": {
+    "work/map-asset-baseline": {
+      "commit": "fcbb7e19c094a2a52d99237d03587df16679d579",
+      "baseline_missing_commits": 0,
+      "private_commits": 0
+    },
+    "work/runtime-contracts-baseline": {
+      "commit": "fcbb7e19c094a2a52d99237d03587df16679d579",
+      "baseline_missing_commits": 0,
+      "private_commits": 0
+    },
+    "work/ui-onboarding-review": {
+      "commit": "fcbb7e19c094a2a52d99237d03587df16679d579",
+      "baseline_missing_commits": 0,
+      "private_commits": 0
+    }
+  },
+  "untracked_assets_held": 4183,
+  "ignored_but_tracked": [],
+  "product_diff_from_tested_source": [],
+  "lfs": {
+    "files": 879,
+    "unique_objects": 797,
+    "unique_bytes": 6143855590,
+    "object_size_or_materialization_errors": [],
+    "hash_audit_reused": "NavFix20261108/audit.json",
+    "current_check": "object existence/size and working-file size/pointer; no repeated full hash audit"
+  },
+  "largest_regular_history_blob_bytes": 46173387,
+  "regular_history_blobs_over_100MiB": [],
+  "publish_candidates_only": [
+    "chore/prepare-r107",
+    "work/map-asset-baseline",
+    "work/runtime-contracts-baseline",
+    "work/ui-onboarding-review"
+  ],
+  "mutations": "No refs, stash, assets, archives or profiles changed; no remote/push."
+}

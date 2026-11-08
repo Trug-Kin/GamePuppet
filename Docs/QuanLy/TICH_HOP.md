@@ -1,3 +1,17 @@
+# Chốt nhận việc 08/11/2026 — fcbb7e19 / biên nhận 55d7f04
+
+Kết quả hiện hành: [bàn giao nhóm](TeamHandoff20261108/README.md), [audit Git/LFS](TeamHandoff20261108/audit.json).
+Ba nhánh task đều chứa baseline fcbb7e19, không có commit riêng tại lúc kiểm; không đổi ref trong đợt này. Những thông báo BLOCKED/a209c0e phía dưới thuộc lịch sử, đã được biên nhận NAV-01 thay thế.
+
+## Quy trình hiện hành
+
+1. Nhận đúng nhánh trong DANG_LAM_NGUOI_1/2/3; ghi HEAD/file dự định chạm trước sửa. Nhóm bắt đầu từ fcbb7e19, không phải a209c0e.
+2. Mỗi người dùng checkout riêng. N1/N2 dùng scene thử và đề nghị wiring; chỉ N3 sửa `Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity`.
+3. Thứ tự đầu: N1 triage topology/góc ảnh; N2 xác minh hợp đồng/GDD và chọn task nhỏ có review; N3 tổ chức người mới chơi trước mở rộng onboarding. Có thể làm song song ở file đã giao riêng.
+4. Bàn giao commit + diff/file/GUID + ca kiểm chịu ảnh hưởng + giới hạn. N2 review runtime/contract; N3 review luồng/nội dung và tích hợp lên chore/prepare-r107. Không tự cherry-pick scene khác đè scene chính hoặc force/reset nhánh có việc riêng.
+5. Docs điều phối mới nằm trên nhánh chore; task branch vẫn fcbb7e19. Trước bắt đầu sửa, từng người bảo toàn working tree rồi merge commit tài liệu chốt từ chore bằng Git (sau khi nhận ref đã publish hoặc từ repo local được phép). Không copy bù asset untracked. Không force cập nhật ba nhánh chỉ để nhận docs.
+6. Không lặp toàn bộ kiểm Unity đã PASS nếu không thay sản phẩm. Sau thay đổi, compile và kiểm đúng luồng chịu ảnh hưởng; ghi fixture/API riêng. Người mới chưa chạy giữ NOT_RUN.
+
 <!-- nav01-fixed-20261108 -->
 > 08/11: [NAV-01 kiểm đạt trên nguồn 074caf3](NavFix20261108/README.md). Lấy baseline nhánh/task và commit báo cáo thực tế từ HANDOFF/biên nhận mới nhất; trạng thái BLOCKED cũ là lịch sử. Ownership/CHUA_NHAN giữ nguyên, người mới NOT_RUN; không push.
 

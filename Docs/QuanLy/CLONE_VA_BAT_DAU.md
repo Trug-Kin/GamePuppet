@@ -1,3 +1,14 @@
+# Chốt nhận việc 08/11/2026 — fcbb7e19 / biên nhận 55d7f04
+
+Kết quả hiện hành: [bàn giao nhóm](TeamHandoff20261108/README.md), [audit Git/LFS](TeamHandoff20261108/audit.json).
+Ba nhánh task đều chứa baseline fcbb7e19, không có commit riêng tại lúc kiểm; không đổi ref trong đợt này. Những thông báo BLOCKED/a209c0e phía dưới thuộc lịch sử, đã được biên nhận NAV-01 thay thế.
+
+## Chọn đúng nhánh sau khi remote được duyệt và publish
+
+Trong clone riêng dùng `git switch --track origin/work/map-asset-baseline` (N1), `origin/work/runtime-contracts-baseline` (N2), hoặc `origin/work/ui-onboarding-review` (N3); nếu nhánh local đã có thì switch nhánh đó và kiểm HEAD, không tạo đè. Nhận commit tài liệu từ `origin/chore/prepare-r107` bằng merge sau khi bảo toàn việc riêng. Hướng dẫn task: [N1](DANG_LAM_NGUOI_1.md), [N2](DANG_LAM_NGUOI_2.md), [N3](DANG_LAM_NGUOI_3.md).
+
+Chưa có remote nên các lệnh clone/pull bên dưới là hướng dẫn cho giai đoạn được duyệt, chưa được thực hiện ở đợt này. Máy nhận cần Git LFS; kiểm `git lfs pull`, `git lfs fsck` và asset materialized trước mở Unity. Không lấy 4.183 legacy chưa xác minh hoặc profile/cache từ máy chủ để “bù” checkout.
+
 <!-- nav01-fixed-20261108 -->
 > 08/11: [NAV-01 kiểm đạt trên nguồn 074caf3](NavFix20261108/README.md). Lấy baseline nhánh/task và commit báo cáo thực tế từ HANDOFF/biên nhận mới nhất; trạng thái BLOCKED cũ là lịch sử. Ownership/CHUA_NHAN giữ nguyên, người mới NOT_RUN; không push.
 

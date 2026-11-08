@@ -1,3 +1,24 @@
+# Chốt nhận việc 08/11/2026 — fcbb7e19 / biên nhận 55d7f04
+
+Kết quả hiện hành: [bàn giao nhóm](TeamHandoff20261108/README.md), [audit Git/LFS](TeamHandoff20261108/audit.json).
+Ba nhánh task đều chứa baseline fcbb7e19, không có commit riêng tại lúc kiểm; không đổi ref trong đợt này. Những thông báo BLOCKED/a209c0e phía dưới thuộc lịch sử, đã được biên nhận NAV-01 thay thế.
+
+## File giao nhau: một chủ sửa tại một thời điểm
+
+| File / phạm vi | Chủ sửa duy nhất | Phối hợp |
+|---|---|---|
+| Map/NgheThuat, legacy Art/Model/Blender, Source, meta đi cùng | Người 1 | Người 3 chỉ wire scene; báo cáo topology của N1 ở Docs/QA/Tasks/N1 |
+| Toàn bộ Assets/Scripts, gồm InvestigationV36R107 partial UI/onboarding, Editor và KiemThuLichSu | Người 2 | Người 3 gửi đề xuất UI; tool asset chỉ chuyển từng file cho N1 sau khi ghi DANG_LAM |
+| Tools (gồm 852 script lịch sử), compile/asmdef và HOP_DONG_MODULE | Người 2 | Tool chia sẻ chỉ một chủ; không chạy lại script một lần |
+| GiaoDien/NoiDung/TichHop, scene tích hợp và scene legacy được phép thay | Người 3 | N1/N2 giao prefab/patch + chỉ dẫn; checkpoint r101–r107 không ai sửa |
+| GDD, BAT_DAU, README gốc, lịch sử/workflow, HANDOFF, OWNERSHIP, TICH_HOP, registry QA chung | Người 3 | Chỉ cập nhật từ review/kết quả thật; đổi GDD cần quyết định thiết kế, không mở scope |
+| Packages, ProjectSettings, .gitignore/.gitattributes, cấu hình Git nhóm | Người 2 | Đóng băng trong task đầu; thay cần review N3, pipeline/package không tự nâng |
+| DANG_LAM_NGUOI_1/2/3, báo cáo Docs/QA/Tasks/N1/N2/N3 | Người tương ứng | Người 3 tổng hợp vào lịch sử chung, không ba người cùng commit một lịch sử |
+| Scene thử Map / Gameplay / GiaoDien | Người 1 / 2 / 3 tương ứng | Scene rỗng làm sandbox; không tự ghi đè scene tích hợp |
+| File chưa có quy tắc, ngoài 4.183 legacy chưa xác minh | Người 3 điều phối | Chưa sửa cho tới khi giao một chủ bằng DANG_LAM; nhóm D và archive giữ nguyên |
+
+Quy tắc bảng này thay phần phân chủ Editor/test mơ hồ ở ghi chép cũ bên dưới. Chuyển quyền phải ghi rõ file, người giao/nhận và commit, tạm dừng sửa ở chủ cũ. Meta thuộc cùng chủ asset. CODEOWNERS chờ username thật; không tạo tên giả.
+
 <!-- nav01-fixed-20261108 -->
 > 08/11: [NAV-01 kiểm đạt trên nguồn 074caf3](NavFix20261108/README.md). Lấy baseline nhánh/task và commit báo cáo thực tế từ HANDOFF/biên nhận mới nhất; trạng thái BLOCKED cũ là lịch sử. Ownership/CHUA_NHAN giữ nguyên, người mới NOT_RUN; không push.
 
