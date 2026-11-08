@@ -96,3 +96,13 @@ Prompt nhận việc: “Trên work/runtime-contracts-baseline từ fcbb7e19, x�
 - Đã bảo toàn snapshot Game/state/Git diff/status/log copy; không ghi SavePath hoặc dừng Play/đóng Editor/discard state chưa xác định. Đang chờ xác nhận phiên đang được dùng và desktop dành riêng. Không thay thời gian chờ bằng câu trả lời. Các settings tự sinh chưa restore khi Editor còn live.
 - Đã hoàn tất bảng bàn giao gộp trong [báo cáo SAVE-REFERENCE-02](../QA/Tasks/N2/SAVE-REFERENCE-02/README.md), đủ baseline0d878e3b, nguồn546833aa/aee7d559, công cụ/meta/kiểmbb88d4cc/5b88f245/ea49025a và tài liệu57dcbb03/810168d2/abd0ea7e; tất cả ancestor đã kiểm. SAVE-VALIDATION-01 có liên kết tới bảng này.
 - Còn thiếu: chạy Load null và toàn bộ phần thao tác/phục hồi của lượt mới khi phiên kiểm an toàn. Giữ giới hạn lượt cũ, UI-LOAD-FEEDBACK-01/P-close OPEN; UI1080p và người mới NOT_RUN. Không push/merge, không sửa UI/map/scene tích hợp/save gốc.
+
+
+## Gameplay & Dữ liệu — chốt UI null có desktop dành riêng
+
+- Xuất phát/HEAD đã kiểm: `490f7a021f6218308da407f45388a152ab635bb9`; nhánh `work/runtime-contracts-baseline`, worktree riêng không đổi. Người dùng xác nhận desktop/Unity không có ai dùng và cho phép tiếp tục; snapshot/state/diff/log cũ giữ nguyên.
+- **HOAN_TAT_PHAM_VI_SAVE_REFERENCE_02_CHO_REVIEW:** hai ca `first=null` và `relations=[null]` qua F6 đều từ chối, không đổi toàn state/data identity/cờ controller-modal/pause và bytes save. Sau mỗi ca, P mở/đóng, E/R, Esc, di chuyển/chuột, chặn di chuyển trong modal, nạp hợp lệ/chơi tiếp/F5/F6 đạt. Không có exception tham chiếu trong log.
+- Kiểm bằng input Windows tổng hợp trên Gameplay_ThuNghiem/profile riêng, có dùng bản sao save hợp lệ đã tạo bằng UI trước đó. Không phải New Game sạch, tuyến tự nhiên hoặc playtest người mới. Không dùng API cấp tiến trình/mở trang thay input. Không sửa runtime và không chạy lại54 ca API; hash source khớp manifest.
+- Bàn giao gộp đầy đủ baseline, nguồn, công cụ/meta và tài liệu tại [SAVE-REFERENCE-02](../QA/Tasks/N2/SAVE-REFERENCE-02/README.md), kèm null-authorized-results/manifest. Nhận cả chuỗi SAVE-VALIDATION-01 → SAVE-REFERENCE-02 theo bảng, không chỉ commit kiểm/tài liệu cuối; không wiring mới.
+- Lượt gián đoạn intro chưa rõ nguồn vẫn giữ trạng thái cũ; không đổi FAIL/PASS. UI-LOAD-FEEDBACK-01 và P-close vẫn OPEN riêng cho UI/UX & Tích hợp; UI1080p/người mới NOT_RUN (Game1536×746).
+- Đã snapshot cuối, dừng Play/đóng Editor thử không lưu scene, sceneDirty=false. Settings tự sinh line-ending-only được bảo toàn rồi khôi phục đúng file. Chỉ cập nhật báo cáo/manifest/tiến độ, không chạm UI/map/scene tích hợp/save gốc hoặc legacy; hai thư mục untracked cũ giữ nguyên. Chưa push/merge.

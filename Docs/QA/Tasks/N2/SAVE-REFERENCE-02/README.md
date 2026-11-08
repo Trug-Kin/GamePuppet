@@ -123,7 +123,7 @@ Chuỗi bàn giao: gói SAVE-VALIDATION-01 đến810168d2 là tiền đề → a
 
 ## Bàn giao gộp SAVE-VALIDATION-01 và SAVE-REFERENCE-02
 
-Nhánh `work/runtime-contracts-baseline`; thứ tự phụ thuộc dưới đây đã kiểm bằng Git, tất cả đều là ancestor của abd0ea7e. Chưa push/merge. Nhận chuỗi sau review từ baseline chung, không chỉ nhận commit báo cáo hoặc hai commit test cuối. Không cần wiring scene mới; Load/F6 hiện có đi qua validator.
+Nhánh `work/runtime-contracts-baseline`; thứ tự phụ thuộc dưới đây đã kiểm bằng Git, các commit 1–9 đều là ancestor của abd0ea7e; commit 10 là tài liệu kế tiếp và là HEAD thực sự của lượt UI bổ sung. Chưa push/merge. Nhận chuỗi sau review từ baseline chung, không chỉ nhận commit báo cáo hoặc hai commit test cuối. Không cần wiring scene mới; Load/F6 hiện có đi qua validator.
 
 | Thứ tự | Commit đầy đủ | Vai trò trong gói |
 |---|---|---|
@@ -136,6 +136,7 @@ Nhánh `work/runtime-contracts-baseline`; thứ tự phụ thuộc dưới đây
 | 7 | `aee7d5592b082a20dc0c849160cd4c4120680011` | SAVE-REFERENCE-02: guard definition first/second +12 ca acceptance bổ sung |
 | 8 | `ea49025a06b9e5497c545aa3193562a1758c13f0` | Helper kiểm bytes chính xác;54 ca gồm42 cũ và12 mới |
 | 9 | `abd0ea7ef10ff0ac226eb3f3ed2b29c4456d19ac` | SAVE-REFERENCE-02: kết quả/giới hạn UI, contracts và manifest |
+| 10 | `490f7a021f6218308da407f45388a152ab635bb9` | Bàn giao gộp và bảo toàn lượt null gián đoạn; HEAD đã kiểm UI bổ sung, source không đổi |
 
 Bản vá runtime chỉ ở InvestigationSaveValidation.cs (luồng Load trong Session.cs đã dùng từ SAVE-VALIDATION-01). Bộ kiểm tại Gameplay/Editor: SaveLoadContractChecks.cs, SaveGuardControllerChecks.cs, RelationReferenceAudit.cs và meta hiện có. Các source/test commit và docs đều cần được review; không tự cập nhật các nhánh khác hoặc scene tích hợp trong đợt kiểm này.
 
@@ -161,3 +162,29 @@ Checkout đã xác nhận `abd0ea7ef10ff0ac226eb3f3ed2b29c4456d19ac`; hash sourc
 [Kết quả lượt gián đoạn](null-completion-results.json) và [manifest snapshot/log copy](null-completion-evidence-manifest.json). Profile dự kiến nhận bản sao save tạo qua UI ở đợt trước, không phải New Game tự nhiên; chưa nạp fixture vì điều kiện trước kiểm không đạt. Người mới/1080p vẫn NOT_RUN, UI-LOAD-FEEDBACK-01 và P-close vẫn OPEN riêng.
 
 Việc còn thiếu không đổi: với phiên được dành cho kiểm, F6 từ chối `first=null` (và kiểm riêng record relation=null nếu dùng mẫu đó), so state/bytes → P/E/Esc/modal/movement → F6 hợp lệ → tiếp tục chơi/F5/F6. Chỉ ghi PASS khi cả đoạn đã thực hiện; các lượt mất focus/tiến trình ngoài script phải được giữ như lượt gián đoạn. Bảng bàn giao gộp ở trên đã hoàn tất độc lập với ca UI đang chờ.
+
+
+## Hoàn tất lượt null sau xác nhận desktop dành riêng — 08/11/2026
+
+**PASS trọn hai ca UI/controller bổ sung:** `first=null` và phần tử `relations=[null]`. Gameplay & Dữ liệu kiểm trên HEAD **490f7a021f6218308da407f45388a152ab635bb9**, Unity **6000.6.2f1**, scene thử `Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity`. Hash sáu source guard/session/UI/definition/harness khớp manifest triển khai. Không sửa runtime, không chạy lại54 ca API.
+
+Người dùng xác nhận không ai dùng desktop/Unity và cho phép lượt kiểm tiếp. Snapshot state/diff được giữ trước input. Profile riêng `Test/PlaytestProfiles/SaveReference02_NullCompletion_20261108`; bản save có sẵn trong profile cũng được copy bảo toàn trước ghi bản thử. Dùng lại **bản sao save hợp lệ tạo bằng UI của lượt trước** (`UI_20261108/valid-ui.json`, SHA256 `0c8cf171c99dc3dda7c3dab0664c43788d1712985f5f4ddafb86c03dbba73813`), sau đó nạp bằng F6. Đây là **fixture hỗ trợ + input Windows tổng hợp**, không phải bắt đầu sạch hoặc tuyến chơi tự nhiên. Fixture nguồn không đổi. Bridge chỉ đọc state/chụp ảnh và quản lý lifecycle; không gọi Load/OpenPage hay cấp tiến trình thay cho input trong ca kiểm này.
+
+Mỗi ca thực hiện: F6 nạp bản hợp lệ → Esc/pause → sửa bản sao JSON trong profile → F6 từ chối → Esc → P mở hồ sơ/W bị chặn/P đóng → E khám/W bị chặn/R trở lại → Esc/pause/W bị chặn/Esc tiếp tục → S/W và chuột → F6 nạp lại bản hợp lệ → E/R, di chuyển → F5 → di chuyển tiếp → F6 phục hồi.
+
+| Kiểm | first=null | relations=[null] |
+|---|---|---|
+| F6 từ chối có lý do qua Message hiện có | PASS | PASS |
+| Toàn data/data identity, transform, gate, page/pause/modal và cờ input/timeScale giữ nguyên | PASS | PASS |
+| Bytes save lỗi giữ nguyên trước/sau Load | PASS | PASS |
+| P mở/đóng, E/R, Esc pause/resume, di chuyển và chuột | PASS | PASS |
+| Không di chuyển khi hồ sơ, khám vật hoặc pause đang mở | PASS | PASS |
+| F6 hợp lệ, chơi tiếp và F5/F6 phục hồi vị trí/relations | PASS | PASS |
+
+[Kết quả có cấu trúc](null-authorized-results.json), [manifest ảnh/state/input/log và hash nguồn](null-authorized-evidence-manifest.json). Ảnh hồ sơ sau từ chối vẫn hiển thị title hai vật và note hợp lệ đang chơi. Log phiên thử không có NullReferenceException/MissingReferenceException hoặc error CS. Không có mất focus được phát hiện trong hai ca hoàn tất; mọi bước input kiểm foreground đúng PID phiên Unity thử.
+
+Lượt gián đoạn trước và nguồn chuyển intro chưa xác định được giữ nguyên trong `null-completion-results.json`, manifest/log/snapshot cũ; không sửa kết quả đó thành PASS. Chỉ phần kiểm null mới nêu trên hoàn tất. Sau kiểm đã snapshot state/diff, dừng Play (`sceneDirty=false`), đóng đúng Editor phiên thử, không lưu scene. Ba settings tự sinh (ProjectAuditorSettings, EditorBuildSettings, QualitySettings) chỉ khác line ending được copy/hash rồi khôi phục riêng sau khi Editor thoát. Profile/capture/log dài còn local theo manifest; không stage hoặc tác động save gốc, map, scene tích hợp, legacy hay archive.
+
+**Bàn giao UI/UX & Tích hợp:** nhận cả chuỗi trong bảng bàn giao gộp, cùng commit tài liệu kết quả lượt này (SHA trong biên nhận Git khi nhận). Runtime hai gói đã đủ bằng chứng phạm vi giao; caller Load/F6 hiện có tự đi qua guard, không wiring mới, không migration/schema/ID/GUID mới. Chưa push/merge. Không chỉ cherry-pick commit tài liệu/test cuối vào baseline thiếu validator.
+
+Giữ trạng thái riêng: **UI-LOAD-FEEDBACK-01 OPEN** (cần trình bày Message/lý do Load trong hồ sơ/pause, không nhân đôi validation); **P-close OPEN** cho kiểm tích hợp do lần bất thường trước chưa rõ nguyên nhân; **UI1080p NOT_RUN**, capture thực1536×746; **người mới NOT_RUN**. Hai ca P bổ sung đạt không đóng lỗi P cũ hoặc thay playtest người thật.
