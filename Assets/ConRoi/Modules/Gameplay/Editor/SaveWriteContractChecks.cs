@@ -84,10 +84,13 @@ namespace ConRoi.Gameplay.EditorChecks
                 root.SetActive(true);session.enabled=false;movement.enabled=false;look.enabled=false;
                 Add(report,"private_profile",session.SaveDirectoryOverride==report.profile);
                 Add(report,"scene_and_missing_scripts",report.scene==TestScene && GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(root)==0);
-                foreach(string scenario in new[]{"normal","temp_directory","temp_write_locked","destination_locked","temp_delete_locked","stale_temp"})
-                    Scenario(report,session,scenario);
-                FirstCommitFailure(report,session);
-                InjectedWrite(report,session);
+                if(!string.IsNullOrEmpty(Arg("--save-write-compat"))) Compatibility(report,session);
+                else {
+                    foreach(string scenario in new[]{"normal","temp_directory","temp_write_locked","destination_locked","temp_delete_locked","stale_temp"})
+                        Scenario(report,session,scenario);
+                    FirstCommitFailure(report,session);
+                    InjectedWrite(report,session);
+                }
             }catch(Exception ex){Add(report,"fixture_exception",false,ex.ToString());}
             finally {
                 if(root)UnityEngine.Object.DestroyImmediate(root);Time.timeScale=1;
@@ -125,6 +128,14 @@ namespace ConRoi.Gameplay.EditorChecks
             session.Observe("slide",1);session.Save();
             Add(report,scenario+"_recovery_save_load",session.Message.StartsWith("Đã lưu")&&session.Load()&&session.Observation("slide",1));
             Add(report,scenario+"_no_temp_after_success",!File.Exists(temp)&&!Directory.Exists(temp));
+        }
+        static void Compatibility(Report report,InvestigationSession session)
+        {
+            string source=Arg("--save-write-compat");byte[] oldSave=File.ReadAllBytes(source);
+            session.SaveDirectoryOverride=Path.Combine(report.profile,"baseline_compatibility");Directory.CreateDirectory(Path.GetDirectoryName(session.SavePath));File.WriteAllBytes(session.SavePath,oldSave);
+            Add(report,"load_actual_baseline_schema1_file",session.Load()&&session.Observation("slide",0)&&!session.Observation("slide",1)&&session.data.mapping.Count==1&&session.data.relations.Count==1);
+            session.Observe("slide",1);session.Save();Add(report,"continue_baseline_file_in_private_profile",session.Message.StartsWith("Đã lưu")&&session.Load()&&session.Observation("slide",1));
+            Add(report,"baseline_compatibility_file_unchanged",Equal(oldSave,source));
         }
         static void FirstCommitFailure(Report report,InvestigationSession session)
         {
