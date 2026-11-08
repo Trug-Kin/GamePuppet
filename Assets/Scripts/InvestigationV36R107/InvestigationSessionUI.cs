@@ -31,6 +31,8 @@ namespace ConRoi.Investigation.V36.R107
         void Heading(string s)=>GUILayout.Label(s,titleStyle);
         void OnGUI()
         {
+            // FocusControl must run in OnGUI, after a page/pause transition.
+            if(clearTextFocus){GUI.FocusControl(null);clearTextFocus=false;}
             Styles();var old=GUI.matrix;GUI.matrix=Matrix4x4.Scale(new Vector3(Screen.width/1200f,Screen.height/800f,1));
             if(!Modal)
             {
@@ -79,7 +81,7 @@ namespace ConRoi.Investigation.V36.R107
                 }
                 if(diagnostics)GUI.Label(new Rect(267,766,905,28),"Quan sát ≠ lời kể ≠ suy luận. Ghi liên hệ không tự biến nó thành sự thật.",smallStyle);
             }
-            textEditing=GUI.GetNameOfFocusedControl().StartsWith("Entry");
+            textEditing=Modal&&!clearTextFocus&&GUI.GetNameOfFocusedControl().StartsWith("Entry");
             GUI.matrix=old;
         }
         void InspectUI()

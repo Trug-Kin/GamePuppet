@@ -48,7 +48,7 @@ namespace ConRoi.Investigation.V36.R107
         float viewDistance=2,viewYaw=25,viewPitch=10;
         string inspectId="",selectedA="",selectedB="",relationNote="",feedback="";
         int hintLevel;
-        bool textEditing;
+        bool textEditing,clearTextFocus;
         Vector2 scroll;
         public int InspectionCount=>data.evidence.Count;
         public bool Has(string id)=>data.evidence.Any(e=>e.id==id);
@@ -143,6 +143,9 @@ namespace ConRoi.Investigation.V36.R107
         public void SetPaused(bool value){CancelReviewDrag();Paused=value;Time.timeScale=value?0:1;SetModalState();}
         void SetModalState()
         {
+            // Text focus belongs to the page being left, never to world input.
+            textEditing=false;
+            clearTextFocus=true;
             if(movement)movement.enabled=!Modal;
             if(look)look.enabled=!Modal;
             Cursor.lockState=Modal?CursorLockMode.None:CursorLockMode.Locked;Cursor.visible=Modal;
