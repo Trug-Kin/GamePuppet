@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-08T03:56:37.171953+00:00",
+  "tested_source": "074caf3dd3da4107b4fc9ac1c089b20216b4705b",
+  "report_commit": "fcbb7e19c094a2a52d99237d03587df16679d579",
+  "team_baseline": "fcbb7e19c094a2a52d99237d03587df16679d579",
+  "old_task_baseline": "a209c0e3b41a8b55e438aeabf1025b5ef6e7d940",
+  "task_branches": {
+    "work/map-asset-baseline": "fcbb7e19c094a2a52d99237d03587df16679d579",
+    "work/runtime-contracts-baseline": "fcbb7e19c094a2a52d99237d03587df16679d579",
+    "work/ui-onboarding-review": "fcbb7e19c094a2a52d99237d03587df16679d579"
+  },
+  "private_commits_replaced": 0,
+  "worktrees_before": "worktree D:/ConRoi\nHEAD fcbb7e19c094a2a52d99237d03587df16679d579\nbranch refs/heads/chore/prepare-r107",
+  "product_diff_source_to_team": [],
+  "remote_created": false,
+  "pushed": false
+}

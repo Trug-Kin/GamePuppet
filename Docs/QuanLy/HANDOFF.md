@@ -1,3 +1,14 @@
+<!-- nav01-team-receipt-20261108 -->
+## Baseline nhóm đã chốt — biên nhận 08/11/2026
+
+- **Nguồn đã chạy kiểm trong checkout C: `074caf3dd3da4107b4fc9ac1c089b20216b4705b`.**
+- **Commit báo cáo chính và baseline nhóm: `fcbb7e19c094a2a52d99237d03587df16679d579`.** Commit này chỉ thêm tài liệu/công cụ kiểm sau nguồn; product tree Assets/Packages/ProjectSettings/Source khớp nguồn đã kiểm.
+- Ba nhánh `work/map-asset-baseline`, `work/runtime-contracts-baseline`, `work/ui-onboarding-review` **đã fast-forward từ a209c0e tới fcbb7e19** bằng transaction expected-old. Trước cập nhật: không commit riêng, không worktree task; không reset/force hoặc thay đổi stash. [Biên nhận hash đầy đủ](NavFix20261108/team-baseline.json).
+- Nhóm đủ điều kiện nhận ba task theo ownership/DANG_LAM trên baseline này trong phạm vi kỹ thuật đã kiểm. Partial session vẫn do người 2 giữ trọn. NAV-01 PASS; người mới NOT_RUN, 4.183 file legacy chưa xác minh giữ nguyên; không suy toàn map PASS.
+- Checkout thử vẫn detached ở 074caf3, độc lập với project D. Commit biên nhận sau báo cáo chỉ là metadata, không phải một bản sản phẩm mới được chạy kiểm. Không remote/push; không cần đăng nhập.
+
+---
+
 <!-- nav01-fixed-20261108 -->
 ## NAV-01 đã kiểm đạt — 08/11/2026
 
