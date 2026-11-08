@@ -34,7 +34,11 @@ namespace ConRoi.Investigation.V36.R107
             foreach (var assignment in incoming.mapping)
                 if (assignment == null) return Invalid(out error, "Hồ sơ có mục bảng gán không hợp lệ.");
             foreach (var relation in incoming.relations)
+            {
                 if (relation == null) return Invalid(out error, "Hồ sơ có mục đối chiếu không hợp lệ.");
+                if (InvestigationContent.Get(relation.first) == null || InvestigationContent.Get(relation.second) == null)
+                    return Invalid(out error, "Liên hệ trong hồ sơ tham chiếu vật chứng không tồn tại.");
+            }
             foreach (var trial in incoming.trials)
                 if (trial == null) return Invalid(out error, "Hồ sơ có mục thử diễn biến không hợp lệ.");
             foreach (var conclusion in incoming.conclusions)

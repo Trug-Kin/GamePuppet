@@ -161,6 +161,24 @@ namespace ConRoi.Gameplay.EditorChecks
                 string error;
                 Add(report, "valid_schema_with_unfilled_conclusions", InvestigationSaveValidation.TryValidate(compatible, out error) && beforeValidation == JsonUtility.ToJson(compatible));
 
+                // Relation reference safety: note content and collection membership are not new Load rules.
+                foreach (string endpoint in new[] { "first", "second" })
+                    foreach (string badId in new[] { "missing_relation_evidence", "", null })
+                    {
+                        var malformed = JsonUtility.FromJson<InvestigationSave>(validJson);
+                        if (endpoint == "first") malformed.relations[0].first = badId;
+                        else malformed.relations[0].second = badId;
+                        string label = "relation_" + endpoint + "_" + (badId == null ? "null" : badId == "" ? "empty" : "unknown");
+                        session.OpenPage("dossier"); session.SetPaused(true);
+                        Reject(report, session, validBytes, label, JsonUtility.ToJson(malformed));
+                    }
+                AcceptRelation(report, session, validBytes, validJson, "no_relations", x => x.relations.Clear());
+                AcceptRelation(report, session, validBytes, validJson, "uncertain_note", x => x.relations[0].note = "Chưa đủ chứng minh; cần kiểm thêm.");
+                AcceptRelation(report, session, validBytes, validJson, "empty_note", x => x.relations[0].note = "");
+                AcceptRelation(report, session, validBytes, validJson, "null_note", x => x.relations[0].note = null);
+                AcceptRelation(report, session, validBytes, validJson, "known_uncollected_endpoint", x => x.relations[0].first = "phone");
+                AcceptRelation(report, session, validBytes, validJson, "same_known_endpoints", x => x.relations[0].second = x.relations[0].first);
+
                 string compatibilityPath = Arg("--save-contract-compat");
                 if (!string.IsNullOrEmpty(compatibilityPath))
                 {
@@ -185,6 +203,21 @@ namespace ConRoi.Gameplay.EditorChecks
                 EditorApplication.ExitPlaymode();
             }
         }
+        static void AcceptRelation(Report report, InvestigationSession session, byte[] validBytes, string validJson, string name, Action<InvestigationSave> mutation)
+        {
+            var incoming = JsonUtility.FromJson<InvestigationSave>(validJson); mutation(incoming);
+            string json = JsonUtility.ToJson(incoming); File.WriteAllText(session.SavePath, json);
+            bool loaded = session.Load();
+            string relationJson = JsonUtility.ToJson(new RelationEnvelope { items = session.data.relations });
+            string expected = JsonUtility.ToJson(new RelationEnvelope { items = JsonUtility.FromJson<InvestigationSave>(json).relations });
+            bool retained = loaded && relationJson == expected;
+            if (loaded) session.Save();
+            bool continued = loaded && session.Load() && JsonUtility.ToJson(new RelationEnvelope { items = session.data.relations }) == expected;
+            Add(report, "relation_valid_" + name, retained && continued, "Serialized-file Load/Save/Load via API fixture; no UI claim.");
+            File.WriteAllBytes(session.SavePath, validBytes);
+            if (!session.Load()) throw new InvalidOperationException("Could not recover valid save after " + name);
+        }
+        [Serializable] class RelationEnvelope { public List<EvidenceRelation> items; }
         static void ValidateMutation(Report report, string validJson, string name, Action<InvestigationSave> mutation)
         {
             var incoming = JsonUtility.FromJson<InvestigationSave>(validJson);
@@ -203,12 +236,15 @@ namespace ConRoi.Gameplay.EditorChecks
             string beforeData = JsonUtility.ToJson(before);
             Vector3 position = session.movement.transform.position;
             string gate = JsonUtility.ToJson(session.gate.state);
+            float yaw = session.movement.transform.eulerAngles.y, pitch = session.eye.transform.localEulerAngles.x, scale = Time.timeScale;
+            bool actions = session.movement.GameplayActionsEnabled;
+            var cursor = Cursor.lockState;
             string page = session.Page;
             bool paused = session.Paused, movement = session.movement.enabled, look = session.look.enabled;
             File.WriteAllText(session.SavePath, json);
             bool accepted = session.Load();
-            bool preserved = ReferenceEquals(session.data, before) && JsonUtility.ToJson(session.data) == beforeData && session.movement.transform.position == position && JsonUtility.ToJson(session.gate.state) == gate && session.Page == page && session.Paused == paused && session.movement.enabled == movement && session.look.enabled == look;
-            Add(report, name, !accepted && preserved && File.ReadAllText(session.SavePath) == json, "Load accepted=" + accepted + "; live state preserved=" + preserved + "; disk file unchanged=" + (File.ReadAllText(session.SavePath) == json));
+            bool preserved = ReferenceEquals(session.data, before) && JsonUtility.ToJson(session.data) == beforeData && session.movement.transform.position == position && JsonUtility.ToJson(session.gate.state) == gate && session.Page == page && session.Paused == paused && session.movement.enabled == movement && session.look.enabled == look && session.movement.transform.eulerAngles.y == yaw && session.eye.transform.localEulerAngles.x == pitch && Time.timeScale == scale && session.movement.GameplayActionsEnabled == actions && Cursor.lockState == cursor;
+            Add(report, name, !accepted && preserved && File.ReadAllText(session.SavePath) == json && session.Message.StartsWith("Không tải:"), "Load accepted=" + accepted + "; live state preserved=" + preserved + "; disk file unchanged=" + (File.ReadAllText(session.SavePath) == json));
             File.WriteAllBytes(session.SavePath, validBytes);
             if (!session.Load()) throw new InvalidOperationException("Fixture could not recover a valid save after " + name);
         }
