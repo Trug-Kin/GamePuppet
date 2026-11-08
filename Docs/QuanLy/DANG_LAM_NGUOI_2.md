@@ -121,3 +121,12 @@ Prompt nhận việc: “Trên work/runtime-contracts-baseline từ fcbb7e19, x�
 - Compile và Missing Script phạm vi template/root fixture đạt, không audit scene tích hợp/render. F5/F6 UI/controller SAVE-WRITE-03 NOT_RUN: đã hỏi desktop dành riêng, chưa có xác nhận trong lượt mới; không gửi input. Không gọi fixture là tuyến tự nhiên hoặc người mới.
 - Trạng thái: NGUON_VA_API_DAT_CHO_REVIEW_CON_THIEU_UI. [Báo cáo/acceptance/bằng chứng](../QA/Tasks/N2/SAVE-WRITE-03/README.md). UI/UX & Tích hợp nhận cả chuỗi sau148440b7; không wiring mới. Việc tiếp: kiểm F5/F6 lỗi và recovery trong phiên desktop dành riêng/profile mới; giữ UI-LOAD-FEEDBACK-01/P-close OPEN, UI1080p/người mới NOT_RUN.
 - Không sửa UI/map/scene tích hợp/save gốc/legacy. Settings tự sinh line-ending-only được copy/hash trước khôi phục sau Editor thoát. Không push/merge/build/ZIP; output/profile/log dài và untracked cũ không stage.
+
+
+## Gameplay & Dữ liệu — SAVE-WRITE-03 hoàn tất UI/controller 09/11/2026
+
+- HEAD kiểm `b4bf64846df349cddfe6ace48c9a0f063acdaf5d`, nhánh runtime đúng, tracked sạch trước mở; chuỗi/hash nguồn khớp. Người dùng dành riêng desktop. Scene Gameplay/profile mới, snapshot/status/diff trước input, không nạp fixture hoặc cấp tiến trình qua API.
+- PASS input Windows tổng hợp: Bắt đầu/E → F5 → ghi quan sát → F6 phục hồi → chơi tiếp/ghi đè/F5/F6. Bốn lỗi qua F5: directory temp, khóa đích, khóa ghi temp, khóa rename/delete temp; mỗi ca báo lỗi đúng, giữ bytes/hash save cũ, F6 tải được khi lỗi còn giữ, P ba chu kỳ/E/R/Esc/movement/mouse/modal đạt, gỡ lỗi rồi F5/F6 lưu-phục hồi tiến trình mới.
+- Giữ riêng lượt click tọa độ shoeprint sai và lượt cuối mất focus sang WindowsTerminal trước F6; chỉ ca cuối được kiểm lại riêng và đạt, không gọi gián đoạn là FAIL gameplay hoặc PASS phần chưa chạy. Raw kết quả/ảnh/log theo [báo cáo](../QA/Tasks/N2/SAVE-WRITE-03/README.md).
+- Trạng thái: HOAN_TAT_PHAM_VI_CHO_REVIEW. Không runtime/test Unity thay đổi, không chạy lại43/54 API; partial-write delegate vẫn chỉ API. Không chứng minh mất điện/crash thật. UI-LOAD-FEEDBACK-01/P-close OPEN, UI1080p/người mới NOT_RUN; không đồng nhất desktop1080p với Game1536×746.
+- Bàn giao UI/UX & Tích hợp: nhận đủ b76828a9 → b26e8404 → b1858a78 → b4bf6484 và commit báo cáo UI mới sau baseline148440b7, không wiring mới. Lượt nhầm fixture và kiểm tương thích riêng giữ nguyên. Đã stop/quit phiên thử không lưu scene, sceneDirty=false; settings copy/hash rồi khôi phục bytes trước phiên. Chưa push/merge, giữ save gốc/map/scene tích hợp/legacy/untracked cũ.

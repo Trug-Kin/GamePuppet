@@ -1,5 +1,7 @@
 # SAVE-WRITE-03 — acceptance trước sửa
 
+Cập nhật09/11: phần UI/controller còn thiếu đã đạt trên `b4bf6484`; xem mục hoàn tất cuối tài liệu. Các kết quả/giới hạn ở lượt trước được giữ để tra lịch sử.
+
 Gameplay & Dữ liệu; nhánh `work/runtime-contracts-baseline`, xuất phát `148440b7a851f9578701377b81367b61b46e7e16`. Giữ schema1/ID/GUID, profile gốc và scene tích hợp. Giữ UI-LOAD-FEEDBACK-01/P-close OPEN; UI1080p/người mới NOT_RUN.
 
 ## Luồng hiện tại và điều kiện đạt
@@ -76,3 +78,40 @@ Nhận theo thứ tự sau baseline đã push148440b7: **b76828a9 (nguồn) → 
 **Giữ các điểm cũ:** UI-LOAD-FEEDBACK-01 và P-close **OPEN**; UI1080p/người mới **NOT_RUN**. Không đóng các điểm đó bằng PASS fixture/API của task này.
 
 [Manifest nguồn, log/profile và hash](evidence-manifest.json). Settings tự sinh line-ending-only đã copy/hash rồi khôi phục riêng sau khi các Editor batch thoát. Scene, save gốc, archive/legacy và hai thư mục untracked cũ giữ nguyên. Không stage Library, output, profile, log dài hoặc snapshot.
+
+
+## Hoàn tất UI/controller — 09/11/2026
+
+Gameplay & Dữ liệu kiểm đúng HEAD **b4bf64846df349cddfe6ace48c9a0f063acdaf5d**, Unity **6000.6.2f1**, scene `Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity`, profile mới `Test/PlaytestProfiles/SaveWrite03_UI_20261109`. Tracked sạch trước mở; status/diff/settings được copy trước launch, state/ảnh được chụp trước input đầu tiên. Chuỗi148440b7 → b76828a9 → b26e8404 → b1858a78 → b4bf6484 và hash source khớp. Không sửa runtime/công cụ Unity và không chạy lại43/54 ca API.
+
+Người dùng xác nhận desktop dành riêng. Dùng công cụ môi trường hiện có `SaveGuardControllerChecks.StartGui` dựng floor/controller/proxy vật/session tạm trong Play; không lưu scene. **Input Windows tổng hợp**, không API cấp vật chứng, ghi quan sát, mở trang, Save hoặc Load. Bridge chỉ snapshot/readback và stop/quit. Ban đầu intro chưa nhận, evidence rỗng, profile chưa có file save; không nạp fixture cũ. Đây là tiến trình tạo qua UI trên sandbox Gameplay, **không phải tuyến xưởng tự nhiên, scene tích hợp hoặc playtest người mới**.
+
+### Chuỗi thường và bốn lỗi IO qua F5/F6
+
+Bắt đầu → E nhận slide → R/F5 lưu khi chưa ghi quan sát → E/Ghi quan sát/R → F6 phục hồi bản chưa ghi → E/ghi lại/R/F5 → di chuyển/F6 phục hồi. Sau đó đi bằng D tới proxy shoeprint và dùng E/Ghi quan sát để có tiến trình mới cho ca lỗi. Phần này hoàn tất mà không seed tiến trình hoặc chép save vào profile.
+
+| Ca UI/controller | Kết quả |
+|---|---|
+| Lưu lần đầu, ghi đè, thay đổi quan sát rồi F6 phục hồi; chơi tiếp/F5/F6 | PASS |
+| Directory cùng tên `.tmp` chặn tạo file tạm | PASS |
+| Handle file đích chỉ chia sẻ đọc, chặn Replace | PASS |
+| Handle `.tmp` chỉ chia sẻ đọc, chặn mở ghi | PASS |
+| Handle đọc `.tmp` chia sẻ read/write nhưng không delete, chặn rename/Replace | PASS ở lượt kiểm lại riêng; lượt gián đoạn vẫn giữ bên dưới |
+
+Mỗi ca lỗi: F5 thật → Message “Không lưu được: …” (không báo thành công); snapshot/ảnh world hiện lỗi → so **bytes và SHA256** save tốt không đổi; vị trí và evidence đang chơi giữ → **F6 khi điều kiện lỗi còn giữ** tải toàn data/position của save đích cũ → P mở/đóng hồ sơ ba chu kỳ, E/R, Esc pause/resume, W bị chặn ở hồ sơ/khám/pause, di chuyển W/S và chuột hoạt động ở world → gỡ khóa/blocker trong finally → tạo tiến trình/vị trí mới bằng input → F5 → đổi vị trí → F6 phục hồi đúng file mới. Cả bốn ca hoàn tất chuỗi trên. Lỗi được mô phỏng bằng handle/directory trong profile này; không đổi ACL hoặc làm đầy ổ. Temp còn lại được chuyển sang output bằng chứng; blocker được đổi tên trong profile riêng.
+
+[Kết quả](ui-results.json) có5 ca PASS (một chuỗi thường + bốn loại IO) cùng một row gián đoạn giữ riêng; trạng thái tổng PASS nghĩa các ca bắt buộc đã hoàn tất qua những lượt ghi rõ, không biến row gián đoạn thành PASS. Ảnh `destination_locked-failed.png` cho thấy lỗi Save hiển thị trong HUD world; lý do đầy đủ/hash có trong kết quả. Không suy việc hiện lỗi ở world thành đã sửa trình bày lỗi trong pause/hồ sơ.
+
+### Lượt chưa hoàn tất được giữ riêng
+
+[Chỉ mục các lượt](ui-attempts-summary.json): lần đầu hoàn tất chuỗi thường rồi click ghi shoeprint bằng tọa độ của slide, nút không trúng do chiều dài transcript khác. Dừng và đọc ảnh, không kết luận lỗi sản phẩm. Kết quả/state trong raw report local giữ lại; tiếp tục từ đúng state với tọa độ đúng, không chạy lại chuỗi thường.
+
+Ở ca rename/delete temp của lượt tiếp, F5 đã báo lỗi và bytes giữ nhưng **trước F6**, kiểm foreground thấy PID5280 **WindowsTerminal**, khác Unity PID7172. Script dừng gửi input, gỡ handle trong finally và giữ snapshot/result ở `InterruptedFocus`. Lượt đó **INTERRUPTED_FOCUS_BEFORE_F6**, không PASS phần chưa chạy hoặc FAIL gameplay. Sau bảo toàn/lấy lại focus, chỉ kiểm lại ca này đầy đủ và đạt; ba loại IO đã PASS không chạy lại. Các nonce snapshot là output local, chỉ mục ưu tiên bản có tên theo bước. Tên `interrupted-preserved` được dùng lại cho lượt mất focus; trạng thái lần click nhầm còn trong raw report `ui-attempt1-results.json`, không có bộ ảnh độc lập của lần click nhầm.
+
+### Bảo toàn, giới hạn và nhận gói
+
+[Manifest UI](ui-evidence-manifest.json) ghi source hash, log/input, ảnh/state, raw result các lượt, profile và settings. Raw capture/log/profile vẫn local ngoài Git. Cuối phiên snapshot state/diff, stop (`sceneDirty=false`) và đóng đúng Editor thử, không lưu scene. Settings chỉ khác line ending được copy/hash rồi khôi phục đúng bytes trước phiên sau khi Editor thoát. Không chạm save gốc, map, scene tích hợp, archive, legacy hoặc hai thư mục untracked cũ.
+
+**SAVE-WRITE-03 đã hoàn tất phần API và UI/controller được giao.** Lỗi chèn IOException sau một phần bytes bằng delegate private **vẫn chỉ kiểm API** theo lượt43 ca; không bật hook này qua UI hoặc sửa sản phẩm để làm bằng chứng. Không kiểm mất điện/crash thật, nhiều writer, mọi filesystem hoặc Library/clone sạch mới. Lượt hồi quy dùng nhầm fixture53/54 và lượt tương thích riêng5/5 phía trên giữ nguyên.
+
+Nhận đủ chuỗi nguồn/công cụ/tài liệu sau148440b7 và commit báo cáo UI của lượt này; Save/F5 và Load/F6 hiện có tự đi qua writer/validator, **không wiring mới**. UI/UX & Tích hợp review toàn gói, không chỉ commit báo cáo cuối. **UI-LOAD-FEEDBACK-01/P-close vẫn OPEN**, UI1080p/người mới **NOT_RUN** (Game1536×746 dù desktop1920×1080). Chưa push/merge; không build/ZIP.
