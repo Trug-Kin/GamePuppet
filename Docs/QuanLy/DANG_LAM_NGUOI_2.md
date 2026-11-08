@@ -58,3 +58,17 @@ Prompt nhận việc: “Trên work/runtime-contracts-baseline từ fcbb7e19, x�
 - Giới hạn: input tổng hợp, môi trường proxy không phải tuyến xưởng tự nhiên; người mới NOT_RUN. Game captures1536×746, không kiểm lại1080p. Lần đầu input/focus chưa ổn định và một lần P-close sau pause chưa rõ nguyên nhân được giữ trong báo cáo; kiểm lại P ba chu kỳ đạt, chưa coi là lỗi NAV-01 và không sửa runtime. Không chạy lại42 ca API vì hash nguồn không đổi.
 - OPEN gửi UI/UX & Tích hợp: UI-LOAD-FEEDBACK-01, lý do Load sai không hiển thị trong dossier/pause dù Message đã có; xem [báo cáo và acceptance](../QA/Tasks/N2/SAVE-VALIDATION-01/README.md). Chưa sửa thay UI; partial chung vẫn thuộc Gameplay & Dữ liệu.
 - Bàn giao: nhận guard nguồn546833aa nếu chưa có, source test tại commit trên và tài liệu cập nhật; không wiring mới. Tiếp theo UI/UX & Tích hợp review thông báo lỗi và kiểm ở scene tích hợp theo lịch riêng. Chưa push/merge, không sửa map/save gốc hoặc dọn legacy.
+
+
+## Gameplay & Dữ liệu — rà contract tiếp theo, nhận 08/11/2026
+
+- Xuất phát `810168d2`, worktree/nhánh giữ nguyên, tracked sạch trước thao tác; hai thư mục untracked giữ nguyên. Không có nhiệm vụ runtime tiếp theo đã được giao trong tiến độ/HANDOFF/tích hợp hiện hành ngoài SAVE-VALIDATION-01.
+- Gói độc lập: xác minh reference của EvidenceRelation tại biên validator, hoàn thiện đề xuất SAVE-REFERENCE-02 nếu có bằng chứng. Chưa triển khai guard mới, chưa tự nhận UI-LOAD-FEEDBACK-01 hoặc mở rộng nội dung.
+- File sẽ chạm: công cụ kiểm Editor trong Gameplay, báo cáo riêng `Docs/QA/Tasks/N2/SAVE-REFERENCE-02/`, hợp đồng module và tiến độ này. Giữ toàn bộ session partial, schema1/ID/GUID; không sửa runtime, UI, map hoặc scene tích hợp.
+- Điều kiện hoàn tất audit: có mẫu schema1 serialize/parse thật, quan sát kết quả validator và lookup consumer với ID relation hợp lệ/không tồn tại; phân biệt kiểm API với Load/UI; đề xuất acceptance và giới hạn cụ thể, source/hash truy lại được.
+- Scene/profile: Gameplay_ThuNghiem, profile audit mới riêng; không dùng Play, không chạy lại 42 ca, không đụng profile live. Phụ thuộc sau audit: review phạm vi bởi UI/UX & Tích hợp trước triển khai đề xuất.
+
+- Kết quả audit: compile Unity6000.6.2f1 đạt; bốn mẫu serialize/parse thật, hai đối chứng đạt và hai mẫu ID lạ được validator nhận nhưng lookup consumer phát sinh NullReferenceException được tool bắt. Validator không sửa input. Không chạy Load/UI/controller hoặc Play, không dùng profile game gốc.
+- Trạng thái: HOAN_TAT_AUDIT_CHO_REVIEW_DE_XUAT. Đề xuất SAVE-REFERENCE-02 chỉ chặn definition không tồn tại ở first/second của relation; chưa triển khai, chưa đổi contract runtime. [Báo cáo/acceptance/hash](../QA/Tasks/N2/SAVE-REFERENCE-02/README.md).
+- File thực đổi: RelationReferenceAudit.cs/meta mới; báo cáo/kết quả/manifest riêng, HOP_DONG_MODULE và tiến độ này. Runtime, save schema, IDs/GUID cũ và scene không đổi; không chạy lại42 ca vì không sửa validator. Giữ các điểm OPEN và bằng chứng SAVE-VALIDATION-01 tại810168d2.
+- Bàn giao UI/UX & Tích hợp: review đề xuất nhỏ và giao triển khai nếu thống nhất; không cần wiring hay nhận bản vá runtime trong gói audit. Tiếp theo khi được giao: kiểm đầu vào relation ở biên save và chạy acceptance Load/state/file/UI đã nêu; không mở rộng cốt truyện hoặc sửa UI.

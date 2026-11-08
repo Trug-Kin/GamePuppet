@@ -59,3 +59,10 @@ Gameplay & Dữ liệu giữ toàn bộ partial; không sửa UI/presentation, s
 Commit nguồn `546833aace5f59c0c98349ebe0fb7cd33cbe5df0`. `InvestigationSaveValidation.TryValidate(InvestigationSave incoming,out string error)` thuộc namespace `ConRoi.Investigation.V36.R107`: chỉ đọc, true khi cấu trúc hợp lệ trong phạm vi kiểm; false kèm lý do. Không repair/grant evidence, không đánh giá kết luận đúng/sai. Load gọi trước gán state; từ chối không đổi file input hoặc phiên hiện tại. Không phải giao dịch rollback cho exception ở binding sau khi đã nhận dữ liệu.
 
 Baseline tái hiện 2 lỗi/16 ca; sau sửa 42 ca/0 lỗi bằng fixture/API. Save thực từ baseline được tải và tiếp tục lưu/tải; giữ schema1/namespace cũ. Chi tiết, giới hạn và cách chạy: [báo cáo](../QA/Tasks/N2/SAVE-VALIDATION-01/README.md). Gói độc lập đã kiểm; review UI/UX & Tích hợp và tuyến controller/UI còn chờ, không tuyên bố playtest người mới hoặc tuyến tự nhiên PASS.
+
+
+### SAVE-REFERENCE-02 — đề xuất từ audit, chưa đổi contract runtime
+
+Audit trên base810168d2 xác minh validator hiện hành nhận relation có first/second không tồn tại, dù lookup definition `.title` tương ứng phát sinh NullReferenceException. Hai mẫu đối chứng không có relation/relation hợp lệ đạt. Đây là kiểm serialize/parse + validator/lookup API, không phải Load/UI đã chạy. [Bằng chứng, phạm vi và acceptance đề xuất](../QA/Tasks/N2/SAVE-REFERENCE-02/README.md).
+
+Đề xuất Gameplay & Dữ liệu bổ sung guard definition tồn tại cho hai đầu relation trước nhận save, giữ schema1/namespace/ID và note tự do. Chờ UI/UX & Tích hợp review/giao thực hiện; chưa có API hoặc hành vi runtime mới. Không tự thêm luật membership/đánh giá suy luận, không thay phần hiển thị lỗi UI-LOAD-FEEDBACK-01; toàn bộ session partial tiếp tục cùng chủ Gameplay & Dữ liệu.
