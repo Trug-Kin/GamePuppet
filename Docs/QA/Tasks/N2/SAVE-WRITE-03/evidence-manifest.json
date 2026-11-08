@@ -1,0 +1,262 @@
+{
+  "prerequisiteCommit": "148440b7a851f9578701377b81367b61b46e7e16",
+  "sourceCommit": "b76828a92eb47ced8fed09e73bc644a8d016ff6d",
+  "writeHarnessCommit": "b26e8404021e061e8ea92cd4ad01df9e30cb7002",
+  "compatibilityHarnessCommit": "b1858a78aeab10edf95d1e8be014132eeabb7353",
+  "localRoot": "C:\\ConRoi_Nguoi2",
+  "uiController": "NOT_RUN_NO_RESERVED_DESKTOP_CONFIRMATION",
+  "sourceFiles": [
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSession.cs",
+      "sha256": "d7628caffd51e2b181f26fe35298b86c0334c1555362238bdb95b2a60b03aaf4"
+    },
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSaveFile.cs",
+      "sha256": "1efbc4021ea19b46297a8a41a5bae3af1db47e59baf40a40fd27081694e7effe"
+    },
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSaveFile.cs.meta",
+      "sha256": "5e435f118be469430329f9c65b1d0b654345d729912eab15643a01e75e642852"
+    },
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSaveValidation.cs",
+      "sha256": "b05b72a9866a905dd495257797f4136ff045ba983a4b4665bd212af9ad7e64c0"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/SaveWriteContractChecks.cs",
+      "sha256": "84cb27535b88279e14d7ca351be7f6aa70dffbefe855662092e5094b3340d7f4"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/SaveWriteContractChecks.cs.meta",
+      "sha256": "892c4da2df4ee4ff5df62d5359ca23bfc0ca02a3d4eb13f8a71b839b0a827a3c"
+    }
+  ],
+  "settingsPreservation": [
+    {
+      "path": "ProjectSettings/QualitySettings.asset",
+      "preserved": "Test/Output/SaveWrite03/PreservedSettings/QualitySettings.asset",
+      "sha256": "7b7026a4a5c7d7cdd0383830be28677ee2b99a728e1d3367d12e565a12270b2f",
+      "reason": "Generated line-ending-only bytes preserved; exact path restored after Editor exit"
+    },
+    {
+      "path": "ProjectSettings/EditorBuildSettings.asset",
+      "preserved": "Test/Output/SaveWrite03/PreservedSettings/final-EditorBuildSettings.asset",
+      "sha256": "61b81004081de287d300738d601bb2002379ac1d6f5f6c8c51f9e76675041106",
+      "reason": "Final exact byte copy, semantic HEAD match, then exact path restored/index refreshed"
+    },
+    {
+      "path": "ProjectSettings/ProjectAuditorSettings.asset",
+      "preserved": "Test/Output/SaveWrite03/PreservedSettings/final-ProjectAuditorSettings.asset",
+      "sha256": "9e68444b9bda981e2927a98df9edf69ea88362f0c6b7f3c81b39b9d515d2a416",
+      "reason": "Final exact byte copy, semantic HEAD match, then exact path restored/index refreshed"
+    },
+    {
+      "path": "ProjectSettings/QualitySettings.asset",
+      "preserved": "Test/Output/SaveWrite03/PreservedSettings/final-QualitySettings.asset",
+      "sha256": "7b7026a4a5c7d7cdd0383830be28677ee2b99a728e1d3367d12e565a12270b2f",
+      "reason": "Final exact byte copy, semantic HEAD match, then exact path restored/index refreshed"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "Test/Output/SaveReference02/UI_20261108/valid-ui.json",
+      "bytes": 1793,
+      "sha256": "0c8cf171c99dc3dda7c3dab0664c43788d1712985f5f4ddafb86c03dbba73813"
+    },
+    {
+      "path": "Test/Output/SaveWrite03/Baseline_20261108/baseline-harness.cs.txt",
+      "bytes": 10587,
+      "sha256": "6d800d438adc6938a4d0a4b2632b763b58fcdfad4300aaf56122eafef5037ee2"
+    },
+    {
+      "path": "Test/Output/SaveWrite03/Baseline_20261108/baseline-session.cs.txt",
+      "bytes": 21103,
+      "sha256": "bcf6cfa9f9ac33d32121b2aa3c2833a95c5be651ecad96c6c6b59f927130d007"
+    },
+    {
+      "path": "Test/Output/SaveWrite03/Baseline_20261108/Editor.log",
+      "bytes": 124228,
+      "sha256": "15ae92324613aa9be854026399b1e49332739964152f8b83f7c720d9a887d24c"
+    },
+    {
+      "path": "Test/Output/SaveWrite03/Baseline_20261108/results.json",
+      "bytes": 6579,
+      "sha256": "9cb74a08695d3148b1c4ab119faeb79eedacff1a0ffd4eeee4bcb7b9df9ff888"
+    },
+    {
+      "path": "Test/Output/SaveWrite03/Compatibility_20261108/Editor.log",
+      "bytes": 105643,
+      "sha256": "7c698418f3dc0c1efac0875d184211a1a7a64baa68c17db67fc87cf8253fdecc"
+    },
+    {
+      "path": "Test/Output/SaveWrite03/Compatibility_20261108/results.json",
+      "bytes": 987,
+      "sha256": "55e202f76db405e3c0524db6a2d51f0d9190c470ea28052248e69162d16dc730"
+    },
+    {
+      "path": "Test/Output/SaveWrite03/Fixed_20261108/Editor.log",
+      "bytes": 128768,
+      "sha256": "c8bb72f57da7446cf3e876f19a6793b50e3eeb89b9434e9aab42ca0922ce6ba5"
+    },
+    {
+      "path": "Test/Output/SaveWrite03/Fixed_20261108/results.json",
+      "bytes": 6968,
+      "sha256": "7dba617ce56a364211a0df6a4b621c7f911e1fc51aaaa643a692158851ab787c"
+    },
+    {
+      "path": "Test/Output/SaveWrite03/PreservedSettings/manifest.json",
+      "bytes": 337,
+      "sha256": "82de3583a12275af3410e06dfd6d806d4aefa2a0a9e090d3466b8193dbd16f4e"
+    },
+    {
+      "path": "Test/Output/SaveWrite03/PreservedSettings/QualitySettings.asset",
+      "bytes": 3858,
+      "sha256": "7b7026a4a5c7d7cdd0383830be28677ee2b99a728e1d3367d12e565a12270b2f"
+    },
+    {
+      "path": "Test/Output/SaveWrite03/Regression_20261108/Editor.log",
+      "bytes": 40192,
+      "sha256": "9a7df43198a4cd14483227c01a8fd0222a59cbec65cd03c999b303b2f2fe338d"
+    },
+    {
+      "path": "Test/Output/SaveWrite03/Regression_20261108/results.json",
+      "bytes": 9486,
+      "sha256": "0a07332ca055e6bdee6971d00c249b054f317c07c98a0cce789233f032be38a2"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveContractBaselineRetry_20261108/InvestigationV36/r107/prototype.json",
+      "bytes": 1835,
+      "sha256": "5ecaf8a1d5bdf679c4b180a34965de0861940c02ce9807a6e7564a03e7aa35cb"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Baseline_20261108/destination_locked/InvestigationV36/r107/attempt-temp-evidence.json",
+      "bytes": 1085,
+      "sha256": "285ff5f5d2a8f92b759582b24aed3c53f682aba5c6a7c909f50ac634f01318c5"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Baseline_20261108/destination_locked/InvestigationV36/r107/prototype.json",
+      "bytes": 1477,
+      "sha256": "329f9efabc565c317444c8e211b50f5e315db50905a110d67eecd8e4d41c0d8f"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Baseline_20261108/normal/InvestigationV36/r107/prototype.json",
+      "bytes": 1477,
+      "sha256": "329f9efabc565c317444c8e211b50f5e315db50905a110d67eecd8e4d41c0d8f"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Baseline_20261108/stale_temp/InvestigationV36/r107/prototype.json",
+      "bytes": 1477,
+      "sha256": "329f9efabc565c317444c8e211b50f5e315db50905a110d67eecd8e4d41c0d8f"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Baseline_20261108/temp_delete_locked/InvestigationV36/r107/attempt-temp-evidence.json",
+      "bytes": 1085,
+      "sha256": "285ff5f5d2a8f92b759582b24aed3c53f682aba5c6a7c909f50ac634f01318c5"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Baseline_20261108/temp_delete_locked/InvestigationV36/r107/prototype.json",
+      "bytes": 1477,
+      "sha256": "329f9efabc565c317444c8e211b50f5e315db50905a110d67eecd8e4d41c0d8f"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Baseline_20261108/temp_directory/InvestigationV36/r107/prototype.json",
+      "bytes": 1477,
+      "sha256": "329f9efabc565c317444c8e211b50f5e315db50905a110d67eecd8e4d41c0d8f"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Baseline_20261108/temp_write_locked/InvestigationV36/r107/attempt-temp-evidence.json",
+      "bytes": 19,
+      "sha256": "da966f2e621b3b1b569a75b04969207c3511a14ed9ce35a05db46f28ddf0bc5e"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Baseline_20261108/temp_write_locked/InvestigationV36/r107/prototype.json",
+      "bytes": 1477,
+      "sha256": "329f9efabc565c317444c8e211b50f5e315db50905a110d67eecd8e4d41c0d8f"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Compatibility_20261108/baseline_compatibility/InvestigationV36/r107/prototype.json",
+      "bytes": 1854,
+      "sha256": "8eb8edfc1fbf57f9b9d6a8ec8e142b3619a8227ae1d206c369269686a626184e"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Fixed_20261108/destination_locked/InvestigationV36/r107/attempt-temp-evidence.json",
+      "bytes": 1085,
+      "sha256": "285ff5f5d2a8f92b759582b24aed3c53f682aba5c6a7c909f50ac634f01318c5"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Fixed_20261108/destination_locked/InvestigationV36/r107/prototype.json",
+      "bytes": 1477,
+      "sha256": "329f9efabc565c317444c8e211b50f5e315db50905a110d67eecd8e4d41c0d8f"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Fixed_20261108/first_commit_locked/InvestigationV36/r107/prototype.json",
+      "bytes": 1035,
+      "sha256": "b1eedf59a4327fb9d945175828928e0d79f57e9de6177a7f44bec0858c49374d"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Fixed_20261108/normal/InvestigationV36/r107/prototype.json",
+      "bytes": 1477,
+      "sha256": "329f9efabc565c317444c8e211b50f5e315db50905a110d67eecd8e4d41c0d8f"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Fixed_20261108/partial_write_injected/InvestigationV36/r107/prototype.json",
+      "bytes": 1477,
+      "sha256": "329f9efabc565c317444c8e211b50f5e315db50905a110d67eecd8e4d41c0d8f"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Fixed_20261108/partial_write_injected/InvestigationV36/r107/prototype.json.partial-evidence",
+      "bytes": 12,
+      "sha256": "700b49bc9894ec619e61783ae4cd703494a2a8ce961e5577673723559d6c5b68"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Fixed_20261108/stale_temp/InvestigationV36/r107/prototype.json",
+      "bytes": 1477,
+      "sha256": "329f9efabc565c317444c8e211b50f5e315db50905a110d67eecd8e4d41c0d8f"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Fixed_20261108/temp_delete_locked/InvestigationV36/r107/attempt-temp-evidence.json",
+      "bytes": 1085,
+      "sha256": "285ff5f5d2a8f92b759582b24aed3c53f682aba5c6a7c909f50ac634f01318c5"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Fixed_20261108/temp_delete_locked/InvestigationV36/r107/prototype.json",
+      "bytes": 1477,
+      "sha256": "329f9efabc565c317444c8e211b50f5e315db50905a110d67eecd8e4d41c0d8f"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Fixed_20261108/temp_directory/InvestigationV36/r107/prototype.json",
+      "bytes": 1477,
+      "sha256": "329f9efabc565c317444c8e211b50f5e315db50905a110d67eecd8e4d41c0d8f"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Fixed_20261108/temp_write_locked/InvestigationV36/r107/attempt-temp-evidence.json",
+      "bytes": 19,
+      "sha256": "da966f2e621b3b1b569a75b04969207c3511a14ed9ce35a05db46f28ddf0bc5e"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Fixed_20261108/temp_write_locked/InvestigationV36/r107/prototype.json",
+      "bytes": 1477,
+      "sha256": "329f9efabc565c317444c8e211b50f5e315db50905a110d67eecd8e4d41c0d8f"
+    },
+    {
+      "path": "Test/PlaytestProfiles/SaveWrite03_Regression_20261108/InvestigationV36/r107/prototype.json",
+      "bytes": 1793,
+      "sha256": "e96c2ea520634f3439bab44d662b933033b4f55188b5fc482d4c3dd2dd9a48c7"
+    },
+    {
+      "path": "Test/Output/SaveWrite03/PreservedSettings/final-EditorBuildSettings.asset",
+      "bytes": 604,
+      "sha256": "61b81004081de287d300738d601bb2002379ac1d6f5f6c8c51f9e76675041106"
+    },
+    {
+      "path": "Test/Output/SaveWrite03/PreservedSettings/final-ProjectAuditorSettings.asset",
+      "bytes": 1036,
+      "sha256": "9e68444b9bda981e2927a98df9edf69ea88362f0c6b7f3c81b39b9d515d2a416"
+    },
+    {
+      "path": "Test/Output/SaveWrite03/PreservedSettings/final-QualitySettings.asset",
+      "bytes": 3858,
+      "sha256": "7b7026a4a5c7d7cdd0383830be28677ee2b99a728e1d3367d12e565a12270b2f"
+    }
+  ]
+}

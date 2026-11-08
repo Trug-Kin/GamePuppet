@@ -106,3 +106,18 @@ Prompt nhận việc: “Trên work/runtime-contracts-baseline từ fcbb7e19, x�
 - Bàn giao gộp đầy đủ baseline, nguồn, công cụ/meta và tài liệu tại [SAVE-REFERENCE-02](../QA/Tasks/N2/SAVE-REFERENCE-02/README.md), kèm null-authorized-results/manifest. Nhận cả chuỗi SAVE-VALIDATION-01 → SAVE-REFERENCE-02 theo bảng, không chỉ commit kiểm/tài liệu cuối; không wiring mới.
 - Lượt gián đoạn intro chưa rõ nguồn vẫn giữ trạng thái cũ; không đổi FAIL/PASS. UI-LOAD-FEEDBACK-01 và P-close vẫn OPEN riêng cho UI/UX & Tích hợp; UI1080p/người mới NOT_RUN (Game1536×746).
 - Đã snapshot cuối, dừng Play/đóng Editor thử không lưu scene, sceneDirty=false. Settings tự sinh line-ending-only được bảo toàn rồi khôi phục đúng file. Chỉ cập nhật báo cáo/manifest/tiến độ, không chạm UI/map/scene tích hợp/save gốc hoặc legacy; hai thư mục untracked cũ giữ nguyên. Chưa push/merge.
+
+
+## Gameplay & Dữ liệu — SAVE-WRITE-03 nhận triển khai
+
+- Xuất phát `148440b7a851f9578701377b81367b61b46e7e16`, nhánh runtime đúng, tracked sạch; hai thư mục untracked cũ giữ nguyên. Người dùng cho phép task, chưa push/merge trong đợt này.
+- Mục tiêu: lỗi ghi báo đúng, save tốt cũ giữ bytes/Load được, khắc phục rồi Save/Load tiếp. Acceptance và cách mô phỏng giới hạn tại [SAVE-WRITE-03](../QA/Tasks/N2/SAVE-WRITE-03/README.md).
+- File dự kiến: công cụ `Gameplay/Editor/SaveWriteContractChecks.cs`/meta; nếu lỗi được xác minh, helper ghi save và lời gọi Save trong session. Contracts/báo cáo/tiến độ cập nhật theo kết quả; không chạm UI/map/scene tích hợp/save gốc.
+- Thứ tự: baseline physical IO faults → sửa tối thiểu có căn cứ → API/SaveLoad hồi quy → F5/F6 nếu desktop khả thi. Giữ điểm OPEN/NOT_RUN hai gói trước.
+
+
+- SAVE-WRITE-03 kết quả: nguồn `b76828a9`, công cụ `b26e8404`, chế độ kiểm tương thích `b1858a78`. Baseline có hai assertion xác nhận Save báo lỗi sau copy nhưng bytes đích đã đổi; entry helper chưa có ghi NOT_RUN riêng. Đã sửa helper ghi/flush temp rồi Move/Replace, không cleanup sau commit hoặc chọn temp làm save, không đổi schema/IDs/GUID cũ.
+- Kiểm mới43/43 fixture/API đạt: lỗi tạo/mở ghi temp, khóa đích/rename temp, temp dở, lỗi commit lần đầu, partial-write IOException và phục hồi Save/Load. Hồi quy đầu53/54; một ca dùng nhầm fixture UI, đã giữ FAIL cấu hình. Chỉ chạy lại tương thích với đúng fixture baseline: ba ca + hai tiền điều kiện đều đạt, source fixture không đổi. Không lặp các ca đã PASS.
+- Compile và Missing Script phạm vi template/root fixture đạt, không audit scene tích hợp/render. F5/F6 UI/controller SAVE-WRITE-03 NOT_RUN: đã hỏi desktop dành riêng, chưa có xác nhận trong lượt mới; không gửi input. Không gọi fixture là tuyến tự nhiên hoặc người mới.
+- Trạng thái: NGUON_VA_API_DAT_CHO_REVIEW_CON_THIEU_UI. [Báo cáo/acceptance/bằng chứng](../QA/Tasks/N2/SAVE-WRITE-03/README.md). UI/UX & Tích hợp nhận cả chuỗi sau148440b7; không wiring mới. Việc tiếp: kiểm F5/F6 lỗi và recovery trong phiên desktop dành riêng/profile mới; giữ UI-LOAD-FEEDBACK-01/P-close OPEN, UI1080p/người mới NOT_RUN.
+- Không sửa UI/map/scene tích hợp/save gốc/legacy. Settings tự sinh line-ending-only được copy/hash trước khôi phục sau Editor thoát. Không push/merge/build/ZIP; output/profile/log dài và untracked cũ không stage.

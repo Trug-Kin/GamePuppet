@@ -1,0 +1,36 @@
+{
+    "unity": "6000.6.2f1",
+    "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+    "profile": "C:\\ConRoi_Nguoi2\\Test\\PlaytestProfiles\\SaveWrite03_Compatibility_20261108",
+    "kind": "PLAYMODE_API_FIXTURE_NOT_NATURAL_ROUTE",
+    "missingScripts": 0,
+    "failures": 0,
+    "sourceCommit": "b76828a9",
+    "checks": [
+        {
+            "name": "private_profile",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "scene_and_missing_scripts",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "load_actual_baseline_schema1_file",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "continue_baseline_file_in_private_profile",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "baseline_compatibility_file_unchanged",
+            "pass": true,
+            "detail": ""
+        }
+    ]
+}
