@@ -242,9 +242,11 @@ namespace ConRoi.Gameplay.EditorChecks
             string page = session.Page;
             bool paused = session.Paused, movement = session.movement.enabled, look = session.look.enabled;
             File.WriteAllText(session.SavePath, json);
+            byte[] inputBytes = File.ReadAllBytes(session.SavePath);
             bool accepted = session.Load();
+            bool diskUnchanged = Convert.ToBase64String(inputBytes) == Convert.ToBase64String(File.ReadAllBytes(session.SavePath));
             bool preserved = ReferenceEquals(session.data, before) && JsonUtility.ToJson(session.data) == beforeData && session.movement.transform.position == position && JsonUtility.ToJson(session.gate.state) == gate && session.Page == page && session.Paused == paused && session.movement.enabled == movement && session.look.enabled == look && session.movement.transform.eulerAngles.y == yaw && session.eye.transform.localEulerAngles.x == pitch && Time.timeScale == scale && session.movement.GameplayActionsEnabled == actions && Cursor.lockState == cursor;
-            Add(report, name, !accepted && preserved && File.ReadAllText(session.SavePath) == json && session.Message.StartsWith("Không tải:"), "Load accepted=" + accepted + "; live state preserved=" + preserved + "; disk file unchanged=" + (File.ReadAllText(session.SavePath) == json));
+            Add(report, name, !accepted && preserved && diskUnchanged && session.Message.StartsWith("Không tải:"), "Load accepted=" + accepted + "; live state preserved=" + preserved + "; disk file unchanged=" + diskUnchanged);
             File.WriteAllBytes(session.SavePath, validBytes);
             if (!session.Load()) throw new InvalidOperationException("Fixture could not recover a valid save after " + name);
         }
