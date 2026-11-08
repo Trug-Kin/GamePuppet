@@ -1,0 +1,6 @@
+Synthetic GameView mouse + InputSystem controller. Normal saved spawn; no teleport, API page open, evidence injection, or API Observe.
+WAYPOINT=0 p=(774.00, 6.05, 285.85) grounded=True
+WAYPOINT=1 p=(770.25, 6.05, 285.71) grounded=True
+WAYPOINT=2 p=(770.10, 8.97, 292.57) grounded=True
+E_RAY=slide distance=2.260691 p=(773.64, 8.97, 292.98)
+PASS floor reached and opened through E/raycast; records=3 objective=Vào xưởng, lên gác và kiểm tra dấu trên sàn gần lan can.

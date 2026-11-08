@@ -1,0 +1,32 @@
+using UnityEngine;using UnityEditor;using UnityEngine.InputSystem;using UnityEngine.InputSystem.LowLevel;using System;using System.IO;using System.Linq;using System.Text;using System.Collections.Generic;using ConRoi.Investigation.V36.R107;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){
+var s=UnityEngine.Object.FindFirstObjectByType<InvestigationSession>();if(Application.dataPath!="C:/ConRoi_CheckoutTest/Assets"||s.Page!="intro"||s.InspectionCount!=0||!s.SavePath.Contains("NavRepro_20261108"))throw new Exception("Fresh private launch required");
+var dir="Test/Output/NavFix_repro_20261108";Directory.CreateDirectory(dir);var w=EditorWindow.GetWindow(Type.GetType("UnityEditor.GameView,UnityEditor"));w.minSize=w.maxSize=new Vector2(1920,1101.2f);w.position=new Rect(0,0,1920,1101.2f);w.Focus();
+var settings=InputSystem.settings;if(AssetDatabase.Contains(settings))throw new Exception("Runtime settings only");string prior=JsonUtility.ToJson(settings);settings.editorInputBehaviorInPlayMode=InputSettings.EditorInputBehaviorInPlayMode.AllDeviceInputAlwaysGoesToGameView;settings.backgroundBehavior=InputSettings.BackgroundBehavior.IgnoreFocus;
+var kb=InputSystem.AddDevice<Keyboard>("NAV01_repro");var mouse=InputSystem.AddDevice<Mouse>("NAV01_repro");kb.MakeCurrent();mouse.MakeCurrent();InputActionMap map=null;UnityEngine.InputSystem.Utilities.ReadOnlyArray<InputDevice>? oldDevices=null;
+var b=new StringBuilder("repro: repro. Synthetic GameView UI + InputSystem. API fixture: Acquire(letter/slide/phone) only. No API page opening, mapping, Observe, Save or Load.\n");
+var q=new Queue<Action>();Action<bool,string> check=(v,m)=>{b.AppendLine((v?"PASS ":"FAIL ")+m);if(!v)throw new Exception(m);};
+Action<Key> key=k=>InputSystem.QueueStateEvent(kb,new KeyboardState(k));Action release=()=>{InputSystem.QueueStateEvent(kb,new KeyboardState());InputSystem.QueueStateEvent(mouse,new MouseState());};
+Action<float,float> click=(x,y)=>{var p=new Vector2(x*Screen.width/1200f,y*Screen.height/800f+55);w.SendEvent(new Event{type=EventType.MouseDown,button=0,mousePosition=p});w.SendEvent(new Event{type=EventType.MouseUp,button=0,mousePosition=p});};
+Action<char> type=c=>{w.SendEvent(new Event{type=EventType.KeyDown,character=c});w.SendEvent(new Event{type=EventType.KeyUp});};Action<string> shot=n=>ScreenCapture.CaptureScreenshot(dir+"/"+n+".png");
+Vector3 modalPosition=Vector3.zero;Quaternion modalEye=Quaternion.identity;int evidenceBefore=0;Vector3 worldPosition=Vector3.zero;Quaternion worldEye=Quaternion.identity;
+q.Enqueue(()=>{check(Screen.width==1920&&Screen.height==1080,"1080p");check(!File.Exists(s.SavePath),"Unused private profile");click(600,390);});
+q.Enqueue(()=>{check(s.Page==""&&s.data.introAccepted,"Start via UI");s.Acquire("letter");s.Acquire("slide");s.Acquire("phone");map=InputSystem.ListEnabledActions().First(a=>a.name=="Move"&&a.actionMap.name=="Gameplay").actionMap;oldDevices=map.devices;map.devices=new InputDevice[]{kb,mouse};});
+q.Enqueue(()=>key(Key.P));q.Enqueue(()=>{release();check(s.Page=="dossier","P initially opens dossier");});
+foreach(var variant in new[]{"partial","wrong","correct"}){
+ string mode=variant;
+ q.Enqueue(()=>click(130,138));q.Enqueue(()=>{check(s.Page=="cipher","Cipher via dossier: "+mode);});
+ for(int i=0;i<InvestigationContent.Alphabet.Length;i++){int n=i;q.Enqueue(()=>click(285+n*52,521));}
+ int count=mode=="partial"?1:InvestigationContent.Alphabet.Length;
+ for(int i=0;i<count;i++){int n=i;char c=mode=="wrong"&&i==0?'Z':InvestigationContent.Alphabet[i];q.Enqueue(()=>{click(285+n*52,484);type(c);});}
+ q.Enqueue(()=>{string expected=InvestigationContent.HaPlain.Replace(" "," • ");check(mode=="correct"?s.ReadCipher()==expected:mode=="wrong"?s.ReadCipher()!=expected&&!s.ReadCipher().Contains("_"):s.ReadCipher().Contains("_"),"UI mapping is "+mode);shot("cipher-"+mode);modalPosition=s.movement.transform.position;modalEye=s.eye.transform.rotation;evidenceBefore=s.InspectionCount;InputSystem.QueueStateEvent(kb,new KeyboardState(Key.W,Key.E));InputSystem.QueueStateEvent(mouse,new MouseState{delta=new Vector2(60,20)});});
+ q.Enqueue(()=>{release();check(s.Modal&&!s.movement.enabled&&!s.look.enabled&&Vector3.Distance(modalPosition,s.movement.transform.position)<.01f&&Quaternion.Angle(modalEye,s.eye.transform.rotation)<.01f&&s.InspectionCount==evidenceBefore,"Modal blocks movement/look/E: "+mode);click(130,103);});
+ q.Enqueue(()=>{check(s.Page==""&&!s.Modal&&!s.Paused&&s.movement.enabled&&s.look.enabled,"Back closes modal and enables controller: "+mode);key(Key.P);});
+ q.Enqueue(()=>{b.AppendLine("P state "+mode+": currentSynthetic="+(Keyboard.current==kb)+" held="+kb.pKey.isPressed+" page="+s.Page+" modal="+s.Modal+" paused="+s.Paused);release();check(false?s.Page=="dossier":s.Page=="",false?"P opens after "+mode:"REPRODUCED blocked P after "+mode);shot("after-P-"+mode);});
+ if(false){for(int i=0;i<5;i++){bool open=i%2==1;q.Enqueue(()=>key(Key.P));q.Enqueue(()=>{release();check(open?s.Page=="dossier":s.Page=="","P repeated toggle after "+mode+" open="+open);});}}
+ q.Enqueue(()=>key(Key.Escape));q.Enqueue(()=>{release();check(s.Paused,"Escape opens pause from world: "+mode);});q.Enqueue(()=>click(130,144));q.Enqueue(()=>{check(s.Page=="dossier"&&!s.Paused,"Pause Ghi chép remains accessible: "+mode);});
+}
+
+double next=EditorApplication.timeSinceStartup+2;EditorApplication.CallbackFunction f=null;
+Action finish=()=>{EditorApplication.update-=f;release();if(map!=null)map.devices=oldDevices;InputSystem.RemoveDevice(kb);InputSystem.RemoveDevice(mouse);JsonUtility.FromJsonOverwrite(prior,settings);File.WriteAllText(dir+"/suite.txt",b.ToString());File.WriteAllText(dir+"/live.json",JsonUtility.ToJson(s.data,true));};
+int step=0;f=()=>{if(EditorApplication.timeSinceStartup<next)return;next=EditorApplication.timeSinceStartup+.4;try{if(q.Count==0){finish();return;}q.Dequeue()();File.WriteAllText(dir+"/progress.txt","step="+(++step)+" remaining="+q.Count+" page="+s.Page+"\n"+b);}catch(Exception e){b.AppendLine("FAIL "+e);finish();}};EditorApplication.update+=f;r.Log("UI suite queued: repro; inspect eventual suite.txt, not callback registration.");}}

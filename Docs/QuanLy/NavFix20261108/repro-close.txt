@@ -1,0 +1,1 @@
+Preserved state before Play stop; Edit clean; Editor exit without scene save.

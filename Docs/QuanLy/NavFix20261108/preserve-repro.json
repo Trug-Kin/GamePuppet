@@ -1,0 +1,43 @@
+{
+  "commit": "a789222286f1a56db5b6cc21e1ffb5a0e7542be4",
+  "snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavPreserved_repro_20261108_033641_e79cad",
+  "files": [
+    {
+      "path": "ProjectSettings/EditorBuildSettings.asset",
+      "snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavPreserved_repro_20261108_033641_e79cad\\Files\\ProjectSettings\\EditorBuildSettings.asset",
+      "bytes": 604,
+      "sha256": "61b81004081de287d300738d601bb2002379ac1d6f5f6c8c51f9e76675041106"
+    },
+    {
+      "path": "ProjectSettings/ProjectAuditorSettings.asset",
+      "snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavPreserved_repro_20261108_033641_e79cad\\Files\\ProjectSettings\\ProjectAuditorSettings.asset",
+      "bytes": 1036,
+      "sha256": "9e68444b9bda981e2927a98df9edf69ea88362f0c6b7f3c81b39b9d515d2a416"
+    },
+    {
+      "path": "ProjectSettings/QualitySettings.asset",
+      "snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavPreserved_repro_20261108_033641_e79cad\\Files\\ProjectSettings\\QualitySettings.asset",
+      "bytes": 3723,
+      "sha256": "941f6673697bbe0579ce452e3e3284f6216087af0d04355c0d3c30d3ef9712d0"
+    },
+    {
+      "path": "Test/PlaytestProfiles/Final_a789222_20261107_1740/InvestigationV36/r107/prototype.json",
+      "snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavPreserved_repro_20261108_033641_e79cad\\Files\\Test\\PlaytestProfiles\\Final_a789222_20261107_1740\\InvestigationV36\\r107\\prototype.json",
+      "bytes": 1545,
+      "sha256": "93e392deb4843656b72989def4ad0454af4e7fa96dd92bc553d019f572fe4a07"
+    },
+    {
+      "path": "Test/PlaytestProfiles/NavFixture_a789222_20261107/InvestigationV36/r107/prototype.json",
+      "snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavPreserved_repro_20261108_033641_e79cad\\Files\\Test\\PlaytestProfiles\\NavFixture_a789222_20261107\\InvestigationV36\\r107\\prototype.json",
+      "bytes": 1958,
+      "sha256": "7059d0b524dae6dbfb92b574b8921913d958c8e86d8c513feaadded1a69b3377"
+    },
+    {
+      "path": "Test/PlaytestProfiles/Skip_a789222_20261107/InvestigationV36/r107/prototype.json",
+      "snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavPreserved_repro_20261108_033641_e79cad\\Files\\Test\\PlaytestProfiles\\Skip_a789222_20261107\\InvestigationV36\\r107\\prototype.json",
+      "bytes": 1506,
+      "sha256": "a23e4954f460877aeac6f35363cce165fc8a522ca76471b3a8239b80d2d0064c"
+    }
+  ],
+  "source_moved": false
+}

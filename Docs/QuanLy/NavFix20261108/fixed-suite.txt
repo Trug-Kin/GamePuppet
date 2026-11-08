@@ -1,0 +1,69 @@
+fixed: fixed. Synthetic GameView UI + InputSystem. API fixture: Acquire(letter/slide/phone); 2 floor observations seeded later for navigation layout. No API page opening, mapping, Save or Load.
+PASS 1080p
+PASS Unused private profile
+PASS Start via UI
+PASS P initially opens dossier
+PASS Cipher via dossier: partial
+PASS UI mapping is partial
+PASS Modal blocks movement/look/E: partial
+PASS Back closes modal and enables controller: partial
+P state partial: currentSynthetic=True held=False page=dossier modal=True paused=False
+PASS P opens after partial
+PASS P repeated toggle after partial open=False
+PASS P repeated toggle after partial open=True
+PASS P repeated toggle after partial open=False
+PASS P repeated toggle after partial open=True
+PASS P repeated toggle after partial open=False
+PASS Escape opens pause from world: partial
+PASS Pause Ghi chép remains accessible: partial
+PASS Cipher via dossier: wrong
+PASS UI mapping is wrong
+PASS Modal blocks movement/look/E: wrong
+PASS Back closes modal and enables controller: wrong
+P state wrong: currentSynthetic=True held=False page=dossier modal=True paused=False
+PASS P opens after wrong
+PASS P repeated toggle after wrong open=False
+PASS P repeated toggle after wrong open=True
+PASS P repeated toggle after wrong open=False
+PASS P repeated toggle after wrong open=True
+PASS P repeated toggle after wrong open=False
+PASS Escape opens pause from world: wrong
+PASS Pause Ghi chép remains accessible: wrong
+PASS Cipher via dossier: correct
+PASS UI mapping is correct
+PASS Modal blocks movement/look/E: correct
+PASS Back closes modal and enables controller: correct
+P state correct: currentSynthetic=True held=False page=dossier modal=True paused=False
+PASS P opens after correct
+PASS P repeated toggle after correct open=False
+PASS P repeated toggle after correct open=True
+PASS P repeated toggle after correct open=False
+PASS P repeated toggle after correct open=True
+PASS P repeated toggle after correct open=False
+PASS Escape opens pause from world: correct
+PASS Pause Ghi chép remains accessible: correct
+PASS Reopen correct cipher
+PASS F5 while cipher field focused
+PASS Escape closes focused cipher
+PASS F6 restores cipher mapping/page
+PASS Loaded cipher does not retain stale editing lock
+API fixture adds 2 floor observations solely for comparison/conclusion UI layout; not controller discovery evidence.
+PASS Compare through navigation
+PASS Comparison text entry actually recorded by UI
+PASS P after closing compare text field
+PASS Conclusions via main dossier action
+PASS Conclusion text entry actually updated through UI
+PASS P after conclusion text field
+PASS P closes dossier
+PASS WASD works after UI
+PASS Mouse look works after UI
+PASS Pause opens after typing and navigation
+PASS Pause blocks movement/look
+PASS F5 while paused writes private profile
+PASS Escape resumes
+PASS Load of paused save returns to safe unpaused input state
+PASS F5 world state
+PASS Dossier before world load
+PASS F6 world clears modal/input locks
+PASS P after world load
+PASS Return to world for controller E test

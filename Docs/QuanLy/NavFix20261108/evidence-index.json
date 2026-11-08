@@ -1,0 +1,157 @@
+[
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_repro_20261108\\after-P-correct.png",
+    "bytes": 855254,
+    "sha256": "9d016bc2ab7d79de4db3e1548b31d3e4c5be1e4e50e273b525947ee0959a9625"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_repro_20261108\\after-P-partial.png",
+    "bytes": 854628,
+    "sha256": "f079abc8160b8c6396635e8eaf4bf8e7d404851de74049011a0a86f1b16872ec"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_repro_20261108\\after-P-wrong.png",
+    "bytes": 854674,
+    "sha256": "fef48e9118dbed926a06c1cd4ea2e7571512f78baa0a53fdba80a4ddec8308ae"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_repro_20261108\\cipher-correct.png",
+    "bytes": 317395,
+    "sha256": "48382e9faa22768ccb53510cb48253b5e04d3c47a2e7baffdc997863da435a62"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_repro_20261108\\cipher-partial.png",
+    "bytes": 298862,
+    "sha256": "b570b517d8e7811a9c9a7485098a7d7eca7a900a22f4c9c373b2e0b2399f6fbb"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_repro_20261108\\cipher-wrong.png",
+    "bytes": 317305,
+    "sha256": "2c23693f0024ca8d83345e0740e15354918931ca1fd24865232e54955ab95b6b"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_repro_20261108\\close.txt",
+    "bytes": 77,
+    "sha256": "af7ad1f7ace1787cefc25320e9bbc4752ad96c677c1fb58a6cd7ae0ca236c58a"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_repro_20261108\\live.json",
+    "bytes": 2738,
+    "sha256": "e5fd9d02585bcab111328ce955211bd3edde0d0182c9651f96199a7245ab11a6"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_repro_20261108\\pre-close-live.json",
+    "bytes": 2738,
+    "sha256": "e5fd9d02585bcab111328ce955211bd3edde0d0182c9651f96199a7245ab11a6"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_repro_20261108\\progress.txt",
+    "bytes": 1401,
+    "sha256": "55b128998ee0934f0464a6225f769e00c7f50877455df5f4a521dec406729faf"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_repro_20261108\\suite.txt",
+    "bytes": 1367,
+    "sha256": "1239e020dea4ed71bb28c3598bb4443109d3907481b69ef28c65b96b9b5f8556"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_fixed_20261108\\after-P-correct.png",
+    "bytes": 271984,
+    "sha256": "f6193b6c927e1b54a0aea98734e50d1fd95e38814bb17a5ad31888cf8305dad4"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_fixed_20261108\\after-P-partial.png",
+    "bytes": 272033,
+    "sha256": "0d3c61de51c5b7d17d394f13430453bbb4c114b9e3648e4a79a5c2c3bf95af5b"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_fixed_20261108\\after-P-wrong.png",
+    "bytes": 272040,
+    "sha256": "41251667a85e363625e10cc55616d48cdd53a45127ee815319b270eda03e1950"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_fixed_20261108\\cipher-correct.png",
+    "bytes": 315615,
+    "sha256": "87aabd2a0740d2a31424957c1454c2a2a160fefb323ffcb930844706db699ff8"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_fixed_20261108\\cipher-partial.png",
+    "bytes": 298280,
+    "sha256": "6f3a5037dd693abca18e589e7917f4876a4e681fbdd1eae8aa22953aad9fd0ab"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_fixed_20261108\\cipher-wrong.png",
+    "bytes": 315578,
+    "sha256": "a58eaa520d88bfc52d20188a8c6244d059f42327ddb833db98f63705b8272344"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_fixed_20261108\\close.txt",
+    "bytes": 77,
+    "sha256": "af7ad1f7ace1787cefc25320e9bbc4752ad96c677c1fb58a6cd7ae0ca236c58a"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_fixed_20261108\\conclusions-1080.png",
+    "bytes": 322016,
+    "sha256": "fa299603d2c099ba0b6a53f7da86276000d048ff04876af747959df0fa3c1fe8"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_fixed_20261108\\controller-E-1080.png",
+    "bytes": 302430,
+    "sha256": "8ed2b0f7cb6344fe986697b499e7b5f467387d95b96d6ab805de85a62341e7aa"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_fixed_20261108\\controller-E-progress.txt",
+    "bytes": 337,
+    "sha256": "1e899fa813b73a008bd28d9a70194b949f798102b19bba8e4e1db235ae2cee4a"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_fixed_20261108\\controller-E.txt",
+    "bytes": 486,
+    "sha256": "8a0c0752142a713eaa3a9daa3df0056ee10ac3c11fd003a39e79a0be3d745fc4"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_fixed_20261108\\live.json",
+    "bytes": 2942,
+    "sha256": "7a4e2144891a1215b06a9f2cc39038314ee0c613fd4caa5badd3e7a4dd6bbec9"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_fixed_20261108\\pre-close-live.json",
+    "bytes": 2965,
+    "sha256": "1853ce8cf2fc7ac00069e8f7484385e753fd6b2cee0c65a604dd19113da71f58"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_fixed_20261108\\progress.txt",
+    "bytes": 3156,
+    "sha256": "8834eccaaa1d72e6f7b1aa9878725fe98de92cc61dc55918c68c56a9088b39ae"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_fixed_20261108\\suite.txt",
+    "bytes": 3129,
+    "sha256": "2eb447a6bf100be286c1f7170df1e5d16b94e1c35446cee4428cf1ff2976d90c"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_fixed_20261108\\tail-live.json",
+    "bytes": 2965,
+    "sha256": "1853ce8cf2fc7ac00069e8f7484385e753fd6b2cee0c65a604dd19113da71f58"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_fixed_20261108\\tail-progress.txt",
+    "bytes": 827,
+    "sha256": "347328e1612d79c0186c95e064028c7de042a6c2f93c51c4b83faccddd4947db"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_fixed_20261108\\tail-world-1080.png",
+    "bytes": 1131989,
+    "sha256": "b7d741a921cbc9688249f723aa8c8a54c65c665f945dfd229f5369a92b95705c"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_fixed_20261108\\tail.txt",
+    "bytes": 801,
+    "sha256": "ae5f8ea67781e357e8bdd0cec47e4f1262e5b17b89b4a9d271cfaf6f9675831e"
+  },
+  {
+    "path": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavFix_fixed_20261108\\world-final-1080.png",
+    "bytes": 968669,
+    "sha256": "e3afbdcef2ae0a616dce55a768ce1c1c1096286b6ede603815c0f36f36436400"
+  }
+]

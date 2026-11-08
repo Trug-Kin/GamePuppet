@@ -1,0 +1,18 @@
+{
+  "commit": "074caf3dd3da4107b4fc9ac1c089b20216b4705b",
+  "initially_pointer": [
+    {
+      "name": "Docs/QuanLy/CheckoutTest20261107/intro-1080.png",
+      "size": 211831,
+      "checkout": false,
+      "downloaded": false,
+      "oid_type": "sha256",
+      "oid": "86f523ca6b62259f1ce2312be98dcc578747947bb179d23644d3efa3d71ad5de",
+      "version": "https://git-lfs.github.com/spec/v1"
+    }
+  ],
+  "pointer_snapshot": "C:\\ConRoi_CheckoutTest\\Test\\Output\\NavLfsBefore_20261108_104949",
+  "objects_verified": true,
+  "working_tree_untracked_copied": 0,
+  "runtime_asset_pointers": 0
+}

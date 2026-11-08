@@ -1,3 +1,14 @@
+<!-- nav01-fixed-20261108 -->
+## NAV-01 đã kiểm đạt — 08/11/2026
+
+**Commit nguồn đã kiểm: `074caf3dd3da4107b4fc9ac1c089b20216b4705b`.** Sửa tối thiểu vòng đời focus trong hai script r107. Trên checkout độc lập `C:/ConRoi_CheckoutTest`, Unity **6000.6.2f1**, entry `Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity`: compile/reference đạt, NAV-01 và hồi quy UI/input/save-load **PASS kỹ thuật**. P hoạt động sau nhập đúng/sai/dở, còn được chặn đúng khi ô nhập vẫn focus. Không thay map, luật, schema, GUID hoặc save gốc.
+
+[Báo cáo, fixture và giới hạn](NavFix20261108/README.md): input tổng hợp; letter/slide/phone và 2 quan sát floor được seed API có ghi rõ, không phải người mới. **Người mới NOT_RUN; 4.183 file legacy chưa xác minh giữ nguyên.** 879 file LFS/797 object materialized đủ, 11.458 GUID meta khớp; runtime không phụ thuộc cache/archive ngoài repo. Library C độc lập, import tăng dần commit sửa. State/diff/profile được snapshot, Editor đã đóng ở Edit sạch không lưu scene.
+
+NAV-01 thay thế trạng thái BLOCKED_UI_REGRESSION 07/11; các FAIL cũ bên dưới được giữ như lịch sử. Commit báo cáo và biên nhận fast-forward ba task branch được ghi riêng sau khi có hash thực tế. Ownership vẫn giữ: người 2 sở hữu toàn bộ partial session, người 3 không đồng thời sửa các file đó. Không push/remote/build/ZIP; chưa tuyên bố toàn map/legacy PASS.
+
+---
+
 <!-- checkout-final-a789222-20261107 -->
 ## Kiểm baseline a789222 — kết quả hiện hành 07/11/2026
 

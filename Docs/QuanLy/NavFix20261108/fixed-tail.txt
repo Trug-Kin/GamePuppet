@@ -1,0 +1,15 @@
+fixed: fixed. Synthetic GameView UI + InputSystem. API fixture: Acquire(letter/slide/phone); 2 floor observations seeded later for navigation layout. No API page opening, mapping, Save or Load.
+PASS E controller route opened floor
+PASS F5 in inspected object
+PASS R leaves inspected object
+PASS F6 restores inspection without stuck pause
+PASS P works after inspection load
+PASS Cipher for typing guard
+PASS P remains a text input key while a field is focused, does not open dossier
+PASS P works again immediately after closing focused field
+PASS P closes dossier after typing guard
+PASS Controller direction W moves after UI
+PASS Controller direction S moves after UI
+PASS Controller direction A moves after UI
+PASS Controller direction D moves after UI
+PASS Controller remains grounded

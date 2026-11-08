@@ -1,0 +1,29 @@
+repro: repro. Synthetic GameView UI + InputSystem. API fixture: Acquire(letter/slide/phone) only. No API page opening, mapping, Observe, Save or Load.
+PASS 1080p
+PASS Unused private profile
+PASS Start via UI
+PASS P initially opens dossier
+PASS Cipher via dossier: partial
+PASS UI mapping is partial
+PASS Modal blocks movement/look/E: partial
+PASS Back closes modal and enables controller: partial
+P state partial: currentSynthetic=True held=False page= modal=False paused=False
+PASS REPRODUCED blocked P after partial
+PASS Escape opens pause from world: partial
+PASS Pause Ghi chép remains accessible: partial
+PASS Cipher via dossier: wrong
+PASS UI mapping is wrong
+PASS Modal blocks movement/look/E: wrong
+PASS Back closes modal and enables controller: wrong
+P state wrong: currentSynthetic=True held=False page= modal=False paused=False
+PASS REPRODUCED blocked P after wrong
+PASS Escape opens pause from world: wrong
+PASS Pause Ghi chép remains accessible: wrong
+PASS Cipher via dossier: correct
+PASS UI mapping is correct
+PASS Modal blocks movement/look/E: correct
+PASS Back closes modal and enables controller: correct
+P state correct: currentSynthetic=True held=False page= modal=False paused=False
+PASS REPRODUCED blocked P after correct
+PASS Escape opens pause from world: correct
+PASS Pause Ghi chép remains accessible: correct

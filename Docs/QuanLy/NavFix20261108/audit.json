@@ -1,0 +1,33 @@
+{
+  "utc": "2026-11-08T03:50:14.674935+00:00",
+  "tested_source": "074caf3dd3da4107b4fc9ac1c089b20216b4705b",
+  "checkout": "C:\\ConRoi_CheckoutTest",
+  "unity": "6000.6.2f1",
+  "entry": "Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity",
+  "status": "PASS_TECHNICAL_NAV01",
+  "newcomer": "NOT_RUN",
+  "lfs_files": 879,
+  "lfs_unique_objects": 797,
+  "lfs_bad": [],
+  "lfs_fsck": "Git LFS fsck OK",
+  "meta_guids_compared": 11458,
+  "meta_guid_mismatch": [],
+  "changed_product_paths": [
+    "Assets/Scripts/InvestigationV36R107/InvestigationSession.cs",
+    "Assets/Scripts/InvestigationV36R107/InvestigationSessionUI.cs"
+  ],
+  "legacy_unclassified_held": 4183,
+  "original_profile_sha256": "d53465c765207efc84979b30b8699d6bc5fa15bdb72c9b943955653fc924ed6f",
+  "task_branches_before": {
+    "work/map-asset-baseline": "a209c0e3b41a8b55e438aeabf1025b5ef6e7d940",
+    "work/runtime-contracts-baseline": "a209c0e3b41a8b55e438aeabf1025b5ef6e7d940",
+    "work/ui-onboarding-review": "a209c0e3b41a8b55e438aeabf1025b5ef6e7d940"
+  },
+  "worktrees_before": "worktree D:/ConRoi\nHEAD 074caf3dd3da4107b4fc9ac1c089b20216b4705b\nbranch refs/heads/chore/prepare-r107",
+  "stash_commits_preserved": [],
+  "source_remotes": [],
+  "checkout_remotes": [],
+  "C_free": 33376485376,
+  "source_branch": "chore/prepare-r107",
+  "library": "Independent C Library created originally; incremental import of fixed commit, never copied/shared from D"
+}

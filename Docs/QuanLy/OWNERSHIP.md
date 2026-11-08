@@ -1,3 +1,6 @@
+<!-- nav01-fixed-20261108 -->
+> 08/11: [NAV-01 kiểm đạt trên nguồn 074caf3](NavFix20261108/README.md). Lấy baseline nhánh/task và commit báo cáo thực tế từ HANDOFF/biên nhận mới nhất; trạng thái BLOCKED cũ là lịch sử. Ownership/CHUA_NHAN giữ nguyên, người mới NOT_RUN; không push.
+
 <!-- checkout-final-a789222-20261107 -->
 > Kết quả mới nhất: [kiểm a789222](CheckoutFinal20261107/README.md), Git/LFS/import/reference đạt; tổng thể BLOCKED_UI_REGRESSION (P sau nhập mật mã). Ba task branch giữ a209c0e, ownership không đổi; không push. Các trạng thái checkout cũ bên dưới là lịch sử.
 

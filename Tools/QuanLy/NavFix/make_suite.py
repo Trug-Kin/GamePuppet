@@ -1,0 +1,65 @@
+"""Generate transient bridge UI checks, never compiled into the Unity product."""
+from pathlib import Path
+import sys
+phase=sys.argv[1];assert phase in ('repro','fixed')
+root=Path(__file__).parent
+code=r'''using UnityEngine;using UnityEditor;using UnityEngine.InputSystem;using UnityEngine.InputSystem.LowLevel;using System;using System.IO;using System.Linq;using System.Text;using System.Collections.Generic;using ConRoi.Investigation.V36.R107;
+internal class CommandScript:IRunCommand{public void Execute(ExecutionResult r){
+var s=UnityEngine.Object.FindFirstObjectByType<InvestigationSession>();if(Application.dataPath!="C:/ConRoi_CheckoutTest/Assets"||s.Page!="intro"||s.InspectionCount!=0||!s.SavePath.Contains("Nav_PHASE_20261108"))throw new Exception("Fresh private launch required");
+var dir="Test/Output/NavFix_PHASE_20261108";Directory.CreateDirectory(dir);var w=EditorWindow.GetWindow(Type.GetType("UnityEditor.GameView,UnityEditor"));w.minSize=w.maxSize=new Vector2(1920,1101.2f);w.position=new Rect(0,0,1920,1101.2f);w.Focus();
+var settings=InputSystem.settings;if(AssetDatabase.Contains(settings))throw new Exception("Runtime settings only");string prior=JsonUtility.ToJson(settings);settings.editorInputBehaviorInPlayMode=InputSettings.EditorInputBehaviorInPlayMode.AllDeviceInputAlwaysGoesToGameView;settings.backgroundBehavior=InputSettings.BackgroundBehavior.IgnoreFocus;
+var kb=InputSystem.AddDevice<Keyboard>("NAV01_PHASE");var mouse=InputSystem.AddDevice<Mouse>("NAV01_PHASE");kb.MakeCurrent();mouse.MakeCurrent();InputActionMap map=null;UnityEngine.InputSystem.Utilities.ReadOnlyArray<InputDevice>? oldDevices=null;
+var b=new StringBuilder("PHASE: PHASE. Synthetic GameView UI + InputSystem. API fixture: Acquire(letter/slide/phone) only. No API page opening, mapping, Observe, Save or Load.\n");
+var q=new Queue<Action>();Action<bool,string> check=(v,m)=>{b.AppendLine((v?"PASS ":"FAIL ")+m);if(!v)throw new Exception(m);};
+Action<Key> key=k=>InputSystem.QueueStateEvent(kb,new KeyboardState(k));Action release=()=>{InputSystem.QueueStateEvent(kb,new KeyboardState());InputSystem.QueueStateEvent(mouse,new MouseState());};
+Action<float,float> click=(x,y)=>{var p=new Vector2(x*Screen.width/1200f,y*Screen.height/800f+55);w.SendEvent(new Event{type=EventType.MouseDown,button=0,mousePosition=p});w.SendEvent(new Event{type=EventType.MouseUp,button=0,mousePosition=p});};
+Action<char> type=c=>{w.SendEvent(new Event{type=EventType.KeyDown,character=c});w.SendEvent(new Event{type=EventType.KeyUp});};Action<string> shot=n=>ScreenCapture.CaptureScreenshot(dir+"/"+n+".png");
+Vector3 modalPosition=Vector3.zero;Quaternion modalEye=Quaternion.identity;int evidenceBefore=0;Vector3 worldPosition=Vector3.zero;Quaternion worldEye=Quaternion.identity;
+q.Enqueue(()=>{check(Screen.width==1920&&Screen.height==1080,"1080p");check(!File.Exists(s.SavePath),"Unused private profile");click(600,390);});
+q.Enqueue(()=>{check(s.Page==""&&s.data.introAccepted,"Start via UI");s.Acquire("letter");s.Acquire("slide");s.Acquire("phone");map=InputSystem.ListEnabledActions().First(a=>a.name=="Move"&&a.actionMap.name=="Gameplay").actionMap;oldDevices=map.devices;map.devices=new InputDevice[]{kb,mouse};});
+q.Enqueue(()=>key(Key.P));q.Enqueue(()=>{release();check(s.Page=="dossier","P initially opens dossier");});
+foreach(var variant in new[]{"partial","wrong","correct"}){
+ string mode=variant;
+ q.Enqueue(()=>click(130,138));q.Enqueue(()=>{check(s.Page=="cipher","Cipher via dossier: "+mode);});
+ for(int i=0;i<InvestigationContent.Alphabet.Length;i++){int n=i;q.Enqueue(()=>click(285+n*52,521));}
+ int count=mode=="partial"?1:InvestigationContent.Alphabet.Length;
+ for(int i=0;i<count;i++){int n=i;char c=mode=="wrong"&&i==0?'Z':InvestigationContent.Alphabet[i];q.Enqueue(()=>{click(285+n*52,484);type(c);});}
+ q.Enqueue(()=>{string expected=InvestigationContent.HaPlain.Replace(" "," • ");check(mode=="correct"?s.ReadCipher()==expected:mode=="wrong"?s.ReadCipher()!=expected&&!s.ReadCipher().Contains("_"):s.ReadCipher().Contains("_"),"UI mapping is "+mode);shot("cipher-"+mode);modalPosition=s.movement.transform.position;modalEye=s.eye.transform.rotation;evidenceBefore=s.InspectionCount;InputSystem.QueueStateEvent(kb,new KeyboardState(Key.W,Key.E));InputSystem.QueueStateEvent(mouse,new MouseState{delta=new Vector2(60,20)});});
+ q.Enqueue(()=>{release();check(s.Modal&&!s.movement.enabled&&!s.look.enabled&&Vector3.Distance(modalPosition,s.movement.transform.position)<.01f&&Quaternion.Angle(modalEye,s.eye.transform.rotation)<.01f&&s.InspectionCount==evidenceBefore,"Modal blocks movement/look/E: "+mode);click(130,103);});
+ q.Enqueue(()=>{check(s.Page==""&&!s.Modal&&!s.Paused&&s.movement.enabled&&s.look.enabled,"Back closes modal and enables controller: "+mode);key(Key.P);});
+ q.Enqueue(()=>{b.AppendLine("P state "+mode+": currentSynthetic="+(Keyboard.current==kb)+" held="+kb.pKey.isPressed+" page="+s.Page+" modal="+s.Modal+" paused="+s.Paused);release();check(EXPECT?s.Page=="dossier":s.Page=="",EXPECT?"P opens after "+mode:"REPRODUCED blocked P after "+mode);shot("after-P-"+mode);});
+ if(EXPECT){for(int i=0;i<5;i++){bool open=i%2==1;q.Enqueue(()=>key(Key.P));q.Enqueue(()=>{release();check(open?s.Page=="dossier":s.Page=="","P repeated toggle after "+mode+" open="+open);});}}
+ q.Enqueue(()=>key(Key.Escape));q.Enqueue(()=>{release();check(s.Paused,"Escape opens pause from world: "+mode);});q.Enqueue(()=>click(130,144));q.Enqueue(()=>{check(s.Page=="dossier"&&!s.Paused,"Pause Ghi chép remains accessible: "+mode);});
+}
+EXTRA
+double next=EditorApplication.timeSinceStartup+2;EditorApplication.CallbackFunction f=null;
+Action finish=()=>{EditorApplication.update-=f;release();if(map!=null)map.devices=oldDevices;InputSystem.RemoveDevice(kb);InputSystem.RemoveDevice(mouse);JsonUtility.FromJsonOverwrite(prior,settings);File.WriteAllText(dir+"/suite.txt",b.ToString());File.WriteAllText(dir+"/live.json",JsonUtility.ToJson(s.data,true));};
+int step=0;f=()=>{if(EditorApplication.timeSinceStartup<next)return;next=EditorApplication.timeSinceStartup+.4;try{if(q.Count==0){finish();return;}q.Dequeue()();File.WriteAllText(dir+"/progress.txt","step="+(++step)+" remaining="+q.Count+" page="+s.Page+"\n"+b);}catch(Exception e){b.AppendLine("FAIL "+e);finish();}};EditorApplication.update+=f;r.Log("UI suite queued: PHASE; inspect eventual suite.txt, not callback registration.");}}
+'''
+extra=r'''
+q.Enqueue(()=>click(130,138));q.Enqueue(()=>{check(s.Page=="cipher","Reopen correct cipher");click(285,484);});
+q.Enqueue(()=>key(Key.F5));q.Enqueue(()=>{release();check(File.Exists(s.SavePath),"F5 while cipher field focused");});
+q.Enqueue(()=>key(Key.Escape));q.Enqueue(()=>{release();check(s.Page==""&&!s.Paused,"Escape closes focused cipher");});
+q.Enqueue(()=>key(Key.F6));q.Enqueue(()=>{release();check(s.Page=="cipher"&&s.data.mapping.Count==InvestigationContent.Alphabet.Length,"F6 restores cipher mapping/page");});
+q.Enqueue(()=>key(Key.P));q.Enqueue(()=>{release();check(s.Page=="dossier","Loaded cipher does not retain stale editing lock");});
+q.Enqueue(()=>{s.Observe("slide",0);s.Observe("slide",1);b.AppendLine("API fixture adds 2 floor observations solely for comparison/conclusion UI layout; not controller discovery evidence.");click(130,182);});q.Enqueue(()=>{check(s.Page=="compare","Compare through navigation");click(500,180);click(950,220);});
+q.Enqueue(()=>click(700,575));q.Enqueue(()=>{foreach(char c in "NAV01")type(c);});
+q.Enqueue(()=>click(700,627));q.Enqueue(()=>{check(s.data.relations.Count==1&&s.data.relations[0].note=="NAV01","Comparison text entry actually recorded by UI");});
+q.Enqueue(()=>click(130,103));q.Enqueue(()=>key(Key.P));q.Enqueue(()=>{release();check(s.Page=="dossier","P after closing compare text field");});
+q.Enqueue(()=>click(700,200));q.Enqueue(()=>{check(s.Page=="conclusions","Conclusions via main dossier action");click(600,372);type('N');shot("conclusions-1080");});q.Enqueue(()=>{check(s.data.conclusions[0].claim=="N","Conclusion text entry actually updated through UI");});
+q.Enqueue(()=>click(130,103));q.Enqueue(()=>key(Key.P));q.Enqueue(()=>{release();check(s.Page=="dossier","P after conclusion text field");});
+q.Enqueue(()=>key(Key.P));q.Enqueue(()=>{release();check(s.Page=="","P closes dossier");worldPosition=s.movement.transform.position;worldEye=s.eye.transform.rotation;});
+q.Enqueue(()=>key(Key.W));q.Enqueue(()=>{release();check(Vector3.Distance(worldPosition,s.movement.transform.position)>.1f,"WASD works after UI");InputSystem.QueueStateEvent(mouse,new MouseState{delta=new Vector2(30,0)});});
+q.Enqueue(()=>{release();check(Quaternion.Angle(worldEye,s.eye.transform.rotation)>.1f,"Mouse look works after UI");});
+q.Enqueue(()=>key(Key.Escape));q.Enqueue(()=>{release();check(s.Paused&&s.Modal,"Pause opens after typing and navigation");modalPosition=s.movement.transform.position;modalEye=s.eye.transform.rotation;InputSystem.QueueStateEvent(kb,new KeyboardState(Key.W));InputSystem.QueueStateEvent(mouse,new MouseState{delta=new Vector2(60,0)});});
+q.Enqueue(()=>{release();check(Vector3.Distance(modalPosition,s.movement.transform.position)<.01f&&Quaternion.Angle(modalEye,s.eye.transform.rotation)<.01f,"Pause blocks movement/look");});
+q.Enqueue(()=>key(Key.F5));q.Enqueue(()=>{release();check(File.Exists(s.SavePath),"F5 while paused writes private profile");});
+q.Enqueue(()=>key(Key.Escape));q.Enqueue(()=>{release();check(!s.Paused&&!s.Modal,"Escape resumes");});
+q.Enqueue(()=>key(Key.F6));q.Enqueue(()=>{release();check(!s.Paused&&!s.Modal&&s.movement.enabled&&s.look.enabled,"Load of paused save returns to safe unpaused input state");});
+q.Enqueue(()=>key(Key.F5));q.Enqueue(()=>{release();check(File.Exists(s.SavePath),"F5 world state");});q.Enqueue(()=>key(Key.P));q.Enqueue(()=>{release();check(s.Page=="dossier","Dossier before world load");});
+q.Enqueue(()=>key(Key.F6));q.Enqueue(()=>{release();check(s.Page==""&&!s.Paused&&s.movement.enabled&&s.look.enabled,"F6 world clears modal/input locks");});q.Enqueue(()=>key(Key.P));q.Enqueue(()=>{release();check(s.Page=="dossier","P after world load");});q.Enqueue(()=>key(Key.P));q.Enqueue(()=>{release();check(s.Page=="","Return to world for controller E test");shot("world-final-1080");});
+'''
+code=code.replace('EXTRA',extra if phase=='fixed' else '').replace('EXPECT','true' if phase=='fixed' else 'false').replace('PHASE',phase).replace('Nav_repro_', 'NavRepro_')
+if phase=='fixed':code=code.replace('Acquire(letter/slide/phone) only. No API page opening, mapping, Observe, Save or Load.','Acquire(letter/slide/phone); 2 floor observations seeded later for navigation layout. No API page opening, mapping, Save or Load.')
+(root/(phase+'-suite.cs.txt')).write_text(code,encoding='utf-8')
+print(root/(phase+'-suite.cs.txt'))
