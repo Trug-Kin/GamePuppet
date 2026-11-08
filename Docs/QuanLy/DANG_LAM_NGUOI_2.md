@@ -47,3 +47,14 @@ Prompt nhận việc: “Trên work/runtime-contracts-baseline từ fcbb7e19, x�
 - Chưa kiểm: UI/controller, tuyến tự nhiên, 1080p và người mới NOT_RUN. Fixture dùng profile riêng, không cấp dữ kiện rồi nhận là chơi tự nhiên. Giữ state khi validator từ chối; chưa bảo đảm rollback lỗi binding sau validation.
 - Bàn giao UI/UX & Tích hợp: review contract và nhận commit nguồn, kiểm compile/Load tại nhánh tích hợp thống nhất; registry chung còn thiếu hook, cần chủ tài liệu xác nhận. Không tự merge/push. Map & Asset không có phụ thuộc mới.
 - Việc tiếp: review gói nhỏ theo GDD, kiểm UI/controller chịu ảnh hưởng trước chốt tích hợp; chưa mở rộng gameplay hay dọn legacy.
+
+
+## Gameplay & Dữ liệu — SAVE-VALIDATION-01, bổ sung UI/controller 08/11/2026
+
+- Xuất phát `57dcbb03`, runtime `546833aa`; worktree `C:/ConRoi_Nguoi2`, nhánh không đổi. Snapshot status/diff trước phiên và trước stop nằm trong output riêng. Không reset tiến độ mới.
+- Đã làm: thêm công cụ Editor dựng môi trường tạm trong Gameplay_ThuNghiem, không lưu scene; kiểm tiến trình qua Windows input tổng hợp/controller/IMGUI, không cấp chứng cứ qua API.
+- File thay đổi: `Assets/ConRoi/Modules/Gameplay/Editor/SaveGuardControllerChecks.cs` và meta; báo cáo SAVE-VALIDATION-01, JSON kết quả/manifest nhỏ và tiến độ này. Commit công cụ: `bb88d4cc97ad78427320d03a64f0f49f4050857b`. Runtime/schema/ID/GUID cũ, UI và scene tích hợp không đổi.
+- Kết quả: ghi bằng UI → F5 A → thay tiến trình qua D/E/ghi → F6 A → tiếp tục ghi/F5/F6 B đạt. Ba save lỗi (index999, ID trùng, JSON đứt) bị từ chối; state/identity/transform/gate/modal/input flags và bytes file giữ nguyên ở lần kiểm cuối. Sau đó P/E/Esc, khóa W trong modal, di chuyển/chuột, tải A/B hợp lệ và F5/F6 đạt.
+- Giới hạn: input tổng hợp, môi trường proxy không phải tuyến xưởng tự nhiên; người mới NOT_RUN. Game captures1536×746, không kiểm lại1080p. Lần đầu input/focus chưa ổn định và một lần P-close sau pause chưa rõ nguyên nhân được giữ trong báo cáo; kiểm lại P ba chu kỳ đạt, chưa coi là lỗi NAV-01 và không sửa runtime. Không chạy lại42 ca API vì hash nguồn không đổi.
+- OPEN gửi UI/UX & Tích hợp: UI-LOAD-FEEDBACK-01, lý do Load sai không hiển thị trong dossier/pause dù Message đã có; xem [báo cáo và acceptance](../QA/Tasks/N2/SAVE-VALIDATION-01/README.md). Chưa sửa thay UI; partial chung vẫn thuộc Gameplay & Dữ liệu.
+- Bàn giao: nhận guard nguồn546833aa nếu chưa có, source test tại commit trên và tài liệu cập nhật; không wiring mới. Tiếp theo UI/UX & Tích hợp review thông báo lỗi và kiểm ở scene tích hợp theo lịch riêng. Chưa push/merge, không sửa map/save gốc hoặc dọn legacy.
