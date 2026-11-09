@@ -122,7 +122,7 @@ namespace ConRoi.Investigation.V36.R107
             if(inspectId=="henri"&&Button("Xem bảng tập")){showLookup=true;OpenPage("cipher");}
             GUILayout.EndVertical();
             GUILayout.BeginVertical(GUILayout.Width(530));scroll=GUILayout.BeginScrollView(scroll);
-            Text("BẢN CHÉP / MÔ TẢ");Text(e.transcript);GUILayout.Space(12);
+            Text("BẢN CHÉP / MÔ TẢ");Text(EvidenceTranscript(e.id));GUILayout.Space(12);
             Text("Điều bạn trực tiếp nhìn thấy:");
             if(e.id=="clip"&&(!data.clipBeforeSeen||!data.clipEventSeen)){Text("Quay lại đoạn quay để quan sát trước khi ghi.");}
             else {
@@ -158,7 +158,7 @@ namespace ConRoi.Investigation.V36.R107
                 foreach(var record in data.evidence)if(Button((selected==record.id?"● ":"")+InvestigationContent.Get(record.id).title)){
                     if(side==0)selectedA=record.id;else selectedB=record.id;
                 }
-                if(!string.IsNullOrEmpty(selected)){var e=InvestigationContent.Get(selected);Text(e.transcript);foreach(int i in Record(selected).observations)Text(e.observations[i]);if(Button("Xem gần vật này"))OpenEvidence(selected);}
+                if(!string.IsNullOrEmpty(selected)){var e=InvestigationContent.Get(selected);Text(EvidenceTranscript(e.id));foreach(int i in Record(selected).observations)Text(e.observations[i]);if(Button("Xem gần vật này"))OpenEvidence(selected);}
                 GUILayout.EndVertical();
             }
             GUILayout.EndHorizontal();Text("Quan hệ / điều còn thiếu:");GUI.SetNextControlName("EntryRelation");relationNote=GUILayout.TextField(relationNote,GUILayout.Height(55));

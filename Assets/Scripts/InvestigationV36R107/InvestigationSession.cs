@@ -54,6 +54,15 @@ namespace ConRoi.Investigation.V36.R107
         public bool Has(string id)=>data.evidence.Any(e=>e.id==id);
         public EvidenceRecord Record(string id)=>data.evidence.FirstOrDefault(e=>e.id==id);
         public bool Observation(string id,int index)=>Record(id)?.observations.Contains(index)==true;
+        // Reuse the observation gate: acquisition or seeking is not playback exposure.
+        public string EvidenceTranscript(string id)
+        {
+            var definition=InvestigationContent.Get(id);
+            if(definition==null||!Has(id))return "";
+            if(id=="clip"&&(!data.clipBeforeSeen||!data.clipEventSeen))
+                return "Hãy xem cả trước và trong sự cố ở đoạn quay trước khi đọc phần ghi nhận.";
+            return definition.transcript;
+        }
         public bool Modal=>Paused||Page!="";
         void Awake()
         {

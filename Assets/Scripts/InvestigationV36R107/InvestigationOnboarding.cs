@@ -38,6 +38,7 @@ namespace ConRoi.Investigation.V36.R107
         }
         void RecordVisibleObservations(string id){
             var e=InvestigationContent.Get(id);if(e==null||!Has(id))return;
+            if(id=="clip"&&(!data.clipBeforeSeen||!data.clipEventSeen)){Message="Hãy xem cả trước và trong sự cố trước khi ghi quan sát clip.";return;}
             bool wasRecorded=data.firstFloorRecorded;
             for(int i=0;i<e.observations.Length;i++)Observe(id,i);
             if(!wasRecorded&&data.firstFloorRecorded){if(!data.tutorialSkipped)Message="Đã ghi quan sát. P · Xem ghi chép";}
