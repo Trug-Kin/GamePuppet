@@ -75,10 +75,74 @@ Kiểm lại trong scene chung/profile sạch riêng:
 2. Khám→ghi→mục tiêu→Hà→mật mã→đối chiếu→bàn dựng→rời/quay lại→lưu/tải→kết luận. Không suy tuyến UI đầy đủ PASS từ API cấp exposure.
 3. Nút xác nhận trung tính, sửa nhận định/ground/choice/Load/pause không giữ xác nhận cũ. Chọn “Chưa đủ chứng minh” vẫn ghi được, không tự chấm ending.
 4. Chốt tạo checkpoint chưa finalized trước bản chính finalized; thử lỗi chỉ profile riêng, không báo thành công sai; khắc phục rồi chốt/load/tiếp tục.
-5. Nếu cần nút restore trước chốt: **chưa có UI mới**; thống nhất vị trí và xác nhận thao tác rồi gửi chủ partial Gameplay & Dữ liệu nối `LoadConclusionCheckpoint()`. API đã có/kiểm, F6 không tự fallback. Checkpoint chứa draft lần thử gần nhất, không lịch sử nhiều bản.
+5. Restore trước chốt: API đã có/kiểm, **đường truy cập người chơi chưa được thiết kế/giao**. Không yêu cầu thêm nút mới. Nếu đưa nhu cầu thử lại trước chốt của GDD8 vào tuyến người chơi, UI/UX & Tích hợp chốt cách truy cập/xác nhận thay tiến trình rồi giao chủ partial nối `LoadConclusionCheckpoint()`. F6 không tự fallback. Checkpoint chứa draft lần thử gần nhất, không lịch sử nhiều bản.
 
 **Riêng:** scene chung trên nguồn mới NOT_RUN; UI1080p NOT_RUN; người mới NOT_RUN; P-close OPEN/chưa tái hiện/nguyên nhân chưa xác định. Kiểm P ở route37 không đóng mục lịch sử. Probe cũ chưa chạy giữ NOT_RUN. Không đổi baseline nhóm trong gói này.
 
 ## 6. Bảo toàn và dữ liệu local
 
 Không đổi4.183 legacy chưa xác minh, archive/save gốc hoặc worktree UI. Hai thư mục untracked `.vscode/` và `Test/KetQua/W_route_Unity_v30_20261016/` giữ nguyên. Snapshot/status/refs/file bytes, profile, screenshots/log thô ở local `Test/Output/GameplayScope20261109` và `Test/PlaytestProfiles`, không đưa vào commit. Năm file Unity đã chụp sau kiểm, đối chiếu nội dung chỉ đổi xuống dòng và phục hồi đúng bytes trước kiểm, không lưu scene runtime. `verification.json` chỉ giữ assertion, SHA bằng chứng và blob nguồn; không chứa save/log thô. Kết quả trước sửa/FAIL/gián đoạn giữ riêng, không ghi đè để hợp thức PASS.
+
+
+## 7. Tiếp tục đóng checklist sau15d15da2
+
+Đã đối chiếu từng hàng GDD/code, không mở chức năng ngoài checklist. [Bảng hiện hành trong tiến độ](../../../../QuanLy/DANG_LAM_NGUOI_2.md), mục “Checklist đóng phạm vi chức năng”, ghi riêng runtime đã có/đã kiểm, phụ thuộc và ngoài giai đoạn; mỗi phần còn lại có vai trò nhận và điều kiện đạt. Các báo cáo/chưa kiểm ở mục3 giữ nguyên như lịch sử, kết quả dưới đây bổ sung chứ không viết đè.
+
+**Không phát hiện thiếu logic mới có yêu cầu rõ trong prototype sau e0544b74/d7f1c93b. Không sửa runtime trong lượt closure này.** Đã làm tiếp phần acceptance chưa đủ bằng chứng: sửa kết luận qua UI thực và chốt dưới lỗi IO qua UI, thay vì dừng sau push15d15da2.
+
+Chuỗi công cụ bổ sung phải nhận cùng nguồn cũ:
+
+- `a53a85123a101f4674d21b37bdc3f538a437edbc`: suite closure cho mutation, toàn state/bytes khi lỗi ghi và sáu chuỗi resume; UI kiểm sửa nội dung/lỗi ghi.
+- `45e5a2b436c51201fca03f7133a9aeeb875445f1`: dispose coroutine khi kiểm gián đoạn để finally nhả file lock và giữ thư mục lỗi, không để công cụ giữ handle tới lúc process thoát.
+- `c8fc4552277d28b27a78a9264a1290216309fd8e`: tìm điều khiển bằng thay đổi quan sát được trong UI thay tọa độ một điểm. Không gán data hoặc gọi API thay thao tác UI.
+- Commit báo cáo chứa mục này; không tạo vòng commit ghi SHA của chính báo cáo.
+
+### Kết quả mới
+
+| Lượt / nguồn thực chạy | Kết quả | Phạm vi |
+|---|---:|---|
+| ClosureApi /45e5a2b4 | **36/36** | API Play Mode: choice/grounds/record khác hủy xác nhận; ba lỗi tạm/đích/checkpoint giữ full data, page/pause, xác nhận, pose/gate, trial/clip, component enabled và bytes chính; Load bản tốt, khắc phục và chốt; sáu lượt resume bình thường có kiểm kết quả từng lần |
+| ClosureController /45e5a2b4 | **29 đạt/31 dòng,2 lỗi** | Dừng vì click một điểm chưa làm thay choice; chưa tới kiểm hủy xác nhận/lỗi ghi. Là precondition công cụ chưa đạt, không kết luận lỗi gameplay hoặc PASS phần chưa chạy |
+| ClosureControllerTargeted /c8fc4552 | **55/55** | Tuyến Gameplay proxy + sửa choice/grounds/claim bằng event GUI; đổi grounds về cũ không khôi phục xác nhận; lỗi tạo checkpoint và ghi chính qua nút chốt giữ state/bytes, báo từ chối; gỡ lỗi/chốt/F6 giữ bản mới; P/Esc/pause tiếp tục |
+
+[Assertion + SHA bằng chứng và tree nguồn](closure-verification.json). Toàn thư mục source runtime r107 có tree hash bằng nhau giữa d7f1c93b,15d15da2,45e5a2b4,c8fc4552; không dùng commit công cụ để ngụ ý runtime mới. API36 và UI55 là tập acceptance bổ sung, có kiểm lặp lại tuyến chịu ảnh hưởng; không cộng với86/37 thành số ca độc lập hoặc coi đã chạy lại toàn bộ save/trial.
+
+UI là **GameView IMGUI events + virtual keyboard của Unity Input System**. Không input Windows, không cấp sẵn chứng cứ trong route hoặc gọi API thay click/di chuyển; môi trường proxy sinh trong scene Gameplay_ThuNghiem, profile mới, render1600×1099. Không có footage/camera clip thật; chưa thao tác giải hết mật mã/ghi quan hệ bằng UI, các phần đó vẫn API. Không có kiểm scene chung/1080p/người mới trên nguồn mới. File lock/directory-block là lỗi được mô phỏng an toàn trong profile thử, finally khôi phục; không chứng minh mất điện/crash.
+
+Có thể chạy đúng phần bổ sung bằng các lệnh mục4: API thay `--flow-suite all` bằng `--flow-suite closure`; controller thêm `--flow-ui-closure yes`. Đổi cả output và profile sang thư mục mới, không chạy hai Editor cùng working directory. Không yêu cầu chạy lại bộ86 hoặc các bộ save/IO/trial cũ.
+
+## 8. IO-OPEN-01 — rủi ro ghi bình thường chưa giải thích
+
+**OPEN, chủ nhận Gameplay & Dữ liệu. Không đóng vì lượt cuối hoặc sáu lượt resume đạt.** Đây là rủi ro trong acceptance ghi/chốt của gói hiện tại, không phải nhiệm vụ audit toàn hệ save mới.
+
+### Bằng chứng đã có và ảnh hưởng
+
+1. `ConclusionFixed` trên d7f1c93b và `FinalIoDiagnosis` trên71b20f71 đều trả false/Message “Không chốt…” tại `resume_can_confirm_and_commit`; state ghi trong assertion có Page=conclusions, Paused=false, confirmed=true, finalized=false. Không có exception gốc/operation path được thu ở hai lần đó. **Có ảnh hưởng acceptance ghi bình thường:** thao tác chốt có lúc không hoàn tất. Không có bằng chứng báo chốt thành công giả ở các lượt này.
+2. `FinalAffectedApi` trên71b20f71: Save không hoàn tất nhưng fixture tiếp tục Load; clip roundtrip tải bản tốt cũ và chuỗi kết luận đọc lại bản cũ, làm sáu assertion downstream thất bại. Công cụ df2a1a83 đã buộc kiểm kết quả Save trước Load. Sửa công cụ chỉ ngăn kết luận roundtrip sai, **không sửa hay giải thích nguyên nhân IO**.
+3. Chưa thu đủ hash/state ngay thời điểm các lỗi ngoài dự kiến để kết luận mọi bytes/state ở các lượt lịch sử được giữ. Không dùng kết quả lỗi mô phỏng thay cho bằng chứng thiếu đó. Các ca được kiểm có chủ đích (API25/closure36, UI55) chứng minh guard giữ state/bytes khi lỗi mô phỏng; không chứng minh tất cả nguyên nhân IO thật.
+4. `AllIoCatchTrace` có log tạm chỉ ghi ba exception tương ứng ba điều kiện lỗi được công cụ chủ động tạo: khóa đích, thư mục chặn tmp, khóa checkpoint. Không tìm ra process hoặc exception của lỗi bình thường; log tạm đã phục hồi khỏi nguồn bàn giao.
+5. Phạm vi nguồn: lỗi lộ ở d7f1c93b/71b20f71, **cũng là runtime đang bàn giao**, tree không đổi ởc8fc4552. Writer từ SAVE-WRITE-03 không bị sửa. Chưa đủ bằng chứng quy lỗi cho nguồn mới hay môi trường/antivirus, cũng chưa đủ bằng chứng nói nguồn mới đã hết rủi ro.
+
+Ảnh hưởng cụ thể: lượt Save/chốt có thể bị từ chối, bản hiện tại chưa được cam kết. Nếu sau thông báo ghi thất bại người dùng F6 ngay, Load có thể trở về bản chính cũ và bỏ thay đổi chưa lưu; đây không phải bằng chứng Load âm thầm làm hỏng save. Checkpoint có thể đã cập nhật trước khi ghi chính lỗi theo contract hai file. Không tuyên “không thể mất tiến trình”, giao dịch hai file nguyên tử hoặc chịu được crash.
+
+### Bước tái hiện và điều kiện khép mục
+
+- Dùng Unity6000.6.2f1, scene Gameplay_ThuNghiem, profile mới; chạy riêng `InvestigationFlowChecks.RunBatch --flow-suite conclusion` như mục4 để lặp chuỗi gốc có fault/recovery, sửa claim → đóng/mở trang → pause/resume → xác nhận → chốt. Các assertion lịch sử chỉ vị trí `resume_can_confirm_and_commit`; tái hiện không ổn định.
+- `--flow-suite closure` kiểm sáu chuỗi resume và snapshot trước/sau; mỗi thất bại bình thường là một assertion FAIL, không tự retry để biến thành PASS. **Lượt36 hiện tại không tái hiện lỗi**, không đổi trạng thái OPEN.
+- Khi lỗi thật tái hiện: giữ profile/file `.tmp`, SHA trước/sau của main/checkpoint, full live snapshot và Message, source SHA/time/process; phân biệt bước ghi checkpoint với ghi chính. Chỉ thu exception/handle trong lượt chẩn đoán có phạm vi và giữ riêng, không lộ qua UI hoặc bỏ guard. Không làm đầy ổ/đổi quyền save người dùng/kill Unity.
+- **Gameplay & Dữ liệu** xác định nguyên nhân cụ thể từ lượt tái hiện; nếu lỗi nguồn thì sửa tối thiểu và kiểm chính ca đó cùng giữ state/bytes/recovery. Nếu phụ thuộc file lock/môi trường, cần bằng chứng process/handle và kiểm sau gỡ điều kiện. **UI/UX & Tích hợp** nhận mức ảnh hưởng, kiểm thông báo từ chối không thành công giả và không coi F6 sau Save thất bại là đã lưu bản mới. Không chốt acceptance độ tin cậy ghi bình thường hoặc baseline mới chỉ từ các lượt hiện tại.
+
+## 9. Bàn giao cuối theo chức năng và phụ thuộc
+
+Nhận toàn chuỗi **e0544b74 → d7f1c93b →71b20f71 →df2a1a83 →15d15da2**, sau đó ba commit công cụ closure ở mục7 và báo cáo. Tiền đề baf7335b5/c93cb4f1e đã có trên nhánh; không cherry-pick riêng commit báo cáo. Chưa merge/chốt baseline nhóm.
+
+| Bàn giao | Bằng chứng Gameplay hiện có | Người nhận / acceptance còn lại |
+|---|---|---|
+| Clip chưa xem đủ không lộ bản chép | API43, route37 và route55: inspect trung tính trước, có bản chép sau; compare dùng cùng accessor kiểm API | **UI/UX & Tích hợp:** inspect/compare với footage thật, ba trạng thái chưa đủ và đủ hai vùng; **Map & Asset** phối hợp media nếu sai binding/hình |
+| Ghi bị chặn không báo thành công | RecordVisibleObservations trả Message từ chối ở API; UI chưa đủ không đưa nút Ghi | **UI/UX & Tích hợp:** phản hồi/nút đúng ngữ cảnh scene chung, không buộc test click nút chưa tồn tại |
+| Sửa kết luận hủy xác nhận | API: cả record khác/choice/grounds; UI55: choice/claim/ground, toggle ground về cũ vẫn chưa xác nhận | **UI/UX & Tích hợp:** kiểm cùng các trường trong scene chung/1080p, sau Load/pause và quay lại; không sửa partial song song |
+| Checkpoint/ghi chính lỗi không chốt giả | API36 giữ full live/bytes; UI55 từ nút chốt giữ state/bytes và gỡ lỗi/commit/F6 được | **UI/UX & Tích hợp:** kiểm feedback scene chung, label không che; IO-OPEN-01 vẫn do **Gameplay & Dữ liệu** theo dõi |
+| Khôi phục trước chốt | API `LoadConclusionCheckpoint()` đã kiểm; schema1/validator cũ, không tự fallback | [Contract, cách gọi, điều kiện, tác dụng và lỗi](../../../../QuanLy/HOP_DONG_MODULE.md), mục “Checkpoint trước chốt — contract bàn giao đường truy cập”. **UI/UX & Tích hợp** chốt đường truy cập nếu đưa nhu cầu thử lại trước chốt vào luồng người chơi; không tự yêu cầu thêm nút. **Gameplay & Dữ liệu** nhận nối partial khi thiết kế rõ |
+| Toàn tuyến gameplay hiện hành | API18 xuyên suốt; controller/UI55 tuyến đại diện trên proxy, mật mã/quan hệ chỉ API | **UI/UX & Tích hợp:** scene chung từ nguồn nhận thực tế, giải mật mã/ghi quan hệ qua UI,1080p và tổ chức người mới; **Map & Asset:** collider/góc nhìn/hình học/media thật. Không suy PASS từ proxy |
+
+**Kết thúc phần triển khai runtime rõ trong checklist:** không còn logic được giao rõ chưa làm sau hai nguồn trên. Chưa gọi toàn tuyến người chơi hoàn tất: IO-OPEN-01, restore chưa có đường truy cập được thiết kế, scene chung/media/mật mã–đối chiếu bằng UI/1080p/người mới là phần chưa khép với owner và acceptance đã ghi. P-close vẫn OPEN/chưa tái hiện/nguyên nhân chưa rõ, probe cũ NOT_RUN. Ending/khu/full26 ngoài giai đoạn; không chuyển chúng thành việc đang chặn prototype.

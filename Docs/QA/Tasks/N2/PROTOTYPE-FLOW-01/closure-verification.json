@@ -1,0 +1,535 @@
+{
+  "unity": "6000.6.2f1",
+  "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+  "runtime_tree_equal": {
+    "d7f1c93b": "c9eaaa0a207b0368007f916478e5cbbf65e977d2",
+    "15d15da2": "c9eaaa0a207b0368007f916478e5cbbf65e977d2",
+    "45e5a2b4": "c9eaaa0a207b0368007f916478e5cbbf65e977d2",
+    "c8fc4552": "c9eaaa0a207b0368007f916478e5cbbf65e977d2"
+  },
+  "ui_render": [
+    1600,
+    1099
+  ],
+  "io_history_status": "OPEN_NOT_EXPLAINED",
+  "runs": [
+    {
+      "run": "ClosureApi",
+      "source": "45e5a2b436c51201fca03f7133a9aeeb875445f1",
+      "kind": "PLAYMODE_API_FIXTURE_NOT_UI",
+      "checks": 36,
+      "failures": 0,
+      "raw_sha256": "e474f4d3028021c5f7e5f5e0ea1f48e391b93b2e070e480382ca2db76a12d8b6",
+      "assertions": [
+        {
+          "name": "choice_change_invalidates_confirmation",
+          "pass": true
+        },
+        {
+          "name": "grounds_change_invalidates_confirmation",
+          "pass": true
+        },
+        {
+          "name": "other_record_change_invalidates_confirmation",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_create_rejects_without_success",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_create_full_live_unchanged",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_create_main_bytes_unchanged",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_create_old_valid_save_loads",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_create_explicit_recovery",
+          "pass": true
+        },
+        {
+          "name": "destination_replace_rejects_without_success",
+          "pass": true
+        },
+        {
+          "name": "destination_replace_full_live_unchanged",
+          "pass": true
+        },
+        {
+          "name": "destination_replace_main_bytes_unchanged",
+          "pass": true
+        },
+        {
+          "name": "destination_replace_old_valid_save_loads",
+          "pass": true
+        },
+        {
+          "name": "destination_replace_explicit_recovery",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_replace_rejects_without_success",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_replace_full_live_unchanged",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_replace_main_bytes_unchanged",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_replace_old_valid_save_loads",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_replace_explicit_recovery",
+          "pass": true
+        },
+        {
+          "name": "normal_resume_0_commits",
+          "pass": true
+        },
+        {
+          "name": "normal_resume_0_failure_safeguard",
+          "pass": true
+        },
+        {
+          "name": "normal_resume_0_valid_file_loads",
+          "pass": true
+        },
+        {
+          "name": "normal_resume_1_commits",
+          "pass": true
+        },
+        {
+          "name": "normal_resume_1_failure_safeguard",
+          "pass": true
+        },
+        {
+          "name": "normal_resume_1_valid_file_loads",
+          "pass": true
+        },
+        {
+          "name": "normal_resume_2_commits",
+          "pass": true
+        },
+        {
+          "name": "normal_resume_2_failure_safeguard",
+          "pass": true
+        },
+        {
+          "name": "normal_resume_2_valid_file_loads",
+          "pass": true
+        },
+        {
+          "name": "normal_resume_3_commits",
+          "pass": true
+        },
+        {
+          "name": "normal_resume_3_failure_safeguard",
+          "pass": true
+        },
+        {
+          "name": "normal_resume_3_valid_file_loads",
+          "pass": true
+        },
+        {
+          "name": "normal_resume_4_commits",
+          "pass": true
+        },
+        {
+          "name": "normal_resume_4_failure_safeguard",
+          "pass": true
+        },
+        {
+          "name": "normal_resume_4_valid_file_loads",
+          "pass": true
+        },
+        {
+          "name": "normal_resume_5_commits",
+          "pass": true
+        },
+        {
+          "name": "normal_resume_5_failure_safeguard",
+          "pass": true
+        },
+        {
+          "name": "normal_resume_5_valid_file_loads",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "run": "ClosureController",
+      "source": "45e5a2b436c51201fca03f7133a9aeeb875445f1",
+      "kind": "UNITY_TARGETED_IMGUI_AND_VIRTUAL_KEYBOARD_NOT_WINDOWS_NOT_NATURAL",
+      "checks": 31,
+      "failures": 2,
+      "raw_sha256": "69d7a8da98c793d2cce511bd76f9ef78e76766734a96185f063b580036574f3b",
+      "assertions": [
+        {
+          "name": "intro_UI_start",
+          "pass": true
+        },
+        {
+          "name": "E_slide_inspect_no_record",
+          "pass": true
+        },
+        {
+          "name": "slide_UI_record",
+          "pass": true
+        },
+        {
+          "name": "record_updates_objective",
+          "pass": true
+        },
+        {
+          "name": "P_reviews_first_note",
+          "pass": true
+        },
+        {
+          "name": "modal_blocks_movement",
+          "pass": true
+        },
+        {
+          "name": "E_phone_acquires_only_phone",
+          "pass": true
+        },
+        {
+          "name": "UI_opens_clip",
+          "pass": true
+        },
+        {
+          "name": "UI_clip_paused_before_event",
+          "pass": true
+        },
+        {
+          "name": "clip_record_button_opens_inspect",
+          "pass": true
+        },
+        {
+          "name": "UI_early_clip_inspect_is_guarded",
+          "pass": true
+        },
+        {
+          "name": "UI_reopens_clip",
+          "pass": true
+        },
+        {
+          "name": "visible_playback_unlocks_both_windows",
+          "pass": true
+        },
+        {
+          "name": "clip_record_button_opens_inspect",
+          "pass": true
+        },
+        {
+          "name": "UI_seen_clip_transcript",
+          "pass": true
+        },
+        {
+          "name": "clip_UI_record",
+          "pass": true
+        },
+        {
+          "name": "clip_UI_record",
+          "pass": true
+        },
+        {
+          "name": "clip_repeat_not_duplicate",
+          "pass": true
+        },
+        {
+          "name": "E_Ha_returns_existing_letter_data",
+          "pass": true
+        },
+        {
+          "name": "E_mechanism_no_free_observation",
+          "pass": true
+        },
+        {
+          "name": "E_table_opens",
+          "pass": true
+        },
+        {
+          "name": "UI_trial_started",
+          "pass": true
+        },
+        {
+          "name": "trial_context_still_guarded",
+          "pass": true
+        },
+        {
+          "name": "E_returns_same_trial",
+          "pass": true
+        },
+        {
+          "name": "controller_moves_after_modal",
+          "pass": true
+        },
+        {
+          "name": "F6_restores_route_progress",
+          "pass": true
+        },
+        {
+          "name": "P_dossier_for_conclusion",
+          "pass": true
+        },
+        {
+          "name": "conclusion_UI_open",
+          "pass": true
+        },
+        {
+          "name": "closure_UI_confirmation",
+          "pass": true
+        },
+        {
+          "name": "UI_choice_change_clears_confirmation",
+          "pass": false
+        },
+        {
+          "name": "exception",
+          "pass": false
+        }
+      ]
+    },
+    {
+      "run": "ClosureControllerTargeted",
+      "source": "c8fc4552277d28b27a78a9264a1290216309fd8e",
+      "kind": "UNITY_TARGETED_IMGUI_AND_VIRTUAL_KEYBOARD_NOT_WINDOWS_NOT_NATURAL",
+      "checks": 55,
+      "failures": 0,
+      "raw_sha256": "5136ff42a42cbd0e9c75368fcde9be10a2171f859eec91f99b3b0714e67bfdd8",
+      "assertions": [
+        {
+          "name": "intro_UI_start",
+          "pass": true
+        },
+        {
+          "name": "E_slide_inspect_no_record",
+          "pass": true
+        },
+        {
+          "name": "slide_UI_record",
+          "pass": true
+        },
+        {
+          "name": "record_updates_objective",
+          "pass": true
+        },
+        {
+          "name": "P_reviews_first_note",
+          "pass": true
+        },
+        {
+          "name": "modal_blocks_movement",
+          "pass": true
+        },
+        {
+          "name": "E_phone_acquires_only_phone",
+          "pass": true
+        },
+        {
+          "name": "UI_opens_clip",
+          "pass": true
+        },
+        {
+          "name": "UI_clip_paused_before_event",
+          "pass": true
+        },
+        {
+          "name": "clip_record_button_opens_inspect",
+          "pass": true
+        },
+        {
+          "name": "UI_early_clip_inspect_is_guarded",
+          "pass": true
+        },
+        {
+          "name": "UI_reopens_clip",
+          "pass": true
+        },
+        {
+          "name": "visible_playback_unlocks_both_windows",
+          "pass": true
+        },
+        {
+          "name": "clip_record_button_opens_inspect",
+          "pass": true
+        },
+        {
+          "name": "UI_seen_clip_transcript",
+          "pass": true
+        },
+        {
+          "name": "clip_UI_record",
+          "pass": true
+        },
+        {
+          "name": "clip_UI_record",
+          "pass": true
+        },
+        {
+          "name": "clip_repeat_not_duplicate",
+          "pass": true
+        },
+        {
+          "name": "E_Ha_returns_existing_letter_data",
+          "pass": true
+        },
+        {
+          "name": "E_mechanism_no_free_observation",
+          "pass": true
+        },
+        {
+          "name": "E_table_opens",
+          "pass": true
+        },
+        {
+          "name": "UI_trial_started",
+          "pass": true
+        },
+        {
+          "name": "trial_context_still_guarded",
+          "pass": true
+        },
+        {
+          "name": "E_returns_same_trial",
+          "pass": true
+        },
+        {
+          "name": "controller_moves_after_modal",
+          "pass": true
+        },
+        {
+          "name": "F6_restores_route_progress",
+          "pass": true
+        },
+        {
+          "name": "P_dossier_for_conclusion",
+          "pass": true
+        },
+        {
+          "name": "conclusion_UI_open",
+          "pass": true
+        },
+        {
+          "name": "closure_UI_confirmation",
+          "pass": true
+        },
+        {
+          "name": "closure_UI_choice_was_changed",
+          "pass": true
+        },
+        {
+          "name": "UI_choice_change_clears_confirmation",
+          "pass": true
+        },
+        {
+          "name": "closure_UI_confirmation",
+          "pass": true
+        },
+        {
+          "name": "UI_ground_change_clears_confirmation",
+          "pass": true
+        },
+        {
+          "name": "closure_UI_confirmation",
+          "pass": true
+        },
+        {
+          "name": "UI_ground_restore_does_not_restore_confirmation",
+          "pass": true
+        },
+        {
+          "name": "closure_UI_confirmation",
+          "pass": true
+        },
+        {
+          "name": "UI_claim_change_clears_confirmation",
+          "pass": true
+        },
+        {
+          "name": "closure_UI_confirmation",
+          "pass": true
+        },
+        {
+          "name": "closure_UI_commit_rejected",
+          "pass": true
+        },
+        {
+          "name": "UI_checkpoint_failure_state_and_bytes_preserved",
+          "pass": true
+        },
+        {
+          "name": "closure_UI_commit_success",
+          "pass": true
+        },
+        {
+          "name": "closure_UI_choice_was_changed",
+          "pass": true
+        },
+        {
+          "name": "UI_edit_after_commit_requires_reconfirmation",
+          "pass": true
+        },
+        {
+          "name": "closure_UI_confirmation",
+          "pass": true
+        },
+        {
+          "name": "closure_UI_commit_rejected",
+          "pass": true
+        },
+        {
+          "name": "UI_target_failure_state_and_bytes_preserved",
+          "pass": true
+        },
+        {
+          "name": "closure_UI_commit_success",
+          "pass": true
+        },
+        {
+          "name": "UI_recovery_load_preserves_latest_choice",
+          "pass": true
+        },
+        {
+          "name": "UI_checkpoint_pending_final_committed",
+          "pass": true
+        },
+        {
+          "name": "F6_final_record_load_no_stale_confirmation",
+          "pass": true
+        },
+        {
+          "name": "Esc_after_commit",
+          "pass": true
+        },
+        {
+          "name": "pause_after_commit",
+          "pass": true
+        },
+        {
+          "name": "resume_after_commit",
+          "pass": true
+        },
+        {
+          "name": "P_after_commit",
+          "pass": true
+        },
+        {
+          "name": "P_closes_after_commit",
+          "pass": true
+        }
+      ]
+    }
+  ]
+}

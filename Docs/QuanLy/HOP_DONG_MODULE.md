@@ -107,4 +107,19 @@ Gameplay & Dữ liệu; nguồn `e0544b74` và `d7f1c93b`. Namespace giữ `ConR
 - `BeforeConclusionSavePath`: file `prototype.before-conclusion.json` cùng thư mục SavePath của profile hiện tại. Mỗi lần chốt thay checkpoint bằng draft của **lần thử mới nhất**; đây không phải lịch sử nhiều phiên hoặc bản sao save chính cũ. Hai file không là một giao dịch nguyên tử chung: checkpoint có thể đã cập nhật khi ghi chính thất bại. Không tuyên bố chống mất điện/crash.
 - `LoadConclusionCheckpoint()` là thao tác **tường minh** dùng cùng validator/apply của Load. F6/Load bình thường vẫn chỉ đọc SavePath, không tự chọn checkpoint/.tmp. Checkpoint lỗi bị từ chối, không repair. Sau restore có thể tiếp tục sửa/lưu/chốt; không lưu thêm timeline đang chạy.
 
-Nút chốt hiện có trong partial đã gọi API mới; dùng cơ bản **không cần wiring mới**. UI/UX & Tích hợp nhận cả chuỗi, kiểm scene chung; nếu muốn cung cấp nút “Khôi phục trước chốt”, cần giao riêng vị trí/hành vi cho chủ partial Gameplay & Dữ liệu. Hiện chỉ có API restore, chưa có nút mới; không tự wiring scene hoặc sửa layout. Không đưa ending C/A hay chứng cứ của giai đoạn lát cắt đầy đủ vào prototype.
+Nút chốt hiện có trong partial đã gọi API mới; dùng cơ bản **không cần wiring mới**. UI/UX & Tích hợp nhận cả chuỗi, kiểm scene chung. API restore đã có; đường truy cập người chơi chưa được thiết kế/giao. Không yêu cầu thêm nút mới; nếu cần đáp ứng luồng thử lại trước chốt của người chơi, vai trò tích hợp chốt thiết kế rồi giao nối partial cho Gameplay & Dữ liệu. Không tự wiring scene hoặc sửa layout. Không đưa ending C/A hay chứng cứ của giai đoạn lát cắt đầy đủ vào prototype.
+
+### Checkpoint trước chốt — contract bàn giao đường truy cập
+
+`LoadConclusionCheckpoint()` thuộc `ConRoi.Investigation.V36.R107.InvestigationSession`, gọi **tường minh trên Unity main thread** khi session đã được scene khởi tạo đầy đủ (movement/controller, look, gate). Không nhận đường dẫn ngoài, dùng `BeforeConclusionSavePath` của cùng profile với SavePath. Không tự gọi mỗi frame/OnGUI repaint, không tự fallback khi F6 lỗi và không gọi đồng thời thao tác ghi profile.
+
+```csharp
+// Chỉ trong action đã được người chơi chọn/xác nhận theo thiết kế UI được duyệt.
+bool loaded = session.LoadConclusionCheckpoint();
+// Dùng session.Message hiện có để hiển thị kết quả; không hiện thành công nếu false.
+```
+
+- Thành công: áp dụng draft schema1 trong checkpoint (finalized=false được ghi trước chốt), phục hồi evidence/mapping/relations/trials/conclusions và pose/gate đã lưu; reset live trial/clip, thoát pause, khôi phục trang đã lưu theo Load hiện có; xóa xác nhận chốt. Không ghi lại file chính/checkpoint. Timeline đang phát không được lưu thêm.
+- Thất bại: file thiếu trả false/Message chưa có save; JSON/validation/đọc bị từ chối qua lý do Load hiện có. Không tự chuẩn hóa/rewrite/xóa file. Guards chạy trước thay data; không hứa rollback lỗi binding của scene cấu hình sai sau khi đã nhận dữ liệu.
+- Restore thay live progress bằng checkpoint; phía UI phải xử lý xác nhận thay tiến trình chưa lưu theo thiết kế đã thống nhất. GDD8 yêu cầu có thể thử lại từ trước chốt; **API hoàn tất, đường truy cập người chơi còn phụ thuộc UI/UX & Tích hợp**, chưa có yêu cầu thiết kế điều khiển cụ thể và không yêu cầu thêm một nút mới trong gói này. UI/UX & Tích hợp chốt đường truy cập phù hợp rồi giao nối partial cho Gameplay & Dữ liệu, không sửa partial song song.
+- Acceptance tích hợp: gọi đúng action/cùng profile; restore checkpoint hợp lệ rồi sửa/lưu/chốt được; checkpoint thiếu/lỗi không thay state/file và không báo thành công; F6 thường vẫn đọc bản chính. Nhãn/footer/header và khả năng tìm được action phải được kiểm riêng với người dùng, không suy từ API.
