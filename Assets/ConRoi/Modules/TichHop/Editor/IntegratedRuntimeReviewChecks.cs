@@ -16,6 +16,7 @@ const string Key="ConRoi.IntegrationReview";
 const string Scene="Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity";
 static double next;
 static IntegratedRuntimeReviewChecks(){EditorApplication.update+=Tick;}
+static bool IsDefault<T>(T value)=>System.Collections.Generic.EqualityComparer<T>.Default.Equals(value,default(T));
 static string Arg(string key){var a=Environment.GetCommandLineArgs();int i=Array.IndexOf(a,key);return i>=0&&i+1<a.Length?a[i+1]:"";}
 public static void StartGui(){
  if(Application.unityVersion!="6000.6.2f1"||Application.isBatchMode||EditorApplication.isPlayingOrWillChangePlaymode||SceneManager.GetActiveScene().isDirty)throw new InvalidOperationException("Need correct GUI Editor, no Play or dirty scene");
@@ -24,7 +25,7 @@ public static void StartGui(){
  int missing=0,components=0;var broken=new JArray();
  foreach(var root in SceneManager.GetActiveScene().GetRootGameObjects())foreach(var t in root.GetComponentsInChildren<Transform>(true)){
  missing+=GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(t.gameObject);
- foreach(var c in t.GetComponents<Component>())if(c){components++;using(var so=new SerializedObject(c)){var prop=so.GetIterator();while(prop.Next(true))if(prop.propertyType==SerializedPropertyType.ObjectReference&&prop.objectReferenceValue==null&&prop.objectReferenceInstanceIDValue!=0)broken.Add(c.name+"/"+c.GetType().Name+"/"+prop.propertyPath);}}
+ foreach(var c in t.GetComponents<Component>())if(c){components++;using(var so=new SerializedObject(c)){var prop=so.GetIterator();while(prop.Next(true))if(prop.propertyType==SerializedPropertyType.ObjectReference&&prop.objectReferenceValue==null&&!IsDefault(prop.objectReferenceEntityIdValue))broken.Add(c.name+"/"+c.GetType().Name+"/"+prop.propertyPath);}}
  }
  var session=UnityEngine.Object.FindAnyObjectByType<InvestigationSession>();
  File.WriteAllText(Path.Combine(output,"reference-audit.json"),new JObject{["scene"]=Scene,["unity"]=Application.unityVersion,["components"]=components,["missingScripts"]=missing,["brokenReferences"]=broken,["sessionCount"]=UnityEngine.Object.FindObjectsByType<InvestigationSession>(FindObjectsSortMode.None).Length,["bindings"]=new JObject{["movement"]=session&&session.movement,["look"]=session&&session.look,["eye"]=session&&session.eye,["gate"]=session&&session.gate,["modelGate"]=session&&session.modelGate,["stageCamera"]=session&&session.stageCamera,["stageTexture"]=session&&session.stageTexture}}.ToString());
