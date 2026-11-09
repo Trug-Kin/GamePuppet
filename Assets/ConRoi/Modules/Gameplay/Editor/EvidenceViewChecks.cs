@@ -118,6 +118,7 @@ namespace ConRoi.Gameplay.EditorChecks
             Check("useful_shoe_defaults", Pose(l.Pose, 25, 65, 2) && Pose(r.Pose, 25, 65, 2));
             var camera = UnityEngine.Object.FindObjectsByType<Camera>(FindObjectsInactive.Include, FindObjectsSortMode.None).First(c => c.targetTexture == l.Preview);
             var visual = camera.transform.parent.gameObject;
+            Check("camera_cannot_see_adjacent_preview", camera.farClipPlane < 20 && camera.farClipPlane > 5);
             Check("snapshot_has_no_scripts_or_physics", visual.GetComponentsInChildren<MonoBehaviour>(true).Length == 0 && visual.GetComponentsInChildren<Collider>(true).Length == 0 && visual.GetComponentsInChildren<Rigidbody>(true).Length == 0);
             string data = JsonUtility.ToJson(s.data); int before = events;
             Check("left_adjust_independent", s.TryAdjustComparison(left, 40, 200, -40, out error) && Pose(s.GetComparisonView(left).Pose, 65, 80, .5f) && Pose(s.GetComparisonView(right).Pose, 25, 65, 2));
