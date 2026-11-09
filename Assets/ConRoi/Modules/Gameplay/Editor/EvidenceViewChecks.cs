@@ -81,12 +81,12 @@ namespace ConRoi.Gameplay.EditorChecks
             Check("load_reopens_default_not_saved_pose", s.Load() && Pose(s.InspectionView.Pose, 25, 65, 2) && s.InspectionView.CanControl);
             Check("load_keeps_evidence_no_auto_observation", s.Has("shoe") && s.Record("shoe").observations.Count == 0 && s.data.trials.Count == 0 && !s.data.finalized);
             mouse = InputSystem.AddDevice<Mouse>("PrivateEvidenceViewMouse"); mouse.MakeCurrent(); pose = s.InspectionView.Pose;
-            InputSystem.QueueStateEvent(mouse, new MouseState { buttons = 1, delta = new Vector2(24, 0) }); InputSystem.Update(InputUpdateType.Dynamic); mouse.MakeCurrent();
+            InputSystem.QueueStateEvent(mouse, new MouseState { buttons = 1, delta = new Vector2(24, 0) }); InputSystem.Update(); mouse.MakeCurrent();
             Check("virtual_mouse_fixture_delivered", mouse.leftButton.isPressed && mouse.delta.ReadValue().x != 0);
             typeof(InvestigationSession).GetMethod("Update", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(s, null);
             Check("virtual_mouse_uses_runtime_command", s.InspectionView.Pose.Yaw != pose.Yaw);
             s.SetPaused(true); pose = s.InspectionView.Pose;
-            InputSystem.QueueStateEvent(mouse, new MouseState { buttons = 1, delta = new Vector2(24, 12), scroll = new Vector2(0, 120) }); InputSystem.Update(InputUpdateType.Dynamic); mouse.MakeCurrent();
+            InputSystem.QueueStateEvent(mouse, new MouseState { buttons = 1, delta = new Vector2(24, 12), scroll = new Vector2(0, 120) }); InputSystem.Update(); mouse.MakeCurrent();
             typeof(InvestigationSession).GetMethod("Update", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(s, null);
             Check("virtual_mouse_during_pause_no_change", Pose(s.InspectionView.Pose, pose.Yaw, pose.Pitch, pose.Distance));
             InputSystem.QueueStateEvent(mouse, new MouseState()); s.SetPaused(false); s.ClosePage();
