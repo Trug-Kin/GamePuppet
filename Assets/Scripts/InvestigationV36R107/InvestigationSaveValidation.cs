@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Linq;
+using Newtonsoft.Json.Linq;
 using UnityEngine;
 
 namespace ConRoi.Investigation.V36.R107
@@ -6,6 +8,34 @@ namespace ConRoi.Investigation.V36.R107
     // Read-only validation of the existing schema. Never repairs or grants evidence.
     public static class InvestigationSaveValidation
     {
+        // JsonUtility can turn explicit JSON null into empty lists/default records.
+        // Check collection tokens first; the typed validator still owns IDs and indices.
+        internal static bool TryValidateSerializedCollections(string json, out string error)
+        {
+            error = "";
+            var root = JObject.Parse(json, new JsonLoadSettings { DuplicatePropertyNameHandling = DuplicatePropertyNameHandling.Error });
+            if (root["evidence"] == null)
+                return Invalid(out error, "Hồ sơ thiếu trường danh sách vật chứng (evidence).");
+            foreach (string field in new[] { "evidence", "mapping", "relations", "trials", "conclusions" })
+            {
+                var token = root[field];
+                // Retain existing defaults for absent auxiliary collections in older files.
+                if (token == null) continue;
+                if (!Collection(token, true))
+                    return Invalid(out error, "Danh sách " + field + " trong hồ sơ không hợp lệ; không nhận null hoặc mục null.");
+            }
+            foreach (var record in (JArray)root["evidence"])
+                if (record is JObject item && item.TryGetValue("observations", out var observations) && !Collection(observations, true))
+                    return Invalid(out error, "Danh sách quan sát trong hồ sơ không hợp lệ.");
+            if (root["conclusions"] is JArray conclusions)
+                foreach (var record in conclusions)
+                    if (record is JObject item && item.TryGetValue("grounds", out var grounds) && !Collection(grounds, false))
+                        return Invalid(out error, "Danh sách căn cứ trong hồ sơ không hợp lệ.");
+            return true;
+        }
+        static bool Collection(JToken token, bool rejectNullItems) => token is JArray array &&
+            (!rejectNullItems || array.All(item => item.Type != JTokenType.Null && item.Type != JTokenType.Undefined));
+
         public static bool TryValidate(InvestigationSave incoming, out string error)
         {
             error = "";
