@@ -27,3 +27,7 @@ UI/UX & Tích hợp, 09/11/2026. **OPEN — chờ Gameplay & Dữ liệu nhận 
 ## Trạng thái bàn giao
 
 Yêu cầu được ghi local để chủ file nhận, chưa gửi tin nhắn ngoài ứng dụng/chưa push. Chưa có commit bản vá từ Gameplay & Dữ liệu; **không tuyên bố đã sửa Load feedback**. Kiểm P-close/UI sẽ ghi báo cáo riêng trên đúng commit thực chạy.
+
+## Tái xác nhận trên scene chung
+
+Đã kiểm trên b6feeb0f, render1920×1080, diagnostics:0: F6/nút Tải lỗi trong hồ sơ và pause giữ đúng state/bytes nhưng ảnh không có lý do; world có. Không có bản vá nguồn trong đợt này. [Báo cáo UI-NAV-REVIEW-02](../UI-NAV-REVIEW-02/README.md) ghi các ca P/Load và bằng chứng. Chủ partial Gameplay & Dữ liệu cần nhận yêu cầu trên, bàn giao commit nguồn trước khi UI/UX & Tích hợp kiểm lại/chốt.

@@ -1,3 +1,15 @@
+# UI Load feedback / P-close /1080p — 09/11/2026
+
+UI/UX & Tích hợp đã kiểm scene chung ConRoi_Chinh bằng Unity6000.6.2f1 trên **`b6feeb0f418eee00336ec919ab519ea6a59921b9`** (product tree khớp22acc961; commit b6feeb0f là phiếu yêu cầu trước Play). **REVIEW_REQUIRED — chưa chốt baseline mới:** F6/nút Tải lỗi trả Message nhưng dossier/pause diagnostics=false không hiển thị lý do; world có hiển thị. Guard giữ đầy đủ state/bytes; không sửa runtime/partial song song.
+
+[Phiếu UI-LOAD-FEEDBACK-01 gửi chủ partial Gameplay & Dữ liệu](../QA/Tasks/N3/UI-LOAD-FEEDBACK-01/README.md): sửa trình bày Message hiện có trong InvestigationSessionUI.OnGUI, không nhân đôi validation hoặc đổi guard/schema/ID. Chưa có bản vá nguồn, chưa push yêu cầu ra remote.
+
+[Kiểm P-close và UI1080p có phạm vi](../QA/Tasks/N3/UI-NAV-REVIEW-02/README.md): mở/đóng P, nhập mật mã dở/sai/đúng rồi Trở lại, pause và sau Load lỗi đều đạt bằng input Windows tổng hợp. **P-close lịch sử vẫn OPEN/chưa tái hiện; không sửa phỏng đoán.** Đã xem/dùng các màn mục tiêu ở1920×1080; tổng thể UI chưa PASS do feedback còn lỗi và các biến thể nội dung chưa chạy. Giữ riêng click chưa chuyển trang/ca assert chữ hoa sai của công cụ và lượt kiểm lại; không có foreground-loss exception trong phiên này. Probe nguồn trước/người mới NOT_RUN; lượt mất focus cũ không đổi trạng thái.
+
+Không sửa sản phẩm/scene/map, không chạy lại bộ API/IO; profile riêng có fixture thư để mở navigation, không phải tuyến chơi tự nhiên. Đã đóng Editor không lưu scene, bảo toàn bytes/diff/untracked. Chưa push/cập nhật nhánh nhóm/merge main; ứng viên22acc961 trước đó chưa được chốt trong khi thiếu phản hồi modal còn xác nhận.
+
+---
+
 # Nhận SAVE-EVIDENCE-04 trong scene chung — 09/11/2026
 
 UI/UX & Tích hợp đã review/merge đủ `17b1f6e2 → f73631ae → 597369a5` vào `review/runtime-integration-20261109`. **Commit thực chạy Unity6000.6.2f1: `22acc9611aa8c6d0f86741798b2108d68f9b85d0`**, checkout C:/ConRoi_CheckoutTest; scene `Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity`. Không cần wiring mới, không sửa sản phẩm. Commit báo cáo sau phiên chỉ là tài liệu.

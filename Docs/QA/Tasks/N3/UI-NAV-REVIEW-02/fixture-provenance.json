@@ -1,0 +1,5 @@
+{
+  "source": "C:\\ConRoi_CheckoutTest\\Test\\Output\\SaveEvidence04Integration20261109\\UI\\latest-valid-four-ui-save.json",
+  "source_sha256": "abbbb8f4e891c3d66ad004f510ca29281bb1ef5b9b33fcd7e0d9248fa4eb9e2f",
+  "changes": "Added letter record with observations=[]; cleared mapping and page in copied test fixture only. Loaded by F6; not natural play."
+}

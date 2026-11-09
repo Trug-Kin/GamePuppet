@@ -1,0 +1,59 @@
+{
+  "tested_commit": "b6feeb0f418eee00336ec919ab519ea6a59921b9",
+  "source_product_tree": "22acc9611aa8c6d0f86741798b2108d68f9b85d0",
+  "scene": "Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity",
+  "unity": "6000.6.2f1",
+  "render": [
+    1920,
+    1080
+  ],
+  "method": "Windows synthetic keyboard/mouse; read-only scene/state tool; copied save fixture with explicit letter record; no API page/Load/Save/Assign/grant/teleport",
+  "evidence_records": 5,
+  "ui_load_feedback": "CONFIRMED_OPEN: Message returned; hidden in dossier/pause diagnostics=false; visible in world",
+  "P_close": "NOT_REPRODUCED; historical OPEN; no cause established/no patch",
+  "tests": {
+    "base_P_close_open_cycles": 3,
+    "partial_cipher_return_P_cycles": 3,
+    "wrong_all15_UI_mapping_return_P_cycles": 3,
+    "correct_all15_UI_mapping_return_P_cycles": 3,
+    "post_rejection_P_close_open_cycles": 3,
+    "text_focus_P_guard": true,
+    "cipher_modal_W_blocks_movement": true,
+    "cipher_Esc_and_pause_resume": true,
+    "pause_P_keeps_pause": true,
+    "pause_W_blocks_movement": true,
+    "F6_world_dossier_pause_reject": true,
+    "Load_button_dossier_pause_reject": true,
+    "all_captured_state_and_bad_bytes_preserved": true,
+    "post_rejection_E_real_table_W_modal_R": true,
+    "valid_F6_recovery_continue_F5_F6": true,
+    "compare_text_focus_Esc_P": true,
+    "conclusion_text_focus_return_P": true
+  },
+  "ui1080_scope": {
+    "intro": "reviewed",
+    "world": "reviewed; Load reason visible",
+    "dossier": "reviewed; Load reason missing",
+    "pause": "reviewed; Load reason missing",
+    "cipher": "all15 fields typed wrong and correct; return used; readable in capture",
+    "compare": "open/no selection, text field and Esc navigation; selected-content variants NOT_RUN",
+    "conclusions": "open/claim field and return; final confirmation/all choices NOT_RUN",
+    "overall": "REVIEW_REQUIRED: missing modal feedback; not a full UI/layout PASS"
+  },
+  "attempts": [
+    {
+      "status": "INCOMPLETE",
+      "action": "Compare first short click left page dossier",
+      "cause": "unconfirmed input/timing; foreground checks passed; no P failure; repeat .25s click opened compare"
+    },
+    {
+      "status": "TOOL_ASSERTION_ERROR",
+      "action": "Claim n compared to N",
+      "cause": "No Shift sent; textbox correctly retained lowercase n; corrected assertion only; follow-up passed"
+    }
+  ],
+  "focus": "No foreground-loss exception in this run. Previous task interrupted Esc attempt retained separately, not converted to PASS.",
+  "prior_supplementary_probe": "NOT_RUN unchanged",
+  "newcomer": "NOT_RUN",
+  "baseline": "NOT_FINALIZED; wait for session owner Load feedback patch and targeted retest"
+}

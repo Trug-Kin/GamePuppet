@@ -1,0 +1,44 @@
+{
+  "tested_commit": "b6feeb0f418eee00336ec919ab519ea6a59921b9",
+  "before_head": "2eac5528656ffab73c1025606a3f3f2fa232e7e7",
+  "product_tree_matches_22acc961": true,
+  "no_product_worktree_diff": true,
+  "no_CS_null_missing_reference_error": true,
+  "unity_files": [
+    {
+      "path": "ProjectSettings/EditorBuildSettings.asset",
+      "normalized_equal": true,
+      "before_bytes_retained_or_restored": true,
+      "before_sha256": "61b81004081de287d300738d601bb2002379ac1d6f5f6c8c51f9e76675041106",
+      "after_snapshot_sha256": "61b81004081de287d300738d601bb2002379ac1d6f5f6c8c51f9e76675041106"
+    },
+    {
+      "path": "ProjectSettings/QualitySettings.asset",
+      "normalized_equal": true,
+      "before_bytes_retained_or_restored": true,
+      "before_sha256": "941f6673697bbe0579ce452e3e3284f6216087af0d04355c0d3c30d3ef9712d0",
+      "after_snapshot_sha256": "941f6673697bbe0579ce452e3e3284f6216087af0d04355c0d3c30d3ef9712d0"
+    },
+    {
+      "path": "ProjectSettings/ProjectAuditorSettings.asset",
+      "normalized_equal": true,
+      "before_bytes_retained_or_restored": true,
+      "before_sha256": "9e68444b9bda981e2927a98df9edf69ea88362f0c6b7f3c81b39b9d515d2a416",
+      "after_snapshot_sha256": "9e68444b9bda981e2927a98df9edf69ea88362f0c6b7f3c81b39b9d515d2a416"
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Reconstruction.renderTexture",
+      "normalized_equal": true,
+      "before_bytes_retained_or_restored": true,
+      "before_sha256": "a9399d95b60239e04c9305ff29443acf417be64254b900782759397a13cf764d",
+      "after_snapshot_sha256": "a9399d95b60239e04c9305ff29443acf417be64254b900782759397a13cf764d"
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/RepairClip.renderTexture",
+      "normalized_equal": true,
+      "before_bytes_retained_or_restored": true,
+      "before_sha256": "39dcd423db3662a6df6d1e7647a6e20d7241ac7309dab64cd845ab45a597d602",
+      "after_snapshot_sha256": "39dcd423db3662a6df6d1e7647a6e20d7241ac7309dab64cd845ab45a597d602"
+    }
+  ]
+}

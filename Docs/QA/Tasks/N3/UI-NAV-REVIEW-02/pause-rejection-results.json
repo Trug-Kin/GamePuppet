@@ -1,0 +1,25 @@
+{
+  "fields_unchanged": [
+    "data",
+    "dataIdentity",
+    "page",
+    "paused",
+    "modal",
+    "objective",
+    "position",
+    "yaw",
+    "pitch",
+    "movement",
+    "look",
+    "gate",
+    "trialId",
+    "trialTime",
+    "trialRunning",
+    "trialReport",
+    "modelGate",
+    "clipTime"
+  ],
+  "bytes_unchanged": true,
+  "sha256": "bfc1642b93a36de980245c86c38551bc3e6baf46ed5dc0698c6a7283192ccc5f",
+  "message": "Kh\u00f4ng t\u1ea3i: Danh s\u00e1ch evidence trong h\u1ed3 s\u01a1 kh\u00f4ng h\u1ee3p l\u1ec7; kh\u00f4ng nh\u1eadn null ho\u1eb7c m\u1ee5c null."
+}
