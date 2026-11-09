@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using System.Collections;
 using System.Reflection;
+using System.Linq;
 using Newtonsoft.Json.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -94,6 +95,87 @@ namespace ConRoi.Gameplay.EditorChecks
             s.OpenPage("dossier"); Check("other_modal_rejects_view_commands", !s.TryAdjustInspection(1, 1, 1, out error));
             yield return null;
         }
+        static IEnumerator Comparison()
+        {
+            s.data.introAccepted = true; s.ClosePage(); string error;
+            var left = ComparisonSide.Left; var right = ComparisonSide.Right;
+            Check("wrong_context_no_selection", !s.TrySelectComparison(left, "shoe", out error) && error.Length > 0 && s.GetComparisonView(left).Availability == ComparisonAvailability.WrongContext);
+            s.OpenPage("compare");
+            Check("empty_and_modal_input_locked", s.GetComparisonView(left).Availability == ComparisonAvailability.Empty && !s.movement.enabled && !s.look.enabled);
+            Check("unacquired_unknown_empty_rejected", !s.TrySelectComparison(left, "shoe", out error) && !s.TrySelectComparison(left, "unknown", out error) && !s.TrySelectComparison(left, null, out error));
+            Check("invalid_side_rejected", !s.TrySelectComparison((ComparisonSide)2, "shoe", out error) && !s.TryClearComparison((ComparisonSide)2, out error));
+            Check("empty_controls_rejected", !s.TryResetComparison(left, out error) && !s.TryAdjustComparison(left, 1, 1, 1, out error));
+            var a = Source("shoe"); var b = Source("shoecontrol");
+            a.AddComponent<Rigidbody>().isKinematic = true;
+            var position = a.transform.position; var scale = a.transform.localScale; var material = a.GetComponent<Renderer>().sharedMaterial;
+            s.Acquire("shoe"); s.Acquire("shoecontrol");
+            int events = 0; Action<ComparisonSide, ComparisonViewState> listener = (side,state) => events++;
+            s.ComparisonViewChanged += listener;
+            Check("select_left_ready", s.TrySelectComparison(left, "shoe", a.transform, out error) && s.GetComparisonView(left).CanControl);
+            Check("select_right_auto_source_ready", s.TrySelectComparison(right, "shoecontrol", out error) && s.GetComparisonView(right).CanControl);
+            var l = s.GetComparisonView(left); var r = s.GetComparisonView(right);
+            Check("independent_created_textures", l.Preview != r.Preview && ((RenderTexture)l.Preview).IsCreated() && ((RenderTexture)r.Preview).IsCreated());
+            Check("useful_shoe_defaults", Pose(l.Pose, 25, 65, 2) && Pose(r.Pose, 25, 65, 2));
+            var camera = UnityEngine.Object.FindObjectsByType<Camera>(FindObjectsInactive.Include, FindObjectsSortMode.None).First(c => c.targetTexture == l.Preview);
+            var visual = camera.transform.parent.gameObject;
+            Check("snapshot_has_no_scripts_or_physics", visual.GetComponentsInChildren<MonoBehaviour>(true).Length == 0 && visual.GetComponentsInChildren<Collider>(true).Length == 0 && visual.GetComponentsInChildren<Rigidbody>(true).Length == 0);
+            string data = JsonUtility.ToJson(s.data); int before = events;
+            Check("left_adjust_independent", s.TryAdjustComparison(left, 40, 200, -40, out error) && Pose(s.GetComparisonView(left).Pose, 65, 80, .5f) && Pose(s.GetComparisonView(right).Pose, 25, 65, 2));
+            Check("command_event_and_no_progress_grant", events == before + 1 && JsonUtility.ToJson(s.data) == data);
+            before = events; var pose = s.GetComparisonView(left).Pose;
+            Check("nonfinite_no_mutation", !s.TryAdjustComparison(left, float.NaN, 0, 0, out error) && !s.TryAdjustComparison(left, 0, 0, float.PositiveInfinity, out error) && events == before && Pose(s.GetComparisonView(left).Pose, pose.Yaw, pose.Pitch, pose.Distance));
+            Check("large_finite_and_zoom_clamps", s.TryAdjustComparison(left, float.MaxValue, -float.MaxValue, float.MaxValue, out error) && !float.IsNaN(s.GetComparisonView(left).Pose.Yaw) && s.GetComparisonView(left).Pose.Pitch == -80 && s.GetComparisonView(left).Pose.Distance == 4);
+            Check("reset_only_left", s.TryResetComparison(left, out error) && Pose(s.GetComparisonView(left).Pose, 25, 65, 2) && s.GetComparisonView(right).Preview == r.Preview);
+            before = events; Check("repeat_reset_no_event", s.TryResetComparison(left, out error) && events == before);
+            s.TryAdjustComparison(left, 20, -10, .2f, out error); l = s.GetComparisonView(left); before = events;
+            Check("same_selection_retains_pose_texture", s.TrySelectComparison(left, "shoe", out error) && s.GetComparisonView(left).Preview == l.Preview && Pose(s.GetComparisonView(left).Pose, l.Pose.Yaw, l.Pose.Pitch, l.Pose.Distance) && events == before);
+            Check("bad_selection_keeps_previous", !s.TrySelectComparison(left, "phone", out error) && s.GetComparisonView(left).EvidenceId == "shoe" && s.GetComparisonView(left).Preview == l.Preview);
+            s.SetPaused(true);
+            Check("pause_keeps_selection_freezes_render", s.GetComparisonView(left).Availability == ComparisonAvailability.Paused && !visual.activeSelf && !s.TryAdjustComparison(left, 1, 1, 1, out error) && !s.TryResetComparison(left, out error) && !s.TrySelectComparison(right, "shoe", out error));
+            s.SetPaused(false);
+            Check("resume_preserves_pose", visual.activeSelf && Pose(s.GetComparisonView(left).Pose, l.Pose.Yaw, l.Pose.Pitch, l.Pose.Distance));
+            Action<ComparisonSide, ComparisonViewState> bad = (side,state) => { throw new InvalidOperationException("fixture listener"); };
+            s.ComparisonViewChanged += bad; before = events;
+            Check("listener_exception_isolated", s.TryResetComparison(left, out error) && events == before + 1);
+            s.ComparisonViewChanged -= bad; s.ComparisonViewChanged -= listener; before = events;
+            s.TryAdjustComparison(left, 10, 0, 0, out error); Check("unsubscribe", events == before);
+            Check("original_transform_material_physics_unchanged", a.transform.position == position && a.transform.localScale == scale && a.GetComponent<Renderer>().sharedMaterial == material && a.GetComponent<Collider>().enabled && a.GetComponent<Rigidbody>().isKinematic);
+            s.Acquire("letter"); var old = (RenderTexture)s.GetComparisonView(left).Preview;
+            Check("text_only_selection_valid_no_stale_preview", s.TrySelectComparison(left, "letter", out error) && s.GetComparisonView(left).Availability == ComparisonAvailability.MissingVisual && s.GetComparisonView(left).Preview == null && s.GetComparisonView(left).Transcript == s.EvidenceTranscript("letter") && s.GetComparisonView(left).Diagnostic.Length > 0 && !old.IsCreated());
+            Check("text_only_rotate_reset_reason", !s.TryResetComparison(left, out error) && error.Length > 0 && !s.TryAdjustComparison(left, 1, 1, 1, out error));
+            s.Acquire("clip"); s.data.clipBeforeSeen = false; s.data.clipEventSeen = false;
+            s.TrySelectComparison(left, "clip", out error);
+            Check("clip_transcript_guard", s.GetComparisonView(left).Transcript == s.EvidenceTranscript("clip") && s.GetComparisonView(left).Transcript != InvestigationContent.Get("clip").transcript);
+            s.data.clipBeforeSeen = true; Check("one_exposure_still_guarded", s.GetComparisonView(left).Transcript != InvestigationContent.Get("clip").transcript);
+            s.data.clipEventSeen = true; Check("both_fixture_flags_reveal_transcript", s.GetComparisonView(left).Transcript == InvestigationContent.Get("clip").transcript && s.Record("clip").observations.Count == 0);
+            var lineSource = new GameObject("Line fixture"); lineSource.transform.SetParent(root.transform); lineSource.transform.position = new Vector3(20, 3, 8);
+            var line = lineSource.AddComponent<LineRenderer>(); line.useWorldSpace = true; line.positionCount = 2; line.SetPositions(new[] { new Vector3(20,3,8),new Vector3(21,4,9) });
+            var point = line.GetPosition(1);
+            Check("line_snapshot_and_source_unchanged", s.TrySelectComparison(left, "shoe", lineSource.transform, out error) && s.GetComparisonView(left).CanControl && line.useWorldSpace && line.GetPosition(1) == point);
+            s.TryClearComparison(left, out error); r = s.GetComparisonView(right);
+            Check("clear_only_one_side", s.GetComparisonView(left).Availability == ComparisonAvailability.Empty && r.EvidenceId == "shoecontrol" && r.CanControl);
+            Check("repeat_clear_idempotent", s.TryClearComparison(left, out error));
+            s.TrySelectComparison(left, "shoe", a.transform, out error); data = JsonUtility.ToJson(s.data);
+            s.Save(); Check("private_save_success", s.Message.StartsWith("Đã lưu"));
+            byte[] valid = File.ReadAllBytes(s.SavePath); l = s.GetComparisonView(left); string stateBefore = JsonUtility.ToJson(s.data);
+            byte[] rejected = System.Text.Encoding.UTF8.GetBytes("{broken");
+            try
+            {
+                File.WriteAllBytes(s.SavePath, rejected);
+                Check("rejected_load_preserves_state_views_bytes", !s.Load() && JsonUtility.ToJson(s.data) == stateBefore && s.GetComparisonView(left).Preview == l.Preview && File.ReadAllBytes(s.SavePath).SequenceEqual(rejected));
+                Check("continue_after_rejection", s.TryAdjustComparison(left, 1, 2, .1f, out error));
+            }
+            finally { File.WriteAllBytes(s.SavePath, valid); }
+            Check("valid_load_clears_transient_previews", s.Load() && s.Page == "compare" && s.GetComparisonView(left).Availability == ComparisonAvailability.Empty && s.GetComparisonView(right).Availability == ComparisonAvailability.Empty);
+            Check("valid_load_retains_evidence_no_auto_relations", s.Has("shoe") && s.Has("shoecontrol") && s.data.relations.Count == 0 && s.Record("shoe").observations.Count == 0);
+            s.TrySelectComparison(left, "shoe", out error); s.Save(); Check("save_load_again", s.Message.StartsWith("Đã lưu") && s.Load());
+            s.TrySelectComparison(left, "shoe", out error); old = (RenderTexture)s.GetComparisonView(left).Preview;
+            s.ClosePage(); Check("leave_releases_preview_restores_input", !old.IsCreated() && s.GetComparisonView(left).Preview == null && s.movement.enabled && s.look.enabled);
+            s.OpenPage("compare"); Check("reopen_empty", s.GetComparisonView(left).Availability == ComparisonAvailability.Empty && s.GetComparisonView(right).Availability == ComparisonAvailability.Empty);
+            s.TrySelectComparison(left, "shoe", out error); s.OpenPage("dossier");
+            Check("other_modal_clears_and_rejects", s.GetComparisonView(left).Preview == null && !s.TryAdjustComparison(left, 1, 1, 1, out error) && !s.movement.enabled);
+            yield return null;
+        }
         static void Tick()
         {
             if (EditorApplication.isCompiling || EditorApplication.isUpdating) return;
@@ -102,7 +184,7 @@ namespace ConRoi.Gameplay.EditorChecks
             if (!EditorApplication.isPlaying || Time.frameCount == frame) return; frame = Time.frameCount;
             try
             {
-                if (phase == "pending") { output = Arg("--view-output"); rows = new JArray(); s = TrialPlaybackContextChecks.BuildEnvironment(out root); run = Inspection(); SessionState.SetString(Key, "running"); }
+                if (phase == "pending") { output = Arg("--view-output"); rows = new JArray(); s = TrialPlaybackContextChecks.BuildEnvironment(out root); run = Arg("--view-suite") == "comparison" ? Comparison() : Inspection(); SessionState.SetString(Key, "running"); }
                 if (SessionState.GetString(Key, "") == "running" && !run.MoveNext()) Finish();
             }
             catch (Exception e) { rows.Add(new JObject { ["exception"] = e.ToString(), ["pass"] = false }); failures++; Finish(); }
@@ -111,7 +193,7 @@ namespace ConRoi.Gameplay.EditorChecks
         {
             (run as IDisposable)?.Dispose(); if (mouse != null && mouse.added) InputSystem.RemoveDevice(mouse);
             if (root) UnityEngine.Object.DestroyImmediate(root);
-            File.WriteAllText(Path.Combine(output, "results.json"), new JObject { ["source"] = Arg("--view-source"), ["kind"] = "API_FIXTURE_DIRECT_UPDATE_VIRTUAL_MOUSE_NOT_UI_NOT_WINDOWS",
+            File.WriteAllText(Path.Combine(output, "results.json"), new JObject { ["source"] = Arg("--view-source"), ["suite"] = Arg("--view-suite"), ["kind"] = Arg("--view-suite") == "comparison" ? "PLAYMODE_API_PROXY_NOT_UI_NOT_WINDOWS" : "API_FIXTURE_DIRECT_UPDATE_VIRTUAL_MOUSE_NOT_UI_NOT_WINDOWS",
                 ["unity"] = Application.unityVersion, ["scene"] = Scene, ["failures"] = failures, ["checks"] = rows }.ToString());
             SessionState.SetInt(Key + ".exit", failures == 0 ? 0 : 1); SessionState.SetString(Key, "finished"); EditorApplication.ExitPlaymode();
         }
