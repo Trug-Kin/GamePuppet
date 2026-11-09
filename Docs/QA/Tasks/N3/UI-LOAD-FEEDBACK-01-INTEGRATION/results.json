@@ -1,0 +1,237 @@
+{
+  "source": "f242b60a2fb48c45b37caabd8a55836e4d7db53b",
+  "scene": "Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fixture": {
+    "source": "C:\\ConRoi_CheckoutTest\\Test\\Output\\UIFeedbackPClose20261109\\UI\\valid-continued-save.json",
+    "sha256": "1f64101b169c81b87835b033d5791732796b468f865518112527fe4540c644c2",
+    "purpose": "copied navigation fixture, not natural route"
+  },
+  "matrix": [
+    {
+      "page": "dossier",
+      "case": "validation",
+      "rejectionMessage": "Không tải: Danh sách evidence trong hồ sơ không hợp lệ; không nhận null hoặc mục null.",
+      "recoveryMessage": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "result": "PASS",
+      "stateAndBytes": "asserted live by matrix script before recovery"
+    },
+    {
+      "page": "dossier",
+      "case": "json",
+      "rejectionMessage": "Không tải: Nội dung hồ sơ không đúng định dạng.",
+      "recoveryMessage": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "result": "PASS",
+      "stateAndBytes": "asserted live by matrix script before recovery"
+    },
+    {
+      "page": "dossier",
+      "case": "read",
+      "rejectionMessage": "Không tải: Không đọc được tệp hồ sơ. Hãy đóng ứng dụng đang dùng tệp rồi thử lại.",
+      "recoveryMessage": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "result": "PASS",
+      "stateAndBytes": "asserted live by matrix script before recovery"
+    },
+    {
+      "page": "pause",
+      "case": "validation",
+      "rejectionMessage": "Không tải: Danh sách evidence trong hồ sơ không hợp lệ; không nhận null hoặc mục null.",
+      "recoveryMessage": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "result": "PASS",
+      "stateAndBytes": "asserted live by matrix script before recovery"
+    },
+    {
+      "page": "pause",
+      "case": "json",
+      "rejectionMessage": "Không tải: Nội dung hồ sơ không đúng định dạng.",
+      "recoveryMessage": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "result": "PASS",
+      "stateAndBytes": "asserted live by matrix script before recovery"
+    },
+    {
+      "page": "pause",
+      "case": "read",
+      "rejectionMessage": "Không tải: Không đọc được tệp hồ sơ. Hãy đóng ứng dụng đang dùng tệp rồi thử lại.",
+      "recoveryMessage": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "result": "PASS",
+      "stateAndBytes": "asserted live by matrix script before recovery"
+    }
+  ],
+  "navigation": [
+    {
+      "case": "P opens 0",
+      "passed": true
+    },
+    {
+      "case": "modal blocks W 0",
+      "passed": true
+    },
+    {
+      "case": "P closes 0",
+      "passed": true
+    },
+    {
+      "case": "P opens 1",
+      "passed": true
+    },
+    {
+      "case": "modal blocks W 1",
+      "passed": true
+    },
+    {
+      "case": "P closes 1",
+      "passed": true
+    },
+    {
+      "case": "P opens 2",
+      "passed": true
+    },
+    {
+      "case": "modal blocks W 2",
+      "passed": true
+    },
+    {
+      "case": "P closes 2",
+      "passed": true
+    },
+    {
+      "case": "world movement",
+      "passed": true
+    },
+    {
+      "case": "F6 restores saved position",
+      "passed": true
+    },
+    {
+      "case": "cipher opens",
+      "passed": true
+    },
+    {
+      "case": "cipher return P opens",
+      "passed": true
+    },
+    {
+      "case": "compare opens",
+      "passed": true
+    },
+    {
+      "case": "conclusions opens",
+      "passed": true
+    },
+    {
+      "case": "reconstruction opens",
+      "passed": true
+    },
+    {
+      "case": "header failure leaves page",
+      "passed": true
+    },
+    {
+      "case": "header dossier button",
+      "passed": true
+    },
+    {
+      "case": "clip opens",
+      "passed": true
+    },
+    {
+      "case": "clip header error",
+      "passed": true
+    },
+    {
+      "case": "header return exits clip",
+      "passed": true
+    },
+    {
+      "case": "E opens real table",
+      "passed": true
+    },
+    {
+      "case": "Esc leaves table",
+      "passed": true
+    },
+    {
+      "case": "Esc pauses world",
+      "passed": true
+    },
+    {
+      "case": "pause blocks movement",
+      "passed": true
+    },
+    {
+      "case": "Esc resumes",
+      "passed": true
+    }
+  ],
+  "referenceAudit": {
+    "scene": "Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity",
+    "unity": "6000.6.2f1",
+    "components": 32958,
+    "missingScripts": 0,
+    "brokenReferences": [],
+    "sessionCount": 1,
+    "bindings": {
+      "movement": true,
+      "look": true,
+      "eye": true,
+      "gate": true,
+      "modelGate": true,
+      "stageCamera": true,
+      "stageTexture": true
+    }
+  },
+  "targetedLogErrors": [],
+  "preservedUnityFiles": [
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Reconstruction.renderTexture",
+      "beforeSha256": "a9399d95b60239e04c9305ff29443acf417be64254b900782759397a13cf764d",
+      "afterPreservationSha256": "a9399d95b60239e04c9305ff29443acf417be64254b900782759397a13cf764d",
+      "normalizedUnchanged": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/RepairClip.renderTexture",
+      "beforeSha256": "39dcd423db3662a6df6d1e7647a6e20d7241ac7309dab64cd845ab45a597d602",
+      "afterPreservationSha256": "39dcd423db3662a6df6d1e7647a6e20d7241ac7309dab64cd845ab45a597d602",
+      "normalizedUnchanged": true
+    },
+    {
+      "path": "ProjectSettings/EditorBuildSettings.asset",
+      "beforeSha256": "61b81004081de287d300738d601bb2002379ac1d6f5f6c8c51f9e76675041106",
+      "afterPreservationSha256": "61b81004081de287d300738d601bb2002379ac1d6f5f6c8c51f9e76675041106",
+      "normalizedUnchanged": true
+    },
+    {
+      "path": "ProjectSettings/ProjectAuditorSettings.asset",
+      "beforeSha256": "9e68444b9bda981e2927a98df9edf69ea88362f0c6b7f3c81b39b9d515d2a416",
+      "afterPreservationSha256": "9e68444b9bda981e2927a98df9edf69ea88362f0c6b7f3c81b39b9d515d2a416",
+      "normalizedUnchanged": true
+    },
+    {
+      "path": "ProjectSettings/QualitySettings.asset",
+      "beforeSha256": "941f6673697bbe0579ce452e3e3284f6216087af0d04355c0d3c30d3ef9712d0",
+      "afterPreservationSha256": "941f6673697bbe0579ce452e3e3284f6216087af0d04355c0d3c30d3ef9712d0",
+      "normalizedUnchanged": true
+    }
+  ],
+  "otherWorktrees": [
+    {
+      "worktree": "C:\\ConRoi_Nguoi2",
+      "headUnchanged": true,
+      "branchUnchanged": true,
+      "statusUnchanged": true,
+      "diffUnchanged": true
+    },
+    {
+      "worktree": "D:\\ConRoi",
+      "headUnchanged": true,
+      "branchUnchanged": true,
+      "statusUnchanged": true,
+      "diffUnchanged": true
+    }
+  ],
+  "finalPlay": false,
+  "finalSceneDirty": false
+}

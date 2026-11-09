@@ -1,3 +1,15 @@
+# UI-LOAD-FEEDBACK-01 đã kiểm scene chung 1080p — 09/11/2026
+
+UI/UX & Tích hợp nhận đủ `25f14632 → 5be056e4 → a374a93a` bằng merge giữ lịch sử trên `review/runtime-integration-20261109`. **Nguồn thực chạy: `f242b60a2fb48c45b37caabd8a55836e4d7db53b`**, Unity6000.6.2f1, scene `Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity`, profile riêng. Không cần wiring mới, không sửa session partial/scene/map.
+
+**PASS acceptance có phạm vi:** hồ sơ và pause hiện lý do validation/JSON/đọc, sáu cặp từ chối/hồi phục giữ full state/bytes và thành công thay lỗi cũ; 26 kiểm navigation/input đại diện đạt bằng input Windows tổng hợp. Header/footer các màn đã xem ở1920×1080 không che nút/nội dung đại diện; compile/reference0MissingScript/0broken. Dữ liệu mở trang là bản sao fixture từ kiểm trước, không tuyến chơi tự nhiên mới; không chạy lại toàn bộ API.
+
+**Đề xuất f242b60a làm ứng viên baseline kỹ thuật, chưa chốt/cập nhật nhánh nhóm/push/main.** P-close OPEN/chưa tái hiện/chưa rõ nguyên nhân; người mới và probe bổ sung cũ NOT_RUN; không suy toàn bộ UI PASS. Đã đóng Editor không lưu scene, phục hồi đúng bytes năm file modified sẵn, bảo toàn worktree khác/legacy/save/archive. Các lỗi lịch sử bên dưới được giữ nguyên.
+
+[Báo cáo, kết quả và giới hạn](../QA/Tasks/N3/UI-LOAD-FEEDBACK-01-INTEGRATION/README.md).
+
+---
+
 # UI Load feedback / P-close /1080p — 09/11/2026
 
 UI/UX & Tích hợp đã kiểm scene chung ConRoi_Chinh bằng Unity6000.6.2f1 trên **`b6feeb0f418eee00336ec919ab519ea6a59921b9`** (product tree khớp22acc961; commit b6feeb0f là phiếu yêu cầu trước Play). **REVIEW_REQUIRED — chưa chốt baseline mới:** F6/nút Tải lỗi trả Message nhưng dossier/pause diagnostics=false không hiển thị lý do; world có hiển thị. Guard giữ đầy đủ state/bytes; không sửa runtime/partial song song.

@@ -31,3 +31,7 @@ Yêu cầu được ghi local để chủ file nhận, chưa gửi tin nhắn ng
 ## Tái xác nhận trên scene chung
 
 Đã kiểm trên b6feeb0f, render1920×1080, diagnostics:0: F6/nút Tải lỗi trong hồ sơ và pause giữ đúng state/bytes nhưng ảnh không có lý do; world có. Không có bản vá nguồn trong đợt này. [Báo cáo UI-NAV-REVIEW-02](../UI-NAV-REVIEW-02/README.md) ghi các ca P/Load và bằng chứng. Chủ partial Gameplay & Dữ liệu cần nhận yêu cầu trên, bàn giao commit nguồn trước khi UI/UX & Tích hợp kiểm lại/chốt.
+
+## Biên nhận sau bản vá — 09/11/2026
+
+Nhận đủ25f14632→5be056e4→a374a93a; nguồn tích hợp thực chạy f242b60a. [Kiểm scene chung1080p](../UI-LOAD-FEEDBACK-01-INTEGRATION/README.md) đã đạt acceptance Load feedback có phạm vi; giữ nguyên kết quả trước vá ở trên. P-close OPEN/chưa tái hiện/nguyên nhân chưa rõ; người mới và probe cũ NOT_RUN. Chỉ đề xuất ứng viên baseline, chưa cập nhật nhánh nhóm/push.

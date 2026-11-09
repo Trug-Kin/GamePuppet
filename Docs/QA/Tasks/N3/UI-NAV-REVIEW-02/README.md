@@ -49,3 +49,7 @@ Unity đã chạy `b6feeb0f418eee00336ec919ab519ea6a59921b9` (commit phiếu yê
 - Chờ chủ file bàn giao nguồn riêng, UI/UX & Tích hợp nhận rồi kiểm lại world/dossier/pause ở1080p và navigation chịu ảnh hưởng trên commit tích hợp thật. Không yêu cầu chạy toàn bộ API/IO.
 - **Chưa chốt hoặc cập nhật baseline/nhánh nhóm**, vì acceptance Load feedback còn lỗi đã xác nhận. P-close không có căn cứ để sửa trong lượt này. Chưa push/merge main, không build/ZIP.
 - Đã snapshot trước stop, dừng Play ở sceneDirty=false, đóng bình thường không save scene. Năm file Unity đã lưu After/hash, đối chiếu normalized và giữ/phục hồi exact Before bytes. Product diff so commit thực chạy rỗng; các M/untracked trước phiên vẫn giữ. Raw profile/capture/log ở Test/Output và Test/PlaytestProfiles ngoài Git, tìm bằng index; không phải dependency runtime. Không sửa project D hoặc tiến độ Gameplay & Dữ liệu.
+
+## Biên nhận sau bản vá — 09/11/2026
+
+Nhận đủ25f14632→5be056e4→a374a93a; nguồn tích hợp thực chạy f242b60a. [Kiểm scene chung1080p](../UI-LOAD-FEEDBACK-01-INTEGRATION/README.md) đã đạt acceptance Load feedback có phạm vi; giữ nguyên kết quả trước vá ở trên. P-close OPEN/chưa tái hiện/nguyên nhân chưa rõ; người mới và probe cũ NOT_RUN. Chỉ đề xuất ứng viên baseline, chưa cập nhật nhánh nhóm/push.

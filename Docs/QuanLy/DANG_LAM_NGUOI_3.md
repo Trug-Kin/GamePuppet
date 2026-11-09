@@ -63,3 +63,14 @@ Prompt nhận việc: “Trên work/ui-onboarding-review từ fcbb7e19, chuẩn 
 - Unity thực chạy b6feeb0f (product khớp22acc961), scene chung/profile mới: P cơ bản và sau cipher dở/sai/đúng, pause, Load lỗi đạt trong các ca mục tiêu. P-close lịch sử chưa tái hiện, không có nguồn xác định nên không sửa; giữ OPEN. F6 và nút Tải lỗi giữ state/bytes, E/modal/R và Load hợp lệ/F5/F6 tiếp tục đạt.
 - UI1080p mục tiêu đã chụp/đọc và thao tác world/dossier/pause/cipher/compare/conclusion; xác nhận lý do lỗi không hiện trong dossier/pause. Tổng thể REVIEW_REQUIRED, các biến thể nội dung chưa chạy NOT_RUN. Ghi riêng click chưa chuyển/ca assert N-n của công cụ và kiểm lại; không coi là lỗi gameplay. Probe nguồn trước, lượt mất focus cũ, người mới giữ riêng.
 - [Báo cáo và acceptance](../QA/Tasks/N3/UI-NAV-REVIEW-02/README.md), [phiếu chủ partial cần nhận](../QA/Tasks/N3/UI-LOAD-FEEDBACK-01/README.md). Việc tiếp theo: nhận commit sửa từ Gameplay & Dữ liệu rồi kiểm feedback và navigation liên quan trên commit tích hợp thật. Không sửa UI song song, không chốt baseline/push/cập nhật nhánh nhóm. Đã đóng Unity và bảo toàn diff/untracked; không đổi guard save.
+
+## UI/UX & Tích hợp — nhận UI-LOAD-FEEDBACK-01 từ Gameplay & Dữ liệu
+
+- Từ review ef8911965, snapshot/diff/settings và trạng thái các worktree trước merge. Nhận đủ25f14632→5be056e4→a374a93a bằng merge giữ lịch sử tại `f242b60a2fb48c45b37caabd8a55836e4d7db53b`; không copy bù hoặc wiring mới, không sửa partial song song.
+- [Acceptance scene chung1080p](../QA/Tasks/N3/UI-LOAD-FEEDBACK-01-INTEGRATION/README.md): validation/JSON/read có lý do an toàn tại dossier/pause, success thay lỗi, full state/bytes/input không đổi khi từ chối; footer/header/navigation bị ảnh hưởng. Không chạy lại API, profile mới, fixture và input Windows tổng hợp ghi riêng. P-close OPEN/chưa tái hiện; người mới/probe cũ NOT_RUN. Chỉ đề xuất baseline sau đạt.
+
+## UI/UX & Tích hợp — kết quả nhận UI-LOAD-FEEDBACK-01
+
+- Nguồn thực chạy f242b60a, scene chung1080p/profile riêng: sáu cặp Load từ chối/hồi phục và26 kiểm navigation/input đại diện đạt. Audit32958component/0MissingScript/0broken; không chạy lại66API. Input Windows tổng hợp/navigation fixture ghi riêng, không playtest người mới.
+- Đã đóng Unity không lưu scene; hash nguồn và bytes/settings/diff trước kiểm được bảo toàn. Chỉ tài liệu được đưa vào commit biên nhận. [Báo cáo](../QA/Tasks/N3/UI-LOAD-FEEDBACK-01-INTEGRATION/README.md).
+- Đề xuất f242b60a là ứng viên kỹ thuật, chưa chốt/cập nhật nhánh nhóm hoặc push. P-close OPEN/chưa tái hiện/chưa rõ nguyên nhân; người mới/probe cũ NOT_RUN. Việc tiếp theo cần nhóm review ứng viên và tổ chức playtest người thật; không tự mở rộng task.
