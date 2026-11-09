@@ -186,3 +186,16 @@ Prompt nhận việc: “Trên work/runtime-contracts-baseline từ fcbb7e19, x�
 - Trên f73631ae, UI/controller Windows tổng hợp trong scene Gameplay proxy/profile mới: F6 từ chối null/thiếu/null-record, state/bytes giữ nguyên; sau mỗi ca P/E/Esc/pause/W/recovery F5/F6 đạt. UI New Game[] và tiếp tục ghi/lặp/đổi vị trí/lưu/tải đạt. Không API grant trong lượt UI; sandbox không phải scene chung/tuyến tự nhiên đầy đủ.
 - Giữ hai lượt gián đoạn focus riêng: lần đầu chưa gửi input; cuối lượt trước probe W/chuột bổ sung, phần chưa chạy NOT_RUN. Không lỗi runtime mới xác nhận. Edit sạch/Editor đã đóng, settings và untracked cũ bảo toàn; raw/profile/log ngoài Git.
 - UI/UX & Tích hợp nhận đủ17b1f6e2→f73631ae→commit tài liệu để kiểm lại INT-SAVE-NULL-LIST-01 ở ConRoi_Chinh; không wiring mới. Scene chung/UI1080p/người mới NOT_RUN với bản sửa; Load feedback/P-close OPEN riêng. Chưa push/merge hoặc chốt baseline nhóm mới.
+
+## Gameplay & Dữ liệu — nhận UI-LOAD-FEEDBACK-01
+
+- Xuất phát597369a5, worktree C:/ConRoi_Nguoi2; tracked sạch, untracked cũ giữ nguyên. Đọc trực tiếp phiếu N3 và UI-NAV-REVIEW-02 tại review ef8911965, không merge review hoặc đổi nhánh.
+- Mục tiêu: Message Load hiện có phải đọc được trong modal; lỗi file/parse không lộ chi tiết thừa; lỗi cũ được thay ngay khi tải thành công. Giữ6giây hiện có, focus/P-close và guard. Sửa UI partial đang sở hữu, thêm catch an toàn trong Session.cs nếu cần; không sửa validator/schema/ID/GUID/scene chung.
+- [Acceptance trước sửa và phạm vi](../QA/Tasks/N2/UI-LOAD-FEEDBACK-01/README.md). Kiểm API targeted rồi GUI/controller trong scene Gameplay/profile riêng; không chạy lại bộ save cũ. UI/UX & Tích hợp nhận nguồn và kiểm scene chung/bố cục sau bàn giao.
+
+### UI-LOAD-FEEDBACK-01 — hoàn tất phần Gameplay & Dữ liệu
+
+- Nguồn25f14632: ModalMessage dùng Message runtime hiện có cho footer modal/header review, có wrap/scroll và giữ6giây; lỗi đọc/parse trả lời nhắn an toàn. Không đổi guard/schema/ID/GUID, world renderer, focus/P-close hoặc save. Hai partial được sửa đúng ownership, không chạm scene chung/UI ngoài quyền.
+- Công cụ/meta và commit đã chạy5be056e4:66/66 API targeted đạt valid/null/JSON/read ở world/dossier/pause, state/bytes/recovery. Controller Windows tổng hợp trong scene Gameplay/profile mới tạo progress bằng E/ghi/F5; F6/nút Tải validation/read hiển thị lý do trong dossier/pause1080p, không báo sai thành công; unlock/F6 thay lỗi bằng success, P/E/Esc/modal/pause/di chuyển và F5/F6 tiếp đạt. Không chạy lại bộ save/IO/trial cũ.
+- Giữ riêng lượt click Ghi chưa tác động do zoom1,3×; sau chỉnh Editor fit0,86× kiểm lại đạt. Không có foreground-loss exception trong phiên; probe cũ/mất focus trước giữ riêng. Đã đóng Editor không lưu scene, settings/untracked bảo toàn.
+- [Báo cáo và chuỗi nhận](../QA/Tasks/N2/UI-LOAD-FEEDBACK-01/README.md). UI/UX & Tích hợp nhận nguồn/công cụ/tài liệu trên tiền đề597369a5, không wiring mới; phải review footer/header và các trang chịu co nội dung trong scene chung. Scene chung/mọi UI1080p/người mới NOT_RUN; P-close OPEN không sửa. Chưa push/merge/chốt baseline.
