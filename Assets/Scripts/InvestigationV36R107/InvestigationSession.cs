@@ -246,7 +246,11 @@ namespace ConRoi.Investigation.V36.R107
                 data=incoming;EnsureConclusions();bool cc=movement.controller.enabled;movement.controller.enabled=false;movement.transform.SetPositionAndRotation(data.position,Quaternion.Euler(0,data.yaw,0));movement.controller.enabled=cc;movement.ResetVerticalMotion();look.RestorePitch(data.pitch);gate.Restore(data.gate);
                 ResetTrial();ClipPlaying=false;ClipTime=0;UpdateClip();SetPaused(false);Page="";
                 if(data.page=="inspect"&&Has(data.inspecting))OpenEvidence(data.inspecting);else if(new[]{"cipher","dossier","compare","reconstruction","clip","conclusions","intro"}.Contains(data.page))OpenPage(data.page);else ClosePage();Message="Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.";return true;
-            }catch(Exception e){Message="Không tải: "+e.Message;return false;}
+            }catch(InvalidDataException e){Message="Không tải: "+e.Message;return false;}
+            catch(Newtonsoft.Json.JsonException){Message="Không tải: Nội dung hồ sơ không đúng định dạng.";return false;}
+            catch(UnauthorizedAccessException){Message="Không tải: Không có quyền đọc tệp hồ sơ. Kiểm tra quyền truy cập rồi thử lại.";return false;}
+            catch(IOException){Message="Không tải: Không đọc được tệp hồ sơ. Hãy đóng ứng dụng đang dùng tệp rồi thử lại.";return false;}
+            catch(Exception){Message="Không tải: Không thể đọc hồ sơ này. Hãy thử lại hoặc dùng bản sao hợp lệ.";return false;}
         }
     }
 }

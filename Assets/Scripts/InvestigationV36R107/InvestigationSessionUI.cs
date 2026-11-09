@@ -7,6 +7,8 @@ namespace ConRoi.Investigation.V36.R107
     {
         GUIStyle titleStyle,bodyStyle,smallStyle,cardStyle,buttonStyle;
         Texture2D white;
+        Vector2 messageScroll;
+        string displayedMessage="";
         bool showLookup,confirmConclusion,stageWide=true;
         readonly string[] trialNames={"Mở trước → thả → người di chuyển","Người giúp mở; Tư còn đè giữ","Giữ dây khi Tư đang dựa","Dùng móc giữ dây","Dùng vật chèn","Chỉ tới sau cú ngã"};
         readonly string[] trialIds={"release","help","hold","hook","wedge","after"};
@@ -29,6 +31,24 @@ namespace ConRoi.Investigation.V36.R107
         void Text(string s)=>GUILayout.Label(s,bodyStyle);
         void Small(string s)=>GUILayout.Label(s,smallStyle);
         void Heading(string s)=>GUILayout.Label(s,titleStyle);
+        // Reserve a stable footer so feedback never covers modal controls or shifts text fields.
+        void ModalMessage()
+        {
+            string message=Message;
+            if(message!=displayedMessage){messageScroll=Vector2.zero;displayedMessage=message;}
+            if(string.IsNullOrEmpty(message))return;
+            bool review=!Paused&&(Page=="clip"||Page=="reconstruction");
+            // Fixed review controls already reach the bottom; use the free header gap there.
+            Rect panel=review?new Rect(410,16,425,48):new Rect(24,724,1152,70);
+            Rect viewport=review?new Rect(420,20,405,40):new Rect(36,732,1128,54);
+            var style=review?smallStyle:bodyStyle;
+            float width=viewport.width-20;
+            float height=Mathf.Max(viewport.height,style.CalcHeight(new GUIContent(message),width));
+            Fill(panel,new Color(.055f,.09f,.10f,.98f));
+            messageScroll=GUI.BeginScrollView(viewport,messageScroll,new Rect(0,0,width,height));
+            GUI.Label(new Rect(0,0,width,height),message,style);
+            GUI.EndScrollView();
+        }
         void OnGUI()
         {
             // FocusControl must run in OnGUI, after a page/pause transition.
@@ -48,14 +68,14 @@ namespace ConRoi.Investigation.V36.R107
             {
                 Fill(new Rect(0,0,1200,800),new Color(.04f,.065f,.075f,.98f));
                 GUI.Label(new Rect(28,20,1100,45),Paused?"TẠM DỪNG":"CON RỐI  /  ĐIỀU TRA",titleStyle);
-                if(!Paused&&Page=="intro"){GUILayout.BeginArea(new Rect(210,160,780,510));Heading("Hiện trường xưởng rối");Text("Ông Tư được phát hiện tử vong tại xưởng rối. Hãy kiểm tra hiện trường để tìm hiểu chuyện gì đã xảy ra.");GUILayout.Space(24);Text("Vào xưởng, lên gác và kiểm tra dấu trên sàn gần lan can.");GUILayout.Space(20);Small("WASD để đi · Chuột để nhìn · E khi có lời nhắc");GUILayout.Space(20);if(Button("Bắt đầu"))BeginIntroduction(false);if(Button("Bỏ qua hướng dẫn"))BeginIntroduction(true);Small("Bản dựng thử");GUILayout.EndArea();GUI.matrix=old;return;}
+                if(!Paused&&Page=="intro"){GUILayout.BeginArea(new Rect(210,160,780,510));Heading("Hiện trường xưởng rối");Text("Ông Tư được phát hiện tử vong tại xưởng rối. Hãy kiểm tra hiện trường để tìm hiểu chuyện gì đã xảy ra.");GUILayout.Space(24);Text("Vào xưởng, lên gác và kiểm tra dấu trên sàn gần lan can.");GUILayout.Space(20);Small("WASD để đi · Chuột để nhìn · E khi có lời nhắc");GUILayout.Space(20);if(Button("Bắt đầu"))BeginIntroduction(false);if(Button("Bỏ qua hướng dẫn"))BeginIntroduction(true);Small("Bản dựng thử");GUILayout.EndArea();ModalMessage();GUI.matrix=old;return;}
                 bool focusedReview=!Paused&&(Page=="clip"||Page=="reconstruction");
                 if(focusedReview){
                     if(GUI.Button(new Rect(850,20,150,42),"Trở lại [R/Esc]",buttonStyle))ClosePage();
                     if(GUI.Button(new Rect(1010,20,165,42),"Hồ sơ",buttonStyle))OpenPage("dossier");
                     GUILayout.BeginArea(new Rect(24,76,1152,696));if(Page=="clip")ClipUI();else ReconstructionUI();GUILayout.EndArea();
                 }else{
-                GUILayout.BeginArea(new Rect(22,84,218,660));
+                GUILayout.BeginArea(new Rect(22,84,218,624));
                 if(Button("Trở lại  [R / Esc]")){if(Paused)SetPaused(false);else ClosePage();}
                 if(Paused||Page=="dossier"||Page=="conclusions"){
                     if(Page!="dossier"&&Button("Ghi chép")){SetPaused(false);OpenPage("dossier");}
@@ -67,9 +87,9 @@ namespace ConRoi.Investigation.V36.R107
                     if(!data.tutorialSkipped&&Button("Bỏ qua hướng dẫn")){data.tutorialSkipped=true;data.introAccepted=true;}
                 }
                 GUILayout.Space(14);Small("Bản dựng thử");
-                if(diagnostics){GUILayout.Space(18);Small(data.namespaceId);Small(Message);}
+                if(diagnostics){GUILayout.Space(18);Small(data.namespaceId);}
                 GUILayout.EndArea();
-                GUILayout.BeginArea(new Rect(260,84,916,674));
+                GUILayout.BeginArea(new Rect(260,84,916,624));
                 if(Paused){Heading("Mô phỏng và di chuyển đã dừng");Text("Tiếp tục để quay lại đúng hoạt động.");}
                 else if(Page=="inspect")InspectUI();
                 else if(Page=="cipher")CipherUI();
@@ -79,7 +99,8 @@ namespace ConRoi.Investigation.V36.R107
                 else DossierUI();
                 GUILayout.EndArea();
                 }
-                if(diagnostics)GUI.Label(new Rect(267,766,905,28),"Quan sát ≠ lời kể ≠ suy luận. Ghi liên hệ không tự biến nó thành sự thật.",smallStyle);
+                ModalMessage();
+                if(diagnostics&&Message=="")GUI.Label(new Rect(267,766,905,28),"Quan sát ≠ lời kể ≠ suy luận. Ghi liên hệ không tự biến nó thành sự thật.",smallStyle);
             }
             textEditing=Modal&&!clearTextFocus&&GUI.GetNameOfFocusedControl().StartsWith("Entry");
             GUI.matrix=old;
