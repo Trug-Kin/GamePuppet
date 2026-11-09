@@ -123,3 +123,10 @@ bool loaded = session.LoadConclusionCheckpoint();
 - Thất bại: file thiếu trả false/Message chưa có save; JSON/validation/đọc bị từ chối qua lý do Load hiện có. Không tự chuẩn hóa/rewrite/xóa file. Guards chạy trước thay data; không hứa rollback lỗi binding của scene cấu hình sai sau khi đã nhận dữ liệu.
 - Restore thay live progress bằng checkpoint; phía UI phải xử lý xác nhận thay tiến trình chưa lưu theo thiết kế đã thống nhất. GDD8 yêu cầu có thể thử lại từ trước chốt; **API hoàn tất, đường truy cập người chơi còn phụ thuộc UI/UX & Tích hợp**, chưa có yêu cầu thiết kế điều khiển cụ thể và không yêu cầu thêm một nút mới trong gói này. UI/UX & Tích hợp chốt đường truy cập phù hợp rồi giao nối partial cho Gameplay & Dữ liệu, không sửa partial song song.
 - Acceptance tích hợp: gọi đúng action/cùng profile; restore checkpoint hợp lệ rồi sửa/lưu/chốt được; checkpoint thiếu/lỗi không thay state/file và không báo thành công; F6 thường vẫn đọc bản chính. Nhãn/footer/header và khả năng tìm được action phải được kiểm riêng với người dùng, không suy từ API.
+
+
+### INSPECT-CONTROLS-01 — command viewer một vật
+
+Nguồn b8cc108f, kiểm61f26ad0; namespace ConRoi.Investigation.V36.R107. `InspectionView`/`InspectionViewChanged` cung cấp snapshot chỉ đọc EvidenceId/Pose/Availability/Preview; `TryAdjustInspection(yawDegrees,pitchDegrees,distanceDelta,out error)` và `TryResetInspection(out error)` chỉ nhận khi inspect/model có thật/không pause, từ chối số không hữu hạn, dùng clamp/default cũ. Command không grant/save tiến trình, không đổi schema. Load/reopen về pose mặc định như cũ. Native mouse gọi cùng biên; callback event bị cô lập exception. Preset UI legacy chưa phát event, không feed delta mouse hai lần.
+
+**Cần UI wiring** action reset/render state/errors, lifecycle subscribe/unsubscribe và kiểm native input/1080p/scene chung; không sửa UI sản phẩm trong gói. [Bàn giao đầy đủ](../QA/Tasks/N2/INSPECT-CONTROLS-01/README.md). API trước của save/trial/conclusion không đổi; IO-OPEN-01 độc lập.

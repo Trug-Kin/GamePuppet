@@ -1,0 +1,234 @@
+{
+  "runs": [
+    {
+      "run": "Inspection",
+      "source": "4c2ef42597e1e5397448c8f1e66df5ffd0d8dbb1",
+      "kind": "API_FIXTURE_AND_UNITY_VIRTUAL_MOUSE_NOT_UI_NOT_WINDOWS",
+      "checks": 24,
+      "failures": 2,
+      "raw_sha256": "6607b11e81f657f69fd6a840b88649f300726ef740ca4ba829bd627695a8026e",
+      "assertions": [
+        {
+          "name": "world_reset_rejected",
+          "pass": true
+        },
+        {
+          "name": "model_ready_and_texture",
+          "pass": true
+        },
+        {
+          "name": "shoe_defaults",
+          "pass": true
+        },
+        {
+          "name": "adjust_and_clamp",
+          "pass": true
+        },
+        {
+          "name": "event_once_for_command",
+          "pass": true
+        },
+        {
+          "name": "no_evidence_or_progress_grant",
+          "pass": true
+        },
+        {
+          "name": "zoom_out_clamp",
+          "pass": true
+        },
+        {
+          "name": "nan_rejected",
+          "pass": true
+        },
+        {
+          "name": "infinity_rejected",
+          "pass": true
+        },
+        {
+          "name": "nonfinite_no_mutation_or_event",
+          "pass": true
+        },
+        {
+          "name": "large_finite_safe",
+          "pass": true
+        },
+        {
+          "name": "reset_default",
+          "pass": true
+        },
+        {
+          "name": "repeat_reset_idempotent",
+          "pass": true
+        },
+        {
+          "name": "paused_adjust_and_reset_rejected",
+          "pass": true
+        },
+        {
+          "name": "paused_state_and_pose",
+          "pass": true
+        },
+        {
+          "name": "subscriber_exception_isolated",
+          "pass": true
+        },
+        {
+          "name": "unsubscribe_works",
+          "pass": true
+        },
+        {
+          "name": "source_not_transformed",
+          "pass": true
+        },
+        {
+          "name": "missing_visual_no_stale_preview",
+          "pass": true
+        },
+        {
+          "name": "private_save_committed",
+          "pass": true
+        },
+        {
+          "name": "load_reopens_default_not_saved_pose",
+          "pass": true
+        },
+        {
+          "name": "load_keeps_evidence_no_auto_observation",
+          "pass": true
+        },
+        {
+          "name": "virtual_mouse_uses_runtime_command",
+          "pass": false
+        },
+        {
+          "name": "exception",
+          "pass": false
+        }
+      ]
+    },
+    {
+      "run": "InspectionPublicFixture",
+      "source": "61f26ad08af4e79c3c132da57b7d6c29e7d52dec",
+      "kind": "API_FIXTURE_DIRECT_UPDATE_VIRTUAL_MOUSE_NOT_UI_NOT_WINDOWS",
+      "checks": 27,
+      "failures": 0,
+      "raw_sha256": "b9ca8f59ac6509707b6e573f9c5fb5b6671fb26adad08bfefed0636506dae0d8",
+      "assertions": [
+        {
+          "name": "world_reset_rejected",
+          "pass": true
+        },
+        {
+          "name": "model_ready_and_texture",
+          "pass": true
+        },
+        {
+          "name": "shoe_defaults",
+          "pass": true
+        },
+        {
+          "name": "adjust_and_clamp",
+          "pass": true
+        },
+        {
+          "name": "event_once_for_command",
+          "pass": true
+        },
+        {
+          "name": "no_evidence_or_progress_grant",
+          "pass": true
+        },
+        {
+          "name": "zoom_out_clamp",
+          "pass": true
+        },
+        {
+          "name": "nan_rejected",
+          "pass": true
+        },
+        {
+          "name": "infinity_rejected",
+          "pass": true
+        },
+        {
+          "name": "nonfinite_no_mutation_or_event",
+          "pass": true
+        },
+        {
+          "name": "large_finite_safe",
+          "pass": true
+        },
+        {
+          "name": "reset_default",
+          "pass": true
+        },
+        {
+          "name": "repeat_reset_idempotent",
+          "pass": true
+        },
+        {
+          "name": "paused_adjust_and_reset_rejected",
+          "pass": true
+        },
+        {
+          "name": "paused_state_and_pose",
+          "pass": true
+        },
+        {
+          "name": "subscriber_exception_isolated",
+          "pass": true
+        },
+        {
+          "name": "unsubscribe_works",
+          "pass": true
+        },
+        {
+          "name": "source_not_transformed",
+          "pass": true
+        },
+        {
+          "name": "missing_visual_no_stale_preview",
+          "pass": true
+        },
+        {
+          "name": "private_save_committed",
+          "pass": true
+        },
+        {
+          "name": "load_reopens_default_not_saved_pose",
+          "pass": true
+        },
+        {
+          "name": "load_keeps_evidence_no_auto_observation",
+          "pass": true
+        },
+        {
+          "name": "virtual_mouse_fixture_delivered",
+          "pass": true
+        },
+        {
+          "name": "virtual_mouse_uses_runtime_command",
+          "pass": true
+        },
+        {
+          "name": "virtual_mouse_during_pause_no_change",
+          "pass": true
+        },
+        {
+          "name": "close_hides_texture_and_restores_world_input",
+          "pass": true
+        },
+        {
+          "name": "other_modal_rejects_view_commands",
+          "pass": true
+        }
+      ]
+    }
+  ],
+  "compile_only_failed_run": {
+    "name": "InspectionFixture",
+    "source": "0720006e",
+    "error": "CS1501 tool used nonpublic overload; no Play checks ran"
+  },
+  "status": "RUNTIME_VERIFIED_WAITING_UI_INTEGRATION"
+}

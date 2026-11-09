@@ -290,3 +290,21 @@ Một phiên API chẩn đoán hữu hạn:6 chuỗi ghi/chốt/resume không ch
 - Bảy file save thử lịch sử hiện parse JSON được, đã hash chỉ đọc; không có snapshot/hash đúng lúc lỗi nên không suy mọi bytes/state ở thời điểm đó đã giữ. Không đụng save gốc hoặc tự sửa các profile cũ.
 - **OPEN/chưa tái hiện tự nhiên, không CLOSED.** Chủ Gameplay & Dữ liệu nhận lượt thất bại không injection cùng SHA/state/source/time/exception/profile để xác định bước lỗi; chưa có bằng chứng lỗi nguồn nên không sửa runtime theo giả thuyết. Nếu Save/chốt thất bại, không F6 ngay hoặc coi đã lưu bản mới; giữ phiên/file/tmp và xử lý điều kiện lỗi đã xác minh trước khi thử lại tường minh.
 - [PROTOTYPE-FLOW-01 mục10](../QA/Tasks/N2/PROTOTYPE-FLOW-01/README.md): điều kiện đã thử, ảnh hưởng, phát hiện/giảm rủi ro, điều kiện nhận mới và owner. UI/UX & Tích hợp nhận feedback scene chung; các phụ thuộc ở checklist/mục9 giữ nguyên, không phát sinh UI mới. Phần chẩn đoán lượt này hoàn tất có giới hạn; phần nguyên nhân/độ tin cậy IO chưa đóng. Raw log/save/state local, chỉ commit công cụ và bằng chứng đã lược.
+
+## Hai gói viewer — acceptance trước triển khai
+
+Xuất phát b3c1bb06, branch work/runtime-contracts-baseline, tracked sạch; untracked cũ giữ nguyên. GDD9 yêu cầu xoay/phóng/đặt lại khi xem vật và cho đổi góc khi so hai vật; GDD6.5 yêu cầu phóng to/mô tả khi so mẫu giày/vải, không đòi kéo khớp pixel. Source hiện viewer một vật có điều khiển chuột trong Update, không command đặt lại/giao diện kết quả; CompareUI chỉ có text, chưa có hai viewer. Đây là thiếu chức năng viewer prototype trong checklist, không mở chương/ending/luật suy luận.
+
+1. **INSPECT-CONTROLS-01**: API đọc pose/texture/trạng thái và xoay/phóng/đặt lại viewer hiện có, trả lỗi khi không có vật/viewer, sai ngữ cảnh hoặc pause, từ chối số NaN/Infinity; clamp giới hạn cũ, default theo ID cũ. Mouse runtime dùng cùng biên điều khiển, pause không làm đổi view. Event snapshot chỉ đọc, không phụ thuộc nút/Hierarchy UI. Không auto Observe/Acquire hoặc đổi data/schema; Load/reopen dùng default cũ, không tự lưu camera pose. Kiểm repeat/reset/context/pause/error/save-load và input mouse ảo nếu khả thi. Không sửa SessionUI hoặc scene chung; API mới cần UI wiring cho action đặt lại.
+2. **COMPARE-VIEW-01**: runtime hai preview độc lập cho các ID đã có, xoay/phóng/reset từng bên bằng cùng pose/range hiện hành, giữ source model không đổi và clone vô hiệu physics/scripts; cung cấp texture/mô tả đã qua EvidenceTranscript guard. Không tự cấp dữ liệu/ghi relation/chấm kết luận. ID thiếu/chưa thu/model thiếu/paused/sai trang trả lỗi có ý nghĩa. Hủy/đổi lựa chọn/rời trang/load phải dọn hoặc làm mất hiệu lực view để không lộ mẫu cũ. Không lưu pose/texture/selection mới vào schema; note/quan hệ vẫn dùng dữ liệu cũ. Kiểm độc lập từng bên, đường lỗi/đổi/hủy/quay lại, lifecycle và roundtrip state. UI sản phẩm chưa gọi: phải bàn giao wiring rõ và trạng thái CHỜ UI/TÍCH HỢP.
+
+Mỗi gói có nguồn, tool/bằng chứng và một README bàn giao riêng trong Docs/QA/Tasks/N2. Sau kiểm chuyển RUNTIME ĐÃ KIỂM → CHỜ UI/TÍCH HỢP; chỉ phía tích hợp có báo cáo mới ghi TÍCH HỢP ĐÃ KIỂM. IO-OPEN-01 theo dõi riêng, không chạy audit save lại. Kích thước/độ sáng/điểm đặt action thuộc UI/UX & Tích hợp; mẫu/render/media thực phụ thuộc Map & Asset, không sửa thay họ.
+
+
+### Danh sách chờ tích hợp — viewer
+
+| Gói | Nguồn / commit thực kiểm | Runtime | Trạng thái tích hợp / chủ nhận | Phụ thuộc và bằng chứng |
+|---|---|---|---|---|
+| INSPECT-CONTROLS-01 | b8cc108f /61f26ad0 | RUNTIME ĐÃ KIỂM,27/27 API/fixture | CHỜ UI/TÍCH HỢP — UI/UX & Tích hợp | Action reset/state/errors/event, native mouse/preset/focus và model thật; Map & Asset hỗ trợ source. [Handoff](../QA/Tasks/N2/INSPECT-CONTROLS-01/README.md). Chưa có báo cáo tích hợp, không ghi TÍCH HỢP ĐÃ KIỂM |
+
+Gói đã triển khai reset/bounded controls, không chỉ audit/API giả; caller UI sản phẩm chưa nối nên không tuyên người chơi scene chung đã dùng được. Giữ lượt mouse-frame chưa tới và lỗi compile công cụ0720006e riêng, không sửa lịch sử để đổi PASS. Save/profile/log local không commit. Tiếp theo thực hiện COMPARE-VIEW-01 độc lập đã ghi acceptance, không chờ UI nhận gói trước và không thay public API gói đã giao.
