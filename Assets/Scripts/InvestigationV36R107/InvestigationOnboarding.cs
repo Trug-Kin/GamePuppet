@@ -37,9 +37,10 @@ namespace ConRoi.Investigation.V36.R107
             Fill(at,new Color(.06f,.12f,.13f,.85f));GUI.Label(at,data.tutorialWaypoint==0?"  Lối vào xưởng":"  Lối lên gác",smallStyle);
         }
         void RecordVisibleObservations(string id){
-            var e=InvestigationContent.Get(id);if(e==null)return;
+            var e=InvestigationContent.Get(id);if(e==null||!Has(id))return;
+            bool wasRecorded=data.firstFloorRecorded;
             for(int i=0;i<e.observations.Length;i++)Observe(id,i);
-            if((id=="slide"||id=="shoeprint")&&!data.firstFloorRecorded){data.firstFloorRecorded=true;if(!data.tutorialSkipped)Message="Đã ghi quan sát. P · Xem ghi chép";}
+            if(!wasRecorded&&data.firstFloorRecorded){if(!data.tutorialSkipped)Message="Đã ghi quan sát. P · Xem ghi chép";}
             else Message="Đã ghi quan sát vào hồ sơ.";
         }
     }

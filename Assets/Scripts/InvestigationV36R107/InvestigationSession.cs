@@ -79,6 +79,7 @@ namespace ConRoi.Investigation.V36.R107
             if(id=="clip"&&(!data.clipBeforeSeen||!data.clipEventSeen)){feedback="Hãy xem cả trước và trong sự cố trước khi ghi quan sát clip.";return;}
             if(index<0||index>=definition.observations.Length)return;
             var record=Record(id);if(!record.observations.Contains(index))record.observations.Add(index);
+            if(id=="slide"||id=="shoeprint")data.firstFloorRecorded=true;
         }
         void Update()
         {
