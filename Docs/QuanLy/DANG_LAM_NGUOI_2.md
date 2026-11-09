@@ -130,3 +130,12 @@ Prompt nhận việc: “Trên work/runtime-contracts-baseline từ fcbb7e19, x�
 - Giữ riêng lượt click tọa độ shoeprint sai và lượt cuối mất focus sang WindowsTerminal trước F6; chỉ ca cuối được kiểm lại riêng và đạt, không gọi gián đoạn là FAIL gameplay hoặc PASS phần chưa chạy. Raw kết quả/ảnh/log theo [báo cáo](../QA/Tasks/N2/SAVE-WRITE-03/README.md).
 - Trạng thái: HOAN_TAT_PHAM_VI_CHO_REVIEW. Không runtime/test Unity thay đổi, không chạy lại43/54 API; partial-write delegate vẫn chỉ API. Không chứng minh mất điện/crash thật. UI-LOAD-FEEDBACK-01/P-close OPEN, UI1080p/người mới NOT_RUN; không đồng nhất desktop1080p với Game1536×746.
 - Bàn giao UI/UX & Tích hợp: nhận đủ b76828a9 → b26e8404 → b1858a78 → b4bf6484 và commit báo cáo UI mới sau baseline148440b7, không wiring mới. Lượt nhầm fixture và kiểm tương thích riêng giữ nguyên. Đã stop/quit phiên thử không lưu scene, sceneDirty=false; settings copy/hash rồi khôi phục bytes trước phiên. Chưa push/merge, giữ save gốc/map/scene tích hợp/legacy/untracked cũ.
+
+
+## Gameplay & Dữ liệu — đề xuất TRIAL-CONTEXT-01, 09/11/2026
+
+- Chưa có nhiệm vụ gameplay tiếp theo được giao trong tiến độ. Đã đọc GDD v3.6, ownership/contracts và rà tuyến khám → ghi → mục tiêu → mật mã → đối chiếu → dựng lại → kết luận bằng source. Không mở lại các lượt xác nhận/kiểm save.
+- Chọn một khoảng thiếu: Update tiếp tục AdvanceTrial khi Page không còn reconstruction, còn ClosePage/OpenPage không dừng trial; khi hết timeline, tự cập nhật TrialReport/thêm TrialRecord dù stageCamera đã tắt. SeekTrial đã có guard không record khi tua, không coi đó là lỗi mới.
+- Đề xuất **TRIAL-CONTEXT-01 — Tạm ngưng diễn biến khi rời bàn dựng**: ngừng bước mô phỏng ngoài view, quay lại tiếp tục từ thời điểm cũ nếu trước đó đang phát; pause tay vẫn giữ. Đây là phương án đề xuất theo GDD7.1/7.2, chưa phải quy tắc đã duyệt hoặc lỗi đã chạy UI tái hiện.
+- [Phạm vi, căn cứ source, phụ thuộc và acceptance](../QA/Tasks/N2/TRIAL-CONTEXT-01/README.md). File nguồn dự kiến chỉ InvestigationSession.cs; tool kiểm mới chỉ tạo khi được giao. Không đổi luật cơ cấu, schema/ID/GUID, UI/presentation, map, scene tích hợp hay GDD.
+- Trạng thái: DE_XUAT_CHO_GIAO, SOURCE_AUDIT_ONLY; API/UI_RUNTIME_NOT_RUN. UI/UX & Tích hợp review nhịp quay lại và binding fixture thử; không cần asset mới. Chưa sửa runtime/công cụ, không chạy Unity, push hoặc merge.
