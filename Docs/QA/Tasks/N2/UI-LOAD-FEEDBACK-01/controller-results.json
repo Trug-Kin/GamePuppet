@@ -1,0 +1,44 @@
+{
+  "tested_commit": "5be056e4883a7c3cc49ba52e370d75ace2bc1510",
+  "source_commit": "25f14632b64f140bde9a06ecb0c32dbdda33deb2",
+  "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+  "render": [
+    1920,
+    1080
+  ],
+  "kind": "WINDOWS_SYNTHETIC_CONTROLLER_UI_IN_PROXY_SCENE_NOT_NEWCOMER_OR_INTEGRATION",
+  "progress": "Start > E slide proxy > click record [0,1] > R > P > F5; no API grants in UI run",
+  "results": {
+    "F6_dossier_validation_message_visible": true,
+    "dossier_Load_button_validation": true,
+    "F6_pause_validation_message_visible": true,
+    "pause_F6_and_Load_button_read_error_visible": true,
+    "safe_read_reason_no_path_or_exception": true,
+    "rejection_preserves_all_captured_state_and_file_bytes": true,
+    "unlock_then_valid_F6_clears_old_error_immediately": true,
+    "P_three_cycles_after_rejection": true,
+    "E_after_errors": true,
+    "W_and_E_do_not_escape_inspect_modal": true,
+    "Esc_inspect_pause_resume": true,
+    "pause_blocks_W": true,
+    "controller_movement_after_errors": true,
+    "continued_F5_F6_restores_data_and_position": true,
+    "world_existing_message_visible": true
+  },
+  "read_fault": "Actual Windows sharing violation induced by exclusive read handle on test save; closed in finally. No ACL/disk changes/crash simulation.",
+  "attempts": [
+    {
+      "status": "INCOMPLETE_PRECONDITION",
+      "detail": "First record click missed because Editor Game view zoom1.3x vs expected fit0.86x. Snapshot/log kept; no progress recorded. Corrected Editor zoom only, retried successfully."
+    }
+  ],
+  "focus": "Foreground PID checked before each input; no focus-loss interruption detected in this run. Prior task losses remain separate.",
+  "limitations": {
+    "integration_scene": "NOT_RUN with patch",
+    "full_UI1080_all_pages": "NOT_RUN; reviewed targeted dossier/pause/world/inspect screenshots",
+    "cipher_compare_conclusion_review_header_and_long_scroll": "NOT_RUN via controller in this patch; integration must review",
+    "newcomer": "NOT_RUN",
+    "P_close_historical": "OPEN; not reproduced or patched",
+    "prior_supplementary_probe": "NOT_RUN unchanged"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "tested_commit": "5be056e4883a7c3cc49ba52e370d75ace2bc1510",
+  "files": [
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSession.cs",
+      "raw_sha256": "9a112e67bc98e86458f0aec02711d26573be6e6f108971af8cbe643025561a74",
+      "git_blob_sha256": "196154c8780c92d54fdeea3b9df55d7abcdeffb3d6718f539cc3265d20f9c280",
+      "normalized_equal": true
+    },
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSessionUI.cs",
+      "raw_sha256": "4aabec1cabad094a303966addf647e86cc2b19543a8e2741979767288be2d246",
+      "git_blob_sha256": "cd8faabe9993b65135aa10f38b4a821552580186b54c2459830139f2f1d7025d",
+      "normalized_equal": true
+    },
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSaveValidation.cs",
+      "raw_sha256": "6d3b324a4eb016af67c049571e08dc381bfcfdad2ec7afb4e94cbb3f63d930ea",
+      "git_blob_sha256": "fc9cf1dd6075524bf75740094c7fae4873fc83d93a10a7199ba5517fefe3d570",
+      "normalized_equal": true
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/LoadFeedbackChecks.cs",
+      "raw_sha256": "593be03082e74023030587573fb8f765ecbecdd25cf9c8fc3413faea18b0d9ae",
+      "git_blob_sha256": "fff2fdefa891e817afb25c0e877d49016dc4ba620bdb43351b415a434c89289d",
+      "normalized_equal": true
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/LoadFeedbackChecks.cs.meta",
+      "raw_sha256": "a2bf3892fe5608c49753cbaa32ae3d9944326d189296e7099516e08c52cb7b2f",
+      "git_blob_sha256": "962e82ca24031f1f99a826eb77048269df61c16da066d8fa5bab54ca1814c5e5",
+      "normalized_equal": true
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/SaveGuardControllerChecks.cs",
+      "raw_sha256": "4fb20a2d0e85d4a579ffca74189fd79a22bfc6c1f0a3abb4eebe41d39f02291a",
+      "git_blob_sha256": "4fb20a2d0e85d4a579ffca74189fd79a22bfc6c1f0a3abb4eebe41d39f02291a",
+      "normalized_equal": true
+    }
+  ]
+}

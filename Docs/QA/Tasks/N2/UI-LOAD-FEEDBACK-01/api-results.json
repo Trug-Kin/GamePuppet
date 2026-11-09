@@ -1,0 +1,272 @@
+{
+  "unity": "6000.6.2f1",
+  "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+  "kind": "TARGETED_API_FIXTURE_NOT_UI",
+  "checks": [
+    {
+      "name": "private_profile",
+      "pass": true
+    },
+    {
+      "name": "empty_valid_load",
+      "pass": true
+    },
+    {
+      "name": "_validation_reject",
+      "pass": true
+    },
+    {
+      "name": "_validation_state_unchanged",
+      "pass": true
+    },
+    {
+      "name": "_validation_bytes_unchanged",
+      "pass": true
+    },
+    {
+      "name": "_validation_reason_safe",
+      "pass": true
+    },
+    {
+      "name": "_validation_guard_reason_preserved",
+      "pass": true
+    },
+    {
+      "name": "_validation_recovery_clears_error",
+      "pass": true
+    },
+    {
+      "name": "_validation_continue_save_load",
+      "pass": true
+    },
+    {
+      "name": "_json_reject",
+      "pass": true
+    },
+    {
+      "name": "_json_state_unchanged",
+      "pass": true
+    },
+    {
+      "name": "_json_bytes_unchanged",
+      "pass": true
+    },
+    {
+      "name": "_json_reason_safe",
+      "pass": true
+    },
+    {
+      "name": "_json_format_reason",
+      "pass": true
+    },
+    {
+      "name": "_json_recovery_clears_error",
+      "pass": true
+    },
+    {
+      "name": "_json_continue_save_load",
+      "pass": true
+    },
+    {
+      "name": "_read_reject",
+      "pass": true
+    },
+    {
+      "name": "_read_state_unchanged",
+      "pass": true
+    },
+    {
+      "name": "_read_bytes_unchanged",
+      "pass": true
+    },
+    {
+      "name": "_read_reason_safe",
+      "pass": true
+    },
+    {
+      "name": "_read_read_reason",
+      "pass": true
+    },
+    {
+      "name": "_read_recovery_clears_error",
+      "pass": true
+    },
+    {
+      "name": "_read_continue_save_load",
+      "pass": true
+    },
+    {
+      "name": "dossier_validation_reject",
+      "pass": true
+    },
+    {
+      "name": "dossier_validation_state_unchanged",
+      "pass": true
+    },
+    {
+      "name": "dossier_validation_bytes_unchanged",
+      "pass": true
+    },
+    {
+      "name": "dossier_validation_reason_safe",
+      "pass": true
+    },
+    {
+      "name": "dossier_validation_guard_reason_preserved",
+      "pass": true
+    },
+    {
+      "name": "dossier_validation_recovery_clears_error",
+      "pass": true
+    },
+    {
+      "name": "dossier_validation_continue_save_load",
+      "pass": true
+    },
+    {
+      "name": "dossier_json_reject",
+      "pass": true
+    },
+    {
+      "name": "dossier_json_state_unchanged",
+      "pass": true
+    },
+    {
+      "name": "dossier_json_bytes_unchanged",
+      "pass": true
+    },
+    {
+      "name": "dossier_json_reason_safe",
+      "pass": true
+    },
+    {
+      "name": "dossier_json_format_reason",
+      "pass": true
+    },
+    {
+      "name": "dossier_json_recovery_clears_error",
+      "pass": true
+    },
+    {
+      "name": "dossier_json_continue_save_load",
+      "pass": true
+    },
+    {
+      "name": "dossier_read_reject",
+      "pass": true
+    },
+    {
+      "name": "dossier_read_state_unchanged",
+      "pass": true
+    },
+    {
+      "name": "dossier_read_bytes_unchanged",
+      "pass": true
+    },
+    {
+      "name": "dossier_read_reason_safe",
+      "pass": true
+    },
+    {
+      "name": "dossier_read_read_reason",
+      "pass": true
+    },
+    {
+      "name": "dossier_read_recovery_clears_error",
+      "pass": true
+    },
+    {
+      "name": "dossier_read_continue_save_load",
+      "pass": true
+    },
+    {
+      "name": "pause_validation_reject",
+      "pass": true
+    },
+    {
+      "name": "pause_validation_state_unchanged",
+      "pass": true
+    },
+    {
+      "name": "pause_validation_bytes_unchanged",
+      "pass": true
+    },
+    {
+      "name": "pause_validation_reason_safe",
+      "pass": true
+    },
+    {
+      "name": "pause_validation_guard_reason_preserved",
+      "pass": true
+    },
+    {
+      "name": "pause_validation_recovery_clears_error",
+      "pass": true
+    },
+    {
+      "name": "pause_validation_continue_save_load",
+      "pass": true
+    },
+    {
+      "name": "pause_json_reject",
+      "pass": true
+    },
+    {
+      "name": "pause_json_state_unchanged",
+      "pass": true
+    },
+    {
+      "name": "pause_json_bytes_unchanged",
+      "pass": true
+    },
+    {
+      "name": "pause_json_reason_safe",
+      "pass": true
+    },
+    {
+      "name": "pause_json_format_reason",
+      "pass": true
+    },
+    {
+      "name": "pause_json_recovery_clears_error",
+      "pass": true
+    },
+    {
+      "name": "pause_json_continue_save_load",
+      "pass": true
+    },
+    {
+      "name": "pause_read_reject",
+      "pass": true
+    },
+    {
+      "name": "pause_read_state_unchanged",
+      "pass": true
+    },
+    {
+      "name": "pause_read_bytes_unchanged",
+      "pass": true
+    },
+    {
+      "name": "pause_read_reason_safe",
+      "pass": true
+    },
+    {
+      "name": "pause_read_read_reason",
+      "pass": true
+    },
+    {
+      "name": "pause_read_recovery_clears_error",
+      "pass": true
+    },
+    {
+      "name": "pause_read_continue_save_load",
+      "pass": true
+    },
+    {
+      "name": "empty_after_errors",
+      "pass": true
+    }
+  ],
+  "failures": 0
+}

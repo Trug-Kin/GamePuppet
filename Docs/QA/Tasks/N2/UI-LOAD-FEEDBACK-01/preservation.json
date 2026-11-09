@@ -1,0 +1,30 @@
+{
+  "settings": [
+    {
+      "path": "ProjectSettings/EditorBuildSettings.asset",
+      "before_sha256": "0f85f9170783e3e60c2e14d3604794c0c7a466c4d0fe8a50e1a4a9ec21889f10",
+      "after_snapshot_sha256": "61b81004081de287d300738d601bb2002379ac1d6f5f6c8c51f9e76675041106",
+      "normalized_equal": true,
+      "exact_before_restored_or_retained": true
+    },
+    {
+      "path": "ProjectSettings/QualitySettings.asset",
+      "before_sha256": "7b7026a4a5c7d7cdd0383830be28677ee2b99a728e1d3367d12e565a12270b2f",
+      "after_snapshot_sha256": "941f6673697bbe0579ce452e3e3284f6216087af0d04355c0d3c30d3ef9712d0",
+      "normalized_equal": true,
+      "exact_before_restored_or_retained": true
+    },
+    {
+      "path": "ProjectSettings/ProjectAuditorSettings.asset",
+      "before_sha256": "0d2b8b1f6cba0642354b19699995275d64845aa214bf48b334fb99b2f891f026",
+      "after_snapshot_sha256": "9e68444b9bda981e2927a98df9edf69ea88362f0c6b7f3c81b39b9d515d2a416",
+      "normalized_equal": true,
+      "exact_before_restored_or_retained": true
+    }
+  ],
+  "product_worktree_diff_empty": true,
+  "no_targeted_compile_reference_or_IMGUI_errors": true,
+  "scene_closed_without_save": true,
+  "user_untracked_retained": true,
+  "save_originals_untouched": true
+}
