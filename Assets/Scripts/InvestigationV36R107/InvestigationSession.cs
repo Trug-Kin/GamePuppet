@@ -76,7 +76,7 @@ namespace ConRoi.Investigation.V36.R107
         }
         void EnsureConclusions(){while(data.conclusions.Count<4)data.conclusions.Add(new ConclusionRecord());}
         void Start(){if(modelGate)modelGate.enabled=false;if(!data.introAccepted)OpenPage("intro");else SetModalState();}
-        void OnDestroy(){Time.timeScale=1;if(viewerTexture)Destroy(viewerTexture);if(viewerCamera)Destroy(viewerCamera.gameObject);}
+        void OnDestroy(){InspectionViewChanged=null;ClearInspectionVisual();Time.timeScale=1;if(viewerTexture)Destroy(viewerTexture);if(viewerCamera)Destroy(viewerCamera.gameObject);}
         public void Acquire(string id)
         {
             if(InvestigationContent.Get(id)==null)return;
@@ -115,7 +115,7 @@ namespace ConRoi.Investigation.V36.R107
                 if(Page=="reconstruction"&&TrialRunning&&!trialScrubbing)AdvanceTrial(Time.deltaTime);
                 if(Page=="clip"&&ClipPlaying&&!clipScrubbing){float previous=ClipTime;ClipTime=Mathf.Min(MechanismPresentation.ClipLength,ClipTime+Time.deltaTime);RegisterClipExposure(previous,ClipTime);UpdateClip();if(ClipTime>=MechanismPresentation.ClipLength)ClipPlaying=false;}
             }
-            if(Page=="inspect"&&viewer&&Mouse.current!=null){if(Mouse.current.leftButton.isPressed){var d=Mouse.current.delta.ReadValue();viewYaw+=d.x*.25f;viewPitch=Mathf.Clamp(viewPitch-d.y*.25f,-80,80);}viewDistance=Mathf.Clamp(viewDistance-Mouse.current.scroll.ReadValue().y*.002f,.5f,4);UpdateViewer();}
+            if(Page=="inspect"&&Mouse.current!=null){var d=Mouse.current.leftButton.isPressed?Mouse.current.delta.ReadValue():Vector2.zero;TryAdjustInspection(d.x*.25f,-d.y*.25f,-Mouse.current.scroll.ReadValue().y*.002f,out _);}
         }
         public bool TryInteractionHit(out RaycastHit hit)
         {
@@ -142,7 +142,7 @@ namespace ConRoi.Investigation.V36.R107
         public void OpenEvidence(string id,Transform visual=null)
         {
             if(!Has(id))return;
-            inspectId=id;data.inspecting=id;OpenPage("inspect");
+            ClearInspectionVisual();inspectId=id;data.inspecting=id;OpenPage("inspect");
             if(!visual){var all=FindObjectsByType<InvestigationInteractable>(FindObjectsInactive.Exclude,FindObjectsSortMode.None);visual=all.FirstOrDefault(x=>x.evidenceId==id)?.transform;}
             if(visual){var item=visual.GetComponent<InvestigationInteractable>();if(item&&item.inspectionPrefab)visual=item.inspectionPrefab.transform;}
             if(id=="mechanism")visual=gate.transform;
@@ -162,10 +162,11 @@ namespace ConRoi.Investigation.V36.R107
             Cursor.lockState=Modal?CursorLockMode.None:CursorLockMode.Locked;Cursor.visible=Modal;
             if(stageCamera)stageCamera.enabled=Page=="reconstruction";
             if(clipCamera)clipCamera.enabled=Page=="clip";
+            if(viewerCamera)viewerCamera.enabled=Page=="inspect";PublishInspectionView();
         }
         void CreateViewer(Transform visual)
         {
-            if(viewer)Destroy(viewer.gameObject);if(!visual)return;
+            ClearInspectionVisual();if(!visual){PublishInspectionView();return;}
             if(!viewerCamera){var go=new GameObject("Evidence preview camera");viewerCamera=go.AddComponent<Camera>();viewerCamera.cullingMask=1<<30;viewerCamera.clearFlags=CameraClearFlags.SolidColor;viewerCamera.backgroundColor=new Color(.11f,.14f,.15f);viewerTexture=new RenderTexture(600,600,24);viewerCamera.targetTexture=viewerTexture;viewerCamera.fieldOfView=35;var light=go.AddComponent<Light>();light.type=LightType.Point;light.range=12;light.intensity=3;light.cullingMask=1<<30;}
             viewer=Instantiate(visual.gameObject).transform;viewer.name="Evidence preview only";
             // Freeze world-space lines into the clone before moving/scaling the preview.
@@ -178,7 +179,7 @@ namespace ConRoi.Investigation.V36.R107
             float size=Mathf.Max(.05f,bounds.size.magnitude);viewer.localScale*=1.2f/size;
             // Re-center using transformed bounds after normalized display scale.
             bounds=new Bounds(viewer.position,Vector3.zero);foreach(var r in viewer.GetComponentsInChildren<Renderer>())bounds.Encapsulate(r.bounds);
-            viewer.position+=new Vector3(8000,1000,0)-bounds.center;viewYaw=25;viewPitch=(inspectId=="shoe"||inspectId=="shoecontrol")?65:(inspectId=="slide"||inspectId=="shoeprint"||inspectId=="fabric"||inspectId=="coat")?-65:10;viewDistance=(inspectId=="slide"||inspectId=="shoeprint")?1.65f:2;UpdateViewer();
+            viewer.position+=new Vector3(8000,1000,0)-bounds.center;ResetInspectionPose();
         }
         void UpdateViewer(){if(!viewerCamera)return;var centre=new Vector3(8000,1000,0);if(inspectId=="mechanism"&&viewer&&viewDistance<1){var part=viewer.GetComponentsInChildren<Transform>().FirstOrDefault(t=>t.name=="C_latch");if(part)centre=part.position;}viewerCamera.transform.position=centre+Quaternion.Euler(viewPitch,viewYaw,0)*new Vector3(0,0,viewDistance);viewerCamera.transform.LookAt(centre);}
         public string ReadCipher()
