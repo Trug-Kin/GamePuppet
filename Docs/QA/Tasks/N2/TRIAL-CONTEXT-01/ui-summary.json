@@ -1,0 +1,2026 @@
+{
+  "testedCommit": "b09c77908219efe47b9e6876ce21b82c6606ab74",
+  "input": "WINDOWS_SYNTHETIC_UI_IN_TEMPORARY_PROXY_ENVIRONMENT",
+  "checks": [
+    {
+      "name": "fresh_intro",
+      "pass_": true
+    },
+    {
+      "name": "mechanism_E",
+      "pass_": true
+    },
+    {
+      "name": "table_E",
+      "pass_": true
+    },
+    {
+      "name": "R_frozen",
+      "pass_": true,
+      "before": 0.603130937,
+      "after": 0.603130937,
+      "records": 0
+    },
+    {
+      "name": "R_resume",
+      "pass_": true,
+      "hiddenTime": 0.603130937,
+      "returnTime": 1.54097068
+    },
+    {
+      "name": "Esc_frozen",
+      "pass_": true,
+      "before": 0.603434145,
+      "after": 0.603434145,
+      "records": 0
+    },
+    {
+      "name": "Esc_resume",
+      "pass_": true,
+      "hiddenTime": 0.603434145,
+      "returnTime": 1.6449784
+    },
+    {
+      "name": "header-back_frozen",
+      "pass_": true,
+      "before": 0.785273135,
+      "after": 0.785273135,
+      "records": 0
+    },
+    {
+      "name": "header-back_resume",
+      "pass_": true,
+      "hiddenTime": 0.785273135,
+      "returnTime": 1.87454832
+    },
+    {
+      "name": "P_frozen",
+      "pass_": true,
+      "before": 0.603055,
+      "after": 0.603055,
+      "records": 0
+    },
+    {
+      "name": "P_resume",
+      "pass_": true,
+      "hiddenTime": 0.603055,
+      "returnTime": 1.21355629
+    },
+    {
+      "name": "header-dossier_frozen",
+      "pass_": true,
+      "before": 0.797212958,
+      "after": 0.797212958,
+      "records": 0
+    },
+    {
+      "name": "header-dossier_resume",
+      "pass_": true,
+      "hiddenTime": 0.797212958,
+      "returnTime": 1.57607734
+    },
+    {
+      "name": "manual_pause_button",
+      "pass_": true
+    },
+    {
+      "name": "manual_pause_preserved_0",
+      "pass_": true
+    },
+    {
+      "name": "manual_pause_preserved_1",
+      "pass_": true
+    },
+    {
+      "name": "view_change_preserves_pause",
+      "pass_": true
+    },
+    {
+      "name": "seek_no_record",
+      "pass_": true
+    },
+    {
+      "name": "global_pause",
+      "pass_": true
+    },
+    {
+      "name": "movement_after_resume",
+      "pass_": true
+    },
+    {
+      "name": "modal_locks_movement",
+      "pass_": true
+    },
+    {
+      "name": "no_hidden_record",
+      "pass_": true
+    },
+    {
+      "name": "one_visible_record",
+      "pass_": true
+    },
+    {
+      "name": "completed_record_unchanged",
+      "pass_": true
+    },
+    {
+      "name": "load_retains_records_resets_trial",
+      "pass_": true
+    },
+    {
+      "name": "play_after_load",
+      "pass_": true
+    }
+  ],
+  "snapshots": {
+    "baseline": {
+      "before-input": {
+        "utc": "2026-11-09T03:22:17.2721402Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "intro",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.0,
+          "y": 1.0499999523162842,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "",
+        "trialTime": 0.0,
+        "trialDuration": 16.0,
+        "trialRunning": false,
+        "trialReport": "Chọn một diễn biến để quan sát. Mô hình không nhận diện hung thủ.",
+        "modelGate": {
+          "angle": 0.0,
+          "velocity": 0.0,
+          "rope": false,
+          "hook": false,
+          "bodyForce": false,
+          "wedge": false,
+          "latched": true
+        },
+        "trialRecords": []
+      },
+      "before-stop": {
+        "utc": "2026-11-09T03:29:44.4364116Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.011250807903707027,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 6.31252146,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 5.406538486480713,
+          "velocity": -4.182783126831055,
+          "rope": false,
+          "hook": false,
+          "bodyForce": false,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": [
+          {
+            "id": "release",
+            "report": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+            "returnSeconds": -1.0
+          }
+        ]
+      },
+      "Esc-before": {
+        "utc": "2026-11-09T03:27:56.4335462Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.011250807903707027,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 0.624373,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 21.576343536376953,
+          "velocity": 45.40058898925781,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "Esc-hidden": {
+        "utc": "2026-11-09T03:28:00.3283755Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "",
+        "paused": false,
+        "modal": false,
+        "position": {
+          "x": 0.011250807903707027,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": true,
+        "look": true,
+        "trialId": "release",
+        "trialTime": 4.518526,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 21.531911849975586,
+          "velocity": -16.567523956298828,
+          "rope": false,
+          "hook": false,
+          "bodyForce": false,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "Esc-left": {
+        "utc": "2026-11-09T03:27:58.0703358Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "",
+        "paused": false,
+        "modal": false,
+        "position": {
+          "x": 0.011250807903707027,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": true,
+        "look": true,
+        "trialId": "release",
+        "trialTime": 2.26106381,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 71.08368682861328,
+          "velocity": 16.14171028137207,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "header-back-before": {
+        "utc": "2026-11-09T03:28:02.7630871Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.011250807903707027,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 0.7355104,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 26.566526412963867,
+          "velocity": 44.3268928527832,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "header-back-hidden": {
+        "utc": "2026-11-09T03:28:06.4431774Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "",
+        "paused": false,
+        "modal": false,
+        "position": {
+          "x": 0.011250807903707027,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": true,
+        "look": true,
+        "trialId": "release",
+        "trialTime": 4.41720152,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 23.270780563354492,
+          "velocity": -17.87645721435547,
+          "rope": false,
+          "hook": false,
+          "bodyForce": false,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "header-back-left": {
+        "utc": "2026-11-09T03:28:04.1990371Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "",
+        "paused": false,
+        "modal": false,
+        "position": {
+          "x": 0.011250807903707027,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": true,
+        "look": true,
+        "trialId": "release",
+        "trialTime": 2.1729517,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 69.61724090576172,
+          "velocity": 17.262386322021484,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "header-dossier-before": {
+        "utc": "2026-11-09T03:29:38.8995031Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.011250807903707027,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 0.7752257,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 28.31328773498535,
+          "velocity": 43.748687744140625,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": [
+          {
+            "id": "release",
+            "report": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+            "returnSeconds": -1.0
+          }
+        ]
+      },
+      "header-dossier-hidden": {
+        "utc": "2026-11-09T03:29:42.3957201Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "dossier",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.011250807903707027,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 4.27022362,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 26.038713455200195,
+          "velocity": -19.938323974609375,
+          "rope": false,
+          "hook": false,
+          "bodyForce": false,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": [
+          {
+            "id": "release",
+            "report": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+            "returnSeconds": -1.0
+          }
+        ]
+      },
+      "header-dossier-return": {
+        "utc": "2026-11-09T03:29:43.8209045Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.011250807903707027,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 5.695823,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 8.69851016998291,
+          "velocity": -6.728134632110596,
+          "rope": false,
+          "hook": false,
+          "bodyForce": false,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": [
+          {
+            "id": "release",
+            "report": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+            "returnSeconds": -1.0
+          }
+        ]
+      },
+      "mechanism-by-E": {
+        "utc": "2026-11-09T03:25:33.4611572Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "inspect",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": -1.9899890422821045,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "",
+        "trialTime": 0.0,
+        "trialDuration": 16.0,
+        "trialRunning": false,
+        "trialReport": "Chọn một diễn biến để quan sát. Mô hình không nhận diện hung thủ.",
+        "modelGate": {
+          "angle": 0.0,
+          "velocity": 0.0,
+          "rope": false,
+          "hook": false,
+          "bodyForce": false,
+          "wedge": false,
+          "latched": true
+        },
+        "trialRecords": []
+      },
+      "P-before": {
+        "utc": "2026-11-09T03:28:08.9140180Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.011250807903707027,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 0.782848,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 28.645809173583984,
+          "velocity": 43.628501892089844,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "P-hidden": {
+        "utc": "2026-11-09T03:28:23.0685356Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "dossier",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.011250807903707027,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 11.7415733,
+        "trialDuration": 11.7415733,
+        "trialRunning": false,
+        "trialReport": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+        "modelGate": {
+          "angle": 82.0,
+          "velocity": 0.0,
+          "rope": false,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": [
+          {
+            "id": "release",
+            "report": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+            "returnSeconds": -1.0
+          }
+        ]
+      },
+      "P-left": {
+        "utc": "2026-11-09T03:28:10.3539826Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "dossier",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.011250807903707027,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 2.22196364,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 70.4450912475586,
+          "velocity": 16.630128860473633,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "R-before": {
+        "utc": "2026-11-09T03:27:50.2921797Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.011250807903707027,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 0.6982322,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 24.907135009765625,
+          "velocity": 44.78706359863281,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "R-hidden": {
+        "utc": "2026-11-09T03:27:54.1705257Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "",
+        "paused": false,
+        "modal": false,
+        "position": {
+          "x": 0.011250807903707027,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": true,
+        "look": true,
+        "trialId": "release",
+        "trialTime": 4.579941,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 20.54070472717285,
+          "velocity": -15.81747055053711,
+          "rope": false,
+          "hook": false,
+          "bodyForce": false,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "R-left": {
+        "utc": "2026-11-09T03:27:51.9354610Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "",
+        "paused": false,
+        "modal": false,
+        "position": {
+          "x": 0.011250807903707027,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": true,
+        "look": true,
+        "trialId": "release",
+        "trialTime": 2.34114456,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 72.33353424072266,
+          "velocity": 15.184165954589844,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "return-after-hidden-completion": {
+        "utc": "2026-11-09T03:29:37.2570419Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.011250807903707027,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 11.7415733,
+        "trialDuration": 11.7415733,
+        "trialRunning": false,
+        "trialReport": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+        "modelGate": {
+          "angle": 82.0,
+          "velocity": 0.0,
+          "rope": false,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": [
+          {
+            "id": "release",
+            "report": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+            "returnSeconds": -1.0
+          }
+        ]
+      },
+      "table-by-E": {
+        "utc": "2026-11-09T03:25:37.5480130Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.011250807903707027,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "",
+        "trialTime": 0.0,
+        "trialDuration": 16.0,
+        "trialRunning": false,
+        "trialReport": "Chọn một diễn biến để quan sát. Mô hình không nhận diện hung thủ.",
+        "modelGate": {
+          "angle": 0.0,
+          "velocity": 0.0,
+          "rope": false,
+          "hook": false,
+          "bodyForce": false,
+          "wedge": false,
+          "latched": true
+        },
+        "trialRecords": []
+      }
+    },
+    "fixed": {
+      "before-input": {
+        "utc": "2026-11-09T03:37:31.2773616Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "intro",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.0,
+          "y": 1.0499999523162842,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "",
+        "trialTime": 0.0,
+        "trialDuration": 16.0,
+        "trialRunning": false,
+        "trialReport": "Chọn một diễn biến để quan sát. Mô hình không nhận diện hung thủ.",
+        "modelGate": {
+          "angle": 0.0,
+          "velocity": 0.0,
+          "rope": false,
+          "hook": false,
+          "bodyForce": false,
+          "wedge": false,
+          "latched": true
+        },
+        "trialRecords": []
+      },
+      "before-stop": {
+        "utc": "2026-11-09T03:42:38.5857430Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.004932396113872528
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 11.7415733,
+        "trialDuration": 11.7415733,
+        "trialRunning": false,
+        "trialReport": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+        "modelGate": {
+          "angle": 82.0,
+          "velocity": 0.0,
+          "rope": false,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": [
+          {
+            "id": "release",
+            "report": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+            "returnSeconds": -1.0
+          },
+          {
+            "id": "release",
+            "report": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+            "returnSeconds": -1.0
+          }
+        ]
+      },
+      "completed-reopen": {
+        "utc": "2026-11-09T03:39:15.0148195Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.004932396113872528
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 11.7415733,
+        "trialDuration": 11.7415733,
+        "trialRunning": false,
+        "trialReport": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+        "modelGate": {
+          "angle": 82.0,
+          "velocity": 0.0,
+          "rope": false,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": [
+          {
+            "id": "release",
+            "report": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+            "returnSeconds": -1.0
+          }
+        ]
+      },
+      "completion-hidden": {
+        "utc": "2026-11-09T03:38:59.0535858Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "dossier",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.004932396113872528
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 0.599016368,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 20.424161911010742,
+          "velocity": 45.499671936035156,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "completion-left": {
+        "utc": "2026-11-09T03:38:46.3555498Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "dossier",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.004932396113872528
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 0.599016368,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 20.424161911010742,
+          "velocity": 45.499671936035156,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "Esc-hidden": {
+        "utc": "2026-11-09T03:37:49.5086181Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "",
+        "paused": false,
+        "modal": false,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": true,
+        "look": true,
+        "trialId": "release",
+        "trialTime": 0.603434145,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 20.625104904174805,
+          "velocity": 45.4865608215332,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "Esc-left": {
+        "utc": "2026-11-09T03:37:47.2642109Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "",
+        "paused": false,
+        "modal": false,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": true,
+        "look": true,
+        "trialId": "release",
+        "trialTime": 0.603434145,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 20.625104904174805,
+          "velocity": 45.4865608215332,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "Esc-return": {
+        "utc": "2026-11-09T03:37:51.1450530Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 1.6449784,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 58.45842361450195,
+          "velocity": 25.63697624206543,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "final-state": {
+        "utc": "2026-11-09T03:42:37.7691757Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.004932396113872528
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 11.7415733,
+        "trialDuration": 11.7415733,
+        "trialRunning": false,
+        "trialReport": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+        "modelGate": {
+          "angle": 82.0,
+          "velocity": 0.0,
+          "rope": false,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": [
+          {
+            "id": "release",
+            "report": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+            "returnSeconds": -1.0
+          },
+          {
+            "id": "release",
+            "report": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+            "returnSeconds": -1.0
+          }
+        ]
+      },
+      "global-pause-after": {
+        "utc": "2026-11-09T03:38:36.9162841Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "",
+        "paused": true,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 5.27746248,
+        "trialDuration": 11.7415733,
+        "trialRunning": false,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 12.008819580078125,
+          "velocity": -9.283686637878418,
+          "rope": false,
+          "hook": false,
+          "bodyForce": false,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "global-pause": {
+        "utc": "2026-11-09T03:38:34.4653572Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "",
+        "paused": true,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 5.27746248,
+        "trialDuration": 11.7415733,
+        "trialRunning": false,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 12.008819580078125,
+          "velocity": -9.283686637878418,
+          "rope": false,
+          "hook": false,
+          "bodyForce": false,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "header-back-hidden": {
+        "utc": "2026-11-09T03:37:55.6578711Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "",
+        "paused": false,
+        "modal": false,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": true,
+        "look": true,
+        "trialId": "release",
+        "trialTime": 0.785273135,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 28.751474380493164,
+          "velocity": 43.58951950073242,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "header-back-left": {
+        "utc": "2026-11-09T03:37:53.4040126Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "",
+        "paused": false,
+        "modal": false,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": true,
+        "look": true,
+        "trialId": "release",
+        "trialTime": 0.785273135,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 28.751474380493164,
+          "velocity": 43.58951950073242,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "header-back-return": {
+        "utc": "2026-11-09T03:37:57.2999443Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 1.87454832,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 63.855674743652344,
+          "velocity": 21.627716064453125,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "header-dossier-hidden": {
+        "utc": "2026-11-09T03:38:18.2472507Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "dossier",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 0.797212958,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 29.269983291625977,
+          "velocity": 43.3946418762207,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "header-dossier-left": {
+        "utc": "2026-11-09T03:38:16.1910825Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "dossier",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 0.797212958,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 29.269983291625977,
+          "velocity": 43.3946418762207,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "header-dossier-return": {
+        "utc": "2026-11-09T03:38:19.8876534Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 1.57607734,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 56.652339935302734,
+          "velocity": 26.95412826538086,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "loaded-transient-reset": {
+        "utc": "2026-11-09T03:39:19.0961619Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.004932396113872528
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "",
+        "trialTime": 0.0,
+        "trialDuration": 16.0,
+        "trialRunning": false,
+        "trialReport": "Đã đặt lại mô hình.",
+        "modelGate": {
+          "angle": 0.0,
+          "velocity": 0.0,
+          "rope": false,
+          "hook": false,
+          "bodyForce": false,
+          "wedge": false,
+          "latched": true
+        },
+        "trialRecords": [
+          {
+            "id": "release",
+            "report": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+            "returnSeconds": -1.0
+          }
+        ]
+      },
+      "manual-pause": {
+        "utc": "2026-11-09T03:38:22.1330030Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 0.791220367,
+        "trialDuration": 11.7415733,
+        "trialRunning": false,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 29.00995445251465,
+          "velocity": 43.493465423583984,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "manual-return-0": {
+        "utc": "2026-11-09T03:38:25.4279590Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 0.791220367,
+        "trialDuration": 11.7415733,
+        "trialRunning": false,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 29.00995445251465,
+          "velocity": 43.493465423583984,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "manual-return-1": {
+        "utc": "2026-11-09T03:38:28.9199510Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 0.791220367,
+        "trialDuration": 11.7415733,
+        "trialRunning": false,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 29.00995445251465,
+          "velocity": 43.493465423583984,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "modal-after-move": {
+        "utc": "2026-11-09T03:38:43.9067260Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.004932396113872528
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 5.27746248,
+        "trialDuration": 11.7415733,
+        "trialRunning": false,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 12.008819580078125,
+          "velocity": -9.283686637878418,
+          "rope": false,
+          "hook": false,
+          "bodyForce": false,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "modal-before-move": {
+        "utc": "2026-11-09T03:38:42.4715295Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.004932396113872528
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 5.27746248,
+        "trialDuration": 11.7415733,
+        "trialRunning": false,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 12.008819580078125,
+          "velocity": -9.283686637878418,
+          "rope": false,
+          "hook": false,
+          "bodyForce": false,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "P-hidden": {
+        "utc": "2026-11-09T03:38:12.3102149Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "dossier",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 0.603055,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 20.60786247253418,
+          "velocity": 45.487762451171875,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "P-left": {
+        "utc": "2026-11-09T03:37:59.5788086Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "dossier",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 0.603055,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 20.60786247253418,
+          "velocity": 45.487762451171875,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "P-return": {
+        "utc": "2026-11-09T03:38:13.7337323Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 1.21355629,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 45.55425262451172,
+          "velocity": 34.632503509521484,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "play-after-load": {
+        "utc": "2026-11-09T03:39:33.4221350Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.004932396113872528
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 11.7415733,
+        "trialDuration": 11.7415733,
+        "trialRunning": false,
+        "trialReport": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+        "modelGate": {
+          "angle": 82.0,
+          "velocity": 0.0,
+          "rope": false,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": [
+          {
+            "id": "release",
+            "report": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+            "returnSeconds": -1.0
+          },
+          {
+            "id": "release",
+            "report": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+            "returnSeconds": -1.0
+          }
+        ]
+      },
+      "R-hidden": {
+        "utc": "2026-11-09T03:37:43.1631392Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "",
+        "paused": false,
+        "modal": false,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": true,
+        "look": true,
+        "trialId": "release",
+        "trialTime": 0.603130937,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 20.61131477355957,
+          "velocity": 45.48752212524414,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "R-left": {
+        "utc": "2026-11-09T03:37:40.9188439Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "",
+        "paused": false,
+        "modal": false,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": true,
+        "look": true,
+        "trialId": "release",
+        "trialTime": 0.603130937,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 20.61131477355957,
+          "velocity": 45.48752212524414,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "R-return": {
+        "utc": "2026-11-09T03:37:44.8063964Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 1.54097068,
+        "trialDuration": 11.7415733,
+        "trialRunning": true,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 55.696842193603516,
+          "velocity": 27.644996643066406,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "saved-completed": {
+        "utc": "2026-11-09T03:39:16.6411119Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.004932396113872528
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 11.7415733,
+        "trialDuration": 11.7415733,
+        "trialRunning": false,
+        "trialReport": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+        "modelGate": {
+          "angle": 82.0,
+          "velocity": 0.0,
+          "rope": false,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": [
+          {
+            "id": "release",
+            "report": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+            "returnSeconds": -1.0
+          }
+        ]
+      },
+      "seek": {
+        "utc": "2026-11-09T03:38:31.8079531Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 5.27746248,
+        "trialDuration": 11.7415733,
+        "trialRunning": false,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 12.008819580078125,
+          "velocity": -9.283686637878418,
+          "rope": false,
+          "hook": false,
+          "bodyForce": false,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "view-change": {
+        "utc": "2026-11-09T03:38:30.3547865Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 0.791220367,
+        "trialDuration": 11.7415733,
+        "trialRunning": false,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 29.00995445251465,
+          "velocity": 43.493465423583984,
+          "rope": true,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "visible-completion": {
+        "utc": "2026-11-09T03:39:12.5690157Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "reconstruction",
+        "paused": false,
+        "modal": true,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.004932396113872528
+        },
+        "movement": false,
+        "look": false,
+        "trialId": "release",
+        "trialTime": 11.7415733,
+        "trialDuration": 11.7415733,
+        "trialRunning": false,
+        "trialReport": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+        "modelGate": {
+          "angle": 82.0,
+          "velocity": 0.0,
+          "rope": false,
+          "hook": false,
+          "bodyForce": true,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": [
+          {
+            "id": "release",
+            "report": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+            "returnSeconds": -1.0
+          }
+        ]
+      },
+      "world-after-move": {
+        "utc": "2026-11-09T03:38:40.0117812Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "",
+        "paused": false,
+        "modal": false,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.40135160088539124
+        },
+        "movement": true,
+        "look": true,
+        "trialId": "release",
+        "trialTime": 5.27746248,
+        "trialDuration": 11.7415733,
+        "trialRunning": false,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 12.008819580078125,
+          "velocity": -9.283686637878418,
+          "rope": false,
+          "hook": false,
+          "bodyForce": false,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      },
+      "world-before-move": {
+        "utc": "2026-11-09T03:38:38.5743710Z",
+        "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+        "sceneDirty": false,
+        "width": 1536,
+        "height": 746,
+        "page": "",
+        "paused": false,
+        "modal": false,
+        "position": {
+          "x": 0.013559411279857159,
+          "y": 1.0799998044967651,
+          "z": 0.0
+        },
+        "movement": true,
+        "look": true,
+        "trialId": "release",
+        "trialTime": 5.27746248,
+        "trialDuration": 11.7415733,
+        "trialRunning": false,
+        "trialReport": "Đang chạy: hãy quan sát dây, chốt, lực giữ và cánh.",
+        "modelGate": {
+          "angle": 12.008819580078125,
+          "velocity": -9.283686637878418,
+          "rope": false,
+          "hook": false,
+          "bodyForce": false,
+          "wedge": false,
+          "latched": false
+        },
+        "trialRecords": []
+      }
+    }
+  }
+}

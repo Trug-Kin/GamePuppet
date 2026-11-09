@@ -139,3 +139,18 @@ Prompt nhận việc: “Trên work/runtime-contracts-baseline từ fcbb7e19, x�
 - Đề xuất **TRIAL-CONTEXT-01 — Tạm ngưng diễn biến khi rời bàn dựng**: ngừng bước mô phỏng ngoài view, quay lại tiếp tục từ thời điểm cũ nếu trước đó đang phát; pause tay vẫn giữ. Đây là phương án đề xuất theo GDD7.1/7.2, chưa phải quy tắc đã duyệt hoặc lỗi đã chạy UI tái hiện.
 - [Phạm vi, căn cứ source, phụ thuộc và acceptance](../QA/Tasks/N2/TRIAL-CONTEXT-01/README.md). File nguồn dự kiến chỉ InvestigationSession.cs; tool kiểm mới chỉ tạo khi được giao. Không đổi luật cơ cấu, schema/ID/GUID, UI/presentation, map, scene tích hợp hay GDD.
 - Trạng thái: DE_XUAT_CHO_GIAO, SOURCE_AUDIT_ONLY; API/UI_RUNTIME_NOT_RUN. UI/UX & Tích hợp review nhịp quay lại và binding fixture thử; không cần asset mới. Chưa sửa runtime/công cụ, không chạy Unity, push hoặc merge.
+
+
+## Gameplay & Dữ liệu — nhận triển khai TRIAL-CONTEXT-01
+
+- Người dùng giao triển khai từ đề xuất7cfcd7ca; nhánh đúng, tracked sạch trước khi làm; untracked cũ giữ nguyên. Acceptance được giao: playback chỉ tiến ở bàn dựng, giữ manual pause, không catch-up/record ngoài trang, không sửa record cũ; sáu ca và lifecycle chịu ảnh hưởng.
+- Bắt đầu bằng fixture/API baseline, rồi đường rời trang UI thật qua input tổng hợp khi desktop dành riêng. Nếu xác nhận mới sửa nguồn một điều kiện trong InvestigationSession.cs. Công cụ/fixtures tạm tại Gameplay/Editor, không lưu scene hoặc đổi presentation sản phẩm. Không chạy bộ save; chỉ một roundtrip lifecycle có trial.
+
+
+## Gameplay & Dữ liệu — TRIAL-CONTEXT-01 hoàn tất phạm vi, chờ review
+
+- Đã tái hiện baseline7cfcd7ca bằng API cả sáu ca và input UI Windows tổng hợp qua R/Esc/P/header Trở lại/Hồ sơ; timeline tiến ngoài trang, P vắng lâu làm record0→1. Không suy lỗi từ code đơn thuần.
+- Nguồn8c37b866 sửa duy nhất điều kiện Page trong Update; toolb09c7790 là commit thực sự kiểm. Giữ manual pause, timeline/luật/tốc độ/seek/clear-holds, schema/ID/GUID, record cũ. Không sửa UI/map/scene tích hợp hoặc save gốc.
+- PASS103/103 API và26/26 UI/controller tổng hợp trong scene Gameplay với môi trường proxy/profile mới. Sáu ca API, nhiều đường thoát/quay lại, no catch-up/record ngoài trang, pause tay/game, seek/đổi góc/clear-holds/đổi ca, hoàn tất1record/mở lại và1roundtrip save/load theo lifecycle hiện có. Không chạy bộ save. Tool compile attempt đầu và baseline fail được giữ riêng trong báo cáo.
+- [Acceptance, bằng chứng, cách chạy và giới hạn](../QA/Tasks/N2/TRIAL-CONTEXT-01/README.md). Raw/profile chỉ local. Unity đã stop/quit không save scene, dirty=false; settings newline-only được bảo toàn/đối chiếu trước phục hồi. Untracked cũ giữ nguyên.
+- UI/UX & Tích hợp nhận đủ7cfcd7ca→8c37b866→b09c7790→commit tài liệu, không wiring mới; review lifecycle rồi kiểm gói chịu ảnh hưởng ở scene tích hợp thuộc quyền mình. Không cần asset mới. UI1080p/người mới/scene tích hợp NOT_RUN; drag-đổi trang controller chưa kiểm riêng. Các điểm UI Load feedback/P-close cũ giữ OPEN riêng. Chưa push/merge.

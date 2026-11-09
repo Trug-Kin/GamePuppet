@@ -78,3 +78,8 @@ Runtime producer hiện có AddRelation/Acquire giữ invariant; Load được g
 ### SAVE-WRITE-03 — ranh giới ghi save
 
 Nguồn `b76828a9`: Save giữ chữ ký void/Message cũ, ghi `.tmp` cùng folder bằng UTF8/Flush(true), đóng rồi Move cho file mới hoặc Replace cho file có sẵn. Chỉ đặt Message thành công sau commit; lỗi IO truyền vào catch hiện có. Không copy đè rồi delete temp, không xóa save tốt trước commit, không fallback phá hủy nếu Replace không hỗ trợ. Một writer/profile. Không `.bak` hoặc tự nạp tiến trình dự phòng; Load chỉ đọc SavePath và validator như trước. `.tmp` sau lỗi không được Load chọn; Save chủ động tiếp theo ghi lại từ state live. Schema/ID/GUID cũ không đổi. Flush/replace đã kiểm lỗi mô phỏng trên Windows ổ C, không bảo đảm crash/mất điện thật hay filesystem khác. [Acceptance, bằng chứng và giới hạn từng lượt](../QA/Tasks/N2/SAVE-WRITE-03/README.md). Giữ UI-LOAD-FEEDBACK-01/P-close OPEN; không wiring/UI validation mới.
+
+
+### TRIAL-CONTEXT-01 — đồng hồ tự động theo ngữ cảnh bàn dựng
+
+Nguồn `8c37b866`, kiểm trên `b09c7790`: Update chỉ tự AdvanceTrial khi không Paused, Page=="reconstruction", TrialRunning và không trialScrubbing. Rời trang không thay TrialRunning; quay lại tiếp tục từ TrialTime hiện có nếu người chơi chưa pause tay. Không tích lũy delta ngoài trang, không record tự động khi vắng mặt. Explicit seek/AdvanceTrial API và luật hoàn tất/clear-holds không đổi; seek vẫn không cấp record. Load giữ hành vi reset live trial và giữ TrialRecord theo save hiện có, không persist timeline mới. Không đổi chữ ký API, schema/ID/GUID, không wiring mới hoặc hệ “đã xem”/khóa kết luận. Toàn bộ session partial vẫn thuộc Gameplay & Dữ liệu; UI/UX & Tích hợp review và nhận chuỗi theo [báo cáo](../QA/Tasks/N2/TRIAL-CONTEXT-01/README.md).

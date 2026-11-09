@@ -1,0 +1,525 @@
+{
+    "unity": "6000.6.2f1",
+    "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+    "profile": "C:\\ConRoi_Nguoi2\\Test\\PlaytestProfiles\\TrialContext01_FixedAPI_20261109",
+    "kind": "PLAYMODE_API_FIXTURE_FIXED_DELTA_NOT_UI",
+    "source": "b09c7790",
+    "failures": 0,
+    "checks": [
+        {
+            "name": "scene_profile",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "release_long_absence",
+            "detail": "beforeTime=0.5 afterTime=0.5 duration=11.74157 recordsBefore={\"records\":[]} recordsAfter={\"records\":[]} gateBefore={\"angle\":15.923563957214355,\"velocity\":45.1689453125,\"rope\":true,\"hook\":false,\"bodyForce\":true,\"wedge\":false,\"latched\":false} gateAfter={\"angle\":15.923563957214355,\"velocity\":45.1689453125,\"rope\":true,\"hook\":false,\"bodyForce\":true,\"wedge\":false,\"latched\":false}",
+            "pass": true
+        },
+        {
+            "name": "release_return_no_catchup",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "release_leave_world",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "release_resume_world",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "release_leave_dossier",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "release_resume_dossier",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "release_leave_compare",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "release_resume_compare",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "release_leave_inspect",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "release_resume_inspect",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "release_manual_pause_preserved",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "release_game_pause",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "release_game_resume",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "release_seek_no_record",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "release_visible_complete_one_record",
+            "detail": "Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+            "pass": true
+        },
+        {
+            "name": "release_completed_unchanged",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "release_clear_holds",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "help_long_absence",
+            "detail": "beforeTime=0.5 afterTime=0.5 duration=12.54989 recordsBefore={\"records\":[{\"id\":\"release\",\"report\":\"Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"release/clear-holds\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0}]} recordsAfter={\"records\":[{\"id\":\"release\",\"report\":\"Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"release/clear-holds\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0}]} gateBefore={\"angle\":15.923563957214355,\"velocity\":45.1689453125,\"rope\":true,\"hook\":false,\"bodyForce\":true,\"wedge\":false,\"latched\":false} gateAfter={\"angle\":15.923563957214355,\"velocity\":45.1689453125,\"rope\":true,\"hook\":false,\"bodyForce\":true,\"wedge\":false,\"latched\":false}",
+            "pass": true
+        },
+        {
+            "name": "help_return_no_catchup",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "help_leave_world",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "help_resume_world",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "help_leave_dossier",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "help_resume_dossier",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "help_leave_compare",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "help_resume_compare",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "help_leave_inspect",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "help_resume_inspect",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "help_manual_pause_preserved",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "help_game_pause",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "help_game_resume",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "help_seek_no_record",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "help_visible_complete_one_record",
+            "detail": "Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.",
+            "pass": true
+        },
+        {
+            "name": "help_completed_unchanged",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hold_long_absence",
+            "detail": "beforeTime=0.5 afterTime=0.5 duration=11.89157 recordsBefore={\"records\":[{\"id\":\"release\",\"report\":\"Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"release/clear-holds\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"help\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":10.049894332885742}]} recordsAfter={\"records\":[{\"id\":\"release\",\"report\":\"Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"release/clear-holds\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"help\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":10.049894332885742}]} gateBefore={\"angle\":0.0,\"velocity\":0.0,\"rope\":false,\"hook\":false,\"bodyForce\":true,\"wedge\":false,\"latched\":true} gateAfter={\"angle\":0.0,\"velocity\":0.0,\"rope\":false,\"hook\":false,\"bodyForce\":true,\"wedge\":false,\"latched\":true}",
+            "pass": true
+        },
+        {
+            "name": "hold_return_no_catchup",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hold_leave_world",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hold_resume_world",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hold_leave_dossier",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hold_resume_dossier",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hold_leave_compare",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hold_resume_compare",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hold_leave_inspect",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hold_resume_inspect",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hold_manual_pause_preserved",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hold_game_pause",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hold_game_resume",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hold_seek_no_record",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hold_visible_complete_one_record",
+            "detail": "Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.",
+            "pass": true
+        },
+        {
+            "name": "hold_completed_unchanged",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hook_long_absence",
+            "detail": "beforeTime=0.5 afterTime=0.5 duration=14.64986 recordsBefore={\"records\":[{\"id\":\"release\",\"report\":\"Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"release/clear-holds\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"help\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":10.049894332885742},{\"id\":\"hold\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":9.391571044921875}]} recordsAfter={\"records\":[{\"id\":\"release\",\"report\":\"Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"release/clear-holds\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"help\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":10.049894332885742},{\"id\":\"hold\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":9.391571044921875}]} gateBefore={\"angle\":0.0,\"velocity\":0.0,\"rope\":false,\"hook\":false,\"bodyForce\":false,\"wedge\":false,\"latched\":true} gateAfter={\"angle\":0.0,\"velocity\":0.0,\"rope\":false,\"hook\":false,\"bodyForce\":false,\"wedge\":false,\"latched\":true}",
+            "pass": true
+        },
+        {
+            "name": "hook_return_no_catchup",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hook_leave_world",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hook_resume_world",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hook_leave_dossier",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hook_resume_dossier",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hook_leave_compare",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hook_resume_compare",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hook_leave_inspect",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hook_resume_inspect",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hook_manual_pause_preserved",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hook_game_pause",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hook_game_resume",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hook_seek_no_record",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hook_visible_complete_one_record",
+            "detail": "Móc đang giữ dây • chốt đã nhả • cánh đã đóng. Móc còn giữ dây; cánh về đóng nhưng chốt chưa cài. Có thể nhả móc. Mô hình không xác định người thao tác hay ý định.",
+            "pass": true
+        },
+        {
+            "name": "hook_completed_unchanged",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "hook_clear_holds",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "wedge_long_absence",
+            "detail": "beforeTime=0.5 afterTime=0.5 duration=3.908357 recordsBefore={\"records\":[{\"id\":\"release\",\"report\":\"Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"release/clear-holds\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"help\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":10.049894332885742},{\"id\":\"hold\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":9.391571044921875},{\"id\":\"hook\",\"report\":\"Móc đang giữ dây • chốt đã nhả • cánh đã đóng. Móc còn giữ dây; cánh về đóng nhưng chốt chưa cài. Có thể nhả móc. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"hook/clear-holds\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":9.958229064941406}]} recordsAfter={\"records\":[{\"id\":\"release\",\"report\":\"Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"release/clear-holds\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"help\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":10.049894332885742},{\"id\":\"hold\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":9.391571044921875},{\"id\":\"hook\",\"report\":\"Móc đang giữ dây • chốt đã nhả • cánh đã đóng. Móc còn giữ dây; cánh về đóng nhưng chốt chưa cài. Có thể nhả móc. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"hook/clear-holds\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":9.958229064941406}]} gateBefore={\"angle\":15.923563957214355,\"velocity\":45.1689453125,\"rope\":true,\"hook\":false,\"bodyForce\":true,\"wedge\":false,\"latched\":false} gateAfter={\"angle\":15.923563957214355,\"velocity\":45.1689453125,\"rope\":true,\"hook\":false,\"bodyForce\":true,\"wedge\":false,\"latched\":false}",
+            "pass": true
+        },
+        {
+            "name": "wedge_return_no_catchup",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "wedge_leave_world",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "wedge_resume_world",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "wedge_leave_dossier",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "wedge_resume_dossier",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "wedge_leave_compare",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "wedge_resume_compare",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "wedge_leave_inspect",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "wedge_resume_inspect",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "wedge_manual_pause_preserved",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "wedge_game_pause",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "wedge_game_resume",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "wedge_seek_no_record",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "wedge_visible_complete_one_record",
+            "detail": "Dây đã thả • chốt đã nhả • vật chèn đang giữ cánh. Vật chèn còn giữ cánh. Có thể rút chèn để quan sát hồi. Mô hình không xác định người thao tác hay ý định.",
+            "pass": true
+        },
+        {
+            "name": "wedge_completed_unchanged",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "wedge_clear_holds",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "after_long_absence",
+            "detail": "beforeTime=0.5 afterTime=0.5 duration=9.083281 recordsBefore={\"records\":[{\"id\":\"release\",\"report\":\"Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"release/clear-holds\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"help\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":10.049894332885742},{\"id\":\"hold\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":9.391571044921875},{\"id\":\"hook\",\"report\":\"Móc đang giữ dây • chốt đã nhả • cánh đã đóng. Móc còn giữ dây; cánh về đóng nhưng chốt chưa cài. Có thể nhả móc. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"hook/clear-holds\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":9.958229064941406},{\"id\":\"wedge\",\"report\":\"Dây đã thả • chốt đã nhả • vật chèn đang giữ cánh. Vật chèn còn giữ cánh. Có thể rút chèn để quan sát hồi. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"wedge/clear-holds\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":7.3916015625}]} recordsAfter={\"records\":[{\"id\":\"release\",\"report\":\"Dây đã thả • chốt đã nhả • có lực đẩy từ gác. Cánh đang được người trên gác giữ mở. Có thể ngừng đè giữ để quan sát hồi. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"release/clear-holds\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"help\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":10.049894332885742},{\"id\":\"hold\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":9.391571044921875},{\"id\":\"hook\",\"report\":\"Móc đang giữ dây • chốt đã nhả • cánh đã đóng. Móc còn giữ dây; cánh về đóng nhưng chốt chưa cài. Có thể nhả móc. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"hook/clear-holds\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":9.958229064941406},{\"id\":\"wedge\",\"report\":\"Dây đã thả • chốt đã nhả • vật chèn đang giữ cánh. Vật chèn còn giữ cánh. Có thể rút chèn để quan sát hồi. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":-1.0},{\"id\":\"wedge/clear-holds\",\"report\":\"Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.\",\"returnSeconds\":7.3916015625}]} gateBefore={\"angle\":0.0,\"velocity\":0.0,\"rope\":false,\"hook\":false,\"bodyForce\":false,\"wedge\":false,\"latched\":true} gateAfter={\"angle\":0.0,\"velocity\":0.0,\"rope\":false,\"hook\":false,\"bodyForce\":false,\"wedge\":false,\"latched\":true}",
+            "pass": true
+        },
+        {
+            "name": "after_return_no_catchup",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "after_leave_world",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "after_resume_world",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "after_leave_dossier",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "after_resume_dossier",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "after_leave_compare",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "after_resume_compare",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "after_leave_inspect",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "after_resume_inspect",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "after_manual_pause_preserved",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "after_game_pause",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "after_game_resume",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "after_seek_no_record",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "after_visible_complete_one_record",
+            "detail": "Dây đã thả • chốt đã cài • cánh đã đóng. Cánh đã hồi đóng và chốt đã cài. Mô hình không xác định người thao tác hay ý định.",
+            "pass": true
+        },
+        {
+            "name": "after_completed_unchanged",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "switch_trial",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "existing_save_load_resets_live_trial",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "play_after_load",
+            "detail": "",
+            "pass": true
+        }
+    ]
+}
