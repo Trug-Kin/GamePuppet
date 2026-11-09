@@ -76,7 +76,7 @@ namespace ConRoi.Investigation.V36.R107
         }
         void EnsureConclusions(){while(data.conclusions.Count<4)data.conclusions.Add(new ConclusionRecord());}
         void Start(){if(modelGate)modelGate.enabled=false;if(!data.introAccepted)OpenPage("intro");else SetModalState();}
-        void OnDestroy(){InspectionViewChanged=null;ClearInspectionVisual();Time.timeScale=1;if(viewerTexture)Destroy(viewerTexture);if(viewerCamera)Destroy(viewerCamera.gameObject);}
+        void OnDestroy(){ComparisonViewChanged=null;ClearAllComparison();InspectionViewChanged=null;ClearInspectionVisual();Time.timeScale=1;if(viewerTexture)Destroy(viewerTexture);if(viewerCamera)Destroy(viewerCamera.gameObject);}
         public void Acquire(string id)
         {
             if(InvestigationContent.Get(id)==null)return;
@@ -162,7 +162,7 @@ namespace ConRoi.Investigation.V36.R107
             Cursor.lockState=Modal?CursorLockMode.None:CursorLockMode.Locked;Cursor.visible=Modal;
             if(stageCamera)stageCamera.enabled=Page=="reconstruction";
             if(clipCamera)clipCamera.enabled=Page=="clip";
-            if(viewerCamera)viewerCamera.enabled=Page=="inspect";PublishInspectionView();
+            if(viewerCamera)viewerCamera.enabled=Page=="inspect";PublishInspectionView();SyncComparisonContext();
         }
         void CreateViewer(Transform visual)
         {
@@ -255,7 +255,7 @@ namespace ConRoi.Investigation.V36.R107
                 if(!InvestigationSaveValidation.TryValidateSerializedCollections(json,out string validationError))throw new InvalidDataException(validationError);
                 var incoming=JsonUtility.FromJson<InvestigationSave>(json);
                 if(!InvestigationSaveValidation.TryValidate(incoming,out validationError))throw new InvalidDataException(validationError);
-                data=incoming;EnsureConclusions();bool cc=movement.controller.enabled;movement.controller.enabled=false;movement.transform.SetPositionAndRotation(data.position,Quaternion.Euler(0,data.yaw,0));movement.controller.enabled=cc;movement.ResetVerticalMotion();look.RestorePitch(data.pitch);gate.Restore(data.gate);
+                ClearAllComparison();data=incoming;EnsureConclusions();bool cc=movement.controller.enabled;movement.controller.enabled=false;movement.transform.SetPositionAndRotation(data.position,Quaternion.Euler(0,data.yaw,0));movement.controller.enabled=cc;movement.ResetVerticalMotion();look.RestorePitch(data.pitch);gate.Restore(data.gate);
                 ResetTrial();ClipPlaying=false;ClipTime=0;UpdateClip();SetPaused(false);Page="";
                 if(data.page=="inspect"&&Has(data.inspecting))OpenEvidence(data.inspecting);else if(new[]{"cipher","dossier","compare","reconstruction","clip","conclusions","intro"}.Contains(data.page))OpenPage(data.page);else ClosePage();Message="Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.";return true;
             }catch(InvalidDataException e){Message="Không tải: "+e.Message;return false;}
