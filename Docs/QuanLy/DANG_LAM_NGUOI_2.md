@@ -308,3 +308,21 @@ Mỗi gói có nguồn, tool/bằng chứng và một README bàn giao riêng tr
 | INSPECT-CONTROLS-01 | b8cc108f /61f26ad0 | RUNTIME ĐÃ KIỂM,27/27 API/fixture | CHỜ UI/TÍCH HỢP — UI/UX & Tích hợp | Action reset/state/errors/event, native mouse/preset/focus và model thật; Map & Asset hỗ trợ source. [Handoff](../QA/Tasks/N2/INSPECT-CONTROLS-01/README.md). Chưa có báo cáo tích hợp, không ghi TÍCH HỢP ĐÃ KIỂM |
 
 Gói đã triển khai reset/bounded controls, không chỉ audit/API giả; caller UI sản phẩm chưa nối nên không tuyên người chơi scene chung đã dùng được. Giữ lượt mouse-frame chưa tới và lỗi compile công cụ0720006e riêng, không sửa lịch sử để đổi PASS. Save/profile/log local không commit. Tiếp theo thực hiện COMPARE-VIEW-01 độc lập đã ghi acceptance, không chờ UI nhận gói trước và không thay public API gói đã giao.
+
+COMPARE-VIEW-01 — làm rõ acceptance trước source: để giữ chức năng đối chiếu ghi chú của GDD7.2, ID đã có nhưng chưa có model vẫn chọn được ở trạng thái MissingVisual/text-only; không dùng ảnh vật trước. Lệnh xoay/reset bị từ chối có lý do. ID chưa thu/sai/side sai hoặc chọn khi pause/sai trang bị từ chối và giữ lựa chọn cũ. Không biến thiếu asset thành luật khóa điều tra mới. Snapshot visual chỉ sao mesh/line/baked skin và transform, không Instantiate script/physics nguồn rồi để Awake chạy.
+
+
+### Kết quả hai gói viewer — 10/11/2026
+
+Chức năng người chơi được hỗ trợ: đặt lại vật đang xem và xoay/phóng/đặt lại riêng từng vật trong đối chiếu. Đã triển khai runtime thật; phần UI mới **chưa nối**, không gọi là hoàn tất toàn tuyến người chơi.
+
+| Gói | Nguồn / commit thực kiểm | Runtime | Trạng thái / chủ nhận | Phụ thuộc và bàn giao |
+|---|---|---|---|---|
+| INSPECT-CONTROLS-01 | b8cc108f /61f26ad0; hồi quy d671a845 | RUNTIME ĐÃ KIỂM,27/27 mỗi lượt cuối có phạm vi | CHỜ UI/TÍCH HỢP — UI/UX & Tích hợp | [API/reset và input lifecycle](../QA/Tasks/N2/INSPECT-CONTROLS-01/README.md); native input/preset/focus và action reset chưa kiểm scene chung |
+| COMPARE-VIEW-01 |5ef32f00 +0b783b8c /d671a845 | RUNTIME ĐÃ KIỂM,43/43 API/fixture render; inspection27/27 hồi quy | CHỜ UI/TÍCH HỢP — UI/UX & Tích hợp | [API, model hai bên, event, ví dụ và wiring](../QA/Tasks/N2/COMPARE-VIEW-01/README.md); Map & Asset hỗ trợ model/shader/source đúng ID |
+
+Trạng thái theo quy ước: **RUNTIME ĐÃ KIỂM → CHỜ UI/TÍCH HỢP → TÍCH HỢP ĐÃ KIỂM**. Chưa có báo cáo phía tích hợp của hai gói nên không ghi trạng thái cuối. Scene chung/1080p/người mới NOT_RUN với nguồn mới; P-close OPEN/chưa tái hiện và IO-OPEN-01 OPEN giữ riêng.
+
+Chuỗi nguồn/công cụ comparison:5ef32f00 →23fc0cb7 →175a248c →0b783b8c →49c242a6 →d671a845. Nguồn camera chưa cô lập bị assertion FAIL ở175a248c đã sửa0b783b8c; lượt49c242a6 pixel render đạt nhưng assertion0MonoBehaviour sau render quá rộng làm dừng, công cụ sửa d671a845 và kiểm lại43/43. Giữ lịch sử từng lượt, không gộp thành số ca độc lập hoặc suy mọi asset/UI PASS. Thử bằng API/proxy, fixture cấp vật/flags clip; inspection mouse là thiết bị ảo + gọi Update trực tiếp, không input Windows. Không sửa UI/scene/map/save gốc, không chạy lại bộ save/trial cũ.
+
+Checklist trước đó mô tả tuyến luật prototype có sẵn; hai khoảng viewer rõ từ GDD9/6.5 nay đã đóng triển khai runtime. Tương tác/ghi/mục tiêu/mật mã/quan hệ/bàn dựng/kết luận/save giữ hiện trạng trong checklist, chưa mở chương/ending/grading/26 tư thế. Phần còn thiếu để người chơi sử dụng hai viewer là adapter/render/input UI, model thật và kiểm scene chung, có owner ở bảng trên. Khôi phục checkpoint vẫn chờ UI/UX & Tích hợp chốt đường truy cập theo GDD, không tự yêu cầu nút mới. Chưa có gói runtime độc lập tiếp theo có yêu cầu rõ trong checklist hiện tại; không tạo chức năng ngoài GDD để kéo dài việc. Tiếp tục phần phối hợp khi có API/asset/UI request cụ thể; không dùng trạng thái chờ này để tuyên toàn game hoàn tất.

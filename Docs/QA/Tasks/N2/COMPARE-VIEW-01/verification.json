@@ -1,0 +1,775 @@
+{
+  "runs": [
+    {
+      "run": "Comparison",
+      "source": "23fc0cb79fbba5d8da0a9edcf2bd373f70840241",
+      "kind": "PLAYMODE_API_PROXY_NOT_UI_NOT_WINDOWS",
+      "unity": "6000.6.2f1",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "failures": 0,
+      "assertions": [
+        {
+          "name": "wrong_context_no_selection",
+          "pass": true
+        },
+        {
+          "name": "empty_and_modal_input_locked",
+          "pass": true
+        },
+        {
+          "name": "unacquired_unknown_empty_rejected",
+          "pass": true
+        },
+        {
+          "name": "invalid_side_rejected",
+          "pass": true
+        },
+        {
+          "name": "empty_controls_rejected",
+          "pass": true
+        },
+        {
+          "name": "select_left_ready",
+          "pass": true
+        },
+        {
+          "name": "select_right_auto_source_ready",
+          "pass": true
+        },
+        {
+          "name": "independent_created_textures",
+          "pass": true
+        },
+        {
+          "name": "useful_shoe_defaults",
+          "pass": true
+        },
+        {
+          "name": "snapshot_has_no_scripts_or_physics",
+          "pass": true
+        },
+        {
+          "name": "left_adjust_independent",
+          "pass": true
+        },
+        {
+          "name": "command_event_and_no_progress_grant",
+          "pass": true
+        },
+        {
+          "name": "nonfinite_no_mutation",
+          "pass": true
+        },
+        {
+          "name": "large_finite_and_zoom_clamps",
+          "pass": true
+        },
+        {
+          "name": "reset_only_left",
+          "pass": true
+        },
+        {
+          "name": "repeat_reset_no_event",
+          "pass": true
+        },
+        {
+          "name": "same_selection_retains_pose_texture",
+          "pass": true
+        },
+        {
+          "name": "bad_selection_keeps_previous",
+          "pass": true
+        },
+        {
+          "name": "pause_keeps_selection_freezes_render",
+          "pass": true
+        },
+        {
+          "name": "resume_preserves_pose",
+          "pass": true
+        },
+        {
+          "name": "listener_exception_isolated",
+          "pass": true
+        },
+        {
+          "name": "unsubscribe",
+          "pass": true
+        },
+        {
+          "name": "original_transform_material_physics_unchanged",
+          "pass": true
+        },
+        {
+          "name": "text_only_selection_valid_no_stale_preview",
+          "pass": true
+        },
+        {
+          "name": "text_only_rotate_reset_reason",
+          "pass": true
+        },
+        {
+          "name": "clip_transcript_guard",
+          "pass": true
+        },
+        {
+          "name": "one_exposure_still_guarded",
+          "pass": true
+        },
+        {
+          "name": "both_fixture_flags_reveal_transcript",
+          "pass": true
+        },
+        {
+          "name": "line_snapshot_and_source_unchanged",
+          "pass": true
+        },
+        {
+          "name": "clear_only_one_side",
+          "pass": true
+        },
+        {
+          "name": "repeat_clear_idempotent",
+          "pass": true
+        },
+        {
+          "name": "private_save_success",
+          "pass": true
+        },
+        {
+          "name": "rejected_load_preserves_state_views_bytes",
+          "pass": true
+        },
+        {
+          "name": "continue_after_rejection",
+          "pass": true
+        },
+        {
+          "name": "valid_load_clears_transient_previews",
+          "pass": true
+        },
+        {
+          "name": "valid_load_retains_evidence_no_auto_relations",
+          "pass": true
+        },
+        {
+          "name": "save_load_again",
+          "pass": true
+        },
+        {
+          "name": "leave_releases_preview_restores_input",
+          "pass": true
+        },
+        {
+          "name": "reopen_empty",
+          "pass": true
+        },
+        {
+          "name": "other_modal_clears_and_rejects",
+          "pass": true
+        }
+      ],
+      "raw_sha256": "9baa83cd9103bc13573b17526ffb862a2e28f68a6673a9808467a239dac61925"
+    },
+    {
+      "run": "ComparisonIsolationBaseline",
+      "source": "175a248cf6111bc2b235d5a744a9359534507c1b",
+      "kind": "PLAYMODE_API_PROXY_NOT_UI_NOT_WINDOWS",
+      "unity": "6000.6.2f1",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "failures": 2,
+      "assertions": [
+        {
+          "name": "wrong_context_no_selection",
+          "pass": true
+        },
+        {
+          "name": "empty_and_modal_input_locked",
+          "pass": true
+        },
+        {
+          "name": "unacquired_unknown_empty_rejected",
+          "pass": true
+        },
+        {
+          "name": "invalid_side_rejected",
+          "pass": true
+        },
+        {
+          "name": "empty_controls_rejected",
+          "pass": true
+        },
+        {
+          "name": "select_left_ready",
+          "pass": true
+        },
+        {
+          "name": "select_right_auto_source_ready",
+          "pass": true
+        },
+        {
+          "name": "independent_created_textures",
+          "pass": true
+        },
+        {
+          "name": "useful_shoe_defaults",
+          "pass": true
+        },
+        {
+          "name": "camera_cannot_see_adjacent_preview",
+          "pass": false
+        },
+        {
+          "exception": "System.Exception: Precondition/assertion failed: camera_cannot_see_adjacent_preview",
+          "pass": false
+        }
+      ],
+      "raw_sha256": "8e55d8b46c421d2779931bc7878db6ddc709457cec996e9a11d2303e544f1f75"
+    },
+    {
+      "run": "ComparisonIsolated",
+      "source": "0b783b8c9cbd4138ce9efa2ed770cb01f351b941",
+      "kind": "PLAYMODE_API_PROXY_NOT_UI_NOT_WINDOWS",
+      "unity": "6000.6.2f1",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "failures": 0,
+      "assertions": [
+        {
+          "name": "wrong_context_no_selection",
+          "pass": true
+        },
+        {
+          "name": "empty_and_modal_input_locked",
+          "pass": true
+        },
+        {
+          "name": "unacquired_unknown_empty_rejected",
+          "pass": true
+        },
+        {
+          "name": "invalid_side_rejected",
+          "pass": true
+        },
+        {
+          "name": "empty_controls_rejected",
+          "pass": true
+        },
+        {
+          "name": "select_left_ready",
+          "pass": true
+        },
+        {
+          "name": "select_right_auto_source_ready",
+          "pass": true
+        },
+        {
+          "name": "independent_created_textures",
+          "pass": true
+        },
+        {
+          "name": "useful_shoe_defaults",
+          "pass": true
+        },
+        {
+          "name": "camera_cannot_see_adjacent_preview",
+          "pass": true
+        },
+        {
+          "name": "snapshot_has_no_scripts_or_physics",
+          "pass": true
+        },
+        {
+          "name": "left_adjust_independent",
+          "pass": true
+        },
+        {
+          "name": "command_event_and_no_progress_grant",
+          "pass": true
+        },
+        {
+          "name": "nonfinite_no_mutation",
+          "pass": true
+        },
+        {
+          "name": "large_finite_and_zoom_clamps",
+          "pass": true
+        },
+        {
+          "name": "reset_only_left",
+          "pass": true
+        },
+        {
+          "name": "repeat_reset_no_event",
+          "pass": true
+        },
+        {
+          "name": "same_selection_retains_pose_texture",
+          "pass": true
+        },
+        {
+          "name": "bad_selection_keeps_previous",
+          "pass": true
+        },
+        {
+          "name": "pause_keeps_selection_freezes_render",
+          "pass": true
+        },
+        {
+          "name": "resume_preserves_pose",
+          "pass": true
+        },
+        {
+          "name": "listener_exception_isolated",
+          "pass": true
+        },
+        {
+          "name": "unsubscribe",
+          "pass": true
+        },
+        {
+          "name": "original_transform_material_physics_unchanged",
+          "pass": true
+        },
+        {
+          "name": "text_only_selection_valid_no_stale_preview",
+          "pass": true
+        },
+        {
+          "name": "text_only_rotate_reset_reason",
+          "pass": true
+        },
+        {
+          "name": "clip_transcript_guard",
+          "pass": true
+        },
+        {
+          "name": "one_exposure_still_guarded",
+          "pass": true
+        },
+        {
+          "name": "both_fixture_flags_reveal_transcript",
+          "pass": true
+        },
+        {
+          "name": "line_snapshot_and_source_unchanged",
+          "pass": true
+        },
+        {
+          "name": "clear_only_one_side",
+          "pass": true
+        },
+        {
+          "name": "repeat_clear_idempotent",
+          "pass": true
+        },
+        {
+          "name": "private_save_success",
+          "pass": true
+        },
+        {
+          "name": "rejected_load_preserves_state_views_bytes",
+          "pass": true
+        },
+        {
+          "name": "continue_after_rejection",
+          "pass": true
+        },
+        {
+          "name": "valid_load_clears_transient_previews",
+          "pass": true
+        },
+        {
+          "name": "valid_load_retains_evidence_no_auto_relations",
+          "pass": true
+        },
+        {
+          "name": "save_load_again",
+          "pass": true
+        },
+        {
+          "name": "leave_releases_preview_restores_input",
+          "pass": true
+        },
+        {
+          "name": "reopen_empty",
+          "pass": true
+        },
+        {
+          "name": "other_modal_clears_and_rejects",
+          "pass": true
+        }
+      ],
+      "raw_sha256": "c6393fbcd6fd0bf65205ad1163321693637066e140661eac6c5f845104afe4db"
+    },
+    {
+      "run": "ComparisonRendered",
+      "source": "49c242a68eb160d3076b097c7291c96aa6dbc5e9",
+      "kind": "PLAYMODE_API_PROXY_NOT_UI_NOT_WINDOWS",
+      "unity": "6000.6.2f1",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "failures": 2,
+      "assertions": [
+        {
+          "name": "wrong_context_no_selection",
+          "pass": true
+        },
+        {
+          "name": "empty_and_modal_input_locked",
+          "pass": true
+        },
+        {
+          "name": "unacquired_unknown_empty_rejected",
+          "pass": true
+        },
+        {
+          "name": "invalid_side_rejected",
+          "pass": true
+        },
+        {
+          "name": "empty_controls_rejected",
+          "pass": true
+        },
+        {
+          "name": "select_left_ready",
+          "pass": true
+        },
+        {
+          "name": "select_right_auto_source_ready",
+          "pass": true
+        },
+        {
+          "name": "independent_created_textures",
+          "pass": true
+        },
+        {
+          "name": "useful_shoe_defaults",
+          "pass": true
+        },
+        {
+          "name": "camera_cannot_see_adjacent_preview",
+          "pass": true
+        },
+        {
+          "name": "synthetic_mesh_renders_pixels",
+          "pass": true
+        },
+        {
+          "name": "snapshot_has_no_scripts_or_physics",
+          "pass": false
+        },
+        {
+          "exception": "System.Exception: Precondition/assertion failed: snapshot_has_no_scripts_or_physics",
+          "pass": false
+        }
+      ],
+      "raw_sha256": "0920631e9690dc5bb7f206d51b0bcadba30944064647a11bf1358408983c25d8"
+    },
+    {
+      "run": "ComparisonRenderFixtureFixed",
+      "source": "d671a8458bd9c02c26e746db0858392caad64ad9",
+      "kind": "PLAYMODE_API_PROXY_NOT_UI_NOT_WINDOWS",
+      "unity": "6000.6.2f1",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "failures": 0,
+      "assertions": [
+        {
+          "name": "wrong_context_no_selection",
+          "pass": true
+        },
+        {
+          "name": "empty_and_modal_input_locked",
+          "pass": true
+        },
+        {
+          "name": "unacquired_unknown_empty_rejected",
+          "pass": true
+        },
+        {
+          "name": "invalid_side_rejected",
+          "pass": true
+        },
+        {
+          "name": "empty_controls_rejected",
+          "pass": true
+        },
+        {
+          "name": "select_left_ready",
+          "pass": true
+        },
+        {
+          "name": "select_right_auto_source_ready",
+          "pass": true
+        },
+        {
+          "name": "independent_created_textures",
+          "pass": true
+        },
+        {
+          "name": "useful_shoe_defaults",
+          "pass": true
+        },
+        {
+          "name": "camera_cannot_see_adjacent_preview",
+          "pass": true
+        },
+        {
+          "name": "snapshot_has_no_scripts_or_physics",
+          "pass": true
+        },
+        {
+          "name": "synthetic_mesh_renders_pixels",
+          "pass": true
+        },
+        {
+          "name": "render_does_not_add_source_behaviors",
+          "pass": true
+        },
+        {
+          "name": "left_adjust_independent",
+          "pass": true
+        },
+        {
+          "name": "command_event_and_no_progress_grant",
+          "pass": true
+        },
+        {
+          "name": "nonfinite_no_mutation",
+          "pass": true
+        },
+        {
+          "name": "large_finite_and_zoom_clamps",
+          "pass": true
+        },
+        {
+          "name": "reset_only_left",
+          "pass": true
+        },
+        {
+          "name": "repeat_reset_no_event",
+          "pass": true
+        },
+        {
+          "name": "same_selection_retains_pose_texture",
+          "pass": true
+        },
+        {
+          "name": "bad_selection_keeps_previous",
+          "pass": true
+        },
+        {
+          "name": "pause_keeps_selection_freezes_render",
+          "pass": true
+        },
+        {
+          "name": "resume_preserves_pose",
+          "pass": true
+        },
+        {
+          "name": "listener_exception_isolated",
+          "pass": true
+        },
+        {
+          "name": "unsubscribe",
+          "pass": true
+        },
+        {
+          "name": "original_transform_material_physics_unchanged",
+          "pass": true
+        },
+        {
+          "name": "text_only_selection_valid_no_stale_preview",
+          "pass": true
+        },
+        {
+          "name": "text_only_rotate_reset_reason",
+          "pass": true
+        },
+        {
+          "name": "clip_transcript_guard",
+          "pass": true
+        },
+        {
+          "name": "one_exposure_still_guarded",
+          "pass": true
+        },
+        {
+          "name": "both_fixture_flags_reveal_transcript",
+          "pass": true
+        },
+        {
+          "name": "line_snapshot_and_source_unchanged",
+          "pass": true
+        },
+        {
+          "name": "clear_only_one_side",
+          "pass": true
+        },
+        {
+          "name": "repeat_clear_idempotent",
+          "pass": true
+        },
+        {
+          "name": "private_save_success",
+          "pass": true
+        },
+        {
+          "name": "rejected_load_preserves_state_views_bytes",
+          "pass": true
+        },
+        {
+          "name": "continue_after_rejection",
+          "pass": true
+        },
+        {
+          "name": "valid_load_clears_transient_previews",
+          "pass": true
+        },
+        {
+          "name": "valid_load_retains_evidence_no_auto_relations",
+          "pass": true
+        },
+        {
+          "name": "save_load_again",
+          "pass": true
+        },
+        {
+          "name": "leave_releases_preview_restores_input",
+          "pass": true
+        },
+        {
+          "name": "reopen_empty",
+          "pass": true
+        },
+        {
+          "name": "other_modal_clears_and_rejects",
+          "pass": true
+        }
+      ],
+      "raw_sha256": "d040c7a7a194193cafd93ccf4a29ca44217c39e2ff80006abbce3cc1bbf895db"
+    },
+    {
+      "run": "InspectionComparisonRegression",
+      "source": "d671a8458bd9c02c26e746db0858392caad64ad9",
+      "kind": "API_FIXTURE_DIRECT_UPDATE_VIRTUAL_MOUSE_NOT_UI_NOT_WINDOWS",
+      "unity": "6000.6.2f1",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "failures": 0,
+      "assertions": [
+        {
+          "name": "world_reset_rejected",
+          "pass": true
+        },
+        {
+          "name": "model_ready_and_texture",
+          "pass": true
+        },
+        {
+          "name": "shoe_defaults",
+          "pass": true
+        },
+        {
+          "name": "adjust_and_clamp",
+          "pass": true
+        },
+        {
+          "name": "event_once_for_command",
+          "pass": true
+        },
+        {
+          "name": "no_evidence_or_progress_grant",
+          "pass": true
+        },
+        {
+          "name": "zoom_out_clamp",
+          "pass": true
+        },
+        {
+          "name": "nan_rejected",
+          "pass": true
+        },
+        {
+          "name": "infinity_rejected",
+          "pass": true
+        },
+        {
+          "name": "nonfinite_no_mutation_or_event",
+          "pass": true
+        },
+        {
+          "name": "large_finite_safe",
+          "pass": true
+        },
+        {
+          "name": "reset_default",
+          "pass": true
+        },
+        {
+          "name": "repeat_reset_idempotent",
+          "pass": true
+        },
+        {
+          "name": "paused_adjust_and_reset_rejected",
+          "pass": true
+        },
+        {
+          "name": "paused_state_and_pose",
+          "pass": true
+        },
+        {
+          "name": "subscriber_exception_isolated",
+          "pass": true
+        },
+        {
+          "name": "unsubscribe_works",
+          "pass": true
+        },
+        {
+          "name": "source_not_transformed",
+          "pass": true
+        },
+        {
+          "name": "missing_visual_no_stale_preview",
+          "pass": true
+        },
+        {
+          "name": "private_save_committed",
+          "pass": true
+        },
+        {
+          "name": "load_reopens_default_not_saved_pose",
+          "pass": true
+        },
+        {
+          "name": "load_keeps_evidence_no_auto_observation",
+          "pass": true
+        },
+        {
+          "name": "virtual_mouse_fixture_delivered",
+          "pass": true
+        },
+        {
+          "name": "virtual_mouse_uses_runtime_command",
+          "pass": true
+        },
+        {
+          "name": "virtual_mouse_during_pause_no_change",
+          "pass": true
+        },
+        {
+          "name": "close_hides_texture_and_restores_world_input",
+          "pass": true
+        },
+        {
+          "name": "other_modal_rejects_view_commands",
+          "pass": true
+        }
+      ],
+      "raw_sha256": "48dfc32f5e66cf3705bcb3ad6a5370102fd1619d98159ca765b8bbf742829a33"
+    }
+  ],
+  "limits": [
+    "API/fixture proxy, not UI/controller or Windows input",
+    "Original failures retained; exception rows are suite termination, not independent assertions",
+    "Common scene, actual model readability, 1080p and newcomer NOT_RUN"
+  ]
+}
