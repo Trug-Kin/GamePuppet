@@ -102,7 +102,7 @@ namespace ConRoi.Investigation.V36.R107
             }
             if(!Paused)
             {
-                if(TrialRunning&&!trialScrubbing)AdvanceTrial(Time.deltaTime);
+                if(Page=="reconstruction"&&TrialRunning&&!trialScrubbing)AdvanceTrial(Time.deltaTime);
                 if(Page=="clip"&&ClipPlaying&&!clipScrubbing){float previous=ClipTime;ClipTime=Mathf.Min(MechanismPresentation.ClipLength,ClipTime+Time.deltaTime);RegisterClipExposure(previous,ClipTime);UpdateClip();if(ClipTime>=MechanismPresentation.ClipLength)ClipPlaying=false;}
             }
             if(Page=="inspect"&&viewer&&Mouse.current!=null){if(Mouse.current.leftButton.isPressed){var d=Mouse.current.delta.ReadValue();viewYaw+=d.x*.25f;viewPitch=Mathf.Clamp(viewPitch-d.y*.25f,-80,80);}viewDistance=Mathf.Clamp(viewDistance-Mouse.current.scroll.ReadValue().y*.002f,.5f,4);UpdateViewer();}
