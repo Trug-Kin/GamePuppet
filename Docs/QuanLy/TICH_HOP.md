@@ -1,3 +1,11 @@
+# Quy trình nhận baseline kỹ thuật — 09/11/2026
+
+Baseline đã chốt `c93cb4f1e47acd14fb4dc9502b8a0b77c2d2a7f3`; nguồn thực chạy `f242b60a2fb48c45b37caabd8a55836e4d7db53b`. Nhánh tích hợp/phân phối hiện hành **review/runtime-integration-20261109**; xem đầu [HANDOFF](HANDOFF.md) cho kết quả/giới hạn và cách nhận. Mô tả chore/task đồng mức bên dưới là lịch sử, không phải yêu cầu hiện tại. Không tự merge vào main.
+
+Map & Asset / Gameplay & Dữ liệu / UI/UX & Tích hợp fetch, bảo toàn working tree/commit riêng, review diff rồi nhận baseline bằng merge trên nhánh riêng sau phối hợp chủ file. Không reset/force-update task ref hoặc cherry-pick riêng commit kiểm/báo cáo. Toàn bộ session partial thuộc Gameplay & Dữ liệu; scene chung/tài liệu điều phối thuộc UI/UX & Tích hợp. Bàn giao commit cùng kết quả/giới hạn, không chép scene đè nhau. [Chuẩn bị playtest sạch](../QA/Playtests/BaselineTechnique20261109/README.md); người mới NOT_RUN.
+
+---
+
 # Chốt nhận việc 08/11/2026 — fcbb7e19 / biên nhận 55d7f04
 
 Kết quả hiện hành: [bàn giao nhóm](TeamHandoff20261108/README.md), [audit Git/LFS](TeamHandoff20261108/audit.json).

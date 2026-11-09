@@ -74,3 +74,9 @@ Prompt nhận việc: “Trên work/ui-onboarding-review từ fcbb7e19, chuẩn 
 - Nguồn thực chạy f242b60a, scene chung1080p/profile riêng: sáu cặp Load từ chối/hồi phục và26 kiểm navigation/input đại diện đạt. Audit32958component/0MissingScript/0broken; không chạy lại66API. Input Windows tổng hợp/navigation fixture ghi riêng, không playtest người mới.
 - Đã đóng Unity không lưu scene; hash nguồn và bytes/settings/diff trước kiểm được bảo toàn. Chỉ tài liệu được đưa vào commit biên nhận. [Báo cáo](../QA/Tasks/N3/UI-LOAD-FEEDBACK-01-INTEGRATION/README.md).
 - Đề xuất f242b60a là ứng viên kỹ thuật, chưa chốt/cập nhật nhánh nhóm hoặc push. P-close OPEN/chưa tái hiện/chưa rõ nguyên nhân; người mới/probe cũ NOT_RUN. Việc tiếp theo cần nhóm review ứng viên và tổ chức playtest người thật; không tự mở rộng task.
+
+## UI/UX & Tích hợp — chốt và publish baseline kỹ thuật
+
+- Được phép chốt c93cb4f1e (nguồn thực chạy f242b60a); diff nguồn→báo cáo chỉ tài liệu, không chạy lại API/UI. Publish đúng nhánh review/runtime-integration-20261109 bằng credential Trug-Kin có quyền; không main/task ref.
+- HANDOFF/quy trình đã cập nhật cách nhận an toàn, không reset/force-sync tiến độ riêng. [Phiên người mới](../QA/Playtests/BaselineTechnique20261109/README.md) có hướng dẫn trung tính, profile local rỗng và mẫu ghi nhận; NOT_RUN, không fixture.
+- P-close OPEN/chưa tái hiện; probe cũ NOT_RUN; giữ giới hạn kiểm1080p có phạm vi. Biên nhận push/SHA trả trong bàn giao, không thêm commit để tự ghi hash của chính commit này.

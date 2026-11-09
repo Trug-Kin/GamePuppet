@@ -1,3 +1,27 @@
+# Baseline kỹ thuật đã chốt — 09/11/2026
+
+Theo chấp thuận của nhóm: **baseline bàn giao `c93cb4f1e47acd14fb4dc9502b8a0b77c2d2a7f3`**, chứa đầy đủ nguồn và báo cáo. **Nguồn thực chạy Unity: `f242b60a2fb48c45b37caabd8a55836e4d7db53b`**; biên nhận kiểm `c93cb4f1e`. Quan hệ ancestor đã xác minh; diff f242b60a→c93cb4f1e chỉ tám file tài liệu, product tree không đổi. Commit vận hành sau mốc này chỉ cập nhật HANDOFF/quy trình/playtest, không gọi là kiểm sản phẩm lại.
+
+Nhánh phân phối/tích hợp được phép publish: **`review/runtime-integration-20261109`**, origin `https://github.com/Trug-Kin/GamePuppet.git`. Đã xác minh tài khoản Git credential **Trug-Kin**, quyền push và fetch remote; nhánh này chưa có trên remote tại lúc chuẩn bị. Không đổi visibility, main, lịch sử hoặc tác giả. Đối chiếu SHA sau push trong biên nhận thao tác, không tạo vòng commit để ghi SHA của chính tài liệu.
+
+Unity **6000.6.2f1**; scene `Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity`. [Kiểm scene chung 1080p](../QA/Tasks/N3/UI-LOAD-FEEDBACK-01-INTEGRATION/README.md): Load feedback đạt acceptance; sáu cặp từ chối/hồi phục giữ state/bytes, 26 assertion navigation/input đại diện đạt, 0 Missing Script/0 broken reference. Input Windows tổng hợp và navigation fixture ghi riêng, không phải người chơi tự nhiên. Không chạy lại API/UI đã đạt. Không cần wiring mới; nhận đủ lịch sử các gói save/trial/observation và UI feedback đã review.
+
+**Giới hạn:** P-close **OPEN/chưa tái hiện/nguyên nhân chưa xác định**; người mới **NOT_RUN**; probe bổ sung cũ **NOT_RUN**. Không tuyên bố toàn bộ UI/map/legacy PASS. 4.183 file legacy, save gốc và archive giữ nguyên; các FAIL/lượt gián đoạn lịch sử không sửa lại.
+
+## Từng vai trò nhận baseline an toàn
+
+Chỉ publish nhánh tích hợp. Không reset/force đồng bộ ba nhánh công việc. Remote quan sát trước publish: Map & Asset `work/map-asset-baseline` tại `0d878e3b`; Gameplay & Dữ liệu `work/runtime-contracts-baseline` tại `a374a93a`; UI/UX & Tích hợp `work/ui-onboarding-review` tại `0d878e3b`. Đây là snapshot, phải fetch và kiểm lại khi nhận; không dùng để ghi đè tiến độ mới.
+
+1. Giữ worktree riêng, ghi HEAD/branch/status và bảo toàn file chưa commit. Không pull/merge khi thay đổi riêng chưa được xử lý an toàn; không tự stash/discard.
+2. `git fetch origin`, xem `git log --left-right --graph HEAD...origin/review/runtime-integration-20261109` và `git diff HEAD...origin/review/runtime-integration-20261109 --stat`. Giữ commit riêng; không yêu cầu các nhánh giống nhau.
+3. Sau phối hợp chủ file và bảo toàn working tree: nhận bằng `git merge --no-ff c93cb4f1e47acd14fb4dc9502b8a0b77c2d2a7f3` trên **nhánh công việc của mình**. Không cherry-pick riêng báo cáo hay ép nhánh đã có việc. Conflict: dừng, trao đổi chủ file; không ours/theirs hàng loạt hoặc chép scene đè nhau.
+4. Map & Asset review asset/meta và việc topology còn mở, không sửa runtime. Gameplay & Dữ liệu giữ toàn bộ session partial, review với tiến độ riêng. UI/UX & Tích hợp điều phối scene chung/tài liệu/playtest, không sửa partial song song. Ownership vẫn giữ.
+5. Hướng dẫn playtest và bản chốt HANDOFF nằm ở commit con chỉ tài liệu trên nhánh tích hợp: đọc qua web hoặc nhận commit đó sau review phạm vi. Lấy SHA tip bằng `git ls-remote origin refs/heads/review/runtime-integration-20261109`, ghi đúng SHA nhận; không mặc định tip tương lai vẫn chỉ tài liệu.
+
+[Hướng dẫn playtest và mẫu ghi nhận](../QA/Playtests/BaselineTechnique20261109/README.md): profile sạch riêng đã tạo ở máy kiểm, chưa mở Editor/chạy người chơi, không fixture. Tổ chức phiên thật trước khi mở rộng onboarding. Đây là thông báo để từng vai trò nhận an toàn; chưa cập nhật task ref hoặc tự gửi tin nhắn ngoài phiên làm việc.
+
+---
+
 # UI-LOAD-FEEDBACK-01 đã kiểm scene chung 1080p — 09/11/2026
 
 UI/UX & Tích hợp nhận đủ `25f14632 → 5be056e4 → a374a93a` bằng merge giữ lịch sử trên `review/runtime-integration-20261109`. **Nguồn thực chạy: `f242b60a2fb48c45b37caabd8a55836e4d7db53b`**, Unity6000.6.2f1, scene `Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity`, profile riêng. Không cần wiring mới, không sửa session partial/scene/map.
