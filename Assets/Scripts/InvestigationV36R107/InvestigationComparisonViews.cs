@@ -44,6 +44,8 @@ namespace ConRoi.Investigation.V36.R107
                 model.position += anchor - bounds.center;
                 var cameraObject = new GameObject("Comparison snapshot camera"); cameraObject.transform.SetParent(root.transform, false);
                 camera = cameraObject.AddComponent<Camera>(); camera.cullingMask = 1 << 30; camera.fieldOfView = 35;
+                // Normalized models stay within 1.2 units; never render the next slot 30 units away.
+                camera.nearClipPlane = .01f; camera.farClipPlane = 10;
                 camera.clearFlags = CameraClearFlags.SolidColor; camera.backgroundColor = new Color(.11f, .14f, .15f);
                 texture = new RenderTexture(600, 600, 24); texture.Create(); camera.targetTexture = texture;
                 var prior = RenderTexture.active;
