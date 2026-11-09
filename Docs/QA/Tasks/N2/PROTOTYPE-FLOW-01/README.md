@@ -146,3 +146,63 @@ Nhận toàn chuỗi **e0544b74 → d7f1c93b →71b20f71 →df2a1a83 →15d15da2
 | Toàn tuyến gameplay hiện hành | API18 xuyên suốt; controller/UI55 tuyến đại diện trên proxy, mật mã/quan hệ chỉ API | **UI/UX & Tích hợp:** scene chung từ nguồn nhận thực tế, giải mật mã/ghi quan hệ qua UI,1080p và tổ chức người mới; **Map & Asset:** collider/góc nhìn/hình học/media thật. Không suy PASS từ proxy |
 
 **Kết thúc phần triển khai runtime rõ trong checklist:** không còn logic được giao rõ chưa làm sau hai nguồn trên. Chưa gọi toàn tuyến người chơi hoàn tất: IO-OPEN-01, restore chưa có đường truy cập được thiết kế, scene chung/media/mật mã–đối chiếu bằng UI/1080p/người mới là phần chưa khép với owner và acceptance đã ghi. P-close vẫn OPEN/chưa tái hiện/nguyên nhân chưa rõ, probe cũ NOT_RUN. Ending/khu/full26 ngoài giai đoạn; không chuyển chúng thành việc đang chặn prototype.
+
+
+## 10. IO-OPEN-01 — kết luận phiên chẩn đoán hữu hạn sau777a59de
+
+**OPEN / CHƯA TÁI HIỆN LỖI NGOÀI DỰ KIẾN / CHƯA XÁC ĐỊNH NGUYÊN NHÂN.** Chủ nhận vẫn Gameplay & Dữ liệu. Phiên này chỉ xử lý IO-OPEN-01, không mở chức năng/audit khác. Không sửa runtime hoặc đóng acceptance độ tin cậy ghi bình thường theo một lượt không gặp lỗi.
+
+### 10.1. Nhận và phân loại bằng chứng
+
+HEAD nhận thực777a59de, đúng work/runtime-contracts-baseline, tracked sạch, hai untracked cũ giữ nguyên. Đọc lại mục8, writer và luồng chốt; nguồn thực chạy lỗi cũ là d7f1c93b/71b20f71, cùng runtime r107 với nguồn hiện tại. Hồ sơ cũ nằm dưới `C:/ConRoi_Nguoi2/Test/PlaytestProfiles/<profile>/InvestigationV36/r107/`:
+
+| Profile cũ | Hiện tượng | Kết luận có căn cứ |
+|---|---|---|
+| ConclusionFixed20261109 | Resume chốt trả false,24/25 | Lỗi thao tác bình thường có thật trong báo cáo, chưa có exception/operation gốc hoặc hash tại thời điểm lỗi |
+| FinalAffectedApi20261109 | Save chưa hoàn tất rồi fixture vẫn Load bản cũ,80/86 | **Lỗi fixture đã xác nhận** ở tiền điều kiện roundtrip; df2a1a83 sửa kiểm Save trước Load. Điều này không giải thích vì sao thao tác ghi chưa hoàn tất |
+| FinalIoDiagnosis20261109 | Resume chốt trả false/Message chung,85/86 | Có cùng rủi ro trên nguồn bàn giao; không có exception gốc |
+
+Đã đọc/hash/parse **bảy file thử còn giữ**, gồm `.tmp` của FinalAffectedApi; cả bảy hiện là JSON parse được. `.tmp` còn chín vật chứng trong khi bản chính profile FinalAffectedApi còn một vật chứng, phù hợp việc Load lại bản cũ sau lần ghi chưa hoàn tất. Đây là file **sau toàn phiên kiểm**, không snapshot ngay khi lỗi xảy ra; không suy rằng bytes/state ở thời điểm lỗi đã được chứng minh nguyên vẹn. Không sửa hoặc đưa các file save đó vào Git. Hash/size và phạm vi quan sát ghi trong [io-diagnosis.json](io-diagnosis.json).
+
+**Điểm chưa được chứng minh:** `TryFinalizeConclusions` bắt chung Exception quanh clone/capture, hai lần ghi và áp dụng live; Message “Không chốt…Không ghi được…” không đủ xác định exception thật là IOException hoặc vị trí File.Replace. Không được quy lỗi lịch sử cho antivirus/file lock hay kết luận lỗi runtime cụ thể chỉ từ câu thông báo. Lượt API cũ kết thúc có report, lỗi không phải lượt click sai/DPI chưa tới nút; chưa có bằng chứng quy chúng cho mất focus/desktop gián đoạn. Ảnh hưởng của proxy/Editor hoặc môi trường filesystem vẫn chưa được loại trừ hoặc xác nhận.
+
+### 10.2. Điều kiện đã thử — đúng một phiên hữu hạn
+
+Công cụ mới **7d4a7868dc38e4caacbde061b11f580b94d38f4f**, `Assets/ConRoi/Modules/Gameplay/Editor/IoOpenChecks.cs` +meta, Unity6000.6.2f1, source tree runtime nguyên d7f1c93b. Scene Gameplay_ThuNghiem được mở, dựng proxy lúc Play, tắt movement/look trong fixture API; không input desktop/UI/controller, không scene tích hợp. Windows11/NTFS ổC, trống13.709.086.720 bytes trước /13.703.643.136 bytes sau phiên; không làm đầy ổ.
+
+Profile mới `C:/ConRoi_Nguoi2/Test/PlaytestProfiles/IoOpenFinite20261109/`, ba thư mục con tách biệt:
+
+1. **no-injection:** seed save rồi sáu lượt draft → sửa claim → rời/quay lại → pause/resume → xác nhận/chốt → Load; không tạo file lock hoặc lỗi chủ động.
+2. **mixed-original-sequence:** thứ tự lỗi/recovery của ca cũ: khóa độc quyền file chính → Load bản tốt/explicit commit; thư mục chặn checkpoint.tmp → gỡ/explicit commit; khóa checkpoint → gỡ/explicit commit; sửa claim/rời/quay lại/pause/resume/chốt. Mỗi handle nằm trong using, thư mục lỗi chuyển sang output trong finally, không xóa. Các lỗi đều có nhãn injection riêng.
+3. **direct-writer:** gọi **đúng writer production hai tham số bằng reflection**, không thay delegate runtime hoặc cài fault hook. Seed +tám cặp ghi checkpoint/chính; riêng một lần khóa chính để hiệu chuẩn thu exception và một ghi phục hồi tường minh. Đây là kiểm writer trực tiếp, không phải UI/Load session hoặc chốt thành công của người chơi. Session.Message ở phase này không phải kết quả writer, không dùng nó để đánh giá.
+
+Mỗi thao tác lưu hash main/checkpoint/cả hai `.tmp`, live snapshot trước/sau và kết quả, rồi ghi report incremental. Writer trực tiếp thu type/HResult/stack nếu có exception; session chỉ có Message chung theo contract hiện tại. Không tự retry thao tác lỗi bình thường để biến thành PASS, không bỏ kết quả thất bại. Chỉ một phiên, không chạy lại bộ86/API/IO/trial/UI cũ.
+
+### 10.3. Kết quả và mức chứng minh
+
+- **36 thao tác ghi:**32 thành công; ba lượt TryFinalizeConclusions trả false do lỗi chủ động và một direct-writer ném exception do khóa chủ động. **0 lỗi ngoài dự kiến,0 vi phạm guard được kiểm, không fixture exception.** Đây không phải36 ca chứng minh đã hết lỗi lịch sử.
+- Bốn lượt lỗi mô phỏng giữ main hash/live snapshot, phục hồi tường minh ghi được.11 lượt Load qua Session thành công, không ghi lại main/checkpoint/tmp. Checkpoint có thể thay đổi khi ghi chính lỗi theo contract hai file, không coi đó là rollback toàn giao dịch.
+- Calibration direct-writer thu **System.IO.IOException /0x80070020 tại File.Replace** đúng lúc công cụ giữ FileShare.None của file đích. Handle được nhả rồi ghi lại thành công. Đây chỉ chứng minh chẩn đoán và lỗi khóa **chủ động của fixture** hoạt động; **không phải nguyên nhân của lỗi lịch sử**.
+- Không tái hiện tự nhiên sau fault/recovery hoặc trong sáu lượt resume không fault. Không kéo dài vòng lặp vô hạn. Không sửa runtime theo giả thuyết, không bảo đảm chịu được mất điện/crash.
+
+Raw state/stack/report/log và profile giữ local ở `Test/Output/IoOpen20261109/FiniteProbe` và profile mới nêu trên, không commit. JSON bàn giao chỉ giữ hash, kết quả, loại lỗi/HResult và các trường đã lược state/stack. Năm file Unity đã snapshot trước/sau, đối chiếu nội dung chỉ đổi xuống dòng rồi phục hồi bytes trước kiểm; scene không được lưu, untracked cũ/save gốc/archive/legacy không đổi.
+
+### 10.4. Phát hiện, giảm rủi ro và điều kiện nhận tiếp
+
+**Ảnh hưởng còn OPEN:** thao tác ghi/chốt bình thường có thể không hoàn tất; chưa biết lỗi lịch sử xảy ra trước/sau bước nào, thiếu hash tại lỗi nên không khẳng định mọi bản cũ đều được giữ. Lượt mô phỏng xác nhận cơ chế giữ bản tốt/feedback lỗi trong các điều kiện đã chèn, không thay cho bằng chứng lịch sử.
+
+- Khi F5 hoặc chốt báo lỗi: **không coi bản mới đã lưu và không F6 ngay để “xác minh”**; Load có thể hợp lệ nhưng quay về bản cũ, làm mất thay đổi chưa lưu. Giữ phiên/draft, profile và `.tmp`; chỉ thử ghi lại tường minh sau xử lý điều kiện khóa/đường dẫn đã xác minh. Không tự xóa/rename `.tmp`, tự repair/fallback hoặc ghi đè save gốc để khắc phục.
+- Phát hiện kỹ thuật: kiểm bool TryFinalizeConclusions và Message; với Save(void), kiểm thông báo hoàn tất trước Load như df2a1a83. Khi kiểm thử, phải chụp SHA/state trước thao tác và sau khi lỗi trước mọi Load/recovery. Direct-writer có diagnostic nhưng không thay cho phép thử session.
+- **Điều kiện nhận/tái mở điều tra cụ thể:** một lỗi ghi/chốt **không có nhãn injection**, dù chỉ một lần, kèm source/time, profile/main/checkpoint/tmp và SHA trước/sau, snapshot live, Message/exception nếu thu được, hoặc hiện tượng báo thành công mà file không khớp. IO-OPEN-01 hiện vẫn OPEN; “mở lại” ở đây là bắt đầu lượt chẩn đoán mới khi có bằng chứng mới, không đổi OPEN thành CLOSED rồi mở lại.
+- **Gameplay & Dữ liệu** nhận bằng chứng đó, xác định bước clone/capture/ghi checkpoint/ghi chính/apply và exception gốc. Chỉ nếu xác nhận lỗi nguồn mới sửa tối thiểu, kiểm chính ca đó và recovery; nếu nguyên nhân file handle/môi trường, cần xác minh process/handle và gỡ điều kiện rồi kiểm. Không tự đoán và không chạy full suite để tìm may rủi.
+- **UI/UX & Tích hợp** tiếp tục nhận trạng thái ghi/tải và kiểm feedback scene chung; không diễn giải một lần Load bản cũ thành bản mới đã lưu. Không giao thêm nút hoặc sửa UI trong gói IO này. Baseline/nghiệm thu độ tin cậy ghi bình thường chưa được khép bởi phiên này.
+
+Cách dùng công cụ khi có căn cứ mới: từ clone đúng Unity và đã đóng Editor của working directory, dùng profile/output **chưa tồn tại**:
+
+```powershell
+$project = (Get-Location).Path
+$unity = 'D:\data_unity\6000.6.2f1\Editor\Unity.exe' # thay theo máy
+& $unity -batchmode -projectPath $project -executeMethod ConRoi.Gameplay.EditorChecks.IoOpenChecks.RunBatch --io-source (git rev-parse HEAD) --io-output "$project/Test/Output/IoOpenNew" --investigation-save-dir "$project/Test/PlaytestProfiles/IoOpenNew" -logFile "$project/Test/Output/IoOpenNew.log"
+```
+
+**Trạng thái nhiệm vụ Gameplay & Dữ liệu:** logic prototype rõ đã triển khai/bàn giao; phần chẩn đoán IO được giao ở lượt này đã hoàn thành có giới hạn, **IO-OPEN-01 chưa đóng nguyên nhân/rủi ro** và vẫn có chủ nhận ở trên. Các phụ thuộc scene chung/media/mật mã–đối chiếu bằng UI/1080p/người mới và đường truy cập restore giữ đúng owner tại mục9; P-close OPEN. Không mở chức năng mới hoặc tuyên toàn tuyến/game đã xong.

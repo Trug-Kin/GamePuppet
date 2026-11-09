@@ -1,0 +1,1191 @@
+{
+  "status": "OPEN_NOT_REPRODUCED_NO_ROOT_CAUSE",
+  "source": "7d4a7868dc38e4caacbde061b11f580b94d38f4f",
+  "kind": "FINITE_PLAYMODE_API_PROXY_NOT_UI",
+  "unity": "6000.6.2f1",
+  "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+  "process": 17736,
+  "os": "Microsoft Windows NT 10.0.26200.0",
+  "volume": "C: NTFS",
+  "free_before_bytes": 13709086720,
+  "free_after_bytes": 13703643136,
+  "raw_results_sha256": "8fc0cd8239d6d02f6852b6e4a21cc65d05e162de9d6d49e65ab98ca7a36778cc",
+  "runtime_tree_equal": {
+    "d7f1c93b": "c9eaaa0a207b0368007f916478e5cbbf65e977d2",
+    "777a59de": "c9eaaa0a207b0368007f916478e5cbbf65e977d2",
+    "7d4a7868": "c9eaaa0a207b0368007f916478e5cbbf65e977d2"
+  },
+  "attempt_count": 36,
+  "successful_attempts": 32,
+  "expected_failures": 4,
+  "unexpected_failures": 0,
+  "violations": 0,
+  "fixture_exception": false,
+  "attempts": [
+    {
+      "name": "normal_seed",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.0154141Z",
+      "before_files": {
+        "main": "MISSING",
+        "checkpoint": "MISSING",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "6d29f571209cb701b753d806e52b131971f7c11c19336e30cef12c2f7c5f61f5",
+        "checkpoint": "MISSING",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": false,
+      "main_unchanged": false,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/no-injection/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "6f01c6919ca804d75367ea9695df0f30c80c7f2cb60750b76c73fd9ffa9f9d83",
+      "after_live_sha256": "4f5acb7b528e6ae5e971ad756acecc0f1765d6c5adedb563efc9086fcc9430c4",
+      "exception_stage": null,
+      "session_message": "Đã lưu hồ sơ prototype riêng."
+    },
+    {
+      "name": "normal_resume_0",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.0342826Z",
+      "before_files": {
+        "main": "6d29f571209cb701b753d806e52b131971f7c11c19336e30cef12c2f7c5f61f5",
+        "checkpoint": "MISSING",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "35c57cbd55430ae94741001ec67d34fa2c1f5fc7c3e846693679de9af5943a41",
+        "checkpoint": "56ce966ec5cd0f2d8df604486b3014422c8d911c7f5ce504509014e7a4b3434f",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": false,
+      "main_unchanged": false,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/no-injection/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "b4140df03eff5aa8fcaf2271a7bc9965f24e1b568ef965ec0ea9f593a8e56207",
+      "after_live_sha256": "704215f781bf74ab5547df686ac9779b428579dd1c9747f8ab96856111f0e79c",
+      "exception_stage": null,
+      "session_message": "Đã lưu bản ghi kết luận; bản trước chốt được giữ riêng."
+    },
+    {
+      "name": "normal_resume_1",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.0697816Z",
+      "before_files": {
+        "main": "35c57cbd55430ae94741001ec67d34fa2c1f5fc7c3e846693679de9af5943a41",
+        "checkpoint": "56ce966ec5cd0f2d8df604486b3014422c8d911c7f5ce504509014e7a4b3434f",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "97236511cbf8954d831210a139ec2cc97081449211dc26e4dd5d9152901d4fd4",
+        "checkpoint": "560a7b7d402365a3ce562e7f126de5ab09bf561c8824eff8e205da9095630792",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": false,
+      "main_unchanged": false,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/no-injection/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "d62f44dcaeed2527865bf28c7152ab803716a0683cb15a7609a12fe020dc1c9e",
+      "after_live_sha256": "50ba1650e13ca533f54e1dab0b96096df866f4d88c5c98bfd5ac77052e717e9e",
+      "exception_stage": null,
+      "session_message": "Đã lưu bản ghi kết luận; bản trước chốt được giữ riêng."
+    },
+    {
+      "name": "normal_resume_2",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.0837084Z",
+      "before_files": {
+        "main": "97236511cbf8954d831210a139ec2cc97081449211dc26e4dd5d9152901d4fd4",
+        "checkpoint": "560a7b7d402365a3ce562e7f126de5ab09bf561c8824eff8e205da9095630792",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "6797ce542a014faeba11ddc6ca79ac44da00f7d81262a9d0a66b4e7e28761b50",
+        "checkpoint": "39ae6d5a6541500b84c98b88d067dc6343fd52a40a8135c51d4cf5420157a2c1",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": false,
+      "main_unchanged": false,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/no-injection/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "cd9a58083145c2185788751f0f0215a17d4cfb8a12a91222799945d73d7a9b57",
+      "after_live_sha256": "74aed408cd8f9057283f27be1ecd500e58481145d97766ee53bc2dc6e8f19c0b",
+      "exception_stage": null,
+      "session_message": "Đã lưu bản ghi kết luận; bản trước chốt được giữ riêng."
+    },
+    {
+      "name": "normal_resume_3",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.0969804Z",
+      "before_files": {
+        "main": "6797ce542a014faeba11ddc6ca79ac44da00f7d81262a9d0a66b4e7e28761b50",
+        "checkpoint": "39ae6d5a6541500b84c98b88d067dc6343fd52a40a8135c51d4cf5420157a2c1",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "fa34091dfc543f1e1b4c343cfbab4e5ff79a6e592a885ad58ae5d507ceaaa95a",
+        "checkpoint": "3dd47e0c61b7ca32388224a1c03d7a5680b8f4fbe6e8b348ad243f401b1cf45a",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": false,
+      "main_unchanged": false,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/no-injection/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "e2e9cfa8c5df69bef2091849c5a3a3818d7f558ba2d24271189d5c19317c8d2a",
+      "after_live_sha256": "ce7f3660b4623ff1ea226c286e4514263ecb18fba679553f22fab957df39737d",
+      "exception_stage": null,
+      "session_message": "Đã lưu bản ghi kết luận; bản trước chốt được giữ riêng."
+    },
+    {
+      "name": "normal_resume_4",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.1090209Z",
+      "before_files": {
+        "main": "fa34091dfc543f1e1b4c343cfbab4e5ff79a6e592a885ad58ae5d507ceaaa95a",
+        "checkpoint": "3dd47e0c61b7ca32388224a1c03d7a5680b8f4fbe6e8b348ad243f401b1cf45a",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "2d42cf93d6e98f0fb6e731caf28b78c1c57464d39fb6c94677f5f8bbe7686ac2",
+        "checkpoint": "399cb361eba834edfc2f37f8bce11224558798516b24e12d8e6159fb91e7d75c",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": false,
+      "main_unchanged": false,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/no-injection/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "7625ed467c1a5c68160f780c05be3ff26ed3615f749944a60d70b240b9591005",
+      "after_live_sha256": "9e1ab5ade81661b0f7119d2b75faeeec3b52f625e850075013febc5d1a5e5ac9",
+      "exception_stage": null,
+      "session_message": "Đã lưu bản ghi kết luận; bản trước chốt được giữ riêng."
+    },
+    {
+      "name": "normal_resume_5",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.1240264Z",
+      "before_files": {
+        "main": "2d42cf93d6e98f0fb6e731caf28b78c1c57464d39fb6c94677f5f8bbe7686ac2",
+        "checkpoint": "399cb361eba834edfc2f37f8bce11224558798516b24e12d8e6159fb91e7d75c",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "beea25c9a1ac565f61890465c90300821aafa0a7786ae0ba0efa189118a094c0",
+        "checkpoint": "f6a257d1ac4ab017eeae351780383de57c831bbab634426ec43082ffbbd403f4",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": false,
+      "main_unchanged": false,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/no-injection/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "e79350411096c7174994c6ebdaf5f4079c1596f6c6f4a9cfe94647e08e664313",
+      "after_live_sha256": "2b9e0e0598a18ca5a0c3e70b1592e9114f61f3ae6c17151fc174e6bc7e8e94fa",
+      "exception_stage": null,
+      "session_message": "Đã lưu bản ghi kết luận; bản trước chốt được giữ riêng."
+    },
+    {
+      "name": "mixed_seed",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.1392555Z",
+      "before_files": {
+        "main": "MISSING",
+        "checkpoint": "MISSING",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "6a3f0d45696be5ca3724f112a9cd615b9778de930c1e5489a732f3f8186e793c",
+        "checkpoint": "MISSING",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": false,
+      "main_unchanged": false,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/mixed-original-sequence/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "ff69819dc807c081382a7a71c4a239ba7ae1a57493f34134d22f8ff879272495",
+      "after_live_sha256": "7ce5080cd567a37a70c8d41f9d78976e604f5cbb7be5775c7fcf1df8057fa33a",
+      "exception_stage": null,
+      "session_message": "Đã lưu hồ sơ prototype riêng."
+    },
+    {
+      "name": "mixed_target_locked",
+      "injection": "exclusive-main-handle",
+      "expected_failure": true,
+      "result": false,
+      "utc": "2026-11-09T15:46:42.1456795Z",
+      "before_files": {
+        "main": "6a3f0d45696be5ca3724f112a9cd615b9778de930c1e5489a732f3f8186e793c",
+        "checkpoint": "MISSING",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "6a3f0d45696be5ca3724f112a9cd615b9778de930c1e5489a732f3f8186e793c",
+        "checkpoint": "6a3f0d45696be5ca3724f112a9cd615b9778de930c1e5489a732f3f8186e793c",
+        "main_tmp": "20bdc5cca8ddc3bbb04fee7ee3a486ee928209bab4737a3280551f137a2fcfce",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": true,
+      "main_unchanged": true,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/mixed-original-sequence/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "b3e0144c13ad229140caf37165480f154315913f456744b70e339598f5107ae3",
+      "after_live_sha256": "b3e0144c13ad229140caf37165480f154315913f456744b70e339598f5107ae3",
+      "exception_stage": null,
+      "session_message": "Không chốt hồ sơ: Không ghi được tệp. Bản lưu hợp lệ trước đó được giữ nguyên; hãy khắc phục rồi thử lại."
+    },
+    {
+      "name": "target_explicit_recovery",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.1599311Z",
+      "before_files": {
+        "main": "6a3f0d45696be5ca3724f112a9cd615b9778de930c1e5489a732f3f8186e793c",
+        "checkpoint": "6a3f0d45696be5ca3724f112a9cd615b9778de930c1e5489a732f3f8186e793c",
+        "main_tmp": "20bdc5cca8ddc3bbb04fee7ee3a486ee928209bab4737a3280551f137a2fcfce",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "20bdc5cca8ddc3bbb04fee7ee3a486ee928209bab4737a3280551f137a2fcfce",
+        "checkpoint": "6a3f0d45696be5ca3724f112a9cd615b9778de930c1e5489a732f3f8186e793c",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": false,
+      "main_unchanged": false,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/mixed-original-sequence/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "b3e0144c13ad229140caf37165480f154315913f456744b70e339598f5107ae3",
+      "after_live_sha256": "41a037cb6f65e0f8db8b7159ee2b541e19fc48babef16846dbca88ca8b04a3ef",
+      "exception_stage": null,
+      "session_message": "Đã lưu bản ghi kết luận; bản trước chốt được giữ riêng."
+    },
+    {
+      "name": "tmp_seed",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.1743585Z",
+      "before_files": {
+        "main": "20bdc5cca8ddc3bbb04fee7ee3a486ee928209bab4737a3280551f137a2fcfce",
+        "checkpoint": "6a3f0d45696be5ca3724f112a9cd615b9778de930c1e5489a732f3f8186e793c",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "8fd6895e257894ec17b3ac55c303ffb85975ea8e22e0b1f5c3151e2609c22e92",
+        "checkpoint": "6a3f0d45696be5ca3724f112a9cd615b9778de930c1e5489a732f3f8186e793c",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": false,
+      "main_unchanged": false,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/mixed-original-sequence/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "744fc33af83889efa3f5bffc58266fcef77b1b8866119e5fb40d1ab71d7efcdd",
+      "after_live_sha256": "5d538f140153159d441622984a092a115efd67243c38c71950fb6ac632fe5202",
+      "exception_stage": null,
+      "session_message": "Đã lưu hồ sơ prototype riêng."
+    },
+    {
+      "name": "mixed_tmp_directory",
+      "injection": "directory-at-checkpoint-tmp",
+      "expected_failure": true,
+      "result": false,
+      "utc": "2026-11-09T15:46:42.1819263Z",
+      "before_files": {
+        "main": "8fd6895e257894ec17b3ac55c303ffb85975ea8e22e0b1f5c3151e2609c22e92",
+        "checkpoint": "6a3f0d45696be5ca3724f112a9cd615b9778de930c1e5489a732f3f8186e793c",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "8fd6895e257894ec17b3ac55c303ffb85975ea8e22e0b1f5c3151e2609c22e92",
+        "checkpoint": "6a3f0d45696be5ca3724f112a9cd615b9778de930c1e5489a732f3f8186e793c",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": true,
+      "main_unchanged": true,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/mixed-original-sequence/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "6c1b30ba3f152c06317dc0f70371c4c3926578b433154875161af1669a87e54d",
+      "after_live_sha256": "6c1b30ba3f152c06317dc0f70371c4c3926578b433154875161af1669a87e54d",
+      "exception_stage": null,
+      "session_message": "Không chốt hồ sơ: Không ghi được tệp. Bản lưu hợp lệ trước đó được giữ nguyên; hãy khắc phục rồi thử lại."
+    },
+    {
+      "name": "tmp_explicit_recovery",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.1884803Z",
+      "before_files": {
+        "main": "8fd6895e257894ec17b3ac55c303ffb85975ea8e22e0b1f5c3151e2609c22e92",
+        "checkpoint": "6a3f0d45696be5ca3724f112a9cd615b9778de930c1e5489a732f3f8186e793c",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "1bc92721dea55c7362ad4a8af001b516e47f3285cf6588c86a87d50aa19c3c7c",
+        "checkpoint": "8fd6895e257894ec17b3ac55c303ffb85975ea8e22e0b1f5c3151e2609c22e92",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": false,
+      "main_unchanged": false,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/mixed-original-sequence/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "6c1b30ba3f152c06317dc0f70371c4c3926578b433154875161af1669a87e54d",
+      "after_live_sha256": "08ccfa32765e518d9a09facff4ab9a9ec31e0958cc58b5a590dc23e2c5db3010",
+      "exception_stage": null,
+      "session_message": "Đã lưu bản ghi kết luận; bản trước chốt được giữ riêng."
+    },
+    {
+      "name": "checkpoint_seed",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.2033070Z",
+      "before_files": {
+        "main": "1bc92721dea55c7362ad4a8af001b516e47f3285cf6588c86a87d50aa19c3c7c",
+        "checkpoint": "8fd6895e257894ec17b3ac55c303ffb85975ea8e22e0b1f5c3151e2609c22e92",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "62403348847f278b3390fc9b3dc25fecfcda792107dbf3610e2dd163b70b6224",
+        "checkpoint": "8fd6895e257894ec17b3ac55c303ffb85975ea8e22e0b1f5c3151e2609c22e92",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": false,
+      "main_unchanged": false,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/mixed-original-sequence/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "d138de275db2590f8930cb367d836d1ba49b82a3463f6ad6610ee90be7b45973",
+      "after_live_sha256": "663f60bc9565178375cb4264f7cedac5c46f4a2f290b17ef85885847d179a3d0",
+      "exception_stage": null,
+      "session_message": "Đã lưu hồ sơ prototype riêng."
+    },
+    {
+      "name": "mixed_checkpoint_locked",
+      "injection": "exclusive-checkpoint-handle",
+      "expected_failure": true,
+      "result": false,
+      "utc": "2026-11-09T15:46:42.2148445Z",
+      "before_files": {
+        "main": "62403348847f278b3390fc9b3dc25fecfcda792107dbf3610e2dd163b70b6224",
+        "checkpoint": "8fd6895e257894ec17b3ac55c303ffb85975ea8e22e0b1f5c3151e2609c22e92",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "62403348847f278b3390fc9b3dc25fecfcda792107dbf3610e2dd163b70b6224",
+        "checkpoint": "8fd6895e257894ec17b3ac55c303ffb85975ea8e22e0b1f5c3151e2609c22e92",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "62403348847f278b3390fc9b3dc25fecfcda792107dbf3610e2dd163b70b6224"
+      },
+      "live_unchanged": true,
+      "main_unchanged": true,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/mixed-original-sequence/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "b1ba90394bad7a91c7f24d9d1067305bd13e21302b77edede0990eb3e055cfe3",
+      "after_live_sha256": "b1ba90394bad7a91c7f24d9d1067305bd13e21302b77edede0990eb3e055cfe3",
+      "exception_stage": null,
+      "session_message": "Không chốt hồ sơ: Không ghi được tệp. Bản lưu hợp lệ trước đó được giữ nguyên; hãy khắc phục rồi thử lại."
+    },
+    {
+      "name": "checkpoint_explicit_recovery",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.2239192Z",
+      "before_files": {
+        "main": "62403348847f278b3390fc9b3dc25fecfcda792107dbf3610e2dd163b70b6224",
+        "checkpoint": "8fd6895e257894ec17b3ac55c303ffb85975ea8e22e0b1f5c3151e2609c22e92",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "62403348847f278b3390fc9b3dc25fecfcda792107dbf3610e2dd163b70b6224"
+      },
+      "after_files": {
+        "main": "31176f3a6ec4e8a5f69be023461b35f9581d6e012321cc733f95d0f93b4b434b",
+        "checkpoint": "62403348847f278b3390fc9b3dc25fecfcda792107dbf3610e2dd163b70b6224",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": false,
+      "main_unchanged": false,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/mixed-original-sequence/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "b1ba90394bad7a91c7f24d9d1067305bd13e21302b77edede0990eb3e055cfe3",
+      "after_live_sha256": "0ed59a77379154ddc52db565f6c85727156684c51222b5eca066c1ee9c67c15c",
+      "exception_stage": null,
+      "session_message": "Đã lưu bản ghi kết luận; bản trước chốt được giữ riêng."
+    },
+    {
+      "name": "mixed_resume_after_faults",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.2455230Z",
+      "before_files": {
+        "main": "31176f3a6ec4e8a5f69be023461b35f9581d6e012321cc733f95d0f93b4b434b",
+        "checkpoint": "62403348847f278b3390fc9b3dc25fecfcda792107dbf3610e2dd163b70b6224",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "131321892c450906cc2805e41828dfee66de7993b2b5e55a7af9bb78181fbfc0",
+        "checkpoint": "9e797bc7cd2119f90c716b6ac4cf68d3f417c408a46a10f3017d10760b57b807",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": false,
+      "main_unchanged": false,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/mixed-original-sequence/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "9588c3312b9de46d78077388b0441f23b73b4697ff1396fb3a0e80a4f2d1a02a",
+      "after_live_sha256": "61d1097ed8415fbaece0e4998e7e4cdbf0d0ba4b5f0762cb125844487d7556eb",
+      "exception_stage": null,
+      "session_message": "Đã lưu bản ghi kết luận; bản trước chốt được giữ riêng."
+    },
+    {
+      "name": "direct_seed",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.2615365Z",
+      "before_files": {
+        "main": "MISSING",
+        "checkpoint": "MISSING",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "MISSING",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": true,
+      "main_unchanged": false,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/direct-writer/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "after_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "exception_stage": null
+    },
+    {
+      "name": "direct_0_checkpoint",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.2713158Z",
+      "before_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "MISSING",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": true,
+      "main_unchanged": true,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/direct-writer/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "after_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "exception_stage": null
+    },
+    {
+      "name": "direct_0_main",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.2795314Z",
+      "before_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": true,
+      "main_unchanged": true,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/direct-writer/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "after_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "exception_stage": null
+    },
+    {
+      "name": "direct_1_checkpoint",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.2891255Z",
+      "before_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": true,
+      "main_unchanged": true,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/direct-writer/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "after_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "exception_stage": null
+    },
+    {
+      "name": "direct_1_main",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.2989880Z",
+      "before_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": true,
+      "main_unchanged": true,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/direct-writer/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "after_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "exception_stage": null
+    },
+    {
+      "name": "direct_2_checkpoint",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.3077248Z",
+      "before_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": true,
+      "main_unchanged": true,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/direct-writer/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "after_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "exception_stage": null
+    },
+    {
+      "name": "direct_2_main",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.3169771Z",
+      "before_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": true,
+      "main_unchanged": true,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/direct-writer/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "after_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "exception_stage": null
+    },
+    {
+      "name": "direct_3_checkpoint",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.3271644Z",
+      "before_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": true,
+      "main_unchanged": true,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/direct-writer/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "after_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "exception_stage": null
+    },
+    {
+      "name": "direct_3_main",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.3364876Z",
+      "before_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": true,
+      "main_unchanged": true,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/direct-writer/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "after_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "exception_stage": null
+    },
+    {
+      "name": "direct_4_checkpoint",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.3465356Z",
+      "before_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": true,
+      "main_unchanged": true,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/direct-writer/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "after_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "exception_stage": null
+    },
+    {
+      "name": "direct_4_main",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.3562253Z",
+      "before_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": true,
+      "main_unchanged": true,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/direct-writer/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "after_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "exception_stage": null
+    },
+    {
+      "name": "direct_5_checkpoint",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.3653841Z",
+      "before_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": true,
+      "main_unchanged": true,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/direct-writer/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "after_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "exception_stage": null
+    },
+    {
+      "name": "direct_5_main",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.3742051Z",
+      "before_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": true,
+      "main_unchanged": true,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/direct-writer/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "after_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "exception_stage": null
+    },
+    {
+      "name": "direct_6_checkpoint",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.3837887Z",
+      "before_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": true,
+      "main_unchanged": true,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/direct-writer/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "after_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "exception_stage": null
+    },
+    {
+      "name": "direct_6_main",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.3947756Z",
+      "before_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": true,
+      "main_unchanged": true,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/direct-writer/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "after_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "exception_stage": null
+    },
+    {
+      "name": "direct_7_checkpoint",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.4071463Z",
+      "before_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": true,
+      "main_unchanged": true,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/direct-writer/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "after_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "exception_stage": null
+    },
+    {
+      "name": "direct_7_main",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.4267625Z",
+      "before_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": true,
+      "main_unchanged": true,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/direct-writer/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "after_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "exception_stage": null
+    },
+    {
+      "name": "direct_lock_calibration",
+      "injection": "exclusive-main-handle",
+      "expected_failure": true,
+      "result": false,
+      "utc": "2026-11-09T15:46:42.4364394Z",
+      "before_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": true,
+      "main_unchanged": true,
+      "failure_safeguard": true,
+      "exception_type": "System.IO.IOException",
+      "hresult": "0x80070020",
+      "profile_main": "IoOpenFinite20261109/direct-writer/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "after_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "exception_stage": "File.Replace"
+    },
+    {
+      "name": "direct_explicit_recovery",
+      "injection": "none",
+      "expected_failure": false,
+      "result": true,
+      "utc": "2026-11-09T15:46:42.4464721Z",
+      "before_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint_tmp": "MISSING"
+      },
+      "after_files": {
+        "main": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "checkpoint": "23734b80a6386c558b44c9164926e9541ae6ab8c6e7bca0105683a83d5059e98",
+        "main_tmp": "MISSING",
+        "checkpoint_tmp": "MISSING"
+      },
+      "live_unchanged": true,
+      "main_unchanged": true,
+      "failure_safeguard": true,
+      "exception_type": null,
+      "hresult": null,
+      "profile_main": "IoOpenFinite20261109/direct-writer/InvestigationV36/r107/prototype.json",
+      "before_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "after_live_sha256": "db5d6777bc09ac23f151560c8a197c05cf199cf8596151e47adef4b3dac5d63f",
+      "exception_stage": null
+    }
+  ],
+  "loads": [
+    {
+      "name": "normal_resume_0_load",
+      "result": true,
+      "files_unchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn."
+    },
+    {
+      "name": "normal_resume_1_load",
+      "result": true,
+      "files_unchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn."
+    },
+    {
+      "name": "normal_resume_2_load",
+      "result": true,
+      "files_unchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn."
+    },
+    {
+      "name": "normal_resume_3_load",
+      "result": true,
+      "files_unchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn."
+    },
+    {
+      "name": "normal_resume_4_load",
+      "result": true,
+      "files_unchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn."
+    },
+    {
+      "name": "normal_resume_5_load",
+      "result": true,
+      "files_unchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn."
+    },
+    {
+      "name": "after_target_failure",
+      "result": true,
+      "files_unchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn."
+    },
+    {
+      "name": "target_explicit_recovery_load",
+      "result": true,
+      "files_unchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn."
+    },
+    {
+      "name": "tmp_explicit_recovery_load",
+      "result": true,
+      "files_unchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn."
+    },
+    {
+      "name": "checkpoint_explicit_recovery_load",
+      "result": true,
+      "files_unchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn."
+    },
+    {
+      "name": "mixed_resume_after_faults_load",
+      "result": true,
+      "files_unchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn."
+    }
+  ],
+  "historical_files_read_only_now": [
+    {
+      "profile": "ConclusionFixed20261109",
+      "source": "d7f1c93b",
+      "file": "prototype.before-conclusion.json",
+      "bytes": 1482,
+      "sha256": "d501b7ca46ea628a29740ad1e0c845da4613de2d07bca4d7972c5afaa9705d13",
+      "parse_json_now": true,
+      "evidence_count_now": 1,
+      "observation_scope": "CURRENT_FILE_NOT_SNAPSHOT_AT_HISTORICAL_FAILURE"
+    },
+    {
+      "profile": "ConclusionFixed20261109",
+      "source": "d7f1c93b",
+      "file": "prototype.json",
+      "bytes": 1501,
+      "sha256": "05de3c401dbe8242949e2014eac008c2a9d52bdfd626fb1c09b027371e27d7b2",
+      "parse_json_now": true,
+      "evidence_count_now": 1,
+      "observation_scope": "CURRENT_FILE_NOT_SNAPSHOT_AT_HISTORICAL_FAILURE"
+    },
+    {
+      "profile": "FinalAffectedApi20261109",
+      "source": "71b20f71",
+      "file": "prototype.before-conclusion.json",
+      "bytes": 1482,
+      "sha256": "d501b7ca46ea628a29740ad1e0c845da4613de2d07bca4d7972c5afaa9705d13",
+      "parse_json_now": true,
+      "evidence_count_now": 1,
+      "observation_scope": "CURRENT_FILE_NOT_SNAPSHOT_AT_HISTORICAL_FAILURE"
+    },
+    {
+      "profile": "FinalAffectedApi20261109",
+      "source": "71b20f71",
+      "file": "prototype.before-conclusion.json.tmp",
+      "bytes": 4096,
+      "sha256": "5a89411e9f96cf2895146208de9b036961ff1f1659ac9d255117719c33e1214e",
+      "parse_json_now": true,
+      "evidence_count_now": 9,
+      "observation_scope": "CURRENT_FILE_NOT_SNAPSHOT_AT_HISTORICAL_FAILURE"
+    },
+    {
+      "profile": "FinalAffectedApi20261109",
+      "source": "71b20f71",
+      "file": "prototype.json",
+      "bytes": 1484,
+      "sha256": "9340608bcf2ce8e150dc6bfcb4eee9de60fb4249205cfe87d5fb20c98e4e60f1",
+      "parse_json_now": true,
+      "evidence_count_now": 1,
+      "observation_scope": "CURRENT_FILE_NOT_SNAPSHOT_AT_HISTORICAL_FAILURE"
+    },
+    {
+      "profile": "FinalIoDiagnosis20261109",
+      "source": "71b20f71",
+      "file": "prototype.before-conclusion.json",
+      "bytes": 4096,
+      "sha256": "5a89411e9f96cf2895146208de9b036961ff1f1659ac9d255117719c33e1214e",
+      "parse_json_now": true,
+      "evidence_count_now": 9,
+      "observation_scope": "CURRENT_FILE_NOT_SNAPSHOT_AT_HISTORICAL_FAILURE"
+    },
+    {
+      "profile": "FinalIoDiagnosis20261109",
+      "source": "71b20f71",
+      "file": "prototype.json",
+      "bytes": 4096,
+      "sha256": "5a89411e9f96cf2895146208de9b036961ff1f1659ac9d255117719c33e1214e",
+      "parse_json_now": true,
+      "evidence_count_now": 9,
+      "observation_scope": "CURRENT_FILE_NOT_SNAPSHOT_AT_HISTORICAL_FAILURE"
+    }
+  ]
+}
