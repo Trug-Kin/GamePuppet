@@ -1,0 +1,10 @@
+{
+  "kind": "WINDOWS_SYNTHETIC_UI_CONTROLLER_WITH_CORRUPTED_COPY",
+  "before_evidence": 1,
+  "after_evidence": 0,
+  "state_unchanged": false,
+  "identity_unchanged": false,
+  "bytes_unchanged": true,
+  "input_sha256": "aceaab8a98c9158085ed0d960df77414a692570e7d06bd9b1387d00516e275a1",
+  "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn."
+}

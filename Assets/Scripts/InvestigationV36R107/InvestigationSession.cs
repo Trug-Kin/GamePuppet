@@ -239,8 +239,10 @@ namespace ConRoi.Investigation.V36.R107
         {
             try{
                 if(!File.Exists(SavePath)){Message="Chưa có save điều tra ở thư mục riêng.";return false;}
-                var incoming=JsonUtility.FromJson<InvestigationSave>(File.ReadAllText(SavePath));
-                if(!InvestigationSaveValidation.TryValidate(incoming,out string validationError))throw new InvalidDataException(validationError);
+                string json=File.ReadAllText(SavePath);
+                if(!InvestigationSaveValidation.TryValidateSerializedCollections(json,out string validationError))throw new InvalidDataException(validationError);
+                var incoming=JsonUtility.FromJson<InvestigationSave>(json);
+                if(!InvestigationSaveValidation.TryValidate(incoming,out validationError))throw new InvalidDataException(validationError);
                 data=incoming;EnsureConclusions();bool cc=movement.controller.enabled;movement.controller.enabled=false;movement.transform.SetPositionAndRotation(data.position,Quaternion.Euler(0,data.yaw,0));movement.controller.enabled=cc;movement.ResetVerticalMotion();look.RestorePitch(data.pitch);gate.Restore(data.gate);
                 ResetTrial();ClipPlaying=false;ClipTime=0;UpdateClip();SetPaused(false);Page="";
                 if(data.page=="inspect"&&Has(data.inspecting))OpenEvidence(data.inspecting);else if(new[]{"cipher","dossier","compare","reconstruction","clip","conclusions","intro"}.Contains(data.page))OpenPage(data.page);else ClosePage();Message="Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.";return true;

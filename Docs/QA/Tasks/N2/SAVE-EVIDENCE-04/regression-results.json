@@ -1,0 +1,280 @@
+{
+  "unity": "6000.6.2f1",
+  "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+  "profile": "C:\\ConRoi_Nguoi2\\Test\\PlaytestProfiles\\SaveEvidence04_Regression_20261109",
+  "kind": "PLAYMODE_API_FIXTURE_NOT_NATURAL_ROUTE",
+  "missingScripts": 0,
+  "failures": 0,
+  "checks": [
+    {
+      "name": "correct_private_test_scene",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "test_scene_missing_scripts",
+      "pass": true,
+      "detail": "Empty template; not an integration-scene reference audit."
+    },
+    {
+      "name": "cli_private_profile_applied",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "initial_empty_state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "save_created_in_private_profile",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "save_load_roundtrip",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "continue_observe_save_load",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "live_api_rejects_invalid_observation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "load_resumes_safe_world",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "out_of_range_observation",
+      "pass": true,
+      "detail": "Load accepted=False; live state preserved=True; disk file unchanged=True"
+    },
+    {
+      "name": "duplicate_evidence_record",
+      "pass": true,
+      "detail": "Load accepted=False; live state preserved=True; disk file unchanged=True"
+    },
+    {
+      "name": "unknown_evidence_id",
+      "pass": true,
+      "detail": "Load accepted=False; live state preserved=True; disk file unchanged=True"
+    },
+    {
+      "name": "foreign_namespace",
+      "pass": true,
+      "detail": "Load accepted=False; live state preserved=True; disk file unchanged=True"
+    },
+    {
+      "name": "unsupported_schema",
+      "pass": true,
+      "detail": "Load accepted=False; live state preserved=True; disk file unchanged=True"
+    },
+    {
+      "name": "truncated_json",
+      "pass": true,
+      "detail": "Load accepted=False; live state preserved=True; disk file unchanged=True"
+    },
+    {
+      "name": "recover_valid_save_after_rejections",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative_observation_index",
+      "pass": true,
+      "detail": "Load accepted=False; live state preserved=True; disk file unchanged=True"
+    },
+    {
+      "name": "rejection_preserves_paused_modal",
+      "pass": true,
+      "detail": "Load accepted=False; live state preserved=True; disk file unchanged=True"
+    },
+    {
+      "name": "fixture_required_references",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "validator_null_save",
+      "pass": true,
+      "detail": "Pure API validation; not a serialized-file or UI route test."
+    },
+    {
+      "name": "validator_null_evidence_list",
+      "pass": true,
+      "detail": "Pure API validation; not a serialized-file or UI route test."
+    },
+    {
+      "name": "validator_null_evidence_record",
+      "pass": true,
+      "detail": "Pure API validation; not a serialized-file or UI route test."
+    },
+    {
+      "name": "validator_null_observations",
+      "pass": true,
+      "detail": "Pure API validation; not a serialized-file or UI route test."
+    },
+    {
+      "name": "validator_null_mapping_list",
+      "pass": true,
+      "detail": "Pure API validation; not a serialized-file or UI route test."
+    },
+    {
+      "name": "validator_null_assignment",
+      "pass": true,
+      "detail": "Pure API validation; not a serialized-file or UI route test."
+    },
+    {
+      "name": "validator_null_relations_list",
+      "pass": true,
+      "detail": "Pure API validation; not a serialized-file or UI route test."
+    },
+    {
+      "name": "validator_null_relation",
+      "pass": true,
+      "detail": "Pure API validation; not a serialized-file or UI route test."
+    },
+    {
+      "name": "validator_null_trials_list",
+      "pass": true,
+      "detail": "Pure API validation; not a serialized-file or UI route test."
+    },
+    {
+      "name": "validator_null_trial",
+      "pass": true,
+      "detail": "Pure API validation; not a serialized-file or UI route test."
+    },
+    {
+      "name": "validator_null_conclusions_list",
+      "pass": true,
+      "detail": "Pure API validation; not a serialized-file or UI route test."
+    },
+    {
+      "name": "validator_null_conclusion",
+      "pass": true,
+      "detail": "Pure API validation; not a serialized-file or UI route test."
+    },
+    {
+      "name": "validator_null_grounds",
+      "pass": true,
+      "detail": "Pure API validation; not a serialized-file or UI route test."
+    },
+    {
+      "name": "validator_null_gate",
+      "pass": true,
+      "detail": "Pure API validation; not a serialized-file or UI route test."
+    },
+    {
+      "name": "validator_nonfinite_position",
+      "pass": true,
+      "detail": "Pure API validation; not a serialized-file or UI route test."
+    },
+    {
+      "name": "validator_nonfinite_yaw",
+      "pass": true,
+      "detail": "Pure API validation; not a serialized-file or UI route test."
+    },
+    {
+      "name": "validator_nonfinite_pitch",
+      "pass": true,
+      "detail": "Pure API validation; not a serialized-file or UI route test."
+    },
+    {
+      "name": "validator_nonfinite_gate_angle",
+      "pass": true,
+      "detail": "Pure API validation; not a serialized-file or UI route test."
+    },
+    {
+      "name": "validator_nonfinite_gate_velocity",
+      "pass": true,
+      "detail": "Pure API validation; not a serialized-file or UI route test."
+    },
+    {
+      "name": "valid_schema_with_unfilled_conclusions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "relation_first_unknown",
+      "pass": true,
+      "detail": "Load accepted=False; live state preserved=True; disk file unchanged=True"
+    },
+    {
+      "name": "relation_first_empty",
+      "pass": true,
+      "detail": "Load accepted=False; live state preserved=True; disk file unchanged=True"
+    },
+    {
+      "name": "relation_first_null",
+      "pass": true,
+      "detail": "Load accepted=False; live state preserved=True; disk file unchanged=True"
+    },
+    {
+      "name": "relation_second_unknown",
+      "pass": true,
+      "detail": "Load accepted=False; live state preserved=True; disk file unchanged=True"
+    },
+    {
+      "name": "relation_second_empty",
+      "pass": true,
+      "detail": "Load accepted=False; live state preserved=True; disk file unchanged=True"
+    },
+    {
+      "name": "relation_second_null",
+      "pass": true,
+      "detail": "Load accepted=False; live state preserved=True; disk file unchanged=True"
+    },
+    {
+      "name": "relation_valid_no_relations",
+      "pass": true,
+      "detail": "Serialized-file Load/Save/Load via API fixture; no UI claim."
+    },
+    {
+      "name": "relation_valid_uncertain_note",
+      "pass": true,
+      "detail": "Serialized-file Load/Save/Load via API fixture; no UI claim."
+    },
+    {
+      "name": "relation_valid_empty_note",
+      "pass": true,
+      "detail": "Serialized-file Load/Save/Load via API fixture; no UI claim."
+    },
+    {
+      "name": "relation_valid_null_note",
+      "pass": true,
+      "detail": "Serialized-file Load/Save/Load via API fixture; no UI claim."
+    },
+    {
+      "name": "relation_valid_known_uncollected_endpoint",
+      "pass": true,
+      "detail": "Serialized-file Load/Save/Load via API fixture; no UI claim."
+    },
+    {
+      "name": "relation_valid_same_known_endpoints",
+      "pass": true,
+      "detail": "Serialized-file Load/Save/Load via API fixture; no UI claim."
+    },
+    {
+      "name": "load_actual_baseline_schema1_file",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "continue_baseline_file_in_private_profile",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "baseline_compatibility_file_unchanged",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

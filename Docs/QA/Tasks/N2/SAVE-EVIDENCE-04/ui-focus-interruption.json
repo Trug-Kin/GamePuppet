@@ -1,0 +1,36 @@
+{
+  "status": "INTERRUPTED_BEFORE_INPUT",
+  "reason": "focus helper could not obtain expected foreground PID",
+  "expected_pid": 11924,
+  "foreground_pid": 7904,
+  "utc": "2026-11-09T09:08:31.492761+00:00",
+  "page": "intro",
+  "evidence_count": 0,
+  "windows": [
+    [
+      265156,
+      "Game",
+      true
+    ],
+    [
+      134184,
+      "ConRoi_Nguoi2 - Gameplay_ThuNghiem - Windows, Mac, Linux - Unity 6.6 (6000.6.2f1) <DX11>",
+      true
+    ],
+    [
+      854430,
+      "D:\\data_unity\\6000.6.2f1\\Editor\\Unity.exe",
+      false
+    ],
+    [
+      199792,
+      "MSCTFIME UI",
+      false
+    ],
+    [
+      134186,
+      "Default IME",
+      false
+    ]
+  ]
+}

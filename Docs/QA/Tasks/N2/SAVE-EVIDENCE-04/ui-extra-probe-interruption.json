@@ -1,0 +1,8 @@
+{
+  "status": "INTERRUPTED_EXTRA_MODAL_PROBE",
+  "reason": "Foreground changed to PID7904 before extra W/mouse probe; no further input sent",
+  "utc": "2026-11-09T09:17:30.554785+00:00",
+  "data_unchanged_since_probe": true,
+  "extra_modal_W_mouse": "NOT_RUN",
+  "required_rejections_and_recovery": "Completed separately in results.json"
+}

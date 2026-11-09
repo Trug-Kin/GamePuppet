@@ -1,0 +1,710 @@
+{
+  "unity": "6000.6.2f1",
+  "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+  "kind": "SERIALIZED_FILE_PLAYMODE_API_FIXTURE_NOT_NATURAL_ROUTE",
+  "checks": [
+    {
+      "name": "private_gameplay_scene",
+      "pass": true,
+      "detail": "No integration scene or source save used"
+    },
+    {
+      "name": "private_profile",
+      "pass": true,
+      "detail": "C:\\ConRoi_Nguoi2\\Test\\PlaytestProfiles\\SaveEvidence04_Baseline_20261109\\InvestigationV36\\r107\\prototype.json"
+    },
+    {
+      "name": "new_game_empty_save_load",
+      "pass": true,
+      "detail": "Writer emits explicit evidence:[]"
+    },
+    {
+      "name": "evidence_null",
+      "pass": false,
+      "detail": "{\"case\":\"evidence_null\",\"expectedLoad\":false,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":0}"
+    },
+    {
+      "name": "evidence_null_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "evidence_missing",
+      "pass": false,
+      "detail": "{\"case\":\"evidence_missing\",\"expectedLoad\":false,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":0}"
+    },
+    {
+      "name": "evidence_missing_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "evidence_empty",
+      "pass": true,
+      "detail": "{\"case\":\"evidence_empty\",\"expectedLoad\":true,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":0}"
+    },
+    {
+      "name": "evidence_empty_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "evidence_valid",
+      "pass": true,
+      "detail": "{\"case\":\"evidence_valid\",\"expectedLoad\":true,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "evidence_valid_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "evidence_null_record",
+      "pass": true,
+      "detail": "{\"case\":\"evidence_null_record\",\"expectedLoad\":false,\"loaded\":false,\"stateUnchanged\":true,\"bytesUnchanged\":true,\"message\":\"Không tải: Vật chứng trong hồ sơ không hợp lệ hoặc bị lặp.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "evidence_null_record_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "evidence_object",
+      "pass": false,
+      "detail": "{\"case\":\"evidence_object\",\"expectedLoad\":false,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":0}"
+    },
+    {
+      "name": "evidence_object_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "evidence_string",
+      "pass": false,
+      "detail": "{\"case\":\"evidence_string\",\"expectedLoad\":false,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":0}"
+    },
+    {
+      "name": "evidence_string_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "observations_null",
+      "pass": false,
+      "detail": "{\"case\":\"observations_null\",\"expectedLoad\":false,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "observations_null_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "observations_missing_legacy_default",
+      "pass": true,
+      "detail": "{\"case\":\"observations_missing_legacy_default\",\"expectedLoad\":true,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "observations_missing_legacy_default_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "observations_null_item",
+      "pass": false,
+      "detail": "{\"case\":\"observations_null_item\",\"expectedLoad\":false,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "observations_null_item_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "mapping_null",
+      "pass": false,
+      "detail": "{\"case\":\"mapping_null\",\"expectedLoad\":false,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "mapping_null_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "mapping_missing_legacy_default",
+      "pass": true,
+      "detail": "{\"case\":\"mapping_missing_legacy_default\",\"expectedLoad\":true,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "mapping_missing_legacy_default_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "mapping_empty",
+      "pass": true,
+      "detail": "{\"case\":\"mapping_empty\",\"expectedLoad\":true,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "mapping_empty_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "mapping_null_record",
+      "pass": false,
+      "detail": "{\"case\":\"mapping_null_record\",\"expectedLoad\":false,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "mapping_null_record_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "relations_null",
+      "pass": false,
+      "detail": "{\"case\":\"relations_null\",\"expectedLoad\":false,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "relations_null_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "relations_missing_legacy_default",
+      "pass": true,
+      "detail": "{\"case\":\"relations_missing_legacy_default\",\"expectedLoad\":true,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "relations_missing_legacy_default_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "relations_empty",
+      "pass": true,
+      "detail": "{\"case\":\"relations_empty\",\"expectedLoad\":true,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "relations_empty_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "relations_null_record",
+      "pass": true,
+      "detail": "{\"case\":\"relations_null_record\",\"expectedLoad\":false,\"loaded\":false,\"stateUnchanged\":true,\"bytesUnchanged\":true,\"message\":\"Không tải: Liên hệ trong hồ sơ tham chiếu vật chứng không tồn tại.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "relations_null_record_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "trials_null",
+      "pass": false,
+      "detail": "{\"case\":\"trials_null\",\"expectedLoad\":false,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "trials_null_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "trials_missing_legacy_default",
+      "pass": true,
+      "detail": "{\"case\":\"trials_missing_legacy_default\",\"expectedLoad\":true,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "trials_missing_legacy_default_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "trials_empty",
+      "pass": true,
+      "detail": "{\"case\":\"trials_empty\",\"expectedLoad\":true,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "trials_empty_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "trials_null_record",
+      "pass": false,
+      "detail": "{\"case\":\"trials_null_record\",\"expectedLoad\":false,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "trials_null_record_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "conclusions_null",
+      "pass": false,
+      "detail": "{\"case\":\"conclusions_null\",\"expectedLoad\":false,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "conclusions_null_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "conclusions_missing_legacy_default",
+      "pass": true,
+      "detail": "{\"case\":\"conclusions_missing_legacy_default\",\"expectedLoad\":true,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "conclusions_missing_legacy_default_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "conclusions_empty",
+      "pass": true,
+      "detail": "{\"case\":\"conclusions_empty\",\"expectedLoad\":true,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "conclusions_empty_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "conclusions_null_record",
+      "pass": false,
+      "detail": "{\"case\":\"conclusions_null_record\",\"expectedLoad\":false,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "conclusions_null_record_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "grounds_null",
+      "pass": false,
+      "detail": "{\"case\":\"grounds_null\",\"expectedLoad\":false,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "grounds_null_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "grounds_missing_legacy_default",
+      "pass": true,
+      "detail": "{\"case\":\"grounds_missing_legacy_default\",\"expectedLoad\":true,\"loaded\":true,\"stateUnchanged\":false,\"bytesUnchanged\":true,\"message\":\"Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "grounds_missing_legacy_default_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "out_of_range_observation",
+      "pass": true,
+      "detail": "{\"case\":\"out_of_range_observation\",\"expectedLoad\":false,\"loaded\":false,\"stateUnchanged\":true,\"bytesUnchanged\":true,\"message\":\"Không tải: Chỉ số quan sát trong hồ sơ không hợp lệ.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "out_of_range_observation_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "duplicate_evidence",
+      "pass": true,
+      "detail": "{\"case\":\"duplicate_evidence\",\"expectedLoad\":false,\"loaded\":false,\"stateUnchanged\":true,\"bytesUnchanged\":true,\"message\":\"Không tải: Vật chứng trong hồ sơ không hợp lệ hoặc bị lặp.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "duplicate_evidence_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "unknown_evidence",
+      "pass": true,
+      "detail": "{\"case\":\"unknown_evidence\",\"expectedLoad\":false,\"loaded\":false,\"stateUnchanged\":true,\"bytesUnchanged\":true,\"message\":\"Không tải: Vật chứng trong hồ sơ không hợp lệ hoặc bị lặp.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "unknown_evidence_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "relation_unknown_endpoint",
+      "pass": true,
+      "detail": "{\"case\":\"relation_unknown_endpoint\",\"expectedLoad\":false,\"loaded\":false,\"stateUnchanged\":true,\"bytesUnchanged\":true,\"message\":\"Không tải: Liên hệ trong hồ sơ tham chiếu vật chứng không tồn tại.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "relation_unknown_endpoint_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "relation_null_record",
+      "pass": true,
+      "detail": "{\"case\":\"relation_null_record\",\"expectedLoad\":false,\"loaded\":false,\"stateUnchanged\":true,\"bytesUnchanged\":true,\"message\":\"Không tải: Liên hệ trong hồ sơ tham chiếu vật chứng không tồn tại.\",\"beforeEvidence\":2,\"afterEvidence\":2}"
+    },
+    {
+      "name": "relation_null_record_recovery_save_load",
+      "pass": true,
+      "detail": "Valid fixture restored; Load/continue/Save/Load"
+    },
+    {
+      "name": "baseline_fixture_has_explicit_evidence_array",
+      "pass": true,
+      "detail": "Read-only old fixture"
+    },
+    {
+      "name": "baseline_schema1_load",
+      "pass": true,
+      "detail": "Correct baseline API fixture; not UI fixture"
+    },
+    {
+      "name": "baseline_continue_save_load",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "baseline_source_bytes_unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "empty_new_game_load_after_progress",
+      "pass": true,
+      "detail": "Explicit [] remains legitimate even after a progressed session"
+    }
+  ],
+  "failures": 14,
+  "audit": [
+    {
+      "case": "evidence_null",
+      "expectedLoad": false,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 0
+    },
+    {
+      "case": "evidence_missing",
+      "expectedLoad": false,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 0
+    },
+    {
+      "case": "evidence_empty",
+      "expectedLoad": true,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 0
+    },
+    {
+      "case": "evidence_valid",
+      "expectedLoad": true,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "evidence_null_record",
+      "expectedLoad": false,
+      "loaded": false,
+      "stateUnchanged": true,
+      "bytesUnchanged": true,
+      "message": "Không tải: Vật chứng trong hồ sơ không hợp lệ hoặc bị lặp.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "evidence_object",
+      "expectedLoad": false,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 0
+    },
+    {
+      "case": "evidence_string",
+      "expectedLoad": false,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 0
+    },
+    {
+      "case": "observations_null",
+      "expectedLoad": false,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "observations_missing_legacy_default",
+      "expectedLoad": true,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "observations_null_item",
+      "expectedLoad": false,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "mapping_null",
+      "expectedLoad": false,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "mapping_missing_legacy_default",
+      "expectedLoad": true,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "mapping_empty",
+      "expectedLoad": true,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "mapping_null_record",
+      "expectedLoad": false,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "relations_null",
+      "expectedLoad": false,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "relations_missing_legacy_default",
+      "expectedLoad": true,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "relations_empty",
+      "expectedLoad": true,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "relations_null_record",
+      "expectedLoad": false,
+      "loaded": false,
+      "stateUnchanged": true,
+      "bytesUnchanged": true,
+      "message": "Không tải: Liên hệ trong hồ sơ tham chiếu vật chứng không tồn tại.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "trials_null",
+      "expectedLoad": false,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "trials_missing_legacy_default",
+      "expectedLoad": true,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "trials_empty",
+      "expectedLoad": true,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "trials_null_record",
+      "expectedLoad": false,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "conclusions_null",
+      "expectedLoad": false,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "conclusions_missing_legacy_default",
+      "expectedLoad": true,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "conclusions_empty",
+      "expectedLoad": true,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "conclusions_null_record",
+      "expectedLoad": false,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "grounds_null",
+      "expectedLoad": false,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "grounds_missing_legacy_default",
+      "expectedLoad": true,
+      "loaded": true,
+      "stateUnchanged": false,
+      "bytesUnchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "out_of_range_observation",
+      "expectedLoad": false,
+      "loaded": false,
+      "stateUnchanged": true,
+      "bytesUnchanged": true,
+      "message": "Không tải: Chỉ số quan sát trong hồ sơ không hợp lệ.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "duplicate_evidence",
+      "expectedLoad": false,
+      "loaded": false,
+      "stateUnchanged": true,
+      "bytesUnchanged": true,
+      "message": "Không tải: Vật chứng trong hồ sơ không hợp lệ hoặc bị lặp.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "unknown_evidence",
+      "expectedLoad": false,
+      "loaded": false,
+      "stateUnchanged": true,
+      "bytesUnchanged": true,
+      "message": "Không tải: Vật chứng trong hồ sơ không hợp lệ hoặc bị lặp.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "relation_unknown_endpoint",
+      "expectedLoad": false,
+      "loaded": false,
+      "stateUnchanged": true,
+      "bytesUnchanged": true,
+      "message": "Không tải: Liên hệ trong hồ sơ tham chiếu vật chứng không tồn tại.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    },
+    {
+      "case": "relation_null_record",
+      "expectedLoad": false,
+      "loaded": false,
+      "stateUnchanged": true,
+      "bytesUnchanged": true,
+      "message": "Không tải: Liên hệ trong hồ sơ tham chiếu vật chứng không tồn tại.",
+      "beforeEvidence": 2,
+      "afterEvidence": 2
+    }
+  ]
+}
