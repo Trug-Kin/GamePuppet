@@ -30,3 +30,17 @@ Prompt nhận việc: “Trên work/ui-onboarding-review từ fcbb7e19, chuẩn 
 - Mã phiên / trạng thái người thử thực tế:
 - Kiểm và bằng chứng / đề nghị gửi người 2:
 - Commit kết quả / giới hạn / bàn giao tích hợp:
+
+
+## UI/UX & Tích hợp — nhận RUNTIME-INTEGRATION-01
+
+- Người dùng giao nhận/review năm gói Gameplay & Dữ liệu đến91835c80 từ baseline chung0d878e3b. D giữ nguyên nhánh/ebd92771 và deletion/untracked của người dùng; snapshot trước thao tác ở checkout C.
+- Dùng nhánh review/runtime-integration-20261109 tại C:/ConRoi_CheckoutTest, merge đầy đủ d765ed92 giữ commit UI riêng, không main/chore/nhánh thành viên. Không sửa session partial hoặc scene/map.
+- [Acceptance/review và kết quả scene riêng](../QA/Tasks/N3/RUNTIME-INTEGRATION-01/README.md). Scene ConRoi_Chinh/profile mới, UI1080p phải đo render thật; người mới NOT_RUN. Runtime lỗi sẽ lập bước tái hiện cho Gameplay & Dữ liệu, không sửa song song.
+
+### Kết quả RUNTIME-INTEGRATION-01 — 09/11/2026
+
+- Nhận đủ runtime91835c80 trên review branch C, giữ lịch sử UI riêng; HEAD đã chạy c18524a3b. Compile/reference và tuyến controller ghi→mục tiêu→phone/clip/cơ cấu→bàn→rời/quay lại→F5/F6 đạt phạm vi đại diện. Không sửa session partial/scene/map.
+- Kiểm 7 mẫu Load từ chối và4 lỗi IO F5 trong profile riêng; state/bytes/recovery và P/E/Esc/modal đạt lượt này. Phát hiện evidence=null được F6 nhận, evidence4→0 hai lần: INT-SAVE-NULL-LIST-01 OPEN gửi Gameplay & Dữ liệu, không vá song song.
+- UI1920×1080 kiểm các trang tuyến đại diện; mật mã/toàn tuyến/seek-clear-holds trong scene chung chưa kiểm. Load feedback/P-close OPEN riêng; người mới NOT_RUN. Không chốt baseline task mới hoặc push.
+- Chi tiết, bước tái hiện, hash và giới hạn: [báo cáo](../QA/Tasks/N3/RUNTIME-INTEGRATION-01/README.md).

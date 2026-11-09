@@ -1,0 +1,22 @@
+546833aace5f59c0c98349ebe0fb7cd33cbe5df0 fix(save): validate incoming investigation data before applying state
+57dcbb038223b7d9b7fa59548f43cd77a1a96a13 docs(gameplay): hand off save validation contract and test evidence
+bb88d4cc97ad78427320d03a64f0f49f4050857b test(save): add controller sandbox for Load guard verification
+810168d2cc3dea11434b20055226476f19120ae0 docs(gameplay): record Load guard controller verification and UI feedback request
+5b88f2457beaadb404b7a2f6701988ad5f17b43e test(contracts): audit dangling relation references and propose scoped follow-up
+aee7d5592b082a20dc0c849160cd4c4120680011 fix(save): reject relation endpoints without evidence definitions
+ea49025a06b9e5497c545aa3193562a1758c13f0 test(save): verify rejected save files byte for byte
+abd0ea7ef10ff0ac226eb3f3ed2b29c4456d19ac docs(gameplay): hand off relation reference guard and scoped verification
+490f7a021f6218308da407f45388a152ab635bb9 docs(gameplay): consolidate save guard handoff and preserve interrupted null UI attempt
+148440b7a851f9578701377b81367b61b46e7e16 docs(gameplay): complete null save UI checks and combined handoff
+b76828a92eb47ced8fed09e73bc644a8d016ff6d fix(save): replace committed save only after temporary write completes
+b26e8404021e061e8ea92cd4ad01df9e30cb7002 test(save): add isolated write failure and recovery checks
+b1858a78aeab10edf95d1e8be014132eeabb7353 test(save): allow focused baseline compatibility verification
+b4bf64846df349cddfe6ace48c9a0f063acdaf5d docs(gameplay): report write failure recovery checks and UI test limit
+a954a6a6ca270c69a1216c235e0465bfc4df53fe docs(gameplay): complete SAVE-WRITE-03 UI controller recovery checks
+7cfcd7caa3e98cce0cc04ef1b9d224717e70bfcd docs(gameplay): propose context-bound trial playback task
+8c37b8665d7758a090ff34b138fae164200d75cf fix(gameplay): suspend trial timeline outside reconstruction context
+b09c77908219efe47b9e6876ce21b82c6606ab74 test(gameplay): add trial context lifecycle and controller probes
+00c17147953237eab8b52ed8347cae9a267965b3 docs(gameplay): hand off verified TRIAL-CONTEXT-01 lifecycle results
+1bd2ebd7f7143ba549eab889642cf1e191f7333e fix(gameplay): update floor progress only from accepted observations
+45917774b301f59073f8233287575783ebaf0414 test(gameplay): cover observation progress ordering and persistence
+91835c80e040d4331b967b6a676016bcd769c2cb docs(gameplay): hand off observation progress contract and checks

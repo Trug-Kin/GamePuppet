@@ -1,0 +1,228 @@
+{
+  "runtime": "91835c80e040d4331b967b6a676016bcd769c2cb",
+  "tested_checkout": "c18524a3bc07f74fab16244f2d55c6888afb9284",
+  "merge": "d765ed923bc7984c5c29667275b81d1db2a4e216",
+  "scene": "Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity",
+  "unity": "6000.6.2f1",
+  "input": "Windows synthetic keyboard/mouse; real integration scene; no grants/teleport/API Save/Load",
+  "reference": {
+    "scene": "Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity",
+    "unity": "6000.6.2f1",
+    "components": 32958,
+    "missingScripts": 0,
+    "brokenReferences": [],
+    "sessionCount": 1,
+    "bindings": {
+      "movement": true,
+      "look": true,
+      "eye": true,
+      "gate": true,
+      "modelGate": true,
+      "stageCamera": true,
+      "stageTexture": true
+    }
+  },
+  "observation_final": [
+    {
+      "name": "record_updates_goal",
+      "pass_": true
+    },
+    {
+      "name": "repeat_no_duplicate",
+      "pass_": true
+    },
+    {
+      "name": "P_updates_phone_goal",
+      "pass_": true
+    },
+    {
+      "name": "load_await_review",
+      "pass_": true
+    },
+    {
+      "name": "load_reviewed",
+      "pass_": true
+    },
+    {
+      "name": "no_early_information",
+      "pass_": true
+    }
+  ],
+  "trial": {
+    "R_away_frozen": true,
+    "manual_pause_retained": true,
+    "P_running_away_frozen": true,
+    "no_catchup": true,
+    "completed_one_record": true,
+    "reopen_record_unchanged": true,
+    "load_retains_record_resets_transient": true,
+    "continue_save_load": true
+  },
+  "guard_attempt": [
+    {
+      "case": "observation-range",
+      "state_unchanged": true,
+      "identity_unchanged": true,
+      "bytes_unchanged": true,
+      "message": "Không tải: Chỉ số quan sát trong hồ sơ không hợp lệ.",
+      "sha256": "81d005a4596158884dae3229d24f996b23dffce6c234a7bf2f1b57791b30b8d6"
+    },
+    {
+      "case": "duplicate-evidence",
+      "state_unchanged": true,
+      "identity_unchanged": true,
+      "bytes_unchanged": true,
+      "message": "Không tải: Vật chứng trong hồ sơ không hợp lệ hoặc bị lặp.",
+      "sha256": "5c672859f935140d30a4dd3c3c8ed7f7c2d4d36e4f6379165f9c848ee0fbdc24"
+    },
+    {
+      "case": "structure-null",
+      "state_unchanged": false,
+      "identity_unchanged": false,
+      "bytes_unchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "sha256": "763f4854b8f18f25108e2e811abcfb1bec4de63e7b870228ecc4b64595a2f953"
+    }
+  ],
+  "guard_continuation": [
+    {
+      "case": "structure-truncated",
+      "state_unchanged": true,
+      "identity_unchanged": true,
+      "bytes_unchanged": true,
+      "message": "Không tải: JSON parse error: Missing a closing quotation mark in string.",
+      "sha256": "8816ed872545ba4c694228abfe5cd15faf894fa50f4348477ce82feb48d3d685",
+      "valid_recovery": true
+    },
+    {
+      "case": "relation-first",
+      "state_unchanged": true,
+      "identity_unchanged": true,
+      "bytes_unchanged": true,
+      "message": "Không tải: Liên hệ trong hồ sơ tham chiếu vật chứng không tồn tại.",
+      "sha256": "c1f8364f992ffdfa3a6926e621e0a85316c99a0e10e6bc2a90775e496be709b7",
+      "valid_recovery": true
+    },
+    {
+      "case": "relation-second",
+      "state_unchanged": true,
+      "identity_unchanged": true,
+      "bytes_unchanged": true,
+      "message": "Không tải: Liên hệ trong hồ sơ tham chiếu vật chứng không tồn tại.",
+      "sha256": "64bd6961899916e3f8b7337419a9742524cbdb7787c9493422f3739aa78daaba",
+      "valid_recovery": true
+    },
+    {
+      "case": "relation-null-first",
+      "state_unchanged": true,
+      "identity_unchanged": true,
+      "bytes_unchanged": true,
+      "message": "Không tải: Liên hệ trong hồ sơ tham chiếu vật chứng không tồn tại.",
+      "sha256": "1598e9144be819fd762a0dabc80fb2a8f519e5d931207f49b28536ab72d52a6a",
+      "valid_recovery": true
+    },
+    {
+      "case": "relation-null-record",
+      "state_unchanged": true,
+      "identity_unchanged": true,
+      "bytes_unchanged": true,
+      "message": "Không tải: Liên hệ trong hồ sơ tham chiếu vật chứng không tồn tại.",
+      "sha256": "7a0d054f4c0b355fb67a5b5a21d10825d281043c65cfbbdfdaf3270b4cec714d",
+      "valid_recovery": true
+    }
+  ],
+  "write": [
+    {
+      "case": "temp-directory",
+      "error": "Không lưu được: Access to the path 'C:\\ConRoi_CheckoutTest\\Test\\PlaytestProfiles\\RuntimeIntegration20261109\\InvestigationV36\\r107\\prototype.json.tmp' is denied.",
+      "old_save_unchanged": true,
+      "not_success": true,
+      "old_load_ok": true,
+      "recovered_save_load": true
+    },
+    {
+      "case": "temp-open-denied",
+      "error": "Không lưu được: Sharing violation on path C:\\ConRoi_CheckoutTest\\Test\\PlaytestProfiles\\RuntimeIntegration20261109\\InvestigationV36\\r107\\prototype.json.tmp",
+      "old_save_unchanged": true,
+      "not_success": true,
+      "old_load_ok": true,
+      "recovered_save_load": true
+    },
+    {
+      "case": "destination-replace-denied",
+      "error": "Không lưu được: The process cannot access the file because it is being used by another process.",
+      "old_save_unchanged": true,
+      "not_success": true,
+      "old_load_ok": true,
+      "recovered_save_load": true
+    },
+    {
+      "case": "temp-replace-denied",
+      "error": "Không lưu được: The process cannot access the file because it is being used by another process.",
+      "old_save_unchanged": true,
+      "not_success": true,
+      "old_load_ok": true,
+      "recovered_save_load": true
+    }
+  ],
+  "navigation": [
+    {
+      "cycle": 1,
+      "P_open": true,
+      "modal_blocks_W": true,
+      "P_close": true
+    },
+    {
+      "cycle": 2,
+      "P_open": true,
+      "modal_blocks_W": true,
+      "P_close": true
+    },
+    {
+      "cycle": 3,
+      "P_open": true,
+      "modal_blocks_W": true,
+      "P_close": true
+    },
+    {
+      "pause": true,
+      "pause_blocks_W": true,
+      "resume": true,
+      "move_after_resume": true
+    }
+  ],
+  "modal_and_new_issue": [
+    {
+      "context": "dossier",
+      "state_unchanged": true,
+      "bytes_unchanged": true,
+      "context_preserved": true,
+      "error": "Không tải: Liên hệ trong hồ sơ tham chiếu vật chứng không tồn tại.",
+      "closed_and_movement_enabled": true
+    },
+    {
+      "context": "pause",
+      "state_unchanged": true,
+      "bytes_unchanged": true,
+      "context_preserved": true,
+      "error": "Không tải: Liên hệ trong hồ sơ tham chiếu vật chứng không tồn tại.",
+      "closed_and_movement_enabled": true
+    },
+    {
+      "context": "evidence-null-list-repro2",
+      "before_evidence": 4,
+      "after_evidence": 0,
+      "identity_changed": true,
+      "bytes_unchanged": true,
+      "message": "Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.",
+      "sha256": "0d0821ce14d5a6a6ac77ce8472ba97362e9df787ae6799c2b85d715633fbbce8"
+    }
+  ],
+  "post_error": {
+    "E_opens_table": true,
+    "game_pause_time_frozen": true,
+    "manual_pause_after_game_pause": true
+  },
+  "newcomer": "NOT_RUN",
+  "overall": "REVIEW_REQUIRED: INT-SAVE-NULL-LIST-01 OPEN; tested core flow passed with listed limits"
+}

@@ -1,3 +1,13 @@
+# Nhận kiểm năm gói runtime — 09/11/2026
+
+UI/UX & Tích hợp đã review đủ22 commit từ baseline0d878e3b đến91835c80. Nhận tại `review/runtime-integration-20261109`, checkout riêng C:/ConRoi_CheckoutTest, merge d765ed92 giữ lịch sử UI riêng. **HEAD chạy Unity6000.6.2f1: c18524a3bc07f74fab16244f2d55c6888afb9284**; commit báo cáo sau đó không được gọi là nguồn chạy lại. Scene `Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity`. Không cần wiring mới.
+
+Tuyến ghi→mục tiêu→bàn→rời/quay lại→save/load đạt kỹ thuật phạm vi đại diện bằng input Windows tổng hợp. **Tổng thể REVIEW_REQUIRED:** phát hiện mới `evidence:null` được F6 nhận và thay state4→0, đã ghi INT-SAVE-NULL-LIST-01 gửi Gameplay & Dữ liệu; không sửa session partial. UI1080p có kiểm trang đại diện, còn Load feedback/P-close OPEN riêng; người mới NOT_RUN. Chưa chốt lại baseline ba nhánh hoặc merge main; D:/ConRoi cùng deletion/untracked giữ nguyên.
+
+[Báo cáo và yêu cầu tái hiện](../QA/Tasks/N3/RUNTIME-INTEGRATION-01/README.md), [kết quả riêng scene chung](../QA/Tasks/N3/RUNTIME-INTEGRATION-01/integration-results.json). Các trạng thái/baseline cũ dưới đây là lịch sử, không phải kết luận năm gói mới.
+
+---
+
 # Chốt nhận việc 08/11/2026 — fcbb7e19 / biên nhận 55d7f04
 
 Kết quả hiện hành: [bàn giao nhóm](TeamHandoff20261108/README.md), [audit Git/LFS](TeamHandoff20261108/audit.json).

@@ -1,0 +1,48 @@
+{
+  "settings_and_render_textures": [
+    {
+      "path": "ProjectSettings/EditorBuildSettings.asset",
+      "before_sha256": "61b81004081de287d300738d601bb2002379ac1d6f5f6c8c51f9e76675041106",
+      "post_sha256": "61b81004081de287d300738d601bb2002379ac1d6f5f6c8c51f9e76675041106",
+      "normalized_equal": true,
+      "original_bytes_restored": true
+    },
+    {
+      "path": "ProjectSettings/ProjectAuditorSettings.asset",
+      "before_sha256": "9e68444b9bda981e2927a98df9edf69ea88362f0c6b7f3c81b39b9d515d2a416",
+      "post_sha256": "9e68444b9bda981e2927a98df9edf69ea88362f0c6b7f3c81b39b9d515d2a416",
+      "normalized_equal": true,
+      "original_bytes_restored": true
+    },
+    {
+      "path": "ProjectSettings/QualitySettings.asset",
+      "before_sha256": "941f6673697bbe0579ce452e3e3284f6216087af0d04355c0d3c30d3ef9712d0",
+      "post_sha256": "941f6673697bbe0579ce452e3e3284f6216087af0d04355c0d3c30d3ef9712d0",
+      "normalized_equal": true,
+      "original_bytes_restored": true
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/Reconstruction.renderTexture",
+      "post_sha256": "a9399d95b60239e04c9305ff29443acf417be64254b900782759397a13cf764d",
+      "head_sha256": "a9399d95b60239e04c9305ff29443acf417be64254b900782759397a13cf764d",
+      "byte_equal": true,
+      "normalized_equal": true,
+      "action": "preserved bytes; no product edit staged"
+    },
+    {
+      "path": "Assets/Art/InvestigationV36/R104/RepairClip.renderTexture",
+      "post_sha256": "39dcd423db3662a6df6d1e7647a6e20d7241ac7309dab64cd845ab45a597d602",
+      "head_sha256": "39dcd423db3662a6df6d1e7647a6e20d7241ac7309dab64cd845ab45a597d602",
+      "byte_equal": true,
+      "normalized_equal": true,
+      "action": "preserved bytes; no product edit staged"
+    }
+  ],
+  "protected_main": {
+    "D_branch": "work/ui-onboarding-review",
+    "D_head": "ebd92771047435e53975205b35bb8213c25cc779",
+    "D_status_same": true,
+    "D_status_before_sha256": "bc787a389f5476770c8f37666f7816ba69a9b6b4a607b2d9d1610beeb86cfdfd",
+    "D_status_after_sha256": "bc787a389f5476770c8f37666f7816ba69a9b6b4a607b2d9d1610beeb86cfdfd"
+  }
+}

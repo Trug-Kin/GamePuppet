@@ -1,0 +1,90 @@
+{
+  "tested_head": "c18524a3bc07f74fab16244f2d55c6888afb9284",
+  "runtime": "91835c80e040d4331b967b6a676016bcd769c2cb",
+  "files": [
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor.meta",
+      "sha256": "9046fa3546baeb8c3d128944b327b5b3ee0a5575e96039843cee94091ff4233e"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/ObservationProgressChecks.cs",
+      "sha256": "9e182dbd413856c47cc625e96692002b275fd1409519366bdd221a8c1a1cfc3f"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/ObservationProgressChecks.cs.meta",
+      "sha256": "198cea8cc2301de4774b7cb22352cd46d5d1b44fb4f108cec3c2735bc35af8d9"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/RelationReferenceAudit.cs",
+      "sha256": "1bfec1580841391973661ad4b49c711c50ce98de8e1428561da90f1dfa7a8369"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/RelationReferenceAudit.cs.meta",
+      "sha256": "70f7c0eb0b105f590ae134a87c9848d7b2b5228734ee905cfddd9ff8b8835ecf"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/SaveGuardControllerChecks.cs",
+      "sha256": "4fb20a2d0e85d4a579ffca74189fd79a22bfc6c1f0a3abb4eebe41d39f02291a"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/SaveGuardControllerChecks.cs.meta",
+      "sha256": "3e6e6c5be4c0e482e40d766355abf4c7d0d08d0383e9f2908dac533fd94515c2"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/SaveLoadContractChecks.cs",
+      "sha256": "8edb0d94c4c08ecab50d6efaafa12e1fb32096454b0985682e484922fd126865"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/SaveLoadContractChecks.cs.meta",
+      "sha256": "1e05cf2d0903355c9a0126bef1215e56fec87bd7acd0f3d13b364da7867284b6"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/SaveWriteContractChecks.cs",
+      "sha256": "0380c0cd38b1324b6c86354622d7d71faa239e07530abc149646714ce5dfc779"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/SaveWriteContractChecks.cs.meta",
+      "sha256": "193d817be9cca6eec7bac10e1cb8aa2f4229ceee54dc3a9b0fdadc34a294bf2b"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/TrialContextControllerChecks.cs",
+      "sha256": "b65687cbbe1a8e3e8379836355160a590c3110f38adddc7d1f3f27d661a64c29"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/TrialContextControllerChecks.cs.meta",
+      "sha256": "d66764b47643b3e39add19584bb45cb9b12f6b2f98e144a749ec22917d3f2559"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/TrialPlaybackContextChecks.cs",
+      "sha256": "a908177e241ac083dfa0244a29c755e72e03708e9d985b8607a9733245df5463"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/TrialPlaybackContextChecks.cs.meta",
+      "sha256": "cb42123424a5c988e53c8cda2b5a065c9bfe4d2a61621e82104c10a2b2995dc1"
+    },
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationOnboarding.cs",
+      "sha256": "b8b2b97cbb3dbc8f23735c0df70790caa8d36d66726eace56679b498b25d62c7"
+    },
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSaveFile.cs",
+      "sha256": "c03327ff301bf414736e81923e2aa485156c3a633ecafce0c2e8ff18084807fb"
+    },
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSaveFile.cs.meta",
+      "sha256": "e2cb0fe60b18ec7a3a868711973bc8d9a55b17d2b8bcfd76c3a475049e01ed67"
+    },
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSaveValidation.cs",
+      "sha256": "b05b72a9866a905dd495257797f4136ff045ba983a4b4665bd212af9ad7e64c0"
+    },
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSaveValidation.cs.meta",
+      "sha256": "33cd4c4928db22b6c1d765d404fd5dde4ae22ef2f5befa821113ccbbebdae61c"
+    },
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSession.cs",
+      "sha256": "abcdd80ae094d0a837c283abfae7815f4972f71366835b477b6b3e5dacbc6525"
+    }
+  ]
+}
