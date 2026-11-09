@@ -1,0 +1,31 @@
+{
+  "sourceCommit": "17b1f6e25ebdc8c15c13395e2f0eac1ce551c664",
+  "testedRegressionAndUICommit": "f73631ae99ecec5aadbcf31cfa02dcdce10f8b8a",
+  "focusedApi": "78 assertions run before commits; unchanged source/tool bytes as in recorded commits",
+  "files": [
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSaveValidation.cs",
+      "sha256": "6d3b324a4eb016af67c049571e08dc381bfcfdad2ec7afb4e94cbb3f63d930ea"
+    },
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSession.cs",
+      "sha256": "53adb6c261c9d3d264d8a3a86faff9fd4e6a604e158df2fb195957b6f1b37db4"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/SaveEvidenceCollectionChecks.cs",
+      "sha256": "6cf327e8807612830cd51e8b48cf0b5574e50375d3760a573bd0dcb5a2daea99"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/SaveEvidenceCollectionChecks.cs.meta",
+      "sha256": "29537dd6724df43e26db56c4168d0c024b902403889fe9cc873d0993769c2d02"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/SaveGuardControllerChecks.cs",
+      "sha256": "4fb20a2d0e85d4a579ffca74189fd79a22bfc6c1f0a3abb4eebe41d39f02291a"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "sha256": "1e4d3517d23750d2470a70d35343e19f34e3cf209416bc0d169ab73601fc5044"
+    }
+  ]
+}

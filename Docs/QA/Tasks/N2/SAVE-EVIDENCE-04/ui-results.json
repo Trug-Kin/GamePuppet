@@ -1,0 +1,59 @@
+{
+  "rejections": [
+    {
+      "case": "evidence-null",
+      "kind": "WINDOWS_SYNTHETIC_UI_WITH_CORRUPTED_COPY",
+      "state_unchanged": true,
+      "bytes_unchanged": true,
+      "sha256": "2c5648adead087309d93c6a9ababa76ffcbb2a2557900b89b55b47135747e723",
+      "error": "Không tải: Danh sách evidence trong hồ sơ không hợp lệ; không nhận null hoặc mục null.",
+      "pause_blocks_movement": true,
+      "P_E_Esc_movement": true,
+      "bad_bytes_still_unchanged": true,
+      "valid_recovery_continue_save_load": true
+    },
+    {
+      "case": "evidence-missing",
+      "kind": "WINDOWS_SYNTHETIC_UI_WITH_CORRUPTED_COPY",
+      "state_unchanged": true,
+      "bytes_unchanged": true,
+      "sha256": "f4023ba626b41788a768ccba92e4caf8a72322827bc892ee641815d72135a077",
+      "error": "Không tải: Hồ sơ thiếu trường danh sách vật chứng (evidence).",
+      "pause_blocks_movement": true,
+      "P_E_Esc_movement": true,
+      "bad_bytes_still_unchanged": true,
+      "valid_recovery_continue_save_load": true
+    },
+    {
+      "case": "evidence-null-record",
+      "kind": "WINDOWS_SYNTHETIC_UI_WITH_CORRUPTED_COPY",
+      "state_unchanged": true,
+      "bytes_unchanged": true,
+      "sha256": "3e1653c9815e28b91e869469d4cf75cbaad8434cf016eb574432f00c9ecbaa65",
+      "error": "Không tải: Danh sách evidence trong hồ sơ không hợp lệ; không nhận null hoặc mục null.",
+      "pause_blocks_movement": true,
+      "P_E_Esc_movement": true,
+      "bad_bytes_still_unchanged": true,
+      "valid_recovery_continue_save_load": true
+    }
+  ],
+  "tested_commit": "f73631ae99ecec5aadbcf31cfa02dcdce10f8b8a",
+  "initial_UI_empty_and_progress_created_without_API_grants": true,
+  "explicit_empty_NewGame_load": true,
+  "continue_record_repeat_no_duplicate": true,
+  "continue_new_position_save_load": true,
+  "render_width": 1536,
+  "render_height": 746,
+  "attempts": [
+    {
+      "status": "INTERRUPTED_BEFORE_INPUT",
+      "file": "focus-interruption.json"
+    },
+    {
+      "status": "REQUIRED_UI_CASES_COMPLETED_EXTRA_MODAL_PROBE_INTERRUPTED",
+      "file": "second-focus-interruption.json"
+    }
+  ],
+  "extra_modal_W_mouse": "NOT_RUN_FOCUS_LOST; pause/W already completed for three rejection cases",
+  "kind": "GAMEPLAY_PROXY_ENVIRONMENT_WINDOWS_SYNTHETIC_INPUT_NOT_SHARED_SCENE_NOT_NEWCOMER"
+}

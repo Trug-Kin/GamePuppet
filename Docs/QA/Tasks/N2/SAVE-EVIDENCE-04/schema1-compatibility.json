@@ -1,0 +1,17 @@
+{
+  "baseline": "0d878e3b",
+  "fixture": "Test\\PlaytestProfiles\\SaveContractBaselineRetry_20261108\\InvestigationV36\\r107\\prototype.json",
+  "fixture_sha256": "5ecaf8a1d5bdf679c4b180a34965de0861940c02ce9807a6e7564a03e7aa35cb",
+  "fixture_evidence_count": 2,
+  "fixture_root_collections": {
+    "evidence": "list",
+    "mapping": "list",
+    "relations": "list",
+    "trials": "list",
+    "conclusions": "list"
+  },
+  "rule_evidence": "Required JSON array; explicit null/missing/non-array rejected; [] valid including New Game",
+  "other_missing": "Preserve existing default behavior for absent mapping/relations/trials/conclusions and observations/grounds; no new migration/repair",
+  "explicit_null": "Reject present null/non-array collections and null record elements already prohibited by typed validation; observation null elements rejected instead of coercing to index0",
+  "dependency": "Existing locked com.unity.nuget.newtonsoft-json 3.2.1; no package changes"
+}

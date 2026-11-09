@@ -171,3 +171,18 @@ Prompt nhận việc: “Trên work/runtime-contracts-baseline từ fcbb7e19, x�
 - Công cụ/commit thực sự kiểm45917774:35/35 API và14/14 UI/controller input Windows tổng hợp đạt trong scene Gameplay/profile mới. Kiểm khám-chưa-ghi, thứ tự/lặp, guard, skip, không cấp dữ kiện khác, ba bước F5/F6 và tiếp tục. Không chạy lại các bộ save/trial cũ.
 - [Báo cáo, acceptance trước sửa, bằng chứng và giới hạn](../QA/Tasks/N2/OBS-PROGRESS-01/README.md). Scene proxy không lưu, Editor đã stop/quit/dirtyfalse; settings byte bảo toàn rồi phục hồi khi chỉ khác newline; raw/profile ngoài Git, untracked cũ giữ nguyên.
 - UI/UX & Tích hợp nhận đủ1bd2ebd7→45917774→commit tài liệu, không wiring mới; review consumer Observe/state và kiểm ghi→P ở scene chung. Scene tích hợp/UI1080p/người mới NOT_RUN, các điểm Load feedback/P-close cũ vẫn OPEN riêng. Chưa push/merge; không nhận nhiệm vụ nội dung khác.
+
+## Gameplay & Dữ liệu — SAVE-EVIDENCE-04 nhận triển khai
+
+- Xuất phát91835c80, tracked sạch, giữ untracked/tiến độ mới. Đọc INT-SAVE-NULL-LIST-01 của UI/UX & Tích hợp từ e30699629; không nhận cả nhánh review.
+- Mục tiêu: phân biệt JSON evidence:null/missing/[] trước JsonUtility thay state; giữ schema1 và New Game rỗng. Acceptance trước sửa: [SAVE-EVIDENCE-04](../QA/Tasks/N2/SAVE-EVIDENCE-04/README.md).
+- Dự kiến sửa validator và luồng Load trong InvestigationSession.cs nếu baseline xác nhận; công cụ riêng Gameplay/Editor, contracts và báo cáo N2. Không đổi UI/scene/map/ID/GUID/save gốc.
+- Kiểm baselineAPI → tương thích → sửa tối thiểu → API hồi quy liên quan → F5/F6 tổng hợp khi desktop an toàn. Giữ Load feedback/P-close OPEN riêng. Chưa push/merge hoặc chốt baseline nhóm.
+
+### SAVE-EVIDENCE-04 — hoàn tất nguồn và kiểm Gameplay, chờ scene chung
+
+- Nguồn17b1f6e2 chặn collection JSON trước JsonUtility/gán state; công cụ/meta f73631ae. evidence:null/thiếu/sai kiểu/null-record bị từ chối; evidence:[] New Game và fixture schema1 cũ vẫn tải/tiếp tục. Rà thêm các collection cùng nguyên nhân, giữ default vắng collection phụ, không sửa schema/ID/GUID/flag/UI hoặc Save writer.
+- Baseline74 assertions có14 không đạt do cùng lỗi coercion; baseline F5/F6 input tổng hợp tái hiện slide1→0 với evidence:null, giữ bytes mẫu. Sau sửa78/78 API và54/54 hồi quy validator/Load đạt; không chạy IO/trial. [Báo cáo và hợp đồng chi tiết](../QA/Tasks/N2/SAVE-EVIDENCE-04/README.md).
+- Trên f73631ae, UI/controller Windows tổng hợp trong scene Gameplay proxy/profile mới: F6 từ chối null/thiếu/null-record, state/bytes giữ nguyên; sau mỗi ca P/E/Esc/pause/W/recovery F5/F6 đạt. UI New Game[] và tiếp tục ghi/lặp/đổi vị trí/lưu/tải đạt. Không API grant trong lượt UI; sandbox không phải scene chung/tuyến tự nhiên đầy đủ.
+- Giữ hai lượt gián đoạn focus riêng: lần đầu chưa gửi input; cuối lượt trước probe W/chuột bổ sung, phần chưa chạy NOT_RUN. Không lỗi runtime mới xác nhận. Edit sạch/Editor đã đóng, settings và untracked cũ bảo toàn; raw/profile/log ngoài Git.
+- UI/UX & Tích hợp nhận đủ17b1f6e2→f73631ae→commit tài liệu để kiểm lại INT-SAVE-NULL-LIST-01 ở ConRoi_Chinh; không wiring mới. Scene chung/UI1080p/người mới NOT_RUN với bản sửa; Load feedback/P-close OPEN riêng. Chưa push/merge hoặc chốt baseline nhóm mới.
