@@ -1,0 +1,598 @@
+{
+  "testedCommit": "45917774b301f59073f8233287575783ebaf0414",
+  "kind": "WINDOWS_SYNTHETIC_UI_TEMPORARY_PROXY_NOT_NEW_PLAYER",
+  "checks": [
+    {
+      "name": "inspect_not_record",
+      "pass_": true
+    },
+    {
+      "name": "early_dossier_not_review",
+      "pass_": true
+    },
+    {
+      "name": "record_button_sets_progress",
+      "pass_": true
+    },
+    {
+      "name": "load_unrecorded_restores",
+      "pass_": true
+    },
+    {
+      "name": "record_after_load",
+      "pass_": true
+    },
+    {
+      "name": "repeat_not_duplicate",
+      "pass_": true
+    },
+    {
+      "name": "modal_locks_movement",
+      "pass_": true
+    },
+    {
+      "name": "await_notes_before_P",
+      "pass_": true
+    },
+    {
+      "name": "P_reviews_notes",
+      "pass_": true
+    },
+    {
+      "name": "load_preserves_awaiting_review",
+      "pass_": true
+    },
+    {
+      "name": "review_after_load",
+      "pass_": true
+    },
+    {
+      "name": "load_preserves_reviewed",
+      "pass_": true
+    },
+    {
+      "name": "no_early_information",
+      "pass_": true
+    },
+    {
+      "name": "revisit_keeps_progress",
+      "pass_": true
+    }
+  ],
+  "snapshots": {
+    "before-input": {
+      "utc": "2026-11-09T05:15:57.6824226Z",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "sceneDirty": false,
+      "width": 1536,
+      "height": 746,
+      "page": "intro",
+      "modal": true,
+      "position": {
+        "x": 0.0,
+        "y": 1.0499999523162842,
+        "z": 0.0
+      },
+      "movement": false,
+      "firstFloorRecorded": false,
+      "firstNotesReviewed": false,
+      "tutorialSkipped": false,
+      "evidence": [],
+      "relations": [],
+      "trials": [],
+      "finalized": false
+    },
+    "before-stop": {
+      "utc": "2026-11-09T05:17:19.9388091Z",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "sceneDirty": false,
+      "width": 1536,
+      "height": 746,
+      "page": "inspect",
+      "modal": true,
+      "position": {
+        "x": 2.006804943084717,
+        "y": 1.0799998044967651,
+        "z": 0.0
+      },
+      "movement": false,
+      "firstFloorRecorded": true,
+      "firstNotesReviewed": true,
+      "tutorialSkipped": false,
+      "evidence": [
+        {
+          "id": "slide",
+          "collected": true,
+          "observations": [
+            0,
+            1
+          ]
+        }
+      ],
+      "relations": [],
+      "trials": [],
+      "finalized": false
+    },
+    "early-dossier": {
+      "utc": "2026-11-09T05:16:53.1351547Z",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "sceneDirty": false,
+      "width": 1536,
+      "height": 746,
+      "page": "dossier",
+      "modal": true,
+      "position": {
+        "x": 2.006804943084717,
+        "y": 1.0799998044967651,
+        "z": 0.0
+      },
+      "movement": false,
+      "firstFloorRecorded": false,
+      "firstNotesReviewed": false,
+      "tutorialSkipped": false,
+      "evidence": [
+        {
+          "id": "slide",
+          "collected": true,
+          "observations": []
+        }
+      ],
+      "relations": [],
+      "trials": [],
+      "finalized": false
+    },
+    "final-state": {
+      "utc": "2026-11-09T05:17:19.3212870Z",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "sceneDirty": false,
+      "width": 1536,
+      "height": 746,
+      "page": "inspect",
+      "modal": true,
+      "position": {
+        "x": 2.006804943084717,
+        "y": 1.0799998044967651,
+        "z": 0.0
+      },
+      "movement": false,
+      "firstFloorRecorded": true,
+      "firstNotesReviewed": true,
+      "tutorialSkipped": false,
+      "evidence": [
+        {
+          "id": "slide",
+          "collected": true,
+          "observations": [
+            0,
+            1
+          ]
+        }
+      ],
+      "relations": [],
+      "trials": [],
+      "finalized": false
+    },
+    "first-record-before-load": {
+      "utc": "2026-11-09T05:16:58.0484064Z",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "sceneDirty": false,
+      "width": 1536,
+      "height": 746,
+      "page": "inspect",
+      "modal": true,
+      "position": {
+        "x": 2.006804943084717,
+        "y": 1.0799998044967651,
+        "z": 0.0
+      },
+      "movement": false,
+      "firstFloorRecorded": true,
+      "firstNotesReviewed": false,
+      "tutorialSkipped": false,
+      "evidence": [
+        {
+          "id": "slide",
+          "collected": true,
+          "observations": [
+            0,
+            1
+          ]
+        }
+      ],
+      "relations": [],
+      "trials": [],
+      "finalized": false
+    },
+    "inspect-before-record": {
+      "utc": "2026-11-09T05:16:51.4682165Z",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "sceneDirty": false,
+      "width": 1536,
+      "height": 746,
+      "page": "inspect",
+      "modal": true,
+      "position": {
+        "x": 2.006804943084717,
+        "y": 1.0799998044967651,
+        "z": 0.0
+      },
+      "movement": false,
+      "firstFloorRecorded": false,
+      "firstNotesReviewed": false,
+      "tutorialSkipped": false,
+      "evidence": [
+        {
+          "id": "slide",
+          "collected": true,
+          "observations": []
+        }
+      ],
+      "relations": [],
+      "trials": [],
+      "finalized": false
+    },
+    "inspect-not-recorded": {
+      "utc": "2026-11-09T05:16:02.8003202Z",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "sceneDirty": false,
+      "width": 1536,
+      "height": 746,
+      "page": "inspect",
+      "modal": true,
+      "position": {
+        "x": 2.006804943084717,
+        "y": 1.0799998044967651,
+        "z": 0.0
+      },
+      "movement": false,
+      "firstFloorRecorded": false,
+      "firstNotesReviewed": false,
+      "tutorialSkipped": false,
+      "evidence": [
+        {
+          "id": "slide",
+          "collected": true,
+          "observations": []
+        }
+      ],
+      "relations": [],
+      "trials": [],
+      "finalized": false
+    },
+    "load-awaiting-review": {
+      "utc": "2026-11-09T05:17:09.9090221Z",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "sceneDirty": false,
+      "width": 1536,
+      "height": 746,
+      "page": "",
+      "modal": false,
+      "position": {
+        "x": 2.006804943084717,
+        "y": 1.0799998044967651,
+        "z": 0.0
+      },
+      "movement": true,
+      "firstFloorRecorded": true,
+      "firstNotesReviewed": false,
+      "tutorialSkipped": false,
+      "evidence": [
+        {
+          "id": "slide",
+          "collected": true,
+          "observations": [
+            0,
+            1
+          ]
+        }
+      ],
+      "relations": [],
+      "trials": [],
+      "finalized": false
+    },
+    "load-reviewed": {
+      "utc": "2026-11-09T05:17:16.0321647Z",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "sceneDirty": false,
+      "width": 1536,
+      "height": 746,
+      "page": "dossier",
+      "modal": true,
+      "position": {
+        "x": 2.006804943084717,
+        "y": 1.0799998044967651,
+        "z": 0.0
+      },
+      "movement": false,
+      "firstFloorRecorded": true,
+      "firstNotesReviewed": true,
+      "tutorialSkipped": false,
+      "evidence": [
+        {
+          "id": "slide",
+          "collected": true,
+          "observations": [
+            0,
+            1
+          ]
+        }
+      ],
+      "relations": [],
+      "trials": [],
+      "finalized": false
+    },
+    "loaded-unrecorded": {
+      "utc": "2026-11-09T05:16:59.6927094Z",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "sceneDirty": false,
+      "width": 1536,
+      "height": 746,
+      "page": "inspect",
+      "modal": true,
+      "position": {
+        "x": 2.006804943084717,
+        "y": 1.0799998044967651,
+        "z": 0.0
+      },
+      "movement": false,
+      "firstFloorRecorded": false,
+      "firstNotesReviewed": false,
+      "tutorialSkipped": false,
+      "evidence": [
+        {
+          "id": "slide",
+          "collected": true,
+          "observations": []
+        }
+      ],
+      "relations": [],
+      "trials": [],
+      "finalized": false
+    },
+    "modal-movement": {
+      "utc": "2026-11-09T05:17:04.1952865Z",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "sceneDirty": false,
+      "width": 1536,
+      "height": 746,
+      "page": "inspect",
+      "modal": true,
+      "position": {
+        "x": 2.006804943084717,
+        "y": 1.0799998044967651,
+        "z": 0.0
+      },
+      "movement": false,
+      "firstFloorRecorded": true,
+      "firstNotesReviewed": false,
+      "tutorialSkipped": false,
+      "evidence": [
+        {
+          "id": "slide",
+          "collected": true,
+          "observations": [
+            0,
+            1
+          ]
+        }
+      ],
+      "relations": [],
+      "trials": [],
+      "finalized": false
+    },
+    "notes-first-review": {
+      "utc": "2026-11-09T05:17:08.4707817Z",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "sceneDirty": false,
+      "width": 1536,
+      "height": 746,
+      "page": "dossier",
+      "modal": true,
+      "position": {
+        "x": 2.006804943084717,
+        "y": 1.0799998044967651,
+        "z": 0.0
+      },
+      "movement": false,
+      "firstFloorRecorded": true,
+      "firstNotesReviewed": true,
+      "tutorialSkipped": false,
+      "evidence": [
+        {
+          "id": "slide",
+          "collected": true,
+          "observations": [
+            0,
+            1
+          ]
+        }
+      ],
+      "relations": [],
+      "trials": [],
+      "finalized": false
+    },
+    "notes-phone-objective": {
+      "utc": "2026-11-09T05:17:11.5469216Z",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "sceneDirty": false,
+      "width": 1536,
+      "height": 746,
+      "page": "dossier",
+      "modal": true,
+      "position": {
+        "x": 2.006804943084717,
+        "y": 1.0799998044967651,
+        "z": 0.0
+      },
+      "movement": false,
+      "firstFloorRecorded": true,
+      "firstNotesReviewed": true,
+      "tutorialSkipped": false,
+      "evidence": [
+        {
+          "id": "slide",
+          "collected": true,
+          "observations": [
+            0,
+            1
+          ]
+        }
+      ],
+      "relations": [],
+      "trials": [],
+      "finalized": false
+    },
+    "record-after-load": {
+      "utc": "2026-11-09T05:17:01.1203721Z",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "sceneDirty": false,
+      "width": 1536,
+      "height": 746,
+      "page": "inspect",
+      "modal": true,
+      "position": {
+        "x": 2.006804943084717,
+        "y": 1.0799998044967651,
+        "z": 0.0
+      },
+      "movement": false,
+      "firstFloorRecorded": true,
+      "firstNotesReviewed": false,
+      "tutorialSkipped": false,
+      "evidence": [
+        {
+          "id": "slide",
+          "collected": true,
+          "observations": [
+            0,
+            1
+          ]
+        }
+      ],
+      "relations": [],
+      "trials": [],
+      "finalized": false
+    },
+    "repeat-record": {
+      "utc": "2026-11-09T05:17:02.5546798Z",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "sceneDirty": false,
+      "width": 1536,
+      "height": 746,
+      "page": "inspect",
+      "modal": true,
+      "position": {
+        "x": 2.006804943084717,
+        "y": 1.0799998044967651,
+        "z": 0.0
+      },
+      "movement": false,
+      "firstFloorRecorded": true,
+      "firstNotesReviewed": false,
+      "tutorialSkipped": false,
+      "evidence": [
+        {
+          "id": "slide",
+          "collected": true,
+          "observations": [
+            0,
+            1
+          ]
+        }
+      ],
+      "relations": [],
+      "trials": [],
+      "finalized": false
+    },
+    "revisit": {
+      "utc": "2026-11-09T05:17:18.4977456Z",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "sceneDirty": false,
+      "width": 1536,
+      "height": 746,
+      "page": "inspect",
+      "modal": true,
+      "position": {
+        "x": 2.006804943084717,
+        "y": 1.0799998044967651,
+        "z": 0.0
+      },
+      "movement": false,
+      "firstFloorRecorded": true,
+      "firstNotesReviewed": true,
+      "tutorialSkipped": false,
+      "evidence": [
+        {
+          "id": "slide",
+          "collected": true,
+          "observations": [
+            0,
+            1
+          ]
+        }
+      ],
+      "relations": [],
+      "trials": [],
+      "finalized": false
+    },
+    "saved-unrecorded": {
+      "utc": "2026-11-09T05:16:56.4045272Z",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "sceneDirty": false,
+      "width": 1536,
+      "height": 746,
+      "page": "inspect",
+      "modal": true,
+      "position": {
+        "x": 2.006804943084717,
+        "y": 1.0799998044967651,
+        "z": 0.0
+      },
+      "movement": false,
+      "firstFloorRecorded": false,
+      "firstNotesReviewed": false,
+      "tutorialSkipped": false,
+      "evidence": [
+        {
+          "id": "slide",
+          "collected": true,
+          "observations": []
+        }
+      ],
+      "relations": [],
+      "trials": [],
+      "finalized": false
+    },
+    "world-P-objective": {
+      "utc": "2026-11-09T05:17:05.8240925Z",
+      "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "sceneDirty": false,
+      "width": 1536,
+      "height": 746,
+      "page": "",
+      "modal": false,
+      "position": {
+        "x": 2.006804943084717,
+        "y": 1.0799998044967651,
+        "z": 0.0
+      },
+      "movement": true,
+      "firstFloorRecorded": true,
+      "firstNotesReviewed": false,
+      "tutorialSkipped": false,
+      "evidence": [
+        {
+          "id": "slide",
+          "collected": true,
+          "observations": [
+            0,
+            1
+          ]
+        }
+      ],
+      "relations": [],
+      "trials": [],
+      "finalized": false
+    }
+  }
+}

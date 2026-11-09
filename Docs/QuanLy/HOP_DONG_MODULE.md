@@ -83,3 +83,8 @@ Nguồn `b76828a9`: Save giữ chữ ký void/Message cũ, ghi `.tmp` cùng fold
 ### TRIAL-CONTEXT-01 — đồng hồ tự động theo ngữ cảnh bàn dựng
 
 Nguồn `8c37b866`, kiểm trên `b09c7790`: Update chỉ tự AdvanceTrial khi không Paused, Page=="reconstruction", TrialRunning và không trialScrubbing. Rời trang không thay TrialRunning; quay lại tiếp tục từ TrialTime hiện có nếu người chơi chưa pause tay. Không tích lũy delta ngoài trang, không record tự động khi vắng mặt. Explicit seek/AdvanceTrial API và luật hoàn tất/clear-holds không đổi; seek vẫn không cấp record. Load giữ hành vi reset live trial và giữ TrialRecord theo save hiện có, không persist timeline mới. Không đổi chữ ký API, schema/ID/GUID, không wiring mới hoặc hệ “đã xem”/khóa kết luận. Toàn bộ session partial vẫn thuộc Gameplay & Dữ liệu; UI/UX & Tích hợp review và nhận chuỗi theo [báo cáo](../QA/Tasks/N2/TRIAL-CONTEXT-01/README.md).
+
+
+### OBS-PROGRESS-01 — ghi quan sát và tiến trình dấu sàn
+
+Nguồn1bd2ebd7, kiểm45917774: Observe được chấp nhận (đã Acquire, index trong definition, guard clip như cũ) của slide/shoeprint đặt firstFloorRecorded=true sau ghi. Một quan sát hợp lệ là lần ghi đầu; không buộc thu/ghi mọi vật. Gọi lặp không nhân đôi index hoặc reset firstNotesReviewed. Acquire/OpenEvidence/index bị từ chối không tính tiến trình. Batch RecordVisibleObservations không còn tự đặt cờ nếu Observe không ghi được, giữ nhắc P lần đầu từ chuyển trạng thái và text cũ. Không API/event/wiring hoặc schema mới; CurrentObjective/OpenPage/Load giữ hành vi. Không tự repair/rewrite flag save cũ trên Load. Gameplay & Dữ liệu sở hữu runtime; UI/UX & Tích hợp review producer và kiểm scene chung sau nhận [gói và giới hạn](../QA/Tasks/N2/OBS-PROGRESS-01/README.md).

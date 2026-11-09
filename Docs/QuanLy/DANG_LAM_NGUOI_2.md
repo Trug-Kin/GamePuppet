@@ -154,3 +154,20 @@ Prompt nhận việc: “Trên work/runtime-contracts-baseline từ fcbb7e19, x�
 - PASS103/103 API và26/26 UI/controller tổng hợp trong scene Gameplay với môi trường proxy/profile mới. Sáu ca API, nhiều đường thoát/quay lại, no catch-up/record ngoài trang, pause tay/game, seek/đổi góc/clear-holds/đổi ca, hoàn tất1record/mở lại và1roundtrip save/load theo lifecycle hiện có. Không chạy bộ save. Tool compile attempt đầu và baseline fail được giữ riêng trong báo cáo.
 - [Acceptance, bằng chứng, cách chạy và giới hạn](../QA/Tasks/N2/TRIAL-CONTEXT-01/README.md). Raw/profile chỉ local. Unity đã stop/quit không save scene, dirty=false; settings newline-only được bảo toàn/đối chiếu trước phục hồi. Untracked cũ giữ nguyên.
 - UI/UX & Tích hợp nhận đủ7cfcd7ca→8c37b866→b09c7790→commit tài liệu, không wiring mới; review lifecycle rồi kiểm gói chịu ảnh hưởng ở scene tích hợp thuộc quyền mình. Không cần asset mới. UI1080p/người mới/scene tích hợp NOT_RUN; drag-đổi trang controller chưa kiểm riêng. Các điểm UI Load feedback/P-close cũ giữ OPEN riêng. Chưa push/merge.
+
+
+## Gameplay & Dữ liệu — nhận OBS-PROGRESS-01
+
+- Xuất phát00c17147, nhánh runtime đúng/tracked sạch; không có gói gameplay mới chưa làm đã được giao trong tiến độ. Người dùng cho phép chọn một khoảng thiếu có căn cứ.
+- Mục tiêu: Observe ghi dấu sàn thành công phải đồng bộ firstFloorRecorded; Acquire/khám chưa ghi không tính, ghi trùng không nhân đôi. Source hiện chỉ batch wrapper đặt cờ. Luồng UI nút hiện có không được nhận là lỗi đã tái hiện.
+- Acceptance trước sửa tại [OBS-PROGRESS-01](../QA/Tasks/N2/OBS-PROGRESS-01/README.md). File: Session.cs/Observe, phần runtime RecordVisibleObservations trong Onboarding.cs; công cụ Gameplay/Editor, contracts/báo cáo riêng. Không sửa UI/CurrentObjective/scene/map hoặc schema/ID/GUID.
+- Thứ tự: baselineAPI → sửa tối thiểu → API thứ tự/lặp/roundtrip tiến trình → UI đại diện khi desktop an toàn. Phụ thuộc UI/UX & Tích hợp review/API cũ, không cần asset mới.
+
+
+## Gameplay & Dữ liệu — OBS-PROGRESS-01 hoàn tất phạm vi, chờ review
+
+- Baseline00c17147:10 assertions/3 lỗi API được xác nhận: Observe hai ID dấu sàn ghi thật nhưng cờ false; batch chưa thu lại đặt cờtrue khi không ghi. UI nút hợp lệ vốn hoạt động; không nhận lỗi API là lỗi UI đã xảy ra.
+- Nguồn1bd2ebd7 đồng bộ firstFloorRecorded tại Observe sau guard; batch wrapper dùng chuyển trạng thái và từ chối vật chưa thu. Chỉ đổi runtime trong Session.cs/Onboarding.cs; không sửa view/CurrentObjective/scene/map, ID/schema/GUID hoặc cốt truyện.
+- Công cụ/commit thực sự kiểm45917774:35/35 API và14/14 UI/controller input Windows tổng hợp đạt trong scene Gameplay/profile mới. Kiểm khám-chưa-ghi, thứ tự/lặp, guard, skip, không cấp dữ kiện khác, ba bước F5/F6 và tiếp tục. Không chạy lại các bộ save/trial cũ.
+- [Báo cáo, acceptance trước sửa, bằng chứng và giới hạn](../QA/Tasks/N2/OBS-PROGRESS-01/README.md). Scene proxy không lưu, Editor đã stop/quit/dirtyfalse; settings byte bảo toàn rồi phục hồi khi chỉ khác newline; raw/profile ngoài Git, untracked cũ giữ nguyên.
+- UI/UX & Tích hợp nhận đủ1bd2ebd7→45917774→commit tài liệu, không wiring mới; review consumer Observe/state và kiểm ghi→P ở scene chung. Scene tích hợp/UI1080p/người mới NOT_RUN, các điểm Load feedback/P-close cũ vẫn OPEN riêng. Chưa push/merge; không nhận nhiệm vụ nội dung khác.
