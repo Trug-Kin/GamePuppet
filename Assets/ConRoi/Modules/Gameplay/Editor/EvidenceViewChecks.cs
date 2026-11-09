@@ -119,6 +119,17 @@ namespace ConRoi.Gameplay.EditorChecks
             var camera = UnityEngine.Object.FindObjectsByType<Camera>(FindObjectsInactive.Include, FindObjectsSortMode.None).First(c => c.targetTexture == l.Preview);
             var visual = camera.transform.parent.gameObject;
             Check("camera_cannot_see_adjacent_preview", camera.farClipPlane < 20 && camera.farClipPlane > 5);
+            camera.Render();
+            var pixels = new Texture2D(600,600,TextureFormat.RGB24,false);
+            var active = RenderTexture.active; bool rendered = false;
+            try
+            {
+                RenderTexture.active = (RenderTexture)l.Preview; pixels.ReadPixels(new Rect(0,0,600,600),0,0); pixels.Apply();
+                Color background = pixels.GetPixel(0,0);
+                foreach (var pixel in pixels.GetPixels()) if (Mathf.Abs(pixel.r-background.r)+Mathf.Abs(pixel.g-background.g)+Mathf.Abs(pixel.b-background.b) > .1f) { rendered = true; break; }
+            }
+            finally { RenderTexture.active = active; UnityEngine.Object.Destroy(pixels); }
+            Check("synthetic_mesh_renders_pixels", rendered);
             Check("snapshot_has_no_scripts_or_physics", visual.GetComponentsInChildren<MonoBehaviour>(true).Length == 0 && visual.GetComponentsInChildren<Collider>(true).Length == 0 && visual.GetComponentsInChildren<Rigidbody>(true).Length == 0);
             string data = JsonUtility.ToJson(s.data); int before = events;
             Check("left_adjust_independent", s.TryAdjustComparison(left, 40, 200, -40, out error) && Pose(s.GetComparisonView(left).Pose, 65, 80, .5f) && Pose(s.GetComparisonView(right).Pose, 25, 65, 2));
