@@ -1,0 +1,17 @@
+{
+  "sourceCommit": "546833aace5f59c0c98349ebe0fb7cd33cbe5df0",
+  "files": [
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSession.cs",
+      "sha256": "bcf6cfa9f9ac33d32121b2aa3c2833a95c5be651ecad96c6c6b59f927130d007"
+    },
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSaveValidation.cs",
+      "sha256": "e11d9cddef8e4f0b609c852fdeecfe66bd3056a8963769c14bc06dc4b4c44ad2"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/SaveLoadContractChecks.cs",
+      "sha256": "85e7a9c77f75bde180ad734c651a5cc6baf7e52bae8471c5edf481fe22a89fce"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "baseCommit": "810168d2",
+  "sourceFiles": [
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSaveValidation.cs",
+      "sha256": "e11d9cddef8e4f0b609c852fdeecfe66bd3056a8963769c14bc06dc4b4c44ad2"
+    },
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSession.cs",
+      "sha256": "bcf6cfa9f9ac33d32121b2aa3c2833a95c5be651ecad96c6c6b59f927130d007"
+    },
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSessionUI.cs",
+      "sha256": "3a3e6f9f2b56ec10e2f48974a0244fb36523d506bc96b350cf4373a1b2adf6b8"
+    },
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationEvidence.cs",
+      "sha256": "c63965e1fcb7db94a40af49073fac48b9ebe330b0955b57197887e088088a2ad"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/RelationReferenceAudit.cs",
+      "sha256": "1bfec1580841391973661ad4b49c711c50ce98de8e1428561da90f1dfa7a8369"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/RelationReferenceAudit.cs.meta",
+      "sha256": "70f7c0eb0b105f590ae134a87c9848d7b2b5228734ee905cfddd9ff8b8835ecf"
+    }
+  ],
+  "localRoot": "C:\\ConRoi_Nguoi2",
+  "artifacts": [
+    {
+      "path": "Test/Output/ContractAudit/RelationReferences_20261108/before-diff.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Test/Output/ContractAudit/RelationReferences_20261108/before-head.txt",
+      "bytes": 41,
+      "sha256": "1157b97d0c7a20ac0ecf25dd2f09a388a2b7bab6cf4ce81aa5907980f66d31c1"
+    },
+    {
+      "path": "Test/Output/ContractAudit/RelationReferences_20261108/before-status.txt",
+      "bytes": 144,
+      "sha256": "319b7f37e2e689ec500f2a1446bbc96349506c84e52956b38ca7611ed7ac7e54"
+    },
+    {
+      "path": "Test/Output/ContractAudit/RelationReferences_20261108/Editor.log",
+      "bytes": 113381,
+      "sha256": "ba4372d8d8c86d20f937ef1233492f2bb28fb0ff1fad619d898c5c075176b39b"
+    },
+    {
+      "path": "Test/Output/ContractAudit/RelationReferences_20261108/ImportedChanges/manifest.json",
+      "bytes": 337,
+      "sha256": "05269ec201db73b01c4fef38c0adcc3e415d98f626c4b6b0a4f1829df9935e40"
+    },
+    {
+      "path": "Test/Output/ContractAudit/RelationReferences_20261108/ImportedChanges/ProjectSettings/EditorBuildSettings.asset",
+      "bytes": 604,
+      "sha256": "61b81004081de287d300738d601bb2002379ac1d6f5f6c8c51f9e76675041106"
+    },
+    {
+      "path": "Test/Output/ContractAudit/RelationReferences_20261108/ImportedChanges/ProjectSettings/ProjectAuditorSettings.asset",
+      "bytes": 1036,
+      "sha256": "9e68444b9bda981e2927a98df9edf69ea88362f0c6b7f3c81b39b9d515d2a416"
+    },
+    {
+      "path": "Test/Output/ContractAudit/RelationReferences_20261108/results.json",
+      "bytes": 2038,
+      "sha256": "feb12b4d63fecb6215995b6b518265fbfac65828795b6bd47f99e3b1bb81c572"
+    },
+    {
+      "path": "Test/PlaytestProfiles/RelationReferenceAudit_20261108/empty.json",
+      "bytes": 1149,
+      "sha256": "bd70465905bc2de93c48e509e72d567e36c00cd1f15e7e819ee428cc27460e51"
+    },
+    {
+      "path": "Test/PlaytestProfiles/RelationReferenceAudit_20261108/unknown_first.json",
+      "bytes": 1336,
+      "sha256": "7582d1260d432329570af2aab042a430040b55348aef0eecdc1f909b6f9bd672"
+    },
+    {
+      "path": "Test/PlaytestProfiles/RelationReferenceAudit_20261108/unknown_second.json",
+      "bytes": 1332,
+      "sha256": "e21b94af685d595802d81c29bbeb6ab6c393e89c5cbeaedbe89481c457207825"
+    },
+    {
+      "path": "Test/PlaytestProfiles/RelationReferenceAudit_20261108/valid_relation.json",
+      "bytes": 1316,
+      "sha256": "7efe1371c47270275926cbf78d39cce641db5b1e629dbe58052ac244fd9c4f3a"
+    }
+  ]
+}

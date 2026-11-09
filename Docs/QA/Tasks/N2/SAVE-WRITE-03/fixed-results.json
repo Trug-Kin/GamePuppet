@@ -1,0 +1,226 @@
+{
+    "unity": "6000.6.2f1",
+    "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+    "profile": "C:\\ConRoi_Nguoi2\\Test\\PlaytestProfiles\\SaveWrite03_Fixed_20261108",
+    "kind": "PLAYMODE_API_FIXTURE_NOT_NATURAL_ROUTE",
+    "missingScripts": 0,
+    "failures": 0,
+    "sourceCommit": "b76828a9",
+    "checks": [
+        {
+            "name": "private_profile",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "scene_and_missing_scripts",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "normal_initial_save",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "normal_message",
+            "pass": true,
+            "detail": "Đã lưu hồ sơ prototype riêng."
+        },
+        {
+            "name": "normal_load_after_attempt",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "normal_recovery_save_load",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "normal_no_temp_after_success",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "temp_directory_initial_save",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "temp_directory_message",
+            "pass": true,
+            "detail": "Không lưu được: Access to the path 'C:\\ConRoi_Nguoi2\\Test\\PlaytestProfiles\\SaveWrite03_Fixed_20261108\\temp_directory\\InvestigationV36\\r107\\prototype.json.tmp' is denied."
+        },
+        {
+            "name": "temp_directory_old_bytes_preserved",
+            "pass": true,
+            "detail": "old=5a539a6a38e8544a10988e2b797b4718231a8d92837b096bc4706b325961c204 after=5a539a6a38e8544a10988e2b797b4718231a8d92837b096bc4706b325961c204"
+        },
+        {
+            "name": "temp_directory_load_after_attempt",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "temp_directory_recovery_save_load",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "temp_directory_no_temp_after_success",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "temp_write_locked_initial_save",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "temp_write_locked_message",
+            "pass": true,
+            "detail": "Không lưu được: Sharing violation on path C:\\ConRoi_Nguoi2\\Test\\PlaytestProfiles\\SaveWrite03_Fixed_20261108\\temp_write_locked\\InvestigationV36\\r107\\prototype.json.tmp"
+        },
+        {
+            "name": "temp_write_locked_old_bytes_preserved",
+            "pass": true,
+            "detail": "old=5a539a6a38e8544a10988e2b797b4718231a8d92837b096bc4706b325961c204 after=5a539a6a38e8544a10988e2b797b4718231a8d92837b096bc4706b325961c204"
+        },
+        {
+            "name": "temp_write_locked_load_after_attempt",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "temp_write_locked_recovery_save_load",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "temp_write_locked_no_temp_after_success",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "destination_locked_initial_save",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "destination_locked_message",
+            "pass": true,
+            "detail": "Không lưu được: The process cannot access the file because it is being used by another process."
+        },
+        {
+            "name": "destination_locked_old_bytes_preserved",
+            "pass": true,
+            "detail": "old=5a539a6a38e8544a10988e2b797b4718231a8d92837b096bc4706b325961c204 after=5a539a6a38e8544a10988e2b797b4718231a8d92837b096bc4706b325961c204"
+        },
+        {
+            "name": "destination_locked_load_after_attempt",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "destination_locked_recovery_save_load",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "destination_locked_no_temp_after_success",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "temp_delete_locked_initial_save",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "temp_delete_locked_message",
+            "pass": true,
+            "detail": "Không lưu được: The process cannot access the file because it is being used by another process."
+        },
+        {
+            "name": "temp_delete_locked_old_bytes_preserved",
+            "pass": true,
+            "detail": "old=5a539a6a38e8544a10988e2b797b4718231a8d92837b096bc4706b325961c204 after=5a539a6a38e8544a10988e2b797b4718231a8d92837b096bc4706b325961c204"
+        },
+        {
+            "name": "temp_delete_locked_load_after_attempt",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "temp_delete_locked_recovery_save_load",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "temp_delete_locked_no_temp_after_success",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "stale_temp_initial_save",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "stale_temp_not_loaded",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "stale_temp_message",
+            "pass": true,
+            "detail": "Đã lưu hồ sơ prototype riêng."
+        },
+        {
+            "name": "stale_temp_load_after_attempt",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "stale_temp_recovery_save_load",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "stale_temp_no_temp_after_success",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "first_commit_failure_no_destination",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "first_commit_failure_load_does_not_use_temp",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "first_commit_recovery",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "partial_write_injection_available",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "partial_write_injected_preserves_old",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "partial_write_recovery",
+            "pass": true,
+            "detail": ""
+        }
+    ]
+}

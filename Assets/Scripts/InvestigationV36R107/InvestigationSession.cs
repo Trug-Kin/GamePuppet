@@ -79,6 +79,7 @@ namespace ConRoi.Investigation.V36.R107
             if(id=="clip"&&(!data.clipBeforeSeen||!data.clipEventSeen)){feedback="Hãy xem cả trước và trong sự cố trước khi ghi quan sát clip.";return;}
             if(index<0||index>=definition.observations.Length)return;
             var record=Record(id);if(!record.observations.Contains(index))record.observations.Add(index);
+            if(id=="slide"||id=="shoeprint")data.firstFloorRecorded=true;
         }
         void Update()
         {
@@ -102,7 +103,7 @@ namespace ConRoi.Investigation.V36.R107
             }
             if(!Paused)
             {
-                if(TrialRunning&&!trialScrubbing)AdvanceTrial(Time.deltaTime);
+                if(Page=="reconstruction"&&TrialRunning&&!trialScrubbing)AdvanceTrial(Time.deltaTime);
                 if(Page=="clip"&&ClipPlaying&&!clipScrubbing){float previous=ClipTime;ClipTime=Mathf.Min(MechanismPresentation.ClipLength,ClipTime+Time.deltaTime);RegisterClipExposure(previous,ClipTime);UpdateClip();if(ClipTime>=MechanismPresentation.ClipLength)ClipPlaying=false;}
             }
             if(Page=="inspect"&&viewer&&Mouse.current!=null){if(Mouse.current.leftButton.isPressed){var d=Mouse.current.delta.ReadValue();viewYaw+=d.x*.25f;viewPitch=Mathf.Clamp(viewPitch-d.y*.25f,-80,80);}viewDistance=Mathf.Clamp(viewDistance-Mouse.current.scroll.ReadValue().y*.002f,.5f,4);UpdateViewer();}
@@ -231,7 +232,7 @@ namespace ConRoi.Investigation.V36.R107
         public void Save()
         {
             try{data.position=movement.transform.position;data.yaw=movement.transform.eulerAngles.y;data.pitch=eye.transform.localEulerAngles.x;data.gate=JsonUtility.FromJson<GateState>(JsonUtility.ToJson(gate.state));data.page=Page;data.inspecting=inspectId;
-                Directory.CreateDirectory(Path.GetDirectoryName(SavePath));string temp=SavePath+".tmp";File.WriteAllText(temp,JsonUtility.ToJson(data,true));File.Copy(temp,SavePath,true);File.Delete(temp);Message="Đã lưu hồ sơ prototype riêng.";
+                InvestigationSaveFile.Write(SavePath,JsonUtility.ToJson(data,true));Message="Đã lưu hồ sơ prototype riêng.";
             }catch(Exception e){Message="Không lưu được: "+e.Message;}
         }
         public bool Load()
@@ -239,8 +240,7 @@ namespace ConRoi.Investigation.V36.R107
             try{
                 if(!File.Exists(SavePath)){Message="Chưa có save điều tra ở thư mục riêng.";return false;}
                 var incoming=JsonUtility.FromJson<InvestigationSave>(File.ReadAllText(SavePath));
-                if(incoming==null||incoming.schema!=1||incoming.namespaceId!="conroi.investigation.v36.r107"||!float.IsFinite(incoming.position.x)||!float.IsFinite(incoming.position.y)||!float.IsFinite(incoming.position.z))throw new Exception("Schema/namespace/vị trí không hợp lệ; không migration save cũ.");
-                if(incoming.evidence.Any(e=>InvestigationContent.Get(e.id)==null))throw new Exception("ID vật chứng không hợp lệ");
+                if(!InvestigationSaveValidation.TryValidate(incoming,out string validationError))throw new InvalidDataException(validationError);
                 data=incoming;EnsureConclusions();bool cc=movement.controller.enabled;movement.controller.enabled=false;movement.transform.SetPositionAndRotation(data.position,Quaternion.Euler(0,data.yaw,0));movement.controller.enabled=cc;movement.ResetVerticalMotion();look.RestorePitch(data.pitch);gate.Restore(data.gate);
                 ResetTrial();ClipPlaying=false;ClipTime=0;UpdateClip();SetPaused(false);Page="";
                 if(data.page=="inspect"&&Has(data.inspecting))OpenEvidence(data.inspecting);else if(new[]{"cipher","dossier","compare","reconstruction","clip","conclusions","intro"}.Contains(data.page))OpenPage(data.page);else ClosePage();Message="Đã tải hồ sơ riêng; thử nghiệm đang chạy trở về trạng thái an toàn.";return true;

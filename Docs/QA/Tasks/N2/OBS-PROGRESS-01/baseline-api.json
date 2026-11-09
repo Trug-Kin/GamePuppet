@@ -1,0 +1,60 @@
+{
+    "source": "00c17147",
+    "unity": "6000.6.2f1",
+    "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+    "profile": "C:\\ConRoi_Nguoi2\\Test\\PlaytestProfiles\\ObservationProgress01_Baseline",
+    "kind": "PLAYMODE_API_FIXTURE_NOT_UI",
+    "failures": 3,
+    "checks": [
+        {
+            "name": "private_scene_profile",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "slide_inspect_not_record",
+            "detail": "recorded=False reviewed=False objective=Vào xưởng, lên gác và kiểm tra dấu trên sàn gần lan can. evidence={\"schema\":1,\"namespaceId\":\"conroi.investigation.v36.r107\",\"position\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"yaw\":0.0,\"pitch\":0.0,\"inspecting\":\"slide\",\"page\":\"inspect\",\"samplesAllowed\":false,\"returnedToWorkshop\":false,\"visitedHa\":false,\"introAccepted\":true,\"tutorialSkipped\":false,\"firstFloorRecorded\":false,\"firstNotesReviewed\":false,\"tableDiscovered\":false,\"tutorialWaypoint\":0,\"clipBeforeSeen\":false,\"clipEventSeen\":false,\"clipBeforeExposure\":0.0,\"clipEventExposure\":0.0,\"evidence\":[{\"id\":\"slide\",\"collected\":true,\"observations\":[]}],\"mapping\":[],\"relations\":[],\"trials\":[],\"conclusions\":[{\"choice\":0,\"claim\":\"\",\"grounds\":[]},{\"choice\":0,\"claim\":\"\",\"grounds\":[]},{\"choice\":0,\"claim\":\"\",\"grounds\":[]},{\"choice\":0,\"claim\":\"\",\"grounds\":[]}],\"gate\":{\"angle\":0.0,\"velocity\":0.0,\"rope\":false,\"hook\":false,\"bodyForce\":false,\"wedge\":false,\"latched\":true},\"finalized\":false}",
+            "pass": true
+        },
+        {
+            "name": "slide_early_dossier_not_review",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "slide_observe_updates_progress",
+            "detail": "recorded=False reviewed=False objective=Vào xưởng, lên gác và kiểm tra dấu trên sàn gần lan can. evidence={\"schema\":1,\"namespaceId\":\"conroi.investigation.v36.r107\",\"position\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"yaw\":0.0,\"pitch\":0.0,\"inspecting\":\"slide\",\"page\":\"inspect\",\"samplesAllowed\":false,\"returnedToWorkshop\":false,\"visitedHa\":false,\"introAccepted\":true,\"tutorialSkipped\":false,\"firstFloorRecorded\":false,\"firstNotesReviewed\":false,\"tableDiscovered\":false,\"tutorialWaypoint\":0,\"clipBeforeSeen\":false,\"clipEventSeen\":false,\"clipBeforeExposure\":0.0,\"clipEventExposure\":0.0,\"evidence\":[{\"id\":\"slide\",\"collected\":true,\"observations\":[0]}],\"mapping\":[],\"relations\":[],\"trials\":[],\"conclusions\":[{\"choice\":0,\"claim\":\"\",\"grounds\":[]},{\"choice\":0,\"claim\":\"\",\"grounds\":[]},{\"choice\":0,\"claim\":\"\",\"grounds\":[]},{\"choice\":0,\"claim\":\"\",\"grounds\":[]}],\"gate\":{\"angle\":0.0,\"velocity\":0.0,\"rope\":false,\"hook\":false,\"bodyForce\":false,\"wedge\":false,\"latched\":true},\"finalized\":false}",
+            "pass": false
+        },
+        {
+            "name": "slide_repeat_not_duplicate",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "shoeprint_inspect_not_record",
+            "detail": "recorded=False reviewed=False objective=Vào xưởng, lên gác và kiểm tra dấu trên sàn gần lan can. evidence={\"schema\":1,\"namespaceId\":\"conroi.investigation.v36.r107\",\"position\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"yaw\":0.0,\"pitch\":0.0,\"inspecting\":\"shoeprint\",\"page\":\"inspect\",\"samplesAllowed\":false,\"returnedToWorkshop\":false,\"visitedHa\":false,\"introAccepted\":true,\"tutorialSkipped\":false,\"firstFloorRecorded\":false,\"firstNotesReviewed\":false,\"tableDiscovered\":false,\"tutorialWaypoint\":0,\"clipBeforeSeen\":false,\"clipEventSeen\":false,\"clipBeforeExposure\":0.0,\"clipEventExposure\":0.0,\"evidence\":[{\"id\":\"shoeprint\",\"collected\":true,\"observations\":[]}],\"mapping\":[],\"relations\":[],\"trials\":[],\"conclusions\":[{\"choice\":0,\"claim\":\"\",\"grounds\":[]},{\"choice\":0,\"claim\":\"\",\"grounds\":[]},{\"choice\":0,\"claim\":\"\",\"grounds\":[]},{\"choice\":0,\"claim\":\"\",\"grounds\":[]}],\"gate\":{\"angle\":0.0,\"velocity\":0.0,\"rope\":false,\"hook\":false,\"bodyForce\":false,\"wedge\":false,\"latched\":true},\"finalized\":false}",
+            "pass": true
+        },
+        {
+            "name": "shoeprint_early_dossier_not_review",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "shoeprint_observe_updates_progress",
+            "detail": "recorded=False reviewed=False objective=Vào xưởng, lên gác và kiểm tra dấu trên sàn gần lan can. evidence={\"schema\":1,\"namespaceId\":\"conroi.investigation.v36.r107\",\"position\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"yaw\":0.0,\"pitch\":0.0,\"inspecting\":\"shoeprint\",\"page\":\"inspect\",\"samplesAllowed\":false,\"returnedToWorkshop\":false,\"visitedHa\":false,\"introAccepted\":true,\"tutorialSkipped\":false,\"firstFloorRecorded\":false,\"firstNotesReviewed\":false,\"tableDiscovered\":false,\"tutorialWaypoint\":0,\"clipBeforeSeen\":false,\"clipEventSeen\":false,\"clipBeforeExposure\":0.0,\"clipEventExposure\":0.0,\"evidence\":[{\"id\":\"shoeprint\",\"collected\":true,\"observations\":[0]}],\"mapping\":[],\"relations\":[],\"trials\":[],\"conclusions\":[{\"choice\":0,\"claim\":\"\",\"grounds\":[]},{\"choice\":0,\"claim\":\"\",\"grounds\":[]},{\"choice\":0,\"claim\":\"\",\"grounds\":[]},{\"choice\":0,\"claim\":\"\",\"grounds\":[]}],\"gate\":{\"angle\":0.0,\"velocity\":0.0,\"rope\":false,\"hook\":false,\"bodyForce\":false,\"wedge\":false,\"latched\":true},\"finalized\":false}",
+            "pass": false
+        },
+        {
+            "name": "shoeprint_repeat_not_duplicate",
+            "detail": "",
+            "pass": true
+        },
+        {
+            "name": "unacquired_batch_no_progress",
+            "detail": "recorded=True reviewed=False objective=P · Xem ghi chép vừa tạo. evidence={\"schema\":1,\"namespaceId\":\"conroi.investigation.v36.r107\",\"position\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"yaw\":0.0,\"pitch\":0.0,\"inspecting\":\"\",\"page\":\"\",\"samplesAllowed\":false,\"returnedToWorkshop\":false,\"visitedHa\":false,\"introAccepted\":true,\"tutorialSkipped\":false,\"firstFloorRecorded\":true,\"firstNotesReviewed\":false,\"tableDiscovered\":false,\"tutorialWaypoint\":0,\"clipBeforeSeen\":false,\"clipEventSeen\":false,\"clipBeforeExposure\":0.0,\"clipEventExposure\":0.0,\"evidence\":[],\"mapping\":[],\"relations\":[],\"trials\":[],\"conclusions\":[{\"choice\":0,\"claim\":\"\",\"grounds\":[]},{\"choice\":0,\"claim\":\"\",\"grounds\":[]},{\"choice\":0,\"claim\":\"\",\"grounds\":[]},{\"choice\":0,\"claim\":\"\",\"grounds\":[]}],\"gate\":{\"angle\":0.0,\"velocity\":0.0,\"rope\":false,\"hook\":false,\"bodyForce\":false,\"wedge\":false,\"latched\":true},\"finalized\":false}",
+            "pass": false
+        }
+    ]
+}

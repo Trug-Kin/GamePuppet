@@ -1,0 +1,50 @@
+[
+  {
+    "path": "C:\\ConRoi_Nguoi2\\Test\\Output\\SaveContract\\Baseline\\Editor.log",
+    "bytes": 11034659,
+    "sha256": "8441bf4a52b8fd0de9886510a97dc087967d46c74375a00c1e49130005fc4b5a",
+    "distribution": "local technical evidence; not required for runtime"
+  },
+  {
+    "path": "C:\\ConRoi_Nguoi2\\Test\\Output\\SaveContract\\Baseline\\state-before-controlled-stop.json",
+    "bytes": 920,
+    "sha256": "37df76d7f40ae660875e63dadc434a9b7c9706597c256af77c1d7c3a0acd3641",
+    "distribution": "local technical evidence; not required for runtime"
+  },
+  {
+    "path": "C:\\ConRoi_Nguoi2\\Test\\Output\\SaveContract\\Baseline\\diff-before-controlled-stop.patch",
+    "bytes": 11113,
+    "sha256": "b0e3411e5b54cba86a0a1e42f341fb5a81ca867a6a3f4c00b6d2fca9fa172083",
+    "distribution": "local technical evidence; not required for runtime"
+  },
+  {
+    "path": "C:\\ConRoi_Nguoi2\\Test\\Output\\SaveContract\\BaselineRetry\\Editor.log",
+    "bytes": 107387,
+    "sha256": "0ffeb5b49f0f660b1b6d46f7ac9a25150c45777cad018c770d4cfe9c84ef4412",
+    "distribution": "local technical evidence; not required for runtime"
+  },
+  {
+    "path": "C:\\ConRoi_Nguoi2\\Test\\Output\\SaveContract\\BaselineRetry\\results.json",
+    "bytes": 2736,
+    "sha256": "a4ed0a9f8fa46ce3bb773d781b702ed2b4d15307655286f0bc48e2fe05b12a86",
+    "distribution": "local technical evidence; not required for runtime"
+  },
+  {
+    "path": "C:\\ConRoi_Nguoi2\\Test\\Output\\SaveContract\\Fixed\\Editor.log",
+    "bytes": 129055,
+    "sha256": "d95bf4fa567e82f19df0692e93422eaa397047753b5a3dedd35857ac95279fee",
+    "distribution": "local technical evidence; not required for runtime"
+  },
+  {
+    "path": "C:\\ConRoi_Nguoi2\\Test\\Output\\SaveContract\\Fixed\\results.json",
+    "bytes": 7230,
+    "sha256": "778bd11c7ce0382796323f39a66d43276be5e62f277916838abb5074c15855c0",
+    "distribution": "local technical evidence; not required for runtime"
+  },
+  {
+    "path": "C:\\ConRoi_Nguoi2\\Test\\Output\\SaveContract\\ImportedChanges\\manifest.json",
+    "bytes": 2101,
+    "sha256": "3b89c92fee1925bace96c4a08bd5921630faa0b4a89df3b2e95740cadb3398a5",
+    "distribution": "local technical evidence; not required for runtime"
+  }
+]

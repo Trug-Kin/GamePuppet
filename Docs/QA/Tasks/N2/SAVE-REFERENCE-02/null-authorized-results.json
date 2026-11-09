@@ -1,0 +1,104 @@
+{
+  "kind": "OS_SYNTHESIZED_UI_CONTROLLER_WITH_UI_EARNED_SAVE_FIXTURE",
+  "startCommit": "490f7a02",
+  "cases": [
+    {
+      "case": "authorized-null-first",
+      "status": "PASS",
+      "statePreserved": true,
+      "differences": {},
+      "fileUnchanged": true,
+      "message": "Không tải: Liên hệ trong hồ sơ tham chiếu vật chứng không tồn tại.",
+      "inputSha256": "b04129d1ef5ae5ec8155d229018513386394c7891ffa0fed38948da109c16f94",
+      "Ptoggle": true,
+      "E": true,
+      "R": true,
+      "EscPauseResume": true,
+      "modalMovementBlocked": true,
+      "movement": true,
+      "mouseLook": true,
+      "validRecovery": true,
+      "continuedPlayF5F6": true
+    },
+    {
+      "case": "authorized-null-record",
+      "status": "PASS",
+      "statePreserved": true,
+      "differences": {},
+      "fileUnchanged": true,
+      "message": "Không tải: Liên hệ trong hồ sơ tham chiếu vật chứng không tồn tại.",
+      "inputSha256": "13e9555666492c1fd442ec8eb8dbc4790903c7157bdc34a13c418eac6e2abec6",
+      "Ptoggle": true,
+      "E": true,
+      "R": true,
+      "EscPauseResume": true,
+      "modalMovementBlocked": true,
+      "movement": true,
+      "mouseLook": true,
+      "validRecovery": true,
+      "continuedPlayF5F6": true
+    }
+  ],
+  "status": "PASS",
+  "fixtureSourceUnchanged": true,
+  "fixtureSha256": "0c8cf171c99dc3dda7c3dab0664c43788d1712985f5f4ddafb86c03dbba73813",
+  "testedCommit": "490f7a021f6218308da407f45388a152ab635bb9",
+  "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+  "unity": "6000.6.2f1",
+  "profile": "Test/PlaytestProfiles/SaveReference02_NullCompletion_20261108",
+  "noRuntimeChange": true,
+  "apiSuiteRerun": false,
+  "independentSnapshotChecks": [
+    {
+      "case": "authorized-null-first",
+      "snapshotFieldsCompared": [
+        "data",
+        "dataIdentity",
+        "position",
+        "yaw",
+        "pitch",
+        "gate",
+        "page",
+        "paused",
+        "modal",
+        "movement",
+        "look",
+        "actions",
+        "timeScale",
+        "cursor",
+        "testInputHook"
+      ],
+      "snapshotStateEqual": true,
+      "rejectedInputHashVerified": true
+    },
+    {
+      "case": "authorized-null-record",
+      "snapshotFieldsCompared": [
+        "data",
+        "dataIdentity",
+        "position",
+        "yaw",
+        "pitch",
+        "gate",
+        "page",
+        "paused",
+        "modal",
+        "movement",
+        "look",
+        "actions",
+        "timeScale",
+        "cursor",
+        "testInputHook"
+      ],
+      "snapshotStateEqual": true,
+      "rejectedInputHashVerified": true
+    }
+  ],
+  "limits": [
+    "UI-earned save fixture reused, then OS-synthesized F6/P/E/R/Esc/W/S/mouse/F5 input; not a clean natural route",
+    "Game 1536x746; UI1080p NOT_RUN",
+    "Newcomer NOT_RUN",
+    "UI-LOAD-FEEDBACK-01 and prior P-close remain OPEN",
+    "Earlier interrupted attempt remains preserved separately"
+  ]
+}

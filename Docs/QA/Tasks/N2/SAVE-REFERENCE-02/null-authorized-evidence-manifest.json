@@ -1,0 +1,281 @@
+{
+  "testedCommit": "490f7a021f6218308da407f45388a152ab635bb9",
+  "localRoot": "C:\\ConRoi_Nguoi2",
+  "sourceFilesVerified": [
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSaveValidation.cs",
+      "sha256": "b05b72a9866a905dd495257797f4136ff045ba983a4b4665bd212af9ad7e64c0"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/SaveLoadContractChecks.cs",
+      "sha256": "8edb0d94c4c08ecab50d6efaafa12e1fb32096454b0985682e484922fd126865"
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/SaveGuardControllerChecks.cs",
+      "sha256": "4fb20a2d0e85d4a579ffca74189fd79a22bfc6c1f0a3abb4eebe41d39f02291a"
+    },
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSession.cs",
+      "sha256": "bcf6cfa9f9ac33d32121b2aa3c2833a95c5be651ecad96c6c6b59f927130d007"
+    },
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSessionUI.cs",
+      "sha256": "3a3e6f9f2b56ec10e2f48974a0244fb36523d506bc96b350cf4373a1b2adf6b8"
+    },
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationEvidence.cs",
+      "sha256": "c63965e1fcb7db94a40af49073fac48b9ebe330b0955b57197887e088088a2ad"
+    }
+  ],
+  "settingsPreservation": [
+    {
+      "path": "ProjectSettings/ProjectAuditorSettings.asset",
+      "preservedPath": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-preserved-ProjectAuditorSettings.asset",
+      "preservedSha256": "9e68444b9bda981e2927a98df9edf69ea88362f0c6b7f3c81b39b9d515d2a416",
+      "headSha256": "9e68444b9bda981e2927a98df9edf69ea88362f0c6b7f3c81b39b9d515d2a416",
+      "reason": "Known generated line-ending-only change; preserved after owned Editor exit, then restored exact path"
+    },
+    {
+      "path": "ProjectSettings/EditorBuildSettings.asset",
+      "preservedPath": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-preserved-EditorBuildSettings.asset",
+      "preservedSha256": "61b81004081de287d300738d601bb2002379ac1d6f5f6c8c51f9e76675041106",
+      "headSha256": "61b81004081de287d300738d601bb2002379ac1d6f5f6c8c51f9e76675041106",
+      "reason": "Known generated line-ending-only change, preserved then exact path restored after Editor exit"
+    },
+    {
+      "path": "ProjectSettings/QualitySettings.asset",
+      "preservedPath": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-preserved-QualitySettings.asset",
+      "preservedSha256": "941f6673697bbe0579ce452e3e3284f6216087af0d04355c0d3c30d3ef9712d0",
+      "headSha256": "941f6673697bbe0579ce452e3e3284f6216087af0d04355c0d3c30d3ef9712d0",
+      "reason": "Known generated line-ending-only change, preserved then exact path restored after Editor exit"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-00-preserved-before-resume.json",
+      "bytes": 2509,
+      "sha256": "2f356079f164107a718da7cf51bccac4b61733f07fb0b2a135674a439f60aa9e"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-00-preserved-before-resume.png",
+      "bytes": 135967,
+      "sha256": "faf1ed0dd68b9a11e9d9abde75e5d8140e57023c308f740b569b5272c9eda656"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-all-settings-preservation.json",
+      "bytes": 1459,
+      "sha256": "f0374472d7e979cddf071a9ea34f7c1ee984f03c6fd9193cee27990c0d15b86f"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-final-before-stop.json",
+      "bytes": 2684,
+      "sha256": "3478ca528091503db46a2cba71dba9ea82668535b8accce8fe46dfbc0f123e25"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-final-before-stop.png",
+      "bytes": 74144,
+      "sha256": "798f022b2828708364607cfb6a8883a818d164845a63c4983a5b3162523cb0b1"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-final-diff.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-final-git-status.txt",
+      "bytes": 103,
+      "sha256": "f003d57347ef74b94bc354633bf857f1b7ffb85b2bf5df2328664875be538bbc"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-first-before.json",
+      "bytes": 2734,
+      "sha256": "cd3c8a9c602c0121a94bad3c0c77c40fd75e761a05a3f0be2e0977d17938c88b"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-first-before.png",
+      "bytes": 62646,
+      "sha256": "77a4b1aef6d98f3f03a024c3ba57938f3509e04d16462ff7bbba75dcb64bbaef"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-first-continued-F5.json",
+      "bytes": 2718,
+      "sha256": "747188d878a8e141a77087399b9cd3fc76c73328d9dffacb608254f19dfd9468"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-first-continued-F5.png",
+      "bytes": 78561,
+      "sha256": "e29b2fac2092de4c8618204574add7ee573e2f4b053c30a29eba3ca7712a352f"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-first-continued-F6.json",
+      "bytes": 2772,
+      "sha256": "1eb8215cda7f278f3f9af87497fa0b4a0712f6ce628f5283afa4e7c0af2a6336"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-first-continued-F6.png",
+      "bytes": 85256,
+      "sha256": "aaf24329838b062ab5bf2cc27903f32ae9ee631b376335597d57c4a001778028"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-first-controls.json",
+      "bytes": 2674,
+      "sha256": "b1138cec87e5d43ed9a09439bb6814833c27eadb9b0e018e027297e18564f549"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-first-controls.png",
+      "bytes": 74285,
+      "sha256": "9ecda1ea873780cc141f7c50db94ddabdbc9059408874745bfb2d2c072b1ac54"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-first-dossier.json",
+      "bytes": 2745,
+      "sha256": "cfb90260680f7b3c3ef99402f01ee2143853fbd1a1020f6e0548ed3a31bf92e4"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-first-dossier.png",
+      "bytes": 177486,
+      "sha256": "bd33f4f5bd348ce63c6d854140fb73559b17a0a2f06f732ac4d59cf02de187f5"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-first-input.json",
+      "bytes": 1100,
+      "sha256": "b04129d1ef5ae5ec8155d229018513386394c7891ffa0fed38948da109c16f94"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-first-rejected.json",
+      "bytes": 2730,
+      "sha256": "c918615dce9cac6e6685ae17c686c68bc407c90631f263c1bf9d69ecfe4361de"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-first-rejected.png",
+      "bytes": 62646,
+      "sha256": "77a4b1aef6d98f3f03a024c3ba57938f3509e04d16462ff7bbba75dcb64bbaef"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-first-valid-recovery.json",
+      "bytes": 2738,
+      "sha256": "9f6c6291e685d09d5efcb991a297bc4c734b351b2831fd87b5983bc632c368ea"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-first-valid-recovery.png",
+      "bytes": 85536,
+      "sha256": "f9e81b79cf0cdcf88b9be1ba92eda27d7f29108130c029f855df53527c7b6644"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-record-before.json",
+      "bytes": 2736,
+      "sha256": "08b1fe6a9b4f583490fe1c5d256a7529f5e41f5c9f7d6eebdb4734e546d81f4f"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-record-before.png",
+      "bytes": 61572,
+      "sha256": "a628fb3c394b5adb27c8f4a815de43cd7bb012cee9136078a8cfe8ec1e3881fe"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-record-continued-F5.json",
+      "bytes": 2718,
+      "sha256": "ba3c0048f40a7f186d92b5971687be855f53adbc3af9a9009ca1f13f8248f250"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-record-continued-F5.png",
+      "bytes": 78622,
+      "sha256": "eebce5b820de5cf3c9372a94f016615e1e82974d47394d3b5e469484f4dad402"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-record-continued-F6.json",
+      "bytes": 2771,
+      "sha256": "38411d5fabbca006c00b1a5279c30f452821cdc1f015001fe4eba273dd05597f"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-record-continued-F6.png",
+      "bytes": 85313,
+      "sha256": "96c2ef842614f918eca35bff244ef2b6a34b148df83d52dcd89a61d92c0ecab3"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-record-controls.json",
+      "bytes": 2677,
+      "sha256": "ece0dcb2effe6c37eb7845130d545aa621bb80bc6fca9d23e6d1ac136526158b"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-record-controls.png",
+      "bytes": 74243,
+      "sha256": "c918b1b6c5c2bbc698434bb43b2d3b3c82d31c22ef306cf61f9362c858acd58d"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-record-dossier.json",
+      "bytes": 2747,
+      "sha256": "4322ad3db8b4d0e5bb3835fa761908a9f532fa16f0d92ea18f1171dcbbfb10b0"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-record-dossier.png",
+      "bytes": 176988,
+      "sha256": "348f672791ed22b6b2c3f8e8aa31f2041ef7e3a654187391ea2d0c1a1f481616"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-record-input.json",
+      "bytes": 1041,
+      "sha256": "13e9555666492c1fd442ec8eb8dbc4790903c7157bdc34a13c418eac6e2abec6"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-record-rejected.json",
+      "bytes": 2732,
+      "sha256": "bdb79124af6160d00f2cf056e52c40805e8a22cb3d2f5a814beb467301cc4652"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-record-rejected.png",
+      "bytes": 61572,
+      "sha256": "a628fb3c394b5adb27c8f4a815de43cd7bb012cee9136078a8cfe8ec1e3881fe"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-record-valid-recovery.json",
+      "bytes": 2738,
+      "sha256": "0d9584d4dfdd079130175cf567366ec66ba1676703dc52101904118b77db85fa"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-null-record-valid-recovery.png",
+      "bytes": 85536,
+      "sha256": "f9e81b79cf0cdcf88b9be1ba92eda27d7f29108130c029f855df53527c7b6644"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-preserved-EditorBuildSettings.asset",
+      "bytes": 604,
+      "sha256": "61b81004081de287d300738d601bb2002379ac1d6f5f6c8c51f9e76675041106"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-preserved-ProjectAuditorSettings.asset",
+      "bytes": 1036,
+      "sha256": "9e68444b9bda981e2927a98df9edf69ea88362f0c6b7f3c81b39b9d515d2a416"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-preserved-QualitySettings.asset",
+      "bytes": 3723,
+      "sha256": "941f6673697bbe0579ce452e3e3284f6216087af0d04355c0d3c30d3ef9712d0"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-resume-results.json",
+      "bytes": 1482,
+      "sha256": "7642ccaf2895b74bb745ccfd04b3d4f04b82d9ecf24b96835476a263fa679cb7"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/authorized-settings-preservation.json",
+      "bytes": 481,
+      "sha256": "f4c59aa07452a9170e38fc61468ea5cd1259e5c24cb3b60933db6111f74c208f"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/before-stop.json",
+      "bytes": 2684,
+      "sha256": "c24b18a914207bf6e72ac35f75e67395fe29dcd813b198057357353277cb6367"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/Editor.log",
+      "bytes": 68410,
+      "sha256": "4c97fc4de9c5acb84a39d56c60aa6001885fabfa9348a5799c8c9c46f4babf95"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/os-input.jsonl",
+      "bytes": 26843,
+      "sha256": "13a1f21944555c67247afe4937563471f6acff8b80f08c918a2b9041e3da4ef3"
+    }
+  ],
+  "earlierInterruptionManifest": "null-completion-evidence-manifest.json"
+}

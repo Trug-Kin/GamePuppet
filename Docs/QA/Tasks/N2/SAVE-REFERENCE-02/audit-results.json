@@ -1,0 +1,56 @@
+{
+  "unity": "6000.6.2f1",
+  "kind": "EDITMODE_SERIALIZATION_VALIDATOR_LOOKUP_API_NOT_LOAD_OR_UI",
+  "profile": "C:\\ConRoi_Nguoi2\\Test\\PlaytestProfiles\\RelationReferenceAudit_20261108",
+  "cases": [
+    {
+      "case": "empty",
+      "validatorAccepted": true,
+      "validatorError": "",
+      "inputUnchanged": true,
+      "first": null,
+      "second": null,
+      "consumerLookupException": "",
+      "resolvedTitles": "",
+      "fixturePath": "C:\\ConRoi_Nguoi2\\Test\\PlaytestProfiles\\RelationReferenceAudit_20261108\\empty.json"
+    },
+    {
+      "case": "valid_relation",
+      "validatorAccepted": true,
+      "validatorError": "",
+      "inputUnchanged": true,
+      "first": "slide",
+      "second": "shoeprint",
+      "consumerLookupException": "",
+      "resolvedTitles": "Vệt trượt trên gác / Dấu đế tại mép gác",
+      "fixturePath": "C:\\ConRoi_Nguoi2\\Test\\PlaytestProfiles\\RelationReferenceAudit_20261108\\valid_relation.json"
+    },
+    {
+      "case": "unknown_first",
+      "validatorAccepted": true,
+      "validatorError": "",
+      "inputUnchanged": true,
+      "first": "missing_relation_evidence",
+      "second": "shoeprint",
+      "consumerLookupException": "NullReferenceException",
+      "resolvedTitles": "",
+      "fixturePath": "C:\\ConRoi_Nguoi2\\Test\\PlaytestProfiles\\RelationReferenceAudit_20261108\\unknown_first.json"
+    },
+    {
+      "case": "unknown_second",
+      "validatorAccepted": true,
+      "validatorError": "",
+      "inputUnchanged": true,
+      "first": "slide",
+      "second": "missing_relation_evidence",
+      "consumerLookupException": "NullReferenceException",
+      "resolvedTitles": "",
+      "fixturePath": "C:\\ConRoi_Nguoi2\\Test\\PlaytestProfiles\\RelationReferenceAudit_20261108\\unknown_second.json"
+    }
+  ],
+  "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+  "gapReproduced": true,
+  "controlsPassed": true,
+  "exitCode": 0,
+  "runtimeFixImplemented": false
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "OS_SYNTHESIZED_UI_CONTROLLER_WITH_REUSED_UI_EARNED_SAVE_FIXTURE",
+  "testedCommit": "abd0ea7e",
+  "fixtureSource": "C:\\ConRoi_Nguoi2\\Test\\Output\\SaveReference02\\UI_20261108\\valid-ui.json",
+  "fixtureSha256": "0c8cf171c99dc3dda7c3dab0664c43788d1712985f5f4ddafb86c03dbba73813",
+  "cases": [],
+  "exception": "Traceback (most recent call last):\n  File \"C:\\ConRoi_Nguoi2\\Test\\Output\\SaveReference02\\NullCompletion_20261108\\check_null_completion.py\", line 13, in <module>\n    focus();wait_for(lambda s:s.get('page')=='intro');snap('00-fresh-profile-intro')\n            ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\ConRoi_Nguoi2\\Test\\Output\\SaveReference02\\NullCompletion_20261108\\check_null_completion.py\", line 9, in wait_for\n    raise AssertionError('State timeout: '+str(state()))\nAssertionError: State timeout: {'utc': '2026-11-08T15:13:10.1939151Z', 'unity': '6000.6.2f1', 'scene': 'Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity', 'sceneDirty': False, 'play': True, 'compiling': False, 'width': 1536, 'height': 746, 'data': {'schema': 1, 'namespaceId': 'conroi.investigation.v36.r107', 'position': {'x': 0.0, 'y': 0.0, 'z': 0.0}, 'yaw': 0.0, 'pitch': 0.0, 'inspecting': '', 'page': 'dossier', 'samplesAllowed': False, 'returnedToWorkshop': False, 'visitedHa': False, 'introAccepted': True, 'tutorialSkipped': False, 'firstFloorRecorded': True, 'firstNotesReviewed': True, 'tableDiscovered': False, 'tutorialWaypoint': 0, 'clipBeforeSeen': False, 'clipEventSeen': False, 'clipBeforeExposure': 0.0, 'clipEventExposure': 0.0, 'evidence': [{'id': 'shoeprint', 'collected': True, 'observations': []}, {'id': 'slide', 'collected': True, 'observations': [0, 1]}], 'mapping': [], 'relations': [], 'trials': [], 'conclusions': [{'choice': 0, 'claim': '', 'grounds': []}, {'choice': 0, 'claim': '', 'grounds': []}, {'choice': 0, 'claim': '', 'grounds': []}, {'choice': 0, 'claim': '', 'grounds': []}], 'gate': {'angle': 0.0, 'velocity': 0.0, 'rope': False, 'hook': False, 'bodyForce': False, 'wedge': False, 'latched': True}, 'finalized': False}, 'dataIdentity': -2060523972, 'page': 'dossier', 'paused': False, 'modal': True, 'message': '', 'savePath': 'C:\\\\ConRoi_Nguoi2\\\\Test\\\\PlaytestProfiles\\\\SaveReference02_NullCompletion_20261108\\\\InvestigationV36\\\\r107\\\\prototype.json', 'position': {'x': 1.1866569519042969, 'y': 1.0799998044967651, 'z': 0.15834243595600128}, 'yaw': 13.4601583, 'pitch': 11.5600309, 'gate': {'angle': 0.0, 'velocity': 0.0, 'rope': False, 'hook': False, 'bodyForce': False, 'wedge': False, 'latched': True}, 'movement': False, 'look': False, 'actions': False, 'testInputHook': False, 'timeScale': 1.0, 'cursor': 'None'}\n",
+  "status": "INTERRUPTED_PRECONDITION_UNKNOWN_INPUT",
+  "fixtureSourceUnchanged": true,
+  "reason": "State left intro and acquired observations before any scripted key/click; input source not established. No Load/null case started.",
+  "scriptedGameplayInputs": 0,
+  "nullLoadStatus": "NOT_RUN_IN_NEW_ATTEMPT",
+  "runtimeChanged": false,
+  "api54Rerun": false,
+  "editorLeftRunningToPreserveUnexplainedLiveState": true,
+  "waitingFor": "Confirm whether Unity is in use and reserve desktop before UI input; no answer inferred from elapsed time."
+}

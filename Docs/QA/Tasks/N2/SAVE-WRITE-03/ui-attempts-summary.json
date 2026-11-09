@@ -1,0 +1,34 @@
+{
+  "testedCommit": "b4bf64846df349cddfe6ace48c9a0f063acdaf5d",
+  "attempts": [
+    {
+      "attempt": "initial",
+      "status": "CHECK_INCOMPLETE_NEEDS_INVESTIGATION",
+      "normalSaveLoad": "PASS",
+      "reason": "Slide button coordinate used for shorter shoeprint transcript; record click missed. No product failure concluded.",
+      "rawLocalResult": "Test/Output/SaveWrite03/UI_20261109/ui-attempt1-results.json"
+    },
+    {
+      "attempt": "resume",
+      "completedFaultCases": [
+        "temp_directory",
+        "destination_locked",
+        "temp_write_locked"
+      ],
+      "lastCase": "temp_delete_locked",
+      "status": "INTERRUPTED_FOCUS_BEFORE_F6",
+      "foregroundPid": 5280,
+      "foregroundProcess": "WindowsTerminal",
+      "ownedUnityPid": 7172,
+      "inputStoppedBeforeF6": true,
+      "locksReleasedInFinally": true,
+      "rawLocalResult": "Test/Output/SaveWrite03/UI_20261109/ui-attempt2-focus-results.json"
+    },
+    {
+      "attempt": "retry_last_case_only",
+      "status": "PASS",
+      "completedFaultCase": "temp_delete_locked",
+      "didNotRepeatPassedCases": true
+    }
+  ]
+}

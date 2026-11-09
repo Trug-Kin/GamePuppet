@@ -1,0 +1,99 @@
+{
+  "capturedUTC": "2026-11-08T15:19:14.662794+00:00",
+  "testedCheckout": "abd0ea7ef10ff0ac226eb3f3ed2b29c4456d19ac",
+  "state": "INTERRUPTED_PRECONDITION_UNKNOWN_INPUT",
+  "liveEditorLog": "Not hashed as a stable artifact while Editor may write; immutable copy is indexed instead.",
+  "localRoot": "C:\\ConRoi_Nguoi2",
+  "files": [
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/attempt-1-results.json",
+      "bytes": 2815,
+      "sha256": "430c74c4d407e7ebec5d394855c1d6fedafad33738cff6c4a0af4ce61bd37fd5"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/before-diff.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/before-head.txt",
+      "bytes": 41,
+      "sha256": "d628574b092430f7cb1e311f77685e5b1ca7987cf8d36ceb15f2ca675b188ad0"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/before-status.txt",
+      "bytes": 144,
+      "sha256": "319b7f37e2e689ec500f2a1446bbc96349506c84e52956b38ca7611ed7ac7e54"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/check_null_completion.py",
+      "bytes": 4750,
+      "sha256": "54957f0625e6d66e250ed379eb6e0f63d2b06c137679addf032c5923880c659f"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/command.json",
+      "bytes": 71,
+      "sha256": "42fc029623e9f3bcc68ef6e329f3a36f799aef294e31f02bc867afb90e2effeb"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/desktop.py",
+      "bytes": 3524,
+      "sha256": "c62a2c9e4fee4c676a65c47aa52b4cdb10ce84014574f02c121e1d2a08897f2f"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/interrupted-diff.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/interrupted-editor-log-copy.log",
+      "bytes": 61247,
+      "sha256": "40d66307d6f342aff78a6745542d9c6e509a48377f419230e4ad3e241101e6f7"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/interrupted-precondition-preserved.json",
+      "bytes": 2509,
+      "sha256": "69ff46715243bd18522496c76f48ed7df78e0eabced91fbb25dd2edc572f653b"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/interrupted-precondition-preserved.png",
+      "bytes": 134967,
+      "sha256": "6ade9d1e0a95a773eae07d9eaec74b7b577819b844054ab7220ad80e9d6ca796"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/interrupted-status.txt",
+      "bytes": 192,
+      "sha256": "547114a050a169bd78463e999ab6c0f95ebb638d6af00ef05240183de314c112"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/os-input.jsonl",
+      "bytes": 4565,
+      "sha256": "a181f0320b200d48ea8e390b6759a0b3408877931880aa508755c5f37d94d925"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/owned-pid.txt",
+      "bytes": 7,
+      "sha256": "244a3ce8d7b21159c497662981e3bd64ae39e214759e6af95c1422a883376e65"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/reply.json",
+      "bytes": 80,
+      "sha256": "50836c3d70e87394e59d3d3828b2f2978be5148cf60ed6eeb0af7c2db91c12ba"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/results.json",
+      "bytes": 2964,
+      "sha256": "2f796332fc94ef4611a72a767d4a0ab440012ab2d4fda02a10a5f343ce0906da"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/snapshot_a672fa19c1ce4efa899f150929a6c951.json",
+      "bytes": 2509,
+      "sha256": "69ff46715243bd18522496c76f48ed7df78e0eabced91fbb25dd2edc572f653b"
+    },
+    {
+      "path": "Test/Output/SaveReference02/NullCompletion_20261108/snapshot_a672fa19c1ce4efa899f150929a6c951.png",
+      "bytes": 134967,
+      "sha256": "6ade9d1e0a95a773eae07d9eaec74b7b577819b844054ab7220ad80e9d6ca796"
+    }
+  ]
+}
