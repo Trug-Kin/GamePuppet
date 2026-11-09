@@ -199,3 +199,41 @@ Prompt nhận việc: “Trên work/runtime-contracts-baseline từ fcbb7e19, x�
 - Công cụ/meta và commit đã chạy5be056e4:66/66 API targeted đạt valid/null/JSON/read ở world/dossier/pause, state/bytes/recovery. Controller Windows tổng hợp trong scene Gameplay/profile mới tạo progress bằng E/ghi/F5; F6/nút Tải validation/read hiển thị lý do trong dossier/pause1080p, không báo sai thành công; unlock/F6 thay lỗi bằng success, P/E/Esc/modal/pause/di chuyển và F5/F6 tiếp đạt. Không chạy lại bộ save/IO/trial cũ.
 - Giữ riêng lượt click Ghi chưa tác động do zoom1,3×; sau chỉnh Editor fit0,86× kiểm lại đạt. Không có foreground-loss exception trong phiên; probe cũ/mất focus trước giữ riêng. Đã đóng Editor không lưu scene, settings/untracked bảo toàn.
 - [Báo cáo và chuỗi nhận](../QA/Tasks/N2/UI-LOAD-FEEDBACK-01/README.md). UI/UX & Tích hợp nhận nguồn/công cụ/tài liệu trên tiền đề597369a5, không wiring mới; phải review footer/header và các trang chịu co nội dung trong scene chung. Scene chung/mọi UI1080p/người mới NOT_RUN; P-close OPEN không sửa. Chưa push/merge/chốt baseline.
+
+## Gameplay & Dữ liệu — tuyến prototype, nhận 09/11/2026
+
+Xuất phát thực tế a374a93a; snapshot Test/Output/GameplayScope20261109. Fetch và fast-forward an toàn tới baf7335b5 (baseline kỹ thuật c93cb4f1e, nguồn tích hợp thực kiểm f242b60a), không mất commit riêng; hai thư mục untracked giữ nguyên. Toàn bộ session partial thuộc Gameplay & Dữ liệu; không sửa scene chung/map/GDD/tài liệu điều phối/UI thuộc vai trò khác. Tài liệu N3 nhận qua baseline, không chỉnh tiếp. CLI profile riêng giữ nguyên.
+
+### Checklist chức năng trước sửa
+
+| Phạm vi | Đã có / căn cứ source | Thiếu, trạng thái và phạm vi hiện tại |
+| --- | --- | --- |
+| Tương tác/khám | Session.TryInteractionHit/Interact/OpenEvidence; GDD6/9: ray gần nhất, E, viewer, khóa input; mẫu áo/giày có samplesAllowed | ĐÃ CÓ trong prototype; chất lượng collider/góc nhìn là phụ thuộc Map & Asset, không tự sửa geometry. Kiểm tuyến đại diện, không audit mọi asset. |
+| Ghi quan sát | Observe/RecordVisibleObservations; GDD7.2; OBS-PROGRESS-01: khám chưa ghi, index hợp lệ, lặp không nhân đôi | ĐÃ CÓ; clip bị chặn ghi trước hai vùng exposure. Nhưng transcript clip ở InspectUI/CompareUI vẫn in trực tiếp từ definition trước guard: chọn CLIP-DISCLOSURE-01 kiểm baseline và sửa. |
+| Tiến trình/mục tiêu | Onboarding.CurrentObjective/UpdateOnboarding; dấu sàn→P→phone→xem clip→cơ cấu→Hà→quay lại; GDD12.1/13 | ĐÃ CÓ tuyến prototype; skip không cấp chứng cứ, Acquire không tính ghi. Không tự thêm gate kết luận theo trial hoặc ép mọi observation khi GDD không yêu cầu. |
+| Mật mã | Assign/ReadCipher/RecordReading + Alphabet/Hà; GDD5.3: tập ký tự prototype, Henri tùy chọn | ĐÃ CÓ bản đọc/ghi cụm rút gọn, không cấp người gửi; không mở rộng26 ký tự/năm thư. UI/asset final là phụ thuộc theo giai đoạn. |
+| Đối chiếu | AddRelation/CompareUI; GDD7.2: hai mục, ghi suy luận không tự thành sự thật | ĐÃ CÓ, không chấm đúng/sai/đổi ID. Cùng consumer transcript clip phải dùng guard mới; không sửa hình/căn cứ giấy chưa có nguồn độc lập. |
+| Bàn dựng | TrialTimeline/AdvanceTrial/SeekTrial/ClearTrialHolds; GDD3.3/7.1; TRIAL-CONTEXT-01 | ĐÃ CÓ sáu ca, pause/context/seek; không đổi luật hồi/tốc độ. Kiểm một ca tuyến đại diện, không chạy lại103 ca. Gate chứng cứ/hình học ngoài đời chưa được tuyên PASS. |
+| Kết luận prototype | ConclusionUI/ConclusionRecord, bốn mục và chưa đủ; GDD7.3/13 | THIẾU save riêng trước chốt; handler đặt finalized trước Save(void), vẫn feedback thành công khi IO fail. Chọn CONCLUSION-CHECKPOINT-01. Giữ nhận định chưa đủ, không tự chấm đủ chuỗi hoặc tạo ending A/C chưa có nội dung. |
+| Save/load | SaveFile/SaveValidation/Load; GDD11; các gói save đã tích hợp | ĐÃ CÓ guard/atomic write + feedback. Chỉ hồi quy roundtrip liên quan transcript/kết luận; không chạy lại toàn bộ IO/API. Checkpoint trước chốt mới không được Load tự chọn. |
+| Lát cắt/ending/mở khu | GDD12.3–4/8; nguồn draft hiện ghi chưa nối người gửi, chưa có nguồn động cơ đầy đủ | NGOÀI GIAI ĐOẠN prototype đang giao. Không tạo NPC/chương, luật chấm chứng cứ/ending hay schema mới. Nhóm giao nội dung và cơ chế review khi chuyển giai đoạn. |
+
+### Hai gói triển khai và acceptance trước sửa
+
+1. **CLIP-DISCLOSURE-01 — Không lộ phần ghi nhận clip chưa xem**. GDD7.2/11: chưa xem thì sổ không tiết lộ. Dùng đúng hai cờ exposure hiện có của Observe, không thiết kế luật xem mới. Transcript trên inspect/compare chưa đủ cả hai cờ chỉ có hướng dẫn trung tính; đủ thì giữ bản chép cũ. Không tự ghi observation/cấp dữ kiện khi mở/xem/tua; Acquire clip không đồng nghĩa đã xem. Batch ghi bị từ chối không được báo đã ghi thành công. Kiểm chưa xem/chỉ trước/chỉ sự cố/đủ, lặp/seek/quay lại và save/load; UI/controller đại diện nếu desktop riêng.
+2. **CONCLUSION-CHECKPOINT-01 — Chốt bản ghi có checkpoint an toàn**. GDD7.3: xác nhận trung tính và save riêng ngay trước chốt. Tạo snapshot schema1 finalized=false tại đường dẫn riêng cố định trong profile; chỉ đặt live finalized=true/báo thành công sau ghi bản chốt thành công. Save cũ hợp lệ không bị xóa trước commit, lỗi checkpoint hoặc file đích phải trả lỗi qua Message cũ, không chốt giả; khắc phục tiếp tục được. Checkpoint được khôi phục tường minh bằng bản sao, không tự Load nhầm. Xác nhận phải gắn đúng nội dung hiện tại, sửa nội dung/Load không giữ xác nhận cũ. Không chấm đáp án hoặc thêm ending. Kiểm API các bước/IO lỗi chỉ profile mới và khôi phục finally, UI/controller nếu có desktop; hồi quy roundtrip gắn căn cứ và chưa đủ.
+
+File dự kiến: Session.cs, Onboarding.cs, SessionUI.cs (partial đang sở hữu; chỉ consumer guard/hành động runtime, giữ layout), partial runtime mới nếu giúp tách gói; tool/meta trong Gameplay/Editor; báo cáo N2, contracts và tiến độ này. Không sửa presentation/scene thuộc vai trò khác. Mỗi gói có commit nguồn riêng và công cụ/báo cáo; nhận hết chuỗi, không wiring scene mới.
+
+Đang làm: acceptance đã ghi, tiếp theo tái hiện baseline qua API/source rồi sửa tối thiểu; desktop đang chờ xác nhận để kiểm input. P-close OPEN/chưa tái hiện, người mới NOT_RUN; không dùng chúng chặn phần runtime độc lập.
+
+
+### Hoàn thành phần runtime tuyến prototype — 09/11/2026
+
+- **Đã làm:** CLIP-DISCLOSURE-01 không lộ bản chép trước exposure và phản hồi ghi đúng; CONCLUSION-CHECKPOINT-01 xác nhận gắn record, checkpoint trước chốt, không finalized/báo thành công giả, API restore tường minh. Schema1/ID/GUID/luật và guards cũ giữ nguyên.
+- Checklist trước sửa được giữ: tám nhóm runtime hiện có đã đối chiếu; hai thiếu sót chọn đã triển khai/kiểm. Không mở rộng lát cắt/ending/full26 tư thế. Chất lượng asset/media/tuyến scene chung và nút restore UI là phụ thuộc, không tính đã xong toàn tuyến người chơi cuối.
+- **Nguồn:** e0544b74 → d7f1c93b. Công cụ71b20f71 → df2a1a83. API cuối trên df2a1a83 **86/86**; controller/UI trên d7f1c93b **37/37**, blob runtime bằng nhau. Không input Windows: IMGUI event đích GameView + keyboard ảo, proxy scene Gameplay/profile mới, không fixture cấp chứng cứ trực tiếp trong routeUI. API có cấp dữ liệu/giải mã/exposure, ghi riêng.
+- **Giữ lịch sử:** baseline clip3 lỗi/8, kết luận4 lỗi/6; lượt24/25,80/86,85/86 và click DPI gián đoạn không đổi thành PASS. IO ngoài dự kiến chưa rõ process/nguyên nhân; log tạm chỉ thấy các lỗi chủ động tạo, đã phục hồi nguồn và kiểm commit thật đạt. Không thay writer/retry che lỗi.
+- **Bàn giao:** [PROTOTYPE-FLOW-01: chuỗi, acceptance, kiểm, lệnh, phụ thuộc](../QA/Tasks/N2/PROTOTYPE-FLOW-01/README.md). Cập nhật HOP_DONG_MODULE; không cần wiring cho clip/nút chốt cũ. UI/UX & Tích hợp nhận toàn chuỗi, kiểm scene chung; nếu cần nút restore, thống nhất riêng trước nối API, hiện chưa có nút mới.
+- **Còn thiếu/phụ thuộc:** scene chung/UI1080p/người mới trên nguồn mới NOT_RUN; P-close OPEN/chưa tái hiện/nguyên nhân chưa rõ; media clip thật và readability cần kiểm tích hợp. Không chốt baseline nhóm. Năm file Unity bảo toàn bytes trước kiểm, không lưu scene runtime; snapshot/log/profile local không commit. Hai thư mục untracked cũ giữ nguyên.
+- Không còn việc runtime rõ trong hai gói đã chọn; việc tiếp là tích hợp/kiểm các phụ thuộc trên và nhận quyết định nội dung giai đoạn lát cắt khi nhóm giao. Không tự thêm chương hoặc ending.

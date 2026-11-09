@@ -1,0 +1,2295 @@
+{
+  "unity": "6000.6.2f1",
+  "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+  "api_commit": "df2a1a83f767d206cf1991225a616e6cbf4ed498",
+  "controller_commit": "d7f1c93b7db1c1a878c0763733e6f14c56750cc5",
+  "controller_render": [
+    1600,
+    1099
+  ],
+  "product_blobs_equal": {
+    "Assets/Scripts/InvestigationV36R107/InvestigationSession.cs": "3a72701b1ef6b92ed07451b2df78810f5faa80f1",
+    "Assets/Scripts/InvestigationV36R107/InvestigationSessionUI.cs": "576c41fd9ef50ff2e8ae9a532ffc49c0e4d8f9ea",
+    "Assets/Scripts/InvestigationV36R107/InvestigationOnboarding.cs": "9c87e0e8e4a8d231bbffac846dacc39ffc590419",
+    "Assets/Scripts/InvestigationV36R107/InvestigationConclusionCommit.cs": "baffd7abc8636a3be10d8ec2610e7e754dd02027",
+    "Assets/Scripts/InvestigationV36R107/InvestigationConclusionCommit.cs.meta": "ec0da0a9ec36653643d5626a99eb3d1e385be4b1"
+  },
+  "runs": [
+    {
+      "run": "ClipBaseline",
+      "source": "baf7335b5",
+      "kind": "PLAYMODE_API_FIXTURE_NOT_UI",
+      "checks": 8,
+      "failures": 3,
+      "raw_sha256": "6c8a075db437d9c50ccee9009582ed86fe6772222a9af171dc1db2b3d7f26f9d",
+      "assertions": [
+        {
+          "name": "False_False_transcript_disclosure",
+          "pass": false
+        },
+        {
+          "name": "False_False_read_only",
+          "pass": true
+        },
+        {
+          "name": "True_False_transcript_disclosure",
+          "pass": false
+        },
+        {
+          "name": "True_False_read_only",
+          "pass": true
+        },
+        {
+          "name": "False_True_transcript_disclosure",
+          "pass": false
+        },
+        {
+          "name": "False_True_read_only",
+          "pass": true
+        },
+        {
+          "name": "True_True_transcript_disclosure",
+          "pass": true
+        },
+        {
+          "name": "True_True_read_only",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "run": "ClipFixed",
+      "source": "e0544b740fa127897fd6d6c746dc7b15aab68fbd",
+      "kind": "PLAYMODE_API_FIXTURE_NOT_UI",
+      "checks": 43,
+      "failures": 0,
+      "raw_sha256": "32aa2ba50ba76193298b1d97a2cbbec08fba4597b20e35c42c5236eaa5a82eca",
+      "assertions": [
+        {
+          "name": "False_False_transcript_disclosure",
+          "pass": true
+        },
+        {
+          "name": "False_False_read_only",
+          "pass": true
+        },
+        {
+          "name": "False_False_inspect_no_grant",
+          "pass": true
+        },
+        {
+          "name": "False_False_compare_same_guard",
+          "pass": true
+        },
+        {
+          "name": "False_False_batch_record_guard",
+          "pass": true
+        },
+        {
+          "name": "False_False_message_honest",
+          "pass": true
+        },
+        {
+          "name": "False_False_repeat_unique",
+          "pass": true
+        },
+        {
+          "name": "False_False_load_roundtrip",
+          "pass": true
+        },
+        {
+          "name": "False_False_loaded_disclosure",
+          "pass": true
+        },
+        {
+          "name": "True_False_transcript_disclosure",
+          "pass": true
+        },
+        {
+          "name": "True_False_read_only",
+          "pass": true
+        },
+        {
+          "name": "True_False_inspect_no_grant",
+          "pass": true
+        },
+        {
+          "name": "True_False_compare_same_guard",
+          "pass": true
+        },
+        {
+          "name": "True_False_batch_record_guard",
+          "pass": true
+        },
+        {
+          "name": "True_False_message_honest",
+          "pass": true
+        },
+        {
+          "name": "True_False_repeat_unique",
+          "pass": true
+        },
+        {
+          "name": "True_False_load_roundtrip",
+          "pass": true
+        },
+        {
+          "name": "True_False_loaded_disclosure",
+          "pass": true
+        },
+        {
+          "name": "False_True_transcript_disclosure",
+          "pass": true
+        },
+        {
+          "name": "False_True_read_only",
+          "pass": true
+        },
+        {
+          "name": "False_True_inspect_no_grant",
+          "pass": true
+        },
+        {
+          "name": "False_True_compare_same_guard",
+          "pass": true
+        },
+        {
+          "name": "False_True_batch_record_guard",
+          "pass": true
+        },
+        {
+          "name": "False_True_message_honest",
+          "pass": true
+        },
+        {
+          "name": "False_True_repeat_unique",
+          "pass": true
+        },
+        {
+          "name": "False_True_load_roundtrip",
+          "pass": true
+        },
+        {
+          "name": "False_True_loaded_disclosure",
+          "pass": true
+        },
+        {
+          "name": "True_True_transcript_disclosure",
+          "pass": true
+        },
+        {
+          "name": "True_True_read_only",
+          "pass": true
+        },
+        {
+          "name": "True_True_inspect_no_grant",
+          "pass": true
+        },
+        {
+          "name": "True_True_compare_same_guard",
+          "pass": true
+        },
+        {
+          "name": "True_True_batch_record_guard",
+          "pass": true
+        },
+        {
+          "name": "True_True_message_honest",
+          "pass": true
+        },
+        {
+          "name": "True_True_repeat_unique",
+          "pass": true
+        },
+        {
+          "name": "True_True_load_roundtrip",
+          "pass": true
+        },
+        {
+          "name": "True_True_loaded_disclosure",
+          "pass": true
+        },
+        {
+          "name": "unacquired_empty",
+          "pass": true
+        },
+        {
+          "name": "other_transcript_unchanged",
+          "pass": true
+        },
+        {
+          "name": "missing_id_empty",
+          "pass": true
+        },
+        {
+          "name": "before_only_no_event",
+          "pass": true
+        },
+        {
+          "name": "return_no_grant",
+          "pass": true
+        },
+        {
+          "name": "real_windows_unlock",
+          "pass": true
+        },
+        {
+          "name": "continue_record_load",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "run": "ConclusionBaseline",
+      "source": "e0544b740fa127897fd6d6c746dc7b15aab68fbd",
+      "kind": "PLAYMODE_API_FIXTURE_NOT_UI",
+      "checks": 6,
+      "failures": 4,
+      "raw_sha256": "8f88c7d2d42cd549adf382d9e727a1b7ac157f89b66a0266bba230b00baa9a0e",
+      "assertions": [
+        {
+          "name": "target_failure_returns_false",
+          "pass": false
+        },
+        {
+          "name": "target_failure_not_finalized",
+          "pass": false
+        },
+        {
+          "name": "target_failure_old_bytes_preserved",
+          "pass": true
+        },
+        {
+          "name": "precommit_checkpoint_exists",
+          "pass": false
+        },
+        {
+          "name": "old_valid_save_loads_after_failure",
+          "pass": true
+        },
+        {
+          "name": "load_clears_confirmation",
+          "pass": false
+        }
+      ]
+    },
+    {
+      "run": "ConclusionFixed",
+      "source": "d7f1c93b7db1c1a878c0763733e6f14c56750cc5",
+      "kind": "PLAYMODE_API_FIXTURE_NOT_UI",
+      "checks": 25,
+      "failures": 1,
+      "raw_sha256": "adca9fa696c4383f5b53ee95bb6733c65f5cf95bcd5cfdae011f71df44a0ce15",
+      "assertions": [
+        {
+          "name": "target_failure_returns_false",
+          "pass": true
+        },
+        {
+          "name": "target_failure_not_finalized",
+          "pass": true
+        },
+        {
+          "name": "target_failure_old_bytes_preserved",
+          "pass": true
+        },
+        {
+          "name": "precommit_checkpoint_exists",
+          "pass": true
+        },
+        {
+          "name": "old_valid_save_loads_after_failure",
+          "pass": true
+        },
+        {
+          "name": "load_clears_confirmation",
+          "pass": true
+        },
+        {
+          "name": "recovery_commit_succeeds",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_schema_and_pending",
+          "pass": true
+        },
+        {
+          "name": "final_save_committed",
+          "pass": true
+        },
+        {
+          "name": "final_load_preserves_record",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_create_failure_rejected",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_recovery",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_failure_valid_load",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_replace_failure_rejected",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_replace_recovery",
+          "pass": true
+        },
+        {
+          "name": "unconfirmed_rejected",
+          "pass": true
+        },
+        {
+          "name": "edit_invalidates_signature",
+          "pass": true
+        },
+        {
+          "name": "return_requires_confirmation",
+          "pass": true
+        },
+        {
+          "name": "pause_clears_confirmation",
+          "pass": true
+        },
+        {
+          "name": "resume_can_confirm_and_commit",
+          "pass": false
+        },
+        {
+          "name": "not_enough_is_allowed",
+          "pass": true
+        },
+        {
+          "name": "no_auto_grants_or_trials",
+          "pass": true
+        },
+        {
+          "name": "pending_checkpoint_not_autoloaded",
+          "pass": true
+        },
+        {
+          "name": "explicit_pending_restore",
+          "pass": true
+        },
+        {
+          "name": "continue_after_restore",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "run": "ConclusionRecheck",
+      "source": "d7f1c93b",
+      "kind": "PLAYMODE_API_FIXTURE_NOT_UI",
+      "checks": 25,
+      "failures": 0,
+      "raw_sha256": "4ddb3fab26ba97d058080b05b5a26af880f2ba4fab82ec8802f1375ac772b807",
+      "assertions": [
+        {
+          "name": "target_failure_returns_false",
+          "pass": true
+        },
+        {
+          "name": "target_failure_not_finalized",
+          "pass": true
+        },
+        {
+          "name": "target_failure_old_bytes_preserved",
+          "pass": true
+        },
+        {
+          "name": "precommit_checkpoint_exists",
+          "pass": true
+        },
+        {
+          "name": "old_valid_save_loads_after_failure",
+          "pass": true
+        },
+        {
+          "name": "load_clears_confirmation",
+          "pass": true
+        },
+        {
+          "name": "recovery_commit_succeeds",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_schema_and_pending",
+          "pass": true
+        },
+        {
+          "name": "final_save_committed",
+          "pass": true
+        },
+        {
+          "name": "final_load_preserves_record",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_create_failure_rejected",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_recovery",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_failure_valid_load",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_replace_failure_rejected",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_replace_recovery",
+          "pass": true
+        },
+        {
+          "name": "unconfirmed_rejected",
+          "pass": true
+        },
+        {
+          "name": "edit_invalidates_signature",
+          "pass": true
+        },
+        {
+          "name": "return_requires_confirmation",
+          "pass": true
+        },
+        {
+          "name": "pause_clears_confirmation",
+          "pass": true
+        },
+        {
+          "name": "resume_can_confirm_and_commit",
+          "pass": true
+        },
+        {
+          "name": "not_enough_is_allowed",
+          "pass": true
+        },
+        {
+          "name": "no_auto_grants_or_trials",
+          "pass": true
+        },
+        {
+          "name": "pending_checkpoint_not_autoloaded",
+          "pass": true
+        },
+        {
+          "name": "explicit_pending_restore",
+          "pass": true
+        },
+        {
+          "name": "continue_after_restore",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "run": "UiProbe",
+      "source": "d7f1c93b",
+      "kind": "UNITY_TARGETED_IMGUI_AND_VIRTUAL_KEYBOARD_NOT_WINDOWS_NOT_NATURAL",
+      "checks": 2,
+      "failures": 0,
+      "raw_sha256": "a530a8e23d9c1e643bdeed79f2572238944d33e1205fff6c55a6c2e82b661952",
+      "assertions": [
+        {
+          "name": "intro_UI_start",
+          "pass": true
+        },
+        {
+          "name": "F5_real_update",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "run": "ControllerRoute",
+      "source": "d7f1c93b",
+      "kind": "UNITY_TARGETED_IMGUI_AND_VIRTUAL_KEYBOARD_NOT_WINDOWS_NOT_NATURAL",
+      "checks": 10,
+      "failures": 2,
+      "raw_sha256": "05977d1f41406c92f51ff3d6cd2868a9a67d9be17c4324593ea7a56c5055c444",
+      "assertions": [
+        {
+          "name": "intro_UI_start",
+          "pass": true
+        },
+        {
+          "name": "E_slide_inspect_no_record",
+          "pass": true
+        },
+        {
+          "name": "slide_UI_record",
+          "pass": true
+        },
+        {
+          "name": "record_updates_objective",
+          "pass": true
+        },
+        {
+          "name": "P_reviews_first_note",
+          "pass": true
+        },
+        {
+          "name": "modal_blocks_movement",
+          "pass": true
+        },
+        {
+          "name": "E_phone_acquires_only_phone",
+          "pass": true
+        },
+        {
+          "name": "UI_opens_clip",
+          "pass": true
+        },
+        {
+          "name": "UI_early_clip_inspect_is_guarded",
+          "pass": false
+        },
+        {
+          "name": "exception",
+          "pass": false
+        }
+      ]
+    },
+    {
+      "run": "ControllerRouteDpi",
+      "source": "d7f1c93b",
+      "kind": "UNITY_TARGETED_IMGUI_AND_VIRTUAL_KEYBOARD_NOT_WINDOWS_NOT_NATURAL",
+      "checks": 9,
+      "failures": 2,
+      "raw_sha256": "85c1d4e1ade5a26ba9a57783cea99b8459905e5bb2a378828ddda600522f2baa",
+      "assertions": [
+        {
+          "name": "intro_UI_start",
+          "pass": true
+        },
+        {
+          "name": "E_slide_inspect_no_record",
+          "pass": true
+        },
+        {
+          "name": "slide_UI_record",
+          "pass": true
+        },
+        {
+          "name": "record_updates_objective",
+          "pass": true
+        },
+        {
+          "name": "P_reviews_first_note",
+          "pass": true
+        },
+        {
+          "name": "modal_blocks_movement",
+          "pass": true
+        },
+        {
+          "name": "E_phone_acquires_only_phone",
+          "pass": true
+        },
+        {
+          "name": "UI_opens_clip",
+          "pass": false
+        },
+        {
+          "name": "exception",
+          "pass": false
+        }
+      ]
+    },
+    {
+      "run": "ControllerRouteTargeted",
+      "source": "d7f1c93b",
+      "kind": "UNITY_TARGETED_IMGUI_AND_VIRTUAL_KEYBOARD_NOT_WINDOWS_NOT_NATURAL",
+      "checks": 37,
+      "failures": 0,
+      "raw_sha256": "0be202b1a3975e160e5a608bb57cc08abd52971676f02b5aad02544b66a21375",
+      "assertions": [
+        {
+          "name": "intro_UI_start",
+          "pass": true
+        },
+        {
+          "name": "E_slide_inspect_no_record",
+          "pass": true
+        },
+        {
+          "name": "slide_UI_record",
+          "pass": true
+        },
+        {
+          "name": "record_updates_objective",
+          "pass": true
+        },
+        {
+          "name": "P_reviews_first_note",
+          "pass": true
+        },
+        {
+          "name": "modal_blocks_movement",
+          "pass": true
+        },
+        {
+          "name": "E_phone_acquires_only_phone",
+          "pass": true
+        },
+        {
+          "name": "UI_opens_clip",
+          "pass": true
+        },
+        {
+          "name": "UI_clip_paused_before_event",
+          "pass": true
+        },
+        {
+          "name": "clip_record_button_opens_inspect",
+          "pass": true
+        },
+        {
+          "name": "UI_early_clip_inspect_is_guarded",
+          "pass": true
+        },
+        {
+          "name": "UI_reopens_clip",
+          "pass": true
+        },
+        {
+          "name": "visible_playback_unlocks_both_windows",
+          "pass": true
+        },
+        {
+          "name": "clip_record_button_opens_inspect",
+          "pass": true
+        },
+        {
+          "name": "UI_seen_clip_transcript",
+          "pass": true
+        },
+        {
+          "name": "clip_UI_record",
+          "pass": true
+        },
+        {
+          "name": "clip_UI_record",
+          "pass": true
+        },
+        {
+          "name": "clip_repeat_not_duplicate",
+          "pass": true
+        },
+        {
+          "name": "E_Ha_returns_existing_letter_data",
+          "pass": true
+        },
+        {
+          "name": "E_mechanism_no_free_observation",
+          "pass": true
+        },
+        {
+          "name": "E_table_opens",
+          "pass": true
+        },
+        {
+          "name": "UI_trial_started",
+          "pass": true
+        },
+        {
+          "name": "trial_context_still_guarded",
+          "pass": true
+        },
+        {
+          "name": "E_returns_same_trial",
+          "pass": true
+        },
+        {
+          "name": "controller_moves_after_modal",
+          "pass": true
+        },
+        {
+          "name": "F6_restores_route_progress",
+          "pass": true
+        },
+        {
+          "name": "P_dossier_for_conclusion",
+          "pass": true
+        },
+        {
+          "name": "conclusion_UI_open",
+          "pass": true
+        },
+        {
+          "name": "UI_neutral_confirmation",
+          "pass": true
+        },
+        {
+          "name": "UI_finalization_saves",
+          "pass": true
+        },
+        {
+          "name": "UI_checkpoint_pending_final_committed",
+          "pass": true
+        },
+        {
+          "name": "F6_final_record_load_no_stale_confirmation",
+          "pass": true
+        },
+        {
+          "name": "Esc_after_commit",
+          "pass": true
+        },
+        {
+          "name": "pause_after_commit",
+          "pass": true
+        },
+        {
+          "name": "resume_after_commit",
+          "pass": true
+        },
+        {
+          "name": "P_after_commit",
+          "pass": true
+        },
+        {
+          "name": "P_closes_after_commit",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "run": "FinalAffectedApi",
+      "source": "71b20f71b9732980053b063c0b8a04f61f86a2c3",
+      "kind": "PLAYMODE_API_FIXTURE_NOT_UI",
+      "checks": 86,
+      "failures": 6,
+      "raw_sha256": "38e36b2ca685a49c97d6d395123968de3a05c7b0de86a05d5357bfd68eaa27d4",
+      "assertions": [
+        {
+          "name": "False_False_transcript_disclosure",
+          "pass": true
+        },
+        {
+          "name": "False_False_read_only",
+          "pass": true
+        },
+        {
+          "name": "False_False_inspect_no_grant",
+          "pass": true
+        },
+        {
+          "name": "False_False_compare_same_guard",
+          "pass": true
+        },
+        {
+          "name": "False_False_batch_record_guard",
+          "pass": true
+        },
+        {
+          "name": "False_False_message_honest",
+          "pass": true
+        },
+        {
+          "name": "False_False_repeat_unique",
+          "pass": true
+        },
+        {
+          "name": "False_False_load_roundtrip",
+          "pass": true
+        },
+        {
+          "name": "False_False_loaded_disclosure",
+          "pass": true
+        },
+        {
+          "name": "True_False_transcript_disclosure",
+          "pass": true
+        },
+        {
+          "name": "True_False_read_only",
+          "pass": true
+        },
+        {
+          "name": "True_False_inspect_no_grant",
+          "pass": true
+        },
+        {
+          "name": "True_False_compare_same_guard",
+          "pass": true
+        },
+        {
+          "name": "True_False_batch_record_guard",
+          "pass": true
+        },
+        {
+          "name": "True_False_message_honest",
+          "pass": true
+        },
+        {
+          "name": "True_False_repeat_unique",
+          "pass": true
+        },
+        {
+          "name": "True_False_load_roundtrip",
+          "pass": true
+        },
+        {
+          "name": "True_False_loaded_disclosure",
+          "pass": true
+        },
+        {
+          "name": "False_True_transcript_disclosure",
+          "pass": true
+        },
+        {
+          "name": "False_True_read_only",
+          "pass": true
+        },
+        {
+          "name": "False_True_inspect_no_grant",
+          "pass": true
+        },
+        {
+          "name": "False_True_compare_same_guard",
+          "pass": true
+        },
+        {
+          "name": "False_True_batch_record_guard",
+          "pass": true
+        },
+        {
+          "name": "False_True_message_honest",
+          "pass": true
+        },
+        {
+          "name": "False_True_repeat_unique",
+          "pass": true
+        },
+        {
+          "name": "False_True_load_roundtrip",
+          "pass": true
+        },
+        {
+          "name": "False_True_loaded_disclosure",
+          "pass": true
+        },
+        {
+          "name": "True_True_transcript_disclosure",
+          "pass": true
+        },
+        {
+          "name": "True_True_read_only",
+          "pass": true
+        },
+        {
+          "name": "True_True_inspect_no_grant",
+          "pass": true
+        },
+        {
+          "name": "True_True_compare_same_guard",
+          "pass": true
+        },
+        {
+          "name": "True_True_batch_record_guard",
+          "pass": true
+        },
+        {
+          "name": "True_True_message_honest",
+          "pass": true
+        },
+        {
+          "name": "True_True_repeat_unique",
+          "pass": true
+        },
+        {
+          "name": "True_True_load_roundtrip",
+          "pass": false
+        },
+        {
+          "name": "True_True_loaded_disclosure",
+          "pass": false
+        },
+        {
+          "name": "unacquired_empty",
+          "pass": true
+        },
+        {
+          "name": "other_transcript_unchanged",
+          "pass": true
+        },
+        {
+          "name": "missing_id_empty",
+          "pass": true
+        },
+        {
+          "name": "before_only_no_event",
+          "pass": true
+        },
+        {
+          "name": "return_no_grant",
+          "pass": true
+        },
+        {
+          "name": "real_windows_unlock",
+          "pass": true
+        },
+        {
+          "name": "continue_record_load",
+          "pass": true
+        },
+        {
+          "name": "target_failure_returns_false",
+          "pass": true
+        },
+        {
+          "name": "target_failure_not_finalized",
+          "pass": true
+        },
+        {
+          "name": "target_failure_old_bytes_preserved",
+          "pass": true
+        },
+        {
+          "name": "precommit_checkpoint_exists",
+          "pass": true
+        },
+        {
+          "name": "old_valid_save_loads_after_failure",
+          "pass": true
+        },
+        {
+          "name": "load_clears_confirmation",
+          "pass": true
+        },
+        {
+          "name": "recovery_commit_succeeds",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_schema_and_pending",
+          "pass": true
+        },
+        {
+          "name": "final_save_committed",
+          "pass": true
+        },
+        {
+          "name": "final_load_preserves_record",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_create_failure_rejected",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_recovery",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_failure_valid_load",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_replace_failure_rejected",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_replace_recovery",
+          "pass": true
+        },
+        {
+          "name": "unconfirmed_rejected",
+          "pass": true
+        },
+        {
+          "name": "edit_invalidates_signature",
+          "pass": true
+        },
+        {
+          "name": "return_requires_confirmation",
+          "pass": true
+        },
+        {
+          "name": "pause_clears_confirmation",
+          "pass": true
+        },
+        {
+          "name": "resume_can_confirm_and_commit",
+          "pass": true
+        },
+        {
+          "name": "not_enough_is_allowed",
+          "pass": true
+        },
+        {
+          "name": "no_auto_grants_or_trials",
+          "pass": true
+        },
+        {
+          "name": "pending_checkpoint_not_autoloaded",
+          "pass": true
+        },
+        {
+          "name": "explicit_pending_restore",
+          "pass": true
+        },
+        {
+          "name": "continue_after_restore",
+          "pass": true
+        },
+        {
+          "name": "route_clean_start",
+          "pass": true
+        },
+        {
+          "name": "route_inspect_not_record",
+          "pass": true
+        },
+        {
+          "name": "route_record_unique_progress",
+          "pass": true
+        },
+        {
+          "name": "route_note_review_phone_objective",
+          "pass": true
+        },
+        {
+          "name": "route_clip_recorded",
+          "pass": true
+        },
+        {
+          "name": "route_Ha_received_not_solved",
+          "pass": true
+        },
+        {
+          "name": "route_blank_cipher_no_leak",
+          "pass": true
+        },
+        {
+          "name": "route_wrong_partial_cipher_no_grant",
+          "pass": true
+        },
+        {
+          "name": "route_cipher_reads_expected",
+          "pass": true
+        },
+        {
+          "name": "route_cipher_record_unique",
+          "pass": true
+        },
+        {
+          "name": "route_compare_invalid_not_recorded",
+          "pass": true
+        },
+        {
+          "name": "route_compare_records_thought_not_verdict",
+          "pass": true
+        },
+        {
+          "name": "route_trial_single_record",
+          "pass": true
+        },
+        {
+          "name": "route_finalize_pending_choice",
+          "pass": false
+        },
+        {
+          "name": "route_load_preserves_all",
+          "pass": false
+        },
+        {
+          "name": "checkpoint_malformed_rejected",
+          "pass": true
+        },
+        {
+          "name": "route_explicit_checkpoint_load",
+          "pass": false
+        },
+        {
+          "name": "route_continue_save_load",
+          "pass": false
+        }
+      ]
+    },
+    {
+      "run": "FinalIoDiagnosis",
+      "source": "71b20f71",
+      "kind": "PLAYMODE_API_FIXTURE_NOT_UI",
+      "checks": 86,
+      "failures": 1,
+      "raw_sha256": "d8483999ca3296b846b408ac59efb15252c0742e8560278a7d3393af4c4bb83d",
+      "assertions": [
+        {
+          "name": "False_False_transcript_disclosure",
+          "pass": true
+        },
+        {
+          "name": "False_False_read_only",
+          "pass": true
+        },
+        {
+          "name": "False_False_inspect_no_grant",
+          "pass": true
+        },
+        {
+          "name": "False_False_compare_same_guard",
+          "pass": true
+        },
+        {
+          "name": "False_False_batch_record_guard",
+          "pass": true
+        },
+        {
+          "name": "False_False_message_honest",
+          "pass": true
+        },
+        {
+          "name": "False_False_repeat_unique",
+          "pass": true
+        },
+        {
+          "name": "False_False_load_roundtrip",
+          "pass": true
+        },
+        {
+          "name": "False_False_loaded_disclosure",
+          "pass": true
+        },
+        {
+          "name": "True_False_transcript_disclosure",
+          "pass": true
+        },
+        {
+          "name": "True_False_read_only",
+          "pass": true
+        },
+        {
+          "name": "True_False_inspect_no_grant",
+          "pass": true
+        },
+        {
+          "name": "True_False_compare_same_guard",
+          "pass": true
+        },
+        {
+          "name": "True_False_batch_record_guard",
+          "pass": true
+        },
+        {
+          "name": "True_False_message_honest",
+          "pass": true
+        },
+        {
+          "name": "True_False_repeat_unique",
+          "pass": true
+        },
+        {
+          "name": "True_False_load_roundtrip",
+          "pass": true
+        },
+        {
+          "name": "True_False_loaded_disclosure",
+          "pass": true
+        },
+        {
+          "name": "False_True_transcript_disclosure",
+          "pass": true
+        },
+        {
+          "name": "False_True_read_only",
+          "pass": true
+        },
+        {
+          "name": "False_True_inspect_no_grant",
+          "pass": true
+        },
+        {
+          "name": "False_True_compare_same_guard",
+          "pass": true
+        },
+        {
+          "name": "False_True_batch_record_guard",
+          "pass": true
+        },
+        {
+          "name": "False_True_message_honest",
+          "pass": true
+        },
+        {
+          "name": "False_True_repeat_unique",
+          "pass": true
+        },
+        {
+          "name": "False_True_load_roundtrip",
+          "pass": true
+        },
+        {
+          "name": "False_True_loaded_disclosure",
+          "pass": true
+        },
+        {
+          "name": "True_True_transcript_disclosure",
+          "pass": true
+        },
+        {
+          "name": "True_True_read_only",
+          "pass": true
+        },
+        {
+          "name": "True_True_inspect_no_grant",
+          "pass": true
+        },
+        {
+          "name": "True_True_compare_same_guard",
+          "pass": true
+        },
+        {
+          "name": "True_True_batch_record_guard",
+          "pass": true
+        },
+        {
+          "name": "True_True_message_honest",
+          "pass": true
+        },
+        {
+          "name": "True_True_repeat_unique",
+          "pass": true
+        },
+        {
+          "name": "True_True_load_roundtrip",
+          "pass": true
+        },
+        {
+          "name": "True_True_loaded_disclosure",
+          "pass": true
+        },
+        {
+          "name": "unacquired_empty",
+          "pass": true
+        },
+        {
+          "name": "other_transcript_unchanged",
+          "pass": true
+        },
+        {
+          "name": "missing_id_empty",
+          "pass": true
+        },
+        {
+          "name": "before_only_no_event",
+          "pass": true
+        },
+        {
+          "name": "return_no_grant",
+          "pass": true
+        },
+        {
+          "name": "real_windows_unlock",
+          "pass": true
+        },
+        {
+          "name": "continue_record_load",
+          "pass": true
+        },
+        {
+          "name": "target_failure_returns_false",
+          "pass": true
+        },
+        {
+          "name": "target_failure_not_finalized",
+          "pass": true
+        },
+        {
+          "name": "target_failure_old_bytes_preserved",
+          "pass": true
+        },
+        {
+          "name": "precommit_checkpoint_exists",
+          "pass": true
+        },
+        {
+          "name": "old_valid_save_loads_after_failure",
+          "pass": true
+        },
+        {
+          "name": "load_clears_confirmation",
+          "pass": true
+        },
+        {
+          "name": "recovery_commit_succeeds",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_schema_and_pending",
+          "pass": true
+        },
+        {
+          "name": "final_save_committed",
+          "pass": true
+        },
+        {
+          "name": "final_load_preserves_record",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_create_failure_rejected",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_recovery",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_failure_valid_load",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_replace_failure_rejected",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_replace_recovery",
+          "pass": true
+        },
+        {
+          "name": "unconfirmed_rejected",
+          "pass": true
+        },
+        {
+          "name": "edit_invalidates_signature",
+          "pass": true
+        },
+        {
+          "name": "return_requires_confirmation",
+          "pass": true
+        },
+        {
+          "name": "pause_clears_confirmation",
+          "pass": true
+        },
+        {
+          "name": "resume_can_confirm_and_commit",
+          "pass": false
+        },
+        {
+          "name": "not_enough_is_allowed",
+          "pass": true
+        },
+        {
+          "name": "no_auto_grants_or_trials",
+          "pass": true
+        },
+        {
+          "name": "pending_checkpoint_not_autoloaded",
+          "pass": true
+        },
+        {
+          "name": "explicit_pending_restore",
+          "pass": true
+        },
+        {
+          "name": "continue_after_restore",
+          "pass": true
+        },
+        {
+          "name": "route_clean_start",
+          "pass": true
+        },
+        {
+          "name": "route_inspect_not_record",
+          "pass": true
+        },
+        {
+          "name": "route_record_unique_progress",
+          "pass": true
+        },
+        {
+          "name": "route_note_review_phone_objective",
+          "pass": true
+        },
+        {
+          "name": "route_clip_recorded",
+          "pass": true
+        },
+        {
+          "name": "route_Ha_received_not_solved",
+          "pass": true
+        },
+        {
+          "name": "route_blank_cipher_no_leak",
+          "pass": true
+        },
+        {
+          "name": "route_wrong_partial_cipher_no_grant",
+          "pass": true
+        },
+        {
+          "name": "route_cipher_reads_expected",
+          "pass": true
+        },
+        {
+          "name": "route_cipher_record_unique",
+          "pass": true
+        },
+        {
+          "name": "route_compare_invalid_not_recorded",
+          "pass": true
+        },
+        {
+          "name": "route_compare_records_thought_not_verdict",
+          "pass": true
+        },
+        {
+          "name": "route_trial_single_record",
+          "pass": true
+        },
+        {
+          "name": "route_finalize_pending_choice",
+          "pass": true
+        },
+        {
+          "name": "route_load_preserves_all",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_malformed_rejected",
+          "pass": true
+        },
+        {
+          "name": "route_explicit_checkpoint_load",
+          "pass": true
+        },
+        {
+          "name": "route_continue_save_load",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "run": "ConclusionIoTrace",
+      "source": "71b20f71+tool-diagnostic",
+      "kind": "PLAYMODE_API_FIXTURE_NOT_UI",
+      "checks": 25,
+      "failures": 0,
+      "raw_sha256": "027f1a6e8f1a96d197571491606f5650968a3ff4f0e4cb7369b5b3f227d1e130",
+      "assertions": [
+        {
+          "name": "target_failure_returns_false",
+          "pass": true
+        },
+        {
+          "name": "target_failure_not_finalized",
+          "pass": true
+        },
+        {
+          "name": "target_failure_old_bytes_preserved",
+          "pass": true
+        },
+        {
+          "name": "precommit_checkpoint_exists",
+          "pass": true
+        },
+        {
+          "name": "old_valid_save_loads_after_failure",
+          "pass": true
+        },
+        {
+          "name": "load_clears_confirmation",
+          "pass": true
+        },
+        {
+          "name": "recovery_commit_succeeds",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_schema_and_pending",
+          "pass": true
+        },
+        {
+          "name": "final_save_committed",
+          "pass": true
+        },
+        {
+          "name": "final_load_preserves_record",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_create_failure_rejected",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_recovery",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_failure_valid_load",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_replace_failure_rejected",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_replace_recovery",
+          "pass": true
+        },
+        {
+          "name": "unconfirmed_rejected",
+          "pass": true
+        },
+        {
+          "name": "edit_invalidates_signature",
+          "pass": true
+        },
+        {
+          "name": "return_requires_confirmation",
+          "pass": true
+        },
+        {
+          "name": "pause_clears_confirmation",
+          "pass": true
+        },
+        {
+          "name": "resume_can_confirm_and_commit",
+          "pass": true
+        },
+        {
+          "name": "not_enough_is_allowed",
+          "pass": true
+        },
+        {
+          "name": "no_auto_grants_or_trials",
+          "pass": true
+        },
+        {
+          "name": "pending_checkpoint_not_autoloaded",
+          "pass": true
+        },
+        {
+          "name": "explicit_pending_restore",
+          "pass": true
+        },
+        {
+          "name": "continue_after_restore",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "run": "AllIoCatchTrace",
+      "source": "d7f1c93b+temporary-catch-log",
+      "kind": "PLAYMODE_API_FIXTURE_NOT_UI",
+      "checks": 86,
+      "failures": 0,
+      "raw_sha256": "2880847b9d1c8eea4f1b158a04b776d06738715174151243573f6412156dc2a4",
+      "assertions": [
+        {
+          "name": "False_False_transcript_disclosure",
+          "pass": true
+        },
+        {
+          "name": "False_False_read_only",
+          "pass": true
+        },
+        {
+          "name": "False_False_inspect_no_grant",
+          "pass": true
+        },
+        {
+          "name": "False_False_compare_same_guard",
+          "pass": true
+        },
+        {
+          "name": "False_False_batch_record_guard",
+          "pass": true
+        },
+        {
+          "name": "False_False_message_honest",
+          "pass": true
+        },
+        {
+          "name": "False_False_repeat_unique",
+          "pass": true
+        },
+        {
+          "name": "False_False_load_roundtrip",
+          "pass": true
+        },
+        {
+          "name": "False_False_loaded_disclosure",
+          "pass": true
+        },
+        {
+          "name": "True_False_transcript_disclosure",
+          "pass": true
+        },
+        {
+          "name": "True_False_read_only",
+          "pass": true
+        },
+        {
+          "name": "True_False_inspect_no_grant",
+          "pass": true
+        },
+        {
+          "name": "True_False_compare_same_guard",
+          "pass": true
+        },
+        {
+          "name": "True_False_batch_record_guard",
+          "pass": true
+        },
+        {
+          "name": "True_False_message_honest",
+          "pass": true
+        },
+        {
+          "name": "True_False_repeat_unique",
+          "pass": true
+        },
+        {
+          "name": "True_False_load_roundtrip",
+          "pass": true
+        },
+        {
+          "name": "True_False_loaded_disclosure",
+          "pass": true
+        },
+        {
+          "name": "False_True_transcript_disclosure",
+          "pass": true
+        },
+        {
+          "name": "False_True_read_only",
+          "pass": true
+        },
+        {
+          "name": "False_True_inspect_no_grant",
+          "pass": true
+        },
+        {
+          "name": "False_True_compare_same_guard",
+          "pass": true
+        },
+        {
+          "name": "False_True_batch_record_guard",
+          "pass": true
+        },
+        {
+          "name": "False_True_message_honest",
+          "pass": true
+        },
+        {
+          "name": "False_True_repeat_unique",
+          "pass": true
+        },
+        {
+          "name": "False_True_load_roundtrip",
+          "pass": true
+        },
+        {
+          "name": "False_True_loaded_disclosure",
+          "pass": true
+        },
+        {
+          "name": "True_True_transcript_disclosure",
+          "pass": true
+        },
+        {
+          "name": "True_True_read_only",
+          "pass": true
+        },
+        {
+          "name": "True_True_inspect_no_grant",
+          "pass": true
+        },
+        {
+          "name": "True_True_compare_same_guard",
+          "pass": true
+        },
+        {
+          "name": "True_True_batch_record_guard",
+          "pass": true
+        },
+        {
+          "name": "True_True_message_honest",
+          "pass": true
+        },
+        {
+          "name": "True_True_repeat_unique",
+          "pass": true
+        },
+        {
+          "name": "True_True_load_roundtrip",
+          "pass": true
+        },
+        {
+          "name": "True_True_loaded_disclosure",
+          "pass": true
+        },
+        {
+          "name": "unacquired_empty",
+          "pass": true
+        },
+        {
+          "name": "other_transcript_unchanged",
+          "pass": true
+        },
+        {
+          "name": "missing_id_empty",
+          "pass": true
+        },
+        {
+          "name": "before_only_no_event",
+          "pass": true
+        },
+        {
+          "name": "return_no_grant",
+          "pass": true
+        },
+        {
+          "name": "real_windows_unlock",
+          "pass": true
+        },
+        {
+          "name": "continue_record_load",
+          "pass": true
+        },
+        {
+          "name": "target_failure_returns_false",
+          "pass": true
+        },
+        {
+          "name": "target_failure_not_finalized",
+          "pass": true
+        },
+        {
+          "name": "target_failure_old_bytes_preserved",
+          "pass": true
+        },
+        {
+          "name": "precommit_checkpoint_exists",
+          "pass": true
+        },
+        {
+          "name": "old_valid_save_loads_after_failure",
+          "pass": true
+        },
+        {
+          "name": "load_clears_confirmation",
+          "pass": true
+        },
+        {
+          "name": "recovery_commit_succeeds",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_schema_and_pending",
+          "pass": true
+        },
+        {
+          "name": "final_save_committed",
+          "pass": true
+        },
+        {
+          "name": "final_load_preserves_record",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_create_failure_rejected",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_recovery",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_failure_valid_load",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_replace_failure_rejected",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_replace_recovery",
+          "pass": true
+        },
+        {
+          "name": "unconfirmed_rejected",
+          "pass": true
+        },
+        {
+          "name": "edit_invalidates_signature",
+          "pass": true
+        },
+        {
+          "name": "return_requires_confirmation",
+          "pass": true
+        },
+        {
+          "name": "pause_clears_confirmation",
+          "pass": true
+        },
+        {
+          "name": "resume_can_confirm_and_commit",
+          "pass": true
+        },
+        {
+          "name": "not_enough_is_allowed",
+          "pass": true
+        },
+        {
+          "name": "no_auto_grants_or_trials",
+          "pass": true
+        },
+        {
+          "name": "pending_checkpoint_not_autoloaded",
+          "pass": true
+        },
+        {
+          "name": "explicit_pending_restore",
+          "pass": true
+        },
+        {
+          "name": "continue_after_restore",
+          "pass": true
+        },
+        {
+          "name": "route_clean_start",
+          "pass": true
+        },
+        {
+          "name": "route_inspect_not_record",
+          "pass": true
+        },
+        {
+          "name": "route_record_unique_progress",
+          "pass": true
+        },
+        {
+          "name": "route_note_review_phone_objective",
+          "pass": true
+        },
+        {
+          "name": "route_clip_recorded",
+          "pass": true
+        },
+        {
+          "name": "route_Ha_received_not_solved",
+          "pass": true
+        },
+        {
+          "name": "route_blank_cipher_no_leak",
+          "pass": true
+        },
+        {
+          "name": "route_wrong_partial_cipher_no_grant",
+          "pass": true
+        },
+        {
+          "name": "route_cipher_reads_expected",
+          "pass": true
+        },
+        {
+          "name": "route_cipher_record_unique",
+          "pass": true
+        },
+        {
+          "name": "route_compare_invalid_not_recorded",
+          "pass": true
+        },
+        {
+          "name": "route_compare_records_thought_not_verdict",
+          "pass": true
+        },
+        {
+          "name": "route_trial_single_record",
+          "pass": true
+        },
+        {
+          "name": "route_finalize_pending_choice",
+          "pass": true
+        },
+        {
+          "name": "route_load_preserves_all",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_malformed_rejected",
+          "pass": true
+        },
+        {
+          "name": "route_explicit_checkpoint_load",
+          "pass": true
+        },
+        {
+          "name": "route_continue_save_load",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "run": "FinalCommittedApi",
+      "source": "df2a1a83f767d206cf1991225a616e6cbf4ed498",
+      "kind": "PLAYMODE_API_FIXTURE_NOT_UI",
+      "checks": 86,
+      "failures": 0,
+      "raw_sha256": "534b548260d469d02fe3df49240d385d08ea11ac747d64cd1036fe7eb550ce2b",
+      "assertions": [
+        {
+          "name": "False_False_transcript_disclosure",
+          "pass": true
+        },
+        {
+          "name": "False_False_read_only",
+          "pass": true
+        },
+        {
+          "name": "False_False_inspect_no_grant",
+          "pass": true
+        },
+        {
+          "name": "False_False_compare_same_guard",
+          "pass": true
+        },
+        {
+          "name": "False_False_batch_record_guard",
+          "pass": true
+        },
+        {
+          "name": "False_False_message_honest",
+          "pass": true
+        },
+        {
+          "name": "False_False_repeat_unique",
+          "pass": true
+        },
+        {
+          "name": "False_False_load_roundtrip",
+          "pass": true
+        },
+        {
+          "name": "False_False_loaded_disclosure",
+          "pass": true
+        },
+        {
+          "name": "True_False_transcript_disclosure",
+          "pass": true
+        },
+        {
+          "name": "True_False_read_only",
+          "pass": true
+        },
+        {
+          "name": "True_False_inspect_no_grant",
+          "pass": true
+        },
+        {
+          "name": "True_False_compare_same_guard",
+          "pass": true
+        },
+        {
+          "name": "True_False_batch_record_guard",
+          "pass": true
+        },
+        {
+          "name": "True_False_message_honest",
+          "pass": true
+        },
+        {
+          "name": "True_False_repeat_unique",
+          "pass": true
+        },
+        {
+          "name": "True_False_load_roundtrip",
+          "pass": true
+        },
+        {
+          "name": "True_False_loaded_disclosure",
+          "pass": true
+        },
+        {
+          "name": "False_True_transcript_disclosure",
+          "pass": true
+        },
+        {
+          "name": "False_True_read_only",
+          "pass": true
+        },
+        {
+          "name": "False_True_inspect_no_grant",
+          "pass": true
+        },
+        {
+          "name": "False_True_compare_same_guard",
+          "pass": true
+        },
+        {
+          "name": "False_True_batch_record_guard",
+          "pass": true
+        },
+        {
+          "name": "False_True_message_honest",
+          "pass": true
+        },
+        {
+          "name": "False_True_repeat_unique",
+          "pass": true
+        },
+        {
+          "name": "False_True_load_roundtrip",
+          "pass": true
+        },
+        {
+          "name": "False_True_loaded_disclosure",
+          "pass": true
+        },
+        {
+          "name": "True_True_transcript_disclosure",
+          "pass": true
+        },
+        {
+          "name": "True_True_read_only",
+          "pass": true
+        },
+        {
+          "name": "True_True_inspect_no_grant",
+          "pass": true
+        },
+        {
+          "name": "True_True_compare_same_guard",
+          "pass": true
+        },
+        {
+          "name": "True_True_batch_record_guard",
+          "pass": true
+        },
+        {
+          "name": "True_True_message_honest",
+          "pass": true
+        },
+        {
+          "name": "True_True_repeat_unique",
+          "pass": true
+        },
+        {
+          "name": "True_True_load_roundtrip",
+          "pass": true
+        },
+        {
+          "name": "True_True_loaded_disclosure",
+          "pass": true
+        },
+        {
+          "name": "unacquired_empty",
+          "pass": true
+        },
+        {
+          "name": "other_transcript_unchanged",
+          "pass": true
+        },
+        {
+          "name": "missing_id_empty",
+          "pass": true
+        },
+        {
+          "name": "before_only_no_event",
+          "pass": true
+        },
+        {
+          "name": "return_no_grant",
+          "pass": true
+        },
+        {
+          "name": "real_windows_unlock",
+          "pass": true
+        },
+        {
+          "name": "continue_record_load",
+          "pass": true
+        },
+        {
+          "name": "target_failure_returns_false",
+          "pass": true
+        },
+        {
+          "name": "target_failure_not_finalized",
+          "pass": true
+        },
+        {
+          "name": "target_failure_old_bytes_preserved",
+          "pass": true
+        },
+        {
+          "name": "precommit_checkpoint_exists",
+          "pass": true
+        },
+        {
+          "name": "old_valid_save_loads_after_failure",
+          "pass": true
+        },
+        {
+          "name": "load_clears_confirmation",
+          "pass": true
+        },
+        {
+          "name": "recovery_commit_succeeds",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_schema_and_pending",
+          "pass": true
+        },
+        {
+          "name": "final_save_committed",
+          "pass": true
+        },
+        {
+          "name": "final_load_preserves_record",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_create_failure_rejected",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_recovery",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_failure_valid_load",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_replace_failure_rejected",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_replace_recovery",
+          "pass": true
+        },
+        {
+          "name": "unconfirmed_rejected",
+          "pass": true
+        },
+        {
+          "name": "edit_invalidates_signature",
+          "pass": true
+        },
+        {
+          "name": "return_requires_confirmation",
+          "pass": true
+        },
+        {
+          "name": "pause_clears_confirmation",
+          "pass": true
+        },
+        {
+          "name": "resume_can_confirm_and_commit",
+          "pass": true
+        },
+        {
+          "name": "not_enough_is_allowed",
+          "pass": true
+        },
+        {
+          "name": "no_auto_grants_or_trials",
+          "pass": true
+        },
+        {
+          "name": "pending_checkpoint_not_autoloaded",
+          "pass": true
+        },
+        {
+          "name": "explicit_pending_restore",
+          "pass": true
+        },
+        {
+          "name": "continue_after_restore",
+          "pass": true
+        },
+        {
+          "name": "route_clean_start",
+          "pass": true
+        },
+        {
+          "name": "route_inspect_not_record",
+          "pass": true
+        },
+        {
+          "name": "route_record_unique_progress",
+          "pass": true
+        },
+        {
+          "name": "route_note_review_phone_objective",
+          "pass": true
+        },
+        {
+          "name": "route_clip_recorded",
+          "pass": true
+        },
+        {
+          "name": "route_Ha_received_not_solved",
+          "pass": true
+        },
+        {
+          "name": "route_blank_cipher_no_leak",
+          "pass": true
+        },
+        {
+          "name": "route_wrong_partial_cipher_no_grant",
+          "pass": true
+        },
+        {
+          "name": "route_cipher_reads_expected",
+          "pass": true
+        },
+        {
+          "name": "route_cipher_record_unique",
+          "pass": true
+        },
+        {
+          "name": "route_compare_invalid_not_recorded",
+          "pass": true
+        },
+        {
+          "name": "route_compare_records_thought_not_verdict",
+          "pass": true
+        },
+        {
+          "name": "route_trial_single_record",
+          "pass": true
+        },
+        {
+          "name": "route_finalize_pending_choice",
+          "pass": true
+        },
+        {
+          "name": "route_load_preserves_all",
+          "pass": true
+        },
+        {
+          "name": "checkpoint_malformed_rejected",
+          "pass": true
+        },
+        {
+          "name": "route_explicit_checkpoint_load",
+          "pass": true
+        },
+        {
+          "name": "route_continue_save_load",
+          "pass": true
+        }
+      ]
+    }
+  ]
+}
