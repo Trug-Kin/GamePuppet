@@ -9,7 +9,7 @@ namespace ConRoi.Investigation.V36.R107
         Texture2D white;
         Vector2 messageScroll;
         string displayedMessage="";
-        bool showLookup,confirmConclusion,stageWide=true;
+        bool showLookup,stageWide=true;
         readonly string[] trialNames={"Mở trước → thả → người di chuyển","Người giúp mở; Tư còn đè giữ","Giữ dây khi Tư đang dựa","Dùng móc giữ dây","Dùng vật chèn","Chỉ tới sau cú ngã"};
         readonly string[] trialIds={"release","help","hold","hook","wedge","after"};
         readonly string[] conclusionTitles={"Người gửi thư và yêu cầu","Có mặt và dàn dựng","Vai trò trong cú ngã","Động cơ"};
@@ -201,7 +201,7 @@ namespace ConRoi.Investigation.V36.R107
             Heading("Bản ghi kết luận • phạm vi prototype");
             Small("Ghi nhận định, căn cứ và điều còn thiếu. Bạn có thể chọn chưa đủ chứng minh.");
             conclusionIndex=GUILayout.SelectionGrid(conclusionIndex,conclusionTitles,2,buttonStyle);
-            var c=data.conclusions[conclusionIndex];c.choice=GUILayout.SelectionGrid(c.choice,new[]{"Chưa đủ chứng minh","Khải có vai trò đã ghi","Tư tự thực hiện","Chưa xác định người"},2,buttonStyle);
+            var c=data.conclusions[conclusionIndex];string priorConclusion=JsonUtility.ToJson(c);c.choice=GUILayout.SelectionGrid(c.choice,new[]{"Chưa đủ chứng minh","Khải có vai trò đã ghi","Tư tự thực hiện","Chưa xác định người"},2,buttonStyle);
             Text("Nhận định và giới hạn của bạn:");GUI.SetNextControlName("EntryClaim");c.claim=GUILayout.TextField(c.claim??"",GUILayout.Height(45));
             scroll=GUILayout.BeginScrollView(scroll,GUILayout.Height(Mathf.Clamp(data.evidence.Count(e=>e.observations.Count>0)*26,40,180)));
             foreach(var record in data.evidence.Where(e=>e.observations.Count>0)){
@@ -209,8 +209,9 @@ namespace ConRoi.Investigation.V36.R107
                 if(next&&!value)c.grounds.Add(record.id);if(!next&&value)c.grounds.Remove(record.id);
             }
             GUILayout.EndScrollView();Small("Căn cứ đã gắn: "+c.grounds.Count+". Số lượng không xác định đủ chứng minh.");
-            if(Button(confirmConclusion?"Đã xác nhận • bấm để đổi lại":"Xác nhận lựa chọn hiện tại, kể cả chưa đủ chứng minh"))confirmConclusion=!confirmConclusion;
-            if(confirmConclusion&&Button("Lưu bản ghi kết luận")){data.finalized=true;Save();feedback="Đã lưu nhận định và căn cứ của bạn. Không suy ý định gây chết từ thao tác cơ cấu.";}
+            if(priorConclusion!=JsonUtility.ToJson(c)){SetConclusionConfirmation(false);data.finalized=false;}
+            if(Button(ConclusionsConfirmed?"Đã xác nhận • bấm để đổi lại":"Xác nhận lựa chọn hiện tại, kể cả chưa đủ chứng minh"))SetConclusionConfirmation(!ConclusionsConfirmed);
+            if(ConclusionsConfirmed&&Button("Lưu bản ghi kết luận")){if(TryFinalizeConclusions())feedback="Đã lưu nhận định và căn cứ của bạn. Không suy ý định gây chết từ thao tác cơ cấu.";else feedback=Message;}
             Text(feedback);
             GUILayout.EndScrollView();
         }

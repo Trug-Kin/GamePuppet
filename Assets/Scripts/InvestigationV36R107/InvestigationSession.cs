@@ -153,6 +153,7 @@ namespace ConRoi.Investigation.V36.R107
         public void SetPaused(bool value){CancelReviewDrag();Paused=value;Time.timeScale=value?0:1;SetModalState();}
         void SetModalState()
         {
+            conclusionConfirmation=null;
             // Text focus belongs to the page being left, never to world input.
             textEditing=false;
             clearTextFocus=true;
@@ -244,11 +245,12 @@ namespace ConRoi.Investigation.V36.R107
                 InvestigationSaveFile.Write(SavePath,JsonUtility.ToJson(data,true));Message="Đã lưu hồ sơ prototype riêng.";
             }catch(Exception e){Message="Không lưu được: "+e.Message;}
         }
-        public bool Load()
+        public bool Load() => LoadFromPath(SavePath);
+        bool LoadFromPath(string path)
         {
             try{
-                if(!File.Exists(SavePath)){Message="Chưa có save điều tra ở thư mục riêng.";return false;}
-                string json=File.ReadAllText(SavePath);
+                if(!File.Exists(path)){Message="Chưa có save điều tra ở thư mục riêng.";return false;}
+                string json=File.ReadAllText(path);
                 if(!InvestigationSaveValidation.TryValidateSerializedCollections(json,out string validationError))throw new InvalidDataException(validationError);
                 var incoming=JsonUtility.FromJson<InvestigationSave>(json);
                 if(!InvestigationSaveValidation.TryValidate(incoming,out validationError))throw new InvalidDataException(validationError);
