@@ -44,3 +44,15 @@ Prompt nhận việc: “Trên work/ui-onboarding-review từ fcbb7e19, chuẩn 
 - Kiểm 7 mẫu Load từ chối và4 lỗi IO F5 trong profile riêng; state/bytes/recovery và P/E/Esc/modal đạt lượt này. Phát hiện evidence=null được F6 nhận, evidence4→0 hai lần: INT-SAVE-NULL-LIST-01 OPEN gửi Gameplay & Dữ liệu, không vá song song.
 - UI1920×1080 kiểm các trang tuyến đại diện; mật mã/toàn tuyến/seek-clear-holds trong scene chung chưa kiểm. Load feedback/P-close OPEN riêng; người mới NOT_RUN. Không chốt baseline task mới hoặc push.
 - Chi tiết, bước tái hiện, hash và giới hạn: [báo cáo](../QA/Tasks/N3/RUNTIME-INTEGRATION-01/README.md).
+
+## UI/UX & Tích hợp — nhận SAVE-EVIDENCE-04
+
+- Nhận đủ nguồn17b1f6e2/công cụf73631ae/báo cáo597369a5, merge vào review branch C hiện có tại22acc961; giữ riêng tiến độ D/các task, không chốt baseline hoặc push.
+- Kiểm scene thật ConRoi_Chinh/profile mới,4 evidence từ bản sao save UI của lượt integration trước, không API grant/proxy. Acceptance trước Play và review: [SAVE-EVIDENCE-04-INTEGRATION](../QA/Tasks/N3/SAVE-EVIDENCE-04-INTEGRATION/README.md).
+- File được sửa: báo cáo N3/tiến độ/HANDOFF sau kiểm; không sửa session partial, UI sản phẩm, scene/map. Probe phụ và UI1080p/người mới/Load feedback/P-close giữ trạng thái riêng.
+
+### Kết quả SAVE-EVIDENCE-04-INTEGRATION — 09/11/2026
+
+- Nguồn thực chạy `22acc9611aa8c6d0f86741798b2108d68f9b85d0`, nhận đủ nguồn/công cụ/báo cáo đến597369a5. Scene chung ConRoi_Chinh/profile riêng: null bị từ chối giữ bốn vật chứng/toàn bộ state/bytes; thao tác tiếp, F6 hợp lệ, F5/F6 tiếp tục và evidence:[] đều đạt bằng input Windows tổng hợp. Fixture khởi tạo là bản sao save UI cũ, không gọi là tuyến chơi tự nhiên/người mới.
+- Compile/reference đạt phạm vi mở scene; không đổi runtime/scene/UI. Giữ một lượt Esc bị gián đoạn do foreground và lượt kiểm lại đạt. Đã dừng/đóng Editor không save scene; bảo toàn diff/user data. Chỉ đề xuất nguồn22acc961 làm ứng viên, chưa chốt baseline hoặc cập nhật nhánh nhóm/push.
+- Probe bổ sung nguồn NOT_RUN, UI1080p đầy đủ/người mới NOT_RUN; Load feedback/P-close OPEN riêng. [Kết quả, hash và giới hạn](../QA/Tasks/N3/SAVE-EVIDENCE-04-INTEGRATION/README.md). Việc tiếp theo là nhóm review/chốt ứng viên và xử lý đúng các mục OPEN; không tự mở rộng task.

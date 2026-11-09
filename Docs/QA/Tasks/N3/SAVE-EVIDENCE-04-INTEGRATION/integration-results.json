@@ -1,0 +1,28 @@
+{
+  "tested_commit": "22acc9611aa8c6d0f86741798b2108d68f9b85d0",
+  "kind": "ACTUAL_INTEGRATION_SCENE_WINDOWS_SYNTHETIC_INPUT_WITH_OLD_UI_SAVE_COPY",
+  "evidence_ids": [
+    "slide",
+    "phone",
+    "clip",
+    "mechanism"
+  ],
+  "before_count": 4,
+  "after_count": 4,
+  "all_captured_Load_state_unchanged": true,
+  "data_identity_unchanged": true,
+  "error_returned": true,
+  "error": "Không tải: Danh sách evidence trong hồ sơ không hợp lệ; không nhận null hoặc mục null.",
+  "bad_bytes_unchanged": true,
+  "bad_sha256": "2edf8b0ab41eebee4fbfe945bd3ff86608b34051e98efe6a566e2f6ee157d069",
+  "trial_records_unchanged": true,
+  "P_open_close_and_E_table_after_rejection": true,
+  "Esc_pause_resume_modal_blocks_W": true,
+  "controller_continues_after_rejection": true,
+  "bad_bytes_unchanged_after_interactions": true,
+  "interrupted_attempt": "After R snapshot, foreground changed before Esc; no further input sent; retried separately.",
+  "valid_F6_after_rejection": true,
+  "continued_F5_F6_restores_data_and_position": true,
+  "evidence_empty_array_NewGame_F6_accepted": true,
+  "final_four_evidence_progress_restored": true
+}

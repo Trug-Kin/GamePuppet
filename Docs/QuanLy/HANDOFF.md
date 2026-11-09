@@ -1,3 +1,15 @@
+# Nhận SAVE-EVIDENCE-04 trong scene chung — 09/11/2026
+
+UI/UX & Tích hợp đã review/merge đủ `17b1f6e2 → f73631ae → 597369a5` vào `review/runtime-integration-20261109`. **Commit thực chạy Unity6000.6.2f1: `22acc9611aa8c6d0f86741798b2108d68f9b85d0`**, checkout C:/ConRoi_CheckoutTest; scene `Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity`. Không cần wiring mới, không sửa sản phẩm. Commit báo cáo sau phiên chỉ là tài liệu.
+
+**PASS kỹ thuật ba acceptance trong scene chung:** bốn vật chứng/F6 evidence:null bị từ chối trước thay state, giữ toàn bộ data/tiến trình/TrialRecord và bytes file; thao tác tiếp rồi Load hợp lệ/F5/F6 phục hồi đúng; evidence:[] New Game vẫn tải được. INT-SAVE-NULL-LIST-01 được xác nhận sửa ở phạm vi này. Dùng input Windows tổng hợp và bản sao save UI cũ để chuẩn bị bốn vật chứng; không phải tuyến chơi tự nhiên mới hoặc playtest người mới. Có một lượt mất focus trước Esc được ghi gián đoạn, lượt kiểm lại đạt.
+
+**Chỉ đề xuất nguồn `22acc961` làm ứng viên baseline tích hợp, chưa chốt/cập nhật các nhánh nhóm.** Probe bổ sung bên giao NOT_RUN; UI1080p đầy đủ trên bản sửa/người mới NOT_RUN; Load feedback/P-close OPEN riêng. Các PASS của 78 API/54 hồi quy bên giao không được suy thành PASS scene chung. D:/ConRoi, thay đổi riêng, legacy/save/archive bảo toàn; chưa push/merge main.
+
+[Báo cáo nhận bản sửa](../QA/Tasks/N3/SAVE-EVIDENCE-04-INTEGRATION/README.md), [kết quả scene chung](../QA/Tasks/N3/SAVE-EVIDENCE-04-INTEGRATION/integration-results.json). Báo cáo RUNTIME-INTEGRATION-01 dưới đây giữ nguyên kết quả lỗi lịch sử trước sửa.
+
+---
+
 # Nhận kiểm năm gói runtime — 09/11/2026
 
 UI/UX & Tích hợp đã review đủ22 commit từ baseline0d878e3b đến91835c80. Nhận tại `review/runtime-integration-20261109`, checkout riêng C:/ConRoi_CheckoutTest, merge d765ed92 giữ lịch sử UI riêng. **HEAD chạy Unity6000.6.2f1: c18524a3bc07f74fab16244f2d55c6888afb9284**; commit báo cáo sau đó không được gọi là nguồn chạy lại. Scene `Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity`. Không cần wiring mới.

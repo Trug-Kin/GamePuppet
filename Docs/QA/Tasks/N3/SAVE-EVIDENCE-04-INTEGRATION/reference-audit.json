@@ -1,0 +1,17 @@
+{
+  "scene": "Assets/ConRoi/Modules/TichHop/Scenes/ConRoi_Chinh.unity",
+  "unity": "6000.6.2f1",
+  "components": 32958,
+  "missingScripts": 0,
+  "brokenReferences": [],
+  "sessionCount": 1,
+  "bindings": {
+    "movement": true,
+    "look": true,
+    "eye": true,
+    "gate": true,
+    "modelGate": true,
+    "stageCamera": true,
+    "stageTexture": true
+  }
+}

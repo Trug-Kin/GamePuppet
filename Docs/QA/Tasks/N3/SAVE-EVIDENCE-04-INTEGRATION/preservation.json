@@ -1,0 +1,13 @@
+{
+  "D_status_unchanged": true,
+  "D_other_checks": {
+    "head": true,
+    "branch": true,
+    "diff": true
+  },
+  "runtime_head_unchanged": true,
+  "fixture_original_sha256": "7227ad5519a3097239b847e51d61eafc7d8165ca21b960251de5e5d6f5ff1424",
+  "no_compile_or_null_missing_reference_error": true,
+  "no_product_diff": true,
+  "five_Unity_files": "After bytes preserved; normalized equal Before; exact Before bytes retained/restored."
+}

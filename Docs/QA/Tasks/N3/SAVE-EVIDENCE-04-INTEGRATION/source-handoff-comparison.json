@@ -1,0 +1,54 @@
+{
+  "runtime_commit": "597369a566606fb24a549472acfa44291e3da5c3",
+  "integration_commit": "22acc9611aa8c6d0f86741798b2108d68f9b85d0",
+  "files": [
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSaveValidation.cs",
+      "shipped_tested_raw_sha256": "6d3b324a4eb016af67c049571e08dc381bfcfdad2ec7afb4e94cbb3f63d930ea",
+      "integration_raw_sha256": "fc9cf1dd6075524bf75740094c7fae4873fc83d93a10a7199ba5517fefe3d570",
+      "git_blob_raw_sha256": "fc9cf1dd6075524bf75740094c7fae4873fc83d93a10a7199ba5517fefe3d570",
+      "normalized_sha256": "fc9cf1dd6075524bf75740094c7fae4873fc83d93a10a7199ba5517fefe3d570",
+      "normalized_equal": true
+    },
+    {
+      "path": "Assets/Scripts/InvestigationV36R107/InvestigationSession.cs",
+      "shipped_tested_raw_sha256": "53adb6c261c9d3d264d8a3a86faff9fd4e6a604e158df2fb195957b6f1b37db4",
+      "integration_raw_sha256": "f40331aed039c428d0f1a3dea9032d0c9908d5dd986a74e459adf6aeb9a6659d",
+      "git_blob_raw_sha256": "f40331aed039c428d0f1a3dea9032d0c9908d5dd986a74e459adf6aeb9a6659d",
+      "normalized_sha256": "f40331aed039c428d0f1a3dea9032d0c9908d5dd986a74e459adf6aeb9a6659d",
+      "normalized_equal": true
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/SaveEvidenceCollectionChecks.cs",
+      "shipped_tested_raw_sha256": "6cf327e8807612830cd51e8b48cf0b5574e50375d3760a573bd0dcb5a2daea99",
+      "integration_raw_sha256": "801169da876f200868d6f710e78126c4d8310afbb76b65a81912c20f0006df5a",
+      "git_blob_raw_sha256": "801169da876f200868d6f710e78126c4d8310afbb76b65a81912c20f0006df5a",
+      "normalized_sha256": "801169da876f200868d6f710e78126c4d8310afbb76b65a81912c20f0006df5a",
+      "normalized_equal": true
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/SaveEvidenceCollectionChecks.cs.meta",
+      "shipped_tested_raw_sha256": "29537dd6724df43e26db56c4168d0c024b902403889fe9cc873d0993769c2d02",
+      "integration_raw_sha256": "46d709d3e317b69eb2d7f32014a277dd2d23542c39c81aecaa0c0e08f54339b7",
+      "git_blob_raw_sha256": "46d709d3e317b69eb2d7f32014a277dd2d23542c39c81aecaa0c0e08f54339b7",
+      "normalized_sha256": "46d709d3e317b69eb2d7f32014a277dd2d23542c39c81aecaa0c0e08f54339b7",
+      "normalized_equal": true
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Editor/SaveGuardControllerChecks.cs",
+      "shipped_tested_raw_sha256": "4fb20a2d0e85d4a579ffca74189fd79a22bfc6c1f0a3abb4eebe41d39f02291a",
+      "integration_raw_sha256": "4fb20a2d0e85d4a579ffca74189fd79a22bfc6c1f0a3abb4eebe41d39f02291a",
+      "git_blob_raw_sha256": "4fb20a2d0e85d4a579ffca74189fd79a22bfc6c1f0a3abb4eebe41d39f02291a",
+      "normalized_sha256": "4fb20a2d0e85d4a579ffca74189fd79a22bfc6c1f0a3abb4eebe41d39f02291a",
+      "normalized_equal": true
+    },
+    {
+      "path": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+      "shipped_tested_raw_sha256": "1e4d3517d23750d2470a70d35343e19f34e3cf209416bc0d169ab73601fc5044",
+      "integration_raw_sha256": "1e4d3517d23750d2470a70d35343e19f34e3cf209416bc0d169ab73601fc5044",
+      "git_blob_raw_sha256": "1e4d3517d23750d2470a70d35343e19f34e3cf209416bc0d169ab73601fc5044",
+      "normalized_sha256": "1e4d3517d23750d2470a70d35343e19f34e3cf209416bc0d169ab73601fc5044",
+      "normalized_equal": true
+    }
+  ]
+}
