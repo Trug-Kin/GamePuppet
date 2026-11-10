@@ -17,8 +17,11 @@ namespace ConRoi.Gameplay.EditorChecks
         internal static FullCaseSandboxWindow Panel=>panel;
         static FullCasePlayLauncher(){EditorApplication.playModeStateChanged+=OnState;}
         [MenuItem("Con Roi/Gameplay/Choi the gioi TEST ONLY (Play Mode)")]
-        public static void Open(){if(EditorApplication.isPlayingOrWillChangePlaymode)throw new InvalidOperationException("Dừng Play trước khi tạo phiên thử sạch.");if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().path!=Scene||UnityEngine.SceneManagement.SceneManager.GetActiveScene().isDirty)throw new InvalidOperationException("Mở scene Gameplay_ThuNghiem sạch trước; menu không ghi/đổi scene đang làm.");SessionState.SetBool(Armed,true);EditorApplication.EnterPlaymode();}
-        static void OnState(PlayModeStateChange state){if(state==PlayModeStateChange.EnteredPlayMode&&SessionState.GetBool(Armed,false)){SessionState.SetBool(Armed,false);Build();}
+        public static void Open(){if(EditorApplication.isPlayingOrWillChangePlaymode)throw new InvalidOperationException("Dừng Play trước khi tạo phiên thử sạch.");if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().path!=Scene||UnityEngine.SceneManagement.SceneManager.GetActiveScene().isDirty)throw new InvalidOperationException("Mở scene Gameplay_ThuNghiem sạch trước; menu không ghi/đổi scene đang làm.");FullCasePlayLaunchHelp.CloseIfOpen();SessionState.SetBool(Armed,true);EditorApplication.EnterPlaymode();}
+        static void OnState(PlayModeStateChange state){if(state==PlayModeStateChange.EnteredPlayMode){
+                if(SessionState.GetBool(Armed,false)){SessionState.SetBool(Armed,false);Build();}
+                else if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().path==Scene){Debug.LogWarning(FullCasePlayLaunchHelp.Instructions);FullCasePlayLaunchHelp.ShowDirectPlayHelp();}
+            }
             if(state==PlayModeStateChange.ExitingPlayMode){if(panel)UnityEngine.Object.DestroyImmediate(panel);panel=null;Active=null;cursorView=null;}}
         // Editor keeps a separate cursor permission after Esc; runtime Cursor setters
         // alone can report Locked while Windows still shows the pointer. Test host only.
@@ -53,6 +56,25 @@ namespace ConRoi.Gameplay.EditorChecks
             }
             host.CursorContextChanged=CursorContext;host.TextInputFocused=()=>panel.TextInputFocused;host.DrawPanel=panel.DrawPlayUI;host.Inspect=panel.InspectFromWorld;host.Talk=panel.TalkFromWorld;host.Feedback=panel.ResultFromWorld;host.Profile=adapter.Profile;host.Visible=()=>EditorWindow.focusedWindow!=null&&EditorWindow.focusedWindow.GetType().Name=="GameView";host.Initialize(adapter.Runtime);
             var view=EditorWindow.GetWindow(typeof(Editor).Assembly.GetType("UnityEditor.GameView"));view.Show();view.Focus();
+        }
+    }
+    // Editor UI for an intentionally empty template; never adds a fallback camera.
+    internal sealed class FullCasePlayLaunchHelp : EditorWindow
+    {
+        internal const string Instructions="TEST ONLY: Gameplay_ThuNghiem là template rỗng. Play trực tiếp không khởi tạo world/player/camera; No cameras rendering chưa phải lỗi camera. Dừng Play, rồi chọn Con Roi > Gameplay > Choi the gioi TEST ONLY (Play Mode). Menu tạo toàn bộ môi trường và profile thử riêng.";
+        internal static void ShowDirectPlayHelp(){var w=GetWindow<FullCasePlayLaunchHelp>(true,"Cách mở Gameplay TEST ONLY");w.minSize=new Vector2(480,240);w.ShowUtility();}
+        internal static void CloseIfOpen(){foreach(var w in Resources.FindObjectsOfTypeAll<FullCasePlayLaunchHelp>())w.Close();}
+        void OnGUI(){
+            EditorGUILayout.LabelField("Chưa khởi tạo môi trường TEST ONLY",EditorStyles.boldLabel);
+            EditorGUILayout.HelpBox(Instructions,MessageType.Warning);
+            EditorGUILayout.LabelField("Project đang mở",EditorStyles.boldLabel);
+            EditorGUILayout.SelectableLabel(System.IO.Path.GetFullPath(System.IO.Path.Combine(Application.dataPath,"..")),EditorStyles.wordWrappedLabel,GUILayout.Height(38));
+            if(EditorApplication.isPlayingOrWillChangePlaymode){if(GUILayout.Button("Dừng Play"))EditorApplication.ExitPlaymode();}
+            else {
+                bool ready=UnityEngine.SceneManagement.SceneManager.GetActiveScene().path==FullCasePlayLauncher.Scene&&!UnityEngine.SceneManagement.SceneManager.GetActiveScene().isDirty;
+                using(new EditorGUI.DisabledScope(!ready)){if(GUILayout.Button("Khởi chạy qua menu TEST ONLY"))EditorApplication.ExecuteMenuItem("Con Roi/Gameplay/Choi the gioi TEST ONLY (Play Mode)");}
+                if(!ready)EditorGUILayout.HelpBox("Mở Gameplay_ThuNghiem sạch trước. Công cụ không lưu hoặc đổi scene đang làm.",MessageType.Info);
+            }
         }
     }
 }
