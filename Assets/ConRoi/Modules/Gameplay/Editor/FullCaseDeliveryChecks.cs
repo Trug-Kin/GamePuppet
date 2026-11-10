@@ -70,7 +70,7 @@ namespace ConRoi.Gameplay.EditorChecks
                 Check("player_compilation_excludes_fullcase_test_tools",!playerFiles.Any(x=>x.Contains("/Gameplay/Editor/FullCase"))&&playerFiles.Any(x=>x.EndsWith("/FullInvestigationRuntime.cs")));
                 Check("product_scene_dependencies_exclude_fullcase_test_tools",!AssetDatabase.GetDependencies(Product,true).Any(x=>x.Contains("/Gameplay/Editor/FullCase")));
                 var scene=EditorSceneManager.OpenScene(Product);
-                Check("product_editmode_has_no_fullcase_placeholder",!scene.GetRootGameObjects().Any(g=>g.GetComponentsInChildren<FullCasePlaceholder>(true).Length>0));
+                Check("product_editmode_has_no_fullcase_placeholder",!scene.GetRootGameObjects().Any(g=>g.GetComponentsInChildren<MonoBehaviour>(true).Any(b=>b!=null&&b.GetType().Name=="FullCasePlaceholder")));
                 EditorSceneManager.OpenScene(Gameplay);
                 Check("gameplay_does_not_auto_create_sandbox",Resources.FindObjectsOfTypeAll<FullCaseSandboxWindow>().Length==0);
                 Check("documented_menu_opens",EditorApplication.ExecuteMenuItem(Menu));
