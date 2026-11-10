@@ -4,6 +4,8 @@ Ngày 10/11/2026. Gameplay & Dữ liệu bàn giao cho **UI/UX & Tích hợp**; 
 
 Mục lục: [1. Nguồn và phụ thuộc](#1-nguồn-và-phụ-thuộc) · [2. Công việc tích hợp](#2-công-việc-tích-hợp) · [3. Quyết định nội dung](#3-quyết-định-nội-dung) · [4. Chuyển việc theo ownership](#4-chuyển-việc-theo-ownership) · [5. Kiểm và biên nhận](#5-kiểm-và-biên-nhận).
 
+Checklist toàn bộ phạm vi Gameplay và danh sách tổng chờ tích hợp: [tiến độ hiện hành](../../../QuanLy/DANG_LAM_NGUOI_2.md#checklist-tổng-gameplay--dữ-liệu--10112026). Bảng chín quyết định ở mục 3 dưới đây tiếp tục là điểm nhận nội dung; chưa có quyết định mới.
+
 ## 1. Nguồn và phụ thuộc
 
 Nhận toàn bộ lịch sử tới mốc source trên theo [TICH_HOP](../../../QuanLy/TICH_HOP.md), [HANDOFF](../../../QuanLy/HANDOFF.md) và [ownership](../../../QuanLy/OWNERSHIP.md), bảo toàn commit/working tree riêng; không chỉ nhận commit báo cáo cuối. Nhánh tích hợp được các tài liệu hiện hành chỉ định là `review/runtime-integration-20261109`, **chưa kiểm tip/remote mới trong lượt này**. Không mặc định main có nguồn, không đổi base/head hoặc tự merge theo tài liệu này. Quy trình nhận thực tế do UI/UX & Tích hợp kiểm lại trước thao tác.
