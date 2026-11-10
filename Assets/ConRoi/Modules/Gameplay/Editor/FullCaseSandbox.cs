@@ -53,8 +53,8 @@ namespace ConRoi.Gameplay.EditorChecks
     public sealed class FullCaseSandboxWindow : EditorWindow
     {
         internal bool TextInputFocused {get;private set;}
-        internal bool PlayHostMode;internal Rect PlayPanel;
-        internal void DrawPlayUI(Rect panel){PlayPanel=panel;playLayout.Begin(panel.size);DrawUI();TextInputFocused=!string.IsNullOrEmpty(GUI.GetNameOfFocusedControl());}
+        internal bool PlayHostMode;internal Rect PlayPanel;FullCaseModal drawnPlayModal;object drawnPlayContext;
+        internal void DrawPlayUI(Rect panel){PlayPanel=panel;if(drawnPlayModal!=adapter.Runtime.Modal||!ReferenceEquals(drawnPlayContext,adapter.Runtime.DataContext)){GUI.FocusControl(null);GUIUtility.keyboardControl=0;TextInputFocused=false;drawnPlayModal=adapter.Runtime.Modal;drawnPlayContext=adapter.Runtime.DataContext;}playLayout.Begin(panel.size);DrawUI();TextInputFocused=adapter.Runtime.Modal==FullCaseModal.Cipher&&!string.IsNullOrEmpty(GUI.GetNameOfFocusedControl());}
         internal FullActionResult TalkFromWorld(string id)=>adapter.Interact(FullPlaceholderKind.Actor,id,adapter.Runtime.Location);
         internal FullActionResult InspectFromWorld(string id){selected=id;return adapter.Runtime.TryInspect(id);}
         internal void ResultFromWorld(FullActionResult result)=>Do(result);

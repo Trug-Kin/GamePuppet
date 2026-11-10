@@ -33,7 +33,8 @@ namespace ConRoi.Gameplay.TestOnly
         void OwnInput(){bool world=Runtime.CanMove&&(Visible==null||Visible());Movement.enabled=world;Look.enabled=world;Cursor.lockState=world?CursorLockMode.Locked:CursorLockMode.None;Cursor.visible=!world;}
         void Update(){if(!initialized)return;var k=Keyboard.current;
             if(k!=null&&(Visible==null||Visible())){if(k.escapeKey.wasPressedThisFrame){if(Runtime.Modal!=FullCaseModal.None)Runtime.Cancel();else Runtime.SetPaused(!Runtime.Paused);}
-                if(k.f5Key.wasPressedThisFrame)Feedback(Runtime.TrySave(Profile));if(k.f6Key.wasPressedThisFrame)Feedback(Runtime.TryLoad(Profile));
+                bool typing=Runtime.Modal!=FullCaseModal.None&&(TextInputFocused?.Invoke()??false);
+                if(!typing){if(k.f5Key.wasPressedThisFrame)Feedback(Runtime.TrySave(Profile));if(k.f6Key.wasPressedThisFrame)Feedback(Runtime.TryLoad(Profile));}
                 if(k.pKey.wasPressedThisFrame&&!Runtime.Paused&&!(Runtime.Modal!=FullCaseModal.None&&(TextInputFocused?.Invoke()??false))){if(Runtime.Modal!=FullCaseModal.None)Runtime.Cancel();else Runtime.SetModal(FullCaseModal.Inspect);}}
             OwnInput();Focused=null;
             if(Runtime.CanMove&&(Visible==null||Visible())&&!(k!=null&&(k.escapeKey.wasPressedThisFrame||k.pKey.wasPressedThisFrame))&&InvestigationSession.TryInteractionHit(Eye,Movement.transform,out var hit))Focused=hit.collider.GetComponentInParent<FullCasePlayTarget>();
