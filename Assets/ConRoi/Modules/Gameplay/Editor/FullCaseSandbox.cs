@@ -90,6 +90,8 @@ namespace ConRoi.Gameplay.EditorChecks
             GUILayout.Label("NPC TEST ONLY",EditorStyles.boldLabel);string actor=s.Location=="lake"?"bao":s.Location=="market"?"ha":s.Location=="school"?"mai":s.Location=="slope"?"tung":s.Location=="garden"?"lan":s.Location=="homestay"?"host":s.Location=="office"?"phuong":"khai";
             if(GUILayout.Button("Nói chuyện • "+actor))Do(adapter.Interact(FullPlaceholderKind.Actor,"test.full.actor."+actor,s.Location));
             if(s.Modal==FullCaseModal.Conversation){foreach(var topic in adapter.Interview.GetTopics()){if(GUILayout.Button(topic.CanAsk?topic.Question:"Chủ đề khóa • "+topic.Reason))Do(adapter.Ask(topic.Id));}GUILayout.Label(adapter.Reply);foreach(var permission in s.GetPermissions())if(GUILayout.Button(permission.label))Do(s.TryRequestAccess(permission.id));}
+            GUILayout.Label("Bản chép đã ghi • từ runtime, chưa phân loại nguồn",EditorStyles.boldLabel);
+            foreach(var reading in s.GetRecordedReadings()){GUILayout.Label(reading.Recipient+" • "+reading.Text,EditorStyles.wordWrappedLabel);GUILayout.Label(reading.Meaning,EditorStyles.wordWrappedLabel);}
             GUILayout.Label("Hồ sơ / cầm–đặt",EditorStyles.boldLabel);foreach(var record in s.GetRecords()){GUILayout.BeginHorizontal();if(GUILayout.Button(record.id+" • xem")){selected=record.id;Do(s.TryInspect(record.id));}if(GUILayout.Button("Cầm"))Do(s.TryHold(record.id));GUILayout.EndHorizontal();}
             if(s.HeldEvidenceId!=""){GUILayout.Label("Đang cầm: "+s.HeldEvidenceId);if(GUILayout.Button("Cất"))Do(s.TryStow());if(GUILayout.Button("Đặt bàn thử tại nơi này"))Do(s.TryPlace(s.Location+".table"));}
             if(s.Modal==FullCaseModal.Inspect&&selected!=""){
