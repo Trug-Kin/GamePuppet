@@ -1,6 +1,8 @@
 # Bàn giao mô phỏng và tích hợp toàn game — Gameplay & Dữ liệu
 
-**Cập nhật chức năng mới nhất:** APPROVED-PRODUCERS-01, nguồn `36ad492c`, công cụ/UI thử `21ee7b1f`, sau `8d0a1de5`. [Quyết định đã chốt, API/migration/wiring và kiểm](#approved-producers). FULL-READING-PRODUCER-01 (`942ca056`/`61892688`) giữ trong lịch sử. [API, kiểm và tương thích bản chép thật](#reading-producer). Các kiểm f8b50889/e71da758/9dd5d6eb bên dưới giữ nguyên phạm vi/lịch sử; không suy chúng đã chạy trên nguồn mới.
+**Cập nhật binding mới nhất:** PRODUCT-BINDINGS-01, nguồn `e6dd1441`, công cụ `cf252665`: [cấu hình sản phẩm, readiness, tương thích và wiring](#product-bindings). Chỉ API/config/save fixture đã kiểm; CHỜ ASSET-UI và review C2/C3 thật.
+
+**Đợt producer trước:** APPROVED-PRODUCERS-01, nguồn `36ad492c`, công cụ/UI thử `21ee7b1f`, sau `8d0a1de5`. [Quyết định đã chốt, API/migration/wiring và kiểm](#approved-producers). FULL-READING-PRODUCER-01 (`942ca056`/`61892688`) giữ trong lịch sử. [API, kiểm và tương thích bản chép thật](#reading-producer). Các kiểm f8b50889/e71da758/9dd5d6eb bên dưới giữ nguyên phạm vi/lịch sử; không suy chúng đã chạy trên nguồn mới.
 
 **Quyết định hiện hành:** chủ dự án đã trả lời H/G/E/ND; [K.4](#approved-producers) ghi yêu cầu đã chốt, nguồn đã kiểm và wiring. [K.3](#quyet-dinh-producer) giữ lịch sử đề xuất, không còn yêu cầu duyệt lại.
 
@@ -645,3 +647,86 @@ Lỗi IO ở hoàn tất được mô phỏng bằng thư mục `.tmp` **chỉ t
 
 
 **Kết thúc phần độc lập của các quyết định đã nhận:** RUNTIME ĐÃ KIỂM / MÔ PHỎNG ĐÃ KIỂM → CHỜ ASSET-UI, chưa kiểm scene chung. Không còn câu hỏi thiết kế H/G/E/ND trong bảng cần hỏi lại. C2/C3 có chủ nhận và CHỜ SẢN XUẤT/KIỂM CHỨNG; các NPC/diễn đạt chưa có script cuối không tự thêm thoại mới. Gameplay quay lại khi nhận feature/documents/footage/biên nhận để bind catalog/rubric sản phẩm, xử lý catalog-save compatibility cụ thể và lỗi tích hợp có tái hiện. Không báo toàn game hoàn tất hoặc coi legacy API đã tự có chức năng toàn tuyến.
+
+
+<a id="product-bindings"></a>
+### K.5. PRODUCT-BINDINGS-01 — acceptance trước triển khai sau `67984dd4`
+
+Kiểm code thực tế: FullCaseCatalog và constructor đã nhận catalog ngoài, ValidateCatalog đã kiểm IDs/references/chu kỳ; save đã kiểm catalogHash trước thay state. Không thêm loader/evaluator/schema mới. Khoảng thiếu: options chỉ có key, chưa binding feature/mẫu cho consumer; chưa có binding media ending; constructor không tách product/test hoặc trạng thái cấu trúc với biên nhận C3, TryStartEndingPresentation vẫn có thể chạy product không media. InvestigationInteractable.inspectionPrefab/preview text-only đã có; binding mới tái dùng field/mô hình đó, không dựng viewer mới.
+
+Acceptance: cấu hình sản phẩm dùng nguyên FullCaseCatalog + bindings định dạng1 cùng catalogId/revision; IDs trùng/unknown/feature sai option/nguồn-index thiếu/format hoặc revision sai bị từ chối trước tạo runtime, không fallback TEST ONLY. Mô tả feature bắt buộc đủ từng option/nguồn, không dùng expectedOption làm UI. Rubric chưa có sets hoặc chưa có biên nhận review thì exploration vẫn chạy nhưng product chốt trả trạng thái thiếu; test environment vẫn mô phỏng như cũ. Thiếu media từng ending trả trạng thái riêng và không Start/Complete; summary có thể đọc, không tự mark viewed. Asset bindings không sửa schema2/hash TestOnly cũ; catalog đổi revision/hash vẫn Load từ chối trước state/giữ bytes, không auto migration. Kiểm các trường hợp sai/thiếu, snapshots không leak trước mở, cấu trúc hợp lệ không tự review, roundtrip save2/migration1 liên quan. Chỉ bổ sung đầu mối này, không sửa GDD/UI/map/scene.
+
+#### Kết quả triển khai và phạm vi
+
+Nguồn `e6dd1441`, công cụ `cf252665`; nhận đủ cả hai cùng commit tài liệu chứa mục này trên `work/runtime-contracts-baseline`. Căn cứ: GDD7.2–7.3 (hồ sơ/đối chiếu/kết luận),8 (ending),9 (preview/input),11 (save),14 (gate kiểm chứng),16 (tài nguyên cần sản xuất), C2/C3 và E1/E2 đã chốt tại K.4. Không tạo evaluator/loader/viewer mới: dùng `FullCaseCatalog`, `FullConclusionRule.alternatives`, `ValidateCatalog`, `InvestigationInteractable.inspectionPrefab`, lưu/đọc fullcase hiện có. Bổ sung đúng seam còn thiếu trong [FullProductConfiguration.cs](../../../Assets/Scripts/InvestigationV36R107/FullProductConfiguration.cs); guard gọi ở FullInvestigationRuntime/Persistence/Producers cùng thư mục. Không có catalog sản phẩm hay media chính thức mới trong gói này.
+
+**RUNTIME ĐÃ KIỂM bằng API/config/save fixture / CHỜ NỘI DUNG-REVIEW & ASSET-UI / CHƯA KIỂM SCENE CHUNG.** Không dùng kết quả cấu trúc để chứng nhận C3; không gọi ending fixture là ending đã duyệt. F01–F19 và tuyến mô phỏng K.4 giữ nguyên phạm vi kiểm, gói này chỉ bổ sung nhận dữ liệu/guard ở F08–F10/F14–F19, không nâng mức bao phủ nội dung hoặc tuyến chơi tự nhiên.
+
+#### Dữ liệu sản phẩm và field thực tế
+
+Tạo asset qua menu **Create/Con Roi/Noi dung/Full case product configuration** (`FullProductConfiguration`, ScriptableObject), trong thư mục nội dung thuộc UI/UX & Tích hợp. Hai field `catalog` và `bindings` bắt buộc. Runtime sao chép cấu hình lúc khởi tạo; sửa asset sau đó cần tạo runtime mới và Load có kiểm tương thích, không hot-swap tiến trình.
+
+| Kiểu / field | Bắt buộc, ý nghĩa và kiểm |
+|---|---|
+| `FullCaseCatalog` | Giữ cấu trúc cũ; `testOnly=false`, `id/revision`, locations/evidence/permissions/comparisons/conclusions và references hợp lệ. Không dùng ID `test.*` cho sản phẩm. Evidence phải có label/source/text và từng observation không trắng. Giữ ID đã chốt; không lấy fixture làm catalog sản phẩm. |
+| `FullProductBindings.formatVersion` | `1` (phiên bản binding, **không phải schema save**); `catalogId/catalogRevision` khớp chính xác catalog. |
+| `features` | Collection không null. Mỗi `FullFeatureBinding`: `id` ổn định duy nhất; `comparisonId`, `optionId`, `evidenceId`, `observationIndex` tham chiếu đúng task/option/nguồn/index hiện có; `label/description` bắt buộc. Mỗi tổ hợp option × nguồn của task phải có ít nhất một descriptor; `image:Texture2D` tùy chọn. Mô tả feature nhìn thấy cho từng lựa chọn, không mã hóa đáp án đúng vào getter/UI. |
+| `evidenceAssets` | Collection không null, được rỗng. Mỗi `FullEvidenceAssetBinding.evidenceId` phải tồn tại và không trùng; `inspectionPrefab:GameObject`, `image:Texture2D` tùy chọn. Thiếu visual trả null/field null, không thế prefab thử. Text còn dùng được, chưa chứng minh acceptance asset. |
+| `endings` | Collection không null, được rỗng để còn khám phá. Mỗi `FullEndingMediaBinding`: `ending` là Complete/Open/Unsupported, không trùng/None; `presenterId` ổn định không trắng/`test.*`; ít nhất một `video:VideoClip`, `animation:AnimationClip`, `presenterPrefab:GameObject` còn tồn tại **khi Start/Complete**. Thiếu media là `media-missing`, không hoàn tất giả. |
+| Rubric hiện có | `FullConclusionRule.alternatives:FullSupportSet[]` chứa `requires:FullRequirement[]`; `claims/correctClaim/reviewed` và `FullCaseCatalog.fallChainReviewed` giữ cơ chế cũ. Không tạo bộ chấm mới. Thiếu alternatives cho một trong bốn dimension trả `rubric-missing`. |
+| Biên nhận | `bindings.reviewedCatalogRevision` khớp revision, `reviewReference` và `fallChainReviewReference` trỏ báo cáo review thật; các cờ reviewed tương ứng cũng cần có. Thiếu trả `review-pending`. Chuỗi tham chiếu/cờ là **khai báo của chủ nội dung**, runtime không xác minh báo cáo có thật hoặc đủ chất lượng; không điền giả để vượt C3. |
+
+Collections không được chứa phần tử null; binding ID trùng, nguồn không tồn tại, index sai, feature thiếu/đủ cấu trúc nhưng sai revision đều bị từ chối trước tạo runtime. Reserved ID là guard kỹ thuật, không phát hiện được nội dung thử chỉ bằng câu chữ: UI/content vẫn phải review nguồn dữ liệu thực tế.
+
+Mẫu **TEST ONLY** có đủ field tại [ProductBindingChecks.cs](../../../Assets/ConRoi/Modules/Gameplay/Editor/ProductBindingChecks.cs), các hàm `Catalog()`, `Bindings()`, `Reviewed()`. Chỉ dùng để hiểu format/kiểm; `fixture.product.contract`, sample.a/sample.b, pair, claim.known và biên nhận FIXTURE **không phải ID/nội dung được duyệt**. Các factory `FullCaseTestCatalog.Create/CreateApproved` vẫn chỉ thuộc Editor; không có fallback từ product factory sang chúng.
+
+#### API, trạng thái và wiring UI/asset
+
+```csharp
+// configuration là FullProductConfiguration do consumer nhận qua field được serialize.
+FullActionResult result = configuration.TryCreateRuntime(out var session);
+if (!result.Success) { /* Hiển thị result.Message; không tạo test runtime thay thế. */ return; }
+FullActionResult rubric = session.GetRubricReadiness();
+// rubric.Success không thay cho review báo cáo C3 thật.
+session.Changed += Refresh; // Hủy bằng session.Changed -= Refresh khi detach/đổi runtime.
+```
+
+Consumer phải xử lý cả configuration chưa được gán trước khi gọi. Cũng có thể gọi `FullInvestigationRuntime.TryCreateProduct(catalog, bindings, out runtime)` trực tiếp; lỗi `product-catalog` hoặc `product-config` trả runtime null. Constructor cũ một tham số chỉ giữ cho TestOnly; product gọi constructor đó sẽ ném InvalidDataException, phải chuyển sang factory có kết quả lỗi. `FullActionResult.Success/Code/Message` là kết quả hiện có; không nhân đôi validation trong UI.
+
+1. UI/UX & Tích hợp bind asset cấu hình và profile fullcase riêng vào consumer; gọi factory, đăng ký `Changed`, hiển thị trạng thái readiness và lỗi. `Changed` không có payload, đọc lại state/getters; không gọi setter tiến trình để khắc phục thiếu đầu vào. Factory/query readiness không tự phát Changed; consumer đọc kết quả trực tiếp. Runtime clone các container query, giữ reference Unity asset thật.
+2. Giữ hành động thế giới `TryCollect/TryInspect/TryRecordObservation`, gate và modal hiện có. Sau khám, `GetEvidenceAssetBinding(evidenceId)` chỉ trả khi đã xem/đọc được; không có row thì null. Map & Asset cung cấp model/prefab ảnh thật, UI/world adapter đưa `inspectionPrefab` tới seam `InvestigationInteractable.inspectionPrefab` khi dùng viewer cũ hoặc presenter fullcase riêng. Không dùng preview r107 để tự tăng state fullcase; adapter phải gọi đúng runtime đang chạy.
+3. Đối chiếu: lấy task qua `GetComparisons()`, rồi `GetFeatureBindings(comparisonId)`. Task chưa mở trả mảng rỗng; nguồn chưa xem/readable bị loại. Getter trả descriptor của các option, **không trả expectedOption**. Render label/description/image nếu có; gửi lựa chọn bằng `TryCompare(string taskId, string[] evidenceIds, string option)` hiện có, không tự đánh đúng theo label. Map & Asset cung cấp đặc điểm/ảnh thực sự nhìn thấy; UI/content bind option/evidence/index tương ứng và review C2/C3 trước dùng chấm sản phẩm.
+4. Trước chốt, đọc `GetRubricReadiness()`. `TryFinalize(profile)` tự recheck trước checkpoint/ghi state; rubric thiếu/chưa review thì giữ hồ sơ và file. Không bật cờ review từ thao tác người chơi hoặc chỉ vì asset đã import. Thiếu review không chặn khám phá/ghi/hỏi; chưa được báo đã chốt thành công.
+5. Ending giữ summary và chủ động xác nhận tại ga theo K.4. Sau finalized, `GetEndingMediaBinding()` trả row hoặc null; `GetEndingMediaReadiness(FullEnding)` trả `ending-id`/`media-missing`/ok. UI gọi `TryOpenEndingSummary()` rồi `TryStartEndingPresentation()` khi xác nhận; chỉ chạy presenter sau Success. Presenter dùng row video/animation/prefab và `GetEndingConsequences()` để ghép đủ hậu quả thành **một** chuỗi, không chỉ phát media đơn lẻ rồi bỏ dimensions. Không có presenter/player mới tự chạy trong gói này.
+6. UI/UX & Tích hợp pause player theo `Paused`; không tự Complete khi pause/thoát giữa chừng. Cancel/Load/detach dừng player và hủy callback cũ; khi `EndingPlaying=false` phải dừng trình diễn đang giữ. Chỉ callback đã phát hết thực tế, đúng phiên hiện tại mới gọi `TryCompleteEndingPresentation(profile)`. API recheck media và IO trước mark viewed; lỗi giữ state/bytes, cho phép khắc phục rồi gọi lại; replay không ghi lại checkpoint/phần thưởng. Reference prefab còn tồn tại không chứng minh presenter đã nối đúng hoặc video xem đủ: acceptance playback thật thuộc tích hợp.
+
+Không thêm binding tên nút/GameObject/Hierarchy/tọa độ. Asset units/pivot/socket/collider vẫn theo brief và seam thật của map, không đặt kích thước giả. Không có `.asset` cấu hình sản phẩm hoặc media giả được commit cùng runtime; UI/content cung cấp asset theo ownership, Map & Asset sản xuất mẫu/ảnh/media. Sau khi thay, tắt adapter/player TEST ONLY, giữ runtime/API/ID và gỡ callback của window thử; công cụ Editor không tự xuất hiện trong scene sản phẩm.
+
+#### Catalog/save, rollback cấu hình và giới hạn tương thích
+
+Giữ schema2, migration1→2 và hai luồng save độc lập ở K.4. Fullcase main/checkpoint vẫn `<profile>/InvestigationV36/fullcase/case.json` / `case.before-conclusion.json`; r107 vẫn `<profile>/InvestigationV36/r107/prototype.json`. Không tự đồng bộ hay suy heard/decoded/endingViewed từ dữ liệu thiếu.
+
+Product `catalogHash` hiện có bao gồm catalog JSON và chữ ký semantic feature được sắp theo feature ID: id/task/option/source/index/label/description. Thay semantic dù giữ revision cũng không tự ánh xạ save; chỉ đổi thứ tự feature không đổi hash. Không đưa image/prefab/video/animation hoặc biên nhận binding vào save/hash: thay art-only giữ tiến trình; thay nội dung/nguồn/rubric trong catalog vẫn đổi hash. Bump catalog revision khi thay nghĩa, không tái dùng ID cho nghĩa khác.
+
+Hash TestOnly giữ nguyên; save1 cũ vẫn được đọc/migrate read-only với đúng catalog cũ. **Product save tạo trước binding này không mặc định tương thích**, dù cùng ID/revision: nếu hash lệch thì `TryLoad`/checkpoint từ chối trước swap state, không sửa bytes và không tự ghi lại. Giữ cấu hình/runtime cũ cùng bản sao profile để mở dữ liệu cũ; Gameplay cần nhận hai catalog, save mẫu và quyết định ánh xạ có căn cứ trước khi viết migration riêng. Không sửa hash bằng tay hoặc suy tiến trình từ ID không đủ nghĩa. Nội dung review đổi có thể yêu cầu revision mới, không dùng thao tác thay reference báo cáo để che thay đổi rubric.
+
+#### Kiểm đã chạy, cách kiểm độc lập và acceptance tích hợp
+
+Unity6000.6.2f1 batch mở scene Gameplay, `ConRoi.Gameplay.EditorChecks.ProductBindingChecks.RunBatch`, profile/thư mục output riêng. Cơ sở source label trong JSON là `67984dd4-product-working`; toàn bộ diff runtime đã chạy được commit nguyên trạng tại `e6dd1441`, không có sửa runtime sau hai lượt này. Run01 **45/45**, Run02 **48/48**, failures=0; run02 chỉ thêm ba assertion ScriptableObject/recovery/replay vào cùng nguồn, không cộng hai lượt thành 93 ca độc lập.
+
+- Run01 `Test/Output/ProductBindings20261110/run01/results.json`: SHA256 `c6b82058acc2fdca357256f10f8402f370d86cffa649d3878a35b57419c998c1`.
+- Run02 `Test/Output/ProductBindings20261110/run02/results.json`: SHA256 `3266665af16af78a782f6a2e2c1cc1b8d6b2b20b2449b952206cd9af97c840b7`.
+
+Đã kiểm: config format/revision/ID/ref/null/duplicate và feature coverage; không bypass qua constructor; separation TEST ONLY; trạng thái rubric thiếu/biên nhận thiếu; query không lộ nguồn chưa xem và clone không sửa runtime; optional visual null; finalize thiếu review không ghi; media thiếu/destroy giữa trình diễn không mark viewed/đổi bytes; khôi phục reference rồi Complete lưu viewed; pause/cancel; replay giữ main/checkpoint; art-only và reorder feature Load được; semantic/revision mismatch giữ live state/bytes; schema1 TestOnly cũ migrate read-only không tự suy heard/viewed. Setup ending/finalized dùng **bản sao save fixture cô lập**, không phải tuyến tự nhiên. Chưa kiểm thêm IO/trial không chịu ảnh hưởng.
+
+Để chạy lại **khi cấu hình/nguồn thay đổi**, dùng Unity `-batchmode -projectPath <Gameplay-worktree> -executeMethod ConRoi.Gameplay.EditorChecks.ProductBindingChecks.RunBatch --binding-output <output-mới> --binding-legacy-profile <bản-sao-profile-ReadingProducerBaseline> --binding-source <SHA-nguồn> -logFile <log-riêng>`. Không dùng save gốc; checker tạo profile riêng và thoát Unity. Raw JSON/log/profile chỉ local, không commit. Không cần chạy lại chỉ vì nhận commit báo cáo.
+
+Thứ tự nhận/thay: nguồn+công cụ+tài liệu → C2 ID/features/model/documents chính thức → cấu hình product và thử lỗi rõ → C3 bảng support/footage/biên nhận revision → UI/world producer và feature consumer → media presenter → tuyến scene chung. Acceptance tại từng bước:
+
+- Cấu hình lỗi hoặc TEST ONLY: hiển thị lỗi, runtime null, không fallback/mở tiến trình; cấu hình đúng nhưng thiếu rubric vẫn khám được và chốt bị từ chối.
+- Thu/chưa xem không lộ feature/model; khám đúng nguồn mở descriptor; ghi lặp/đối chiếu/save-load đi qua API thật, không cấp evidence trực tiếp.
+- Thiếu media của ending đã chọn không chạy/mark viewed. Media thật chạy đủ hậu quả, pause/cancel/Load không complete giả; xem hết lưu viewed, replay không checkpoint mới.
+- Thay art-only giữ save hợp lệ. Đổi semantic/catalog không tương thích từ chối Load, giữ live state/file; không đoán lịch sử. Kiểm đúng profile, cả main và checkpoint.
+- C3 có báo cáo thực và asset được review, không chỉ booleans/chuỗi fixture. Kiểm hình học/footage/rubric tương đương theo GDD14 trước khóa cấu hình sản phẩm.
+
+**Còn thiếu và chủ nhận:** Map & Asset: định danh/model/feature/ảnh mẫu C2, animation/video/prefab trình diễn thật. UI/UX & Tích hợp: catalog/data được review, asset cấu hình product, consumer preview/features/readiness, presenter và callback/pause/modal/Load trong scene chung, điều phối C3. Gameplay quay lại bind/kiểm catalog thật, xử lý migration catalog cụ thể nếu cần và lỗi runtime tái hiện được. Chưa có input/controller, playback media thật, người mới, UI1080p hoặc scene chung PASS ở gói này. P-close/IO-OPEN-01 giữ trạng thái riêng như K.4; không đổi kết luận của các lượt cũ. Không sửa UI/map/scene chung/GDD, không build/ZIP/merge.
