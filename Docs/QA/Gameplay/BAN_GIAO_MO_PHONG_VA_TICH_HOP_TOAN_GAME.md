@@ -1,6 +1,8 @@
 # Bàn giao mô phỏng và tích hợp toàn game — Gameplay & Dữ liệu
 
-**Môi trường tự chơi mới nhất:** [PLAYABLE-SANDBOX-01: mở/chơi, controls và bằng chứng tuyến UI thử](#playable-sandbox), nguồn môi trường `393b3de2`, checker `c3500c46`. Runtime sản phẩm vẫn tại `e6dd1441`, không sửa trong đợt này.
+**Kiểm nhánh ending mới nhất:** [K.7: C/A-sai qua UI thử, dữ liệu và IO OPEN](#sandbox-ending-branches), window `48679ec1`, checker `1e8d3c4f`. C03 **115/115**, A03 **140/140**; rubric/media TEST ONLY, không chứng nhận C3 hoặc sản phẩm. Profile mới ở Temp ngoài project; đường dẫn K.6 là lịch sử.
+
+**Tuyến A-treo trước:** [PLAYABLE-SANDBOX-01: mở/chơi, controls và bằng chứng tuyến UI thử](#playable-sandbox), nguồn môi trường `393b3de2`, checker `c3500c46`. Runtime sản phẩm vẫn tại `e6dd1441`, không sửa trong đợt này.
 
 **Cập nhật binding trước:** PRODUCT-BINDINGS-01, nguồn `e6dd1441`, công cụ `cf252665`: [cấu hình sản phẩm, readiness, tương thích và wiring](#product-bindings). Chỉ API/config/save fixture đã kiểm; CHỜ ASSET-UI và review C2/C3 thật.
 
@@ -828,3 +830,119 @@ Raw output/log/profile ở Test/Output/PlayableSandbox20261110 và Test/Playtest
 
 
 **Trạng thái cuối gói:** MÔ PHỎNG TỰ THAO TÁC ĐÃ KIỂM trên tuyến A-treo / RUNTIME tiền đề giữ nguyên / CHỜ NỘI DUNG-REVIEW & ASSET-UI / CHƯA KIỂM SCENE CHUNG. Gameplay độc lập đã có môi trường chơi thử tuyến này; quay lại khi nhận catalog/model/feature/media thật để bind và kiểm tương thích hoặc lỗi tái hiện được. Không tự chốt rubric/biên nhận C3, không tuyên game sản phẩm hoàn tất. P-close, IO-OPEN-01 và các giới hạn cũ giữ theo hồ sơ riêng.
+
+
+<a id="sandbox-ending-branches"></a>
+### K.7. SANDBOX-ENDING-BRANCHES-01 — acceptance trước kiểm
+
+Nhận sau `2ead4d03`. Căn cứ GDD7.3/8/11 và E1/E2 tại K.4; giữ runtime/rubric TEST ONLY hiện có, không thay canon/schema2. Mở hai lượt **profile sạch** qua window K.6. Rubric mô phỏng phải được người thử chọn trên giao diện trước tạo profile, không tự bật flag product hoặc cấp tiến trình. Bổ sung registry geometry cho checkbox rubric và toggle căn cứ theo từng dimension để checker dùng cùng event mouse/text/key, không gọi action API trực tiếp.
+
+Acceptance C: khám/ghi thật, nghe đầu mối, tự nhập mapping từ sổ đã xem, giải/ghi thư và gửi hồi đáp; mở quyền mẫu qua NPC, đối chiếu các nguồn, để clip/trial chạy qua Tick visible. Tự chọn bốn claim TEST ONLY và từng căn cứ theo support sets thử; chốt trước xác nhận/đổi draft/Load phải bị chặn tới xác nhận lại, thiếu căn cứ không được coi là C. Đủ claim/căn cứ mới C. Checkpoint giữ draft chưa finalized. Ga không tự chạy; summary/hủy/start/pause/tiếp tục/hủy giữa trình diễn/Load chưa viewed/hoàn tất/replay không đổi loại kết luận, không nhân checkpoint/hậu quả/viewed.
+
+Acceptance A-sai: một lượt sạch riêng có producer hồi đáp hợp lệ, tự chọn claim sai theo dimension; hậu quả đúng sender/presence/fall/motive và nhiều sai trong một chuỗi, không tự suy tội/ý định hoặc mất bảo vệ Lan/rối. Dùng checkpoint có chủ đích để thay draft và kiểm các dimension tiếp theo, không chỉnh save hoặc cấp ending. F5/F6 ở draft/chốt/đang trình diễn/đã xem giữ tiến trình và dọn transient; replay không rewrite main/checkpoint hoặc nhân consequence list. Chỉ API query/bytes được dùng để assert, không dùng fixture seed. Không chạy lại tuyến A-treo nếu không có thay đổi liên quan.
+
+#### Nguồn nhận và kết quả theo chức năng
+
+Nhận đủ `48679ec1` (FullCaseSandbox.cs: checkbox rubric/toggle căn cứ có registry click, profile thử cách ly) → `1e8d3c4f` (PlayableSandboxChecks.cs: hai tuyến, invariant file/state và log kết quả UI) → commit tài liệu chứa K.7. Không có sửa runtime `Assets/Scripts`, catalog thử/sản phẩm, schema2/migration hoặc guard save. Runtime tiền đề vẫn `e6dd1441` cùng các nguồn K.4/K.5. Không cherry-pick riêng báo cáo.
+
+- **C qua UI thử:** profile sạch, đủ producer khám/ghi/giải/hỏi/hồi đáp/đối chiếu/trial, chọn bốn claim và gắn căn cứ từng mục mới Complete. Có thử thiếu căn cứ M6 dù đã thu/ghi M6: kết quả Unsupported chỉ motive; checkpoint tường minh quay draft, gắn bổ sung rồi mới C. Không tự lấy mọi chứng cứ đã có làm căn cứ đã gắn.
+- **Xác nhận/checkpoint:** chốt chưa xác nhận không ghi; chỉnh draft rồi đổi về lựa chọn cũ vẫn mất xác nhận; Load cũng cần xác nhận mới. Checkpoint lưu draft, không finalized/ending/viewed. Ghi main và checkpoint là hai tệp có chức năng khác nhau, không tự đồng bộ save r107.
+- **A-sai qua UI thử:** một profile sạch riêng, hoàn thành producer hồi đáp thật rồi tự chọn `test.alternative-claim` ở sender, presence, motive, fall và sender+motive+fall. Mỗi lượt còn các mục khác Chưa đủ chứng minh; A-sai ưu tiên hơn A-treo theo GDD8. Sau mỗi biến thể dùng nút checkpoint tường minh để đổi draft, không seed/edit JSON/cấp ending, không gọi trực tiếp action API trong checker.
+- **Vòng đời ga/ending:** tới ga không tự chạy; summary hủy được; bắt đầu theo xác nhận; pause chặn Complete, tiếp tục được; hủy giữa trình diễn không viewed; Load giữa trình diễn dọn summary/playing và không tự viewed. Complete ghi viewed, F6 giữ viewed. Replay giữ nguyên bytes main/checkpoint, loại ending và danh sách hậu quả; chỉ có một main và một checkpoint, không thêm bản do replay. Khôi phục trước chốt chỉ đổi live state, không ghi đè main/checkpoint.
+- **Phạm vi hậu quả:** sender làm tổn hại hướng điều tra/niềm tin; presence không tự chứng minh gây ngã; motive không tự là căn cứ bắt người về cú ngã; fall thể hiện cáo buộc dựa trên phần này bị bác/đình lại, vụ án chưa khép. Nhiều sai ghép **một danh sách tổng hợp** đủ các mục, không lặp chuỗi ending riêng. Lan/rối vẫn được bảo vệ, không suy ý định hoặc tuyên bản án.
+
+#### Cách mở và cấu hình thử hiện tại
+
+Mở Gameplay_ThuNghiem và menu `Con Roi/Gameplay/Toan tuyen TEST ONLY` như K.6; không cần Play. Click **Rubric mô phỏng cho profile MỚI (không là C3)**, rồi **Bắt đầu sạch • profile mới TEST ONLY**. Checkbox không đổi catalog đang chơi; kiểm nhãn **Rubric phiên hiện tại** sau tạo. Cấu hình là `FullCaseTestCatalog.CreateApproved(true)`, id `test.only.approved-producers`, revision `2`, `testOnly=true`, các rule.reviewed/fallChainReviewed **chỉ biểu diễn rubric thử**. Product factory vẫn từ chối TestOnly, không có chuyển sang product/fallback hoặc biên nhận C3 giả.
+
+**Đổi vị trí profile trong bản này:** `Path.Combine(Path.GetTempPath(), "ConRoiGameplaySandbox", "FullCaseSandbox_" + GUID)`; đường dẫn thực hiển thị trên window. Main/checkpoint vẫn ở `InvestigationV36/fullcase/case.json` / `case.before-conclusion.json` trong profile ấy. Không nằm trong project, Assets, save người dùng hay save r107. Trên máy kiểm là `%LOCALAPPDATA%/Temp/ConRoiGameplaySandbox/...`. Profile GUID mới không tự Load, không xóa profile trước; đóng/mở window tạo profile mới như K.6. Temp có thể bị hệ điều hành dọn; đây không phải nơi lưu sản phẩm hoặc cam kết lưu lâu dài. Không tự chuyển profile cũ trong `<worktree>/Test/PlaytestProfiles` sang Temp; các profile/lượt trước giữ nguyên để đối chiếu.
+
+Controls giữ K.6; các toggle căn cứ nay có nhãn `dimension • kind • id:index` để phân biệt bốn mục, ví dụ `motive • Recorded • M6:0`. Tick chỉ gắn căn cứ đã mở/ghi được runtime cung cấp. Nút claim là `test.gdd-claim • dimension` hoặc `test.alternative-claim • dimension`; đây là nhãn calibration kỹ thuật, **không phải thoại/kết luận UI sản phẩm**. Ending vẫn presenter text TEST ONLY, Complete chỉ do nút “Đã chạy hết trình diễn thử” thay callback media thật; không chứng minh đã có cinematic/thoại Lan chính thức.
+
+#### Đi tuyến C và dữ liệu rubric đang dùng
+
+Đây là tuyến có hướng dẫn để kiểm cơ chế, không phải bằng chứng người mới tự suy luận. Dùng cùng producer thật/controls K.6; không có điền sẵn hoặc nút mở hết. Lượt này chỉ cần thư Hà theo alternative thử của sender, **không chạy lại tuyến năm thư/A-treo** đã kiểm tại K.6.
+
+1. Profile sạch có rubric thử: office hỏi Phương đầu mối homestay. Xưởng khám/ghi slide, chợ nghe Hà kênh trả giấy và khám/ghi letter. Trường hỏi Mai về sổ, nhà hát xem Henri; nhập26 chữ theo bảng đang mở, ghi bản đọc letter. Về Hà nhập bốn cụm hồi đáp và gửi qua nút thật.
+2. Xưởng thu/xem khai, khám/ghi mechanism, hook, shoeprint, r03, r12, fabric. Thu/xem clip, Phát tới hết, quay khám ghi clip:0 và clip:1. Bàn dựng chạy release, help và hook; với hook chờ qua mốc hành động cuối rồi **Bỏ giữ**, để hồi và record `hook/clear-holds`. Không tua tới cuối để cấp report.
+3. Office nói chuyện Phương và xin quyền `test.samples`; homestay khám/ghi paper.khai, shoe, coat, M6. Nhà hát ghi M1; trường ghi M3, M5, test.antique.labels; chợ ghi M2. Đây là mô tả nguồn/feature TEST ONLY, chưa chứng nhận thủ tục, mẫu hoặc giấy thật.
+4. Đối chiếu từng task bằng đúng các nguồn đã xem, tự tick nguồn rồi chọn `test.feature.match`: paper(letter,paper.khai), cargo(M2,M5,test.antique.labels), staging(r03,r12,clip), shoe(shoeprint,shoe), fabric(fabric,coat), counter(mechanism,hook,clip). Counter chỉ mở sau các notes/trial ở bước2. `test.feature.near` là option thử khác, không coi tương tự chung là cùng vật trong sản phẩm. Cargo không dùng R-12 làm rối cổ.
+5. Kết luận: chọn `test.gdd-claim` cho cả bốn mục, tự tick các căn cứ trong bảng. Có thể F5/F6 trước chốt để kiểm draft nhưng phải xác nhận lại. Xác nhận trung tính → Chốt; sau đó ga/summary/start/presenter/Complete, pause/hủy/F6/replay hoặc chủ động quay checkpoint theo K.6.
+
+| Dimension | Bộ căn cứ **TEST ONLY** đã dùng qua toggle UI | Chỗ thay sau review |
+|---|---|---|
+| sender | Comparison paper; Recorded paper.khai:0; Decoded letter | `FullCaseCatalog.conclusions[id=sender].alternatives`: lượt dùng alternative thư Hà, không tự duyệt tính tương đương của rubric sản phẩm |
+| presence | Recorded slide:0; Comparison shoe và staging | alternatives của presence; cần đọc được dấu/giày/rối/clip thật |
+| fall | Recorded mechanism:0, hook:0, clip:0, clip:1; Comparison fabric, shoe, staging, counter | alternatives của fall và fallChainReviewed; C3/GDD14 cần footage/model/biên nhận thực, text thử không thay được |
+| motive | Recorded M1:0, M3:0, M5:0, M6:0 | alternatives của motive; cần nội dung/nguồn thực và review, không chỉ mã note đã thu |
+
+Các task option, expectedOption và support sets **không được đổi canon trong đợt này**. C03 có probe bỏ gắn M6 cho motive: đã thu/ghi M6 nhưng chưa cite thì Unsupported, không C. Dùng checkpoint → gắn M6 → sửa claim qua lại để kiểm xác nhận cũ mất hiệu lực → F5/F6 → xác nhận lại → C. Probe này kiểm điều kiện chấm thử, không phải ending A-sai được trình diễn thêm trong tuyến C.
+
+#### Đi tuyến A-sai và phạm vi kiểm hậu quả
+
+Tạo profile sạch riêng bật rubric thử, làm producer tối thiểu có slide ghi, nghe kênh Hà, xem/giải/ghi letter từ bảng Henri đã mở và gửi hồi đáp thật. Không cần thực hiện lại mọi bài đối chiếu để khẳng định sai một mục: theo luật, khẳng định không đúng/không đủ căn cứ phải A-sai dù các mục khác bỏ ngỏ.
+
+Mở Kết luận, để ba mục khác Chưa đủ chứng minh, chọn `test.alternative-claim` cho từng mục cần thử; F5/F6 draft, mở lại hồ sơ, xác nhận rồi chốt. Kiểm ga và vòng đời như C. Sau khi hoàn tất/replay, **Chủ động quay lại điều tra • checkpoint trước chốt**, mở Kết luận, đặt mọi mục về Chưa đủ rồi chọn biến thể kế tiếp. A03 đã làm lần lượt sender → presence → motive → fall → sender+motive+fall trên cùng profile, bằng thao tác UI sau checkpoint; không nạp save fixture để tạo kết quả.
+
+Lựa chọn `test.alternative-claim` không chỉ định một danh tính/thoại canon mới. Các assert kiểm đúng UnsupportedDimensions và văn bản hậu quả runtime theo GDD8, không tuyên mọi cáo buộc đã được gameplay chứng minh. GDD chưa có asset/phiên bản trình diễn được review nên đây chỉ là kiểm nhánh logic/presenter text; diễn xuất, nhịp/cảm xúc, nguồn nghiệp vụ và khả năng hiểu của người chơi chưa được xác nhận.
+
+#### Bằng chứng thực chạy và lịch sử IO phải giữ riêng
+
+Unity6000.6.2f1 batch, scene Gameplay, window thật; checker chỉ gửi event Unity mouse/text/key, tự cuộn tới control và đọc state/file để assert. Không OS input/Windows, không chơi tự nhiên/scene chung. Trial/clip chạy bằng Tick của window khi đúng modal/focus, không gọi Advance hoặc action API từ checker. Source JSON mang label `2ead4d03-isolated-ending-UI-working`; diff cuối đã commit nguyên trạng tại window `48679ec1` + checker `1e8d3c4f`, không sửa code sau các lượt cuối.
+
+| Lượt | Kết quả / phần đã chạy | Phần chưa chạy hoặc giới hạn |
+|---|---|---|
+| C01 |2 assertion đầu đạt, dừng assertion profile rubric bật; click giữa row EditorToggle không trúng checkbox |Gameplay C sau đó NOT_RUN. Sửa control thử sang Toggle cùng hit area/registry đang dùng ở selection khác; không sửa runtime |
+| C02 |113/113, toàn tuyến C đạt trên profile ở thư mục Test trong project |Nguồn trung gian trước cách ly profile/thêm log success; không suy đã chạy trên nguồn cuối |
+| A01 |77 assertion đạt; sender/presence lifecycle đạt, motive phân loại/hậu quả đạt rồi dừng station save/load |File main còn market, `.tmp` có station; F6 thực tế nạp save cũ hợp lệ, checker trước đó đã giả định F5 thành công. Không mark motive lifecycle/fall/mixed PASS |
+| A02 |45 assertion đạt; sender lifecycle đạt; presence chốt trả lỗi ghi checkpoint thật |UI báo “Không chốt: chưa ghi được tệp…”, giữ draft và file main. Cp.tmp tồn tại; các phần sau NOT_RUN. Hook FirstChanceException không thu được IO detail, không chứng minh không có lỗi IO |
+| A03 |**140/140**, cả5 biến thể, profile Temp riêng ngoài project |Đạt cơ chế TEST ONLY; không xóa/đóng IO bất thường A01/A02 |
+| C03 |**115/115**, tuyến C đầy đủ trên đúng nguồn/window profile Temp cuối |Chỉ rubric/media thử; không chứng nhận sản phẩm/C3 |
+
+Không cộng các lượt trung gian vào số ca độc lập. C03 trace320 nhóm thao tác, A03 trace280 nhóm; text group có nhiều KeyDown, không gọi đây là số sự kiện Windows/physical input. Không chạy lại A-treo, toàn bộ API/IO/trial cũ hoặc scene chung.
+
+**IO-OPEN-01 — thêm bằng chứng, vẫn OPEN.** A01 profile `Test/PlaytestProfiles/FullCaseSandbox_b56d21a26287444eb933ff4db6029a23`: Save tại ga chưa commit; main market/ending Unsupported-motive còn hợp lệ và F6 đọc chính nó, temp station giữ riêng. A02 profile `.../FullCaseSandbox_31bae737bd044667ab41812f890e93a7`: finalize presence trả lỗi trước chốt, main vẫn draft presence, checkpoint cũ và temp checkpoint mới được giữ. Không có chèn lỗi IO trong hai lượt này, không mất focus/desktop interruption được ghi nhận. Chưa có exception/HResult hoặc owner của handle để kết luận cụ thể là File.Replace, indexer, antivirus hay filesystem; `.tmp` hoàn chỉnh không chứng minh được bước Flush/Replace nào đã ném lỗi.
+
+Cách ly profile khỏi project là giảm yếu tố nền của **công cụ thử**, không chứng minh indexer là nguyên nhân, không sửa runtime để retry/copy/xóa save hoặc che lỗi. A03/C03 đạt không có nghĩa IO ở A01/A02 đã hết. Ảnh hưởng: người thử có thể không lưu/chốt được lượt mới; nếu bỏ qua thông báo lỗi rồi F6 thì tải tiến trình cũ hợp lệ. Guard đã thấy giữ bản cũ và không báo chốt thành công khi ghi chưa xong ở A02; A01 thiếu log kết quả F5 nên giữ giới hạn đó, không suy thêm.
+
+Phát hiện/giảm rủi ro: consumer phải đọc FullActionResult và thông báo thực tế, không coi việc nhấn F5 là đã lưu; dùng profile thử mới ngoài project cho lượt mô phỏng. Giữ main/temp/checkpoint và log khi có lỗi, không tự nạp temp hoặc sửa hash. Mở lại điều tra IO khi tái hiện tại profile Temp mới hoặc profile sản phẩm, thu đúng nguồn/catalog/path, kết quả Save/Finalize, bytes/state trước/sau, exception/HResult và tiến trình đang giữ handle nếu xác minh được. Gameplay nhận runtime repro cụ thể; UI/UX & Tích hợp không nuốt thông báo ghi thất bại. Chưa đủ căn cứ để sửa nguồn hoặc chạy lại toàn hệ IO trong gói này.
+
+#### Thay dữ liệu thật: acceptance cần chạy lại
+
+UI/UX & Tích hợp và Map & Asset nhận K.5/K.6, dùng config product tường minh, stable IDs/feature thật và biên nhận C3 có căn cứ. Không bỏ `testOnly`/đổi hash để promote save thử hoặc thay `test.feature.match`/`test.gdd-claim` bằng text canon mà giữ nghĩa chưa review. Catalog thay cần kiểm tương thích theo K.5; schema2 không đổi trong gói này.
+
+- Nội dung/Map & Asset cung cấp đúng nguồn cho từng condition/feature và footage/model để review C3; UI điều phối bảng support tương đương, đúng dimension và rubric revision. Thiếu review product phải báo thiếu, không chốt bằng rubric thử.
+- UI nối claim/căn cứ qua TrySetConclusion, xác nhận qua TryConfirm và TryFinalize(profile); không tự tính ending. Đổi draft/Load phải vô hiệu xác nhận cũ; checkpoint phải đúng draft đã xét và không có ending/viewed mới.
+- Consumer ga dùng TryOpenEndingSummary/TryStartEndingPresentation, GetEndingConsequences; presenter thật ghép một chuỗi đủ hậu quả cho dimension sai. Pause thực player; cancel/Load hủy callback cũ; chỉ hết media đúng phiên mới gọi TryCompleteEndingPresentation. Replay không ghi checkpoint mới, không phát thêm reward hoặc đổi conclusion. Không dùng nút complete thử trong scene sản phẩm.
+- Kiểm lại C đủ/thiếu từng nhóm căn cứ, từng loại A-sai và nhiều sai sau thay rubric/feature; kiểm các mốc save/load, hủy/tiếp tục/replay trên scene chung với profile riêng, thông báo lỗi IO rõ. Kiểm ngôn từ/hành động không suy tội, không suy ý định và vẫn bảo vệ Lan/rối. UI1080p, media thực/âm thanh, FPS/controller và người mới ghi riêng theo bằng chứng, không suy từ gói này.
+
+Cách kiểm độc lập khi có thay đổi: cùng `PlayableSandboxChecks.RunBatch` tại K.6, thêm `--playable-branch C` hoặc `--playable-branch A-sai`, `--playable-output <thư-mục-output-mới>` và `--playable-source <SHA-nguồn>`; không thêm -quit, không mở hai Unity dùng cùng project, không dùng save gốc. Checker lưu kết quả/UI trace/diagnostics cục bộ, không có tool cấp progress. Tất cả output/temp/profile/log giữ local, không commit.
+
+- `C01/results.json` SHA256 `20514567c5e93ed7ce4afc13caad66de73f05b776deb4286873674055f46eb25`.
+
+- `C02/results.json` SHA256 `eaa5fbe94f93760b3df44722cf1368f3dbee5c0d63b3705fed450523db760bb4`.
+
+- `A01/results.json` SHA256 `925b643bdd515ebbf16adb59168b9ddafc8b8729b23730073f25eac60383e052`.
+
+- `A02/results.json` SHA256 `4bc1f6176912a50ba3a37198a103613988850875193753ac8a293c80e3b671bb`.
+
+- `A03/results.json` SHA256 `40ac4d50c707a1852b12b1186fbe55c059a6edf8deda5203ed1bebd5b1763bf9`.
+
+- `C03/results.json` SHA256 `86416c3488489e8208f01150f20d52deed7cac3abd350f246cd976830ec40956`.
+
+Bằng chứng main/temp/checkpoint của hai lượt IO được giữ nguyên (hash tại thời điểm bàn giao):
+
+- `A01/case.before-conclusion.json` SHA256 `e2cf5c8c951021d893ead516436b35c4d12980a9f31773587963dba7fd7c0bd4`.
+
+- `A01/case.json` SHA256 `622fe8221995723354a3f3262c9ce29c13fb756a193d23003be2afe0226b6405`.
+
+- `A01/case.json.tmp` SHA256 `6ef6ecc459ae56fcaa946364ced88f6d584fe4f016ce5782da8d58941c5c1cbb`.
+
+- `A02/case.before-conclusion.json` SHA256 `78371766351ff2b05daa112ded8dd52937ee5eaf2df3e13d3a3e646953e01bfc`.
+
+- `A02/case.before-conclusion.json.tmp` SHA256 `36deae663c55a9e4f9b07a0bef4dc8e8f5fbed8125d3624e1490d37eb3d34937`.
+
+- `A02/case.json` SHA256 `36deae663c55a9e4f9b07a0bef4dc8e8f5fbed8125d3624e1490d37eb3d34937`.
+
+
+**Chốt phạm vi gói:** C và A-sai **MÔ PHỎNG ĐÃ KIỂM qua UI thử** trên cấu hình TEST ONLY nêu trên; runtime sản phẩm giữ nguyên. CHỜ ASSET-UI và nội dung/review C2/C3, CHƯA KIỂM SCENE CHUNG/UI1080p/NGƯỜI MỚI. IO-OPEN-01 còn OPEN với ảnh hưởng/repro cụ thể ở trên; P-close giữ hồ sơ riêng. Gameplay quay lại theo input/rubric/media thật hoặc defect runtime có tái hiện, không báo game sản phẩm hoàn tất.
