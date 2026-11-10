@@ -117,12 +117,14 @@ namespace ConRoi.Investigation.V36.R107
             }
             if(Page=="inspect"&&Mouse.current!=null){var d=Mouse.current.leftButton.isPressed?Mouse.current.delta.ReadValue():Vector2.zero;TryAdjustInspection(d.x*.25f,-d.y*.25f,-Mouse.current.scroll.ReadValue().y*.002f,out _);}
         }
-        public bool TryInteractionHit(out RaycastHit hit)
+        public bool TryInteractionHit(out RaycastHit hit)=>TryInteractionHit(eye,movement.transform,out hit);
+        public static bool TryInteractionHit(Camera source,Transform body,out RaycastHit hit)
         {
+            if(!source||!body){hit=default;return false;}
             // The camera can be above the capsule when looking down. Ignore only
             // Khang's own body; the nearest scene obstruction still wins.
-            foreach(var candidate in Physics.RaycastAll(eye.transform.position,eye.transform.forward,3.2f,~(1<<30|1<<29),QueryTriggerInteraction.Ignore).OrderBy(h=>h.distance))
-                if(!candidate.collider.transform.IsChildOf(movement.transform)) { hit=candidate;return true; }
+            foreach(var candidate in Physics.RaycastAll(source.transform.position,source.transform.forward,3.2f,~(1<<30|1<<29),QueryTriggerInteraction.Ignore).OrderBy(h=>h.distance))
+                if(!candidate.collider.transform.IsChildOf(body)) { hit=candidate;return true; }
             hit=default;return false;
         }
         public void Interact(InvestigationInteractable target)
