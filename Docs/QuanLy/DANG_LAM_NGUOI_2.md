@@ -370,3 +370,12 @@ Nguồn97b8048e →e92a2ea6; công cụ/meta d5b67c9a là commit thực chạy, 
 | INTERVIEW-REVISIT-01 |97b8048e +e92a2ea6 /d5b67c9a | **CƠ CHẾ ĐÃ KIỂM / CHỜ NỘI DUNG & UI** | UI/UX & Tích hợp duyệt Question/Answer/participant-topic ID/gate/history, nối consumer/modal; Gameplay & Dữ liệu nhận yêu cầu partial/contract cụ thể |
 
 [Bàn giao đầy đủ](../QA/Tasks/N2/INTERVIEW-REVISIT-01/README.md). Chưa có hội thoại Hà hoàn chỉnh, chưa lưu lịch sử hỏi, không tự thêm phần thưởng/ghi nhận khi hỏi. Cần review6 entry provenance và **kết quả bàn dựng/trial report** bởi phía nội dung như đầu việc riêng; giữ nhãn pending, không chốt thay hoặc kiểm/push lại gói cũ. Scene chung/UI1080p/người mới NOT_RUN, P-close/IO-OPEN-01 OPEN riêng. Không mở thêm hệ thống/ending/nhánh và không merge/chốt baseline nhóm.
+
+
+### Bàn giao tập trung bốn gói chờ nội dung/UI — 10/11/2026
+
+Local source a6fcc2af, tracked sạch trước đợt tài liệu, hai untracked cũ giữ nguyên. [Điểm nhận tập trung](../QA/Tasks/N2/BAN_GIAO_CHO_NOI_DUNG_UI_20261110.md) dẫn API/chuỗi commit, thứ tự phụ thuộc, việc controls/preview/model/nhãn/catalog/modal/input, cách kiểm độc lập và phiếu giao lại Gameplay. Không chép lại contract đầy đủ hoặc sửa báo cáo gốc.
+
+Chủ nhận chính UI/UX & Tích hợp; Map & Asset nhận model thật. Bảng ND-01…09 giữ CHỜ CHỐT cho 6 entry provenance, **phân loại kết quả bàn dựng**, thoại/ID/gate Hà và lịch sử hỏi lại/mục đích lưu. Không tự chốt nhãn, đưa TEST ONLY vào sản phẩm, thay schema hoặc yêu cầu UI tự sửa partial. Chỉ UI/content nếu nối đúng API có sẵn; đổi metadata/runtime/requirement/history/partial phải giao Gameplay sau quyết định được duyệt. Các trạng thái chờ của 4 gói giữ nguyên; không có báo cáo tích hợp mới.
+
+Đợt này chỉ thêm tài liệu điều phối và tiến độ riêng; không runtime/GDD/scene, không Unity/API, fetch/xác minh push, build/ZIP hoặc merge.
