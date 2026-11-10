@@ -1,0 +1,274 @@
+[
+  {
+    "id": "slide",
+    "index": 0,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Xưởng • mặt sàn cạnh mép gác",
+    "rationale": "Nhìn dấu bụi và vị trí trên sàn."
+  },
+  {
+    "id": "slide",
+    "index": 1,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Xưởng • mặt sàn cạnh mép gác",
+    "rationale": "Quan sát lớp dấu giao nhau, không kết luận người gây ngã."
+  },
+  {
+    "id": "shoeprint",
+    "index": 0,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Xưởng • dấu đế trên gác",
+    "rationale": "Nhìn phần dấu đè trên bụi."
+  },
+  {
+    "id": "shoeprint",
+    "index": 1,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Xưởng • dấu đế trên gác",
+    "rationale": "Nhìn vân/gót, chưa nhận diện tuyệt đối."
+  },
+  {
+    "id": "r03",
+    "index": 0,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Xưởng • nhãn R-03 và dây quấn",
+    "rationale": "Đọc nhãn rối và đối chiếu vật đang sửa."
+  },
+  {
+    "id": "r03",
+    "index": 1,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Xưởng • nhãn R-03 và dây quấn",
+    "rationale": "Quan sát đầu dây và đường nối vật thể; chưa xác định ai đặt."
+  },
+  {
+    "id": "r12",
+    "index": 0,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Xưởng • thẻ sửa và rối R-12",
+    "rationale": "Đọc các mã trên thẻ/vật và đối chiếu."
+  },
+  {
+    "id": "r12",
+    "index": 1,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Xưởng • thẻ sửa và rối R-12",
+    "rationale": "So hai vật có nhãn khác nhau; không suy người dàn dựng."
+  },
+  {
+    "id": "mechanism",
+    "index": 0,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Xưởng • cánh, chốt và dây nhả",
+    "rationale": "Khám/thao tác trực tiếp cơ cấu hiện tại, không suy trạng thái lúc ngã."
+  },
+  {
+    "id": "mechanism",
+    "index": 1,
+    "kind": "Unclassified",
+    "status": "ContentReviewPending",
+    "source": "Xưởng • cánh, chốt và dây nhả",
+    "rationale": "CHỜ REVIEW NỘI DUNG: câu trộn khám khe và kết quả lượt thử, chưa rõ cùng nguồn cơ cấu thật hay bản sao."
+  },
+  {
+    "id": "mechanism",
+    "index": 2,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Xưởng • cánh, chốt và dây nhả",
+    "rationale": "Nhìn vị trí tay nắm so với gác."
+  },
+  {
+    "id": "hook",
+    "index": 0,
+    "kind": "Unclassified",
+    "status": "ContentReviewPending",
+    "source": "Xưởng / bàn mô hình • móc M",
+    "rationale": "CHỜ REVIEW NỘI DUNG: câu trộn bụi hiện trường và so dấu thử trên mô hình."
+  },
+  {
+    "id": "fabric",
+    "index": 0,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Xưởng • mảnh vải tại tay nắm D",
+    "rationale": "Nhìn mép rách và đường chỉ, không suy thời điểm."
+  },
+  {
+    "id": "fabric",
+    "index": 1,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Xưởng • mảnh vải tại tay nắm D",
+    "rationale": "Nhìn sợi chỉ và đường dệt."
+  },
+  {
+    "id": "phone",
+    "index": 0,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Xưởng • điện thoại và giá quay",
+    "rationale": "Quan sát hướng giá quay và trường hình."
+  },
+  {
+    "id": "phone",
+    "index": 1,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Xưởng • điện thoại và giá quay",
+    "rationale": "Đối chiếu đồ trong đoạn quay với vật ở xưởng; không kết luận danh tính người kéo."
+  },
+  {
+    "id": "clip",
+    "index": 0,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Điện thoại • đoạn quay sửa R-12",
+    "rationale": "Quan sát hình trong đoạn quay sau guard exposure hiện có."
+  },
+  {
+    "id": "clip",
+    "index": 1,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Điện thoại • đoạn quay sửa R-12",
+    "rationale": "Quan sát diễn biến chốt/cánh và hai tay trong hình."
+  },
+  {
+    "id": "clip",
+    "index": 2,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Điện thoại • đoạn quay sửa R-12",
+    "rationale": "Ghi giới hạn trường hình; không suy người kéo hoặc ý định."
+  },
+  {
+    "id": "khai",
+    "index": 0,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Cửa xưởng • ngoại hình Khải nhìn thấy",
+    "rationale": "Nhìn áo/giày tại cuộc gặp, khác với lời Khải trong transcript."
+  },
+  {
+    "id": "samples",
+    "index": 0,
+    "kind": "Unclassified",
+    "status": "ContentReviewPending",
+    "source": "Phương • bàn giao mẫu prototype",
+    "rationale": "CHỜ REVIEW NỘI DUNG: câu là trạng thái cho phép truy cập kèm lời bàn giao, chưa rõ loại entry mong muốn."
+  },
+  {
+    "id": "coat",
+    "index": 0,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Bàn mẫu xưởng • cổ tay áo được bàn giao",
+    "rationale": "Nhìn phần thiếu và đường may trên áo thật."
+  },
+  {
+    "id": "coat",
+    "index": 1,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Bàn mẫu xưởng • cổ tay áo được bàn giao",
+    "rationale": "Nhìn mép thiếu và điểm dừng mũi chỉ."
+  },
+  {
+    "id": "shoe",
+    "index": 0,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Bàn mẫu xưởng • đế giày được bàn giao",
+    "rationale": "Nhìn góc khuyết và vân đế."
+  },
+  {
+    "id": "shoe",
+    "index": 1,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Bàn mẫu xưởng • đế giày được bàn giao",
+    "rationale": "Nhìn các dãy vân và vị trí gót."
+  },
+  {
+    "id": "shoecontrol",
+    "index": 0,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Bàn mẫu xưởng • giày mẫu B",
+    "rationale": "Nhìn mẫu đối chứng, không tự xác nhận khớp."
+  },
+  {
+    "id": "ha",
+    "index": 0,
+    "kind": "Statement",
+    "status": "Classified",
+    "source": "Quầy Hà • lời Hà kể",
+    "rationale": "Cả phần vận chuyển và giới hạn phiếu được tóm tắt từ lời Hà; không tự xác minh nội dung lời kể."
+  },
+  {
+    "id": "ha",
+    "index": 1,
+    "kind": "Statement",
+    "status": "Classified",
+    "source": "Quầy Hà • lời Hà kể",
+    "rationale": "Kênh nhận giấy được Hà giới thiệu; loại nguồn không chứng nhận lời kể đúng."
+  },
+  {
+    "id": "letter",
+    "index": 0,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Quầy Hà • dải thư tư thế",
+    "rationale": "So hình mở đầu trên dải với bảng tập đã giới thiệu."
+  },
+  {
+    "id": "letter",
+    "index": 1,
+    "kind": "Unclassified",
+    "status": "ContentReviewPending",
+    "source": "Quầy Hà • dải thư tư thế",
+    "rationale": "CHỜ REVIEW NỘI DUNG: câu nêu pose ID/ánh xạ dùng chung, trộn quan sát hình và quy ước dữ liệu."
+  },
+  {
+    "id": "receipt",
+    "index": 0,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Hà giao • nội dung đọc trên phiếu vận chuyển",
+    "rationale": "Đọc điều ghi trên giấy, không chứng nhận chuyến hàng thực tế hoặc hàng trong thùng."
+  },
+  {
+    "id": "henri",
+    "index": 0,
+    "kind": "Observation",
+    "status": "Classified",
+    "source": "Sổ nghề Henri • nội dung bảng tập",
+    "rationale": "Đọc chú giải trong sổ, không coi là lời Henri đang kể trực tiếp."
+  },
+  {
+    "id": "draft",
+    "index": 0,
+    "kind": "Unclassified",
+    "status": "ContentReviewPending",
+    "source": "Hà giao • giấy mẫu và bản nháp",
+    "rationale": "CHỜ REVIEW NỘI DUNG: câu trộn đặc điểm vật thể và đánh giá thiếu nguồn độc lập."
+  },
+  {
+    "id": "decoded",
+    "index": 0,
+    "kind": "Unclassified",
+    "status": "ContentReviewPending",
+    "source": "Người chơi • bản đọc mật mã đã ghi",
+    "rationale": "CHỜ REVIEW NỘI DUNG: bản đọc suy ra từ mapping, không ép thành quan sát hay lời kể."
+  }
+]

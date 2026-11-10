@@ -338,3 +338,8 @@ Checklist trước đó mô tả tuyến luật prototype có sẵn; hai khoản
 | INTERVIEW-REVISIT-01 | Hỏi lại Hà theo tài liệu đã ghi/đọc (GDD4/6.7), thay vì chỉ lặp Interact/OpenEvidence tĩnh | ĐỀ XUẤT, chờ nhóm chốt scope prototype hay lát cắt, câu hỏi/đáp án, điều kiện mở và lịch sử cần lưu. UI/UX & Tích hợp điều phối nội dung; Gameplay & Dữ liệu nhận runtime sau khi rõ |
 
 Ưu tiên NOTE-PROVENANCE-01 vì có thể làm với dữ liệu prototype, không thêm cốt truyện/asset/khu/ending và có đường kiểm độc lập không đổi save; đây là phần ngữ nghĩa runtime còn thiếu, không chỉ đổi nhãn UI. Không tự coi phân loại nguồn là chứng minh lời kể đúng hoặc thêm gate chốt. Các entry lai phải review, không phân loại toàn NPC theo một loại nguồn. Trạng thái hai gói viewer trước giữ CHỜ UI/TÍCH HỢP tại74a80c21, không báo lại hoặc suy thêm PASS. Lượt này chưa sửa runtime, chạy Unity, push/merge hoặc mở lại audit IO.
+
+
+### NOTE-PROVENANCE-01 — nhận triển khai
+
+Được giao10/11/2026, base afe461c2; tracked sạch, untracked cũ bảo toàn. Mục tiêu: metadata theo ID/index và read model cho ghi nhận đã mở, loại Quan sát/Lời kể/Giả thuyết; mơ hồ giữ CHỜ REVIEW NỘI DUNG, thiếu mapping không mặc định Quan sát. [Acceptance và bảng từng entry trước source](../QA/Tasks/N2/NOTE-PROVENANCE-01/README.md). Chỉ thêm runtime partial mới/test Gameplay/Editor/contracts riêng, không sửa UI/scene/EvidenceDefinition/save types hoặc luật mở chứng cứ. Kiểm API/schema1/Observe liên quan, không bộ save đầy đủ. Phụ thuộc UI/UX & Tích hợp: review mục mơ hồ và nối labels/nhóm; không triển khai hội thoại.
