@@ -1,0 +1,212 @@
+{
+  "runtime_commits": [
+    "97b8048e56fa173d27ae1a420d29f573430274d7",
+    "e92a2ea621923d923562f762b6726659d0b88990"
+  ],
+  "tested_commit": "d5b67c9a6ba1ae0310047284555a4221e5023502",
+  "kind": "PLAYMODE_API_PROXY_TEST_ONLY_CATALOG_NOT_UI_NOT_WINDOWS",
+  "unity": "6000.6.2f1",
+  "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+  "assertions_count": 48,
+  "failures": 0,
+  "raw_results_sha256": "6553b08047586d59d7c27d5f7e6ff1cc410fdfb076167f0ce48bb2e46c61509d",
+  "checks": [
+    {
+      "name": "default_snapshot_is_unavailable",
+      "pass": true
+    },
+    {
+      "name": "missing_source_rejected",
+      "pass": true
+    },
+    {
+      "name": "missing_catalog_rejected",
+      "pass": true
+    },
+    {
+      "name": "blank_ids_and_missing_text_rejected",
+      "pass": true
+    },
+    {
+      "name": "duplicate_and_null_topic_rejected",
+      "pass": true
+    },
+    {
+      "name": "no_product_catalog_or_topics_by_default",
+      "pass": true
+    },
+    {
+      "name": "closed_query_and_ask_no_answer",
+      "pass": true
+    },
+    {
+      "name": "unknown_participant_rejected",
+      "pass": true
+    },
+    {
+      "name": "begin_no_world_or_save_mutation",
+      "pass": true
+    },
+    {
+      "name": "catalog_input_list_copied",
+      "pass": true
+    },
+    {
+      "name": "only_open_topic_initially",
+      "pass": true
+    },
+    {
+      "name": "query_never_exposes_answer_field",
+      "pass": true
+    },
+    {
+      "name": "locked_question_withheld",
+      "pass": true
+    },
+    {
+      "name": "locked_ask_no_answer_or_event",
+      "pass": true
+    },
+    {
+      "name": "unknown_null_case_and_cross_participant_fail",
+      "pass": true
+    },
+    {
+      "name": "available_answer_and_single_event",
+      "pass": true
+    },
+    {
+      "name": "repeat_same_answer_no_rewards_or_history",
+      "pass": true
+    },
+    {
+      "name": "acquired_and_recorded_are_distinct",
+      "pass": true
+    },
+    {
+      "name": "explicit_acquired_condition_asks",
+      "pass": true
+    },
+    {
+      "name": "recorded_condition_opens_only_after_record",
+      "pass": true
+    },
+    {
+      "name": "and_condition_requires_second_record",
+      "pass": true
+    },
+    {
+      "name": "and_conditions_all_satisfied",
+      "pass": true
+    },
+    {
+      "name": "selection_rechecks_stale_unlocked_snapshot",
+      "pass": true
+    },
+    {
+      "name": "test.invalid-id_fails_closed",
+      "pass": true
+    },
+    {
+      "name": "test.invalid-index_fails_closed",
+      "pass": true
+    },
+    {
+      "name": "test.invalid-kind_fails_closed",
+      "pass": true
+    },
+    {
+      "name": "test.invalid-acquired-index_fails_closed",
+      "pass": true
+    },
+    {
+      "name": "injected_clip_record_does_not_bypass_guard",
+      "pass": true
+    },
+    {
+      "name": "one_clip_exposure_not_enough",
+      "pass": true
+    },
+    {
+      "name": "readable_recorded_clip_condition",
+      "pass": true
+    },
+    {
+      "name": "requirement_input_and_getter_arrays_copied",
+      "pass": true
+    },
+    {
+      "name": "query_snapshot_array_isolated",
+      "pass": true
+    },
+    {
+      "name": "pause_blocks_query_ask_and_begin",
+      "pass": true
+    },
+    {
+      "name": "resume_keeps_transient_context",
+      "pass": true
+    },
+    {
+      "name": "end_cancel_no_rewards_or_save_mutation",
+      "pass": true
+    },
+    {
+      "name": "participant_switch_isolated",
+      "pass": true
+    },
+    {
+      "name": "listener_exception_isolated_and_reentry_rejected",
+      "pass": true
+    },
+    {
+      "name": "unsubscribe_works",
+      "pass": true
+    },
+    {
+      "name": "queries_and_repeated_asks_do_not_change_progress",
+      "pass": true
+    },
+    {
+      "name": "private_save_for_context_test",
+      "pass": true
+    },
+    {
+      "name": "ask_begin_end_do_not_write_save",
+      "pass": true
+    },
+    {
+      "name": "valid_load_expires_old_context",
+      "pass": true
+    },
+    {
+      "name": "load_bytes_unchanged",
+      "pass": true
+    },
+    {
+      "name": "begin_after_load_rechecks_saved_conditions",
+      "pass": true
+    },
+    {
+      "name": "reconstructed_engine_has_no_asked_history",
+      "pass": true
+    },
+    {
+      "name": "schema1_no_new_interview_history",
+      "pass": true
+    },
+    {
+      "name": "profile_data_replacement_invalidates_context",
+      "pass": true
+    },
+    {
+      "name": "end_is_idempotent",
+      "pass": true
+    }
+  ],
+  "limits": [
+    "TEST ONLY catalog in Editor; no official Ha follow-up content/gates/history",
+    "No product UI/controller or Windows input; common scene, 1080p, newcomer NOT_RUN",
+    "Only one affected save/load/context roundtrip, no old save/IO/trial suites rerun"
+  ]
+}

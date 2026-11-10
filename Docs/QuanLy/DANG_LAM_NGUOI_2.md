@@ -354,3 +354,19 @@ Checklist trước đó mô tả tuyến luật prototype có sẵn; hai khoản
 | NOTE-PROVENANCE-01 |386fdfdc /57c6ad35 | RUNTIME ĐÃ KIỂM,68/68 API/fixture | CHỜ UI/TÍCH HỢP — UI/UX & Tích hợp nối metadata/nhãn hồ sơ; review mechanism:1,hook:0,samples:0,letter:1,draft:0,decoded:0 và trial report |
 
 [Bàn giao đầy đủ và bảng metadata](../QA/Tasks/N2/NOTE-PROVENANCE-01/README.md); UI cần wiring mới qua reference session thật, không lấy raw definition để lộ ghi nhận chưa mở, không sửa partial song song. Không có event mới; refresh query theo lifecycle/action hiện có. Trạng thái TÍCH HỢP ĐÃ KIỂM chỉ cập nhật khi có báo cáo nhận. Mục mơ hồ vẫn Unclassified/pending, không chặn UI dùng28 entry rõ và không giả nhận đã review xong. Scene chung/UI1080p/người mới NOT_RUN; IO-OPEN-01/P-close OPEN riêng. INTERVIEW-REVISIT-01 chưa triển khai.
+
+
+### INTERVIEW-REVISIT-01 — nhận cơ chế độc lập
+
+Được giao từfc781aaa, tracked sạch, untracked cũ giữ nguyên. [Acceptance trước nguồn và trích GDD](../QA/Tasks/N2/INTERVIEW-REVISIT-01/README.md). Chỉ catalog/chủ đề/query/select/error/repeat/context/event, điều kiện dữ liệu tường minh trong fixture TEST ONLY ở Editor; không thoại/gate chính thức Hà, thưởng, state lịch sử/save field, UI/map/scene chung. Nội dung và history chờ quyết định; tiếp tục kiểm cơ chế độc lập. Sáu entry provenance và việc review kết quả bàn dựng vẫn do UI/UX & Tích hợp/nội dung nhận, không chốt lại nhãn hoặc kiểm/push lại gói đó.
+
+
+### INTERVIEW-REVISIT-01 — kết quả cơ chế và chờ nội dung/UI
+
+Nguồn97b8048e →e92a2ea6; công cụ/meta d5b67c9a là commit thực chạy, **48/48 API/fixture đạt**, Unity6000.6.2f1/scene Gameplay/proxy/profile mới. Cơ chế topic immutable, query/select recheck, lỗi khóa/sai, repeat không grant/state/history, event và context hết hiệu lực sau Load đã kiểm; không UI/controller/Windows/natural play. Chỉ một Save/Load liên quan context, không bộ save/IO/trial/provenance cũ. Không sửa UI/scene/map/EvidenceDefinition/session producer/save types và không có catalog thoại thử trong source sản phẩm.
+
+| Gói | Nguồn / đã kiểm | Trạng thái | Chủ nhận và phụ thuộc |
+|---|---|---|---|
+| INTERVIEW-REVISIT-01 |97b8048e +e92a2ea6 /d5b67c9a | **CƠ CHẾ ĐÃ KIỂM / CHỜ NỘI DUNG & UI** | UI/UX & Tích hợp duyệt Question/Answer/participant-topic ID/gate/history, nối consumer/modal; Gameplay & Dữ liệu nhận yêu cầu partial/contract cụ thể |
+
+[Bàn giao đầy đủ](../QA/Tasks/N2/INTERVIEW-REVISIT-01/README.md). Chưa có hội thoại Hà hoàn chỉnh, chưa lưu lịch sử hỏi, không tự thêm phần thưởng/ghi nhận khi hỏi. Cần review6 entry provenance và **kết quả bàn dựng/trial report** bởi phía nội dung như đầu việc riêng; giữ nhãn pending, không chốt thay hoặc kiểm/push lại gói cũ. Scene chung/UI1080p/người mới NOT_RUN, P-close/IO-OPEN-01 OPEN riêng. Không mở thêm hệ thống/ending/nhánh và không merge/chốt baseline nhóm.
