@@ -53,21 +53,81 @@ Kiểm độc lập không cần desktop: Unity batch `-executeMethod ConRoi.Gam
 
 Acceptance ban đầu ở trên được giữ làm lịch sử. Bảng này thay trạng thái CHƯA TRIỂN KHAI ở ma trận đầu; tất cả commit runtime bên dưới là `f8b50889`. TEST ONLY không có nghĩa canon đã hoàn tất.
 
-| Yêu cầu | Runtime thực có | Mức hoàn thành / còn phụ thuộc | Chủ nhận |
-|---|---|---|---|
-| F01 | `CanTravel`, `TryTravel`, `FullLocationDefinition.requires` recheck khi chuyển | RUNTIME ĐÃ KIỂM; mười khu và hai thứ tự mô phỏng. Gate chi tiết prototype thử cần content duyệt | UI/UX & Tích hợp; Map & Asset |
-| F02 | `InvestigationInterview.ForSource`, `IInvestigationInterviewSource`, dữ liệu `InterviewTopicDefinition` | CƠ CHẾ ĐÃ KIỂM; tám participant TEST ONLY, không có thoại chính thức/history mới | UI/UX & Tích hợp chủ trì nội dung |
-| F03–F05 | `FullInvestigationLetters`, mapping chung, `GetLetter`, `TryRecordReading`, `TrySendReply`, `GetHints`, `GetHenriLookup` | RUNTIME ĐÃ KIỂM năm bản rõ GDD; 26 key kỹ thuật, tra sổ không tự điền/đổi điểm. CHỜ hình pose, bản chép có câu, kênh/thoại sản phẩm | Map & Asset + UI/UX & Tích hợp |
-| F06–F09 | `GetComparisons`, `TryCompare`, permission, stored attempt và prerequisites | RUNTIME ĐÃ KIỂM sáu task; exact feature key/rubric là TEST ONLY, không nhận diện vải/giày thật hoặc chứng minh tương đương vật lý | UI/UX & Tích hợp duyệt dữ liệu; Map & Asset specimen |
-| F10 | Tái dùng `TrialTimeline`, `MechanismPresentation`; start/pause/seek/clear/context; sáu ca | RUNTIME ĐÃ KIỂM; không sửa luật hồi. Hình nộm, đọc clip thực tế, giả thuyết thay thế GDD14 CHỜ ASSET/REVIEW | Map & Asset + UI/UX & Tích hợp |
-| F11 | ID ghi nhận/nguồn, relation và các query chỉ trả dữ liệu đã mở | RUNTIME ĐÃ KIỂM; `GetNoteKind` của catalog thử vẫn Unclassified, không tự chốt sáu entry hoặc trial | UI/UX & Tích hợp; Gameplay cập nhật mapping sau review |
-| F12–F14 | Bộ support tương đương authored, bốn draft, confirm theo nội dung, checkpoint, ba ending đúng ưu tiên | RUNTIME ĐÃ KIỂM bằng rubric TEST ONLY; catalog chưa reviewed trả `content-pending`. Không chứng nhận chuỗi gây ngã/cinematic/nguồn nghiệp vụ | UI/UX & Tích hợp chủ trì review nội dung; Gameplay nhận rubric/gate |
-| F15 | Reply không timer, khu ga sau finalize, ending result tách phạm vi sai | RUNTIME ĐÃ KIỂM ở mức state/nhánh; bảo vệ Lan/rối và hậu quả hiển thị chưa có cinematic/hành động sản phẩm | UI/UX & Tích hợp + Map & Asset |
-| F16 | Cầm/cất/đặt theo slot, không giới hạn ba vật, giữ một ID | RUNTIME ĐÃ KIỂM; không mô phỏng ném/ragdoll hoặc thay asset thật | Map & Asset sockets; UI/UX & Tích hợp controller |
-| F17–F18 | File riêng, validation trước gán, import r107 chủ động, reset transient sau Load, pause/modal | RUNTIME ĐÃ KIỂM; không chuyển save người dùng tự động, không thêm topic history; UI/controller sản phẩm chưa nối | Gameplay & Dữ liệu hỗ trợ chuyển consumer; UI/UX & Tích hợp |
-| F19 | Giữ các API viewer/controls gói cũ | CHỜ ASSET-UI / CHƯA KIỂM SCENE CHUNG; hình học/âm thanh/animation/camera/người mới không được thay bằng API PASS | Map & Asset + UI/UX & Tích hợp |
+**Cách đọc bằng chứng:** `R` = run03 của `FullCaseChecks` (nguồn f8b50889); `W` = window01 của `FullCaseWindowChecks`; `D` = kiểm bàn giao sau e71da758, `FullCaseDeliveryChecks` tại 9dd5d6eb; `I` = interview-regression PlayMode. K là danh mục kết quả/hash. Tên assertion/hành động dưới đây chỉ rõ hành vi đã kiểm, không biến tổng số PASS thành độ bao phủ GDD. D đi từ menu tới ga bằng lệnh adapter/API và event Unity; không phải gameplay scene chung.
 
-Không còn cơ chế độc lập rõ nào trong bảng bị để CHƯA TRIỂN KHAI. **Chưa hoàn thành gameplay sản phẩm toàn tuyến**: nội dung, gate chính thức, rubric đủ chuỗi, asset và consumer UI mới vẫn cần sản xuất/duyệt. GDD không cho phép tự chế dữ kiện forensic hoặc thoại để đóng các mục đó. Không có vụ thứ hai/siêu nhiên/ending mới.
+| Yêu cầu / GDD | Runtime thực tế | Adapter/mô phỏng và loại dữ liệu | Kiểm đã chạy / phần còn thiếu |
+|---|---|---|---|
+| F01 / 4,12 — mở vùng theo đầu mối | `FullLocationDefinition.requires`, `CanTravel`, `TryTravel`; recheck lúc đi | Window → Controller.Interact(Location); cube ID; **gate TEST ONLY** B.1 | R `unknown_travel_and_gated_location_preserve`, `alternative_lead_order_works`; D travel office→workshop→lake/market/school/slope→office→theatre/homestay/garden→office→station. Thiếu gate kể chuyện được duyệt, scene routing/spawn/collider thật |
+| F02 / 2,3.6–7,4 — hỏi các nguồn | `InvestigationInterview.ForSource`, `TryBeginInterview`, `TryAsk`, `Answered`, load-context | Window → Controller.Interact(Actor)/Ask; **tám topic TEST ONLY**, không thoại chính thức, không phát lời khai | R `locked_topic_hides_question_answer`, `<actor>_ask_repeat_no_reward`; I context/điều kiện/repeat; D hỏi tám actor ở tuyến. **Chưa kiểm hội thoại canon/producer lời khai**; các note như M4 hiện là item thử, không phải kết quả nghe Lan thật |
+| F03 / 5.1–3 — năm thư, gán/đọc | `FullInvestigationLetters`, `TryAssign`, `GetLetter`, `TryRecordReading` | Text key thay glyph; **plaintext đúng GDD5.2**, pose ID kỹ thuật, không góc/rig canon | R `blank_reading_not_recorded`, `wrong_partial_not_recorded`, `five_letters_decoded`, `26_pose_keys_shared_and_word_separator`; D assign-from-book/read-letter cho năm ID. Thiếu hình 26 pose, bản chép phục hồi câu/renderer/đọc bằng hình |
+| F04 / 5.2 — hồi đáp qua kênh đã biết | `TrySendReply`, `replyChannelRequirements`, cờ replySent | Bốn ô cụm; **reply đúng GDD**, **gate ha:1 TEST ONLY** | R `unreceived_cannot_read_reply`, `reply_wrong_order_denied`, `known_channel_correct_reply`, `reply_repeat_no_duplicate`; D send-reply. Thiếu điểm nhận/trả giấy và lời giới thiệu chính thức; không chứng nhận hoạt cảnh gửi |
+| F05 / 5.3 — bảng Henri/gợi ý | `GetHenriLookup` sau xem henri, `GetHints`, `Glossary`; không tự điền | Cửa sổ tra key→chữ; hướng dẫn hint cơ chế, không lời thoại sản phẩm | R `book_lookup_not_available_at_start`, `book_has_shared_26_keys_without_mutation`, `book_snapshot_isolated`, `uncollected_letter_notes_hidden`; D tra sổ rồi gán. Thiếu book/pose thật, kiểm mức trợ giúp có dễ hiểu với người mới |
+| F06 / 3.7,6.2 — mép giấy và nháp | `GetComparisons`, `TryCompare`, lưu attempt; `ComparisonAccepted` nội bộ | Task paper, **feature TEST ONLY**; draft Hà không đổi thành paper.khai | R `wrong_comparison_citable_without_premature_verdict`, ending unsupported; D compare paper. Chưa kiểm mini game với hình khớp mép/nháp thật; không coi chuỗi test.feature.match là chứng cứ nhận diện |
+| F07 / 3.7,6.3 — ba thùng | Cùng bộ comparison nhiều source/prerequisites | Task cargo: **M2/M5/r12 TEST ONLY**, notes mô tả thử | D collect/inspect/record các nguồn rồi compare cargo; R `alternative_lead_order_works`. Thiếu nội dung ngày/ký hiệu và mẫu rối được duyệt; chưa có bằng chứng người chơi suy ra hàng trong thùng |
+| F08 / 3.4,6.4 — dàn dựng | Comparison staging và guard clip exposure | Text state/media thay hình; source r03/r12/clip **TEST ONLY** | R `clip_unseen_record_denied`, `seek_does_not_expose`, `visible_media_unlocks_record`; D phát clip trước ghi, compare staging. Thiếu footage liên tục và hình thật cho đọc quan sát, chưa chứng minh forensic |
+| F09 / 3.4,6.5,7.4 — áo/giày/quyền tiếp cận | `TryRequestAccess`, evidence.requires, comparison shoe/fabric | Nút xin test.samples, nguồn/feature thử; không thủ tục pháp lý thật | R `sample_permission_before_Khai_denied`; D request tại office sau gặp khai, thu mẫu tại homestay rồi compare. Thiếu producer truyện cho phép truy cập/mẫu thật gần giống, kiểm zoom/mô tả/thị lực; pixel/đo vải không có trong runtime |
+| F10 / 3.3–5,7.1,14 — bàn dựng | `TrialTimeline`, `TryStartTrial`, `TrySeekTrial`, `TryClearHolds`, `Advance`, context/manual pause | Sáu ca hữu hạn dùng cơ cấu đã bàn giao; **luật code giữ nguyên**, text thay hình nộm/animation | R `<trial>_away_pauses_context/manual_pause_stays/global_pause/return_no_catchup/seek_no_record/complete_exactly_one`; D phát release/help/hook+clear qua Tick. Thiếu kiểm hình học/độ hồi bằng asset, trạng thái cánh/chốt nhìn được và gate phản biện GDD14 |
+| F11 / 7.2,11 — ghi, nguồn, giả thuyết | Thu/xem/ghi riêng, `TryRecordRelation`, note source/kind; session cũ có `GetProvenanceNotes` per-entry | Full catalog **toàn Unclassified**, text/index thử; kind/source hiện theo evidence, không đồng nghĩa metadata per-entry cũ đã được chuyển | R `collect_is_not_record`, `record_requires_inspection`, `record_repeat_unique_unlocks`, `invalid_observation_denied`; D record sau inspect, hỏi không grant. Thiếu metadata content toàn tuyến/per-entry khi nội dung khác loại; sáu entry/trial pending giữ nguyên. Gameplay nhận mapping/producer sau quyết định, không lấy metadata prototype gán cho câu TEST ONLY |
+| F12 / 3.6–7,7.3 — bộ căn cứ tương đương | `FullSupportSet.alternatives`, `MeetsIn`, `Assess`, review gates | **Rubric TEST ONLY B.3**, không truth/forensic đã duyệt | R `alternative-set_priority`, `unsupported_priority`, `unreviewed_content_fails_closed`; D draft dùng bộ thử đã thu/ghi. Chưa có rubric canon đủ chuỗi, không buộc mọi bổ trợ hoặc phán bằng số vật |
+| F13 / 7.3,8 — chốt có căn cứ | `TrySetConclusion`, `TryConfirm`, `Confirmed`, `TryFinalize`, checkpoint | Lựa chọn test.gdd-claim/test.alternative-claim, **không câu kết luận chính thức** | R `draft_edit_invalidates_confirmation`, `complete_neutral_before_confirm`, `finalize_locked_destination_rejected`, `recovery_checkpoint_loads`; D no-verdict/confirm/finalize/checkpoint. Thiếu câu hiển thị và review đủ chuỗi; confirm không chứng nhận đúng |
+| F14 / 8 — C/A-treo/A-sai | `Assess`, `GetEnding`, UnsupportedDimensions/FallAccusationUnsupported; ưu tiên sai→open→complete | Enum/text presenter **ending mô phỏng**, rubric thử | R complete/open/wrong-sender/wrong-motive/wrong-fall/unsupported_priority và _fall_accusation_scope; D simulated complete. Chưa có ending sản phẩm/hoạt cảnh, nghiệp vụ/hậu quả được duyệt; không tuyên đã duyệt ending C |
+| F15 / 5.2,8 — cuộc hẹn/bảo vệ | Reply flag, gate station theo Finalized, không clock lịch thực; ending state | Travel/text thử; **chưa có state thao tác giao nhận/bảo vệ hoặc cinematic** | R `<variant>_station_route`, _station_available_after_finalize; D station_persisted. Không có timer ẩn trong đường này; lời “Lan/rối được bảo vệ” hiện là presenter thử, chưa kiểm hành động sản phẩm; thiết kế dàn cảnh/UI nhận |
+| F16 / 9,11 — cầm/cất/đặt | `TryHold`, `TryStow`, `TryPlace`, placement/slot/held | Nút thay thao tác world, **slot thử B.2** | R `invalid_place_keeps_item`, `valid_place_keeps_single_record`, `fixed_evidence_cannot_hold`; đường save/load state mới. Thiếu hand visual/world slot/collider và kiểm input thật; không có ném/ragdoll |
+| F17 / 11 — save/checkpoint | `FullCaseSave`, `TrySave`, `TryLoad`, `TryImportPrototype`, validator/writer | Profile GUID Editor, namespace fullcase; **không đồng bộ r107** | R null/missing/reference/index/schema/catalog/duplicate/JSON giữ state/bytes và recover; explicit import; D F5/F6 workshop/station/checkpoint. Xem bảng F.1 về phần không nhập; thiếu profile/menu consumer sản phẩm, migration catalog canon |
+| F18 / 9,11 — lifecycle/input | `Modal`, `Paused`, `CanMove`, `Cancel`, `ResetTransient` | Window/Controller context và key event Unity; **không FPS controller** | R proxy_modal_input/proxy_cancel các modal, unfocused tick/return; W F5/F6/Esc/pause/JSON/recover; D thêm F5/F6 trên tuyến. Thiếu raycast/cursor/focus và P/E/modal trong scene chung; không suy CanMove=true thành WASD đã kiểm |
+| F19 / 10,14 — asset/đọc dấu/người mới | Contract viewer/controls cũ; query state không thay asset | Preview primitive và text; không đo thực địa hoặc footage | D menu mở/cách ly source player/scene dependency, scene bytes không đổi. Render readability/âm thanh/vật lý/scene chung/UI1080p/người mới **NOT_RUN** |
+
+**Chốt phần độc lập:** không phát hiện thiếu cơ chế độc lập mới có thể triển khai chắc chắn từ đợt rà này; nguồn runtime f8b50889 giữ nguyên. Những dòng “thiếu” trên là dữ liệu/gate/rubric cần được duyệt, producer sau quyết định, presentation/world adapter hoặc kiểm asset/tích hợp. Không đánh dấu chúng đã hoàn tất chỉ vì API chạy. Không có vụ thứ hai/ending mới.
+
+### B.1. Giá trị gate/catalog tạm — phải thay ở đâu
+
+Toàn bộ factory ở `Assets/ConRoi/Modules/Gameplay/Editor/FullCaseTestCatalog.cs`; đây là **TEST ONLY**, không phải file nội dung sản phẩm. `Create(bool reviewedTestRubric=true)` tạo `FullCaseCatalog {id="test.only.fullcase",revision="1",testOnly=true,startLocation="office"}`. Runtime copy/hash catalog lúc constructor; đổi nội dung catalog cần phiên mới và xem F.1, không sửa object factory rồi mong phiên đang chạy tự đổi.
+
+Ký hiệu dưới đây: `N(id,i)` = Recorded(id,index=i); `C(id)` = Collected; `D(id)` = Decoded; `Q(id)` = Comparison; `T(id)` = TrialRecorded. Tất cả prerequisite trong một mảng là AND.
+
+| Giá trị thực đang dùng | Căn cứ/nhãn giả định | Điểm thay trong data | Ca kiểm cần chạy lại sau thay |
+|---|---|---|---|
+| office/workshop không requires; lake/market/school/slope cần N(slide,0) | GDD4 có thứ tự vùng nhưng không chốt index mở bốn nơi; **giả định thử** | `locations[].requires/startLocation` | bắt đầu sạch, khám chưa ghi/ghi, tới vùng sớm, hai thứ tự tuyến, modal/pause/Load |
+| theatre cần C(lead.theatre); homestay C(lead.homestay); garden N(M3,0) | Lead thử ở school/slope; GDD không chốt producer/index cụ thể | locations[].requires + evidence của hai lead | nguồn lead mới thực sự tạo được bằng thao tác; hỏi/thu/ghi lặp, không mở sớm, thứ tự/Load |
+| station chỉ cần Finalized("",-1) | **Không cần replySent/đọc thư Lan trong catalog thử**; không suy đây là gate canon | locations[id=station].requires; nếu có kiểu requirement chưa hỗ trợ giao Gameplay | đủ/thiếu điều kiện hẹn đã duyệt, sau finalize, load/checkpoint và không timer |
+| test.samples tại office cần C(khai); coat/shoe/samples cần Permission(test.samples) | Giả định bước Phương rút gọn; không tên thủ tục chính thức | permissions[].location/requires; evidence[].requires | trước/sau gặp Khải, vị trí/modal, thu mẫu chưa phép/đã phép, lặp và save/load |
+| replyChannelRequirements=[N(ha,1)] | Nội dung kênh có ở GDD5.2, **producer/index cụ thể đang giả định** | replyChannelRequirements + source ha:1 | chưa biết/biết kênh, repeat, cụm sai/đúng và Load; không grant từ mở panel |
+| M1/theatre, M2/market, M3+M5/school, M4/garden, M6+paper.khai+log.homestay/homestay; thư Bảo/lake, Mai/school, Tùng/slope, Lan/garden | Địa điểm từ GDD4/3.7; **text/source/observations thử**, không bản ghi chứng cứ chính thức | evidence[].location/text/source/observations/requires | thu/xem/ghi đúng nơi, chưa mở không lộ, thứ tự và index/save compatibility |
+| Legacy ha/letter/receipt/draft/decoded ở market; samples/coat/shoe ở homestay; henri ở theatre; các legacy khác ở workshop | **Chỉ giữ ID**, không mang nguyên câu chữ/metadata prototype sang fullcase. `decoded` là item text thử, không cờ D(letter), có thể thu trước giải; không được dùng nó để hiển thị bản dịch canon sớm | factory vòng `InvestigationContent.Evidence` + catalog sản phẩm được duyệt | source/producer chính thức, guard clip/decoded, query chưa mở và Load. Cần thay producer/requirement của bản đọc sản phẩm sau thiết kế; không coi item thử là đã giải |
+| `Topics()` tám actor; ID test.full.actor/topic.<bao,ha,mai,tung,lan,khai,phuong,host>; câu hỏi/đáp án luôn TEST ONLY | ND-08/09 chưa chốt; không lời thoại chính thức | approved `InterviewTopicDefinition[]` truyền `ForSource` | locked/wrong/repeat/no Answer leak/Answered unsub/Load context, rewards chỉ nếu có producer được giao |
+| Gate topic bao=N(letter.bao,0), ha=N(ha,0), mai=N(M3,0), tung=N(letter.tung,0), lan=N(M4,0), khai/phuong=N(khai,0), host=N(log.homestay,0) | **Giả định kiểm điều kiện**, không gate truyện | `Topics()`/catalog chính thức; hiện hai InterviewRequirementKind AcquiredEvidence/RecordedObservation | hỏi trước/sau ghi đúng entry, repeat, topic khác người, save/load và no progress grant |
+
+### B.2. Đối chiếu, placement, media tạm
+
+Mỗi task có options **`test.feature.match` / `test.feature.near`**, expectedOption=`test.feature.match`. Đây là đáp án kiểm máy cho dữ liệu thử, **không thuật toán nhận diện hình hoặc rubric forensic đã duyệt**. Thay bằng feature IDs, source IDs và observations được chủ nội dung/asset duyệt trong `FullComparisonDefinition {evidenceIds,requires,options,expectedOption}`. Presenter không được hiện expectedOption.
+
+| Task | evidenceIds | requires hiện tại (AND) |
+|---|---|---|
+| paper | letter.bao, paper.khai | N(letter.bao,0), N(paper.khai,0) |
+| cargo | M2, M5, r12 | N(M2,0), N(M5,0), N(r12,0) |
+| staging | r03, r12, clip | N(r03,0), N(r12,0), N(clip,0) |
+| shoe | shoeprint, shoe | N(shoeprint,0), N(shoe,0) |
+| fabric | fabric, coat | N(fabric,0), N(coat,0) |
+| counter | mechanism, hook, clip | N(mechanism,0), N(hook,0), N(clip,1), T(release), T(help), T(hook/clear-holds) |
+
+Sau thay task: kiểm nguồn thiếu/nhầm/gần giống, inspect chưa ghi, lặp, sửa lựa chọn, không grade trước chốt, support sets bị ảnh hưởng và save/catalog. Không chạy lại IO không liên quan. `counter` không phải cờ chứng minh đã loại mọi giả thuyết thật: gate GDD14 vẫn cần review.
+
+`portable=false` cho slide/shoeprint/mechanism/hook/khai/ha, các item khác portable=true; item portable có đúng một `placementSlots` là `<nơi-gốc>.table`. Vì vậy nút “đặt bàn thử tại nơi này” ở **nơi khác** có thể bị từ chối đúng luật slot; không có cơ chế tự sinh socket ở mọi nơi. Placement source/inventory/held là state key, không Transform. Map & Asset + UI/UX & Tích hợp thay danh sách slot/bind Transform qua adapter, kiểm cầm–cất–đặt hợp lệ/sai/đổi khu/Load/không nhân ID.
+
+Clip minh họa dùng `MechanismPresentation.ClipLength`; exposure trước là giao khoảng [0.5,3.8] đủ 0.6 giây, trong sự cố [4,6.2] đủ 0.8 giây, chỉ tính visible playback. Đây là rule code kế thừa, **không xác nhận footage thật đọc được**; không đổi mốc chỉ để ép kiểm đạt. Thay asset phải cùng timeline/quan sát, nếu footage lệch thì giao Gameplay điều chỉnh rule có kiểm, không tự set clipSeen. Trial IDs release/help/hold/hook/wedge/after đi qua TrialTimeline; clear-holds chỉ sau LastAction và có điều kiện giữ. Không thay luật hồi hoặc lấy text report làm bằng chứng hình.
+
+### B.3. Rubric và ending mô phỏng — chưa duyệt nội dung
+
+Mỗi `FullConclusionRule` có claims=[`test.gdd-claim`,`test.alternative-claim`], correctClaim=`test.gdd-claim`. `Create()` mặc định **reviewed=true, fallChainReviewed=true chỉ cho TEST ONLY**, `Create(false)` kiểm fail-closed. Những bool này **không phải biên nhận review**; catalog sản phẩm phải dùng kết quả duyệt thật. Lựa chọn rỗng là chưa đủ. Các bộ dưới đây do factory đặt để kiểm thuật toán, không được coi là bộ chứng cứ tối thiểu canon:
+
+| Rule | alternatives đang dùng |
+|---|---|
+| sender | Q(paper)+N(paper.khai,0)+D(letter.bao); hoặc cùng bộ nhưng D(letter) |
+| presence | N(slide,0)+Q(shoe)+Q(staging) |
+| fall | N(mechanism,0)+N(hook,0)+N(clip,0)+N(clip,1)+Q(fabric)+Q(shoe)+Q(staging)+Q(counter) |
+| motive | N(M1,0)+N(M3,0)+N(M5,0)+N(M6,0) |
+
+Thay ở `conclusions[].claims/correctClaim/alternatives/reviewed`, `fallChainReviewed`, cùng catalog feature/source liên quan. GDD7.3/8 chốt **quy tắc ưu tiên** chứ chưa xác nhận các mảng thử là đủ: sai/không support→Unsupported, không sai+còn rỗng→Open, bốn mục được support→Complete. Tên enum được presenter thử gắn với C/A-treo/A-sai; **chưa có ending sản phẩm được duyệt**. Sau nhận rubric, Gameplay chạy lại từng bộ tương đương, thiếu một mắt xích, counter chưa giải, wrong-sender/motive/fall, open, confirmation/checkpoint và catalog/save compatibility. UI/UX & Tích hợp chịu trách nhiệm lựa chọn/câu kết/hậu quả đúng phạm vi, Map & Asset footage/cơ cấu; không có tự phát bản án/bắt oan cho lỗi động cơ.
 
 ## C. Tuyến mô phỏng thực hiện theo thứ tự
 
@@ -153,6 +213,37 @@ Không đổi `InvestigationSave` schema1/namespace r107 hoặc guard gói trư�
 
 Load kiểm schema/namespace/catalogHash, array/null/duplicate JSON/reference/index/grounds/ending trước gán; thất bại giữ state và bytes, kết quả có lý do không lộ exception. Catalog hash gồm revision và nội dung: catalog đổi (kể cả text) bị từ chối thay vì âm thầm gán index sai; **chuyển TEST ONLY→catalog sản phẩm cần profile mới hoặc kế hoạch migration tường minh sau duyệt nội dung**, không hứa tải chéo. Save cũ r107 tiếp tục tải bằng session cũ; muốn chuyển có `TryImportPrototype(sourcePath)` vào phiên toàn tuyến trống. Chỉ nhập ID/observations/mapping/relations/trials/clip/gate đã có, không đoán permission/location/decoded/history/kết luận; tệp nguồn không bị ghi lại. Import không phải migration tự động hoặc chứng minh mọi profile lịch sử.
 
+
+### F.1. Hai luồng API/save — không nối nhầm
+
+| Điểm nối | Prototype r107 hiện có | Toàn tuyến mới |
+|---|---|---|
+| Chủ phiên | `InvestigationSession` MonoBehaviour/partial trong scene cũ | `FullInvestigationRuntime(approvedCatalog)` object do adapter phiên tạo |
+| Khám/ghi | `Acquire`, `OpenEvidence`, `Observe` | `TryCollect`, `TryInspect`, `TryRecordObservation` |
+| Mật mã | `Assign`, `ReadCipher`, `RecordReading` | `TryAssign`, `GetLetter`, `TryRecordReading` |
+| Context | `OpenPage/ClosePage`, session `Modal/Paused` và controller đã nối | `SetModal/Cancel/SetPaused`, `CanMove`; consumer mới phải nối movement/look/cursor |
+| Hội thoại | `new InvestigationInterview(session,topics)` | `InvestigationInterview.ForSource(fullRuntime,topics)`; không dùng session cũ làm nguồn cho topic fullcase |
+| Save main | `session.SavePath`: `<profile>/InvestigationV36/r107/prototype.json` | `FullInvestigationRuntime.SavePathFor(profile)`: `<profile>/InvestigationV36/fullcase/case.json` |
+| Checkpoint | `BeforeConclusionSavePath`: cùng folder r107, `prototype.before-conclusion.json`; `LoadConclusionCheckpoint()` | `CheckpointPathFor(profile)`: cùng folder fullcase, `case.before-conclusion.json`; `TryLoad(profile,true)` |
+| Save/Load | `session.Save()`, `session.Load()` dùng profile của session | `fullRuntime.TrySave(profile)`, `TryLoad(profile,false)`; **không** tự đọc profile override của session |
+| Schema/namespace | schema1, conroi.investigation.v36.r107 | schema1 riêng, conroi.investigation.v36.fullcase + catalogHash; số schema giống không có nghĩa cùng format |
+
+**Chọn profile:** prototype lấy `SaveDirectoryOverride` hoặc CLI `--investigation-save-dir` lúc Awake; nếu không có, rơi về Application.persistentDataPath. Với thử bắt buộc chỉ định profile riêng trước chạy, đừng để rơi về profile gốc. Toàn tuyến nhận profile **tham số từng lệnh**, không có fallback persistentDataPath; cửa sổ tự tạo GUID và hiện path. CLI `--investigation-save-dir` của runner API không đổi profile cửa sổ Editor. Trong cùng cửa sổ, F5/F6/khôi phục dùng duy nhất `adapter.Profile` hiện tại. Đóng/mở lại tạo profile trống mới; **hiện chưa có UI chọn lại profile cũ**, muốn tiếp tục qua API tạo Controller với đúng path đã ghi hoặc phía tích hợp làm profile picker được duyệt. Không sửa path trong save, không đổi tên/copy file r107 thành case.json.
+
+Hai phiên **không live-sync, không dual-write, không tự merge/fallback** dù dùng chung root profile. Không nối một nút F5 tới cả session.Save và fullRuntime.TrySave. UI phải biết mode/controller đang sở hữu session; trước Load ghi nhận loại main/checkpoint, profile root, resolved path, namespace/schema và catalog revision; Success mới refresh phiên đúng nguồn. Lỗi namespace/catalog/thiếu tệp giữ phiên hiện tại, không thử tìm file khác “cho chạy được”. Không đề xuất tự hợp nhất hai hệ.
+
+| Dữ liệu | Quan hệ r107→fullcase bằng `TryImportPrototype(sourcePath)` |
+|---|---|
+| ID/observations | Kiểm save r107, ID phải biểu diễn được trong catalog; copy indices, đặt `viewed=false` yêu cầu mở lại. `collected` cũ không còn một field fullcase; imported records tồn tại. Không suy loại/nguồn mới từ câu chữ |
+| mapping/relations/trials/clip exposure/gate | Có copy explicit; pose chữ cũ đổi key pose.xx theo bảng. Relation/trial vẫn nội dung đã lưu, không tự chứng minh rubric mới |
+| placement/held/world transform | **Không copy vị trí/held/player pose cũ**: portable→inventory, fixed→nơi catalog/source; fullcase bắt đầu startLocation. Transform Khang/map/preview/camera không có trong save toàn tuyến |
+| samplesAllowed/visitedHa/returnedToWorkshop/tutorial/intro | **Không sync** sang permissions/location/progress mới; không đoán đã được phép hoặc đã tới vùng từ cờ cũ |
+| conclusions/finalized/ending/decoded/replySent | **Không sync/không chấm lại tự động**; fullcase draft mới trống, chưa chốt/chưa reply/chưa đánh dấu thư đã giải. Import không biến hồ sơ prototype thành ending canon |
+| Asked topics/Answered/history | Không lưu lịch sử topic ở cả cơ chế interview hiện tại; ND-09 chờ mục đích/state. Nếu producer lời khai mới cần persistence, giao Gameplay sau chốt |
+| Playback/UI/pause/confirm | Không resume runtime timeline/media/modal/context cũ. Load main/checkpoint fullcase đều reset transient; saved trial reports giữ, timestamp đang phát không lưu |
+
+Import chỉ vào phiên trống theo guard hiện có, không ghi lại tệp nguồn, không đồng bộ ngược và không tự lưu output. Sau Success phải xem lại mục/đi lại điều kiện chưa được nhập rồi chủ động `TrySave(profileToanTuyen)`. Dùng bản sao profile thử để kiểm chuyển; không đụng save gốc. Catalog thay đổi làm hash khác kể cả text/revision, sẽ từ chối Load; nhóm chốt dùng profile mới hay yêu cầu migration cụ thể, Gameplay không đoán tiến trình từ thiếu dữ liệu.
+
 ## G. Thay từng mô phỏng và giữ runtime
 
 1. Thay catalog TEST ONLY bằng catalog duyệt; giữ ID cũ, ordinal observations đã có save hoặc giao migration trước khi đổi. `test.*` là key kiểm, không chuyển thẳng thành canon. Nhận xét/rubric nội dung không để lộ trên UI; `reviewed/fallChainReviewed` chỉ đặt sau review thực GDD14, không từ việc player nhặt đủ.
@@ -161,6 +252,23 @@ Load kiểm schema/namespace/catalogHash, array/null/duplicate JSON/reference/in
 4. Pose/media/rig: render từ pose key/TrialState/MediaTime; viewer controls dùng gói inspect/compare cũ. Chỉ gửi `Advance(visibleDelta)` khi panel thật hiện và game không pause, không dùng duration từ lúc đóng panel. Các asset không được tự ghi observation khi animation complete ngoài quy tắc runtime đã mở.
 5. UI: tạo consumer một runtime duy nhất, subscribe/unsubscribe như F; bind states và error từng action; modal input/focus do adapter sở hữu. Tắt/loại `FullCaseSandboxWindow`, `FullCaseSandboxController`, `FullCaseTestCatalog` và tool kiểm khỏi flow sản phẩm; chúng vốn Editor-only nên không có trong player. Scene sản phẩm không auto spawn môi trường thử.
 6. Save/restore: UI/profile resolver truyền profile thật được chỉ định; không hardcode path thử. Nút khôi phục checkpoint chỉ thêm khi thiết kế được chốt; API có sẵn không tự tạo yêu cầu nút mới. Không âm thầm import khi New Game/Load.
+
+
+### G.1. Acceptance khi thay từng nhóm placeholder
+
+Đây là thứ tự nhận có thể kiểm theo từng bước; phần API cụ thể ở F, dữ liệu tạm ở B. Không cần chờ mọi asset xong mới làm consumer, nhưng không đánh dấu bước chưa nối là đã kiểm.
+
+| Bước / chủ nhận | Thay gì, giữ gì, nối thực tế | Acceptance scene chung |
+|---|---|---|
+| 1 — UI/UX & Tích hợp; Gameplay review data | approved `FullCaseCatalog` thay `FullCaseTestCatalog.Create`; giữ runtime/ID cũ, chọn controller prototype hoặc fullcase rõ ràng, tạo một instance/session; subscribe `Changed` và tháo listener khi đổi phiên | Không instantiate TEST catalog/window; profile/type rõ, query khóa không lộ; constructor từ chối ID/requirement sai. Chưa reviewed thì chưa chấm support |
+| 2 — Map & Asset + UI/UX & Tích hợp | Visual vùng/cửa thay cube; adapter giữ destinationId, gọi CanTravel để gợi trạng thái và TryTravel để thực thi; Success mới route/spawn. Không dùng anchors/Hierarchy thử. Travel world lỗi cần cơ chế điều phối adapter, chưa có async scene orchestration | thiếu gate không rời vùng; đủ gate đổi vùng đúng, lặp/hủy/pause/modal/Load; không tách state và vị trí vật lý |
+| 3 — Map & Asset + UI/UX & Tích hợp | Evidence visual/collider và source data; giữ StableId tương đương evidence.id, gọi TryCollect→TryInspect→TryRecordObservation trên từng ý định; source/kind/query không đọc raw đáp án; slots bind Transform sau Success | khám chưa ghi không tiến; chưa mở không lộ; lặp không nhân note/vật; đặt sai giữ vật; Load không tạo bản sao. Kiểm nguồn ghi lời khai thực, không item M4 thử |
+| 4 — UI/UX & Tích hợp | NPC thật + approved topics, Begin/Ask/End và Answered; consumer tự chọn modal/input theo actorId; chỉ producer được duyệt mới ghi lời khai/thưởng; unsubscribe/cancel/Load hết hạn context | đúng actor/gate, khóa/sai không lộ Question/Answer, repeat không thưởng. ND-09 chưa chốt không lén lưu history |
+| 5 — Map & Asset + UI/UX & Tích hợp | Pose/glyph/book/media và viewer; dùng GetLetterPoses/GetHenriLookup, TryAssign/RecordReading/SendReply; hai viewer dùng controls gói cũ một lần input. Advance chỉ visibleDelta, render TrialState/MediaTime thay text proxy | pose key khớp cả ba nguồn, chưa thư không hiện; đọc sai/không đủ clip không ghi; seek/pause/rời không grant/nhảy; quyền help không phạt ending |
+| 6 — UI/UX & Tích hợp + Map & Asset | Mẫu thật/feature và task options, evidenceIds/requires/expectedOption ở catalog, UI chỉ gửi lựa chọn vào TryCompare; không hiện rubric | mẫu gần giống không đủ, đủ nguồn mới thao tác; sai vẫn là giả thuyết/attempt, không báo đúng trước chốt. GDD14 được review bằng asset thật |
+| 7 — UI/UX & Tích hợp; Gameplay review rubric | Lựa chọn tiếng Việt/approved alternatives thay test claims; GetAvailableGrounds/GetConclusions→TrySetConclusion→TryConfirm→TryFinalize; GetEnding presenter hậu quả theo dimension; Load đúng mode/path/checkpoint F.1 | sửa làm confirm cũ mất; lỗi ghi không báo chốt; complete/open/wrong/unsupported ưu tiên đúng; không tự bắt oan cú ngã vì sai motive; error không lộ exception; Load thành công bỏ thông báo lỗi cũ |
+
+Khi thay xong: loại/tắt đường mở cửa sổ/cube/catalog thử khỏi quy trình sản phẩm (chúng đã ở Editor), giữ runtime và catalog được duyệt, không chuyển component FullCasePlaceholder vào prefab player. Báo cáo nhận phải ghi commit scene/UI/catalog thực chạy và các bước trên đã/chưa kiểm; không kế thừa PASS từ proxy.
 
 ## H. Nội dung còn chờ và ảnh hưởng
 
@@ -224,3 +332,21 @@ Runtime source mới không đổi luật cơ cấu/save r107/ID/GUID cũ, scene
 **RUNTIME ĐÃ KIỂM** trong catalog/phạm vi trên. **MÔ PHỎNG ĐÃ KIỂM** ở API action route/adapter và các event cửa sổ đại diện; chưa kiểm trải nghiệm toàn tuyến bằng người thật hoặc render/readability proxy. **CHỜ NỘI DUNG** ND-01…09, bản ghi/gate/feature/rubric được duyệt và review chuỗi GDD14. **CHỜ ASSET-UI** art/footage/rig/consumer/input/travel thật. **CHƯA KIỂM SCENE CHUNG**, UI1080p và người mới **NOT_RUN**. Load feedback/P-close giữ mục OPEN riêng theo báo cáo phía tích hợp, không tự sửa hoặc tuyên đã hết lỗi; P-close lần gần nhất chưa tái hiện/nguyên nhân chưa xác định. Không chốt baseline nhóm/toàn game hoặc merge vào scene/nhánh tích hợp.
 
 Việc Gameplay phải quay lại: cập nhật mapping provenance sau ND; thêm producer/gate/history/migration nếu catalog/nội dung chốt cần mà interface hiện chưa biểu diễn; đối chiếu/kiểm rubric đã duyệt; xử lý runtime defect có bước tái hiện từ scene thật. Chủ nhận UI/UX & Tích hợp điều phối nội dung/wiring và báo commit scene thực chạy; Map & Asset nhận bảng D/E/G để sản xuất. Chỉ báo TÍCH HỢP ĐÃ KIỂM sau biên nhận tương ứng.
+
+
+### K.1. Đóng gói khả năng bàn giao sau e71da758
+
+Nguồn runtime thực kiểm vẫn **f8b50889**, được chứa trong e71da758; **không sửa runtime** trong đợt này. Công cụ bổ sung **9dd5d6eb** chỉ là `Gameplay/Editor/FullCaseDeliveryChecks.cs` + meta. Ma trận B đã tách đủ F01…F19; B.1–3 ghi giá trị tạm và điểm thay/kiểm lại, F.1 tách hai hệ API/save, G.1 ghi acceptance từng bước; không dùng tổng PASS để tuyên phủ toàn GDD.
+
+Chạy Unity6000.6.2f1 graphics batch: `-executeMethod ConRoi.Gameplay.EditorChecks.FullCaseDeliveryChecks.RunBatch --delivery-output <thư-mục-mới-tuyệt-đối> --delivery-source e71da758 -logFile <log-local>`. Không cần `--investigation-save-dir`: mở qua menu nên dùng profile GUID của cửa sổ. Không input desktop, không scene Play sản phẩm hoặc build. Thực chạy `Test/Output/FullCaseDelivery20261110/run01/results.json`: **26 assertion đạt**, trace **196 lệnh**, failures=0; đây là một lượt bổ sung, không chạy lại 196 API/48 interview/10 window cũ.
+
+Chuỗi thực chạy: mở scene Gameplay và `EditorApplication.ExecuteMenuItem("Con Roi/Gameplay/Toan tuyen TEST ONLY")` → xác nhận office/trống/profile chưa tồn tại → workshop khám/xem/ghi, phát clip qua Tick visible tổng hợp → hỏi Khải → F5 → lake → F6 phục hồi workshop → lake/Bảo → market/Hà → school/Mai → slope/Tùng → office/Phương/xin mẫu → theatre/tra Henri → homestay/mẫu/chủ nhà → garden/Lan → gán từng key từ bảng tra đã mở/ghi năm bản đọc/hồi đáp → phát release/help/hook và bỏ giữ bằng cách tiến timeline qua adapter (delta tổng hợp, không seek lấy report) → đối chiếu các task → office/draft/confirm/chốt rubric thử → station/F5/F6 → chọn checkpoint chủ động về draft office. Có tám kiểm hỏi không đổi tiến trình, kiểm trước chốt không verdict, kiểm checkpoint không finalized/confirmed. Các M/nguồn/lời khai thử được thu qua TryCollect/Inspect/Record tại khu, **không phát ra từ câu trả lời NPC**; đây chưa phải tuyến hội thoại chính thức.
+
+Mã route không gán state, không gọi import, không sửa prerequisite/catalog, không có nút cấp chứng cứ/mở khóa. Nó biết trước feature/claim thử và thứ tự reply để kiểm cơ chế; không chứng minh người chơi tự suy ra lời giải. Actor/evidence/placeholders thay presentation, còn thu/ghi/điều kiện/đối chiếu/cipher/trial/finalize đều qua runtime thật.
+
+Kiểm cách ly riêng: tập source do `CompilationPipeline.GetAssemblies(AssembliesType.Player)` trả về chứa FullInvestigationRuntime nhưng không chứa FullCase test tools; dependency scene ConRoi_Chinh không có FullCase Editor; mở scene chung **EditMode/read-only** không có FullCasePlaceholder; mở Gameplay không tự tạo sandbox trước gọi menu. Hash file scene Gameplay và scene chung giữ nguyên trước/sau. Đây là bằng chứng cấu trúc/khởi tạo Editor, **không chạy Play scene chung hoặc build player**; không suy kết quả render/controller hay UI1080p. Không công bố scene chung đã đạt tích hợp.
+
+SHA256 output local (không commit raw trace/log/save): `36d75c00b52fe2b91c04886355b64963b587f8b9e86b86b7a72729804f4ad594`. Profile mới thực dùng: `C:\ConRoi_Nguoi2\Test\PlaytestProfiles\FullCaseSandbox_71e095337edf4ad58281256cd465eab4`. Main và checkpoint ở subfolder fullcase của đúng profile này; không có truy cập profile người đang chơi.
+
+
+Phần Gameplay độc lập chốt theo phạm vi cơ chế B, **không** chốt gameplay toàn game hoặc ending đã duyệt. Chủ nhận và dữ liệu thiếu ở B/H/G.1: UI/UX & Tích hợp chủ trì ND-01…09, approved catalog/gate/feature/rubric/consumer; Map & Asset sản xuất visual/collider/pose/footage. Gameplay quay lại mapping per-entry/producer sau review, requirement mới khi gate được chốt, history/migration khi có quyết định cụ thể và lỗi runtime từ scene thật. Không tự hợp nhất save hoặc đổi schema, ID/GUID; IO-OPEN-01/P-close vẫn OPEN, người mới/UI1080p/scene chung NOT_RUN cho controller toàn tuyến. Không tạo hệ thống mới hoặc mở audit tiếp.
