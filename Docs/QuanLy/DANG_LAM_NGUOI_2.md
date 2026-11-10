@@ -520,3 +520,10 @@ W09 **283/283 kiểm đã chạy đạt** qua virtual Input System và targeted 
 Xoay nhìn NOT_RUN trong batch (delta nhận đúng nhưng cursor None); chưa xác nhận desktop dành riêng nên chưa chiếm cursor. Probe mất focus/jump/gamepad, UI1080p, scene chung/người mới chưa kiểm. Profile mới Temp tách khỏi profile project dự kiến; **IO-OPEN-01 vẫn OPEN**, không coi đổi Temp là sửa lỗi.
 
 **MÔ PHỎNG ĐÃ KIỂM → CHỜ ASSET-UI/TÍCH HỢP**, giới hạn input nêu trên giữ riêng. Map & Asset nhận placeholder/điểm vào/model/media; UI/UX & Tích hợp nhận wiring fullcase/input/modal/presenter/readiness và acceptance K.8; không gắn class Editor-only vào player. Gameplay quay lại theo đầu vào thật hoặc bug tái hiện. Tất cả hướng dẫn ở một file tổng, không tạo gói/báo cáo trùng.
+
+
+### PLAYMODE-INPUT-02 — hoàn tất phần input desktop sau 27614a31
+
+Nguồn **3336d916 → d8928932**, checker **616215cf**. D09 chạy Unity 6000.6.2f1 có cửa sổ trên desktop được dành riêng: **41/41 kiểm bổ sung đạt**, Windows SendInput keys/mouse + virtual Input System cho clamp/aim + targeted Game View text/click; không người chơi thật. Đã sửa F5/F6 lọt khi typing, stale text focus và quyền cursor Editor sau Esc/P. Native GetCursorInfo xác minh hide/restore, thêm Scene View/OS focus, giữ E khi quay lại, travel/save/load trên profile Temp riêng. Không lặp 283 ca W09 hay thay fullcase schema2/save guard/controller/scene sản phẩm.
+
+[Cùng đầu mối K.8 / PLAYMODE-INPUT-02](../QA/Gameplay/BAN_GIAO_MO_PHONG_VA_TICH_HOP_TOAN_GAME.md#playmode-input-02--kết-quả-desktop-và-bàn-giao) ghi chi tiết nguồn/input, cách mở, hook cursor Editor-only, lịch sử D01–D09/C01, hash bằng chứng, hạn chế scancode text và click recapture OS return. Ba ProjectSettings giữ byte-hash trước thao tác; thay đổi/untracked cũ không stage. **MÔ PHỎNG ĐÃ KIỂM → CHỜ ASSET-UI/TÍCH HỢP**, UI/UX & Tích hợp kiểm host sản phẩm; Map & Asset theo placeholder cũ. Scene chung/UI1080p/hardware/gamepad/người mới NOT_RUN; IO-OPEN-01 vẫn OPEN (Temp không phải sửa IO), P-close sản phẩm OPEN/chưa tái hiện giữ riêng. Không mở hệ thống mới, merge hoặc build.
