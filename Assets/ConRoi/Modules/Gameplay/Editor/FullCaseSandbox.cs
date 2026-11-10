@@ -65,14 +65,14 @@ namespace ConRoi.Gameplay.EditorChecks
         void Remember(string label){if(Event.current.type==EventType.Repaint){var r=GUILayoutUtility.GetLastRect();r.position=GUIUtility.GUIToScreenPoint(r.position)-position.position;controls[label]=r;if(inScroll)scrollControls.Add(label);else scrollControls.Remove(label);}}
         internal string GeometryForChecks(string label)=>"scroll="+scroll+" rect="+(controls.TryGetValue(label,out var r)?r.ToString():"absent")+" window="+position;
         internal bool RevealControl(string label,out Rect rect){if(!controls.TryGetValue(label,out rect))return false;if(!scrollControls.Contains(label))return true;float y=position.height*.55f;if(rect.center.y<260||rect.center.y>position.height-2){scroll.y=Mathf.Max(0,scroll.y+rect.center.y-y);Repaint();return false;}return true;}
-        void FreshProfile(){adapter?.Dispose();adapter=new FullCaseSandboxController(Path.Combine(Directory.GetCurrentDirectory(),"Test","PlaytestProfiles","FullCaseSandbox_"+Guid.NewGuid().ToString("N")),simulatedRubric);selected="";letterId="letter";mapping.Clear();choices.Clear();reply=new string[4];message="TEST ONLY: profile mới; profile cũ được giữ trên đĩa.";scroll=Vector2.zero;}
+        void FreshProfile(){adapter?.Dispose();adapter=new FullCaseSandboxController(Path.Combine(Path.GetTempPath(),"ConRoiGameplaySandbox","FullCaseSandbox_"+Guid.NewGuid().ToString("N")),simulatedRubric);selected="";letterId="letter";mapping.Clear();choices.Clear();reply=new string[4];message="TEST ONLY: profile mới; profile cũ được giữ trên đĩa.";scroll=Vector2.zero;}
         Vector2 scroll;string selected="",letterId="letter",message="";string[] reply=new string[4];
         readonly Dictionary<string,HashSet<string>> choices=new Dictionary<string,HashSet<string>>();
         readonly Dictionary<string,string> mapping=new Dictionary<string,string>();double previous;
         [MenuItem("Con Roi/Gameplay/Toan tuyen TEST ONLY")]
         public static void Open()=>GetWindow<FullCaseSandboxWindow>("Con Rối • TEST ONLY");
         void OnEnable(){
-            var profile=Path.Combine(Directory.GetCurrentDirectory(),"Test","PlaytestProfiles","FullCaseSandbox_"+Guid.NewGuid().ToString("N"));
+            var profile=Path.Combine(Path.GetTempPath(),"ConRoiGameplaySandbox","FullCaseSandbox_"+Guid.NewGuid().ToString("N"));
             adapter=new FullCaseSandboxController(profile);preview=new PreviewRenderUtility();root=new GameObject("TEST ONLY full-case proxies"){hideFlags=HideFlags.HideAndDontSave};
             preview.AddSingleGO(root);int i=0;
             foreach(var location in adapter.Runtime.GetLocations()){
@@ -90,7 +90,7 @@ namespace ConRoi.Gameplay.EditorChecks
             if(adapter==null)return;var s=adapter.Runtime;var evt=Event.current;
             if(evt.type==EventType.KeyDown){if(evt.keyCode==KeyCode.Escape){if(s.Modal==FullCaseModal.None)s.SetPaused(!s.Paused);else adapter.Cancel();evt.Use();}else if(evt.keyCode==KeyCode.F5){Do(adapter.Save());evt.Use();}else if(evt.keyCode==KeyCode.F6){Do(adapter.Load());evt.Use();}}
             EditorGUILayout.HelpBox("TEST ONLY • Producer/gate lời khai theo quyết định chủ dự án; vật mẫu/feature/rubric còn TEST ONLY, không canon. Không mở hết/hoàn tất. Editor UI/proxy không phải scene chung hoặc controller Windows.",MessageType.Warning);
-            simulatedRubric=EditorGUILayout.Toggle("Rubric mô phỏng cho profile MỚI (không là C3)",simulatedRubric);
+            simulatedRubric=Toggle("Rubric mô phỏng cho profile MỚI (không là C3)",simulatedRubric);
             if(Button("Bắt đầu sạch • profile mới TEST ONLY")){FreshProfile();s=adapter.Runtime;}
             EditorGUILayout.LabelField("Rubric phiên hiện tại",adapter.TestCatalog.fallChainReviewed?"TEST ONLY được bật (không review sản phẩm)":"Chưa bật; có thể chơi nhánh Chưa đủ chứng minh");
             EditorGUILayout.LabelField("Profile riêng",adapter.Profile);EditorGUILayout.LabelField("Nơi / modal / pause",s.Location+" / "+s.Modal+" / "+s.Paused);
@@ -133,7 +133,7 @@ namespace ConRoi.Gameplay.EditorChecks
             if(s.Modal==FullCaseModal.Conclusions){foreach(var draft in s.GetConclusions()){
                 var rule=s.GetConclusionChoices().First(r=>r.id==draft.id);GUILayout.Label(rule.label+" • "+(draft.claim==""?"Chưa đủ chứng minh":draft.claim));
                 if(Button("Chưa đủ chứng minh • "+rule.id))Do(s.TrySetConclusion(rule.id,"",draft.grounds.ToArray()));foreach(var claim in rule.claims)if(Button(claim+" • "+rule.id))Do(s.TrySetConclusion(rule.id,claim,draft.grounds.ToArray()));
-                foreach(var ground in s.GetAvailableGrounds()){bool old=draft.grounds.Any(g=>g.kind==ground.kind&&g.id==ground.id&&g.index==ground.index);bool next=GUILayout.Toggle(old,ground.kind+" • "+ground.id+":"+ground.index);if(next!=old){var grounds=draft.grounds.Where(g=>!(g.kind==ground.kind&&g.id==ground.id&&g.index==ground.index)).ToList();if(next)grounds.Add(ground);Do(s.TrySetConclusion(rule.id,draft.claim,grounds.ToArray()));}}
+                foreach(var ground in s.GetAvailableGrounds()){bool old=draft.grounds.Any(g=>g.kind==ground.kind&&g.id==ground.id&&g.index==ground.index);bool next=Toggle(rule.id+" • "+ground.kind+" • "+ground.id+":"+ground.index,old);if(next!=old){var grounds=draft.grounds.Where(g=>!(g.kind==ground.kind&&g.id==ground.id&&g.index==ground.index)).ToList();if(next)grounds.Add(ground);Do(s.TrySetConclusion(rule.id,draft.claim,grounds.ToArray()));}}
             }if(Button("Xác nhận trung tính"))Do(s.TryConfirm());if(Button("Chốt hồ sơ"))Do(s.TryFinalize(adapter.Profile));}
             if(s.Location=="station"){
                 GUILayout.Label(s.AppointmentRequirement,EditorStyles.wordWrappedLabel);
