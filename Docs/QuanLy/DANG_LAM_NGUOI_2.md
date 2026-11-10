@@ -326,3 +326,15 @@ Trạng thái theo quy ước: **RUNTIME ĐÃ KIỂM → CHỜ UI/TÍCH HỢP �
 Chuỗi nguồn/công cụ comparison:5ef32f00 →23fc0cb7 →175a248c →0b783b8c →49c242a6 →d671a845. Nguồn camera chưa cô lập bị assertion FAIL ở175a248c đã sửa0b783b8c; lượt49c242a6 pixel render đạt nhưng assertion0MonoBehaviour sau render quá rộng làm dừng, công cụ sửa d671a845 và kiểm lại43/43. Giữ lịch sử từng lượt, không gộp thành số ca độc lập hoặc suy mọi asset/UI PASS. Thử bằng API/proxy, fixture cấp vật/flags clip; inspection mouse là thiết bị ảo + gọi Update trực tiếp, không input Windows. Không sửa UI/scene/map/save gốc, không chạy lại bộ save/trial cũ.
 
 Checklist trước đó mô tả tuyến luật prototype có sẵn; hai khoảng viewer rõ từ GDD9/6.5 nay đã đóng triển khai runtime. Tương tác/ghi/mục tiêu/mật mã/quan hệ/bàn dựng/kết luận/save giữ hiện trạng trong checklist, chưa mở chương/ending/grading/26 tư thế. Phần còn thiếu để người chơi sử dụng hai viewer là adapter/render/input UI, model thật và kiểm scene chung, có owner ở bảng trên. Khôi phục checkpoint vẫn chờ UI/UX & Tích hợp chốt đường truy cập theo GDD, không tự yêu cầu nút mới. Chưa có gói runtime độc lập tiếp theo có yêu cầu rõ trong checklist hiện tại; không tạo chức năng ngoài GDD để kéo dài việc. Tiếp tục phần phối hợp khi có API/asset/UI request cụ thể; không dùng trạng thái chờ này để tuyên toàn game hoàn tất.
+
+
+### Đợt Gameplay & Dữ liệu kế tiếp — đề xuất 10/11/2026
+
+Đối chiếu GDD/code tại74a80c21, chỉ đọc source, không chạy Unity/kiểm lại save hoặc xác minh push. Kết luận trước “chưa có gói độc lập tiếp theo” được bổ sung bằng hai khoảng thiếu dưới đây; **chưa có runtime mới**. [Đề xuất và acceptance đầy đủ](../QA/Tasks/N2/DE_XUAT_DOT_GAMEPLAY_TIEP_THEO.md).
+
+| Gói mới | Khoảng thiếu runtime | Trạng thái / chủ phụ thuộc |
+|---|---|---|
+| **NOTE-PROVENANCE-01 — ưu tiên** | Metadata từng entry và truy vấn có kiểu để phân biệt quan sát/lời kể/giả thuyết theo GDD7.2/11; hiện có source text, observations chung và relations tách riêng | ĐỀ XUẤT, chưa triển khai/kiểm. Gameplay & Dữ liệu nhận runtime; UI/UX & Tích hợp review mapping nội dung và nối hồ sơ. Dự kiến không đổi schema/ID/index |
+| INTERVIEW-REVISIT-01 | Hỏi lại Hà theo tài liệu đã ghi/đọc (GDD4/6.7), thay vì chỉ lặp Interact/OpenEvidence tĩnh | ĐỀ XUẤT, chờ nhóm chốt scope prototype hay lát cắt, câu hỏi/đáp án, điều kiện mở và lịch sử cần lưu. UI/UX & Tích hợp điều phối nội dung; Gameplay & Dữ liệu nhận runtime sau khi rõ |
+
+Ưu tiên NOTE-PROVENANCE-01 vì có thể làm với dữ liệu prototype, không thêm cốt truyện/asset/khu/ending và có đường kiểm độc lập không đổi save; đây là phần ngữ nghĩa runtime còn thiếu, không chỉ đổi nhãn UI. Không tự coi phân loại nguồn là chứng minh lời kể đúng hoặc thêm gate chốt. Các entry lai phải review, không phân loại toàn NPC theo một loại nguồn. Trạng thái hai gói viewer trước giữ CHỜ UI/TÍCH HỢP tại74a80c21, không báo lại hoặc suy thêm PASS. Lượt này chưa sửa runtime, chạy Unity, push/merge hoặc mở lại audit IO.
