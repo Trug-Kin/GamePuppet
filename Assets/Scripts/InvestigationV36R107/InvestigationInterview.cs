@@ -8,18 +8,20 @@ namespace ConRoi.Investigation.V36.R107
     // Transient conversation context. No rewards, persistence or product UI dependency.
     public sealed class InvestigationInterview
     {
-        readonly InvestigationSession source;
+        readonly IInvestigationInterviewSource source;
         readonly InterviewTopicDefinition[] order;
         readonly Dictionary<string, InterviewTopicDefinition> topics = new Dictionary<string, InterviewTopicDefinition>(StringComparer.Ordinal);
         string participant = "";
-        InvestigationSave contextData;
+        object contextData;
         bool notifying;
         public event Action<InterviewReply> Answered;
-        public string ActiveParticipantId => source && source.data != null && ReferenceEquals(contextData, source.data) ? participant : "";
+        public string ActiveParticipantId => source.Available && ReferenceEquals(contextData, source.DataContext) ? participant : "";
 
-        public InvestigationInterview(InvestigationSession source, IEnumerable<InterviewTopicDefinition> definitions)
+        public InvestigationInterview(InvestigationSession source, IEnumerable<InterviewTopicDefinition> definitions) : this(new SessionInterviewSource(source), definitions, true) { }
+        public static InvestigationInterview ForSource(IInvestigationInterviewSource source, IEnumerable<InterviewTopicDefinition> definitions) => new InvestigationInterview(source, definitions, true);
+        InvestigationInterview(IInvestigationInterviewSource source, IEnumerable<InterviewTopicDefinition> definitions, bool adapter)
         {
-            if (!source) throw new ArgumentNullException(nameof(source));
+            if (source == null) throw new ArgumentNullException(nameof(source));
             if (definitions == null) throw new ArgumentNullException(nameof(definitions));
             this.source = source; order = definitions.ToArray();
             foreach (var definition in order)
@@ -30,18 +32,18 @@ namespace ConRoi.Investigation.V36.R107
         }
         public bool TryBeginInterview(string participantId, out string error)
         {
-            if (!source || source.data == null) { error = "Phiên điều tra chưa sẵn sàng."; return false; }
+            if (!source.Available) { error = "Phiên điều tra chưa sẵn sàng."; return false; }
             if (source.Paused) { error = "Hãy tiếp tục trò chơi trước khi hỏi."; return false; }
             if (string.IsNullOrEmpty(participantId) || !order.Any(t => t.ParticipantId == participantId))
             { error = "Không có chủ đề cho người đối thoại này."; return false; }
-            participant = participantId; contextData = source.data; error = ""; return true;
+            participant = participantId; contextData = source.DataContext; error = ""; return true;
         }
         public void EndInterview() { participant = ""; contextData = null; }
         InterviewTopicAvailability ContextAvailability()
         {
-            if (!source || source.data == null) return InterviewTopicAvailability.SessionUnavailable;
+            if (!source.Available) return InterviewTopicAvailability.SessionUnavailable;
             if (participant == "") return InterviewTopicAvailability.NoConversation;
-            if (!ReferenceEquals(contextData, source.data)) return InterviewTopicAvailability.ContextExpired;
+            if (!ReferenceEquals(contextData, source.DataContext)) return InterviewTopicAvailability.ContextExpired;
             return source.Paused ? InterviewTopicAvailability.Paused : InterviewTopicAvailability.Available;
         }
         static string Reason(InterviewTopicAvailability availability)
@@ -63,20 +65,8 @@ namespace ConRoi.Investigation.V36.R107
             bool unlocked = true;
             foreach (var requirement in definition.Requirements)
             {
-                var evidence = InvestigationContent.Get(requirement.EvidenceId);
-                if (evidence == null) return InterviewTopicAvailability.InvalidCondition;
-                if (requirement.Kind == InterviewRequirementKind.AcquiredEvidence)
-                {
-                    if (requirement.ObservationIndex != -1) return InterviewTopicAvailability.InvalidCondition;
-                    unlocked &= source.data.evidence != null && source.data.evidence.Any(r => r != null && r.id == requirement.EvidenceId);
-                }
-                else if (requirement.Kind == InterviewRequirementKind.RecordedObservation)
-                {
-                    if (evidence.observations == null || requirement.ObservationIndex < 0 || requirement.ObservationIndex >= evidence.observations.Length)
-                        return InterviewTopicAvailability.InvalidCondition;
-                    unlocked &= source.TryGetRecordedNote(requirement.EvidenceId, requirement.ObservationIndex, out _, out _);
-                }
-                else return InterviewTopicAvailability.InvalidCondition;
+                if (!source.IsValidInterviewRequirement(requirement)) return InterviewTopicAvailability.InvalidCondition;
+                unlocked &= source.MeetsInterviewRequirement(requirement);
             }
             return unlocked ? InterviewTopicAvailability.Available : InterviewTopicAvailability.Locked;
         }
