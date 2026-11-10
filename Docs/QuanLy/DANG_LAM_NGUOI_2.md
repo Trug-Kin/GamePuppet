@@ -463,3 +463,24 @@ Chỉ UI/UX & Tích hợp có báo cáo nhận trên commit scene/UI thực ch�
 **Phần độc lập của phạm vi đã giao đã hoàn tất triển khai/kiểm có phạm vi bằng các nguồn trên; không còn A/B chưa làm.** Những phần còn lại có chủ nhận và đầu vào ở bảng C/danh sách tích hợp, hoặc ngoài giai đoạn ở D; IO-OPEN-01 là rủi ro chưa giải thích, không được gộp thành “save luôn đúng”. Lượt này chỉ cập nhật checklist/tài liệu, rà liên kết và diff rồi commit/push duy nhất nhánh Gameplay; giữ toàn bộ runtime/schema/ID/GUID và untracked. Không merge nhánh tích hợp/main, không build/ZIP, không điều khiển desktop.
 
 Ghi chú vận hành đợt tài liệu: lần stage đầu bị ổ D hết dung lượng (metadata Git dùng chung nằm trên D), không phải kết quả kiểm lỗi ghi save của gameplay. Thử nén metadata riêng không hoàn tất; sau khi ổ có lại dung lượng, đã phục hồi nguyên index gốc, SHA256 `61ee07ac222b8297029864037c7d382894082190c00ea8c82dddd09c84ccb812`, và hoàn nguyên thuộc tính nén. Working tree/staging ban đầu và untracked được đối chiếu giữ nguyên trước commit. Backup metadata ở Test/Output local được ignore, không đưa lên Git; không dùng sự cố ổ đĩa này làm bằng chứng đóng/mở rộng IO-OPEN-01.
+
+## Mở rộng toàn GDD — nhận 10/11/2026
+
+Xuất phát 81beb1d0; baseline/remote đã kiểm, không reset. [Ma trận và acceptance trước triển khai](../QA/Gameplay/BAN_GIAO_MO_PHONG_VA_TICH_HOP_TOAN_GAME.md) là đầu mối mô phỏng duy nhất. Bắt đầu FULL-CIPHER-01, rồi cơ chế tuyến/đối chiếu/kết luận/ending/save toàn tuyến. Các ranh giới D của prototype trước không còn là lý do loại chương/ending có yêu cầu rõ. Giữ ND-01…09 và gate đủ chuỗi/thoại chưa chốt; catalog thử tách Editor, không canon. Không sửa scene chung/UI sản phẩm/map, không chạy lại bộ cũ vô căn cứ.
+
+
+### Bàn giao cơ chế toàn tuyến — FULL-CASE-01 / FULL-CIPHER-01 / FULL-CONCLUSION-01 / FULL-PERSISTENCE-01 / FULL-PROXY-01
+
+Nguồn `f8b50889`, công cụ/catalog/cửa sổ thử `8faf6a14`; tài liệu gói này là [đầu mối mô phỏng duy nhất](../QA/Gameplay/BAN_GIAO_MO_PHONG_VA_TICH_HOP_TOAN_GAME.md). Đã triển khai chuyển vùng theo prerequisite; khám/xem/ghi tách biệt; cầm/cất/đặt; năm thư 26 key/tra Henri/hints/reply; đối chiếu dữ liệu; nguồn hội thoại tái dùng; trial context; bốn kết luận/support sets và ba nhánh ending; checkpoint/save namespace toàn tuyến riêng và import r107 chủ động. Không đổi session save schema1/ID/GUID/luật hồi hoặc UI/scene chung.
+
+Đã kiểm Unity6000.6.2f1: **196/196 EditMode API/action route + proxy adapter**, **48/48 PlayMode hồi quy hội thoại**, **10/10 Editor window event Unity với setup API**. Công cụ từng compile lỗi internal factory ở run01, đã sửa; Attempt01/run02 giữ lịch sử, không cộng gộp làm số PASS mới. Không gọi các tuyến API hoặc key event Unity là input Windows, người mới hay scene chung. Các nguồn được commit đúng working tree đã chạy; raw output/profile/save không lên Git.
+
+| Gói | Commit / trạng thái | Phụ thuộc, chủ nhận |
+|---|---|---|
+| FULL-CIPHER-01 | f8b50889 / 8faf6a14; RUNTIME ĐÃ KIỂM → CHỜ ASSET-UI | Map & Asset: 26 pose/glyph; UI/UX & Tích hợp: consumer, kênh/hiển thị thư và tra bảng |
+| FULL-CASE-01 | f8b50889 / 8faf6a14; CƠ CHẾ ĐÃ KIỂM → CHỜ NỘI DUNG & UI | UI/UX & Tích hợp: gate/nguồn/feature/catalog chính thức, adapter UI; Map & Asset: vùng/NPC/vật chứng/slots |
+| FULL-CONCLUSION-01 | f8b50889 / 8faf6a14; CƠ CHẾ ĐÃ KIỂM với rubric TEST ONLY → CHỜ NỘI DUNG & UI | UI/UX & Tích hợp: rubric/set tương đương/review GDD14/lựa chọn/ending; Map & Asset: footage/geometry; Gameplay nhận dữ liệu sau duyệt |
+| FULL-PERSISTENCE-01 | f8b50889 / 8faf6a14; RUNTIME ĐÃ KIỂM → CHỜ UI/TÍCH HỢP | UI/UX & Tích hợp: profile resolver/Load feedback/checkpoint theo thiết kế; Gameplay migration nếu catalog thay cần chuyển save, không tự đoán |
+| FULL-PROXY-01 | 8faf6a14; MÔ PHỎNG ĐÃ KIỂM API/adapter + event đại diện, không phải scene chung | Hai vai trò nhận bảng placeholder và cách thay trong đầu mối; bỏ catalog Editor khỏi sản phẩm |
+
+Toàn bộ ma trận F01…F19/căn cứ GDD/acceptance/trạng thái nằm trong đầu mối trên, không tạo checklist tổng trùng. Không còn cơ chế A/B độc lập rõ trong ma trận để tự mở hệ thống mới; **không coi nội dung/asset/UI/rubric chưa được duyệt là toàn tuyến sản phẩm đã hoàn tất**. Chín ND-01…09 giữ CHỜ CHỐT (gồm sáu entry, kết quả bàn dựng, catalog Hà và mục đích lưu history). Dữ liệu TEST ONLY không canon, không tự bổ sung thoại hoặc lịch sử/save. IO-OPEN-01 và P-close OPEN riêng; UI1080p/người mới NOT_RUN. Chờ biên nhận scene thật mới đổi trạng thái TÍCH HỢP ĐÃ KIỂM. Gameplay quay lại theo đầu vào rõ ở mục K bàn giao, không tự merge nhánh tích hợp/main hay chốt baseline nhóm.
