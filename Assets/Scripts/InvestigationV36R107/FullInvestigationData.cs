@@ -80,6 +80,13 @@ namespace ConRoi.Investigation.V36.R107
         public static FullActionResult Ok(string message="Đã thực hiện.")=>new FullActionResult(true,"ok",message);
         public static FullActionResult Fail(string code,string message)=>new FullActionResult(false,code,message);
     }
+    // Derived from a successfully recorded letter ID; never stored in either save schema.
+    // This is a transcription, not a provenance classification or proof of its claims.
+    public readonly struct FullRecordedReading
+    {
+        public readonly string Id,Recipient,Text,Meaning;
+        internal FullRecordedReading(string id,string recipient,string text,string meaning){Id=id;Recipient=recipient;Text=text;Meaning=meaning;}
+    }
     public readonly struct FullLetterView
     {
         public readonly string Id,Recipient,Reading; public readonly bool Recorded;

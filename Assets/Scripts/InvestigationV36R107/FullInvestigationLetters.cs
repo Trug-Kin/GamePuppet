@@ -23,6 +23,30 @@ namespace ConRoi.Investigation.V36.R107
                 default: return null;
             }
         }
+        // GDD5.2 writer punctuation and Vietnamese meanings. Exposed to consumers only
+        // through the runtime's recorded-reading query, not the trial mapping preview.
+        internal static string Transcript(string id)
+        {
+            switch(id){
+                case "letter.bao":return "STAND BY. WHO KEEPS THE STORE KEY? ASK LAN. KEEP QUIET.";
+                case "letter":return "STAND BY. WHERE DID THE THREE CRATES GO? SEND WORD.";
+                case "letter.mai":return "STAND BY. FIND THE OLD STORE NOTE. SEND WORD.";
+                case "letter.tung":return "STAND BY. DO YOU STILL SEE LAN? SEND WORD.";
+                case "letter.lan":return "STAND BY. BRING THE OLD PUPPETS TO THE STATION. NINE AT NIGHT. OR THE OLD SALE COMES OUT.";
+                default:return "";
+            }
+        }
+        internal static string Meaning(string id)
+        {
+            switch(id){
+                case "letter.bao":return "Ai giữ chìa kho? Hỏi Lan. Giữ kín.";
+                case "letter":return "Ba thùng đã đi đâu? Gửi câu trả lời.";
+                case "letter.mai":return "Tìm ghi chú kho cũ. Gửi câu trả lời.";
+                case "letter.tung":return "Còn gặp Lan không? Gửi câu trả lời.";
+                case "letter.lan":return "Mang rối cũ tới ga lúc chín giờ tối, nếu không chuyện bán rối sẽ bị phơi ra.";
+                default:return "";
+            }
+        }
         // Public encoding exposes pose IDs, not a plaintext preview. Bind them to the same
         // 26-glyph asset catalog for letter, Henri lookup and puppet.
         public static string[] PoseSequence(string id)

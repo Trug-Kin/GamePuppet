@@ -79,12 +79,15 @@ namespace ConRoi.Investigation.V36.R107
         bool Readable(string id)=>id!="clip"||(state.clipBeforeSeen&&state.clipEventSeen);
         public bool HasRecordedObservation(string id,int index)=>Readable(id)&&Record(id)?.observations.Contains(index)==true;
         public bool IsKnownObservation(string id,int index)=>Evidence(id)!=null&&index>=0&&index<Evidence(id).observations.Length;
-        public FullEvidenceDefinition[] GetLocalEvidence()=>catalog.evidence.Where(e=>e.location==Location&&MeetsAll(e.requires)).Select(e=>new FullEvidenceDefinition{id=e.id,label=e.label,location=e.location,portable=e.portable}).ToArray();
+        public FullEvidenceDefinition[] GetLocalEvidence()=>catalog.evidence.Where(e=>e.id!="decoded"&&e.location==Location&&MeetsAll(e.requires)).Select(e=>new FullEvidenceDefinition{id=e.id,label=e.label,location=e.location,portable=e.portable}).ToArray();
         public FullEvidenceRecord[] GetRecords()=>state.evidence.Select(Copy).ToArray();
         public FullActionResult TryCollect(string id)
         {
             if(!Ready(out var e))return e;
             if(Modal!=FullCaseModal.None)return Fail("modal","Hãy đóng thao tác hiện tại trước khi khám vật mới.");
+            // Keep legacy records readable for compatibility, but do not create a new
+            // derived reading by picking up the old prototype alias as a world object.
+            if(id=="decoded")return Fail("derived-reading","Hãy giải và ghi bản đọc của thư; bản chép không phải vật để thu.");
             var definition=Evidence(id);
             if(definition==null)return Fail("unknown-evidence","Không có vật chứng này.");
             if(definition.location!=Location||!MeetsAll(definition.requires))return Fail("locked","Chưa tiếp cận được nguồn này.");
@@ -151,6 +154,15 @@ namespace ConRoi.Investigation.V36.R107
         public bool Meets(FullRequirement requirement)=>MeetsIn(state,requirement);
         bool MeetsAll(IEnumerable<FullRequirement> requirements)=>requirements!=null&&requirements.All(Meets);
         public FullLetterView? GetLetter(string id)=>FullInvestigationLetters.Ids.Contains(id)&&Record(id)?.viewed==true?new FullLetterView(id,FullInvestigationLetters.Recipient(id),FullInvestigationLetters.Read(id,state.mapping),state.decoded.Contains(id)):(FullLetterView?)null;
+        public bool TryGetRecordedReading(string id,out FullRecordedReading reading)
+        {
+            reading=default;
+            if(!FullInvestigationLetters.Ids.Contains(id)||!state.decoded.Contains(id)||Record(id)?.viewed!=true)return false;
+            reading=new FullRecordedReading(id,FullInvestigationLetters.Recipient(id),FullInvestigationLetters.Transcript(id),FullInvestigationLetters.Meaning(id));return true;
+        }
+        public FullRecordedReading[] GetRecordedReadings()=>FullInvestigationLetters.Ids
+            .Where(id=>state.decoded.Contains(id)&&Record(id)?.viewed==true)
+            .Select(id=>new FullRecordedReading(id,FullInvestigationLetters.Recipient(id),FullInvestigationLetters.Transcript(id),FullInvestigationLetters.Meaning(id))).ToArray();
         public string[] GetLetterPoses(string id)=>GetLetter(id).HasValue?FullInvestigationLetters.PoseSequence(id):Array.Empty<string>();
         public FullActionResult TryAssign(string poseKey,string letter)
         {
