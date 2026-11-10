@@ -1,14 +1,14 @@
 # Bàn giao mô phỏng và tích hợp toàn game — Gameplay & Dữ liệu
 
-**Cập nhật chức năng mới nhất:** FULL-READING-PRODUCER-01, nguồn `942ca056`, công cụ/UI thử `61892688`, trên lịch sử `69e9ca57`. [API, kiểm và tương thích bản chép thật](#reading-producer). Các kiểm f8b50889/e71da758/9dd5d6eb bên dưới giữ nguyên phạm vi/lịch sử; không suy chúng đã chạy trên nguồn mới.
+**Cập nhật chức năng mới nhất:** APPROVED-PRODUCERS-01, nguồn `36ad492c`, công cụ/UI thử `21ee7b1f`, sau `8d0a1de5`. [Quyết định đã chốt, API/migration/wiring và kiểm](#approved-producers). FULL-READING-PRODUCER-01 (`942ca056`/`61892688`) giữ trong lịch sử. [API, kiểm và tương thích bản chép thật](#reading-producer). Các kiểm f8b50889/e71da758/9dd5d6eb bên dưới giữ nguyên phạm vi/lịch sử; không suy chúng đã chạy trên nguồn mới.
 
-**Đầu vào cần chủ dự án trả lời:** [bảng tập trung K.3](#quyet-dinh-producer) phân biệt luật GDD đã chốt, tài nguyên cần sản xuất và quyết định thiết kế còn thiếu.
+**Quyết định hiện hành:** chủ dự án đã trả lời H/G/E/ND; [K.4](#approved-producers) ghi yêu cầu đã chốt, nguồn đã kiểm và wiring. [K.3](#quyet-dinh-producer) giữ lịch sử đề xuất, không còn yêu cầu duyệt lại.
 
 ## Phạm vi và acceptance trước triển khai — 10/11/2026
 
 Nhận tại `81beb1d0`, nhánh `work/runtime-contracts-baseline`, worktree riêng. Tracked sạch; `.vscode/` và `Test/KetQua/W_route_Unity_v30_20261016/` giữ nguyên. Fetch: local/remote 0/0; baseline HANDOFF c93cb4f1e và tip tích hợp baf7335b đã có trong lịch sử. Không merge/reset. GDD chuẩn: [v3.6 chốt triển khai](../../CON_ROI_GDD_v3.6_CHOT_TRIEN_KHAI.md); [ownership](../../QuanLy/OWNERSHIP.md), [contracts](../../QuanLy/HOP_DONG_MODULE.md), [registry](../../QuanLy/EVIDENCE_REGISTRY.md), [checklist trước mở rộng](../../QuanLy/DANG_LAM_NGUOI_2.md). Phạm vi prototype cũ được mở rộng theo yêu cầu mới; các PASS cũ giữ phạm vi gốc.
 
-Đây là đầu mối **duy nhất** liệt kê mô phỏng toàn game. Các tên API/file mới ở bản acceptance này là dự kiến cho tới khi có source/kiểm được ghi bên dưới. Không sửa sản phẩm UI/scene chung/map. Chín quyết định ND-01…09 của [bàn giao trước](../Tasks/N2/BAN_GIAO_CHO_NOI_DUNG_UI_20261110.md#3-quyết-định-nội-dung) vẫn CHỜ CHỐT.
+Đây là đầu mối **duy nhất** liệt kê mô phỏng toàn game. Các tên API/file mới ở bản acceptance này là dự kiến cho tới khi có source/kiểm được ghi bên dưới. Không sửa sản phẩm UI/scene chung/map. Chín quyết định ND-01…09 của [bàn giao trước](../Tasks/N2/BAN_GIAO_CHO_NOI_DUNG_UI_20261110.md#3-quyết-định-nội-dung) **đã được chủ dự án chốt** tại K.4. Các đoạn “chờ chốt” phía dưới là lịch sử trước quyết định; sáu entry raw cũ được giữ legacy, không tự suy nguồn mới.
 
 ### Ma trận yêu cầu trước triển khai
 
@@ -84,6 +84,8 @@ Acceptance ban đầu ở trên được giữ làm lịch sử. Bảng này tha
 **Mức hoàn thành hiện tại:** lần đóng gói69e9ca57 chưa phát hiện producer bản chép còn thiếu; gói942ca056 đã bổ sung và kiểm riêng như K.2, không giữ kết luận “mọi cơ chế đã đủ” của lần trước. Những dòng “thiếu” trên là dữ liệu/gate/rubric cần được duyệt, producer sau quyết định, presentation/world adapter hoặc kiểm asset/tích hợp. Không đánh dấu chúng đã hoàn tất chỉ vì API chạy. Không có vụ thứ hai/ending mới.
 
 ### B.1. Giá trị gate/catalog tạm — phải thay ở đâu
+
+**Lịch sử trước36ad492c:** bảng này mô tả factory `Create()` cũ. Gate hiệu lực và môi trường thử mới sau quyết định nằm tại K.4; `CreateApproved()` không dùng gate M3/lead thử, không dùng R-12 làm rối cổ. Không lấy bảng cũ để wiring producer mới.
 
 Toàn bộ factory ở `Assets/ConRoi/Modules/Gameplay/Editor/FullCaseTestCatalog.cs`; đây là **TEST ONLY**, không phải file nội dung sản phẩm. `Create(bool reviewedTestRubric=true)` tạo `FullCaseCatalog {id="test.only.fullcase",revision="1",testOnly=true,startLocation="office"}`. Runtime copy/hash catalog lúc constructor; đổi nội dung catalog cần phiên mới và xem F.1, không sửa object factory rồi mong phiên đang chạy tự đổi.
 
@@ -431,6 +433,8 @@ Các sự thật vụ án, năm plaintext và ưu tiên ending **đã có trong 
 
 ### K.3. Đầu vào producer/gate chính thức — bảng trả lời tập trung sau 9b8a07b9
 
+**Lịch sử đề xuất:** các câu hỏi thiết kế ở mục này đã có biên nhận chủ dự án tại K.4; không yêu cầu duyệt lại. C2/C3 vẫn chờ sản xuất/kiểm chứng theo phân công đã chốt.
+
 Đối chiếu GDD v3.6 **mục 16**: thoại, bản ghi, pose và UI là tài nguyên **cần sản xuất theo thiết kế đã chốt**, không phải lý do yêu cầu duyệt lại cốt truyện. Mục này thay cách diễn đạt quá rộng “chờ duyệt nội dung” ở K.2: **CHỜ SẢN XUẤT/REVIEW** là thiếu văn bản/asset/kiểm chứng; **CHỜ DUYỆT** chỉ là lựa chọn thiết kế chưa quy định hoặc mâu thuẫn. Chín ND-01…09 giữ nguyên mã và chưa được tự giải quyết. Các phương án dưới đây là đề xuất để trả lời, chưa là catalog, gate, nhãn hoặc lời thoại sản phẩm.
 
 Nguồn thực đọc: GDD3.3–3.7,4–9,11,14,16; `InvestigationEvidence.cs`, `InvestigationNoteProvenance.cs`, `InvestigationInterview.cs`/`InvestigationInterviewData.cs`, `FullInvestigationInterview.cs`, `FullInvestigationData.cs`, `FullInvestigationRuntime.cs`, `FullInvestigationPersistence.cs`; data thử `FullCaseTestCatalog.cs`. Tất cả đường dẫn code thuộc `Assets/Scripts/InvestigationV36R107/`, trừ factory thử ở `Assets/ConRoi/Modules/Gameplay/Editor/`. Runtime hiện hành là `942ca056`, consumer/công cụ `61892688`; mốc nhận tài liệu `9b8a07b9`. Các bảng B.1–3 giữ giá trị đang chạy; bảng này không sửa chúng.
@@ -504,3 +508,140 @@ Chủ dự án chỉ cần trả lời các mã H1–H3, G1–G3, C1, E1–E2, N
 **Quan hệ hai save giữ nguyên:** r107 `<profile>/InvestigationV36/r107/prototype.json`; fullcase `<profile>/InvestigationV36/fullcase/case.json`, checkpoint `case.before-conclusion.json` trong thư mục fullcase. Không đồng bộ tự động, không đổi namespace/schema/hash hoặc import khi chỉ đọc. Dữ liệu mới H3 là yêu cầu phải hoàn thiện, nhưng chưa chọn khóa/history để tự triển khai migration. Catalog chính thức thay TEST ONLY sẽ đổi hash: Gameplay phải xác định cách xử lý save/catalog cũ tường minh, không suy nghe từ thu item hay dùng checkpoint r107 cho fullcase. Xem F.1 về profile/import.
 
 **Kết quả đợt này:** kiểm GDD/code tĩnh, không chạy lại Unity/API, không phát sinh runtime/fixture/catalog hay dữ liệu sản phẩm. Phần luật rõ đã có cơ chế và được dẫn tại B/K.2; các chỗ còn thiếu producer cần các lựa chọn/đầu vào trên, chưa có phần runtime độc lập đủ thông tin để sửa an toàn. Không làm null implementation hoặc sửa consumer thử để tạo cảm giác tiến độ. Bản chép năm thư vẫn là producer thật đã kiểm; gate/rubric/lời khai/ending trình diễn vẫn theo mức bao phủ F01–F19, không nâng PASS. IO-OPEN-01/P-close OPEN riêng; scene chung/UI1080p/người mới NOT_RUN. Chỉ tài liệu đầu mối này được bổ sung; không sửa GDD/ownership/UI/scene/save, không có kiểm mới để báo PASS.
+
+
+<a id="approved-producers"></a>
+### K.4. APPROVED-PRODUCERS-01 — quyết định và acceptance trước triển khai
+
+Chủ dự án đã chốt H1–H3/G1–G3/C1/E1–E2/ND-01…07/C2–C3 trong phiên sau8d0a1de5. K.3 giữ lịch sử đề xuất, **không còn là trạng thái chờ duyệt** đối với các quyết định dưới đây. Không sửa GDD.
+
+H1: ha.cargo.receipt, Q/A đúng nháp, mở sau xem phiếu thật, không đòi ghi/khẳng định hàng bên trong. H2: nghe Hà mở kênh, tự lưu lời khai; phiếu nhận riêng liên kết M2, không gate ghi phiếu; gửi cần bản đọc/hồi đáp hợp lệ và nghe hướng dẫn. H3: statement ID bền vững, nhóm topic, snapshot/revision; nghe khác ghi, không đếm hỏi để thưởng/phạt. G1: nghe Mai→nhà hát, Phương→homestay. G2: Bảo chỉ Lan sau ghi bản giải thư Bảo, nghe mở vườn, bỏ gate thử M3. G3: hồi đáp bắt buộc khi bắt đầu cuộc hẹn, luôn quay lại Hà được, không bắt giải lại. C1: paper.khai đối chiếu letter Hà, chỉ feature nhìn được, chưa đủ suy mọi hành vi. E1/E2: tương tác ga→tóm tắt→xác nhận trình diễn; có pause/hủy, lưu đã xem chỉ sau hoàn tất, replay không checkpoint/thưởng/kết luận mới; nhiều sai là một chuỗi tổng hợp. **Đối chiếu GDD4/7.3:** chốt hồ sơ và checkpoint vẫn trước ga; xác nhận tại ga là xác nhận trình diễn. Quay lại điều tra dùng checkpoint tường minh, không tự làm mất hồ sơ đã chốt.
+
+ND-01/02: tách khám thật và mô hình, stable key mới, không sửa nghĩa entry legacy. ND-03: quan sát nhận mẫu trực tiếp; lời Phương riêng. ND-04: không pose ID trong note, phải xem đủ nguồn hình thực; kỹ thuật ở docs. ND-05: mép giấy là Quan sát, suy luận tự ghi là Giả thuyết, hướng dẫn không evidence. ND-06: bản chép/nghĩa nằm Tài liệu đã giải, không ép enum; suy luận riêng. ND-07: Quan sát nguồn bắt buộc “Mô hình dựng lại”, có điều kiện/giới hạn, không fact hiện trường. C2: Map & Asset sản xuất đặc điểm/model/định danh, UI/UX & Tích hợp điều phối tài liệu/ngày; brief prototype không duyệt feature. C3: UI/UX & Tích hợp điều phối review GDD14, Map & Asset cung cấp footage/hình học, Gameplay cung cấp rubric/ca; chưa đủ asset/biên nhận vẫn CHỜ KIỂM CHỨNG.
+
+Acceptance: (1) thu phiếu chưa xem không mở H1, xem mở, không đòi ghi; (2) nghe statement có snapshot/version và Changed, hỏi lặp không nhân history, hỏi khóa/sai/hủy/pause không tạo history; (3) nghe chỉ dẫn mở đúng vùng, không item lead/M3 thay producer; (4) Bảo chỉ Lan cần bản đọc Bảo đã ghi, không chỉ mapping; (5) nghe kênh không tự gửi, đúng cụm+bản đọc+ở quầy Hà mới gửi; gửi xong quay lại/load không giải lại; (6) chốt trước ga theo cơ chế cũ, vào ga không tự trình diễn, thiếu reply không softlock; tóm tắt/xác nhận/pause/hủy/complete/replay và checkpoint không trùng; (7) schema fullcase mới có migration1→2 rõ ràng, không suy heard/recorded/endingViewed từ legacy, load không ghi file; malformed new state giữ live/bytes; r107 không migration tự động; (8) notes mới phân nguồn và legacy không âm thầm đổi nghĩa, report không fact; (9) một tuyến liên tục API hành động và UI thử riêng, không seed/set tiến trình; các test fixture ending/rubric thử ghi riêng, không nhận là rubric/ending sản phẩm được duyệt.
+
+
+#### Runtime và mức bao phủ sau quyết định
+
+Nhận đủ **nguồn36ad492c → công cụ/môi trường thử21ee7b1f → báo cáo đợt này**, không chỉ nhận tài liệu. Gói dùng namespace fullcase, không thay runtime điều tra prototype r107 thành toàn game. Chỉ projection provenance r107 được bổ sung trạng thái legacy và metadata report; không thay schema/save/progress r107. Các entry đã chốt thiết kế không còn CHỜ DUYỆT; phần còn chờ là dữ liệu sản xuất/biên nhận kiểm chứng và tích hợp.
+
+| Ma trận / người chơi sử dụng | Runtime thực tế và dữ liệu | Kiểm đã chạy / giới hạn |
+|---|---|---|
+| F01/F02 H1/G1/G2 | `TryBeginConversation`→`TryAskTopic` tạo statement snapshot thật. Xem phiếu mở hỏi Hà; nghe Mai/Phương mở theatre/homestay; ghi bản đọc Bảo rồi nghe Bảo mới mở garden. `LocationOpen` bỏ gate lead/M3 cũ, giữ yêu cầu sự kiện khác | Tuyến sạch qua lệnh hành động; không thu lead/M3 hay set flags. NPC khác vẫn chưa có script chính thức; không dùng `Topics()` thử như lời khai thật |
+| F02/F11 H2/H3 | Lịch sử nghe tự thêm vào live state, persist khi Save/F5; nút Ghi tách riêng. Cùng statement giữ snapshot/version đầu tiên, hỏi lặp phát lại snapshot không đếm thưởng/phạt. Chưa có autosave mỗi câu vào một đường dẫn ngầm | Khóa/sai/pause/hủy/repeat/snapshot isolation/Load, phiên hội thoại cũ mất hiệu lực. Chưa có audio/lip-sync; không suy nghe từ item cũ |
+| F04/F15 | Hà hướng dẫn→kênh thật; `receipt.channel` là phiếu riêng liên kết M2, không gate Ghi. Gửi tại market, modal Cipher, đã nghe kênh, có ít nhất một bản đọc hợp lệ đã ghi và đúng bốn cụm GDD. Chưa gửi không bắt đầu cuộc hẹn; vẫn về Hà được | Chưa nghe/chưa ghi bản giải/cụm sai bị chặn; nghe không tự gửi. Ghi lại thư đã có không đòi sửa mapping lại. Không yêu cầu đủ năm thư |
+| F06 C1 / F07 C2 | `TryCompare("paper",…)` chỉ cặp letter Hà/paper.khai; cặp Bảo bị từ chối trước state. `CreateApproved()` dùng `test.antique.labels` cho cargo, không R-12 | Feature/option/rubric vẫn TEST ONLY. C1 chốt nguồn, chưa là bằng chứng mép asset khớp; bảng định danh/ngày/thỏa thuận thật do hai vai trò sản xuất, không copy mẫu thử sang sản phẩm |
+| F11 ND-01…06 | `TryRecordSourcedObservation`/`GetSourcedNotes` có key mới, nguồn thật tách model. Lời Phương nguồn mẫu là statement riêng; quan sát nhận mẫu riêng. Letter note chỉ hình giấy/sổ đã xem, không pose ID. Bản chép vẫn `GetRecordedReadings` trong Tài liệu đã giải; quan hệ người chơi là Hypothesis | Không suy thêm quan sát từ raw indices legacy, không âm thầm đổi câu/index cũ. R107 `GetProvenanceNotes` raw sáu entry còn Unclassified nhưng status mới `LegacySourceUnresolved`, không còn chờ quyết định; UI không dùng raw text kỹ thuật/mixed làm note sản phẩm mới |
+| F10/F11 ND-07 | Report hoàn tất là Observation nguồn **Mô hình dựng lại**, có Conditions/Limitations. Áp dụng query fullcase và projection `InvestigationNote` r107; record/report đã lưu không đổi | Đã kiểm ca release bằng hành động thật và fixture report cũ. Report cũ thiếu timestamp/tham số không được bịa lại; ID ca và số hồi chưa đo được ghi rõ. Không coi model/code là vật lý thật/sự kiện hiện trường |
+| F13/F14/F15 E1/E2 | Case confirm/finalize/checkpoint vẫn trước ga. Tương tác ga→summary→start→complete; có pause/cancel/Load, persist endingViewed khi ghi thành công. Replay không viết lại save/checkpoint hoặc thưởng. `GetEndingConsequences()` trả **một danh sách tổng hợp** theo toàn bộ dimension sai và phạm vi GDD8 | Tuyến liên tục A-treo và lifecycle; bốn fixture rubric thử cho sai thư/động cơ/gây ngã/nhiều sai. Không claim C/rubric hay hoạt cảnh sản phẩm được duyệt bởi fixture. Tới ga không tự phát; trước phát có đường chủ động khôi phục checkpoint điều tra |
+| F17/F18 | FullCaseSave schema2, migration1→2 đọc-only; thêm history/sourced note IDs/endingViewed/replyProducerVerified; transient conversation/summary/playback dọn sau Load | Save/load/schema1/new malformed state, lỗi ghi completion và hồi phục; không chạy lại cả bộ IO/trial. Không có đồng bộ r107/fullcase, không chứng minh chịu crash/mất điện |
+
+#### API và nội dung nguồn đã nối — tên thực tế
+
+Các API mới thuộc `FullInvestigationRuntime` ở `FullInvestigationProducers.cs`; `FullActionResult {Success,Code,Message}` hiện có. Mỗi thao tác bị từ chối giữ tiến trình, không caller tự set flags. `Changed` vẫn là event refresh chung; nghe statement lần đầu/ghi lần đầu phát progress, hỏi lại trả reply nhưng không progress event mới. Khi enable `runtime.Changed += Refresh`; khi disable/đổi phiên `-= Refresh`. Callback chỉ query, không mutation reentry. Reply của lần hỏi trả qua `out InterviewReply`, kể cả hỏi lặp, để UI trình bày lại mà không chờ event mới.
+
+| API/state | Cách gọi, trạng thái và wiring |
+|---|---|
+| `TryBeginConversation(string participantId)` / `GetConversationTopics()` / `TryAskTopic(string topicId,out InterviewReply reply)` | World adapter gửi đúng npc ID tại Location. Begin cần None/not paused; Topics khóa không trả câu/đáp án. Ask recheck location/modal/requirements, trả Q/A snapshot. Không set Modal.Conversation thay Begin vì chưa có active actor. Cancel/rời modal/Load kết thúc ngữ cảnh; hỏi sau đó phải Begin lại |
+| `GetHeardStatements()` → `FullHeardStatement[] {id,topicId,participantId,question,answer,version}` | Chỉ statement đã nghe, deep snapshot, không lộ lời chưa mở. Hiển thị lại/nhãn đã nghe theo stable id; không dùng số lần hỏi. Mỗi statement hiện một câu đáp ngắn; IDs không chứa revision, field version=1 tách riêng |
+| `TryRecordStatement(string statementId)` / `GetRecordedStatements()` | Nút Ghi hồ sơ chủ động, chỉ statement đã nghe; lặp không nhân đôi. Nghe mở gate nhưng **chỉ đã ghi** mới vào grounds và typed notes. Tìm statement từ reply.TopicId qua GetHeardStatements; không map từ text/keyword |
+| `GetLocalEvidence()` / `TryCollect("receipt.channel")` / `GetRelatedEvidenceIds("receipt.channel")` | Phiếu riêng xuất hiện ở market sau nghe kênh. Chỉ trả link M2 sau xem phiếu, không trả nội dung M2 chưa mở. Phiếu không bắt buộc thu/ghi để gửi. Adapter thêm vật giấy/collider; không gán nó là chính M2 hoặc phiếu hàng. `GetObservationOptions(string id)` trả clone chỉ sau xem/clip đủ điều kiện; dùng cho nguồn runtime bổ sung, **không** tìm `First()` chỉ trong catalog caller |
+| `TrySendReply(string[] orderedPhrases)` / `HasSentReply` | Giữ API, thay gate N(ha,1) thử bằng nghe/bản giải/vị trí thật; cụm đúng theo GDD5.2. Không đánh đồng query flags legacy với producer được xác nhận. Chưa gửi thì render Message/AppointmentRequirement, không tự gửi hoặc giải lại |
+| `CanTravel(string id)` / `TryTravel(string id)` | Giữ API; hiệu lực gate mới theo heard statement. Sau finalized luôn có đường về market; không giao fixture lead. Đến nơi không tự hỏi/thu/ghi/ending |
+| `TryRecordSourcedObservation(string noteId)` / `GetSourcedNotes()` | Dùng bảng key bên dưới. Kết quả `FullSourcedNote {Id,Text,Source,Conditions,Limitations,Kind}` readonly; Source/Conditions/Limitations phải render cùng report. Query gồm source notes mới, statement đã ghi, player relations và trial reports; không tự thêm six mixed legacy notes. `GetAvailableGrounds()` bổ sung Heard **chỉ đã ghi** và SourcedObservation, không thay grading theo số note |
+| `CanBeginAppointment`, `AppointmentRequirement`, `TryOpenEndingSummary()` | Tại station, None, finalized và reply đã có producer; summary khóa di chuyển, chưa phát. Render `GetConclusions()` và `GetEnding()`/`GetEndingConsequences()` thành một tóm tắt; không gọi Finalize lại |
+| `TryStartEndingPresentation()` / `EndingPlaying` | Chỉ sau summary và xác nhận. Presenter chạy một chuỗi kết quả, không nhiều ending. `SetPaused(true/false)` dừng/tiếp presenter theo state, không gọi Complete trong pause. `Cancel()` thoát; Load reset transient, không auto restart |
+| `TryCompleteEndingPresentation(string profile)` / `EndingViewed` | Presenter **chỉ gọi sau thực sự xem hết**. Lần đầu ghi main schema2 thành công mới true, lỗi write giữ false/state/save tốt. Replay đã xem không ghi file/checkpoint hoặc đổi conclusion. Nút “đã chạy hết” trong UI Editor là mô phỏng trình phát, không bằng chứng đã xem hoạt cảnh sản phẩm |
+| `TryReturnToInvestigation(string profile)` | Người chơi chủ động chọn trước phát hoặc sau Cancel: load checkpoint fullcase trước chốt; không đổi main tại thao tác Load. Khi đang phát/paused bị chặn. Thay kết luận rồi chốt lại là lượt điều tra mới; replay không dùng endpoint này |
+| R107 `InvestigationNote.Conditions`, `.Limitations`, `NoteProvenanceStatus.LegacySourceUnresolved` | Bổ sung snapshot không serialize. Report đã biết classified Observation, source Mô hình dựng lại; six raw mixed entries giữ nguyên text/index/save và Unclassified với label legacy. Old `GetProvenanceNotes` không tự tạo statement history/đã giải. Chuyển sản phẩm fullcase phải dùng API fullcase trên; giữ generic `InvestigationInterview.ForSource` cho consumer cũ/kiểm riêng, **nó không tự persist producer mới** |
+
+| Actor / Location | Topic ID → statement ID (version1) | Gate và nội dung đang dùng |
+|---|---|---|
+| npc.ha / market | ha.cargo.receipt → ha.receipt.facts | Inspected(receipt), không Recorded. Q “Phiếu này cho biết gì về ba gói hàng?” A “Phiếu ghi ba gói và ngày giao, không ghi bên trong.” |
+| npc.ha / market | ha.channel.paper → ha.channel.paper | Tại Hà. Q “Tôi gửi lời trả lại bằng cách nào?” A “Gửi giấy trả lời qua quầy này.” Nghe mở kênh, không tự gửi |
+| npc.mai / school | mai.direction.theatre → mai.direction.theatre | Tại Mai. Q “Tôi tìm sổ Henri ở đâu?” A “Sổ Henri ở hậu đài nhà hát.” Nghe mở theatre |
+| npc.phuong / office | phuong.direction.homestay → phuong.direction.homestay | Tại Phương. Q “Tôi kiểm tra nơi Khải lưu trú ở đâu?” A “Anh kiểm tra đầu mối lưu trú tại homestay.” Nghe mở homestay |
+| npc.bao / lake | bao.direction.lan → bao.direction.lan | Decoded(letter.bao), chưa ghi bản giải thì khóa. Q “Tôi tìm bà Lan ở đâu?” A “Bà Lan ở khu vườn có hàng rào kín.” Nghe mở garden |
+| npc.phuong / office | phuong.samples.origin → phuong.samples.origin | Collected(samples), tách khỏi quan sát nhận. Q “Nguồn của các mẫu đối chiếu là đâu?” A “Mẫu áo và giày được thu tại phòng Khải để đối chiếu với dấu vết ở xưởng.” |
+
+Các câu chỉ dẫn/lời nguồn mẫu là diễn đạt chức năng trung tính từ GDD và quyết định đã chốt, không thêm lời thú tội/địa chỉ/chi tiết nghiệp vụ/nguồn tri thức mới. UI/UX & Tích hợp có thể biên tập câu chữ theo các sự thật đó; **phải tăng version và giữ snapshot đã nghe** khi cập nhật, không thay lịch sử bằng text hiện tại. Không dùng TEST ONLY Topics làm catalog chính thức cho NPC còn lại.
+
+| Key quan sát mới | Producer/điều kiện và nguồn | Cách thay mô phỏng |
+|---|---|---|
+| mechanism.site.clear | TryCollect→TryInspect(mechanism)→TryRecordSourcedObservation; chỉ khe đã khám, không gồm report mô hình | Map & Asset thể hiện khe không chèn và vùng thực khám; UI Ghi gọi key này. Model result chỉ từ trial hoàn tất |
+| hook.site.dust | TryInspect(hook) rồi Ghi; bụi trước thử là nguồn hiện trường | Model hook/clear-holds ghi trial riêng, không set bụi mới ở hiện trường hoặc lấy report làm fact |
+| samples.received | Đã thu/xem samples với permission của definition còn đạt; Quan sát thao tác nhận | Giữ bước phép thu theo GDD7.4; adapter bàn giao thật rồi collect/inspect, UI gọi Ghi. Lời nguồn mẫu phải hỏi Phương, không ghép vào observation |
+| letter.symbols.compared | Đã xem letter và henri; chỉ hình trên hai nguồn này, không nêu mã kỹ thuật | Dải giấy/sổ thật cùng pose; chưa có hoặc chưa xem sổ không cho ghi. Không tuyên đã xem rối 3D khi mới xem hai tài liệu |
+| draft.edge.observed | Đã xem draft; chỉ mép/nét nhìn được | Giấy mẫu Hà giữ nguồn riêng, không chuyển thành paper.khai. UI hướng dẫn không thành note. Suy luận tự viết qua TryRecordRelation vẫn Hypothesis |
+
+Nguồn model dùng `trial:<trial.id>:<list index>` (index snapshot legacy, không dùng làm durable world ID); điều kiện ca và report được giữ từ record, giá trị returnSeconds<0 trình bày “chưa đo”, không bịa timestamp clear-holds cũ. Quan hệ dùng index snapshot tương tự. Muốn nguồn sự kiện thật phải có quan sát thật; không sử dụng các key report này như proof duy nhất.
+
+Ví dụ wiring chính thức, không phụ thuộc tên nút/Hierarchy:
+
+```csharp
+var begun = runtime.TryBeginConversation("npc.ha");
+if (begun.Success) BindTopics(runtime.GetConversationTopics());
+var result = runtime.TryAskTopic("ha.cargo.receipt", out var reply);
+ShowFeedback(result.Message);
+if (result.Success) ShowAnswer(reply.Question, reply.Answer); // repeat cũng có reply
+// Nút Ghi riêng: runtime.TryRecordStatement("ha.receipt.facts");
+// Scene adapter: runtime.TryTravel("theatre"); không tự set lead/heard.
+// Presenter: TryOpenEndingSummary -> người chơi xác nhận -> TryStartEndingPresentation.
+// Chỉ callback hết clip/chuỗi: TryCompleteEndingPresentation(profile); hủy: Cancel().
+// Đăng ký Changed += Refresh khi mở consumer, -= Refresh khi đóng; Load thì query lại.
+```
+
+#### Save schema2, catalog và cách nhận an toàn
+
+| Dữ liệu mới fullcase | Migration schema1→2 | Quy tắc |
+|---|---|---|
+| heardStatements: id/topic/participant/question/answer/version | [] | Không suy từ ha/visitedHa/M4/relations. Câu đã nghe dùng snapshot, không resolve lại text hiện hành |
+| recordedStatements / sourcedNotes | [] / [] | Không chuyển mixed old indices sang các key mới hoặc gán thành đã nghe/đã thấy thêm |
+| endingViewed | false | Giữ finalized/ending cũ như dữ liệu cũ đã kiểm rubric của catalog ấy, không suy là đã xem trình diễn |
+| replyProducerVerified | false, dù replySent cũ được giữ | Người chơi nghe hướng dẫn/gửi lại tường minh để có producer; thư đã giải có flag explicit được giữ, raw decoded alias không tự là bản giải |
+
+Fullcase path/checkpoint vẫn `<profile>/InvestigationV36/fullcase/case.json` và `case.before-conclusion.json`; r107 vẫn `<profile>/InvestigationV36/r107/prototype.json`, schema1. Load1→2 validate **trước** swap state, không ghi lại nguồn. Lần Save có chủ đích sau Load ghi schema2, vì vậy bản runtime cũ chỉ đọc schema1 không phải consumer của save2. Giữ bản sao profile khi chuyển; chưa có hạ schema/migration ngược hoặc đồng bộ hai luồng. Import r107 vẫn tường minh, không import statement/new flags, không đụng tệp r107 nguồn.
+
+Không tự hợp thức hóa catalog: hash phải khớp catalog/revision từng profile. `FullCaseTestCatalog.Create()` được giữ để kiểm/đọc save thử cũ; `CreateApproved()` là **catalog kiểm mới** (id=test.only.approved-producers, revision2) và dùng profile GUID mới. Mở menu mới không tự nạp save thuộc hash cũ; không sửa hash trong file để ép tải. Khi có catalog sản phẩm do UI/content cung cấp, Gameplay xử lý chuyển catalog cụ thể sau review, không đoán tiến trình. Các thử nghiệm old grading/attempts được giữ theo catalog cũ, không promote thành rubric sản phẩm.
+
+#### Môi trường thử và thay placeholder
+
+Mở Unity6000.6.2f1, scene Gameplay theo A, menu **Con Roi/Gameplay/Toan tuyen TEST ONLY**. Menu tạo profile GUID riêng và controller mới, không ghi scene. Window chỉ trong Editor, không tự khởi tạo ở scene sản phẩm. Tới các NPC qua nút ID thay đối tượng thật; source list đi qua TryCollect/TryInspect, không cấp evidence/flag trực tiếp. Các nút tắt/confirm trình diễn đều gọi runtime thật; nút “đã chạy hết trình diễn thử” chỉ thay media completion, không là ending cinematic PASS.
+
+Tuyến bắt đầu sạch đã kiểm: office nghe Phương→workshop khám/ghi dấu sàn→market thu phiếu **chưa xem** hỏi bị khóa, nghe kênh, xem phiếu hỏi được→school nghe Mai→theatre xem sổ→market khám thư Hà, tự gán theo lookup, ghi bản giải và ghép/gửi hồi đáp→lake xem/ghi bản giải Bảo, hỏi đường→garden→F5/đổi nơi/F6→nhận mẫu qua permission trong thử riêng, ghi quan sát và quay hỏi nguồn Phương→đối chiếu dải Hà/nháp Khải bằng **feature thử**→chạy release trên model thật→chốt hồ sơ honest-open→station summary/cancel/start/pause/Esc→lỗi ghi hoàn tất mô phỏng/hồi phục→complete/replay/Load→chủ động checkpoint quay lại điều tra. Không gọi setter tiến trình, không seed/import để vượt gate. SetModal/SetPaused chỉ là adapter context/pause, không chứng cứ.
+
+| Placeholder thêm/thay | Runtime đã nối | Map & Asset / UI/UX & Tích hợp nhận |
+|---|---|---|
+| NPC npc.ha/mai/phuong/bao | API conversation mới, six statement IDs ở bảng trên | Map & Asset đặt actor/collider vị trí phù hợp, không cần tên GameObject; UI wire Begin/Topics/Ask/Ghi/history, active actor và pause/modal/Load; tắt adapter TEST ONLY sau thay |
+| receipt.channel | Source list động qua GetLocalEvidence, giấy text chưa model; Related M2 | Map & Asset giấy/collider/preview; UI dùng GetObservationOptions thay catalog-only lookup, render link không leak M2; không thêm gate thu/ghi phiếu |
+| Source-note keys mới | Collect/Inspect→RecordSourced→GetSourcedNotes | Map & Asset bảo đảm hình thể hiện đúng text được ghi; UI dùng key/data mới, giữ raw legacy ở mục lịch sử có giới hạn, không hiển thị pose ID kỹ thuật như note mới |
+| test.antique.labels | Cargo fixture trong Editor, không phải bảng chính thức; thay r12 trong catalog thử mới | Map & Asset cung cấp định danh/feature/model ba rối cổ; UI/content cung cấp phiếu/ngày/thỏa thuận theo C2; Gameplay bind task sau nhận, không đổi R-12 thành rối cổ |
+| Station summary/presenter | API summary/start/complete/cancel/viewed + GetEndingConsequences/GetConclusions | UI làm tóm tắt và xác nhận riêng; presenter ghép hậu quả toàn bộ dimensions thành một chuỗi; Map & Asset cung cấp shot/animation/audio/media; hoàn tất thực mới gọi Complete, pause thực presenter khi Paused; hủy/Load dừng và không Complete |
+
+Thứ tự tích hợp: nhận cả chuỗi→chọn catalog/profile đúng→consumer conversation/history và producer world→gate/phiếu/cipher→typed notes→C2 samples/documents→C3 rubric review→station presenter→tuyến scene chung. **Cần wiring mới**, không áp câu “không cần wiring” của gói guard cũ cho gói này. Trước khi đổi session partial, UI/UX & Tích hợp gửi patch/yêu cầu cho Gameplay; không sửa song song. Không có đề nghị nút khôi phục chung mới ngoài đường quay lại điều tra đã được chủ dự án yêu cầu ở E1/E2.
+
+Acceptance scene chung: thu chưa xem khóa H1; xem mở không cần Ghi; nghe lưu history nhưng chưa thành note; cancel/pause/Load không lộ topic/câu cũ; nghe chỉ dẫn mở đúng nơi; Bảo cần ghi bản giải trước, không M3; gửi tại Hà không đòi Ghi, không giải lại; phiếu riêng mở không exception; nhìn đủ nguồn mới Ghi typed note; report hiện source/conditions/limits; chốt trước ga; vào ga không tự chạy; thiếu reply vẫn quay lại được; summary/cancel/pause/completion lỗi/replay/Load không mất tiến trình hoặc checkpoint trùng. C2/C3 chưa đủ asset/biên nhận vẫn **CHỜ KIỂM CHỨNG**, không dùng reviewed=true làm chứng nhận.
+
+#### Bằng chứng và giới hạn đợt này
+
+Source đã chạy khớp `36ad492c`; `21ee7b1f` chứa đúng công cụ/UI thử cuối. Unity6000.6.2f1 batch, scene Gameplay, profile mới mỗi lượt. Run05 đạt **86/86**: 49 assertion API/action route, 6 event Unity F5/F6/Esc với setup API, 1 lỗi IO mô phỏng temp-path-directory, 4 legacy-save, 18 malformed-save fixtures, 1 archived-snapshot fixture, 4 rubric ending TEST ONLY fixtures, 1 legacy-trial fixture, 1 missing-data API, 1 six-legacy-note fixture. Compat01 thêm **4/4** đọc-only trên hai save1 có trước (raw alias và profile đã giải đầy đủ), so sánh progress explicit và bytes, không suy heard/viewed. Không cộng các lượt phát triển thành số ca độc lập mới.
+
+Lịch sử không xóa: Run01 tái hiện lỗi API nhận cặp Bảo cho bài giấy, dừng tại assertion paper_wrong_Bao_pair_rejected; các phần sau NOT_RUN của lượt đó. Đã sửa guard trước state. Run02 77/77 trên nguồn trung gian; Run03 80/80 sau tách lời nguồn mẫu/projection report; Run04 83/83 sau source/ending-viewed/legacy guards; Run05 86/86 thêm query nguồn động receipt tránh UI trial lookup thiếu và fixture cargo không R-12. Đây là mở rộng có thay đổi cụ thể, không lặp lại toàn bộ API/IO/trial trước đây.
+
+Lỗi IO ở hoàn tất được mô phỏng bằng thư mục `.tmp` **chỉ trong profile GUID thử**, cleanup finally; main/state không đổi, gỡ điều kiện rồi hoàn tất được. Không làm đầy ổ/đổi quyền/đụng save gốc; không bằng chứng crash/mất điện. Hậu quả sai chỉ kiểm bằng rubric TEST ONLY; tuyến liên tục dùng kết luận trung thực A-treo, không chứng minh chuỗi gây ngã/ending C sản phẩm. Không có input Windows, FPS movement thật, người chơi tự nhiên, scene chung hoặc UI1080p PASS; 6 event là **event Unity Editor**. P-close/IO-OPEN-01 giữ riêng, không tuyên đã hết. Không sửa scene/UI sản phẩm/map, GDD, ID/GUID cũ; không merge/build/ZIP.
+
+- `run01/results.json`: SHA256 `5b1711dece60d8440f375829101789b2d9f4bd77d9d46fb6a17ea046333d6f62`; failures=1. Output/profile/log chỉ local, không commit.
+
+- `run02/results.json`: SHA256 `d044b037670cdbd4ce6ac339dcb7377ba4b5db63787c9de3e94fb15b6e1ab7ef`; failures=0. Output/profile/log chỉ local, không commit.
+
+- `run03/results.json`: SHA256 `04cf8c5f3173c694e95c39a24afad71d1b4c29a225a97b10e9514830f387140a`; failures=0. Output/profile/log chỉ local, không commit.
+
+- `run04/results.json`: SHA256 `4b60ebc57e9a1ddd8ca8124fe52f7810c702ea969fa708d22a206d419e9c3172`; failures=0. Output/profile/log chỉ local, không commit.
+
+- `run05/results.json`: SHA256 `bf5f41c4af3e2be1b33009d3d6b21a08aaf33c25b85592e01244851860d54656`; failures=0. Output/profile/log chỉ local, không commit.
+
+- `compat01/results.json`: SHA256 `5604a4afd5333ce6bf7d5472398769ac37fb8321336c32021426e65afd5fa3f7`; failures=0. Output/profile/log chỉ local, không commit.
+
+
+**Kết thúc phần độc lập của các quyết định đã nhận:** RUNTIME ĐÃ KIỂM / MÔ PHỎNG ĐÃ KIỂM → CHỜ ASSET-UI, chưa kiểm scene chung. Không còn câu hỏi thiết kế H/G/E/ND trong bảng cần hỏi lại. C2/C3 có chủ nhận và CHỜ SẢN XUẤT/KIỂM CHỨNG; các NPC/diễn đạt chưa có script cuối không tự thêm thoại mới. Gameplay quay lại khi nhận feature/documents/footage/biên nhận để bind catalog/rubric sản phẩm, xử lý catalog-save compatibility cụ thể và lỗi tích hợp có tái hiện. Không báo toàn game hoàn tất hoặc coi legacy API đã tự có chức năng toàn tuyến.
