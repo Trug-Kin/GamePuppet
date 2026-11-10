@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using System.Reflection;
 using UnityEngine;
 using UnityEditor;
 using UnityEditor.SceneManagement;
@@ -11,13 +12,24 @@ namespace ConRoi.Gameplay.EditorChecks
     {
         public const string Scene="Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity";
         const string Armed="ConRoi.FullCase.Play.Armed";
+        static EditorWindow cursorView;
         static FullCaseSandboxWindow panel;public static FullCasePlayHost Active {get;private set;}
         internal static FullCaseSandboxWindow Panel=>panel;
         static FullCasePlayLauncher(){EditorApplication.playModeStateChanged+=OnState;}
         [MenuItem("Con Roi/Gameplay/Choi the gioi TEST ONLY (Play Mode)")]
         public static void Open(){if(EditorApplication.isPlayingOrWillChangePlaymode)throw new InvalidOperationException("Dừng Play trước khi tạo phiên thử sạch.");if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().path!=Scene||UnityEngine.SceneManagement.SceneManager.GetActiveScene().isDirty)throw new InvalidOperationException("Mở scene Gameplay_ThuNghiem sạch trước; menu không ghi/đổi scene đang làm.");SessionState.SetBool(Armed,true);EditorApplication.EnterPlaymode();}
         static void OnState(PlayModeStateChange state){if(state==PlayModeStateChange.EnteredPlayMode&&SessionState.GetBool(Armed,false)){SessionState.SetBool(Armed,false);Build();}
-            if(state==PlayModeStateChange.ExitingPlayMode){if(panel)UnityEngine.Object.DestroyImmediate(panel);panel=null;Active=null;}}
+            if(state==PlayModeStateChange.ExitingPlayMode){if(panel)UnityEngine.Object.DestroyImmediate(panel);panel=null;Active=null;cursorView=null;}}
+        // Editor keeps a separate cursor permission after Esc; runtime Cursor setters
+        // alone can report Locked while Windows still shows the pointer. Test host only.
+        static void CursorContext(bool world){
+            var focused=EditorWindow.focusedWindow;
+            if(focused&&focused.GetType().Name=="GameView")cursorView=focused;
+            if(!cursorView)return;
+            var allow=cursorView.GetType().GetMethod("AllowCursorLockAndHide",BindingFlags.Instance|BindingFlags.Static|BindingFlags.Public|BindingFlags.NonPublic|BindingFlags.FlattenHierarchy,null,new[]{typeof(bool)},null);
+            if(allow==null){Debug.LogWarning("TEST ONLY: Unity Editor cursor permission API unavailable; native cursor requires recheck.");return;}
+            allow.Invoke(allow.IsStatic?null:cursorView,new object[]{world});
+        }
         static GameObject Cube(string name,Transform parent,Vector3 point,Vector3 scale){var g=GameObject.CreatePrimitive(PrimitiveType.Cube);g.name="TEST ONLY • "+name;g.transform.SetParent(parent,false);g.transform.localPosition=point;g.transform.localScale=scale;return g;}
         static void Target(FullCasePlayHost host,Transform zone,string location,string key,string id,FullPlayAction action,float x,FullCaseModal page=FullCaseModal.None){var g=Cube(key,zone,new Vector3(x,1.6f,0),new Vector3(.65f,.8f,.3f));var t=g.AddComponent<FullCasePlayTarget>();t.Key=key;t.StableId=id;t.LocationId=location;t.Label="TEST ONLY • "+id;t.Action=action;t.Page=page;host.Targets.Add(key,t);
             var sign=new GameObject("TEST ONLY label");sign.transform.SetParent(g.transform,false);sign.transform.localPosition=new Vector3(0,.8f,-.8f);sign.transform.localScale=new Vector3(1/.65f,1/.8f,1/.3f);var text=sign.AddComponent<TextMesh>();text.text=id;text.characterSize=.13f;text.anchor=TextAnchor.MiddleCenter;text.color=Color.white;}
@@ -39,7 +51,7 @@ namespace ConRoi.Gameplay.EditorChecks
                 if(location.id=="station")Target(host,zone.transform,location.id,"appointment","Cuộc hẹn",FullPlayAction.Appointment,-10);
                 i=0;foreach(var destination in adapter.Runtime.GetLocations())Target(host,zone.transform,location.id,"travel."+location.id+"."+destination.id,destination.id,FullPlayAction.Travel,-14-i++*2.2f);
             }
-            host.TextInputFocused=()=>panel.TextInputFocused;host.DrawPanel=panel.DrawPlayUI;host.Inspect=panel.InspectFromWorld;host.Talk=panel.TalkFromWorld;host.Feedback=panel.ResultFromWorld;host.Profile=adapter.Profile;host.Visible=()=>EditorWindow.focusedWindow!=null&&EditorWindow.focusedWindow.GetType().Name=="GameView";host.Initialize(adapter.Runtime);
+            host.CursorContextChanged=CursorContext;host.TextInputFocused=()=>panel.TextInputFocused;host.DrawPanel=panel.DrawPlayUI;host.Inspect=panel.InspectFromWorld;host.Talk=panel.TalkFromWorld;host.Feedback=panel.ResultFromWorld;host.Profile=adapter.Profile;host.Visible=()=>EditorWindow.focusedWindow!=null&&EditorWindow.focusedWindow.GetType().Name=="GameView";host.Initialize(adapter.Runtime);
             var view=EditorWindow.GetWindow(typeof(Editor).Assembly.GetType("UnityEditor.GameView"));view.Show();view.Focus();
         }
     }

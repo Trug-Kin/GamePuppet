@@ -16,6 +16,7 @@ namespace ConRoi.Gameplay.TestOnly
         public readonly Dictionary<string,Vector3> Spawns=new Dictionary<string,Vector3>();
         public readonly Dictionary<string,FullCasePlayTarget> Targets=new Dictionary<string,FullCasePlayTarget>();
         public Func<bool> TextInputFocused;public Action<Rect> DrawPanel;public Func<string,FullActionResult> Inspect,Talk;
+        public Action<bool> CursorContextChanged;bool? cursorWorld;
         public Action<FullActionResult> Feedback;public Func<bool> Visible;
         public FullCasePlayTarget Focused {get;private set;}
         public string LastWorldKey {get;private set;}="";
@@ -30,7 +31,7 @@ namespace ConRoi.Gameplay.TestOnly
             if(reset&&Spawns.TryGetValue(location,out var point)){Movement.controller.enabled=false;Movement.transform.position=point;Movement.transform.rotation=Quaternion.identity;Eye.transform.localRotation=Quaternion.identity;Look.RestorePitch(0);Movement.ResetVerticalMotion();Movement.controller.enabled=true;}
             OwnInput();
         }
-        void OwnInput(){bool world=Runtime.CanMove&&(Visible==null||Visible());Movement.enabled=world;Look.enabled=world;Cursor.lockState=world?CursorLockMode.Locked:CursorLockMode.None;Cursor.visible=!world;}
+        void OwnInput(){bool world=Runtime.CanMove&&(Visible==null||Visible());if(cursorWorld!=world){cursorWorld=world;CursorContextChanged?.Invoke(world);}Movement.enabled=world;Look.enabled=world;Cursor.lockState=world?CursorLockMode.Locked:CursorLockMode.None;Cursor.visible=!world;}
         void Update(){if(!initialized)return;var k=Keyboard.current;
             if(k!=null&&(Visible==null||Visible())){if(k.escapeKey.wasPressedThisFrame){if(Runtime.Modal!=FullCaseModal.None)Runtime.Cancel();else Runtime.SetPaused(!Runtime.Paused);}
                 bool typing=Runtime.Modal!=FullCaseModal.None&&(TextInputFocused?.Invoke()??false);
