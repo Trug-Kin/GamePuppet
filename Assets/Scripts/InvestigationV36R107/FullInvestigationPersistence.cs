@@ -18,10 +18,14 @@ namespace ConRoi.Investigation.V36.R107
         bool ValidRequirement(FullRequirement r)
         {
             if(r==null||!Enum.IsDefined(typeof(FullRequirementKind),r.kind))return false;
+            if(r.kind==FullRequirementKind.SourcedObservation)return SourcedKeys.Contains(r.id)&&r.index==-1;
+            if(r.kind==FullRequirementKind.ReplySent)return r.id==""&&r.index==-1;
+            if(r.kind==FullRequirementKind.Heard)return FullApprovedStatements.Find(r.id)!=null&&r.index==-1;
             if(r.kind==FullRequirementKind.Finalized)return r.id==""&&r.index==-1;
             if(string.IsNullOrEmpty(r.id))return false;
             switch(r.kind){
-                case FullRequirementKind.Collected:return Evidence(r.id)!=null&&r.index==-1;
+                case FullRequirementKind.Collected:
+                case FullRequirementKind.Inspected:return Evidence(r.id)!=null&&r.index==-1;
                 case FullRequirementKind.Recorded:return IsKnownObservation(r.id,r.index);
                 case FullRequirementKind.Comparison:return catalog.comparisons.Any(c=>c.id==r.id)&&r.index==-1;
                 case FullRequirementKind.Decoded:return FullInvestigationLetters.Ids.Contains(r.id)&&Evidence(r.id)!=null&&r.index==-1;
@@ -60,6 +64,10 @@ namespace ConRoi.Investigation.V36.R107
             if(!ValidRequirement(r))return false;
             switch(r.kind){
                 case FullRequirementKind.Collected:return s.evidence.Any(e=>e.id==r.id);
+                case FullRequirementKind.Inspected:return s.evidence.Any(e=>e.id==r.id&&e.viewed);
+                case FullRequirementKind.Heard:return s.heardStatements.Any(h=>h.id==r.id);
+                case FullRequirementKind.SourcedObservation:return s.sourcedNotes.Contains(r.id);
+                case FullRequirementKind.ReplySent:return s.replySent&&s.replyProducerVerified;
                 case FullRequirementKind.Recorded:return (r.id!="clip"||(s.clipBeforeSeen&&s.clipEventSeen))&&s.evidence.Any(e=>e.id==r.id&&e.observations.Contains(r.index));
                 case FullRequirementKind.Decoded:return s.decoded.Contains(r.id);
                 case FullRequirementKind.TrialRecorded:return s.trials.Any(t=>t.id==r.id);
@@ -73,7 +81,7 @@ namespace ConRoi.Investigation.V36.R107
             }
         }
         bool Citable(FullCaseSave save,FullRequirement requirement)=>ValidRequirement(requirement)&&
-            (requirement.kind==FullRequirementKind.Comparison?save.comparisons.Any(a=>a.id==requirement.id):MeetsIn(save,requirement));
+            (requirement.kind==FullRequirementKind.Heard?save.recordedStatements.Contains(requirement.id):requirement.kind==FullRequirementKind.Comparison?save.comparisons.Any(a=>a.id==requirement.id):MeetsIn(save,requirement));
         static JObject ParseStrict(string json)
         {
             using(var reader=new JsonTextReader(new StringReader(json))){reader.DateParseHandling=DateParseHandling.None;
@@ -87,18 +95,33 @@ namespace ConRoi.Investigation.V36.R107
         FullCaseSave ParseSave(string json)
         {
             var parsed=ParseStrict(json);
-            Require(parsed["schema"]?.Type==JTokenType.Integer&&parsed.Value<int>("schema")==1&&parsed["namespaceId"]?.Type==JTokenType.String&&parsed["catalogHash"]?.Type==JTokenType.String,"Thiếu schema/namespace/catalog rõ ràng.");
+            Require(parsed["schema"]?.Type==JTokenType.Integer&&(parsed.Value<int>("schema")==1||parsed.Value<int>("schema")==2)&&parsed["namespaceId"]?.Type==JTokenType.String&&parsed["catalogHash"]?.Type==JTokenType.String,"Thiếu schema/namespace/catalog rõ ràng.");
             foreach(var field in new[]{"evidence","mapping","decoded","permissions","comparisons","relations","trials","conclusions","unsupportedDimensions"})ArrayField(parsed,field);
             foreach(var e in (JArray)parsed["evidence"]){Require(e is JObject,"Vật chứng phải là object.");ArrayField((JObject)e,"observations");foreach(var index in (JArray)e["observations"])Require(index.Type==JTokenType.Integer,"Chỉ số quan sát phải nguyên.");}
             foreach(var c in (JArray)parsed["conclusions"]){Require(c is JObject,"Kết luận phải là object.");ArrayField((JObject)c,"grounds");}
             foreach(var c in (JArray)parsed["comparisons"]){Require(c is JObject,"Đối chiếu phải là object.");ArrayField((JObject)c,"evidenceIds");}
-            var incoming=JsonUtility.FromJson<FullCaseSave>(json);ValidateState(incoming);return incoming;
+            int version=parsed.Value<int>("schema");Require(version==1||version==2,"Schema toàn tuyến chưa được hỗ trợ.");
+            if(version==2){foreach(var field in new[]{"heardStatements","recordedStatements","sourcedNotes"})ArrayField(parsed,field);Require(parsed["endingViewed"]?.Type==JTokenType.Boolean&&parsed["replyProducerVerified"]?.Type==JTokenType.Boolean,"Thiếu cờ lifecycle mới.");}
+            if(version==2)foreach(var token in (JArray)parsed["heardStatements"]){
+                Require(token is JObject,"Lời khai phải là object.");var h=(JObject)token;
+                foreach(var key in new[]{"id","topicId","participantId","question","answer"})Require(h[key]?.Type==JTokenType.String,"Lời khai thiếu trường chữ "+key+".");
+                Require(h["version"]?.Type==JTokenType.Integer,"Phiên bản lời khai phải nguyên.");
+            }
+            var incoming=JsonUtility.FromJson<FullCaseSave>(json);
+            if(version==1){incoming.schema=2;incoming.heardStatements=new List<FullHeardStatement>();incoming.recordedStatements=new List<string>();incoming.sourcedNotes=new List<string>();incoming.endingViewed=false;incoming.replyProducerVerified=false;}
+            ValidateState(incoming);return incoming;
         }
         void ValidateState(FullCaseSave s)
         {
-            Require(s!=null&&s.schema==1&&s.namespaceId=="conroi.investigation.v36.fullcase"&&s.catalogHash==catalogHash,"Sai schema, namespace hoặc catalog/revision.");
+            Require(s!=null&&s.schema==2&&s.namespaceId=="conroi.investigation.v36.fullcase"&&s.catalogHash==catalogHash,"Sai schema, namespace hoặc catalog/revision.");
             Require(s.evidence!=null&&s.mapping!=null&&s.decoded!=null&&s.permissions!=null&&s.comparisons!=null&&s.relations!=null&&s.trials!=null&&s.conclusions!=null&&s.unsupportedDimensions!=null,"Thiếu collection.");
             Require(s.evidence.All(e=>e!=null)&&s.mapping.All(m=>m!=null)&&s.comparisons.All(c=>c!=null)&&s.relations.All(r=>r!=null)&&s.trials.All(t=>t!=null)&&s.conclusions.All(c=>c!=null),"Collection có phần tử null.");
+            Require(s.heardStatements!=null&&s.heardStatements.All(h=>h!=null)&&Ids(s.heardStatements.Select(h=>h.id))&&Ids(s.recordedStatements)&&Ids(s.sourcedNotes),"Lịch sử/nguồn mới thiếu, null hoặc trùng.");
+            foreach(var h in s.heardStatements){var d=FullApprovedStatements.Find(h.id);Require(d!=null&&h.topicId==d.Topic.Id&&h.participantId==d.Topic.ParticipantId&&h.version>=1&&!string.IsNullOrWhiteSpace(h.question)&&!string.IsNullOrWhiteSpace(h.answer),"Statement ID/topic/snapshot sai.");}
+            Require(s.recordedStatements.All(id=>s.heardStatements.Any(h=>h.id==id))&&s.sourcedNotes.All(id=>SourcedKeys.Contains(id)),"Reference ghi nhận mới sai.");
+            foreach(var id in s.sourcedNotes){string source=id==SourcedKeys[0]?"mechanism":id==SourcedKeys[1]?"hook":id==SourcedKeys[2]?"samples":id==SourcedKeys[3]?"letter":"draft";Require(s.evidence.Any(e=>e.id==source&&e.viewed)&&(id!=SourcedKeys[3]||s.evidence.Any(e=>e.id=="henri"&&e.viewed)),"Nguồn quan sát mới chưa xem.");}
+            Require(!s.endingViewed||s.finalized&&s.replyProducerVerified,"Chưa qua điều kiện cuộc hẹn không thể đã xem ending.");
+            Require(!s.replyProducerVerified||s.replySent&&s.decoded.Count>0&&s.heardStatements.Any(h=>h.id=="ha.channel.paper"),"Hồi đáp thiếu producer.");
             Require(Ids(s.evidence.Select(e=>e.id))&&Ids(s.mapping.Select(m=>m.pose))&&Ids(s.comparisons.Select(c=>c.id))&&Ids(s.conclusions.Select(c=>c.id))&&Ids(s.decoded)&&Ids(s.permissions)&&Ids(s.unsupportedDimensions),"Có ID trùng hoặc rỗng.");
             Require(catalog.locations.Any(l=>l.id==s.location)&&s.held!=null,"Địa điểm hoặc vật cầm sai.");
             foreach(var r in s.evidence){var d=Evidence(r.id);Require(d!=null&&r.observations!=null&&r.observations.Distinct().Count()==r.observations.Count&&r.observations.All(i=>i>=0&&i<d.observations.Length),"Quan sát hoặc ID vật chứng sai.");

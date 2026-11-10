@@ -59,27 +59,27 @@ namespace ConRoi.Investigation.V36.R107
             finally{notifying=false;}
         }
         public void SetPaused(bool value){if(notifying)return;Paused=value;confirmation=null;Publish(false);}
-        public void SetModal(FullCaseModal value){if(notifying||!Enum.IsDefined(typeof(FullCaseModal),value))return;Modal=value;confirmation=null;Publish(false);}
-        public void Cancel(){SetModal(FullCaseModal.None);}
+        public void SetModal(FullCaseModal value){if(notifying||!Enum.IsDefined(typeof(FullCaseModal),value))return;if(value!=FullCaseModal.Ending){EndingPlaying=false;EndingSummaryOpen=false;} if(value!=FullCaseModal.Conversation)conversation="";Modal=value;confirmation=null;Publish(false);}
+        public void Cancel(){if(notifying)return;conversation="";EndingPlaying=false;EndingSummaryOpen=false;SetModal(FullCaseModal.None);}
         public FullLocationDefinition[] GetLocations()=>catalog.locations.Select(l=>new FullLocationDefinition{id=l.id,label=l.label}).ToArray();
-        public bool CanTravel(string id)=>catalog.locations.Any(l=>l.id==id&&MeetsAll(l.requires));
+        public bool CanTravel(string id)=>catalog.locations.Any(l=>l.id==id&&LocationOpen(l));
         public FullActionResult TryTravel(string id)
         {
             if(!Ready(out var e,true))return e;
             if(Modal!=FullCaseModal.None)return Fail("modal","Hãy đóng thao tác hiện tại trước khi chuyển nơi.");
             var location=catalog.locations.FirstOrDefault(l=>l.id==id);
             if(location==null)return Fail("unknown-location","Không có địa điểm này trong tuyến.");
-            if(!MeetsAll(location.requires))return Fail("locked","Chưa có đầu mối hoặc điều kiện để tới nơi này.");
+            if(!LocationOpen(location))return Fail("locked","Chưa có đầu mối hoặc điều kiện để tới nơi này.");
             if(state.location==id)return Done();
             state.location=id;Publish();return Done("Đã chuyển địa điểm.");
         }
-        FullEvidenceDefinition Evidence(string id)=>catalog.evidence.FirstOrDefault(e=>e.id==id);
+        FullEvidenceDefinition Evidence(string id)=>catalog.evidence.FirstOrDefault(e=>e.id==id)??(id==ChannelReceipt.id?ChannelReceipt:null);
         FullEvidenceRecord Record(string id)=>state.evidence.FirstOrDefault(e=>e.id==id);
         public bool HasEvidence(string id)=>Record(id)!=null;
         bool Readable(string id)=>id!="clip"||(state.clipBeforeSeen&&state.clipEventSeen);
         public bool HasRecordedObservation(string id,int index)=>Readable(id)&&Record(id)?.observations.Contains(index)==true;
         public bool IsKnownObservation(string id,int index)=>Evidence(id)!=null&&index>=0&&index<Evidence(id).observations.Length;
-        public FullEvidenceDefinition[] GetLocalEvidence()=>catalog.evidence.Where(e=>e.id!="decoded"&&e.location==Location&&MeetsAll(e.requires)).Select(e=>new FullEvidenceDefinition{id=e.id,label=e.label,location=e.location,portable=e.portable}).ToArray();
+        public FullEvidenceDefinition[] GetLocalEvidence()=>catalog.evidence.Concat(new[]{ChannelReceipt}).GroupBy(e=>e.id).Select(g=>g.First()).Where(e=>e.id!="decoded"&&e.location==Location&&MeetsAll(e.requires)).Select(e=>new FullEvidenceDefinition{id=e.id,label=e.label,location=e.location,portable=e.portable}).ToArray();
         public FullEvidenceRecord[] GetRecords()=>state.evidence.Select(Copy).ToArray();
         public FullActionResult TryCollect(string id)
         {
@@ -101,6 +101,7 @@ namespace ConRoi.Investigation.V36.R107
             record.viewed=true;Modal=FullCaseModal.Inspect;Publish();return Done("Đã mở xem.");
         }
         public string GetDescription(string id)=>Record(id)?.viewed==true?(Readable(id)?Evidence(id).text:"Hãy xem cả trước và trong sự cố trước khi đọc ghi nhận clip."):"";
+        public string[] GetObservationOptions(string id)=>Record(id)?.viewed==true&&Readable(id)?(string[])Evidence(id).observations.Clone():Array.Empty<string>();
         public string[] GetRecordedNotes(string id)=>!HasEvidence(id)||!Readable(id)?Array.Empty<string>():Record(id).observations.Select(i=>Evidence(id).observations[i]).ToArray();
         public string GetNoteKind(string id)=>HasEvidence(id)?Evidence(id).kind:"Unclassified";
         public string GetNoteSource(string id)=>HasEvidence(id)?Evidence(id).source:"";
@@ -176,6 +177,7 @@ namespace ConRoi.Investigation.V36.R107
         {
             if(!Ready(out var e))return e;
             var letter=GetLetter(id);
+            if(state.decoded.Contains(id)&&Modal==FullCaseModal.Cipher)return Done("Bản đọc này đã được ghi hợp lệ; không cần giải lại.");
             if(Modal!=FullCaseModal.Cipher||!letter.HasValue)return Fail("letter","Chưa mở thư này.");
             if(letter.Value.Reading.Replace(" • "," ")!=FullInvestigationLetters.Plain(id))return Fail("reading","Đã giữ bản đọc thử; chưa ghi được nội dung hoàn chỉnh.");
             if(!state.decoded.Contains(id)){state.decoded.Add(id);Publish();}
@@ -188,10 +190,10 @@ namespace ConRoi.Investigation.V36.R107
         }
         public FullActionResult TrySendReply(string[] orderedPhrases)
         {
-            if(!Ready(out var e))return e;
-            if(Modal!=FullCaseModal.Cipher||!MeetsAll(catalog.replyChannelRequirements)||catalog.replyChannelRequirements.Length==0)return Fail("channel","Chưa có căn cứ về kênh nhận/trả giấy.");
+            if(!Ready(out var e,true))return e;
+            if(Modal!=FullCaseModal.Cipher||Location!="market"||!HasHeardStatement("ha.channel.paper")||state.decoded.Count==0)return Fail("channel","Chưa có căn cứ về kênh nhận/trả giấy.");
             if(orderedPhrases==null||!orderedPhrases.SequenceEqual(FullInvestigationLetters.ReplyPhrases))return Fail("reply","Các cụm hồi đáp chưa đúng thứ tự; có thể sửa lại.");
-            if(!state.replySent){state.replySent=true;Publish();}
+            if(!state.replySent||!state.replyProducerVerified){state.replySent=true;state.replyProducerVerified=true;Publish();}
             return Done("Đã gửi hồi đáp qua kênh đã biết; không có đồng hồ đếm ngược.");
         }
         public FullComparisonDefinition[] GetComparisons()=>catalog.comparisons.Where(c=>MeetsAll(c.requires)).Select(c=>new FullComparisonDefinition{id=c.id,label=c.label,evidenceIds=(string[])c.evidenceIds.Clone(),options=(string[])c.options.Clone()}).ToArray();
@@ -204,6 +206,8 @@ namespace ConRoi.Investigation.V36.R107
         {
             if(!Ready(out var e))return e;
             var d=catalog.comparisons.FirstOrDefault(c=>c.id==taskId);
+            if(taskId=="paper"&&d!=null&&(!d.evidenceIds.Contains("letter")||!d.evidenceIds.Contains("paper.khai")))return Fail("catalog-legacy","Bài giấy cần catalog dải Hà và nháp Khải; không dùng cặp dữ liệu thử cũ.");
+            if(taskId=="paper"&&(evidenceIds==null||evidenceIds.Length!=2||!evidenceIds.Contains("letter")||!evidenceIds.Contains("paper.khai")))return Fail("comparison","Cần dải thư Hà và nháp Khải để đối chiếu giấy.");
             if(Modal!=FullCaseModal.Comparison||d==null||!MeetsAll(d.requires)||evidenceIds==null||evidenceIds.Length!=d.evidenceIds.Length||evidenceIds.Distinct().Count()!=evidenceIds.Length||evidenceIds.Any(id=>Record(id)?.viewed!=true)||!d.options.Contains(option))return Fail("comparison","Chưa đủ nguồn đã xem hoặc lựa chọn đối chiếu chưa hợp lệ.");
             var attempt=new FullComparisonAttempt{id=taskId,evidenceIds=(string[])evidenceIds.Clone(),option=option};
             var old=state.comparisons.FirstOrDefault(a=>a.id==taskId);if(old!=null)state.comparisons.Remove(old);state.comparisons.Add(attempt);
@@ -216,6 +220,8 @@ namespace ConRoi.Investigation.V36.R107
             foreach(var record in state.evidence)if(Readable(record.id))foreach(int index in record.observations)result.Add(new FullRequirement(FullRequirementKind.Recorded,record.id,index));
             foreach(var attempt in state.comparisons)result.Add(new FullRequirement(FullRequirementKind.Comparison,attempt.id));
             foreach(var letter in state.decoded)result.Add(new FullRequirement(FullRequirementKind.Decoded,letter));
+            foreach(var id in state.recordedStatements)result.Add(new FullRequirement(FullRequirementKind.Heard,id));
+            foreach(var id in state.sourcedNotes)result.Add(new FullRequirement(FullRequirementKind.SourcedObservation,id));
             foreach(var trial in state.trials.GroupBy(t=>t.id).Select(g=>g.First()))result.Add(new FullRequirement(FullRequirementKind.TrialRecorded,trial.id));
             return result.ToArray();
         }
@@ -301,7 +307,7 @@ namespace ConRoi.Investigation.V36.R107
                 }}
             }
         }
-        void ResetTransient(){Modal=FullCaseModal.None;Paused=false;confirmation=null;TrialId="";TrialTime=0;TrialDuration=0;TrialRunning=false;trialRecorded=false;clearAt=float.PositiveInfinity;MediaTime=0;MediaPlaying=false;}
+        void ResetTransient(){conversation="";EndingSummaryOpen=false;EndingPlaying=false;Modal=FullCaseModal.None;Paused=false;confirmation=null;TrialId="";TrialTime=0;TrialDuration=0;TrialRunning=false;trialRecorded=false;clearAt=float.PositiveInfinity;MediaTime=0;MediaPlaying=false;}
         public string ExportStateJson()=>JsonUtility.ToJson(state,true);
     }
 }

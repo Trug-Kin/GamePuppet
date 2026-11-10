@@ -4,8 +4,8 @@ using System.Linq;
 
 namespace ConRoi.Investigation.V36.R107
 {
-    public enum FullRequirementKind { Collected, Recorded, Comparison, Decoded, Permission, Finalized, TrialRecorded }
-    public enum FullCaseModal { None, Inspect, Cipher, Comparison, Conversation, Reconstruction, Conclusions, Media }
+    public enum FullRequirementKind { Collected, Recorded, Comparison, Decoded, Permission, Finalized, TrialRecorded, Inspected, Heard, ReplySent, SourcedObservation }
+    public enum FullCaseModal { None, Inspect, Cipher, Comparison, Conversation, Reconstruction, Conclusions, Media, Ending }
     public enum FullEnding { None, Complete, Open, Unsupported }
     [Serializable] public sealed class FullRequirement
     {
@@ -61,7 +61,7 @@ namespace ConRoi.Investigation.V36.R107
     { public string id,option; public string[] evidenceIds=new string[0]; }
     [Serializable] public sealed class FullCaseSave
     {
-        public int schema=1; public string namespaceId="conroi.investigation.v36.fullcase",catalogHash,location,held="";
+        public int schema=2; public string namespaceId="conroi.investigation.v36.fullcase",catalogHash,location,held="";
         public List<FullEvidenceRecord> evidence=new List<FullEvidenceRecord>();
         public List<CharacterAssignment> mapping=new List<CharacterAssignment>();
         public List<string> decoded=new List<string>(),permissions=new List<string>();
@@ -71,6 +71,9 @@ namespace ConRoi.Investigation.V36.R107
         public List<FullConclusionDraft> conclusions=new List<FullConclusionDraft>();
         public bool replySent,finalized,clipBeforeSeen,clipEventSeen; public float clipBeforeExposure,clipEventExposure;
         public FullEnding ending; public List<string> unsupportedDimensions=new List<string>();
+        public List<FullHeardStatement> heardStatements=new List<FullHeardStatement>();
+        public List<string> recordedStatements=new List<string>(),sourcedNotes=new List<string>();
+        public bool endingViewed,replyProducerVerified;
         public GateState gate=new GateState();
     }
     public readonly struct FullActionResult

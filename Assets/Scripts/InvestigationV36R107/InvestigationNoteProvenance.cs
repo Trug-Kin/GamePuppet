@@ -5,23 +5,23 @@ using System.Linq;
 namespace ConRoi.Investigation.V36.R107
 {
     public enum NoteProvenanceKind { Unclassified, Observation, Statement, Hypothesis }
-    public enum NoteProvenanceStatus { MissingMetadata, Classified, ContentReviewPending }
+    public enum NoteProvenanceStatus { MissingMetadata, Classified, ContentReviewPending, LegacySourceUnresolved }
     public enum InvestigationNoteOrigin { RecordedEvidence, PlayerRelation, PlayerConclusion, TrialResult }
 
     // Derived, immutable UI snapshot. None of these fields are serialized into InvestigationSave.
     public readonly struct InvestigationNote
     {
         public readonly InvestigationNoteOrigin Origin;
-        public readonly string EvidenceId, RelatedEvidenceId, Text, Source;
+        public readonly string EvidenceId, RelatedEvidenceId, Text, Source, Conditions, Limitations;
         // Observation index for RecordedEvidence; current list index for other origins (not a durable save ID).
         public readonly int EntryIndex;
         public readonly NoteProvenanceKind Kind;
         public readonly NoteProvenanceStatus Status;
         public string KindLabel => Kind == NoteProvenanceKind.Observation ? "Quan sát" : Kind == NoteProvenanceKind.Statement ? "Lời kể" : Kind == NoteProvenanceKind.Hypothesis ? "Giả thuyết" : "Chưa phân loại";
-        public string StatusLabel => Status == NoteProvenanceStatus.Classified ? "Đã phân loại nguồn" : Status == NoteProvenanceStatus.ContentReviewPending ? "CHỜ REVIEW NỘI DUNG" : "Thiếu metadata";
+        public string StatusLabel => Status == NoteProvenanceStatus.Classified ? "Đã phân loại nguồn" : Status == NoteProvenanceStatus.LegacySourceUnresolved ? "Dữ liệu legacy • chưa tách nguồn" : Status == NoteProvenanceStatus.ContentReviewPending ? "CHỜ REVIEW NỘI DUNG" : "Thiếu metadata";
         internal InvestigationNote(InvestigationNoteOrigin origin, string id, string relatedId, int index, string text,
-            NoteProvenanceKind kind, NoteProvenanceStatus status, string source)
-        { Origin = origin; EvidenceId = id; RelatedEvidenceId = relatedId; EntryIndex = index; Text = text; Kind = kind; Status = status; Source = source; }
+            NoteProvenanceKind kind, NoteProvenanceStatus status, string source, string conditions = "", string limitations = "")
+        { Origin = origin; EvidenceId = id; RelatedEvidenceId = relatedId; EntryIndex = index; Text = text; Kind = kind; Status = status; Source = source; Conditions = conditions; Limitations = limitations; }
     }
 
     internal static class InvestigationNoteMetadata
@@ -29,7 +29,7 @@ namespace ConRoi.Investigation.V36.R107
         internal readonly struct Entry
         {
             internal readonly NoteProvenanceKind Kind; internal readonly string Source;
-            internal NoteProvenanceStatus Status => Kind == NoteProvenanceKind.Unclassified ? NoteProvenanceStatus.ContentReviewPending : NoteProvenanceStatus.Classified;
+            internal NoteProvenanceStatus Status => Kind == NoteProvenanceKind.Unclassified ? NoteProvenanceStatus.LegacySourceUnresolved : NoteProvenanceStatus.Classified;
             internal Entry(NoteProvenanceKind kind, string source) { Kind = kind; Source = source; }
         }
         // Explicit ID/index mapping. Never infer provenance from translated text, selection or truth assessment.
@@ -117,8 +117,9 @@ namespace ConRoi.Investigation.V36.R107
                     if (t == null || string.IsNullOrWhiteSpace(t.report)) continue;
                     bool known = t.id != null && new[] { "release", "help", "hold", "hook", "wedge", "after" }.Any(id => t.id == id || t.id == id + "/clear-holds");
                     notes.Add(new InvestigationNote(InvestigationNoteOrigin.TrialResult, t.id ?? "", "", i, t.report,
-                        NoteProvenanceKind.Unclassified, known ? NoteProvenanceStatus.ContentReviewPending : NoteProvenanceStatus.MissingMetadata,
-                        "Bàn dựng • kết quả mô hình"));
+                        known ? NoteProvenanceKind.Observation : NoteProvenanceKind.Unclassified, known ? NoteProvenanceStatus.Classified : NoteProvenanceStatus.MissingMetadata,
+                        "Mô hình dựng lại", "Ca " + (t.id ?? "chưa biết") + (t.returnSeconds < 0 ? " • chưa đo thời gian hồi trong record" : " • hồi " + t.returnSeconds),
+                        "Quan sát mô hình với điều kiện thử đã ghi; không phải sự kiện hiện trường đã chứng minh hoặc xác nhận vật lý thật."));
                 }
             return notes.ToArray();
         }
