@@ -114,12 +114,14 @@ namespace ConRoi.Investigation.V36.R107
         {
             if(!Ready(out var e,true))return e;
             if(!EndingSummaryOpen||EndingPlaying||Modal!=FullCaseModal.Ending||Location!="station"||!CanBeginAppointment)return Fail("ending-context","Cần tương tác và xác nhận tóm tắt tại ga.");
+            var media=GetEndingMediaReadiness(state.ending);if(!media.Success)return Result(media);
             EndingPlaying=true;Publish(false);return Done("Bắt đầu một chuỗi trình diễn theo toàn bộ kết luận, không phát thưởng hoặc tạo checkpoint.");
         }
         public FullActionResult TryCompleteEndingPresentation(string profile)
         {
             if(!Ready(out var e,true))return e;
             if(!EndingPlaying||Modal!=FullCaseModal.Ending||Location!="station")return Fail("ending-context","Chưa có trình diễn đang chạy.");
+            var media=GetEndingMediaReadiness(state.ending);if(!media.Success)return Result(media);
             try{
                 if(!state.endingViewed){var pending=Copy(state);pending.endingViewed=true;ValidateState(pending);InvestigationSaveFile.Write(SavePathFor(profile),UnityEngine.JsonUtility.ToJson(pending,true));state=pending;}
                 EndingPlaying=false;EndingSummaryOpen=false;Modal=FullCaseModal.None;Publish(false);return Done("Đã xem hết trình diễn; xem lại không đổi hồ sơ hoặc checkpoint.");

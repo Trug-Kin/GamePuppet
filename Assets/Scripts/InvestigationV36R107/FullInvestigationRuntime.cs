@@ -30,10 +30,13 @@ namespace ConRoi.Investigation.V36.R107
         public GateState TrialState=>TrialTimeline.At(TrialId,TrialTime,clearAt);
         public float MediaTime {get;private set;}
         public bool MediaPlaying {get;private set;}
-        public FullInvestigationRuntime(FullCaseCatalog definitions)
+        public FullInvestigationRuntime(FullCaseCatalog definitions) : this(definitions,null) {}
+        FullInvestigationRuntime(FullCaseCatalog definitions,FullProductBindings bindings)
         {
             if(definitions==null)throw new ArgumentNullException(nameof(definitions));
-            catalog=Copy(definitions);ValidateCatalog();catalogHash=Hash(JsonUtility.ToJson(catalog));
+            catalog=Copy(definitions);ValidateCatalog();
+            if(!catalog.testOnly){productBindings=bindings==null?null:Copy(bindings);ValidateProductBindings();}
+            catalogHash=Hash(JsonUtility.ToJson(catalog)+(productBindings==null?"":ProductFeatureSignature()));
             state=FreshState();
         }
         static T Copy<T>(T value)=>JsonUtility.FromJson<T>(JsonUtility.ToJson(value));
@@ -245,6 +248,7 @@ namespace ConRoi.Investigation.V36.R107
         internal bool Assess(FullCaseSave candidate,out FullEnding ending,out List<string> unsupported)
         {
             ending=FullEnding.None;unsupported=new List<string>();
+            if(!GetRubricReadiness().Success)return false;
             if(catalog.conclusions.Any(r=>candidate.conclusions.Any(d=>d.id==r.id&&d.claim!="")&&(!r.reviewed||r.alternatives.Length==0)))return false;
             if(candidate.conclusions.Any(d=>d.id=="fall"&&d.claim!="")&&!catalog.fallChainReviewed)return false;
             bool open=false;

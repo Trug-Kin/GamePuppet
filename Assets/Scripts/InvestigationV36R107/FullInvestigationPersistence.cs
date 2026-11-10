@@ -113,7 +113,7 @@ namespace ConRoi.Investigation.V36.R107
         }
         void ValidateState(FullCaseSave s)
         {
-            Require(s!=null&&s.schema==2&&s.namespaceId=="conroi.investigation.v36.fullcase"&&s.catalogHash==catalogHash,"Sai schema, namespace hoặc catalog/revision.");
+            Require(s!=null&&s.schema==2&&s.namespaceId=="conroi.investigation.v36.fullcase"&&s.catalogHash==catalogHash,"Sai schema, namespace hoặc catalog/feature revision; không tự chuyển tiến trình.");
             Require(s.evidence!=null&&s.mapping!=null&&s.decoded!=null&&s.permissions!=null&&s.comparisons!=null&&s.relations!=null&&s.trials!=null&&s.conclusions!=null&&s.unsupportedDimensions!=null,"Thiếu collection.");
             Require(s.evidence.All(e=>e!=null)&&s.mapping.All(m=>m!=null)&&s.comparisons.All(c=>c!=null)&&s.relations.All(r=>r!=null)&&s.trials.All(t=>t!=null)&&s.conclusions.All(c=>c!=null),"Collection có phần tử null.");
             Require(s.heardStatements!=null&&s.heardStatements.All(h=>h!=null)&&Ids(s.heardStatements.Select(h=>h.id))&&Ids(s.recordedStatements)&&Ids(s.sourcedNotes),"Lịch sử/nguồn mới thiếu, null hoặc trùng.");
@@ -164,6 +164,7 @@ namespace ConRoi.Investigation.V36.R107
         {
             if(!Ready(out var e))return e;
             if(!Confirmed)return Fail("confirmation","Hãy xác nhận bản ghi hiện tại.");
+            var review=GetRubricReadiness();if(!review.Success)return Result(review);
             if(!Assess(state,out var ending,out var dimensions))return Fail("content-pending","Chưa có rubric và review chuỗi gây ngã để chốt đánh giá. Bản ghi vẫn được giữ.");
             try{Require(!string.IsNullOrWhiteSpace(profile),"Cần profile riêng.");var draft=Copy(state);draft.finalized=false;draft.ending=FullEnding.None;draft.unsupportedDimensions.Clear();ValidateState(draft);
                 InvestigationSaveFile.Write(CheckpointPathFor(profile),JsonUtility.ToJson(draft,true));
