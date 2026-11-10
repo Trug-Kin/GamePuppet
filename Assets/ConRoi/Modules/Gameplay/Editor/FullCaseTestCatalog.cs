@@ -37,6 +37,17 @@ namespace ConRoi.Gameplay.EditorChecks
             rules[0].alternatives=rules[0].alternatives.Concat(new[]{new FullSupportSet{requires=new[]{R(FullRequirementKind.Comparison,"paper"),Note("paper.khai"),R(FullRequirementKind.Decoded,"letter")}}}).ToArray();
             return new FullCaseCatalog{id="test.only.fullcase",revision="1",testOnly=true,startLocation="office",locations=locations,evidence=evidence.ToArray(),comparisons=tasks,conclusions=rules,fallChainReviewed=reviewedTestRubric,permissions=new[]{new FullPermissionDefinition{id="test.samples",location="office",label="TEST ONLY • Phương/quyền truy cập mẫu",requires=new[]{R(FullRequirementKind.Collected,"khai")}}},replyChannelRequirements=new[]{Note("ha",1)}};
         }
+        // TEST ONLY specimens/rubric remain separate; approved producer APIs are real runtime.
+        public static FullCaseCatalog CreateApproved(bool reviewedTestRubric=false)
+        {
+            var c=Create(reviewedTestRubric);c.id="test.only.approved-producers";c.revision="2";
+            var paper=c.comparisons.First(t=>t.id=="paper");paper.evidenceIds=new[]{"letter","paper.khai"};paper.requires=new[]{Note("letter"),Note("paper.khai")};
+            var cargo=c.comparisons.First(t=>t.id=="cargo");
+            c.evidence=c.evidence.Concat(new[]{Item("test.antique.labels","school","Bảng định danh rối cổ TEST ONLY; không là mã/tên rối chính thức.")}).ToArray();
+            cargo.evidenceIds=new[]{"M2","M5","test.antique.labels"};cargo.requires=new[]{Note("M2"),Note("M5"),Note("test.antique.labels")};
+            foreach(var location in c.locations){if(location.id=="theatre"||location.id=="homestay"||location.id=="garden")location.requires=new FullRequirement[0];}
+            return c;
+        }
         public static InterviewTopicDefinition[] Topics()=>new[]{"bao","ha","mai","tung","lan","khai","phuong","host"}.Select(id=>new InterviewTopicDefinition("test.full.topic."+id,"test.full.actor."+id,"TEST ONLY: hỏi lại nguồn "+id+"?","TEST ONLY: phản hồi cơ chế, không phải thoại chính thức.",new InterviewRequirement(InterviewRequirementKind.RecordedObservation,id=="lan"?"M4":id=="mai"?"M3":id=="host"?"log.homestay":id=="bao"?"letter.bao":id=="tung"?"letter.tung":id=="phuong"?"khai":id,0))).ToArray();
     }
 }
