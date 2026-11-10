@@ -343,3 +343,14 @@ Checklist trước đó mô tả tuyến luật prototype có sẵn; hai khoản
 ### NOTE-PROVENANCE-01 — nhận triển khai
 
 Được giao10/11/2026, base afe461c2; tracked sạch, untracked cũ bảo toàn. Mục tiêu: metadata theo ID/index và read model cho ghi nhận đã mở, loại Quan sát/Lời kể/Giả thuyết; mơ hồ giữ CHỜ REVIEW NỘI DUNG, thiếu mapping không mặc định Quan sát. [Acceptance và bảng từng entry trước source](../QA/Tasks/N2/NOTE-PROVENANCE-01/README.md). Chỉ thêm runtime partial mới/test Gameplay/Editor/contracts riêng, không sửa UI/scene/EvidenceDefinition/save types hoặc luật mở chứng cứ. Kiểm API/schema1/Observe liên quan, không bộ save đầy đủ. Phụ thuộc UI/UX & Tích hợp: review mục mơ hồ và nối labels/nhóm; không triển khai hội thoại.
+
+
+### NOTE-PROVENANCE-01 — kết quả và chờ nhận
+
+Đã cung cấp metadata34 entry (28 rõ/6 CHỜ REVIEW NỘI DUNG), nhãn Quan sát/Lời kể/Giả thuyết/Chưa phân loại và snapshot query chỉ cho dữ liệu đã ghi. Source386fdfdc →tool/meta e0b9e58a →bảng/acceptance57c6ad35; thực chạy Unity6000.6.2f1 tại57c6ad35, **68/68 API/fixture đạt**, không UI/controller/Windows/natural play. Ghi lặp/đổi text/guard clip/query không mutate, relation/claim không nâng thành sự thật, save thử schema1 trước gói và roundtrip hiện hành đạt; không sửa schema/types/ID/GUID cũ hoặc producer/validator. Không chạy các bộ IO/trial cũ.
+
+| Gói | Commit nguồn / đã kiểm | Runtime | Chờ tích hợp / chủ nhận |
+|---|---|---|---|
+| NOTE-PROVENANCE-01 |386fdfdc /57c6ad35 | RUNTIME ĐÃ KIỂM,68/68 API/fixture | CHỜ UI/TÍCH HỢP — UI/UX & Tích hợp nối metadata/nhãn hồ sơ; review mechanism:1,hook:0,samples:0,letter:1,draft:0,decoded:0 và trial report |
+
+[Bàn giao đầy đủ và bảng metadata](../QA/Tasks/N2/NOTE-PROVENANCE-01/README.md); UI cần wiring mới qua reference session thật, không lấy raw definition để lộ ghi nhận chưa mở, không sửa partial song song. Không có event mới; refresh query theo lifecycle/action hiện có. Trạng thái TÍCH HỢP ĐÃ KIỂM chỉ cập nhật khi có báo cáo nhận. Mục mơ hồ vẫn Unclassified/pending, không chặn UI dùng28 entry rõ và không giả nhận đã review xong. Scene chung/UI1080p/người mới NOT_RUN; IO-OPEN-01/P-close OPEN riêng. INTERVIEW-REVISIT-01 chưa triển khai.

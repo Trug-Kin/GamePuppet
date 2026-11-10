@@ -1,0 +1,291 @@
+{
+  "source_runtime": "386fdfdce4b16c4943d2f7a0d936854b8b04187e",
+  "tools": "e0b9e58aff70b1b28652511c82a06578f943dd96",
+  "tested_commit": "57c6ad35ceda838d2569590d65d19a5016dc7d31",
+  "kind": "PLAYMODE_API_PROXY_FIXTURE_NOT_UI_NOT_WINDOWS",
+  "unity": "6000.6.2f1",
+  "scene": "Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity",
+  "assertions_count": 68,
+  "failures": 0,
+  "raw_results_sha256": "62060f39fa6d53caa7f8d008f38a6a904a4af5fb03e63d612584af875c6279df",
+  "legacy_fixture_sha256": "28dd3593c3b06245f664709d69961e79bc1ad6a2e58a4f6417d34d2fde7e3af8",
+  "checks": [
+    {
+      "name": "fresh_profile_empty",
+      "pass": true
+    },
+    {
+      "name": "null_unknown_id_no_text",
+      "pass": true
+    },
+    {
+      "name": "known_but_unrecorded_no_text_or_source",
+      "pass": true
+    },
+    {
+      "name": "acquire_does_not_create_notes",
+      "pass": true
+    },
+    {
+      "name": "invalid_observe_unchanged",
+      "pass": true
+    },
+    {
+      "name": "observe_progress_and_repeat_preserved",
+      "pass": true
+    },
+    {
+      "name": "observed_label",
+      "pass": true
+    },
+    {
+      "name": "table_slide_0",
+      "pass": true
+    },
+    {
+      "name": "table_slide_1",
+      "pass": true
+    },
+    {
+      "name": "table_shoeprint_0",
+      "pass": true
+    },
+    {
+      "name": "table_shoeprint_1",
+      "pass": true
+    },
+    {
+      "name": "table_r03_0",
+      "pass": true
+    },
+    {
+      "name": "table_r03_1",
+      "pass": true
+    },
+    {
+      "name": "table_r12_0",
+      "pass": true
+    },
+    {
+      "name": "table_r12_1",
+      "pass": true
+    },
+    {
+      "name": "table_mechanism_0",
+      "pass": true
+    },
+    {
+      "name": "table_mechanism_1",
+      "pass": true
+    },
+    {
+      "name": "table_mechanism_2",
+      "pass": true
+    },
+    {
+      "name": "table_hook_0",
+      "pass": true
+    },
+    {
+      "name": "table_fabric_0",
+      "pass": true
+    },
+    {
+      "name": "table_fabric_1",
+      "pass": true
+    },
+    {
+      "name": "table_phone_0",
+      "pass": true
+    },
+    {
+      "name": "table_phone_1",
+      "pass": true
+    },
+    {
+      "name": "table_clip_0",
+      "pass": true
+    },
+    {
+      "name": "table_clip_1",
+      "pass": true
+    },
+    {
+      "name": "table_clip_2",
+      "pass": true
+    },
+    {
+      "name": "table_khai_0",
+      "pass": true
+    },
+    {
+      "name": "table_samples_0",
+      "pass": true
+    },
+    {
+      "name": "table_coat_0",
+      "pass": true
+    },
+    {
+      "name": "table_coat_1",
+      "pass": true
+    },
+    {
+      "name": "table_shoe_0",
+      "pass": true
+    },
+    {
+      "name": "table_shoe_1",
+      "pass": true
+    },
+    {
+      "name": "table_shoecontrol_0",
+      "pass": true
+    },
+    {
+      "name": "table_ha_0",
+      "pass": true
+    },
+    {
+      "name": "table_ha_1",
+      "pass": true
+    },
+    {
+      "name": "table_letter_0",
+      "pass": true
+    },
+    {
+      "name": "table_letter_1",
+      "pass": true
+    },
+    {
+      "name": "table_receipt_0",
+      "pass": true
+    },
+    {
+      "name": "table_henri_0",
+      "pass": true
+    },
+    {
+      "name": "table_draft_0",
+      "pass": true
+    },
+    {
+      "name": "table_decoded_0",
+      "pass": true
+    },
+    {
+      "name": "complete_table_34_unique_entries",
+      "pass": true
+    },
+    {
+      "name": "same_npc_category_does_not_infer_kind",
+      "pass": true
+    },
+    {
+      "name": "ambiguous_6_entries_pending",
+      "pass": true
+    },
+    {
+      "name": "relation_and_claim_are_hypotheses",
+      "pass": true
+    },
+    {
+      "name": "choice_confirmation_finalized_never_promote",
+      "pass": true
+    },
+    {
+      "name": "trial_not_promoted_to_real_event",
+      "pass": true
+    },
+    {
+      "name": "wording_does_not_classify",
+      "pass": true
+    },
+    {
+      "name": "missing_metadata_is_explicit_unclassified",
+      "pass": true
+    },
+    {
+      "name": "unknown_and_invalid_record_indices_safe_read_only",
+      "pass": true
+    },
+    {
+      "name": "old_record_does_not_bypass_unseen_clip",
+      "pass": true
+    },
+    {
+      "name": "one_exposure_still_hidden",
+      "pass": true
+    },
+    {
+      "name": "both_exposures_restore_recorded_entries",
+      "pass": true
+    },
+    {
+      "name": "observe_clip_gate_unchanged",
+      "pass": true
+    },
+    {
+      "name": "observe_clip_after_exposure_once",
+      "pass": true
+    },
+    {
+      "name": "snapshot_array_isolated",
+      "pass": true
+    },
+    {
+      "name": "query_does_not_change_progress_or_message",
+      "pass": true
+    },
+    {
+      "name": "paused_queries_do_not_change_input_or_page",
+      "pass": true
+    },
+    {
+      "name": "world_query_does_not_open_modal",
+      "pass": true
+    },
+    {
+      "name": "normal_save_committed",
+      "pass": true
+    },
+    {
+      "name": "new_profile_roundtrip_notes_and_bytes",
+      "pass": true
+    },
+    {
+      "name": "no_derived_metadata_in_schema1",
+      "pass": true
+    },
+    {
+      "name": "old_schema1_load",
+      "pass": true
+    },
+    {
+      "name": "old_save_query_is_read_only",
+      "pass": true
+    },
+    {
+      "name": "old_save_records_new_note_without_migration",
+      "pass": true
+    },
+    {
+      "name": "continue_old_save_roundtrip",
+      "pass": true
+    },
+    {
+      "name": "old_fixture_source_bytes_unchanged",
+      "pass": true
+    },
+    {
+      "name": "api_returns_no_unknown_entry_text",
+      "pass": true
+    }
+  ],
+  "limits": [
+    "API/fixture in temporary Gameplay proxy, not UI/controller, not Windows input or natural play",
+    "6 evidence entries and trial-result classification pending content review",
+    "Integrated scene, 1080p and newcomer NOT_RUN; P-close and IO-OPEN-01 remain separate OPEN items"
+  ]
+}
