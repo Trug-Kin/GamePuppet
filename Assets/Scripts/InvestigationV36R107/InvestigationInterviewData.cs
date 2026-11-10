@@ -29,7 +29,7 @@ namespace ConRoi.Investigation.V36.R107
             this.requirements = requirements == null ? Array.Empty<InterviewRequirement>() : requirements.ToArray();
         }
     }
-    public enum InterviewTopicAvailability { Available, Locked, UnknownTopic, NoConversation, ContextExpired, Paused, InvalidCondition, SessionUnavailable }
+    public enum InterviewTopicAvailability { NoConversation, Available, Locked, UnknownTopic, ContextExpired, Paused, InvalidCondition, SessionUnavailable }
     public readonly struct InterviewTopicState
     {
         public readonly string Id, Question, Reason;
