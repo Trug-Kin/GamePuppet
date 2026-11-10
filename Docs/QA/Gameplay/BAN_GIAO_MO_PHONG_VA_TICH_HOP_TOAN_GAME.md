@@ -1,5 +1,7 @@
 # Bàn giao mô phỏng và tích hợp toàn game — Gameplay & Dữ liệu
 
+**Play Mode/controller mới nhất:** [K.8: mở/chơi thế giới TEST ONLY](#playmode-world), nguồn **3865e818**, checker **5f503fb0**. W09: **283/283 kiểm đã chạy đạt**, một probe xoay nhìn NOT_RUN do batch không khóa cursor. Mô phỏng tới ga/ending A-treo qua CC + E/raycast và control Game View; không phải Windows input/chơi tự nhiên/scene chung. IO-OPEN-01 còn OPEN.
+
 **Kiểm nhánh ending mới nhất:** [K.7: C/A-sai qua UI thử, dữ liệu và IO OPEN](#sandbox-ending-branches), window `48679ec1`, checker `1e8d3c4f`. C03 **115/115**, A03 **140/140**; rubric/media TEST ONLY, không chứng nhận C3 hoặc sản phẩm. Profile mới ở Temp ngoài project; đường dẫn K.6 là lịch sử.
 
 **Tuyến A-treo trước:** [PLAYABLE-SANDBOX-01: mở/chơi, controls và bằng chứng tuyến UI thử](#playable-sandbox), nguồn môi trường `393b3de2`, checker `c3500c46`. Runtime sản phẩm vẫn tại `e6dd1441`, không sửa trong đợt này.
@@ -946,3 +948,97 @@ Bằng chứng main/temp/checkpoint của hai lượt IO được giữ nguyên 
 
 
 **Chốt phạm vi gói:** C và A-sai **MÔ PHỎNG ĐÃ KIỂM qua UI thử** trên cấu hình TEST ONLY nêu trên; runtime sản phẩm giữ nguyên. CHỜ ASSET-UI và nội dung/review C2/C3, CHƯA KIỂM SCENE CHUNG/UI1080p/NGƯỜI MỚI. IO-OPEN-01 còn OPEN với ảnh hưởng/repro cụ thể ở trên; P-close giữ hồ sơ riêng. Gameplay quay lại theo input/rubric/media thật hoặc defect runtime có tái hiện, không báo game sản phẩm hoàn tất.
+
+
+<a id="playmode-world"></a>
+### K.8. PLAYMODE-WORLD-01 — thế giới thử trong Play Mode
+
+Nhận sau `fe708886`, giữ các sửa ProjectSettings/untracked có sẵn. Scene `Gameplay_ThuNghiem.unity` có SceneRoots rỗng; môi trường trước là EditorWindow, chưa phải controller thế giới. Tái sử dụng `DieuKhienDiChuyen`, `DieuKhienGocNhin`, query nearest raycast của r107 và panel TEST ONLY hiện có. Bổ sung host/target Editor-only được khởi tạo tường minh trong Play, một FullInvestigationRuntime chung với panel; không clone luật tiến trình/rubric hoặc bật vào scene sản phẩm.
+
+Acceptance: menu riêng mở Play trong scene Gameplay, từ profile sạch dùng virtual keyboard/mouse Input System qua movement/look thật và E/raycast để tới nguồn/NPC/điểm chuyển vùng/bàn dựng/ga. Panel Game View nhận thao tác ghi/hỏi/gán chữ/hồi đáp/đối chiếu/chọn kết luận; không có nút world thu/cấp chứng cứ hoặc travel thay E. Kiểm tuyến đại diện tới ga/ending thử, thứ tự khám rồi Ghi, hỏi lặp, modal khóa di chuyển/nhìn/tương tác, P/E/Esc, pause, F5/F6 và Load dọn transient về điểm an toàn của location. Không thêm lưu vị trí fullcase/schema; không hợp nhất r107. Ending chỉ smoke tuyến A-treo trong Play, tái sử dụng kết quả C/A-sai K.7 vì không đổi logic phân nhánh. IO-OPEN-01 giữ OPEN, profile Temp không phải profile sản phẩm dự kiến, không coi cách ly là sửa IO.
+
+
+#### Mở Play và controls
+
+Nguồn môi trường: **3865e818**; checker **5f503fb0**. Unity **6000.6.2f1**, worktree Gameplay riêng. Mở Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity, dừng Play hiện tại, giữ scene sạch rồi chọn **Con Roi → Gameplay → Choi the gioi TEST ONLY (Play Mode)**. Menu từ chối scene khác/scene đang sửa, không tự lưu hay thay scene. Menu tự vào Play, tạo root TEST ONLY • Full-case controller environment và focus Game View. Chỉ bấm toolbar Play trên template không tự tạo môi trường này. Dừng Play để hủy thế giới; chọn lại menu để có profile sạch mới. Không lưu/copy root thử vào scene sản phẩm.
+
+- WASD/phím mũi tên di chuyển bằng DieuKhienDiChuyen + CharacterController; chuột dùng DieuKhienGocNhin, Space nhảy. Nhìn tâm vào collider, tới trong 3.2 m rồi **E**. Đây là controller bàn phím/chuột, chưa chứng nhận gamepad.
+- **P** mở hồ sơ, P/Esc đóng thao tác; Esc ở thế giới mở/đóng pause. P không chiếm phím khi đang nhập text. Modal/pause tắt cả movement và look; E không tương tác xuyên modal. Game View mất focus thì ngưng input/tick hiển thị, không chạy bù thời gian khi quay lại.
+- **F5/F6** hoặc nút trong panel chỉ dùng profile fullcase của phiên này. Cuộn panel để ghi quan sát, chọn chủ đề/căn cứ, nhập ký tự/hồi đáp, đối chiếu, thao tác bàn dựng và xác nhận kết luận. Không có nút thu vật/NPC/chuyển khu trong panel Play; các producer đó phải đi qua E/raycast.
+- Ending chỉ mở tóm tắt qua E ở appointment sau khi tới ga và đủ điều kiện runtime; nút xác nhận bắt đầu, Pause/Tiếp tục và **Đã chạy hết trình diễn thử** là presenter TEST ONLY. Nút cuối là tín hiệu hoàn tất presenter thử, không phải footage/animation/âm thanh sản phẩm.
+
+#### Runtime, component và placeholder cần thay
+
+Editor/FullCasePlayLauncher.cs chỉ tạo môi trường khi menu đã được arm, vào Play và đúng scene Gameplay. Testing/FullCasePlayHost.cs và Testing/FullCasePlayTarget.cs bọc UNITY_EDITOR; không phải component để đưa vào bản game. Các đường dẫn này nằm dưới Assets/ConRoi/Modules/Gameplay/. FullCaseSandboxWindow được dùng làm panel ẩn, vẽ control thử vào Game View; window và host chia sẻ đúng **một FullCaseSandboxController.Runtime**, không tạo thêm session r107. Tick window bị tắt trong Play, chỉ host gọi Runtime.Advance theo thời gian hiển thị.
+
+Thay đổi dùng chung duy nhất: overload **InvestigationSession.TryInteractionHit(Camera source, Transform body, out RaycastHit hit)**. Instance r107 gọi lại cùng query, giữ nearest obstruction, khoảng 3.2 m, bỏ trigger/body con của người chơi và layer 29/30. Không tạo session r107 để dùng raycast. Hành động từ target chỉ gọi API fullcase; không có setter evidence/progress/ending.
+
+| Placeholder ID / key thực tế | Component / nguồn tạo | Runtime thật đang gọi | Đối tượng thật và chủ nhận |
+|---|---|---|---|
+| TEST ONLY zone location.id | FullCasePlayLauncher.Build; host.Zones, Spawns | Chỉ bật zone có Runtime.Location; đổi khu thành công/Load mới về spawn an toàn | Map & Asset làm vùng/điểm vào; UI/UX & Tích hợp gắn consumer đổi vùng. Khoảng cách 160, sàn 140×12 chỉ bố trí thử, không là brief kích thước sản phẩm |
+| evidence.evidenceId; thêm evidence.receipt.channel | Cube/collider + FullCasePlayTarget: Key, StableId, LocationId, Action=Evidence | GetLocalEvidence quyết định hiện/ẩn; E → TryCollect(id) → InspectFromWorld → TryInspect(id); Ghi riêng → TryRecordObservation | Map & Asset cung cấp mesh/collider/nguồn nhìn thấy. Giữ ID; label là con của target nên nguồn khóa không để lộ bảng ID. Không tạo vật thế giới cho alias dẫn xuất decoded |
+| actor.locationId | Target Action=Actor, StableId=npc.actor | TalkFromWorld → FullCaseSandboxController.Interact → TryBeginConversation; GetConversationTopics, TryAskTopic, snapshot từ runtime | Map & Asset cung cấp NPC/điểm tương tác; UI/UX cung cấp hội thoại. office/phuong, market/ha, school/mai, lake/bao, slope/tung, garden/lan, homestay/host; fallback khai là cấu hình thử, không đặt Khải canon mọi vùng |
+| travel.current.destination | Target Action=Travel, StableId=destination | TryTravel(id) recheck gate thật; thất bại giữ location, lý do qua LastMessage | Map & Asset cung cấp lối chuyển vùng; UI/UX nối feedback khóa và consumer vùng. Không thay bằng cờ unlock/đổi Transform để vượt gate |
+| table.locationId | Target Action=Page, Page=FullCaseModal.Reconstruction | SetModal(Reconstruction); TryStartTrial, SetTrialRunning, TryClearHolds, TrySeekTrial | Bàn ở mọi khu chỉ phục vụ thử. Map & Asset cung cấp mô hình; UI/UX nối trang/thể hiện điều kiện và giới hạn K.4 |
+| appointment tại station | Target Action=Appointment | TryOpenEndingSummary → TryStartEndingPresentation → presenter thử → TryCompleteEndingPresentation(profile) | Map & Asset cung cấp điểm ga/media; UI/UX nối tóm tắt/xác nhận/presenter K.5/K.7; tới ga không tự ending |
+| TEST ONLY player / TEST ONLY eye | CC, DieuKhienDiChuyen, DieuKhienGocNhin, Camera; host.Movement, Look, Eye | InputAction controller thật và shared raycast; Runtime.CanMove sở hữu input/cursor | UI/UX & Tích hợp nhận contract input; thay rig/model không tạo thêm state tiến trình |
+| Panel Game View | host.DrawPanel=panel.DrawPlayUI; Inspect, Talk, Feedback, TextInputFocused, Visible inject trong Build | Cùng API K.4–K.6: mapping/reading/reply, compare, trial, confirmation/checkpoint, save/load | UI/UX thay panel bằng UI sản phẩm; không copy delegate EditorWindow/component UNITY_EDITOR sang player |
+
+Bố trí để tự tìm vật: trong mỗi zone, nguồn evidence lần lượt x=i×2.2, NPC x=-4, bàn dựng x=-7, cuộc hẹn ga x=-10, bảng chuyển vùng x=-14-i×2.2, cùng z=0. Điểm vào nhìn +Z tại z=-2.7; office x=-4, khu khác x=0. Có thể đi A/D dọc hàng bảng/vật và đọc ID; các con số chỉ phục vụ thử. Collider tâm y=1.6, nhãn trên target; không phải quy định tỷ lệ/pivot asset thật.
+
+Cấu hình vẫn FullCaseTestCatalog.CreateApproved(false) trong Editor: producer đã chốt H/G/E/ND nhưng feature test.feature.match, nhãn quan sát/model/media/permission/rubric thử vẫn **TEST ONLY**. fallChainReviewed không bật ở tuyến này, không chứng nhận C3. Product fields/readiness và quy trình C2/C3 ở K.5; không dùng R-12 thay mẫu cổ hoặc đổi testOnly/hash để promote save thử.
+
+#### Tuyến điều khiển đại diện
+
+1. Office: E Phương, hỏi đầu mối homestay. E bảng workshop để chuyển khu; E slide → xem chưa ghi → Ghi; xem Khải. F5, đi khu khác rồi F6: về workshop an toàn và giữ ghi nhận. Kiểm P/E/Esc, modal và pause.
+2. Market: xem receipt, hỏi Hà về phiếu, nghe kênh trả giấy; hỏi lặp không nhân lịch sử. Xem/ghi letter. School: hỏi Mai, xem letter.mai. Slope: xem letter.tung. Theatre: xem Henri; P → Mật mã, nhập bảng ký tự từ nguồn đã mở, ghi bản đọc ba thư.
+3. Lake: khám/ghi bản đọc letter.bao, hỏi Bảo về Lan. Garden chỉ mở sau producer hướng dẫn; khám/ghi bản đọc letter.lan. Quay market nhập đủ bốn cụm hồi đáp và gửi qua kênh đã nghe. Không cấp bản giải/tiến trình.
+4. Office: hỏi quyền mẫu TEST ONLY; homestay khám/ghi paper.khai. P → Đối chiếu chọn letter và paper.khai, chọn test.feature.match; runtime kiểm nguồn/tạo record đối chiếu.
+5. Workshop: khám clip, xem playback panel. E bàn dựng, chạy release bằng đồng hồ thật; pause tay → Esc rời → E quay lại vẫn pause; tiếp tục đến kết thúc tạo note nguồn Mô hình dựng lại. Không dùng seek để ghi record.
+6. F5/F6 giữ năm bản giải/hồi đáp/đối chiếu/thử mô hình. P → Kết luận, giữ Chưa đủ chứng minh → xác nhận trung tính → chốt. E bảng station; tới ga không tự ending. E appointment → hủy hoặc xác nhận → Pause/Tiếp tục → hoàn tất presenter thử → F6 giữ đã xem, checkpoint không trùng. Đây là A-treo trung thực; C/A-sai giữ bằng chứng K.7 vì nối controller không đổi nhánh.
+
+Checker đọc vị trí target làm đích di chuyển A/D, không gán Transform để tới vật. Chỉ TryTravel thành công hoặc context được thay bởi Load/chốt mới đặt rig vào spawn theo location. Không fixture cấp tiến trình. Bố trí tạm không chứng minh chất lượng map/thời lượng chơi.
+
+#### Profile, lưu/tải và IO-OPEN-01
+
+Mỗi menu tạo profile mới Path.Combine(Path.GetTempPath(), "ConRoiGameplaySandbox", "FullCaseSandbox_" + GUID). Đường dẫn tuyệt đối hiện trong panel; **ghi/copy đường dẫn trước khi dừng Play** nếu cần giữ phiên. F5/F6 chỉ trỏ host.Profile=panel.ControllerForChecks.Profile; menu mới không tự tìm save phiên trước. Dữ liệu: profile/InvestigationV36/fullcase/case.json, checkpoint case.before-conclusion.json; schema2/migration giữ nguyên.
+
+Fullcase lưu location, không lưu vị trí/yaw/pitch rig, timeline hay modal. Load thành công về điểm vào an toàn, dọn transient theo runtime; không cộng thời gian vắng mặt. Không đồng bộ với profile/InvestigationV36/r107/prototype.json; không tự dùng CLI --investigation-save-dir để thay profile fullcase. Đừng copy save r107 vào fullcase hay đổi hash/catalog cho đọc được.
+
+**IO-OPEN-01 vẫn OPEN**: profile dưới project dự kiến kiểm trước đã có IO bất thường A01/A02 (K.7), chưa có exception/HResult đủ giải thích. Temp của lượt này là cách ly môi trường, không sửa nguyên nhân. Bằng chứng cũ, bytes tmp/main/checkpoint và lịch sử lượt lỗi giữ local theo K.7; không thay bằng lượt cuối đạt. Không đụng save gốc, không chạy lại toàn bộ IO.
+
+#### Thay môi trường thử và acceptance tích hợp
+
+1. UI/UX & Tích hợp tạo consumer **fullcase** duy nhất với product catalog/bindings được validate K.5; không nối vào InvestigationSession.data r107. FullCasePlayHost/Target là mẫu wiring Editor-only, chưa là host sản phẩm. Nếu cần component sản phẩm mới dưới Assets/Scripts, gửi Gameplay yêu cầu field/ownership; không serialize lớp TEST ONLY vào scene chung.
+2. Map & Asset thay mesh/collider/điểm vào/NPC/media. Định danh qua dữ liệu, không tra tên Hierarchy. Consumer E dùng camera/body thật với shared TryInteractionHit; nearest vật cản phải thắng. Chỉ hiển thị nguồn có trong GetLocalEvidence, vẫn recheck ở command; model/label không thay gate.
+3. UI/UX nối cùng runtime: Changed += handler, query lại GetRecords/GetConversationTopics/GetRecordedReadings/GetComparisons/GetConclusions/readiness; Changed -= handler khi dispose. Không gọi command trong Changed hoặc tự gán state. Modal dừng movement/look, text không bị P chiếm; cancel/Load bỏ transient.
+4. Dùng API bảng/K.4–K.5 và hiển thị FullActionResult.Success/Code/Message. Giữ nghe khác Ghi, giải khác ghi bản đọc. Presenter thật chỉ complete khi media đúng phiên hết; cancel/pause/Load không gọi completion cũ.
+5. Tắt launcher/host/panel/catalog TEST ONLY và bỏ root thử trước tích hợp. Scene chung kiểm fresh profile → producer/gate/thứ tự khác → ghi/hỏi lặp → năm thư/hồi đáp → nguồn/feature thật → đối chiếu/trial → kết luận/checkpoint → ga/tóm tắt/hủy/ending. Kiểm input/modal/pause/save/load/lỗi. C/A-sai kiểm lại khi đổi rubric/feature/media; không suy từ A-treo. UI1080p/người mới/scene chung/media thật cần bằng chứng riêng.
+
+
+
+#### Kết quả và giới hạn
+
+Lượt **W09** chạy Play Mode từ profile sạch đến ga, schema2, một runtime duy nhất; **283/283 assertion đã chạy đạt**, 200 bản ghi thao tác/chẩn đoán, **1 probe NOT_RUN** tách riêng. Môi trường Unity 6000.6.2f1 batch có render D3D11, Game View 1600×1149, virtual Input System keyboard/mouse và targeted Game View IMGUI; không dùng input Windows, không dùng test movement hook, không gọi setter/cấp chứng cứ hoặc API hành động trong checker. Ngoại lệ dựng geometry: một collider chặn tia để kiểm nearest obstruction, không cấp tiến trình. Hành động thư dùng bảng Henri sau khám nguồn, ghi năm bản đọc thật, không chèn đáp án/tiến trình vào state.
+
+Bao phủ yêu cầu: E tương tác đúng collider/ID và vật cản thắng; gate Lan còn khóa trước chỉ dẫn; khám chưa ghi, ghi/hỏi lặp; modal tắt cả InputAction/look và chặn E; P không chiếm input của 26 ô mapping và 4 ô hồi đáp; pause/resume; F5/F6 khôi phục location/nguồn/lịch sử/readings/reply/comparison/trial; bàn dựng giữ pause tay khi rời/quay lại; kết luận Chưa đủ chứng minh được xác nhận/chốt qua writer/checkpoint; station không auto-start, summary cancel, explicit start/pause/complete, viewed roundtrip và bytes checkpoint không đổi. Không dùng số assertion làm bằng chứng bao phủ mọi nhánh; C/A-sai dùng lại K.7, không chạy lại trong đợt này.
+
+**Xoay nhìn bằng chuột: NOT_RUN_BATCH_CURSOR_NONE.** W03 đã ghi delta Dynamic=(100,0), LookInput=(100,0), Look.enabled=true, GameView có focus nhưng Cursor.lockState=None, nên controller hiện có bỏ xoay nhìn đúng guard. W09 không ép bỏ guard hoặc gán rotation để giả PASS; vẫn kiểm look bị disable trong modal. Đã hỏi tình trạng desktop riêng, chưa có xác nhận mới nên chưa gửi input OS hoặc mở phiên chiếm cursor. Chuột thật/cursor capture và gamepad cần kiểm phiên có cửa sổ/desktop dành riêng; không suy đạt từ W09. Mất focus được host chặn bằng Visible/OwnInput và Advance, **chưa có probe mất focus riêng trong lượt này**. Space/jump cũng chưa có probe riêng. Scene chung, UI1080p, media thật và người mới NOT_RUN.
+
+Nguồn đã chạy **3865e818** không có diff Assets sau kiểm; checker commit **5f503fb0** chứa đúng công cụ W09. Runtime fullcase/save/schema/guard/branching giữ nguyên; shared query r107 chỉ được tách overload, instance vẫn dùng query đó. Scene Gameplay template và scene sản phẩm không bị ghi thay đổi. ProjectSettings/EditorBuildSettings.asset, ProjectAuditorSettings.asset và untracked có sẵn được giữ ngoài commit; Unity còn chạm trạng thái QualitySettings.asset nhưng diff nội dung rỗng, không stage/ép đồng bộ.
+
+Lịch sử lượt kiểm giữ nguyên, không gộp ca của nguồn trung gian vào W09:
+
+| Lượt local | Kết quả / phân biệt |
+|---|---|
+| W01–W03 | Dừng trước tuyến ở phép thử xoay nhìn. W03 đủ chẩn đoán batch cursor None; không phải producer gameplay hỏng, không chứng minh chuột sản phẩm PASS |
+| W04 | E/raycast mở đúng Phương; checker ngưỡng scroll làm nút bị coi không tới được |
+| W05–W07 | Hiệu chỉnh panel Game View và tọa độ/độ trễ sự kiện; không dùng action API thay click. W07 đi được tới xưởng, dừng ở click Ghi do checker chưa chờ event/offset đúng |
+| W08 | 246 assertion trước lỗi cuối đạt, đã đi tới ending/viewed roundtrip. Assertion cuối đặt ngưỡng >40 tương tác không có căn cứ; tuyến có 38 lần nhấn E gồm các lần bị chặn. Cảnh báo GetLastRect là lỗi công cụ. Giữ cả lượt, không đổi thành PASS |
+| W09 | Sau sửa checker và bỏ GetLastRect thừa: 283/283 đã chạy đạt; xoay nhìn NOT_RUN riêng, không lỗi runtime/GUI exception/GetLastRect trong log. Không tái kiểm toàn bộ ba nhánh ending |
+
+Công cụ độc lập: chạy Unity với project Gameplay riêng, -batchmode, -executeMethod ConRoi.Gameplay.EditorChecks.FullCasePlayChecks.RunBatch, --world-output <thư-mục-tuyệt-đối-mới>, --world-source <SHA-nguồn>, -logFile <log-local>; không -quit, không mở hai Editor cùng project. Công cụ tự kết thúc Play/Editor sau kiểm; giữ output/profile ngoài Git. Người thử tay dùng menu ở trên, không cần chạy checker.
+
+Bằng chứng local: Test/Output/PlayWorld20261110/W09/results.json, final-state.json, world-clean.png, station-world.png, ending-loaded.png, final.png; log Test/Output/PlayWorld20261110-W09.log. SHA256 results.json: **6f9b8c81c20219e2b0ecd86b2a33322c55ae99d1e5e0939b2a0d4541a31343c8**. Profile W09: **C:\Users\kaito\AppData\Local\Temp\ConRoiGameplaySandbox\FullCaseSandbox_8439e64dfb624511952c2f9ad5a8f3af**. Profile này là Temp, không phải profile project của A01/A02 IO-OPEN-01. Không commit save/capture/log thô.
+
+**Bàn giao:** MÔ PHỎNG PLAY MODE/CONTROLLER DI CHUYỂN + E/RAYCAST + UI THỬ ĐÃ KIỂM; CHỜ ASSET-UI, CHƯA KIỂM SCENE CHUNG. Chuột/cursor và probe nêu trên còn NOT_RUN, IO-OPEN-01 giữ OPEN. Map & Asset nhận bảng placeholder/điểm vào; UI/UX & Tích hợp nhận API/callback/modal/save/presenter và acceptance. Gameplay quay lại khi có input/rubric/media thật hoặc defect tái hiện; không coi bản mô phỏng là game sản phẩm hoàn tất.
