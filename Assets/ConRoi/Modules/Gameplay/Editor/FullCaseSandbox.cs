@@ -52,6 +52,7 @@ namespace ConRoi.Gameplay.EditorChecks
     }
     public sealed class FullCaseSandboxWindow : EditorWindow
     {
+        internal bool DebugIds;
         internal bool TextInputFocused {get;private set;}
         internal bool PlayHostMode;internal Rect PlayPanel;FullCaseModal drawnPlayModal;object drawnPlayContext;
         internal void DrawPlayUI(Rect panel){PlayPanel=panel;if(drawnPlayModal!=adapter.Runtime.Modal||!ReferenceEquals(drawnPlayContext,adapter.Runtime.DataContext)){GUI.FocusControl(null);GUIUtility.keyboardControl=0;TextInputFocused=false;drawnPlayModal=adapter.Runtime.Modal;drawnPlayContext=adapter.Runtime.DataContext;}playLayout.Begin(panel.size);DrawUI();TextInputFocused=adapter.Runtime.Modal==FullCaseModal.Cipher&&!string.IsNullOrEmpty(GUI.GetNameOfFocusedControl());}
@@ -111,7 +112,7 @@ namespace ConRoi.Gameplay.EditorChecks
         }
         void Tick(){double now=EditorApplication.timeSinceStartup;float dt=Mathf.Min(.1f,(float)(now-previous));previous=now;if(adapter!=null&&!PlayHostMode){adapter.Tick(dt,focusedWindow==this);Repaint();}}
         void OnDisable(){EditorApplication.update-=Tick;adapter?.Dispose();adapter=null;preview?.Cleanup();preview=null;anchors.Clear();placeholders.Clear();controls.Clear();scrollControls.Clear();}
-        void Do(FullActionResult result){message=result.Message;if(result.Success&&result.Message.StartsWith("Đã tải")){mapping.Clear();foreach(var pair in JsonUtility.FromJson<FullCaseSave>(adapter.Runtime.ExportStateJson()).mapping)mapping[pair.pose]=pair.letter;choices.Clear();selected="";reply=new string[4];}}
+        void Do(FullActionResult result){if(PlayHostMode)result=FullCasePlayGuide.Present(adapter.Runtime,result);message=result.Message;if(result.Success&&result.Message.StartsWith("Đã tải")){mapping.Clear();foreach(var pair in JsonUtility.FromJson<FullCaseSave>(adapter.Runtime.ExportStateJson()).mapping)mapping[pair.pose]=pair.letter;choices.Clear();selected="";reply=new string[4];}}
         void OnGUI(){if(!PlayHostMode)DrawUI();}
         void DrawUI(){
             if(adapter==null)return;var s=adapter.Runtime;var evt=Event.current;
@@ -119,18 +120,19 @@ namespace ConRoi.Gameplay.EditorChecks
             Help("TEST ONLY • Producer/gate lời khai theo quyết định chủ dự án; vật mẫu/feature/rubric còn TEST ONLY, không canon. Không mở hết/hoàn tất. Editor UI/proxy không phải scene chung hoặc controller Windows.",MessageType.Warning);
             if(!PlayHostMode){simulatedRubric=Toggle("Rubric mô phỏng cho profile MỚI (không là C3)",simulatedRubric);
             if(Button("Bắt đầu sạch • profile mới TEST ONLY")){FreshProfile();s=adapter.Runtime;}}
+            if(PlayHostMode){TextLabel(FullCasePlayGuide.Next(s),Wrapped);DebugIds=Toggle("Debug • hiện ID kỹ thuật",DebugIds);}
             Label("Rubric phiên hiện tại",adapter.TestCatalog.fallChainReviewed?"TEST ONLY được bật (không review sản phẩm)":"Chưa bật; có thể chơi nhánh Chưa đủ chứng minh");
-            Label("Profile riêng",adapter.Profile);Label("Nơi / modal / pause",s.Location+" / "+s.Modal+" / "+s.Paused);
+            Label("Profile riêng",adapter.Profile);Label("Nơi / modal / pause",(PlayHostMode?FullCasePlayGuide.Place(s.Location):s.Location)+" / "+s.Modal+" / "+s.Paused);
             BeginRow();if(Button("Hủy / trở lại"))adapter.Cancel();if(Button(s.Paused?"Tiếp tục":"Pause"))s.SetPaused(!s.Paused);if(Button("F5 • Lưu"))Do(adapter.Save());if(Button("F6 • Tải"))Do(adapter.Load());if(Button("Khôi phục trước chốt"))Do(adapter.Load(true));EndRow();
             Help(message,MessageType.Info);
             scroll=PlayHostMode?playLayout.BeginScroll(scroll):EditorGUILayout.BeginScrollView(scroll);inScroll=true;
             var rect=PlayHostMode?new Rect():GUILayoutUtility.GetRect(300,160);if(!PlayHostMode&&Event.current.type==EventType.Repaint&&preview!=null){preview.BeginPreview(rect,GUIStyle.none);var anchor=anchors[s.Location];preview.camera.transform.position=anchor+new Vector3(2,2,-3);preview.camera.transform.LookAt(anchor);preview.Render();GUI.DrawTexture(rect,preview.EndPreview(),ScaleMode.ScaleToFit);}
             if(!PlayHostMode){TextLabel("Chuyển khu (đóng modal trước)",Bold);foreach(var location in s.GetLocations())if(Button(location.label+(s.CanTravel(location.id)?"":" • khóa")))Do(adapter.Interact(FullPlaceholderKind.Location,location.id,location.id));
             TextLabel("Nguồn tại nơi hiện tại",Bold);foreach(var item in s.GetLocalEvidence())if(Button("Khám/thu • "+item.id)){Do(adapter.Interact(FullPlaceholderKind.Evidence,item.id,s.Location));selected=item.id;}
-            TextLabel("NPC thay thế • producer thật",Bold);string actor=s.Location=="lake"?"bao":s.Location=="market"?"ha":s.Location=="school"?"mai":s.Location=="slope"?"tung":s.Location=="garden"?"lan":s.Location=="homestay"?"host":s.Location=="office"?"phuong":"khai";
-            if(Button("Nói chuyện • "+actor))Do(adapter.Interact(FullPlaceholderKind.Actor,"npc."+actor,s.Location));
+            TextLabel("NPC thay thế • producer thật",Bold);string actor=FullCasePlayGuide.ActorAt(s.Location);
+            if(actor!=null&&Button("Nói chuyện • "+actor))Do(adapter.Interact(FullPlaceholderKind.Actor,"npc."+actor,s.Location));
             }
-            if(s.Modal==FullCaseModal.Conversation){foreach(var topic in s.GetConversationTopics()){if(Button(topic.CanAsk?topic.Question:"Chủ đề khóa • "+topic.Reason))Do(adapter.Ask(topic.Id));}TextLabel(adapter.Reply);foreach(var permission in s.GetPermissions())if(Button(permission.label))Do(s.TryRequestAccess(permission.id));}
+            if(s.Modal==FullCaseModal.Conversation){TextLabel("Chọn câu hỏi đang mở; chủ đề bổ sung bị khóa không chặn toàn bộ cuộc trao đổi.",Wrapped);foreach(var topic in s.GetConversationTopics()){string hint=PlayHostMode?FullCasePlayGuide.LockedTopic(s,topic.Id):topic.Reason;if(!topic.CanAsk&&PlayHostMode)TextLabel(hint,Wrapped);if(Button(topic.CanAsk?topic.Question:PlayHostMode?"Chủ đề chưa mở":"Chủ đề khóa • "+hint)){var result=adapter.Ask(topic.Id);Do(!result.Success&&PlayHostMode?FullActionResult.Fail(result.Code,hint):result);}}TextLabel(adapter.Reply);foreach(var permission in s.GetPermissions().Where(p=>!PlayHostMode||s.Location=="office"))if(Button(PlayHostMode?"Xin phép nhận mẫu đối chiếu":permission.label))Do(s.TryRequestAccess(permission.id));}
             TextLabel("Tài liệu đã giải • không phải loại ghi nhận",Bold);
             foreach(var reading in s.GetRecordedReadings()){TextLabel(reading.Recipient+" • "+reading.Text,Wrapped);TextLabel(reading.Meaning,Wrapped);}
             TextLabel("Lời đã nghe • snapshot từ runtime",Bold);

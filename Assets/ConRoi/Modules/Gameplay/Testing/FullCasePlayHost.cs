@@ -16,6 +16,7 @@ namespace ConRoi.Gameplay.TestOnly
         public readonly Dictionary<string,Vector3> Spawns=new Dictionary<string,Vector3>();
         public readonly Dictionary<string,FullCasePlayTarget> Targets=new Dictionary<string,FullCasePlayTarget>();
         public Func<bool> TextInputFocused;public Action<Rect> DrawPanel;public Func<string,FullActionResult> Inspect,Talk;
+        public Func<string> Guide;public Func<bool> DebugIds;public Func<FullCasePlayTarget,string> DescribeTarget;public Func<FullCasePlayTarget,FullActionResult,FullActionResult> PresentResult;public string LastFeedback {get;private set;}="";
         public Action<bool> CursorContextChanged;bool? cursorWorld;
         public Action<FullActionResult> Feedback;public Func<bool> Visible;
         public FullCasePlayTarget Focused {get;private set;}
@@ -29,19 +30,21 @@ namespace ConRoi.Gameplay.TestOnly
             var local=new HashSet<string>(Runtime.GetLocalEvidence().Select(e=>e.id));
             foreach(var t in Targets.Values)if(t.Action==FullPlayAction.Evidence)t.gameObject.SetActive(t.LocationId==location&&local.Contains(t.StableId));
             if(reset&&Spawns.TryGetValue(location,out var point)){Movement.controller.enabled=false;Movement.transform.position=point;Movement.transform.rotation=Quaternion.identity;Eye.transform.localRotation=Quaternion.identity;Look.RestorePitch(0);Movement.ResetVerticalMotion();Movement.controller.enabled=true;}
+            foreach(var target in Targets.Values){if(DescribeTarget!=null)target.Label=DescribeTarget(target);if(target.Sign)target.Sign.text=target.Label;}
             OwnInput();
         }
         void OwnInput(){bool world=Runtime.CanMove&&(Visible==null||Visible());if(cursorWorld!=world){cursorWorld=world;CursorContextChanged?.Invoke(world);}Movement.enabled=world;Look.enabled=world;Cursor.lockState=world?CursorLockMode.Locked:CursorLockMode.None;Cursor.visible=!world;}
         void Update(){if(!initialized)return;var k=Keyboard.current;
             if(k!=null&&(Visible==null||Visible())){if(k.escapeKey.wasPressedThisFrame){if(Runtime.Modal!=FullCaseModal.None)Runtime.Cancel();else Runtime.SetPaused(!Runtime.Paused);}
                 bool typing=Runtime.Modal!=FullCaseModal.None&&(TextInputFocused?.Invoke()??false);
-                if(!typing){if(k.f5Key.wasPressedThisFrame)Feedback(Runtime.TrySave(Profile));if(k.f6Key.wasPressedThisFrame)Feedback(Runtime.TryLoad(Profile));}
+                if(!typing){if(k.f5Key.wasPressedThisFrame)Report(Runtime.TrySave(Profile));if(k.f6Key.wasPressedThisFrame)Report(Runtime.TryLoad(Profile));}
                 if(k.pKey.wasPressedThisFrame&&!Runtime.Paused&&!(Runtime.Modal!=FullCaseModal.None&&(TextInputFocused?.Invoke()??false))){if(Runtime.Modal!=FullCaseModal.None)Runtime.Cancel();else Runtime.SetModal(FullCaseModal.Inspect);}}
             OwnInput();Focused=null;
             if(Runtime.CanMove&&(Visible==null||Visible())&&!(k!=null&&(k.escapeKey.wasPressedThisFrame||k.pKey.wasPressedThisFrame))&&InvestigationSession.TryInteractionHit(Eye,Movement.transform,out var hit))Focused=hit.collider.GetComponentInParent<FullCasePlayTarget>();
-            if(Focused&&k!=null&&k.eKey.wasPressedThisFrame){LastWorldKey=Focused.Key;RayInteractions++;Feedback(Interact(Focused));}
+            if(Focused&&k!=null&&k.eKey.wasPressedThisFrame){LastWorldKey=Focused.Key;RayInteractions++;Report(Interact(Focused),Focused);}
             if(Visible==null||Visible())Runtime.Advance(Mathf.Min(.1f,Time.unscaledDeltaTime));
         }
+        void Report(FullActionResult result,FullCasePlayTarget target=null){var displayed=PresentResult?.Invoke(target,result)??result;LastFeedback=displayed.Message;Feedback(displayed);}
         public string Profile {get;set;}
         FullActionResult Interact(FullCasePlayTarget target){if(target.LocationId!=Runtime.Location)return FullActionResult.Fail("location","TEST ONLY: nguồn không ở khu hiện tại.");
             switch(target.Action){case FullPlayAction.Evidence:var r=Runtime.TryCollect(target.StableId);return r.Success?Inspect(target.StableId):r;
@@ -52,7 +55,7 @@ namespace ConRoi.Gameplay.TestOnly
         }
         void OnGUI(){if(!initialized)return;if(Event.current.type==EventType.KeyDown||Event.current.type==EventType.KeyUp)KeyEvents++;if(Event.current.type==EventType.MouseDown||Event.current.type==EventType.MouseUp){LastPointer=Event.current.mousePosition;PointerEvents++;}GUI.Label(new Rect(12,8,Screen.width-24,45),"TEST ONLY • Play Mode / controller thật + world proxy • WASD, chuột, E; P hồ sơ, Esc đóng/pause; F5/F6 profile riêng");
             if(Runtime.Modal!=FullCaseModal.None||Runtime.Paused){var panel=new Rect(12,55,Mathf.Min(Screen.width-24,1000),Screen.height-70);GUI.Box(panel,GUIContent.none);GUI.BeginGroup(panel);DrawPanel?.Invoke(panel);GUI.EndGroup();}
-            else {GUI.Label(new Rect(Screen.width/2-8,Screen.height/2-12,25,25),"+");GUI.Label(new Rect(12,55,Screen.width-24,65),"Khu: "+Runtime.Location+" • "+(Focused?"E • "+Focused.Label:"Đến bảng/vật/NPC, nhìn tâm vào collider trong 3.2 m")+"\n"+Runtime.LastMessage);}
+            else {GUI.Label(new Rect(Screen.width/2-8,Screen.height/2-12,25,25),"+");GUI.Label(new Rect(12,55,Screen.width-24,160),(Focused?"E • "+Focused.Label:"Đến bảng/vật/NPC, nhìn tâm vào collider trong 3.2 m")+"\n"+(Guide?.Invoke()??"")+"\n"+LastFeedback,new GUIStyle(GUI.skin.label){wordWrap=true});if(DebugIds?.Invoke()==true)GUI.Label(new Rect(12,220,Screen.width-24,45),"DEBUG • location="+Runtime.Location+" • target="+(Focused?Focused.StableId:""));}
         }
         void OnDestroy(){if(Runtime!=null)Runtime.Changed-=Refresh;Cursor.lockState=CursorLockMode.None;Cursor.visible=true;}
     }

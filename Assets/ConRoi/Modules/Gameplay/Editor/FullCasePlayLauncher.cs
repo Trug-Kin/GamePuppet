@@ -35,7 +35,7 @@ namespace ConRoi.Gameplay.EditorChecks
         }
         static GameObject Cube(string name,Transform parent,Vector3 point,Vector3 scale){var g=GameObject.CreatePrimitive(PrimitiveType.Cube);g.name="TEST ONLY • "+name;g.transform.SetParent(parent,false);g.transform.localPosition=point;g.transform.localScale=scale;return g;}
         static void Target(FullCasePlayHost host,Transform zone,string location,string key,string id,FullPlayAction action,float x,FullCaseModal page=FullCaseModal.None){var g=Cube(key,zone,new Vector3(x,1.6f,0),new Vector3(.65f,.8f,.3f));var t=g.AddComponent<FullCasePlayTarget>();t.Key=key;t.StableId=id;t.LocationId=location;t.Label="TEST ONLY • "+id;t.Action=action;t.Page=page;host.Targets.Add(key,t);
-            var sign=new GameObject("TEST ONLY label");sign.transform.SetParent(g.transform,false);sign.transform.localPosition=new Vector3(0,.8f,-.8f);sign.transform.localScale=new Vector3(1/.65f,1/.8f,1/.3f);var text=sign.AddComponent<TextMesh>();text.text=id;text.characterSize=.13f;text.anchor=TextAnchor.MiddleCenter;text.color=Color.white;}
+            var sign=new GameObject("TEST ONLY label");sign.transform.SetParent(g.transform,false);sign.transform.localPosition=new Vector3(0,.8f,-.8f);sign.transform.localScale=new Vector3(1/.65f,1/.8f,1/.3f);var text=sign.AddComponent<TextMesh>();text.text=id;t.Sign=text;text.characterSize=.1f;text.anchor=TextAnchor.MiddleCenter;text.color=Color.white;}
         public static void Build(){if(!EditorApplication.isPlaying||UnityEngine.SceneManagement.SceneManager.GetActiveScene().path!=Scene||Active)throw new InvalidOperationException("Only explicit Gameplay Play session");
             panel=ScriptableObject.CreateInstance<FullCaseSandboxWindow>();panel.PlayHostMode=true;panel.hideFlags=HideFlags.HideAndDontSave;
             var root=new GameObject("TEST ONLY • Full-case controller environment");root.tag="EditorOnly";var host=root.AddComponent<FullCasePlayHost>();Active=host;
@@ -48,13 +48,13 @@ namespace ConRoi.Gameplay.EditorChecks
                 Cube("floor "+location.id,zone.transform,new Vector3(0,-.15f,0),new Vector3(140,.3f,12));int i=0;
                 foreach(var evidence in adapter.TestCatalog.evidence.Where(e=>e.location==location.id&&e.id!="decoded"))Target(host,zone.transform,location.id,"evidence."+evidence.id,evidence.id,FullPlayAction.Evidence,i++*2.2f);
                 if(location.id=="market")Target(host,zone.transform,location.id,"evidence.receipt.channel","receipt.channel",FullPlayAction.Evidence,i++*2.2f);
-                string actor=location.id=="office"?"phuong":location.id=="market"?"ha":location.id=="school"?"mai":location.id=="lake"?"bao":location.id=="slope"?"tung":location.id=="garden"?"lan":location.id=="homestay"?"host":"khai";
-                Target(host,zone.transform,location.id,"actor."+location.id,"npc."+actor,FullPlayAction.Actor,-4);
+                string actor=FullCasePlayGuide.ActorAt(location.id);
+                if(actor!=null)Target(host,zone.transform,location.id,"actor."+location.id,"npc."+actor,FullPlayAction.Actor,-4);
                 Target(host,zone.transform,location.id,"table."+location.id,"Bàn dựng",FullPlayAction.Page,-7,FullCaseModal.Reconstruction);
                 if(location.id=="station")Target(host,zone.transform,location.id,"appointment","Cuộc hẹn",FullPlayAction.Appointment,-10);
                 i=0;foreach(var destination in adapter.Runtime.GetLocations())Target(host,zone.transform,location.id,"travel."+location.id+"."+destination.id,destination.id,FullPlayAction.Travel,-14-i++*2.2f);
             }
-            host.CursorContextChanged=CursorContext;host.TextInputFocused=()=>panel.TextInputFocused;host.DrawPanel=panel.DrawPlayUI;host.Inspect=panel.InspectFromWorld;host.Talk=panel.TalkFromWorld;host.Feedback=panel.ResultFromWorld;host.Profile=adapter.Profile;host.Visible=()=>EditorWindow.focusedWindow!=null&&EditorWindow.focusedWindow.GetType().Name=="GameView";host.Initialize(adapter.Runtime);
+            host.Guide=()=>"Khu: "+FullCasePlayGuide.Place(adapter.Runtime.Location)+"\n"+FullCasePlayGuide.Next(adapter.Runtime);host.DescribeTarget=t=>FullCasePlayGuide.Target(adapter.Runtime,t);host.PresentResult=(t,result)=>FullCasePlayGuide.Present(adapter.Runtime,result,t);host.DebugIds=()=>panel.DebugIds;host.CursorContextChanged=CursorContext;host.TextInputFocused=()=>panel.TextInputFocused;host.DrawPanel=panel.DrawPlayUI;host.Inspect=panel.InspectFromWorld;host.Talk=panel.TalkFromWorld;host.Feedback=panel.ResultFromWorld;host.Profile=adapter.Profile;host.Visible=()=>EditorWindow.focusedWindow!=null&&EditorWindow.focusedWindow.GetType().Name=="GameView";host.Initialize(adapter.Runtime);
             var view=EditorWindow.GetWindow(typeof(Editor).Assembly.GetType("UnityEditor.GameView"));view.Show();view.Focus();
         }
     }
