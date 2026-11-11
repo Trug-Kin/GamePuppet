@@ -155,6 +155,7 @@ namespace ConRoi.Gameplay.EditorChecks
                 foreach(var entry in s.GetHenriLookup())TextLabel(entry.pose+" = "+entry.letter);
                 TextLabel(FullInvestigationLetters.Glossary,Wrapped);for(int j=0;j<4;j++)reply[j]=Field("Cụm hồi đáp "+(j+1),reply[j]??"");if(Button("Gửi qua kênh đã biết"))Do(s.TrySendReply(reply));
             }
+            if(s.Modal==FullCaseModal.Comparison){var hint=FullCasePlayGuide.ComparisonHint(s);if(hint!="")TextLabel(hint,Wrapped);}
             if(s.Modal==FullCaseModal.Comparison)foreach(var task in s.GetComparisons()){
                 TextLabel(task.label+" • feature/rubric TEST ONLY; không chứng nhận C3");if(!choices.TryGetValue(task.id,out var selection))choices[task.id]=selection=new HashSet<string>();
                 foreach(var record in s.GetRecords().Where(r=>r.viewed)){bool old=selection.Contains(record.id),next=Toggle(task.id+" • "+record.id,old);if(next)selection.Add(record.id);else selection.Remove(record.id);}

@@ -24,6 +24,7 @@ public static class FullCasePlayGuide {
   if(!s.HasHeardStatement("phuong.samples.origin"))return prefix+"Quay Văn phòng gặp Phương; chủ đề nguồn mẫu hiện đã mở.";
   return prefix+"Đã hoàn tất bước mở đầu/nhận mẫu. Tiếp tục khám các đầu mối đã mở, ghi quan sát và đọc thư; hồ sơ vẫn cho phép quay lại.";
  }
+ public static string ComparisonHint(FullInvestigationRuntime s)=>s.GetComparisons().Length==0?"Chưa có bài đối chiếu đủ nguồn. Tiếp tục khám và Ghi các nguồn đang mở rồi quay lại. Esc hoặc Hủy / trở lại để tiếp tục điều tra.":"";
  public static string LockedTopic(FullInvestigationRuntime s,string topic) {
   if(s.Paused)return "Hãy Tiếp tục trước khi hỏi.";
   if(topic=="phuong.samples.origin")return s.HasEvidence("khai")?"Cần nhận mẫu sau khi được Phương cho phép; rồi quay lại hỏi.":"Chủ đề bổ sung chưa mở. Bạn vẫn có thể chọn câu hỏi đang mở ở trên; hãy khám các nguồn liên quan rồi quay lại.";
