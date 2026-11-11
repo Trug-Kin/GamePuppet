@@ -1,5 +1,7 @@
 # Bàn giao mô phỏng và tích hợp toàn game — Gameplay & Dữ liệu
 
+**Bước đầu/binding NPC thử mới nhất:** [PLAYMODE-ONBOARDING-04](#playmode-onboarding), nguồn **f6478f3e**, công cụ **1bcd6221**. Có gợi ý theo state và tên người/vật; bỏ NPC fallback không có hội thoại, giữ cuộc gặp Khải qua khám nội dung sẵn có. B04: **94/94 kiểm controller/Game View tổng hợp đạt**, không input Windows/người mới/scene chung. Mở qua menu tại đúng worktree như K.8.
+
 **Play Mode/controller mới nhất:** [K.8: mở/chơi thế giới TEST ONLY](#playmode-world), W09 nguồn **3865e818** / checker **5f503fb0**: 283/283 kiểm tuyến đã chạy đạt. Bổ sung **PLAYMODE-INPUT-02**, nguồn **d8928932** (gồm **3336d916**) / checker **616215cf**: D09 41/41 kiểm cursor Windows, mouse/raycast, text/modal/pause/focus và travel/save/load đạt trong Editor có cửa sổ. W09 vẫn giữ probe batch NOT_RUN lịch sử; xem giới hạn/input và các lượt lỗi tại cuối K.8. Mô phỏng TEST ONLY, chưa phải chơi tự nhiên/scene chung; IO-OPEN-01 còn OPEN.
 
 **Kiểm nhánh ending mới nhất:** [K.7: C/A-sai qua UI thử, dữ liệu và IO OPEN](#sandbox-ending-branches), window `48679ec1`, checker `1e8d3c4f`. C03 **115/115**, A03 **140/140**; rubric/media TEST ONLY, không chứng nhận C3 hoặc sản phẩm. Profile mới ở Temp ngoài project; đường dẫn K.6 là lịch sử.
@@ -990,7 +992,7 @@ Cấu hình vẫn FullCaseTestCatalog.CreateApproved(false) trong Editor: produc
 
 #### Tuyến điều khiển đại diện
 
-1. Office: E Phương, hỏi đầu mối homestay. E bảng workshop để chuyển khu; E slide → xem chưa ghi → Ghi; xem Khải. F5, đi khu khác rồi F6: về workshop an toàn và giữ ghi nhận. Kiểm P/E/Esc, modal và pause.
+1. Office: đọc Việc tiếp theo, tìm Phương gần điểm vào; E Phương, chọn câu hỏi đầu mối homestay đang mở (chủ đề bổ sung về mẫu khóa là bình thường). E bảng workshop để chuyển khu; E slide → xem chưa ghi → Ghi; xem Khải. F5, đi khu khác rồi F6: về workshop an toàn và giữ ghi nhận. Kiểm P/E/Esc, modal và pause.
 2. Market: xem receipt, hỏi Hà về phiếu, nghe kênh trả giấy; hỏi lặp không nhân lịch sử. Xem/ghi letter. School: hỏi Mai, xem letter.mai. Slope: xem letter.tung. Theatre: xem Henri; P → Mật mã, nhập bảng ký tự từ nguồn đã mở, ghi bản đọc ba thư.
 3. Lake: khám/ghi bản đọc letter.bao, hỏi Bảo về Lan. Garden chỉ mở sau producer hướng dẫn; khám/ghi bản đọc letter.lan. Quay market nhập đủ bốn cụm hồi đáp và gửi qua kênh đã nghe. Không cấp bản giải/tiến trình.
 4. Office: hỏi quyền mẫu TEST ONLY; homestay khám/ghi paper.khai. P → Đối chiếu chọn letter và paper.khai, chọn test.feature.match; runtime kiểm nguồn/tạo record đối chiếu.
@@ -1128,3 +1130,63 @@ Công cụ **FullCaseBootstrapChecks.RunWindowed** opt-in, Unity có cửa sổ,
 **Bằng chứng local, không commit:** Test/Output/PlayBootstrap20261110/B01 và B02 có direct.json, menu.json, results.json; log riêng PlayBootstrap20261110-B01.log/B02.log; không ghi đè lịch sử. B02 results.json SHA256 **2b961b689508bab0444ea0f9507c4819f8e0489437b8cb50de33042c56951090**; manifest chứa launcher/checker/template. Profile B02: **C:/Users/kaito/AppData/Local/Temp/ConRoiGameplaySandbox/FullCaseSandbox_5424f624832a48e1adc113f7f96709d5**, không tạo save; Temp không phải sửa IO-OPEN-01. Hash scene template và ba ProjectSettings khớp snapshot trước thao tác. Diff/untracked cũ giữ nguyên.
 
 **Bàn giao:** UI/UX & Tích hợp nhận chỉ dẫn chọn đúng project/menu và kiểm lại bootstrap khi nhận nguồn; Map & Asset không cần thêm camera/model để chữa template này. Không sửa scene sản phẩm/root worktree của vai trò khác, save gốc hoặc GDD. Scene chung/UI1080p/người mới vẫn NOT_RUN, IO-OPEN-01/P-close giữ trạng thái riêng. Hướng dẫn chỉ hiện trong Gameplay template khi mở sai, không tự xuất hiện trong scene sản phẩm.
+
+
+#### PLAYMODE-ONBOARDING-04 — acceptance trước sửa
+
+Đối chiếu GDD3.6 §2 (Khải xuất hiện sớm, nhìn áo/giày), §7.2 (truy cập mẫu qua Phương), §11 và quyết định G1 đã nhận: nghe Phương mở đầu mối homestay, không bắt Ghi. Tái hiện mapping NPC–zone và topic gate ở nguồn 3cde28c9 trước sửa. Phân biệt phantom npc.khai do fallback với lần gặp/khám evidence khai đã có; không viết thêm thoại Khải. Phương phải giữ chủ đề chỉ homestay mở từ đầu, nguồn mẫu khóa đến khi nhận mẫu. UI/world TEST ONLY hiển thị gợi ý bước hiện tại từ query state, tên người/vật/đường cần tìm; lỗi nêu thao tác thiếu, không đáp án/thoại khóa; ID chỉ ở debug. Kiểm tuyến profile sạch qua E/raycast + controller, hỏi mở/khóa/lặp, khám chưa Ghi/đã Ghi, xin phép trước/sau gặp Khải, nhận mẫu rồi hỏi nguồn, quay lại/save-load. Không thay gate/catalog/hash/save schema, UI/map/scene sản phẩm.
+
+
+<a id="playmode-onboarding"></a>
+
+#### PLAYMODE-ONBOARDING-04 — bước đầu và binding NPC
+
+**Đã xác minh hai hiện tượng khác nhau ở nguồn 3cde28c9:**
+
+- Launcher dùng nhánh mặc định npc.khai ở workshop/theatre/station, còn slope/garden/homestay cũng tạo NPC không có topic trong FullApprovedStatements. TryBeginConversation chỉ chấp nhận participant/location có định nghĩa thực; không có hội thoại Khải trong catalog này. Vì vậy “Không thể bắt đầu trao đổi ở đây” từ target fallback là **lỗi binding TEST ONLY**, không phải cần mở hết gate.
+- Phương tại office có hai topic: phuong.direction.homestay mở từ đầu; phuong.samples.origin đòi Collected(samples). Khóa topic thứ hai **đúng điều kiện**, không khóa toàn cuộc trao đổi. Chưa nhận mẫu thì không được nghe đáp án về nguồn; hỏi chỉ dẫn mở homestay ngay, không bắt Ghi. Permission test.samples trong catalog thử hiện có đòi Collected(khai); giữ nguyên, không biến điều kiện thử này thành phê duyệt nội dung/thủ tục sản phẩm.
+
+**Nguồn đã kiểm B04: f6478f3e; công cụ đúng lượt: 1bcd6221.** Không đổi FullInvestigationRuntime/FullApprovedStatements, schema2/migration, catalog/hash hoặc ID/GUID. Khải vẫn dùng nội dung Gặp Khải có sẵn tại evidence khai (GDD §2, prototype §11); không sáng tác topic/đáp án hoặc gọi cuộc gặp ngắn đó là hệ hỏi lại Khải hoàn chỉnh.
+
+| Nơi / target key debug | Stable ID và hành động thật | Nhãn / trạng thái |
+|---|---|---|
+| office / actor.office | npc.phuong → TryBeginConversation | Phương; chỉ dẫn mở ngay, nguồn mẫu giữ gate |
+| workshop / evidence.khai | khai → TryCollect → TryInspect | Gặp Khải; cuộc gặp/ngắm quan sát hiện có, có thể Ghi theo cơ chế cũ |
+| market / actor.market | npc.ha → TryBeginConversation | Hà; topic phiếu/kênh theo H1/H2 cũ |
+| school / actor.school | npc.mai → TryBeginConversation | Mai; chỉ dẫn nhà hát như cũ |
+| lake / actor.lake | npc.bao → TryBeginConversation | Bảo; topic chỉ Lan vẫn cần giải và Ghi thư Bảo |
+| workshop/theatre/station/slope/garden/homestay | Không tạo actor fallback thiếu topic | Vật chứng/đường/bàn dựng vẫn giữ nguyên; không thêm thoại Khải/Tùng/Lan/chủ homestay để giả đủ tuyến |
+
+**Giao diện thử đã đổi:**
+
+1. FullCasePlayGuide.Next(runtime) query HasHeardStatement, HasRecordedObservation, HasEvidence, HasPermission, Finalized/AppointmentRequirement. HUD world và panel đều hiện “Việc tiếp theo (gợi ý) • TEST ONLY” và tên cần tìm. Gợi ý mở đầu không phải một gate/thứ tự bắt buộc mới; hành động khác vẫn theo runtime. Sau bước nhận mẫu/quay lại Phương, gợi ý chuyển sang tiếp tục khám đầu mối/đọc thư, không tự nhận đã cung cấp toàn bộ hệ mục tiêu sản phẩm.
+2. Nhãn target/sign dùng Person/Evidence/Place; Phương thay npc.phuong, Gặp Khải thay đối tượng npc.khai giả. Evidence title lấy từ InvestigationContent theo ID đã có; nhãn vật mẫu bổ sung là nhãn UI thử, không sửa nội dung/save. Đường chưa mở không hiện tên đích để làm lộ đầu mối. Bật “Debug • hiện ID kỹ thuật” trong panel để hiện location/StableId của target trên HUD; Hierarchy/key kỹ thuật giữ nguyên cho debug (trừ actor fallback bị bỏ).
+3. Conversation nói rõ chọn câu hỏi đang mở. Topic khóa có lý do xuống dòng, không hiện câu hỏi/đáp án chưa mở. Với Phương trước khi biết nguồn liên quan, chỉ báo chủ đề bổ sung chưa mở và cho hỏi câu đang mở; khi đã gặp Khải, có thể nhắc cần nhận mẫu rồi quay lại. Không dùng trạng thái khóa làm nhãn thành công.
+4. FullCasePlayGuide.Present giữ Success/Code của kết quả gốc; chỉ thay câu chữ lỗi ở adapter UI. Chặn chuyển vùng nhắc Ghi vệt trượt hoặc nghe đúng người chỉ dẫn; xin quyền quá sớm nhắc gặp Khải rồi quay Phương. Không tự ghi/thu, không mở gate, không lộ bảng chữ/lời giải hay xác nhận suy luận. Lỗi save/load giữ kết quả hiện có.
+
+**API/wiring TEST ONLY thực tế:** FullCasePlayHost.Guide (Func<string>) → query gợi ý; DescribeTarget (Func<FullCasePlayTarget,string>) → nhãn; PresentResult (Func<FullCasePlayTarget,FullActionResult,FullActionResult>) → thông báo, không mutate runtime; DebugIds (Func<bool>) → bật debug. Launcher nối các delegate tới FullCasePlayGuide và panel. FullCasePlayTarget.Sign là TextMesh thử; host Refresh cập nhật tên theo state (ví dụ đường vừa mở). LastFeedback là thông báo UI của hành động world, không dữ liệu lưu. Các delegate này nằm trong host UNITY_EDITOR, không phải contract bắt buộc mới của runtime sản phẩm.
+
+**Cách thử bước đầu cho người nhận:**
+
+1. Mở đúng C:/ConRoi_Nguoi2 / Gameplay_ThuNghiem sạch rồi menu Choi the gioi TEST ONLY (Play Mode) như PLAYMODE-BOOTSTRAP-03. Profile mới không có chứng cứ/lời khai/quyền.
+2. Tìm biển Phương gần điểm vào Văn phòng. E → chọn “Tôi kiểm tra nơi Khải lưu trú ở đâu?”. Đừng chọn chủ đề khóa để bắt đầu. Không bắt buộc Ghi lời kể. Esc quay lại.
+3. Theo biển Đi tới Xưởng (A/D dọc hàng bảng, E tới trong 3.2 m). Tìm Vệt trượt trên gác, E khám → chọn Ghi mục 0 → Esc. Nếu chỉ khám rồi thử tới Chợ/Trường/Hồ, gate vẫn chặn và nhắc việc chưa làm.
+4. Tìm Gặp Khải trong dãy vật ở Xưởng, E đọc cuộc gặp/quan sát đã có. Không đi tìm NPC Khải ở nhà hát/ga và không có đáp án hỏi lại mới. Esc → bảng Đi tới Văn phòng → E Phương → Xin phép nhận mẫu đối chiếu. Không cần Ghi Khải lần nữa để vượt gate thử hiện tại.
+5. Đi Homestay theo đầu mối đã nghe, tìm Bàn giao mẫu đối chiếu, E nhận. Quay Phương: topic “Nguồn của các mẫu đối chiếu là đâu?” nay mở. Hỏi lặp không nhân lời khai/quà. Save/load profile thử giữ đủ nguồn, ghi vệt trượt, lời đã nghe và quyền; gợi ý được query lại từ state.
+
+**Kiểm và lịch sử (không cộng PASS các lượt):**
+
+| Lượt | Bằng chứng / kết luận |
+|---|---|
+| B01 | Công cụ thử điều khiển Editor đang mở bị race Stop→Play, OpenScene khi chưa kết thúc Play; chưa chạy tuyến. Có snapshot scene sạch/live state sau import và log lỗi công cụ tại Logs/Editor.log; không tính PASS/FAIL gameplay. Đã bỏ bridge thử, đóng Editor bình thường và chạy phiên riêng; không giữ bridge trong commit |
+| B02 / 3cde28c9 | Đã tái hiện fallback npc.khai bị từ chối; Phương có topic mở và topic mẫu khóa; hỏi khóa/xin phép sớm không cấp gì; nghe chỉ dẫn không cần Ghi, khám vệt trượt chưa mở Chợ. Dừng vì helper Go đặt kỳ vọng thành công sai cho ca cố ý thử đường khóa; giữ nguyên kết quả, sửa công cụ dùng World/E cho ca bị chặn |
+| B03 / f6478f3e | Ảnh first-step xác nhận Phương và hướng dẫn hiện. Tuyến dừng vì helper giả định yaw/z không đổi sau modal; raycast không tới bảng, công cụ không tương tác bừa. Đã sửa công cụ ngắm qua virtual mouse và tiếp cận x/z qua WASD; không sửa controller/runtime, không đặt Transform |
+| B04 / f6478f3e | **94/94 assertion đạt, 0 lỗi; 32 bản ghi input**. Một tuyến liên tục từ profile sạch, qua hành động thật: Phương → chỉ dẫn → Xưởng → khám/chưa Ghi/đường khóa → Ghi → Khải → Phương xin phép → Homestay nhận mẫu → Phương hỏi/lặp → F5/F6 → pause/resume |
+
+B04 dùng Unity 6000.6.2f1 **windowed Play Mode**, virtual Input System keyboard/mouse vào controller hiện có và targeted Game View IMGUI click; E dùng shared raycast thật. Không fixture cấp chứng cứ/progress, không gọi command gameplay trực tiếp để vượt điều kiện; tool đọc transform target để dẫn input, không phải người chơi tự tìm tự nhiên. Các query gợi ý được kiểm không mutate state; hỏi khóa không lộ đáp án; save/load giữ tiến trình và gợi ý, không thêm schema. Ảnh first-step và after-return được giữ local; nhìn ảnh first-step đã xác nhận chữ mục tiêu/Phương hiển thị, không suy toàn UI1080p PASS.
+
+Công cụ: Unity -projectPath C:/ConRoi_Nguoi2 -executeMethod ConRoi.Gameplay.EditorChecks.FullCaseOnboardingChecks.RunBatch --world-output <absolute-new-folder> --world-source <source-SHA> --onboarding-fixed yes -logFile <local-log>; lượt này **không -batchmode/-quit** dù tên method kế thừa RunBatch. Không chạy khi Editor khác đang mở cùng project; công cụ tự thoát sau lượt. Không chạy lại 283 W09, 41 input D09, các nhánh ending hay toàn bộ save.
+
+**Bằng chứng local không commit:** Test/Output/PlayOnboarding20261111/B04/results.json, final-state.json, first-step.png, after-return.png, final.png (nếu capture có texture), progress.txt; log PlayOnboarding20261111-B04.log. SHA256 results.json **f4b28acc2a5b8dc051a815e03ae53d726b4e4c6dd80a79d50a37c321c93eef70**, manifest 6 file nguồn/công cụ khớp trước đóng gói. Profile **C:/Users/kaito/AppData/Local/Temp/ConRoiGameplaySandbox/FullCaseSandbox_70509f8c2db543b085cd3ef75264b728**, namespace fullcase schema2/Temp như K.8; không chạm save gốc/r107, không coi Temp là sửa IO-OPEN-01. B01–B03/history/preservation giữ riêng, không ghi đè. Ba ProjectSettings và template scene khớp byte-hash đầu lượt; thay đổi/untracked có sẵn không stage. State Play chưa lưu trước khi import công cụ không được chứng minh đã snapshot đầy đủ; không tuyên bố phục hồi phiên chơi cũ, chỉ bảo toàn file/diff và dùng profile thử mới.
+
+**Nhận tích hợp / phần chưa làm:** UI/UX & Tích hợp nhận cách phân biệt topic đang mở/khóa, mục tiêu gợi ý và bản đồ actor; dùng query runtime thật và dữ liệu nhãn sản phẩm, không copy host Editor-only vào scene chung. Map & Asset nhận tên/ID target và nơi người thử cần tìm, không đổi vị trí sản phẩm trong gói này. Nếu cần hội thoại hỏi lại Khải/Tùng/Lan/chủ homestay, phía nội dung phải cung cấp topic/question/answer/gate đã duyệt; Gameplay nối sau khi có đầu vào, không dùng TEST ONLY Topics() để giả thoại chính thức. Gặp Khải cũ vẫn đọc/khám được; không báo hoàn chỉnh hội thoại Khải. Scene chung/UI1080p/người mới NOT_RUN; IO-OPEN-01 và P-close sản phẩm giữ riêng. Chỉ **HƯỚNG DẪN/BINDING MỞ ĐẦU TEST ONLY ĐÃ KIỂM → CHỜ UI/ASSET/TÍCH HỢP**, không tự chốt gate/cốt truyện/GDD.
