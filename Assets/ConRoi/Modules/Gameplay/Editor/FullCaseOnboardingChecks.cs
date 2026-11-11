@@ -15,7 +15,7 @@ namespace ConRoi.Gameplay.EditorChecks {
 // Real movement input, E/nearest raycast and Game View controls. State reads only.
 [InitializeOnLoad] public static class FullCaseOnboardingChecks {
  const string K="ConRoi.Onboarding.Check";
- static FullCasePlayHost h;static FullCaseSandboxWindow w;static FullInvestigationRuntime S=>h.Runtime;
+ static FullCasePlayHost h;static FullCaseSandboxPanel w;static FullInvestigationRuntime S=>h.Runtime;
  static Vector2 eventOffset;static bool calibrated;static Vector2 mouseDelta;static int mouseFrames;static Keyboard keyboard;static Mouse mouse;static EditorWindow view;
  static readonly Stack<IEnumerator> tasks=new Stack<IEnumerator>();
  static JArray rows,inputs;static string output,step="boot";static int frame=-1,fail;static double began,next,progress;
@@ -69,7 +69,7 @@ namespace ConRoi.Gameplay.EditorChecks {
  string before=S.ExportStateJson();yield return Click(fixedVersion?"Chủ đề chưa mở":"Chủ đề khóa • "+locked.Reason);
  C("locked ask does not grant anything",S.ExportStateJson()==before&&w.ControllerForChecks.Reply=="");
  string permissionLabel=fixedVersion?"Xin phép nhận mẫu đối chiếu":S.GetPermissions().Single().label;
- yield return Click(permissionLabel);C("permission before Khai stays locked",!S.HasPermission("test.samples"));if(fixedVersion)C("permission UI points to Khai encounter",((string)typeof(FullCaseSandboxWindow).GetField("message",System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic).GetValue(w)).Contains("Gặp Khải"));
+ yield return Click(permissionLabel);C("permission before Khai stays locked",!S.HasPermission("test.samples"));if(fixedVersion)C("permission UI points to Khai encounter",((string)typeof(FullCaseSandboxPanel).GetField("message",System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic).GetValue(w)).Contains("Gặp Khải"));
  yield return Click(first.Question);C("direction heard opens homestay without Ghi",S.HasHeardStatement("phuong.direction.homestay")&&S.CanTravel("homestay")&&S.GetRecordedStatements().Length==0);
  yield return Close();C("guide points to workshop",!fixedVersion||Guide().Contains("Xưởng"));
  yield return Go("workshop");

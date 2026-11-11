@@ -15,7 +15,7 @@ namespace ConRoi.Gameplay.EditorChecks {
 // Real movement input, E/nearest raycast and Game View controls. State reads only.
 [InitializeOnLoad] public static class FullCasePlayChecks {
  const string K="ConRoi.PlayWorld.Check";
- static FullCasePlayHost h;static FullCaseSandboxWindow w;static FullInvestigationRuntime S=>h.Runtime;
+ static FullCasePlayHost h;static FullCaseSandboxPanel w;static FullInvestigationRuntime S=>h.Runtime;
  static Vector2 eventOffset;static bool calibrated;static Vector2 mouseDelta;static int mouseFrames;static Keyboard keyboard;static Mouse mouse;static EditorWindow view;
  static readonly Stack<IEnumerator> tasks=new Stack<IEnumerator>();
  static JArray rows,inputs;static string output,step="boot";static int frame=-1,fail;static double began,next,progress;

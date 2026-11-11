@@ -17,7 +17,7 @@ namespace ConRoi.Gameplay.EditorChecks {
 // Opt-in windowed desktop test; never used by batch or launched automatically.
 [InitializeOnLoad] public static class FullCaseInputFocusChecks {
  const string K="ConRoi.InputFocus.Check";
- static FullCasePlayHost h;static FullCaseSandboxWindow w;static FullInvestigationRuntime S=>h.Runtime;
+ static FullCasePlayHost h;static FullCaseSandboxPanel w;static FullInvestigationRuntime S=>h.Runtime;
  static EditorWindow view;static Mouse mouse;static Vector2 delta,eventOffset;static int mouseFrames,frame=-1,fail;
  static readonly Stack<IEnumerator> tasks=new Stack<IEnumerator>();
  static readonly HashSet<byte> held=new HashSet<byte>();
@@ -84,9 +84,9 @@ namespace ConRoi.Gameplay.EditorChecks {
  yield return Key(0x1B);C("pause frees cursor and disables input",S.Paused&&Cursor.visible&&!h.Movement.enabled&&!h.Look.enabled);point=h.Movement.transform.position;yield return Key(0x57);C("pause blocks Windows movement",Vector3.Distance(point,h.Movement.transform.position)<.01f);yield return Key(0x1B);C("pause resume captures cursor",!S.Paused&&S.CanMove&&Cursor.lockState==CursorLockMode.Locked&&!Cursor.visible&&!NativeCursorShowing());
  yield return Key(0x50);yield return Click("Mật mã");yield return Click("Cụm hồi đáp 1");
  foreach(byte k in new byte[]{0x57,0x41,0x53,0x44,0x45,0x50})yield return Key(k,.05);
- var reply=(string[])typeof(FullCaseSandboxWindow).GetField("reply",BindingFlags.Instance|BindingFlags.NonPublic).GetValue(w);
+ var reply=(string[])typeof(FullCaseSandboxPanel).GetField("reply",BindingFlags.Instance|BindingFlags.NonPublic).GetValue(w);
  inputs.Add(new JObject{["kind"]="TYPED_FIELD_READBACK",["text"]=reply[0]});C("native WASDEP does not trigger gameplay",S.Modal==FullCaseModal.Cipher&&h.RayInteractions==hits&&Vector3.Distance(point,h.Movement.transform.position)<.01f);
- int keyEvents=h.KeyEvents;foreach(char c in "wasdep")view.SendEvent(new Event{type=EventType.KeyDown,character=c});yield return Wait(()=>h.KeyEvents>=keyEvents+6,"GameView text chars");reply=(string[])typeof(FullCaseSandboxWindow).GetField("reply",BindingFlags.Instance|BindingFlags.NonPublic).GetValue(w);inputs.Add(new JObject{["kind"]="TARGETED_GAMEVIEW_TEXT_READBACK",["text"]=reply[0]});Require("GameView text entry works",reply[0].ToLowerInvariant().EndsWith("wasdep"));
+ int keyEvents=h.KeyEvents;foreach(char c in "wasdep")view.SendEvent(new Event{type=EventType.KeyDown,character=c});yield return Wait(()=>h.KeyEvents>=keyEvents+6,"GameView text chars");reply=(string[])typeof(FullCaseSandboxPanel).GetField("reply",BindingFlags.Instance|BindingFlags.NonPublic).GetValue(w);inputs.Add(new JObject{["kind"]="TARGETED_GAMEVIEW_TEXT_READBACK",["text"]=reply[0]});Require("GameView text entry works",reply[0].ToLowerInvariant().EndsWith("wasdep"));
  point=h.Movement.transform.position;hits=h.RayInteractions;string state=S.ExportStateJson();yield return Key(0x74);C("typing focus blocks F5 gameplay shortcut",!File.Exists(FullInvestigationRuntime.SavePathFor(h.Profile))&&S.ExportStateJson()==state);
  yield return Key(0x75);C("typing focus blocks F6 gameplay shortcut",S.Modal==FullCaseModal.Cipher&&S.ExportStateJson()==state&&h.RayInteractions==hits&&Vector3.Distance(point,h.Movement.transform.position)<.01f);yield return Close();
  // A small real transition + save/load. No evidence, progress or result setters.

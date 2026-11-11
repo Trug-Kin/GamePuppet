@@ -13,16 +13,25 @@ namespace ConRoi.Gameplay.EditorChecks
         public const string Scene="Assets/ConRoi/Modules/Gameplay/Scenes/Gameplay_ThuNghiem.unity";
         const string Armed="ConRoi.FullCase.Play.Armed";
         static EditorWindow cursorView;
-        static FullCaseSandboxWindow panel;public static FullCasePlayHost Active {get;private set;}
-        internal static FullCaseSandboxWindow Panel=>panel;
-        static FullCasePlayLauncher(){EditorApplication.playModeStateChanged+=OnState;}
+        static FullCaseSandboxPanel panel;public static FullCasePlayHost Active {get;private set;}
+        internal static FullCaseSandboxPanel Panel=>panel;
+        const string ReloadInterrupted="ConRoi.FullCase.Play.ReloadInterrupted";
+        static FullCasePlayLauncher(){EditorApplication.playModeStateChanged+=OnState;AssemblyReloadEvents.beforeAssemblyReload+=BeforeReload;
+            if(SessionState.GetBool(ReloadInterrupted,false))EditorApplication.delayCall+=FinishInterruptedReload;}
+        static void BeforeReload(){if(panel==null)return;SessionState.SetBool(ReloadInterrupted,true);Shutdown();}
+        static void FinishInterruptedReload(){SessionState.SetBool(ReloadInterrupted,false);SessionState.SetBool(Armed,false);
+            Debug.LogWarning("TEST ONLY: compile/domain reload đã ngắt phiên Play. Không tự khởi tạo runtime mới; save thử đã lưu được giữ nguyên. Dừng Play rồi mở lại từ menu và chọn đúng profile nếu cần tải.");
+            if(EditorApplication.isPlayingOrWillChangePlaymode)EditorApplication.ExitPlaymode();}
+        static void Shutdown(){if(Active){Active.enabled=false;Active.DrawPanel=null;Active.Talk=null;Active.Inspect=null;Active.Feedback=null;Active.Guide=null;Active.DebugIds=null;Active.TextInputFocused=null;
+                if(Active.Movement)Active.Movement.enabled=false;if(Active.Look)Active.Look.enabled=false;}
+            panel?.Dispose();panel=null;Active=null;cursorView=null;Cursor.lockState=CursorLockMode.None;Cursor.visible=true;}
         [MenuItem("Con Roi/Gameplay/Choi the gioi TEST ONLY (Play Mode)")]
         public static void Open(){if(EditorApplication.isPlayingOrWillChangePlaymode)throw new InvalidOperationException("Dừng Play trước khi tạo phiên thử sạch.");if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().path!=Scene||UnityEngine.SceneManagement.SceneManager.GetActiveScene().isDirty)throw new InvalidOperationException("Mở scene Gameplay_ThuNghiem sạch trước; menu không ghi/đổi scene đang làm.");FullCasePlayLaunchHelp.CloseIfOpen();SessionState.SetBool(Armed,true);EditorApplication.EnterPlaymode();}
         static void OnState(PlayModeStateChange state){if(state==PlayModeStateChange.EnteredPlayMode){
                 if(SessionState.GetBool(Armed,false)){SessionState.SetBool(Armed,false);Build();}
                 else if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().path==Scene){Debug.LogWarning(FullCasePlayLaunchHelp.Instructions);FullCasePlayLaunchHelp.ShowDirectPlayHelp();}
             }
-            if(state==PlayModeStateChange.ExitingPlayMode){if(panel)UnityEngine.Object.DestroyImmediate(panel);panel=null;Active=null;cursorView=null;}}
+            if(state==PlayModeStateChange.ExitingPlayMode)Shutdown();}
         // Editor keeps a separate cursor permission after Esc; runtime Cursor setters
         // alone can report Locked while Windows still shows the pointer. Test host only.
         static void CursorContext(bool world){
@@ -37,7 +46,7 @@ namespace ConRoi.Gameplay.EditorChecks
         static void Target(FullCasePlayHost host,Transform zone,string location,string key,string id,FullPlayAction action,float x,FullCaseModal page=FullCaseModal.None){var g=Cube(key,zone,new Vector3(x,1.6f,0),new Vector3(.65f,.8f,.3f));var t=g.AddComponent<FullCasePlayTarget>();t.Key=key;t.StableId=id;t.LocationId=location;t.Label="TEST ONLY • "+id;t.Action=action;t.Page=page;host.Targets.Add(key,t);
             var sign=new GameObject("TEST ONLY label");sign.transform.SetParent(g.transform,false);sign.transform.localPosition=new Vector3(0,.8f,-.8f);sign.transform.localScale=new Vector3(1/.65f,1/.8f,1/.3f);var text=sign.AddComponent<TextMesh>();text.text=id;t.Sign=text;text.characterSize=.1f;text.anchor=TextAnchor.MiddleCenter;text.color=Color.white;}
         public static void Build(){if(!EditorApplication.isPlaying||UnityEngine.SceneManagement.SceneManager.GetActiveScene().path!=Scene||Active)throw new InvalidOperationException("Only explicit Gameplay Play session");
-            panel=ScriptableObject.CreateInstance<FullCaseSandboxWindow>();panel.PlayHostMode=true;panel.hideFlags=HideFlags.HideAndDontSave;
+            panel=new FullCaseSandboxPanel();
             var root=new GameObject("TEST ONLY • Full-case controller environment");root.tag="EditorOnly";var host=root.AddComponent<FullCasePlayHost>();Active=host;
             var player=new GameObject("TEST ONLY player");player.transform.SetParent(root.transform,false);player.SetActive(false);var cc=player.AddComponent<CharacterController>();cc.height=2;cc.radius=.32f;cc.center=Vector3.up;cc.minMoveDistance=0;var movement=player.AddComponent<DieuKhienDiChuyen>();movement.controller=cc;movement.speed=4;movement.jumpHeight=.8f;
             var eye=new GameObject("TEST ONLY eye");eye.transform.SetParent(player.transform,false);eye.transform.localPosition=Vector3.up*1.6f;var camera=eye.AddComponent<Camera>();camera.nearClipPlane=.03f;camera.farClipPlane=150;var look=player.AddComponent<DieuKhienGocNhin>();player.SetActive(true);host.Movement=movement;host.Look=look;host.Eye=camera;

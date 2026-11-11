@@ -50,13 +50,18 @@ namespace ConRoi.Gameplay.EditorChecks
         public FullActionResult Load(bool checkpoint=false)=>Runtime.TryLoad(Profile,checkpoint);
         public void Dispose(){Runtime.Changed-=OnChanged;Interview.EndInterview();}
     }
-    public sealed class FullCaseSandboxWindow : EditorWindow
+    public sealed class FullCaseSandboxPanel : IDisposable
     {
         internal bool DebugIds;
         internal bool TextInputFocused {get;private set;}
+        readonly EditorWindow owner;
         internal bool PlayHostMode;internal Rect PlayPanel;FullCaseModal drawnPlayModal;object drawnPlayContext;
-        internal void DrawPlayUI(Rect panel){PlayPanel=panel;if(drawnPlayModal!=adapter.Runtime.Modal||!ReferenceEquals(drawnPlayContext,adapter.Runtime.DataContext)){GUI.FocusControl(null);GUIUtility.keyboardControl=0;TextInputFocused=false;drawnPlayModal=adapter.Runtime.Modal;drawnPlayContext=adapter.Runtime.DataContext;}playLayout.Begin(panel.size);DrawUI();TextInputFocused=adapter.Runtime.Modal==FullCaseModal.Cipher&&!string.IsNullOrEmpty(GUI.GetNameOfFocusedControl());}
-        internal FullActionResult TalkFromWorld(string id)=>adapter.Interact(FullPlaceholderKind.Actor,id,adapter.Runtime.Location);
+        internal void DrawPlayUI(Rect panel){PlayPanel=panel;if(Event.current.type==EventType.Repaint){controls.Clear();scrollControls.Clear();drawnText.Clear();}if(drawnPlayModal!=adapter.Runtime.Modal||!ReferenceEquals(drawnPlayContext,adapter.Runtime.DataContext)){ResetNavigation();drawnPlayModal=adapter.Runtime.Modal;drawnPlayContext=adapter.Runtime.DataContext;}playLayout.Begin(panel.size);DrawUI();TextInputFocused=adapter.Runtime.Modal==FullCaseModal.Cipher&&!string.IsNullOrEmpty(GUI.GetNameOfFocusedControl());}
+        internal FullActionResult TalkFromWorld(string id){var result=adapter.Interact(FullPlaceholderKind.Actor,id,adapter.Runtime.Location);if(result.Success)ResetNavigation();return result;}
+        void ResetNavigation(){GUIUtility.keyboardControl=0;TextInputFocused=false;scroll=Vector2.zero;controls.Clear();scrollControls.Clear();}
+        internal bool Disposed {get;private set;}
+        Rect position=>owner?owner.position:PlayPanel;
+        void Repaint(){if(owner)owner.Repaint();}
         internal FullActionResult InspectFromWorld(string id){selected=id;return adapter.Runtime.TryInspect(id);}
         internal void ResultFromWorld(FullActionResult result)=>Do(result);
         FullCaseSandboxController adapter; PreviewRenderUtility preview;GameObject root;
@@ -69,7 +74,11 @@ namespace ConRoi.Gameplay.EditorChecks
         readonly PlayLayout playLayout=new PlayLayout();
         void BeginRow(){if(!PlayHostMode)GUILayout.BeginHorizontal();}
         void EndRow(){if(!PlayHostMode)GUILayout.EndHorizontal();}
-        void TextLabel(string text,GUIStyle style=null){if(PlayHostMode)playLayout.Label(text,style??GUI.skin.label);else GUILayout.Label(text,style??GUI.skin.label);}
+        readonly List<string> drawnText=new List<string>();
+        internal string[] TextForChecks=>drawnText.ToArray();
+        internal string[] ControlsForChecks=>controls.Keys.ToArray();
+        internal bool VisibleControlForChecks(string label,out Rect rect){if(!controls.TryGetValue(label,out rect))return false;return rect.yMin>=PlayPanel.y+playLayout.ScrollTop&&rect.yMax<=PlayPanel.yMax-2;}
+        void TextLabel(string text,GUIStyle style=null){if(Event.current.type==EventType.Repaint)drawnText.Add(text);if(PlayHostMode)playLayout.Label(text,style??GUI.skin.label);else GUILayout.Label(text,style??GUI.skin.label);}
         sealed class PlayLayout {
             float y,width,height;bool scrolling;Rect viewport;public Rect LastRect;public float ScrollTop;
             public void Begin(Vector2 size){y=8;width=size.x-20;height=size.y;scrolling=false;}
@@ -84,7 +93,7 @@ namespace ConRoi.Gameplay.EditorChecks
         }
         GUIStyle Wrapped=>PlayHostMode?new GUIStyle(GUI.skin.label){wordWrap=true}:EditorStyles.wordWrappedLabel;
         GUIStyle Bold=>PlayHostMode?new GUIStyle(GUI.skin.label){fontStyle=FontStyle.Bold}:EditorStyles.boldLabel;
-        void Help(string text,MessageType kind){if(PlayHostMode)playLayout.Label(text,Wrapped);else EditorGUILayout.HelpBox(text,kind);}
+        void Help(string text,MessageType kind){if(PlayHostMode)TextLabel(text,Wrapped);else EditorGUILayout.HelpBox(text,kind);}
         void Label(string label,string value){if(PlayHostMode)playLayout.Label(label+": "+value,Wrapped);else EditorGUILayout.LabelField(label,value);}
         bool Button(string label){bool pressed=PlayHostMode?playLayout.Button(label):GUILayout.Button(label);Remember(label);return pressed;}
         bool Toggle(string label,bool value){bool next=PlayHostMode?playLayout.Toggle(label,value):GUILayout.Toggle(value,label);Remember(label);return next;}
@@ -96,11 +105,10 @@ namespace ConRoi.Gameplay.EditorChecks
         Vector2 scroll;string selected="",letterId="letter",message="";string[] reply=new string[4];
         readonly Dictionary<string,HashSet<string>> choices=new Dictionary<string,HashSet<string>>();
         readonly Dictionary<string,string> mapping=new Dictionary<string,string>();double previous;
-        [MenuItem("Con Roi/Gameplay/Toan tuyen TEST ONLY")]
-        public static void Open()=>GetWindow<FullCaseSandboxWindow>("Con Rối • TEST ONLY");
-        void OnEnable(){
+        internal FullCaseSandboxPanel(EditorWindow window=null){
+            owner=window;PlayHostMode=window==null;
             var profile=Path.Combine(Path.GetTempPath(),"ConRoiGameplaySandbox","FullCaseSandbox_"+Guid.NewGuid().ToString("N"));
-            adapter=new FullCaseSandboxController(profile);preview=new PreviewRenderUtility();root=new GameObject("TEST ONLY full-case proxies"){hideFlags=HideFlags.HideAndDontSave};
+            adapter=new FullCaseSandboxController(profile);if(PlayHostMode)return;preview=new PreviewRenderUtility();root=new GameObject("TEST ONLY full-case proxies"){hideFlags=HideFlags.HideAndDontSave};
             preview.AddSingleGO(root);int i=0;
             foreach(var location in adapter.Runtime.GetLocations()){
                 var go=GameObject.CreatePrimitive(PrimitiveType.Cube);go.name="TEST ONLY region "+location.id;go.hideFlags=HideFlags.HideAndDontSave;go.transform.SetParent(root.transform,false);go.transform.localPosition=new Vector3(i++*5,0,0);go.transform.localScale=new Vector3(2,.1f,2);anchors.Add(location.id,go.transform.position);
@@ -110,13 +118,38 @@ namespace ConRoi.Gameplay.EditorChecks
             preview.camera.nearClipPlane=.01f;preview.camera.farClipPlane=12;preview.camera.clearFlags=CameraClearFlags.Color;preview.camera.backgroundColor=new Color(.13f,.15f,.17f);preview.lights[0].intensity=1;
             previous=EditorApplication.timeSinceStartup;EditorApplication.update+=Tick;
         }
-        void Tick(){double now=EditorApplication.timeSinceStartup;float dt=Mathf.Min(.1f,(float)(now-previous));previous=now;if(adapter!=null&&!PlayHostMode){adapter.Tick(dt,focusedWindow==this);Repaint();}}
-        void OnDisable(){EditorApplication.update-=Tick;adapter?.Dispose();adapter=null;preview?.Cleanup();preview=null;anchors.Clear();placeholders.Clear();controls.Clear();scrollControls.Clear();}
+        void Tick(){double now=EditorApplication.timeSinceStartup;float dt=Mathf.Min(.1f,(float)(now-previous));previous=now;if(adapter!=null&&!PlayHostMode){adapter.Tick(dt,EditorWindow.focusedWindow==owner);Repaint();}}
+        public void Dispose(){if(Disposed)return;Disposed=true;EditorApplication.update-=Tick;adapter?.Dispose();adapter=null;preview?.Cleanup();preview=null;anchors.Clear();placeholders.Clear();controls.Clear();scrollControls.Clear();}
         void Do(FullActionResult result){if(PlayHostMode)result=FullCasePlayGuide.Present(adapter.Runtime,result);message=result.Message;if(result.Success&&result.Message.StartsWith("Đã tải")){mapping.Clear();foreach(var pair in JsonUtility.FromJson<FullCaseSave>(adapter.Runtime.ExportStateJson()).mapping)mapping[pair.pose]=pair.letter;choices.Clear();selected="";reply=new string[4];}}
-        void OnGUI(){if(!PlayHostMode)DrawUI();}
+        internal void DrawEditorUI(){DrawUI();}
+        void DrawConversation(){
+            var s=adapter.Runtime;
+            TextLabel("Trao đổi với "+FullCasePlayGuide.Person("npc."+FullCasePlayGuide.ActorAt(s.Location)),Bold);
+            TextLabel("Chọn câu hỏi đang mở. Chủ đề khóa không chặn những câu hỏi khác.",Wrapped);
+            foreach(var topic in s.GetConversationTopics().OrderBy(t=>!t.CanAsk)){
+                string hint=FullCasePlayGuide.LockedTopic(s,topic.Id);
+                if(DebugIds)TextLabel("DEBUG • topic="+topic.Id);
+                if(!topic.CanAsk)TextLabel(hint,Wrapped);
+                if(Button(topic.CanAsk?topic.Question:"Chủ đề chưa mở")){var result=adapter.Ask(topic.Id);Do(!result.Success?FullActionResult.Fail(result.Code,hint):result);}
+            }
+            if(adapter.Reply!="")TextLabel("Lời vừa nghe • "+adapter.Reply,Wrapped);
+            if(s.Location=="office")foreach(var permission in s.GetPermissions())if(Button("Xin phép nhận mẫu đối chiếu"))Do(s.TryRequestAccess(permission.id));
+            var heard=s.GetHeardStatements().Where(h=>h.participantId=="npc."+FullCasePlayGuide.ActorAt(s.Location)).ToArray();
+            if(heard.Length>0)TextLabel("Lời đã nghe từ người đang trao đổi • Ghi là thao tác riêng",Bold);
+            foreach(var statement in heard){TextLabel(statement.question,Wrapped);if(Button("Ghi lời kể • "+(DebugIds?statement.id:statement.question)))Do(s.TryRecordStatement(statement.id));}
+        }
         void DrawUI(){
             if(adapter==null)return;var s=adapter.Runtime;var evt=Event.current;
             if(!PlayHostMode&&evt.type==EventType.KeyDown){if(evt.keyCode==KeyCode.Escape){if(s.Modal==FullCaseModal.None)s.SetPaused(!s.Paused);else adapter.Cancel();evt.Use();}else if(evt.keyCode==KeyCode.F5){Do(adapter.Save());evt.Use();}else if(evt.keyCode==KeyCode.F6){Do(adapter.Load());evt.Use();}}
+            if(PlayHostMode&&s.Modal==FullCaseModal.Conversation){
+                TextLabel("TEST ONLY • Hội thoại / "+FullCasePlayGuide.Place(s.Location),Bold);
+                if(Button("Hủy / trở lại")){adapter.Cancel();return;}
+                if(Button(s.Paused?"Tiếp tục":"Pause"))s.SetPaused(!s.Paused);
+                DebugIds=Toggle("Debug • hiện ID kỹ thuật",DebugIds);
+                if(DebugIds){Label("Profile riêng",adapter.Profile);Label("Modal / pause",s.Modal+" / "+s.Paused);}
+                Help(message,MessageType.Info);
+                scroll=playLayout.BeginScroll(scroll);inScroll=true;DrawConversation();inScroll=false;playLayout.EndScroll();return;
+            }
             Help("TEST ONLY • Producer/gate lời khai theo quyết định chủ dự án; vật mẫu/feature/rubric còn TEST ONLY, không canon. Không mở hết/hoàn tất. Editor UI/proxy không phải scene chung hoặc controller Windows.",MessageType.Warning);
             if(!PlayHostMode){simulatedRubric=Toggle("Rubric mô phỏng cho profile MỚI (không là C3)",simulatedRubric);
             if(Button("Bắt đầu sạch • profile mới TEST ONLY")){FreshProfile();s=adapter.Runtime;}}
